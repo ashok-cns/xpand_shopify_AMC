@@ -1,0 +1,35 @@
+{
+  "sections": {
+    "main": {
+      "type": "contact-template",
+      "settings": {
+        "wide_display": true,
+        "contact_heading": "Contact Us",
+        "contact_subheading": "",
+        "caption_content_background": "original",
+        "contact_text": "",
+        "show_map": false,
+        "map_wide_display": true,
+        "map_address": "",
+        "map_height": 400,
+        "zoom_level": 16,
+        "api_key": "",
+        "show_pin": false,
+        "map_style": "default"
+      }
+    },
+    "16473619594dee2d5e": {
+      "type": "divider",
+      "settings": {
+        "divider_spacing": 20,
+        "divider_border": false,
+        "css_class": "",
+        "custom_css": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16473619594dee2d5e"
+  ]
+}

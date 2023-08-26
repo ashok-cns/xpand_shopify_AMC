@@ -1,1 +1,1 @@
-# xpand_shopify_AMC
+# xpand_shopify
