@@ -994,10 +994,10 @@ $(() => {
             if(cartQty == cm_tier_qty){
               $(document).find('.progress-wrap .text-wrapper').html('<p>'+discountAppliedText.replace('discountPercentage', ''+savedPercentage+'')+'</p>');
               setTimeout(function(){
-                $(document).find('.progress-wrap .text-wrapper').html('<p>You are '+pendingQty+' items (laces or socks) away from '+makePercentage+'% off</p>')
+                $(document).find('.progress-wrap .text-wrapper').html('<p>You are '+pendingQty+' items (laces, socks or shoewipes) away from '+makePercentage+'% off</p>')
               },2000)
             }else {
-              $(document).find('.progress-wrap .text-wrapper').html('<p>You are '+pendingQty+' items (laces or socks) away from '+makePercentage+'% off</p>')
+              $(document).find('.progress-wrap .text-wrapper').html('<p>You are '+pendingQty+' items (laces, socks or shoewipes) away from '+makePercentage+'% off</p>')
             }
             
            }
