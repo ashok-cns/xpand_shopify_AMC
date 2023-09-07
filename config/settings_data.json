@@ -154,7 +154,7 @@
     "cart_message": "",
     "cart_discount_applied_text": "Congrats, you just received discountPercentage% off!",
     "cart_free_shipping_hint_text": "You are quantity pack away from free shipping!",
-    "cart_free_shipping_item_count": 1,
+    "cart_free_shipping_item_count": 5,
     "enable_free_product": true,
     "cart_free_product_item_count": 1,
     "cart_free_product_hint_text": "You are quantity pack away to get a free product!",
