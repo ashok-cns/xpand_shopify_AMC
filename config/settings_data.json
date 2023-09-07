@@ -154,7 +154,9 @@
     "cart_message": "",
     "cart_discount_applied_text": "Congrats, you just received discountPercentage% off!",
     "cart_free_shipping_hint_text": "You are quantity pack away from free shipping!",
-    "enable_free_product": false,
+    "cart_free_shipping_item_count": 1,
+    "enable_free_product": true,
+    "cart_free_product_item_count": 1,
     "cart_free_product_hint_text": "You are quantity pack away to get a free product!",
     "tier_1_dis_amount": "1.99",
     "tier_2_dis_amount": "5.33",
@@ -1251,7 +1253,8 @@
         "blocks": {
           "1489175056408": {
             "type": "search",
-            "settings": {}
+            "settings": {
+            }
           },
           "1489175058545": {
             "type": "recent_posts",
@@ -2084,7 +2087,8 @@
       "855628211100114053": {
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       }
     }
   }
