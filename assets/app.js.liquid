@@ -1017,7 +1017,7 @@ $(() => {
             currentItem.find('.mini-cart__item-price').append('<span data-discount-price="'+cm_tier_amount*100+'" data-upate-price="'+lineItemDiscountAmnt*100+'" class="updated-amount">$ '+lineItemDiscountAmnt+'</span>');
             }
             var checkqty = Number(currentItem.find('input[data-cart-quantity-input]').val()); console.log('checkqty==:', checkqty)
-            var checkItemPrice = Number(currentItem.find('.mini-cart__item-price span.updated-amount[data-upate-price]').attr('data-upate-price')); console.log('checkItemPrice==:', checkItemPrice)
+            var checkItemPrice = Number(currentItem.find('.mini-cart__item-price span.updated-amount[data-upate-price]').attr('data-upate-price')); console.log('66checkItemPrice==:', checkItemPrice)
             // lineItemSubtotal = lineItemSubtotal + Number(checkqty * checkItemPrice); console.log('upatedSubtotal 44 => ', lineItemSubtotal);
             updateOriginalPrice = updateOriginalPrice + checkqty*currentItem.find('.mini-cart__item-price span').attr('data-original-price'); console.log('Updated Original SubtotalPrice', updateOriginalPrice);
             lineItemSubtotal = updateOriginalPrice; console.log('upatedSubtotal 44 => ', lineItemSubtotal);
@@ -1070,9 +1070,9 @@ $(() => {
               console.log('inside If condition --1' );
               var checkqty = Number(currentItem.find('input[data-cart-quantity-input]').val()); console.log('checkqty==:', checkqty)
               if(currentItem.find('.mini-cart__item-price span[data-upate-price-default]').length > 0){
-                var checkItemPrice = Number(currentItem.find('.mini-cart__item-price span[data-upate-price-default]').attr('data-upate-price-default')); console.log('checkItemPrice==:', checkItemPrice)
+                var checkItemPrice = Number(currentItem.find('.mini-cart__item-price span[data-upate-price-default]').attr('data-upate-price-default')); console.log('55checkItemPrice==:', checkItemPrice)
               }else {
-                var checkItemPrice = Number(currentItem.find('.mini-cart__item-price span[data-upate-price]').attr('data-upate-price')); console.log('checkItemPrice==:', checkItemPrice)
+                var checkItemPrice = Number(currentItem.find('.mini-cart__item-price span[data-upate-price]').attr('data-upate-price')); console.log('44checkItemPrice==:', checkItemPrice)
               }
               updateOriginalPrice = updateOriginalPrice + checkqty*currentItem.find('.mini-cart__item-price span').attr('data-original-price'); console.log('Updated Original SubtotalPrice 22', updateOriginalPrice)
               // lineItemSubtotal = lineItemSubtotal + Number(checkqty * checkItemPrice); console.log('upatedSubtotal 11 => ', lineItemSubtotal)              
@@ -1129,7 +1129,7 @@ $(() => {
             }
 
            var checkqty = Number(currentItem.find('input[data-cart-quantity-input]').val()); console.log('checkqty==:', checkqty)
-            var checkItemPrice = Number(currentItem.find('.mini-cart__item-price span.updated-amount[data-upate-price]').attr('data-upate-price')); console.log('checkItemPrice==:', checkItemPrice)
+            var checkItemPrice = Number(currentItem.find('.mini-cart__item-price span.updated-amount[data-upate-price]').attr('data-upate-price')); console.log('33checkItemPrice==:', checkItemPrice)
             updateOriginalPrice = updateOriginalPrice + checkqty*currentItem.find('.mini-cart__item-price span').attr('data-original-price'); console.log('Updated Original SubtotalPrice 33', updateOriginalPrice);
             // lineItemSubtotal = lineItemSubtotal + Number(checkqty * checkItemPrice); console.log('upatedSubtotal 22 => ', lineItemSubtotal);
             lineItemSubtotal = lineItemSubtotal + updateOriginalPrice; console.log('upatedSubtotal 22 => ', lineItemSubtotal);
@@ -1162,9 +1162,9 @@ $(() => {
               console.log('outside BogoOff tag item 2233');
               var checkqty = Number(currentItem.find('input[data-cart-quantity-input]').val()); console.log('checkqty==:', checkqty)
               if(currentItem.find('.mini-cart__item-price span[data-upate-price-default]').length > 0){
-                var checkItemPrice = Number(currentItem.find('.mini-cart__item-price span[data-upate-price-default]').attr('data-upate-price-default')); console.log('checkItemPrice==:', checkItemPrice)
+                var checkItemPrice = Number(currentItem.find('.mini-cart__item-price span[data-upate-price-default]').attr('data-upate-price-default')); console.log('22checkItemPrice==:', checkItemPrice)
               }else {
-                var checkItemPrice = Number(currentItem.find('.mini-cart__item-price span[data-upate-price]').attr('data-upate-price')); console.log('checkItemPrice==:', checkItemPrice)
+                var checkItemPrice = Number(currentItem.find('.mini-cart__item-price span[data-upate-price]').attr('data-upate-price')); console.log('11checkItemPrice==:', checkItemPrice)
               }
               //lineItemSubtotal = lineItemSubtotal + Number(checkqty * checkItemPrice); console.log('upatedSubtotal 33 => ', lineItemSubtotal)
               updateOriginalPrice = updateOriginalPrice + checkqty*currentItem.find('.mini-cart__item-price span').attr('data-original-price'); console.log('Updated Original SubtotalPrice 22', updateOriginalPrice)
