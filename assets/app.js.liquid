@@ -1125,7 +1125,7 @@ $(() => {
               console.log('inside If price not match')
               currentItem.find('.mini-cart__item-price span.updated-amount[data-upate-price]').remove();
             currentItem.find('.mini-cart__item-price').addClass('text-strikethrough');
-            currentItem.find('.mini-cart__item-price').append('<span data-discount-price="'+cm_tier_amount*100+'" data-upate-price="'+lineItemDiscountAmnt*100+'" class="updated-amount">$ '+lineItemDiscountAmnt+'</span>');
+            currentItem.find('.mini-cart__item-price').append('<span data-discount-price="'+cm_tier_amount*100+'" data-upate-price="'+lineItemDiscountAmnt*100+'" class="updated-amount">$ '+lineItemDiscountAmnt.toFixed(2)+'</span>');
             }
 
            var checkqty = Number(currentItem.find('input[data-cart-quantity-input]').val()); console.log('checkqty==:', checkqty)
