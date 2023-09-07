@@ -726,7 +726,7 @@ $(() => {
     $('.cart-container').addClass('active_link');
   }
 
-  $('body').on('change keyup', '[data-cart-quantity-input]', function () {
+  $('body').on('change', '[data-cart-quantity-input]', function () {
     const cartItem = {
       lineID: $(this).parents('[data-cart-item]').data('line-id'),
       variantID: $(this).parents('[data-cart-item]').data('variant-id'),
