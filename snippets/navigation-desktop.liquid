@@ -397,12 +397,20 @@
         <h3 style="background-color: rgb(97, 118, 134); color: rgb(255, 255, 255);">Recommended Add-Ons</h3>
         {% endif %}
         <div class="recommended-products-listing">
-          {% for i in (1..3) %}
+          {% for i in (1..8) %}
             {%  capture  prodObj %}recommended_product_{{ i }}{% endcapture %}
+            {%  capture  prodVariantId %}recommended_variant_{{ i }}{% endcapture %}
               {% assign prodTitle  = all_products[settings[prodObj]].title %}
+              {% if settings[prodVariantId] != blank %}
+              {% assign variantId = settings[prodVariantId] %}
+              {% else %}
+              {% assign variantId = all_products[settings[prodObj]].selected_or_first_available_variant.id %}
+            {% endif %}
+            {%  assign produHandle = all_products[settings[prodObj]].handle  %} 
               {% assign prodUrl  = all_products[settings[prodObj]].url %}
               {% assign prodPrice  = all_products[settings[prodObj]].price %}
               {% assign prodImg  = all_products[settings[prodObj]].featured_image %}
+              {%  unless settings[prodObj] == blank %}  
           <div  class="cm-rec-pro-item">
             <div  class="cm-rec-pro-img">
               <img  src="{{ prodImg | img_url: 'medium' }}" alt="{{ prodTitle}}"></div> 
@@ -410,9 +418,33 @@
                 <h3 ><a  href="{{ prodUrl}}">{{ prodTitle }}</a></h3> 
                 <h6 ></h6> 
                 <span  class="cm-crnt-price">{{ prodPrice | money }}</span> 
-                <a class="cm-rec-pro-cta" href="{{ prodUrl }}" class="cm-btn">Pick your color</a>
+                {% comment %} <a class="cm-rec-pro-cta" href="{{ prodUrl }}" class="cm-btn">Pick your color</a> {% endcomment %}
+                <form action="/cart/add" method="post" enctype="multipart/form-data" id="add-to-cart-{{ all_products[settings[prodObj]].id }}">
+                  <input type="hidden" name="id" value="{{ variantId }}" />
+                  <input type="hidden" name="quantity" value="1">
+                <!--product add to cart-->
+                <button
+                        class="add_to_cart global-button global-button--primary ajax-submit cm-rec-pro-cta"
+                        type="submit"
+                        name="add"
+                        data-add-to-cart
+                       >
+
+                    <span data-add-to-cart-text>
+                        {% if all_products[settings[prodObj]].available %}
+                            {{ 'products.product.add_to_cart' | t }}
+                        {% else %}
+                            {{ 'products.product.sold_out' | t }}
+                        {% endif %}
+                    </span>
+
+                </button>
+                <!--end product add to cart-->
+
+            </form>
               </div>
             </div>
+          {% endunless %}
             {% endfor %}
           </div>
         </div>
