@@ -1,6 +1,14 @@
 {% if section.settings.show_alert_bar %}
-  <div id="alert-bar" style="background: {{ section.settings.alert_bg_color }}; color:{{ section.settings.alert_text_color }};">
-    <div class="cm-inner-alert-box">{{ section.settings.alert_text }}</div>
+
+  <div
+    id="alert-bar"
+    style="background: {{ section.settings.alert_bg_color }}; color:{{ section.settings.alert_text_color }};"
+    {% if section.settings.enable_alert_bar_slider %}data-slider-enabled{% endif %}>
+    {% for i in (1..5) %}
+      {% capture alertText %}alert_text_{{ i }}{% endcapture %}
+
+      <div class="cm-inner-alert-box">{{ section.settings[alertText] }}</div>
+    {% endfor %}
   </div>
 {% endif %}
 
@@ -14,8 +22,8 @@
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
-                                                                                                                            "@type": "Organization",
-                                                                                                                            "name": "{{ shop.name }}",
+                                                                                                                                "@type": "Organization",
+                                                                                                                                "name": "{{ shop.name }}",
   {% if section.settings.logo %}
     {% assign image_size = section.settings.logo.width | append: 'x' %}
     "logo": "https:{{ section.settings.logo | img_url: image_size }}",
@@ -47,7 +55,7 @@
   "{{ settings.whatsapp_link }}",
   "{{ settings.youtube_link }}"
   ],
-                                                                                                                            "url": "{{ shop.url }}{{ page.url }}"
+                                                                                                                                "url": "{{ shop.url }}{{ page.url }}"
   }
 </script>
 
@@ -55,14 +63,14 @@
   <script type="application/ld+json">
     {
     "@context": "http://schema.org",
-                                                                                                                                                                                                                                      "@type": "WebSite",
-                                                                                                                                                                                                                                      "name": "{{ shop.name }}",
+                                                                                                                                                                                                                                              "@type": "WebSite",
+                                                                                                                                                                                                                                              "name": "{{ shop.name }}",
     "potentialAction": {
-                                                                                                                                                                                                                                        "@type": "SearchAction",
-                                                                                                                                                                                                                                        "target": "{{ routes.search_url }}?q={search_term_string}",
+                                                                                                                                                                                                                                                "@type": "SearchAction",
+                                                                                                                                                                                                                                                "target": "{{ routes.search_url }}?q={search_term_string}",
     "query-input": "required name=search_term_string"
-                                                                                                                                                                                                                                      },
-                                                                                                                                                                                                                                      "url": "{{ shop.url }}{{ page.url }}"
+                                                                                                                                                                                                                                              },
+                                                                                                                                                                                                                                              "url": "{{ shop.url }}{{ page.url }}"
     }
   </script>
 {% endif %}
@@ -785,11 +793,11 @@
           {{ logo }}
 
           <div class="
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      nav
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      nav--combined
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      nav--{{ section.settings.menu_alignment }}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      {{ section.settings.menu_alignment }}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  nav
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  nav--combined
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  nav--{{ section.settings.menu_alignment }}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  {{ section.settings.menu_alignment }}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ">
             <div class="combined-menu-container">
               {{ menu_left }}
               {{ menu_right }}
@@ -885,7 +893,7 @@ editor events, etc.
         "default": true
       }, {
         "type": "checkbox",
-        "id": "enable_slider",
+        "id": "enable_alert_bar_slider",
         "label": "Enable carousal on alert bar",
         "default": false
       }, {
