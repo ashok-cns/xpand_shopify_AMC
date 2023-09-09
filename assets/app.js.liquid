@@ -1612,15 +1612,5 @@ $(document).on('click', '.go-to-top', () => {
 })    
   });
   window.addEventListener("DOMContentLoaded", (event) => {
-    new Swiper('.alert-bar-swiper-container', {
-      loop: false,
-      lazy: true,
-      slidesPerView: 1
-
-// Navigation arrows
-// navigation: {
-// nextEl: '.swiper-button-next',
-// prevEl: '.swiper-button-prev',
-// },
-    });
+    var swiper = new Swiper(".mySwiper", {});
   })
