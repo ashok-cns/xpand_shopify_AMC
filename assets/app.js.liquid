@@ -1612,5 +1612,11 @@ $(document).on('click', '.go-to-top', () => {
 })    
   });
   window.addEventListener("DOMContentLoaded", (event) => {
-    var swiper = new Swiper(".mySwiper", {});
+    var swiper = new Swiper(".mySwiper", {
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
   })
