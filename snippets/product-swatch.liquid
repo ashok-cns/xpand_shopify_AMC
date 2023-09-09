@@ -160,24 +160,29 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
 {% endunless %}
 <script>
   window.addEventListener("DOMContentLoaded", (event) => {
-    console.log('Dom Content loaded on PDP')
-// $('.pdp-custom-swatch-list-item[data-color="Golden Tan"]').trigger('click');
+    console
+      .log('Dom Content loaded on PDP')
 
-    $('.swatch[data-option-index][data-title="color"] .swatch-element').each(function() {
-      let checkColor = $(this).attr('data-value'); // console.log('checkColro==>', checkColor);
-      if ($(this).hasClass('soldout')) {
-        $('.swatch_options .pdp-custom-swatch-list-item[data-color="' + checkColor + '"]').addClass('hide');
-      }
-    }).promise().done( function(){
-       $(document).find('.swatch_options .pdp-custom-swatch .pdp-custom-swatch-lists').each(function () {
+  // $('.pdp-custom-swatch-list-item[data-color="Golden Tan"]').trigger('click');
+
+      $('.swatch[data-option-index][data-title="color"] .swatch-element')
+      .each(function() {
+        let checkColor = $(this).attr('data-value'); // console.log('checkColro==>', checkColor);
+        if ($(this).hasClass('soldout')) {
+          $('.swatch_options .pdp-custom-swatch-list-item[data-color="' + checkColor + '"]').addClass('hide');
+        }
+      })
+      .promise()
+      .done(function() {
+        $(document).find('.swatch_options .pdp-custom-swatch .pdp-custom-swatch-lists').each(function() {
           let getvisibleLength = $(this).find('.pdp-custom-swatch-list-item').not('.hide').length;
           console.log(getvisibleLength);
-          if(getvisibleLength == 0){
-              $(this).prev('h3').addClass('hide');
+          if (getvisibleLength == 0) {
+            $(this).prev('h3').addClass('hide');
           }
-      })
-    });      
-     
+        })
+      });
+
 
     $(document).on('click', '.pdp-custom-swatch-list-item', function() {
       $('.pdp-custom-swatch .pdp-custom-swatch-list-item').removeClass('active');
@@ -244,7 +249,7 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
   });
   window.addEventListener("load", (event) => {
 
-// console.log("page is fully loaded");    
+// console.log("page is fully loaded");
     if ($('.swatch[data-option-index][data-title="size"]').length > 0) {
       let selectedSizeOnLoad = $('.swatch[data-option-index][data-title="size"] input:checked').attr('data-value');
       console.log('OnLoadSize = ', selectedSizeOnLoad);
@@ -296,28 +301,4 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
   function updatepdpSizeOption(selectedSize) {
     $('.swatch[data-option-index][data-title="size"]  .swatch-element[data-value="' + selectedSize + '"] label').trigger('click');
   }
-  window.addEventListener("DOMContentLoaded", (event) => {
-    new Swiper('.swiper-container', {
-      loop: false,
-      lazy: true,
-      slidesPerView: 1,
-
-// If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function(index, className) {
-          return `<span class="outer-dot swiper-pagination-bullet" data-index="${
-            index + 1
-          }"><span class="inner-dot"></span></span>`;
-        }
-      },
-
-// Navigation arrows
-// navigation: {
-// nextEl: '.swiper-button-next',
-// prevEl: '.swiper-button-prev',
-// },
-    });
-  })
 </script>
