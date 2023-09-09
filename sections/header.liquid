@@ -2,14 +2,14 @@
 
   <div
     id="alert-bar"
-    class="alert-bar-swiper-container mySwiper"
+    class="swiper mySwiper"
     style="background: {{ section.settings.alert_bg_color }}; color:{{ section.settings.alert_text_color }};"
     {% if section.settings.enable_alert_bar_slider %}data-slider-enabled{% endif %}>
     <div class="swiper-wrapper">
     {% for i in (1..5) %}
       {% capture alertText %}alert_text_{{ i }}{% endcapture %}
 
-      <div class="cm-inner-alert-box">{{ section.settings[alertText] }}</div>
+      <div class="cm-inner-alert-box swiper-slide">{{ section.settings[alertText] }}</div>
     {% endfor %}
     </div>
   </div>
