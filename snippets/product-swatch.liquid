@@ -301,4 +301,28 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
   function updatepdpSizeOption(selectedSize) {
     $('.swatch[data-option-index][data-title="size"]  .swatch-element[data-value="' + selectedSize + '"] label').trigger('click');
   }
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new Swiper('.swiper-container', {
+      loop: false,
+      lazy: true,
+      slidesPerView: 1,
+
+// If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function(index, className) {
+          return `<span class="outer-dot swiper-pagination-bullet" data-index="${
+            index + 1
+          }"><span class="inner-dot"></span></span>`;
+        }
+      },
+
+// Navigation arrows
+// navigation: {
+// nextEl: '.swiper-button-next',
+// prevEl: '.swiper-button-prev',
+// },
+    });
+  })
 </script>
