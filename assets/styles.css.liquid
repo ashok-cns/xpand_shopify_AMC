@@ -20332,6 +20332,7 @@ body.show-cart-overlay:after {
   overflow: auto;
   z-index: 1000;
   transform: translate(-50%,-50%);
+  background: white
 }
 .alert-offer-modal.topbar-modal {
   border-radius: 8px;
@@ -20339,7 +20340,8 @@ body.show-cart-overlay:after {
   width: 750px;
   max-width: 90%;
 }
-.alert-offer-modal.topbar-modal.is-active {
+.alert-offer-modal.topbar-modal.is-active,
+.alert-offer-overlay.is-active {
   display: block;
 }
 .alert-offer-modal.topbar-modal .topbar-modal__title {
