@@ -1630,5 +1630,8 @@ $(document).on('click', '.go-to-top', () => {
     });
     $(document).on('click', '[data-modal-hide]', function(){
       $(document).find('.alert-offer-overlay, .alert-offer-modal').removeClass('is-active ');
+    });
+    $(document).on('click', '.offer__cta', function(){
+      $(this).closest('.offer').toggleClass('is-expanded');
     })
   })
