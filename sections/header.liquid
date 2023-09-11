@@ -48,8 +48,8 @@
             class="offer">
             <div class="offer__image-wrapper"><img
                 loading="lazy"
-                data-src="{{ section.settings[alertIcon] | image_src: 'medium' }}"
-                alt=""
+                src="{{ section.settings[alertIcon] | img_url: '200x' }}"
+                alt="{{ section.settings[alertText] }}"
                 class="offer__image loaded"></div>
             <div class="offer__title-wrapper">
               <h4 class="offer__title text-navy-900">
