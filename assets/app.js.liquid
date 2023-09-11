@@ -1626,6 +1626,9 @@ $(document).on('click', '.go-to-top', () => {
 
     // Event to show alert offer modal box
     $(document).on('click', '#alert_offer_modal_cta', function(){
-
+      $(document).find('.alert-offer-overlay, .alert-offer-modal').show();
+    });
+    $(document).on('click', '[data-modal-hide]', function(){
+      $(document).find('.alert-offer-overlay, .alert-offer-modal').hide();
     })
   })
