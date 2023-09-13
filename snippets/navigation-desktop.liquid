@@ -407,8 +407,7 @@
                 {% assign variantIdList = settings[prodVariantId] | split: ',' %}
                 <ul>
                 {% for variantListItem in variantIdList  %}
-                  {% for variant in all_products[settings[prodObj]].variants %}
-                  
+                  {% for variant in all_products[settings[prodObj]].variants %}                  
                     {% if variantListItem contains variant.id %}
                   <li data-variantId="{{ variant.id }}">{{ variant.title }}</li>
                   {% endif %}
@@ -441,7 +440,7 @@
                 <div class="cm-rec-prod-cta-wrapper">
                   {% if settings[prodVariantId] != blank %}
                 {{ variantId }}
-                <div class="cm-rec-prod-opt-btn">Options</div>
+                <button type="button" class="cm-rec-prod-opt-btn global-button global-button--primary">Options</button>
                 {% else %}
                 <button
                         class="add_to_cart global-button global-button--primary ajax-submit cm-rec-pro-cta"
