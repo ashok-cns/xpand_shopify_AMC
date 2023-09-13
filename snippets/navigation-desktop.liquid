@@ -426,7 +426,11 @@
                         data-selected-variant=""
                        ><span data-add-to-cart-text>
                         Add to cart
-                    </span></button>
+                    </span>
+                    <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" class="checkmark">
+          <path fill="none" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+        </svg>
+        </button>
               {% endcapture %}
               {% else %}
               {% assign variantId = all_products[settings[prodObj]].selected_or_first_available_variant.id %}
@@ -466,6 +470,9 @@
                             {{ 'products.product.sold_out' | t }}
                         {% endif %}
                     </span>
+                    <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" class="checkmark">
+          <path fill="none" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+        </svg>
 
                 </button>
                       {% endif %}
