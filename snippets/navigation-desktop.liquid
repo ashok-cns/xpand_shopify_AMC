@@ -399,9 +399,9 @@
         <div class="recommended-products-listing">
           {% for i in (1..8) %}
             {%  capture  prodObj %}recommended_product_{{ i }}{% endcapture %}
-            {%  capture  prodVariantId %}recommended_variant_{{ i }}{% endcapture %}
-             
+            {%  capture  prodVariantId %}recommended_variant_{{ i }}{% endcapture %}             
               {% assign prodTitle  = all_products[settings[prodObj]].title %}
+              {{ prodVariantId }}==
               {% if settings[prodVariantId] != blank %}              
               {% capture variantId %}
                 {% assign variantIdList = settings[prodVariantId] | split: ',' %}
@@ -409,6 +409,7 @@
                 <ul>
                 {% for variantListItem in variantIdList  %}
                   {% for variant in all_products[settings[prodObj]].variants %}
+
                     {% if variantListItem == variant.id %}
                   <li data-variantId="{{ variant.id }}">{{ variant.title }}</li>
                   {% endif %}
