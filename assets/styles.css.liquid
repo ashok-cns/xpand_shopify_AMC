@@ -20480,13 +20480,17 @@ body.show-cart-overlay:after {
 }
 .cm-rec-prod-cta-content.show-options {
   height: auto;
-  max-height: 150px;
+  max-height: 170px;
   overflow: hidden;
   overflow-y: auto;
   transition: height ease-in-out;
 }
 .cm-rec-prod-cta-content.show-options ul {
   padding: 0px;
+  max-height: 150px;
+  overflow: hidden;
+  overflow-y: auto;
+
 }
 .cm-rec-prod-cta-content.show-options li {
   font-size: 14px;
@@ -20494,6 +20498,7 @@ body.show-cart-overlay:after {
   border-bottom: 1px solid rgba(0,0,0,0.2);
   margin: 0;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 .cm-rec-prod-cta-content.show-options li.selected-option,
 .cm-rec-prod-cta-content.show-options li:hover {
