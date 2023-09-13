@@ -423,6 +423,7 @@
                         class="add_to_cart global-button global-button--primary ajax-submit cm-rec-pro-cta"
                         type="button"
                         data-add-to-cart
+                        data-selected-variant=""
                        >Add to cart</button>
               {% endcapture %}
               {% else %}
@@ -451,9 +452,9 @@
                 {% else %}
                 <button
                         class="add_to_cart global-button global-button--primary ajax-submit cm-rec-pro-cta"
-                        type="submit"
-                        name="add"
+                        type="button"
                         data-add-to-cart
+                        data-selected-variant="{{ variantId }}"
                        >
 
                     <span data-add-to-cart-text>
