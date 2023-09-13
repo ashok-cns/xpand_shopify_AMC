@@ -444,8 +444,12 @@
                 <span  class="cm-crnt-price">{{ prodPrice | money }}</span> 
                 <div class="cm-rec-prod-cta-wrapper">
                   {% if settings[prodVariantId] != blank %}
-                {{ variantId }}
-                <button type="button" class="cm-rec-prod-opt-btn global-button global-button--primary">Options</button>
+                  <div class="cm-rec-prod-cta-content">
+
+                  
+                  {{ variantId }}
+                  <button type="button" class="cm-rec-prod-opt-btn global-button global-button--primary">Options</button>
+                  </div>
                 {% else %}
                 <button
                         class="add_to_cart global-button global-button--primary ajax-submit cm-rec-pro-cta"
