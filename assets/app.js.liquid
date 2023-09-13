@@ -770,10 +770,10 @@ $(() => {
       e.preventDefault();
       if($(this).hasClass() == 'cm-rec-pro-cta'){
         const $variantId = $(this).attr('data-selected-variant');
-        const $addToCartBtn = $(this).closest().find('.add_to_cart');
+        const $addToCartBtn = $(this).closest('.cm-rec-prod-cta-wrapper').find('.add_to_cart');
         var ajaxData = {
           quantity: 1,
-          id: 794864229,
+          id: $variantId,
         }
       }else{
         const $addToCartForm = $(this).closest('form');
@@ -792,7 +792,7 @@ $(() => {
         dataType: 'json',
         cache: false,
         type: 'post',
-        data: $addToCartForm.serialize(),
+        data: ajaxData //$addToCartForm.serialize(),
         beforeSend() {
           $addToCartBtn.attr('disabled', 'disabled').addClass('disabled');
           $addToCartBtn.find('span').removeClass('fadeInDown').addClass('animated zoomOut');
