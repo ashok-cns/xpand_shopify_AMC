@@ -768,6 +768,7 @@ $(() => {
   if (window.PXUTheme.theme_settings.cart_action === 'ajax') {
     $(document).on('click', '.ajax-submit', function (e) {
       e.preventDefault();
+      var $currentAjaxBtn = $(this);
       if($(this).hasClass('cm-rec-pro-cta')){
         var $variantId = $(this).attr('data-selected-variant');
         var $addToCartBtn = $(this).closest('.cm-rec-prod-cta-wrapper').find('.add_to_cart');
@@ -804,6 +805,9 @@ $(() => {
             $addToCartBtn.removeAttr('disabled').removeClass('disabled');
             $addToCartBtn.find('.checkmark').removeClass('checkmark-active');
             $addToCartBtn.find('span').removeClass('zoomOut').addClass('fadeInDown');
+            if($currentAjaxBtn.hasClass('cm-rec-pro-cta')){
+                $('.cm-rec-prod-cta-wrapper .cm-rec-prod-cta-content').removeClass('show-options');
+            }
           }, 1000);
 
           $.ajax({
