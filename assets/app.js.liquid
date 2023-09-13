@@ -1605,18 +1605,22 @@ $(document)
       $(document).find('.mobile-mega-nav-wrapper .close-meganav-mobile').remove();
     });
 
-    $(document).mouseup(function(e) 
-{
+    $(document).mouseup(function(e) {
     var container = $(".top-bar--right .nav-drop.mega-drop");
+    var container2 = $('.cm-rec-prod-cta-content.show-options')
 
     // if the target of the click isn't the container nor a descendant of the container
-    if (!container.is(e.target) && container.has(e.target).length === 0) 
-    {
+    if (!container.is(e.target) && container.has(e.target).length === 0){
         container.remove();
         if($('.close-meganav-mobile').is(':visible')){
           $(document).find('.mobile-mega-nav-wrapper .close-meganav-mobile').remove();
         }
     }
+    if (!container2.is(e.target) && container2.has(e.target).length === 0){
+      
+        $(document).find('.cm-rec-prod-cta-content.show-options').removeClass('show-options');
+      
+  }
 });
 
 // Go to scroll top event
