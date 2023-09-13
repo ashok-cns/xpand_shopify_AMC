@@ -20461,8 +20461,16 @@ body.show-cart-overlay:after {
 .cm-rec-prod-cta-content {
   position: absolute;
   height: 0;
+  bottom: 50px;
   overflow: hidden;
-  transition: height 0.5s ease-in-out
+  transition: height 0.5s ease-in-out;
+}
+.cm-rec-prod-cta-content.show-options {
+  height: auto;
+  max-height: 150px;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: height 0.5s ease-in-out;
 }
 @media only screen and (min-width: 992px){
 .alert-offer-modal.topbar-modal .offer__image-wrapper {
