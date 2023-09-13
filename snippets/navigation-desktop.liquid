@@ -401,11 +401,11 @@
             {%  capture  prodObj %}recommended_product_{{ i }}{% endcapture %}
             {%  capture  prodVariantId %}recommended_variant_{{ i }}{% endcapture %}             
               {% assign prodTitle  = all_products[settings[prodObj]].title %}
-              {{ settings[prodVariantId] }}==
+            
               {% if settings[prodVariantId] != blank %}              
               {% capture variantId %}
                 {% assign variantIdList = settings[prodVariantId] | split: ',' %}
-                
+                {{ variantIdList }}
                 <ul>
                 {% for variantListItem in variantIdList  %}
                   {% for variant in all_products[settings[prodObj]].variants %}
