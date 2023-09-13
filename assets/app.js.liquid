@@ -1648,7 +1648,7 @@ $(document).on('click', '.go-to-top', () => {
     $(document).on('click','.cm-rec-prod-opt-btn', function(){
       $(this).closest('.cm-rec-prod-cta-wrapper').find('.cm-rec-prod-cta-content').addClass('show-options');
     });
-    $(document).on('click','.cm-rec-prod-cta-content li' function(){
+    $(document).on('click','.cm-rec-prod-cta-content li', function(){
       let variantId = $(this).attr('data-variantid');
       $(this).closest('.cm-rec-prod-cta-wrapper').find('.cm-rec-prod-cta-content').removeClass('show-options');
       $(this).closest().find('button[data-add-to-cart]').attr('data-selected-variant', variantId);
