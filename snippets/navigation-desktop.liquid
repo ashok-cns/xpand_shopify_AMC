@@ -409,7 +409,12 @@
                 {% for variantListItem in variantIdList  %}
                   {% for variant in all_products[settings[prodObj]].variants %}                  
                     {% if variantListItem contains variant.id %}
+                    {% if variant.available %}
                   <li data-variantId="{{ variant.id }}">{{ variant.title }}</li>
+                  {% else %}
+                  <li data-variantId="{{ variant.id }}" disabled><del>{{ variant.title }}</del></li>
+                  {% endif %}
+                  
                   {% endif %}
                   {% endfor %}
                 {% endfor %}
