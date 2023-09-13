@@ -402,9 +402,25 @@
             {%  capture  prodVariantId %}recommended_variant_{{ i }}{% endcapture %}
              
               {% assign prodTitle  = all_products[settings[prodObj]].title %}
-              {% if settings[prodVariantId] != blank %}
-              {% assign variantIdList = settings[prodVariantId] %}
-              {{ variantIdList }}
+              {% if settings[prodVariantId] != blank %}              
+              {% capture variantId %}
+                {% assign variantIdList = settings[prodVariantId] | split: ',' %}
+                
+                <ul>
+                {% for variantListItem in variantIdList  %}
+                  {% for variant in all_products[settings[prodObj]].variants %}
+                    {% if variantListItem == variant.id %}
+                  <li data-variantId="{{ variant.id }}">{{ variant.title }}</li>
+                  {% endif %}
+                  {% endfor %}
+                {% endfor %}
+                </ul>
+                <button
+                        class="add_to_cart global-button global-button--primary ajax-submit cm-rec-pro-cta"
+                        type="button"
+                        data-add-to-cart
+                       >Add to cart</button>
+              {% endcapture %}
               {% else %}
               {% assign variantId = all_products[settings[prodObj]].selected_or_first_available_variant.id %}
             {% endif %}
@@ -412,6 +428,8 @@
               {% assign prodUrl  = all_products[settings[prodObj]].url %}
               {% assign prodPrice  = all_products[settings[prodObj]].price %}
               {% assign prodImg  = all_products[settings[prodObj]].featured_image %}
+              
+              
               {%  unless settings[prodObj] == blank %}  
           <div  class="cm-rec-pro-item">
             <div  class="cm-rec-pro-img">
@@ -420,8 +438,31 @@
                 <h3 ><a  href="{{ prodUrl}}">{{ prodTitle }}</a></h3> 
                 <h6 ></h6> 
                 <span  class="cm-crnt-price">{{ prodPrice | money }}</span> 
+                <div class="cm-rec-prod-cta-wrapper">
+                  {% if all_products[settings[prodVariantId]] != blank %}
+                {{ variantId }}
+                <div class="cm-rec-prod-opt-btn">Options</div>
+                {% else %}
+                <button
+                        class="add_to_cart global-button global-button--primary ajax-submit cm-rec-pro-cta"
+                        type="submit"
+                        name="add"
+                        data-add-to-cart
+                       >
+
+                    <span data-add-to-cart-text>
+                        {% if all_products[settings[prodObj]].available %}
+                            {{ 'products.product.add_to_cart' | t }}
+                        {% else %}
+                            {{ 'products.product.sold_out' | t }}
+                        {% endif %}
+                    </span>
+
+                </button>
+                      {% endif %}
+                </div>
                 {% comment %} <a class="cm-rec-pro-cta" href="{{ prodUrl }}" class="cm-btn">Pick your color</a> {% endcomment %}
-                <form action="/cart/add" method="post" enctype="multipart/form-data" id="add-to-cart-{{ all_products[settings[prodObj]].id }}">
+                {% comment %} <form action="/cart/add" method="post" enctype="multipart/form-data" id="add-to-cart-{{ all_products[settings[prodObj]].id }}">
                   <input type="hidden" name="id" value="{{ variantId }}" />
                   <input type="hidden" name="quantity" value="1">
                 <!--product add to cart-->
@@ -443,7 +484,7 @@
                 </button>
                 <!--end product add to cart-->
 
-            </form>
+            </form> {% endcomment %}
               </div>
             </div>
           {% endunless %}
