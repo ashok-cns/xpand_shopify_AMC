@@ -424,7 +424,9 @@
                         type="button"
                         data-add-to-cart
                         data-selected-variant=""
-                       >Add to cart</button>
+                       ><span data-add-to-cart-text>
+                        Add to cart
+                    </span></button>
               {% endcapture %}
               {% else %}
               {% assign variantId = all_products[settings[prodObj]].selected_or_first_available_variant.id %}
