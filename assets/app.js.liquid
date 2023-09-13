@@ -1649,6 +1649,7 @@ $(document).on('click', '.go-to-top', () => {
       $(this).closest('.cm-rec-prod-cta-wrapper').find('.cm-rec-prod-cta-content').addClass('show-options');
     });
     $(document).on('click','.cm-rec-prod-cta-content li', function(){
+      $(this).addClass('selected-option').siblings().removeClass('selected-option');
       let variantId = $(this).attr('data-variantid');
       $(this).closest('.cm-rec-prod-cta-wrapper').find('button[data-add-to-cart]').attr('data-selected-variant', variantId);
 
