@@ -768,7 +768,7 @@ $(() => {
   if (window.PXUTheme.theme_settings.cart_action === 'ajax') {
     $(document).on('click', '.ajax-submit', function (e) {
       e.preventDefault();
-      if($(this).hasClass() == 'cm-rec-pro-cta'){
+      if($(this).hasClass('cm-rec-pro-cta')){
         const $variantId = $(this).attr('data-selected-variant');
         const $addToCartBtn = $(this).closest('.cm-rec-prod-cta-wrapper').find('.add_to_cart');
         var ajaxData = {
