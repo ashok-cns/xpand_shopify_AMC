@@ -409,7 +409,7 @@
                 {% for variantListItem in variantIdList  %}
                   {{ variantListItem }}==
                   {% for variant in all_products[settings[prodObj]].variants %}
-
+                      --{{ variant.id }}--
                     {% if variantListItem == variant.id %}
                   <li data-variantId="{{ variant.id }}">{{ variant.title }}</li>
                   {% endif %}
