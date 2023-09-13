@@ -400,6 +400,7 @@
           {% for i in (1..8) %}
             {%  capture  prodObj %}recommended_product_{{ i }}{% endcapture %}
             {%  capture  prodVariantId %}recommended_variant_{{ i }}{% endcapture %}
+              {{ prodVariantId }}==
               {% assign prodTitle  = all_products[settings[prodObj]].title %}
               {% if settings[prodVariantId] != blank %}
               {% assign variantId = settings[prodVariantId] %}
