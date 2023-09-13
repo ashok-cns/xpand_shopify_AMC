@@ -405,10 +405,10 @@
               {% if settings[prodVariantId] != blank %}              
               {% capture variantId %}
                 {% assign variantIdList = settings[prodVariantId] | split: ',' %}
-                {{ variantIdList }}
                 <ul>
                 {% for variantListItem in variantIdList  %}
-                  {% for variant in all_products[settings[prodObj]].variants %}
+                  {{ variantListItem }}==
+                  {% for variant in all_products[settings[ ]].variants %}
 
                     {% if variantListItem == variant.id %}
                   <li data-variantId="{{ variant.id }}">{{ variant.title }}</li>
