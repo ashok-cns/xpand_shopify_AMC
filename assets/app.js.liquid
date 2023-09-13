@@ -792,7 +792,7 @@ $(() => {
         dataType: 'json',
         cache: false,
         type: 'post',
-        data: ajaxData //$addToCartForm.serialize(),
+        data: ajaxData, //$addToCartForm.serialize(),
         beforeSend() {
           $addToCartBtn.attr('disabled', 'disabled').addClass('disabled');
           $addToCartBtn.find('span').removeClass('fadeInDown').addClass('animated zoomOut');
