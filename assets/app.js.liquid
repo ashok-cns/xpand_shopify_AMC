@@ -769,15 +769,15 @@ $(() => {
     $(document).on('click', '.ajax-submit', function (e) {
       e.preventDefault();
       if($(this).hasClass('cm-rec-pro-cta')){
-        const $variantId = $(this).attr('data-selected-variant');
-        const $addToCartBtn = $(this).closest('.cm-rec-prod-cta-wrapper').find('.add_to_cart');
+        var $variantId = $(this).attr('data-selected-variant');
+        var $addToCartBtn = $(this).closest('.cm-rec-prod-cta-wrapper').find('.add_to_cart');
         var ajaxData = {
           quantity: 1,
           id: $variantId,
         }
       }else{
-        const $addToCartForm = $(this).closest('form');
-        const $addToCartBtn = $addToCartForm.find('.add_to_cart');
+        var $addToCartForm = $(this).closest('form');
+        var $addToCartBtn = $addToCartForm.find('.add_to_cart');
         var ajaxData = $addToCartForm.serialize();
       }
      
