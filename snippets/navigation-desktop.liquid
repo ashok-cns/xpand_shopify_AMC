@@ -405,6 +405,7 @@
               {% if settings[prodVariantId] != blank %}              
               {% capture variantId %}
                 {% assign variantIdList = settings[prodVariantId] | split: ',' %}
+                {{ variantIdList | size }}==
                 <ul>
                 {% for variantListItem in variantIdList  %}
                   {% for variant in all_products[settings[prodObj]].variants %}                  
