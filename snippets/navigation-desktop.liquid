@@ -401,11 +401,15 @@
             {%  capture  prodObj %}recommended_product_{{ i }}{% endcapture %}
             {%  capture  prodVariantId %}recommended_variant_{{ i }}{% endcapture %}             
               {% assign prodTitle  = all_products[settings[prodObj]].title %}
+              
             
-              {% if settings[prodVariantId] != blank %}              
+              {% if settings[prodVariantId] != blank %}     
+              {% assign variantIdList = settings[prodVariantId] | split: ',' %}
+              {% assign variantIdListCount = variantIdList | size %} 
+              {% if variantIdListCount > 1 %}        
               {% capture variantId %}
-                {% assign variantIdList = settings[prodVariantId] | split: ',' %}
-                {{ variantIdList | size }}==
+               
+               
                 <ul>
                 {% for variantListItem in variantIdList  %}
                   {% for variant in all_products[settings[prodObj]].variants %}                  
@@ -435,6 +439,10 @@
         </button>
               {% endcapture %}
               {% else %}
+            {% endif %}
+
+              {% else %}
+
               {% assign variantId = all_products[settings[prodObj]].selected_or_first_available_variant.id %}
             {% endif %}
             {%  assign produHandle = all_products[settings[prodObj]].handle  %} 
@@ -453,6 +461,7 @@
                 <span  class="cm-crnt-price">{{ prodPrice | money }}</span> 
                 <div class="cm-rec-prod-cta-wrapper">
                   {% if settings[prodVariantId] != blank %}
+                  {{ variantIdListCount }}==
                   <div class="cm-rec-prod-cta-content">
                   {{ variantId }}                  
                   </div>
