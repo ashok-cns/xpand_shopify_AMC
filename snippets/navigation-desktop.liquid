@@ -461,12 +461,29 @@
                 <span  class="cm-crnt-price">{{ prodPrice | money }}</span> 
                 <div class="cm-rec-prod-cta-wrapper">
                   {% if settings[prodVariantId] != blank %}
-                  {{ variantIdListCount }}==
+                  {% if variantIdListCount > 1 %}
                   <div class="cm-rec-prod-cta-content">
                   {{ variantId }}                  
                   </div>
                   <button type="button" class="cm-rec-prod-opt-btn global-button global-button--primary">Options</button>
+                  {% else %}
+
+                  <button
+                        class="add_to_cart global-button global-button--primary ajax-submit cm-rec-pro-cta"
+                        type="button"
+                        data-add-to-cart
+                        data-selected-variant="{{ settings[prodVariantId] }}"
+                        disabled="disabled"
+                       ><span data-add-to-cart-text>
+                        Add to cart
+                    </span>
+                    <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" class="checkmark">
+          <path fill="none" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+        </svg>
+        </button>
+                {% endif %}
                 {% else %}
+
                 <button
                         class="add_to_cart global-button global-button--primary ajax-submit cm-rec-pro-cta"
                         type="button"
