@@ -471,20 +471,23 @@
                   {% for variantListItem in variantIdList  %}
                     {% for variant in all_products[settings[prodObj]].variants %}                  
                       {% if variantListItem contains variant.id %}
-                      {% if variant.available %}
+                      
                       <button
                         class="add_to_cart global-button global-button--primary ajax-submit cm-rec-pro-cta"
                         type="button"
                         data-add-to-cart
                         data-selected-variant="{{ variant.id }}"
                        ><span data-add-to-cart-text>
-                        Add to cart
+                        {% if variant.available %}
+                            {{ 'products.product.add_to_cart' | t }}
+                        {% else %}
+                            {{ 'products.product.sold_out' | t }}
+                        {% endif %}
                     </span>
                     <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" class="checkmark">
           <path fill="none" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
         </svg>
         </button>
-                    {% endif %}
                   {% endif %}
                 {% endfor %}
               {% endfor %}
