@@ -408,8 +408,6 @@
               {% assign variantIdListCount = variantIdList | size %} 
               {% if variantIdListCount > 1 %}        
               {% capture variantId %}
-               
-               
                 <ul>
                 {% for variantListItem in variantIdList  %}
                   {% for variant in all_products[settings[prodObj]].variants %}                  
@@ -434,22 +432,31 @@
                         Add to cart
                     </span>
                     <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" class="checkmark">
-          <path fill="none" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
-        </svg>
-        </button>
+                    <path fill="none" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </button>
               {% endcapture %}
               {% else %}
+              {% for variantListItem in variantIdList  %}
+                {% for variant in all_products[settings[prodObj]].variants %}                  
+                  {% if variantListItem contains variant.id %}
+                  {% assign prodImg  = variant.featured_image %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
             {% endif %}
 
               {% else %}
 
               {% assign variantId = all_products[settings[prodObj]].selected_or_first_available_variant.id %}
+              {% assign prodImg  = all_products[settings[prodObj]].selected_or_first_available_variant.featured_image %}
             {% endif %}
             {%  assign produHandle = all_products[settings[prodObj]].handle  %} 
               {% assign prodUrl  = all_products[settings[prodObj]].url %}
               {% assign prodPrice  = all_products[settings[prodObj]].price %}
-              {% comment %} {% assign prodImg  = all_products[settings[prodObj]].featured_image %} {% endcomment %}
               {% assign prodImg  = all_products[settings[prodObj]].selected_or_first_available_variant.featured_image %}
+              {% comment %} {% assign prodImg  = all_products[settings[prodObj]].featured_image %} {% endcomment %}
+              
               
               
               {%  unless settings[prodObj] == blank %}  
