@@ -1741,79 +1741,14 @@
         "label": "Recommended Product 1"
       },
       {
-        "type": "text",
-        "id": "recommended_variant_1",
-        "label": "Recommended Variant ID which associate with product 1"
-      },
-      {
         "type": "product",
         "id": "recommended_product_2",
         "label": "Recommended Product 2"
       },
       {
-        "type": "text",
-        "id": "recommended_variant_2",
-        "label": "Recommended Variant ID which associate with product 2"
-      },
-      {
         "type": "product",
         "id": "recommended_product_3",
         "label": "Recommended Product 3"
-      },
-      {
-        "type": "text",
-        "id": "recommended_variant_3",
-        "label": "Recommended Variant ID which associate with product 3"
-      },
-      {
-        "type": "product",
-        "id": "recommended_product_4",
-        "label": "Recommended Product 4"
-      },
-      {
-        "type": "text",
-        "id": "recommended_variant_4",
-        "label": "Recommended Variant ID which associate with product 4"
-      },
-      {
-        "type": "product",
-        "id": "recommended_product_5",
-        "label": "Recommended Product 5"
-      },
-      {
-        "type": "text",
-        "id": "recommended_variant_5",
-        "label": "Recommended Variant ID which associate with product 5"
-      },
-      {
-        "type": "product",
-        "id": "recommended_product_6",
-        "label": "Recommended Product 6"
-      },
-      {
-        "type": "text",
-        "id": "recommended_variant_6",
-        "label": "Recommended Variant ID which associate with product 6"
-      },
-      {
-        "type": "product",
-        "id": "recommended_product_7",
-        "label": "Recommended Product 7"
-      },
-      {
-        "type": "text",
-        "id": "recommended_variant_7",
-        "label": "Recommended Variant ID which associate with product 7"
-      },
-      {
-        "type": "product",
-        "id": "recommended_product_8",
-        "label": "Recommended Product 8"
-      },
-      {
-        "type": "text",
-        "id": "recommended_variant_8",
-        "label": "Recommended Variant ID which associate with product 8"
       },
       {
         "type": "header",
