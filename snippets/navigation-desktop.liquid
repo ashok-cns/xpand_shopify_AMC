@@ -441,6 +441,9 @@
                 {% for variant in all_products[settings[prodObj]].variants %}                  
                   {% if variantListItem contains variant.id %}
                   {% assign prodImg  = variant.featured_image %}
+                  {% if forloop.index == 1 %}
+                  {% break %}
+                  {% endif %}
                 {% endif %}
               {% endfor %}
             {% endfor %}
