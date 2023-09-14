@@ -407,7 +407,7 @@
               {% assign variantIdList = settings[prodVariantId] | split: ',' %}
               {% assign variantIdListCount = variantIdList | size %} 
               {% if variantIdListCount > 1 %}    
-              {% assign prodImg  = variant.featured_image %}    
+                
               {% capture variantId %}
                 <ul>
                 {% for variantListItem in variantIdList  %}
@@ -437,6 +437,13 @@
                   </svg>
                 </button>
               {% endcapture %}
+              {% for variantListItem in variantIdList  %}
+                {% for variant in all_products[settings[prodObj]].variants %}                  
+                  {% if variantListItem contains variant.id %}
+                  {% assign prodImg  = variant.featured_image %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
               {% else %}
               {% for variantListItem in variantIdList  %}
                 {% for variant in all_products[settings[prodObj]].variants %}                  
