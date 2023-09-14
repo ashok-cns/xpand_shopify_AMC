@@ -448,7 +448,8 @@
             {%  assign produHandle = all_products[settings[prodObj]].handle  %} 
               {% assign prodUrl  = all_products[settings[prodObj]].url %}
               {% assign prodPrice  = all_products[settings[prodObj]].price %}
-              {% assign prodImg  = all_products[settings[prodObj]].featured_image %}
+              {% comment %} {% assign prodImg  = all_products[settings[prodObj]].featured_image %} {% endcomment %}
+              {% assign prodImg  = product.selected_or_first_available_variant.image %}
               
               
               {%  unless settings[prodObj] == blank %}  
