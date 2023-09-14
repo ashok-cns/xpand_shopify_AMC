@@ -146,7 +146,7 @@
     "quick_shop_style": "popup",
     "cart_action": "ajax",
     "cart_info_icon": "shopify:\/\/shop_images\/money-back-icon-xpand.png",
-    "cart_info_content": "<p>More quantity more save!<\/p>",
+    "cart_info_content": "<p><strong>More quantity more save!<\/strong><\/p>",
     "show_lock_icon": true,
     "display_tos_checkbox": false,
     "tos_page": "",
