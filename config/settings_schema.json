@@ -1488,6 +1488,22 @@
       },
       {
         "type": "checkbox",
+        "id": "show_cart_info",
+        "label": "Show cart information ",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "cart_info_icon",
+        "label": "Cart information icon"
+      },
+      {
+        "type": "richtext",
+        "id": "cart_info_content",
+        "label": "Cart infomation content"
+      },
+      {
+        "type": "checkbox",
         "id": "show_lock_icon",
         "label": "Show lock icon on checkout button",
         "default": true
