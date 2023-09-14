@@ -406,7 +406,8 @@
               {% if settings[prodVariantId] != blank %}     
               {% assign variantIdList = settings[prodVariantId] | split: ',' %}
               {% assign variantIdListCount = variantIdList | size %} 
-              {% if variantIdListCount > 1 %}        
+              {% if variantIdListCount > 1 %}    
+              {% assign prodImg  = variant.featured_image %}    
               {% capture variantId %}
                 <ul>
                 {% for variantListItem in variantIdList  %}
