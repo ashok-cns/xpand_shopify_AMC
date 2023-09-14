@@ -468,11 +468,15 @@
                   <button type="button" class="cm-rec-prod-opt-btn global-button global-button--primary">Options</button>
                   {% else %}
 
-                  <button
+                  {% for variantListItem in variantIdList  %}
+                    {% for variant in all_products[settings[prodObj]].variants %}                  
+                      {% if variantListItem contains variant.id %}
+                      {% if variant.available %}
+                      <button
                         class="add_to_cart global-button global-button--primary ajax-submit cm-rec-pro-cta"
                         type="button"
                         data-add-to-cart
-                        data-selected-variant="{{ settings[prodVariantId] }}"
+                        data-selected-variant="{{ variant.id }}"
                        ><span data-add-to-cart-text>
                         Add to cart
                     </span>
@@ -480,6 +484,12 @@
           <path fill="none" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
         </svg>
         </button>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+
+                  
                 {% endif %}
                 {% else %}
 
