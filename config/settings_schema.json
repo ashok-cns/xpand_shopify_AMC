@@ -1488,6 +1488,22 @@
       },
       {
         "type": "checkbox",
+        "id": "show_cart_info",
+        "label": "Show cart information ",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "cart_info_icon",
+        "label": "Cart information icon"
+      },
+      {
+        "type": "richtext",
+        "id": "cart_info_content",
+        "label": "Cart infomation content"
+      },
+      {
+        "type": "checkbox",
         "id": "show_lock_icon",
         "label": "Show lock icon on checkout button",
         "default": true
@@ -1741,14 +1757,79 @@
         "label": "Recommended Product 1"
       },
       {
+        "type": "text",
+        "id": "recommended_variant_1",
+        "label": "Recommended Product variant 1"
+      },
+      {
         "type": "product",
         "id": "recommended_product_2",
         "label": "Recommended Product 2"
       },
       {
+        "type": "text",
+        "id": "recommended_variant_2",
+        "label": "Recommended Product variant 2"
+      },
+      {
         "type": "product",
         "id": "recommended_product_3",
         "label": "Recommended Product 3"
+      },
+      {
+        "type": "text",
+        "id": "recommended_variant_3",
+        "label": "Recommended Product variant 3"
+      },
+      {
+        "type": "product",
+        "id": "recommended_product_4",
+        "label": "Recommended Product 4"
+      },
+      {
+        "type": "text",
+        "id": "recommended_variant_4",
+        "label": "Recommended Product variant 4"
+      },
+      {
+        "type": "product",
+        "id": "recommended_product_5",
+        "label": "Recommended Product 5"
+      },
+      {
+        "type": "text",
+        "id": "recommended_variant_5",
+        "label": "Recommended Product variant 5"
+      },
+      {
+        "type": "product",
+        "id": "recommended_product_6",
+        "label": "Recommended Product 6"
+      },
+      {
+        "type": "text",
+        "id": "recommended_variant_6",
+        "label": "Recommended Product variant 6"
+      },
+      {
+        "type": "product",
+        "id": "recommended_product_7",
+        "label": "Recommended Product 7"
+      },
+      {
+        "type": "text",
+        "id": "recommended_variant_7",
+        "label": "Recommended Product variant 7"
+      },
+      {
+        "type": "product",
+        "id": "recommended_product_8",
+        "label": "Recommended Product 8"
+      },
+      {
+        "type": "text",
+        "id": "recommended_variant_8",
+        "label": "Recommended Product variant 8"
       },
       {
         "type": "header",
