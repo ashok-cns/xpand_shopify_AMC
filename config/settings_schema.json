@@ -1760,7 +1760,7 @@
         "type": "text",
         "id": "recommended_variant_1",
         "label": "Recommended Product variant 1"
-      },      
+      },
       {
         "type": "product",
         "id": "recommended_product_2",
