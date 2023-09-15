@@ -116,14 +116,12 @@ window.TriplePixelData={TripleName:"xpandlaces.myshopify.com",ver:"1.9.0"},funct
 
     <!-- Stylesheet for Fancybox library -->
     {{ 'fancybox.css' | asset_url | stylesheet_tag }}
-    {% if template contains 'product' %}
+
 
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
   />
-    {% endif %}
-
     <!-- Stylesheets for Turbo -->
     {{ 'styles.css' | asset_url | stylesheet_tag }}
 
@@ -163,12 +161,10 @@ window.TriplePixelData={TripleName:"xpandlaces.myshopify.com",ver:"1.9.0"},funct
 
    
     <script src="{{ 'jquery.min.js' | asset_url }}" defer></script>
-
-    {% if template contains 'product' %}
      <!-- ✅ load Slick ✅ -->
     {% comment %} <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> {% endcomment %}
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    {% endif %}
+
     {% if settings.show_multiple_currencies or settings.show_shipping_calculator %}
       <script type="text/javascript" src="/services/javascripts/currencies.js" data-no-instant></script>
     {% endif %}

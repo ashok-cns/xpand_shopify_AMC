@@ -1,7 +1,83 @@
 {% if section.settings.show_alert_bar %}
-  <div id="alert-bar" style="background: {{ section.settings.alert_bg_color }}; color:{{ section.settings.alert_text_color }};">
-    <div class="cm-inner-alert-box">{{ section.settings.alert_text }}</div>
+
+  <div
+    id="alert-bar"
+    style="background: {{ section.settings.alert_bg_color }}; color:{{ section.settings.alert_text_color }};"
+    {% if section.settings.enable_alert_bar_slider %}data-slider-enabled{% endif %}>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        {% for i in (1..5) %}
+          {% capture alertText %}alert_text_{{ i }}{% endcapture %}
+          {% capture alertIcon %}alert_icon_{{ i }}{% endcapture %}
+
+          <div class="cm-inner-alert-box swiper-slide">{{ section.settings[alertText] }}</div>
+        {% endfor %}
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    {% if section.settings.enable_view_all_offer %}
+      <div id="alert_offer_modal_cta" class="alert_offer_all">View all offer</div>
+    {% endif %}
   </div>
+  {% if section.settings.enable_view_all_offer %}
+    <div
+      topbar-overlay=""
+      data-overlay=""
+      class="alert-offer-overlay"></div>
+    <div data-modal="topbar-offers" class="alert-offer-modal bg-white topbar-modal">
+      <h2 class="topbar-modal__title text-primary">All Offers</h2>
+      <button
+        data-modal-hide=""
+        aria-label="Close modal"
+        class="modal__close">
+        <div class="modal__close-inner"></div>
+      </button>
+
+      <div modal-content="topbar-offers" class="modal__container">
+        {% for i in (1..5) %}
+          {% capture alertText %}alert_text_{{ i }}{% endcapture %}
+          {% capture alertIcon %}alert_icon_{{ i }}{% endcapture %}
+          {% capture alertDesc %}alert_text_desc_{{ i }}{% endcapture %}
+          <div
+            data-offer-id="1"
+            data-offer-type="expandable"
+            class="offer">
+            <div class="offer__image-wrapper"><img
+                loading="lazy"
+                src="{{ section.settings[alertIcon] | img_url: '200x' }}"
+                alt="{{ section.settings[alertText] }}"
+                class="offer__image loaded"></div>
+            <div class="offer__title-wrapper">
+              <h4 class="offer__title text-navy-900">
+                <p>{{ section.settings[alertText] }}</p>
+              </h4>
+              <button
+                offer-cta-expand="1"
+                aria-expanded="false"
+                aria-label="Open 'Free Shipping On U.S. Orders $10+'"
+                class="offer__cta">Learn More</button>
+            </div>
+            <div
+              aria-hidden="true"
+              offer-block-id="1"
+              class="offer__body-wrapper">
+              <div class="offer__body">
+                <p>{{ section.settings[alertDesc] }}</p>
+              </div>
+              <button
+                offer-cta-collapse=""
+                aria-label="Close 'Free Shipping On U.S. Orders $10+'"
+                class="offer__cta">Show Less</button>
+            </div>
+          </div>
+        {% endfor %}
+
+
+      </div>
+    </div>
+  {% endif %}
+  <div></div>
 {% endif %}
 
 <script
@@ -14,8 +90,8 @@
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
-                                                                                                                          "@type": "Organization",
-                                                                                                                          "name": "{{ shop.name }}",
+                                                      "@type": "Organization",
+                                                      "name": "{{ shop.name }}",
   {% if section.settings.logo %}
     {% assign image_size = section.settings.logo.width | append: 'x' %}
     "logo": "https:{{ section.settings.logo | img_url: image_size }}",
@@ -47,7 +123,7 @@
   "{{ settings.whatsapp_link }}",
   "{{ settings.youtube_link }}"
   ],
-                                                                                                                          "url": "{{ shop.url }}{{ page.url }}"
+                                                                                                                                                                                  "url": "{{ shop.url }}{{ page.url }}"
   }
 </script>
 
@@ -55,14 +131,14 @@
   <script type="application/ld+json">
     {
     "@context": "http://schema.org",
-                                                                                                                                                                                                                                  "@type": "WebSite",
-                                                                                                                                                                                                                                  "name": "{{ shop.name }}",
+                                                                                                                                                                                                                                                                                                                          "@type": "WebSite",
+                                                                                                                                                                                                                                                                                                                          "name": "{{ shop.name }}",
     "potentialAction": {
-                                                                                                                                                                                                                                    "@type": "SearchAction",
-                                                                                                                                                                                                                                    "target": "{{ routes.search_url }}?q={search_term_string}",
+                                                                                                                                                                                                                                                                                                                            "@type": "SearchAction",
+                                                                                                                                                                                                                                                                                                                            "target": "{{ routes.search_url }}?q={search_term_string}",
     "query-input": "required name=search_term_string"
-                                                                                                                                                                                                                                  },
-                                                                                                                                                                                                                                  "url": "{{ shop.url }}{{ page.url }}"
+                                                                                                                                                                                                                                                                                                                          },
+                                                                                                                                                                                                                                                                                                                          "url": "{{ shop.url }}{{ page.url }}"
     }
   </script>
 {% endif %}
@@ -785,11 +861,11 @@
           {{ logo }}
 
           <div class="
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        nav
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        nav--combined
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        nav--{{ section.settings.menu_alignment }}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        {{ section.settings.menu_alignment }}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                nav
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                nav--combined
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                nav--{{ section.settings.menu_alignment }}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                {{ section.settings.menu_alignment }}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ">
             <div class="combined-menu-container">
               {{ menu_left }}
               {{ menu_right }}
@@ -884,9 +960,75 @@ editor events, etc.
         "label": "Show Alert Bar",
         "default": true
       }, {
+        "type": "checkbox",
+        "id": "enable_alert_bar_slider",
+        "label": "Enable carousal on alert bar",
+        "default": false
+      }, {
+        "type": "checkbox",
+        "id": "enable_view_all_offer",
+        "label": "Show View all offer button",
+        "default": true
+      }, {
+        "type": "image_picker",
+        "id": "alert_icon_1",
+        "label": "Alet Icon 1"
+      }, {
         "type": "richtext",
-        "id": "alert_text",
-        "label": "Alert Text"
+        "id": "alert_text_1",
+        "label": "Alert Text 1"
+      }, {
+        "type": "richtext",
+        "id": "alert_text_desc_1",
+        "label": "Alert Description 1"
+      }, {
+        "type": "image_picker",
+        "id": "alert_icon_2",
+        "label": "Alet Icon 2"
+      }, {
+        "type": "richtext",
+        "id": "alert_text_2",
+        "label": "Alert Text 2"
+      }, {
+        "type": "richtext",
+        "id": "alert_text_desc_2",
+        "label": "Alert Description 2"
+      }, {
+        "type": "image_picker",
+        "id": "alert_icon_3",
+        "label": "Alet Icon 3"
+      }, {
+        "type": "richtext",
+        "id": "alert_text_3",
+        "label": "Alert Text 3"
+      }, {
+        "type": "richtext",
+        "id": "alert_text_desc_3",
+        "label": "Alert Description 3"
+      }, {
+        "type": "image_picker",
+        "id": "alert_icon_4",
+        "label": "Alet Icon 4"
+      }, {
+        "type": "richtext",
+        "id": "alert_text_4",
+        "label": "Alert Text 4"
+      }, {
+        "type": "richtext",
+        "id": "alert_text_desc_4",
+        "label": "Alert Description 4"
+      }, {
+        "type": "image_picker",
+        "id": "alert_icon_5",
+        "label": "Alet Icon 5"
+      }, {
+        "type": "richtext",
+        "id": "alert_text_5",
+        "label": "Alert Text 5"
+      }, {
+        "type": "richtext",
+        "id": "alert_text_desc_5",
+        "label": "Alert Description 5"
       }, {
         "type": "color",
         "id": "alert_text_color",
