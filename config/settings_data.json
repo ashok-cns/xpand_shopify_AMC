@@ -1271,8 +1271,7 @@
         "blocks": {
           "1489175056408": {
             "type": "search",
-            "settings": {
-            }
+            "settings": {}
           },
           "1489175058545": {
             "type": "recent_posts",
@@ -2105,8 +2104,7 @@
       "855628211100114053": {
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   }
