@@ -20506,10 +20506,12 @@ body.show-cart-overlay:after {
   background: rgba(0,0,0,0.1);
  }
  .mini-cart__item-price {
-  flex-direction: row-reverse;
   display: flex;
   align-items: center;
   order: 3;
+}
+.mini-cart__item-price.text-strikethrough {
+  flex-direction: row-reverse;
 }
 .cm-rec-prod-cta-wrapper button.cm-rec-prod-opt-btn.global-button:hover,
 .cm-rec-prod-cta-wrapper button.cm-rec-pro-cta.global-button:hover {
