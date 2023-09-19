@@ -829,7 +829,7 @@
           "enable_view_all_offer": true,
           "alert_icon_1": "shopify:\/\/shop_images\/3_9df04767-bd8b-4678-9f01-e5ad7c395c89.png",
           "alert_text_1": "<p>Free Shipping to the USA. Orders $30+<\/p>",
-          "alert_text_desc_1": "<p>We offer free shipping for orders over $30 in the U.S. and $2.99 shipping for orders under $30. Need it faster? Choose next day shipping for $10.99 in the USA.<\/p>",
+          "alert_text_desc_1": "<p>We offer free shipping for orders over $30 in the U.S. and $2.99 shipping for orders under $30. <strong>Need it faster?<\/strong> Choose 2 day shipping for $10.99 to the USA.<\/p>",
           "alert_icon_2": "shopify:\/\/shop_images\/Untitled_design_8_df05e506-4ddd-45c6-adc9-f5da2a407097.png",
           "alert_text_2": "<p>Free Shipping On Canada Orders $30+<\/p>",
           "alert_text_desc_2": "<p>Canadian orders over $30 qualify for free shipping, and shipping costs $8.99 - $10.99 <em>(depending on province)<\/em> for orders under $30.<\/p>",
