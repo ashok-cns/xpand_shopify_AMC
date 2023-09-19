@@ -828,20 +828,20 @@
           "enable_alert_bar_slider": true,
           "enable_view_all_offer": true,
           "alert_icon_1": "shopify:\/\/shop_images\/Promo_Free_Shipping_icon_110x100_a8c5cf43-7822-4902-a97c-0e70719bfd3e.png",
-          "alert_text_1": "<p>AS FEATURED ON<strong> 'GOOD MORNING AMERICA'<\/strong><\/p>",
-          "alert_text_desc_1": "<p>We offer free shipping for orders over $10.01 in the U.S. and $5 shipping for orders under $10.01. Need it faster? Choose expedited shipping for $15 in the U.S.<\/p>",
+          "alert_text_1": "<p>Free Shipping to the USA. Orders $30+<\/p>",
+          "alert_text_desc_1": "<p>We offer free shipping for orders over $30 in the U.S. and $2.99 shipping for orders under $30. Need it faster? Choose next day shipping for $10.99 in the USA.<\/p>",
           "alert_icon_2": "shopify:\/\/shop_images\/Promo_International_Shipping_icon_110x100_9bff6d25-4db2-4240-a823-0964044d62df.png",
-          "alert_text_2": "<p>AS FEATURED ON<strong> 'GOOD MORNING AMERICA 2'<\/strong><\/p>",
-          "alert_text_desc_2": "<p>We offer free shipping for orders over $10.01 in the U.S. and $5 shipping for orders under $10.01. Need it faster? Choose expedited shipping for $15 in the U.S..<\/p>",
+          "alert_text_2": "<p>Free Shipping On Canada Orders $30+<\/p>",
+          "alert_text_desc_2": "<p>Canadian orders over $30 qualify for free shipping, and shipping costs $8.99 - $10.99 <em>(depending on province)<\/em> for orders under $30.<\/p>",
           "alert_icon_3": "shopify:\/\/shop_images\/BYP_promo_01c_110x100_fedb7dff-a381-438f-90ef-6a351e7f29a7.png",
-          "alert_text_3": "<p>AS FEATURED ON<strong> 'GOOD MORNING AMERICA 3'<\/strong><\/p>",
-          "alert_text_desc_3": "<p>We offer free shipping for orders over $10.01 in the U.S. and $5 shipping for orders under $10.01. Need it faster? Choose expedited shipping for $15 in the U.S..<\/p>",
+          "alert_text_3": "<p>Bundle Savings. Mix & Match <\/p>",
+          "alert_text_desc_3": "<p>Save extra when you buy more. Mix and match between laces, socks, or shoewipes. <br\/><br\/>Any 3 items for $30<br\/>Any 6 items for $40<br\/>Any 8 items for $50<\/p>",
           "alert_icon_4": "shopify:\/\/shop_images\/Promo_30_day_Returns_Icon_110x100_ec8889ca-4ce2-4a26-9296-02be73c14ffe.png",
-          "alert_text_4": "<p>AS FEATURED ON<strong> 'GOOD MORNING AMERICA 4'<\/strong><\/p>",
-          "alert_text_desc_4": "<p>We offer free shipping for orders over $10.01 in the U.S. and $5 shipping for orders under $10.01. Need it faster? Choose expedited shipping for $15 in the U.S..<\/p>",
+          "alert_text_4": "<p>Want It Quick? Free 2-Day Shipping for USA.<\/p>",
+          "alert_text_desc_4": "<p>No more long waits! For orders $50+, enjoy an automatic upgrade to DHL Express for swift 2-day delivery.<\/p>",
           "alert_icon_5": "shopify:\/\/shop_images\/Promo_Signup_icon_110x100_dd6901be-ecc7-4fc9-9fcd-b6eeb5c7f488.png",
-          "alert_text_5": "<p>AS FEATURED ON<strong> 'GOOD MORNING AMERICA 5'<\/strong><\/p>",
-          "alert_text_desc_5": "<p>We offer free shipping for orders over $10.01 in the U.S. and $5 shipping for orders under $10.01. Need it faster? Choose expedited shipping for $15 in the U.S..<\/p>",
+          "alert_text_5": "<p>90-Day Peace of Mind Promise<\/p>",
+          "alert_text_desc_5": "<p>At Xpand, we stand by the quality of our laces. That's why we offer a full 90-day satisfaction guarantee. If they don't meet your expectations within this time, just reach out to us, and we'll make it right.<br\/><br\/>Contact us <a href=\"\/pages\/contact-us\" title=\"Contact Us\">here<\/a>.<\/p>",
           "alert_text_color": "#ffffff",
           "alert_bg_color": "#008ffd",
           "social_icons_header": false,
@@ -1271,7 +1271,8 @@
         "blocks": {
           "1489175056408": {
             "type": "search",
-            "settings": {}
+            "settings": {
+            }
           },
           "1489175058545": {
             "type": "recent_posts",
@@ -2104,7 +2105,8 @@
       "855628211100114053": {
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       }
     }
   }
