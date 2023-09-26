@@ -20552,7 +20552,7 @@ body.show-cart-overlay:after {
     grid-row-end: 3;
 }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .alert-offer-modal.topbar-modal .offer__body-wrapper {
     grid-row-start: 3;
     grid-column-start: 1;
@@ -20577,4 +20577,12 @@ div#alert-bar {
   padding-left: 0px;
   padding-right: 0px;
 }
+}
+@media screen and (max-width: 749px) {
+  .cart_content .product-quantity-box {
+    width: 87px
+  }
+  .cart_content .product-quantity-box .quantity, #cart_form .product-quantity-box .quantity {
+    width: 40%;
+  }
 }
