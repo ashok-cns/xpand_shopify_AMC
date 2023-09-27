@@ -90,8 +90,8 @@
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
-                                                            "@type": "Organization",
-                                                            "name": "{{ shop.name }}",
+                                                                "@type": "Organization",
+                                                                "name": "{{ shop.name }}",
   {% if section.settings.logo %}
     {% assign image_size = section.settings.logo.width | append: 'x' %}
     "logo": "https:{{ section.settings.logo | img_url: image_size }}",
@@ -123,7 +123,7 @@
   "{{ settings.whatsapp_link }}",
   "{{ settings.youtube_link }}"
   ],
-                                                                                                                                                                                        "url": "{{ shop.url }}{{ page.url }}"
+                                                                                                                                                                                            "url": "{{ shop.url }}{{ page.url }}"
   }
 </script>
 
@@ -131,14 +131,14 @@
   <script type="application/ld+json">
     {
     "@context": "http://schema.org",
-                                                                                                                                                                                                                                                                                                                                      "@type": "WebSite",
-                                                                                                                                                                                                                                                                                                                                      "name": "{{ shop.name }}",
+                                                                                                                                                                                                                                                                                                                                              "@type": "WebSite",
+                                                                                                                                                                                                                                                                                                                                              "name": "{{ shop.name }}",
     "potentialAction": {
-                                                                                                                                                                                                                                                                                                                                        "@type": "SearchAction",
-                                                                                                                                                                                                                                                                                                                                        "target": "{{ routes.search_url }}?q={search_term_string}",
+                                                                                                                                                                                                                                                                                                                                                "@type": "SearchAction",
+                                                                                                                                                                                                                                                                                                                                                "target": "{{ routes.search_url }}?q={search_term_string}",
     "query-input": "required name=search_term_string"
-                                                                                                                                                                                                                                                                                                                                      },
-                                                                                                                                                                                                                                                                                                                                      "url": "{{ shop.url }}{{ page.url }}"
+                                                                                                                                                                                                                                                                                                                                              },
+                                                                                                                                                                                                                                                                                                                                              "url": "{{ shop.url }}{{ page.url }}"
     }
   </script>
 {% endif %}
@@ -194,8 +194,16 @@
   </div>
   {% endif %}  {% endcomment %}
 
-  <div class="top-bar">
-    <details data-mobile-menu>
+  {% comment %} <span class="mobile-menu-title">{{ 'layout.general.menu' | t }}</span> {% endcomment %}
+  {% comment %} {%
+  render 'mobile-menu',
+  menu: section.settings.main_linklist2, %}
+  {%
+  render 'mobile-menu',
+  menu: section.settings.top_bar_menu,
+  context: 'top_bar_menu', %} {% endcomment %}
+
+    <div class="top-bar"> <details data-mobile-menu>
       <summary class="mobile_nav dropdown_link" data-mobile-menu-trigger>
         <div data-mobile-menu-icon>
           <span></span>
@@ -204,20 +212,13 @@
           <span></span>
         </div>
 
-        {% comment %} <span class="mobile-menu-title">{{ 'layout.general.menu' | t }}</span> {% endcomment %}
       </summary>
       <div class="mobile-menu-container dropdown" data-nav>
         <ul class="menu" id="mobile_menu">
           {%
              render 'mobile-menu',
            menu: section.settings.main_mobile_linklist, %}
-          {% comment %} {%
-          render 'mobile-menu',
-          menu: section.settings.main_linklist2, %}
-          {%
-          render 'mobile-menu',
-          menu: section.settings.top_bar_menu,
-          context: 'top_bar_menu', %} {% endcomment %}
+
 
           {% if section.settings.phone_number != blank %}
             <li>
@@ -282,7 +283,7 @@
           data-dropdown-rel="search"></a>
       {% endif %}
 
-      {% comment %} Mobile Mega Menu {% endcomment %}
+      <!-- Mobile Mega Menu -->
       {% if section.settings.desktop_cta_text != blank %}
         <div class="mobile-mega-nav-wrapper">
           <a
@@ -294,7 +295,7 @@
             <span class="icon-down-arrow"></span>
           </a>
         </div>
-        {% comment %} Drop down mega menu  {% endcomment %}
+        <!-- Drop down mega menu  -->
         <script>
           var mobileSubNav = `{% if section.blocks.size > 0 %}<div class="nav-drop row mega-drop desktop"><span class="close-meganav-mobile"></span>{% for block in section.blocks %}{% if block.settings.enable_block %}<a href="{{ block.settings.link }}" class="item"><img class="lazyload" data-src="{{ block.settings.image | img_url: 'x200' }}"><h3>{{ block.settings.name }}</h3>{{ block.settings.caption }}</a>{% endif %}{% endfor %}</div>{% endif %}`
 
@@ -785,6 +786,7 @@
            menu: section.settings.main_linklist,
            megaNav: section.settings.desktop_cta_text,
            style: menu_style, %}
+
         {% endcapture %}
 
         {% capture menu_right %}
@@ -793,6 +795,9 @@
            menu: section.settings.main_linklist2,
            showCart: section.settings.show_cart,
            style: menu_style, %}
+          {%
+             render 'minicart-drawer',
+             showCart: section.settings.show_cart, %}
         {% endcapture %}
 
         {% capture search %}
@@ -861,11 +866,11 @@
           {{ logo }}
 
           <div class="
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          nav
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          nav--combined
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          nav--{{ section.settings.menu_alignment }}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          {{ section.settings.menu_alignment }}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      nav
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      nav--combined
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      nav--{{ section.settings.menu_alignment }}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      {{ section.settings.menu_alignment }}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ">
             <div class="combined-menu-container">
               {{ menu_left }}
               {{ menu_right }}

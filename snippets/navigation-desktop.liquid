@@ -231,7 +231,7 @@
     <span class="cart_count">{{ cart.item_count }}</span>
     </a>
 
-    {% unless settings.cart_action == 'ajax' and template contains 'cart' %}
+    {% comment %} {% unless settings.cart_action == 'ajax' and template contains 'cart' %}
     <div class="tos_warning cart_content animated fadeIn">
     <div class="js-empty-cart__message {% if cart.item_count > 0 %}hidden{% endif %}">
     <p class="empty_cart">{{ 'layout.general.empty_cart' | t }}</p>
@@ -270,9 +270,9 @@
       {% endif %}
     </div>
 
-    {% comment %} <a class="cart_content__continue-shopping secondary_button">
+    <!-- <a class="cart_content__continue-shopping secondary_button">
     {{ 'cart.general.continue_shopping' | t }}
-    </a> {% endcomment %}
+    </a> -->
     <div class="cart_items__content__wrapper">
     <ul class="cart_items js-cart_items">
     {%- assign total_saving = 0 -%}
@@ -319,9 +319,9 @@
     {% if item.properties %}
     {% for p in item.properties %}
     {% if p.last != blank %}
-    {% comment %} <div class="line-item">
+   <!-- <div class="line-item">
     {{ p.first }}: {{ p.last }}
-    </div>{% endcomment %}
+    </div>-->
     {% endif %} 
     {% endfor %}
     {% endif %}
@@ -333,12 +333,12 @@
     
     <span data-upate-price-default="{{ item.price }}" data-price="{{ item.price }}" data-original-price="{{ item.original_price }}" class="money {% if item.price < item.variant.compare_at_price or item.line_level_discount_allocations.size > 0 %}sale{% endif %}">
       
-    {% comment %} <span data-upate-price="{{ item.price }}" data-price="{{ item.price }}" class="updated-amount"> {% endcomment %}
+    <!--<span data-upate-price="{{ item.price }}" data-price="{{ item.price }}" class="updated-amount"> -->
     {%
     render 'price-element',
     price: item.original_price  %}
     </span>
-    {% comment %} or item.line_level_discount_allocations.size > 0 {% endcomment %}
+    <!--or item.line_level_discount_allocations.size > 0 -->
     {% if item.price < item.variant.compare_at_price  %}
   <span class="money was_price">
     {%
@@ -358,13 +358,13 @@
     product: item.product,
     class: 'mini-cart__unit-price' %}
 
-    {% comment %} {% if item.line_level_discount_allocations.size > 0 %}
+    <!--{% if item.line_level_discount_allocations.size > 0 %}
     {% for discount_allocation in item.line_level_discount_allocations %}
     <p class="notification-discount meta">
     {{ discount_allocation.discount_application.title }}
     </p>
     {% endfor %}
-    {% endif %} {% endcomment %}
+    {% endif %} -->
 
     <div class="product-quantity-box">
     <span class="ss-icon product-minus js-change-quantity" data-func="minus">
@@ -398,7 +398,7 @@
     </li>
     {% endfor %}
     </ul>
-    {% comment %} add recommanded products {% endcomment %}
+    <!-- add recommanded products -->
       
       <div class="cm-recommended-products-wrapper">
         {% if settings.recommended_title != blank %}
@@ -474,7 +474,7 @@
             {%  assign produHandle = all_products[settings[prodObj]].handle  %} 
               {% assign prodUrl  = all_products[settings[prodObj]].url %}
               {% assign prodPrice  = all_products[settings[prodObj]].price %}
-              {% comment %} {% assign prodImg  = all_products[settings[prodObj]].featured_image %} {% endcomment %}
+              <!-- {% assign prodImg  = all_products[settings[prodObj]].featured_image %} -->
               
               
               
@@ -544,37 +544,13 @@
                 </button>
                       {% endif %}
                 </div>
-                {% comment %} <a class="cm-rec-pro-cta" href="{{ prodUrl }}" class="cm-btn">Pick your color</a> {% endcomment %}
-                {% comment %} <form action="/cart/add" method="post" enctype="multipart/form-data" id="add-to-cart-{{ all_products[settings[prodObj]].id }}">
-                  <input type="hidden" name="id" value="{{ variantId }}" />
-                  <input type="hidden" name="quantity" value="1">
-                <!--product add to cart-->
-                <button
-                        class="add_to_cart global-button global-button--primary ajax-submit cm-rec-pro-cta"
-                        type="submit"
-                        name="add"
-                        data-add-to-cart
-                       >
-
-                    <span data-add-to-cart-text>
-                        {% if all_products[settings[prodObj]].available %}
-                            {{ 'products.product.add_to_cart' | t }}
-                        {% else %}
-                            {{ 'products.product.sold_out' | t }}
-                        {% endif %}
-                    </span>
-
-                </button>
-                <!--end product add to cart-->
-
-            </form> {% endcomment %}
               </div>
             </div>
           {% endunless %}
             {% endfor %}
           </div>
         </div>
-      {% comment %} add recommanded products {% endcomment %}
+      <!-- add recommanded products -->
       </div>
     <ul class="subtotal-container-wrapper">
     <li class="cart_discounts js-cart_discounts sale">
@@ -604,22 +580,6 @@
 
     <span>{{ 'layout.general.subtotal' | t }}</span>
     </li>
-   {% comment %}
-    <li class="cart_savings sale js-cart_savings">
-    {% if settings.display_savings and total_saving > 0 or settings.display_savings and cart.total_discount > 0 %}
-    <span class="right">
-    <span class="money">
-    {% assign total_savings = total_saving | plus: cart.total_discount %}
-    {%
-    render 'price-element',
-    price: total_savings %}
-    </span>
-    </span>
-
-    <span>{{ 'layout.general.savings' | t }}</span>
-    {% endif %}
-    </li>
-  {% endcomment %}
 
     <li>
     {%- capture taxes_shipping_checkout -%}
@@ -698,7 +658,7 @@
     </ul>
     </form>
     </div>
-    {% endunless %}
+    {% endunless %} {% endcomment %}
     </div>
     {% endif %}
   </ul>

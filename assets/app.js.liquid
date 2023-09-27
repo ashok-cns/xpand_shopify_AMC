@@ -577,7 +577,7 @@ $(() => {
       let saving = 0;
 
       $.each(cart.items, (index, item) => {
-        //console.log('CartEachItem==>', item);
+        console.log('CartEachItem==>', item);
         const itemDiscounts = item.discounts;
         let discountMessage = '';
 
@@ -595,7 +595,7 @@ $(() => {
             + '</div></a>';
         }
 
-        cartItemsHTML += `<div class="mini-cart__item-content"><div class="mini-cart__item-title"><a href="${item.url}">${item.title}</a>`;
+        cartItemsHTML += `<div class="mini-cart__item-content"><div class="mini-cart__item-title estt"><a href="${item.url}">${item.title}</a>`;
 
         if (item.selling_plan_allocation) {
           cartItemsHTML += `<div class="meta">${item.selling_plan_allocation.selling_plan.name}</div>`;
@@ -723,7 +723,7 @@ $(() => {
     }
     applyDiscount();
     $('body').addClass('show-cart-overlay');
-    $('.cart-container').addClass('active_link');
+    $('.cart-container, header[data-desktop-header]').addClass('active_link');
   }
 
   $('body').on('change', '[data-cart-quantity-input]', function () {
@@ -822,11 +822,11 @@ $(() => {
                 }
 
                 if ($('#header').is(':visible')) {
-                  $('#header .cart-container').addClass('active_link');
+                  $('#header .cart-container, header[data-desktop-header]').addClass('active_link');
                 } else if ($('.sticky_nav--stick').length) {
-                  $('.sticky_nav .cart-container').addClass('active_link');
+                  $('.sticky_nav .cart-container, header[data-desktop-header]').addClass('active_link');
                 } else {
-                  $('.top-bar .cart-container').addClass('active_link');
+                  $('.top-bar .cart-container, header[data-desktop-header]').addClass('active_link');
                 }
 
                 // block scrolling on mobile
@@ -1635,7 +1635,7 @@ $(document).on('click', '.go-to-top', () => {
     var swiper = new Swiper(".mySwiper", {
       centeredSlides: true,
       autoplay: {
-        delay: 2500,
+        delay: 5000,
         disableOnInteraction: false,
       },
       navigation: {

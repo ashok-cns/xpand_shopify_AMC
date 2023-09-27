@@ -145,8 +145,14 @@
     "quick_shop_enabled": true,
     "quick_shop_style": "popup",
     "cart_action": "ajax",
+<<<<<<< HEAD
+    "show_cart_info": false,
+    "cart_info_icon": "shopify:\/\/shop_images\/money-back-icon-xpand.png",
+    "cart_info_content": "<p><strong>More quantity more save!<\/strong><\/p>",
+=======
     "cart_info_icon": "shopify:\/\/shop_images\/icons-01-v1582732985230_3085d0f7-b27b-4a4f-9cbd-b6e6c1844649.png",
     "cart_info_content": "<p><a href=\"\/pages\/shipping-delivery\" title=\"Shipping\">Free & Easy Returns<\/a><\/p>",
+>>>>>>> main
     "show_lock_icon": true,
     "display_tos_checkbox": false,
     "tos_page": "",
@@ -2114,12 +2120,15 @@
         "disabled": false,
         "settings": {
         }
+<<<<<<< HEAD
+=======
       },
       "4705145147225299685": {
         "type": "shopify:\/\/apps\/tolstoy-shoppable-video-quiz\/blocks\/widget-block\/06fa8282-42ff-403e-b67c-1936776aed11",
         "disabled": true,
         "settings": {
         }
+>>>>>>> main
       }
     }
   }
