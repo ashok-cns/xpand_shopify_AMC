@@ -2373,7 +2373,7 @@ window.header = {
     var closeMiniCart = function() {
       $('body').removeClass('is-active').removeClass('blocked-scroll');
       $('.dropdown_link').toggleClass('active_link');
-      $('.cart-container').removeClass('active_link');
+      $('.cart-container, header[data-desktop-header]').removeClass('active_link');
       $('body').removeClass('show-cart-overlay');
     };
 
@@ -2517,7 +2517,7 @@ window.header = {
     // Toggle mini-cart with menu icon
     if (window.PXUTheme.theme_settings.cart_action !== 'redirect_cart') {
       $('.mini_cart').on('click ', function () {
-        const $cartContainer = $(this).parent();
+        const $cartContainer = $(this).closest('header[data-desktop-header]');//$(this).parent();
         if ($cartContainer.hasClass('active_link')) {
           closeMiniCart();
         } else {
@@ -2526,7 +2526,7 @@ window.header = {
       });
 
       $('.cart-container').on('mouseenter', function () {
-        const $cartContainer = $(this);
+        const $cartContainer = $(this).closest('header[data-desktop-header]');//$(this);
         clearTimeout(closeTimer);
         openMiniCart($cartContainer);
       });
