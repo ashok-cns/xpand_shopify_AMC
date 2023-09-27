@@ -723,7 +723,7 @@ $(() => {
     }
     applyDiscount();
     $('body').addClass('show-cart-overlay');
-    $('.cart-container').addClass('active_link');
+    $('.cart-container, header[data-desktop-header]').addClass('active_link');
   }
 
   $('body').on('change', '[data-cart-quantity-input]', function () {
