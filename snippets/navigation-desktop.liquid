@@ -231,12 +231,7 @@
     <span class="cart_count">{{ cart.item_count }}</span>
     </a>
 
-    
-    </div>
-    {% endif %}
-  </ul>
-</nav>
-{% unless settings.cart_action == 'ajax' and template contains 'cart' %}
+    {% unless settings.cart_action == 'ajax' and template contains 'cart' %}
     <div class="tos_warning cart_content animated fadeIn">
     <div class="js-empty-cart__message {% if cart.item_count > 0 %}hidden{% endif %}">
     <p class="empty_cart">{{ 'layout.general.empty_cart' | t }}</p>
@@ -704,3 +699,7 @@
     </form>
     </div>
     {% endunless %}
+    </div>
+    {% endif %}
+  </ul>
+</nav>
