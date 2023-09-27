@@ -70,7 +70,7 @@
 
               <div class="mini-cart__item-content">
                 <div class="mini-cart__item-title ertt">
-                  <a href="{{ item.url }}">
+                  <a href="{{ item.url }}" data-title="{{ item.product.title }}">
                     {{- item.product.title | escape -}}
                   </a>
                   {% unless item.product.has_only_default_variant or item.variant.title contains "Title" %}
