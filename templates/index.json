@@ -128,7 +128,7 @@
             "title": "Original No-Tie <br> Lacing System",
             "heading_size": "regular_text",
             "text": "",
-            "button_label": "SHOP FLAT LACES",
+            "button_label": "FLAT LACES",
             "button_link": "shopify:\/\/products\/no-tie-original-elastic-lacing-system",
             "align_text": "center",
             "border_style": "none",
@@ -144,7 +144,7 @@
             "title": "Quick-Release <br> Lacing System",
             "heading_size": "regular_text",
             "text": "",
-            "button_label": "SHOP ROUND LACES",
+            "button_label": "ROUND LACES",
             "button_link": "shopify:\/\/products\/quick-release-round-lacing-system",
             "align_text": "center",
             "border_style": "none",
@@ -160,7 +160,7 @@
             "title": "Magnetic Urban <br> Elastic Belt",
             "heading_size": "regular_text",
             "text": "",
-            "button_label": "SHOP URBAN BELT",
+            "button_label": "URBAN BELT",
             "button_link": "shopify:\/\/products\/urban-belt",
             "align_text": "center",
             "border_style": "none",
@@ -183,13 +183,29 @@
             "link_text_color": "#ffffff",
             "link_bg_color": "#0090fc"
           }
+        },
+        "325a5d8a-634d-48c7-8104-6c8818e94840": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "Add a title or tagline",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
         }
       },
       "block_order": [
         "16315440459bd794b1-0",
         "16315440459bd794b1-1",
         "25fb6d2d-c187-4690-b0f2-b761d614ff8b",
-        "bd3a6469-81d2-4769-bf97-fcdfe27706ab"
+        "bd3a6469-81d2-4769-bf97-fcdfe27706ab",
+        "325a5d8a-634d-48c7-8104-6c8818e94840"
       ],
       "settings": {
         "layout": "grid",
