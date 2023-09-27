@@ -69,7 +69,7 @@
               </a>
 
               <div class="mini-cart__item-content">
-                <div class="mini-cart__item-title">
+                <div class="mini-cart__item-title ertt">
                   <a href="{{ item.url }}">
                     {{- item.product.title | escape -}}
                   </a>
@@ -99,10 +99,7 @@
                 <div class="mini-cart__item-price">
                   {% if item.price > 0 %}
 
-                    <span data-upate-price-default="{{ item.price }}"
-                      data-price="{{ item.price }}"
-                      data-original-price="{{ item.original_price }}"
-                      class="money {% if item.price < item.variant.compare_at_price or item.line_level_discount_allocations.size > 0 %}sale{% endif %}">
+                    <span data-upate-price-default="{{ item.price }}"data-price="{{ item.price }}"data-original-price="{{ item.original_price }}"class="money {% if item.price < item.variant.compare_at_price or item.line_level_discount_allocations.size > 0 %}sale{% endif %}">
 
                       <!--<span data-upate-price="{{ item.price }}" data-price="{{ item.price }}" class="updated-amount"> -->
                       {%
@@ -449,8 +446,7 @@
               name="checkout"
               class="global-button global-button--primary add_to_cart"
               data-minicart-checkout-button
-              {% if settings.cart_checkout_bg_color != blank or settings.cart_checkout_text_color != blank %}
-              style="background: {{ settings.cart_checkout_bg_color }}; color: {{settings.cart_checkout_text_color }}; border: none;{% endif %}">
+              {% if settings.cart_checkout_bg_color != blank or settings.cart_checkout_text_color != blank %}style="background: {{ settings.cart_checkout_bg_color }}; color: {{settings.cart_checkout_text_color }}; border: none;{% endif %}">
               {% if settings.show_lock_icon %}
                 <span class="icon-lock"></span>
               {% endif %}
