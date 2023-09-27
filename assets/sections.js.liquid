@@ -2379,6 +2379,15 @@ window.header = {
 
     var openMiniCart = function($cart_container) {
       window.mobileMenuDrawer.close();
+      if(window.innerWidth < 750){
+        var alertHeight = 0
+        let headerHeight = $('#header').innerHeight()+2;
+        if($('#alert-bar').length > 0 ){
+           alertHeight = $('#alert-bar').innerHeight();
+        }
+        $('header[data-desktop-header] .cart_content').Css('top', headerHeight+alertHeight)
+      }
+        
       $('.dropdown_link').removeClass('active_link');
        $('body').addClass('show-cart-overlay');
       $cart_container.addClass('active_link');
