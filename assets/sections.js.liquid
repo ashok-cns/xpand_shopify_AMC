@@ -2373,12 +2373,21 @@ window.header = {
     var closeMiniCart = function() {
       $('body').removeClass('is-active').removeClass('blocked-scroll');
       $('.dropdown_link').toggleClass('active_link');
-      $('.cart-container').removeClass('active_link');
+      $('.cart-container, header[data-desktop-header]').removeClass('active_link');
       $('body').removeClass('show-cart-overlay');
     };
 
     var openMiniCart = function($cart_container) {
       window.mobileMenuDrawer.close();
+      if(window.innerWidth < 750){
+        var alertHeight = 0
+        let headerHeight = $('#header').innerHeight()+2;
+        if($('#alert-bar').length > 0 ){
+           alertHeight = $('#alert-bar').innerHeight();
+        }
+        $('header[data-desktop-header] .cart_content').css('top', headerHeight+alertHeight)
+      }
+        
       $('.dropdown_link').removeClass('active_link');
        $('body').addClass('show-cart-overlay');
       $cart_container.addClass('active_link');
@@ -2400,14 +2409,14 @@ window.header = {
 
     // Click anywhere outside of dropdown to close
     $('html').on('click', event => {
-      if (!$(event.target).closest('.cart-container').length && $('.cart_content').is(':visible')) {
+      if (!$(event.target).closest('.cart-container, .cart_content').length ) {
         closeMiniCart();
       }
     });
 
     // Close the mini cart when the mobile menu is clicked
     $('.mobile_nav').on('click', event => {
-      if (!$(event.target).closest('.cart-container').length && $('.cart_content').is(':visible')) {
+      if (!$(event.target).closest('.cart-container, .cart_content').length ) {
         closeMiniCart();
       }
     });
@@ -2442,7 +2451,7 @@ window.header = {
               $('.sticky_nav .icon-search').css('display', 'block');
               $('.sticky_nav .search__form').css('display', 'none');
               $('.sticky_nav .search-link').css('display', 'block');
-              $('.sticky_nav .main-nav').append($(".header .cart-container").clone());
+              // $('.sticky_nav .main-nav').append($(".header .cart-container").clone());
               window.navigationDesktopManager.initAll();
               stickyNavAnimation = new window.animations
                 .transition({ el: document.querySelector('.sticky_nav'), state: 'closed' });
@@ -2508,16 +2517,16 @@ window.header = {
     }
 
     // Avoid cart_content duplicating for mobile screen sizes
-    if ($('#header .cart_content').length < 1) {
-      $('#header .cart-container').append($('.header .cart_content').clone());
-    }
+    // if ($('#header .cart_content').length < 1) {
+    //   $('#header .cart-container').append($('.header .cart_content').clone());
+    // }
 
     let closeTimer = null;
 
     // Toggle mini-cart with menu icon
     if (window.PXUTheme.theme_settings.cart_action !== 'redirect_cart') {
       $('.mini_cart').on('click ', function () {
-        const $cartContainer = $(this).parent();
+        const $cartContainer = $(document).find('header[data-desktop-header]');//$(this).parent();
         if ($cartContainer.hasClass('active_link')) {
           closeMiniCart();
         } else {
@@ -2526,7 +2535,7 @@ window.header = {
       });
 
       $('.cart-container').on('mouseenter', function () {
-        const $cartContainer = $(this);
+        const $cartContainer = $(document).find('header[data-desktop-header]');//$(this);
         clearTimeout(closeTimer);
         openMiniCart($cartContainer);
       });
