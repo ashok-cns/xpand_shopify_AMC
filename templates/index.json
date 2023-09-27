@@ -188,15 +188,16 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "title": "Add a title or tagline",
+            "image": "shopify:\/\/shop_images\/wipes-blue.png",
+            "title": "Quick Wipes",
             "heading_size": "regular_text",
             "text": "",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "left",
+            "button_label": "SHOP WIPES",
+            "button_link": "shopify:\/\/products\/xpand-shoe-wipes",
+            "align_text": "center",
             "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
+            "link_text_color": "#ffffff",
+            "link_bg_color": "#008ffd"
           }
         }
       },
