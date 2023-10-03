@@ -145,14 +145,9 @@
     "quick_shop_enabled": true,
     "quick_shop_style": "popup",
     "cart_action": "ajax",
-<<<<<<< HEAD
     "show_cart_info": false,
     "cart_info_icon": "shopify:\/\/shop_images\/money-back-icon-xpand.png",
     "cart_info_content": "<p><strong>More quantity more save!<\/strong><\/p>",
-=======
-    "cart_info_icon": "shopify:\/\/shop_images\/icons-01-v1582732985230_3085d0f7-b27b-4a4f-9cbd-b6e6c1844649.png",
-    "cart_info_content": "<p><a href=\"\/pages\/shipping-delivery\" title=\"Shipping\">Free & Easy Returns<\/a><\/p>",
->>>>>>> main
     "show_lock_icon": true,
     "display_tos_checkbox": false,
     "tos_page": "",
@@ -169,21 +164,14 @@
     "tier_3_dis_amount": "5.74",
     "tier_4_line_qnty": 12,
     "tier_4_dis_amount": "5.74",
-    "cart_progress_bar_color": "#d54d4d",
+    "cart_progress_bar_color": "#008ffd",
     "cart_discount_hint_color": "#24726e",
     "cart_saving_text": "You saved savingPercentage",
     "recommended_product_1": "cushioned-no-show-socks",
-    "recommended_variant_1": "40996871602287,30296303173743,30296303206511",
-    "recommended_product_2": "xpand-shoe-wipes",
-    "recommended_variant_2": "41094507331695",
-    "recommended_product_3": "no-tie-original-elastic-lacing-system",
-    "recommended_variant_3": "19252571471983",
-    "recommended_product_4": "no-tie-original-elastic-lacing-system",
-    "recommended_variant_4": "19252660273263",
-    "recommended_product_5": "quick-release-round-lacing-system",
-    "recommended_variant_5": "19252846952559",
-    "recommended_product_6": "quick-release-round-lacing-system",
-    "recommended_variant_6": "19252852588655",
+    "recommended_variant_1": "30296303206511,40996871602287",
+    "recommended_product_2": "urban-belt",
+    "recommended_variant_2": "31965885956207,31965886087279,31965885694063,31965885726831",
+    "recommended_product_3": "explorer-belt",
     "show_shipping_calculator": false,
     "shipping_calculator_default_country": "United States",
     "currency_format": "money_format",
@@ -831,7 +819,7 @@
           "4c49e9d3-7311-44c8-ade5-855821ae4385"
         ],
         "settings": {
-          "announcement_bar_enabled": false,
+          "announcement_bar_enabled": true,
           "promo_text_1": "<p><strong>Mix & Match:<\/strong>Laces | Socks | Shoewipes<\/p>",
           "promo_text_2": "<p><strong>Limited Time:<\/strong>Any 6 for $40 | Any 8 for $50<\/p>",
           "promo_text_3": "<p><strong>Free Shipping<\/strong>Orders Over $30<\/p>",
@@ -840,21 +828,21 @@
           "show_alert_bar": true,
           "enable_alert_bar_slider": true,
           "enable_view_all_offer": true,
-          "alert_icon_1": "shopify:\/\/shop_images\/3_9df04767-bd8b-4678-9f01-e5ad7c395c89.png",
-          "alert_text_1": "<p>Free Shipping to the USA. Orders $30+<\/p>",
-          "alert_text_desc_1": "<p>We offer free shipping for orders over $30 in the U.S. and $2.99 shipping for orders under $30. <strong>Need it faster?<\/strong> Choose 2 day shipping for $10.99 to the USA.<\/p>",
-          "alert_icon_2": "shopify:\/\/shop_images\/Untitled_design_8_df05e506-4ddd-45c6-adc9-f5da2a407097.png",
-          "alert_text_2": "<p>Free Shipping On Canada Orders $30+<\/p>",
-          "alert_text_desc_2": "<p>Canadian orders over $30 qualify for free shipping, and shipping costs $8.99 - $10.99 <em>(depending on province)<\/em> for orders under $30.<\/p>",
-          "alert_icon_3": "shopify:\/\/shop_images\/2_4a8e63fd-c75b-47f5-9fea-7e052c3910e2.png",
-          "alert_text_3": "<p>Bundle Savings. Mix & Match <\/p>",
-          "alert_text_desc_3": "<p><strong>Save<\/strong> <strong>extra<\/strong> when you buy more. Mix & match between <a href=\"\/products\/no-tie-original-elastic-lacing-system\" title=\"Original No-Tie Lacing System\">flat laces<\/a>, <a href=\"\/products\/quick-release-round-lacing-system\" title=\"Quick-Release Lacing System\">round laces<\/a>, <a href=\"\/products\/cushioned-no-show-socks\" title=\"Cushioned No-Show Socks\">socks<\/a>, or <a href=\"\/products\/xpand-shoe-wipes\" title=\"Xpand Quick Wipes - Pack of 10\">shoewipes<\/a>. <br\/><br\/>Any 3 items for $30<br\/>Any 6 items for $40<br\/>Any 8 items for $50<\/p>",
-          "alert_icon_4": "shopify:\/\/shop_images\/4_b48189e4-ba5d-40dc-a660-c83d97cb9342.png",
-          "alert_text_4": "<p>Want It Quick? Free 2-Day Shipping for USA.<\/p>",
-          "alert_text_desc_4": "<p>No more long waits! For orders $50+, use code \"<strong>VIPUSA<\/strong>\" at checkout to enjoy an automatic upgrade to DHL Express for swift 2-day delivery.<\/p>",
-          "alert_icon_5": "shopify:\/\/shop_images\/5_d15db2b0-484e-4381-a9cc-e8b4eb977a6c.png",
-          "alert_text_5": "<p>90-Day Peace of Mind Promise<\/p>",
-          "alert_text_desc_5": "<p>At Xpand, we stand by the quality of our laces. That's why we offer a full 90-day satisfaction guarantee. If they don't meet your expectations within this time, just reach out to us, and we'll make it right.<br\/><br\/>Contact us <a href=\"\/pages\/contact-us\" title=\"Contact Us\">here<\/a>.<\/p>",
+          "alert_icon_1": "shopify:\/\/shop_images\/Promo_Free_Shipping_icon_110x100_a8c5cf43-7822-4902-a97c-0e70719bfd3e.png",
+          "alert_text_1": "<p>AS FEATURED ON<strong> 'GOOD MORNING AMERICA'<\/strong><\/p>",
+          "alert_text_desc_1": "<p>We offer free shipping for orders over $10.01 in the U.S. and $5 shipping for orders under $10.01. Need it faster? Choose expedited shipping for $15 in the U.S.<\/p>",
+          "alert_icon_2": "shopify:\/\/shop_images\/Promo_International_Shipping_icon_110x100_9bff6d25-4db2-4240-a823-0964044d62df.png",
+          "alert_text_2": "<p>AS FEATURED ON<strong> 'GOOD MORNING AMERICA 2'<\/strong><\/p>",
+          "alert_text_desc_2": "<p>We offer free shipping for orders over $10.01 in the U.S. and $5 shipping for orders under $10.01. Need it faster? Choose expedited shipping for $15 in the U.S..<\/p>",
+          "alert_icon_3": "shopify:\/\/shop_images\/BYP_promo_01c_110x100_fedb7dff-a381-438f-90ef-6a351e7f29a7.png",
+          "alert_text_3": "<p>AS FEATURED ON<strong> 'GOOD MORNING AMERICA 3'<\/strong><\/p>",
+          "alert_text_desc_3": "<p>We offer free shipping for orders over $10.01 in the U.S. and $5 shipping for orders under $10.01. Need it faster? Choose expedited shipping for $15 in the U.S..<\/p>",
+          "alert_icon_4": "shopify:\/\/shop_images\/Promo_30_day_Returns_Icon_110x100_ec8889ca-4ce2-4a26-9296-02be73c14ffe.png",
+          "alert_text_4": "<p>AS FEATURED ON<strong> 'GOOD MORNING AMERICA 4'<\/strong><\/p>",
+          "alert_text_desc_4": "<p>We offer free shipping for orders over $10.01 in the U.S. and $5 shipping for orders under $10.01. Need it faster? Choose expedited shipping for $15 in the U.S..<\/p>",
+          "alert_icon_5": "shopify:\/\/shop_images\/Promo_Signup_icon_110x100_dd6901be-ecc7-4fc9-9fcd-b6eeb5c7f488.png",
+          "alert_text_5": "<p>AS FEATURED ON<strong> 'GOOD MORNING AMERICA 5'<\/strong><\/p>",
+          "alert_text_desc_5": "<p>We offer free shipping for orders over $10.01 in the U.S. and $5 shipping for orders under $10.01. Need it faster? Choose expedited shipping for $15 in the U.S..<\/p>",
           "alert_text_color": "#ffffff",
           "alert_bg_color": "#008ffd",
           "social_icons_header": false,
@@ -2120,15 +2108,6 @@
         "disabled": false,
         "settings": {
         }
-<<<<<<< HEAD
-=======
-      },
-      "4705145147225299685": {
-        "type": "shopify:\/\/apps\/tolstoy-shoppable-video-quiz\/blocks\/widget-block\/06fa8282-42ff-403e-b67c-1936776aed11",
-        "disabled": true,
-        "settings": {
-        }
->>>>>>> main
       }
     }
   }
