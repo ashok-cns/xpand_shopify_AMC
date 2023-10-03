@@ -24,7 +24,7 @@
             <p id="cm-hints" style="color: rgb(36, 114, 110);"></p>
           </div>
           <div class="progress-frame">
-            <div class="progress-fill" style="width: 8.33333%; background-color: rgb(30, 200, 101);"></div>
+            <div class="progress-fill" style="width: 8.33333%; background-color: {{ settings.cart_progress_bar_color }};"></div>
           </div>
         </div>
         {% if settings.show_cart_info and settings.cart_info_content != blank %}
