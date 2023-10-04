@@ -1488,6 +1488,17 @@
       },
       {
         "type": "checkbox",
+        "id": "show_cart_mixmatch",
+        "label": "Show Mix & Match information ",
+        "default": true
+      },
+      {
+        "type": "richtext",
+        "id": "cart_mixmatch_content",
+        "label": "Cart Mix & Match content"
+      },
+      {
+        "type": "checkbox",
         "id": "show_cart_info",
         "label": "Show cart information ",
         "default": true
