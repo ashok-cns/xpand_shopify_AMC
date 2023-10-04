@@ -1712,7 +1712,8 @@
       {
         "type": "checkbox",
         "id": "progress_bar_content_wrapper",
-        "label": "Show progress bar content"
+        "label": "Show progress bar content",
+        "default": true
       },
       {
         "type": "richtext",
