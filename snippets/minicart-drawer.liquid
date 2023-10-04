@@ -37,11 +37,11 @@
                 <span class="cart_info_wrapper_item_heading">Mix & Match</span>
                 <div>
                   {% assign itemText = settings.cart_mixmatch_content | split: ' ' %}
-                  {% for item in itemText %}
-                    {{ item }}{% unless forloop.last %}
+                  {%- for item in itemText -%}
+                    {{- item -}}{%- unless forloop.last -%}
                       <span class="divider-dot"></span>
-                    {% endunless %}
-                  {% endfor %}
+                    {%- endunless -%}
+                  {%- endfor -%}
                 </div>
               </div>
             {% endif %}
