@@ -145,6 +145,7 @@
     "quick_shop_enabled": true,
     "quick_shop_style": "popup",
     "cart_action": "ajax",
+    "cart_mixmatch_content": "<p>Laces Socks Wipes<\/p>",
     "show_cart_info": true,
     "cart_info_icon": "shopify:\/\/shop_images\/money-back-icon-xpand.png",
     "cart_info_content": "<p><strong>More quantity more save!<\/strong><\/p>",
