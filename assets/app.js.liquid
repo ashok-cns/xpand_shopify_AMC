@@ -1217,8 +1217,10 @@ $(() => {
           cache: false,
           success(cart) {
         
-        var updateProgressBar = Number(100/tier_4_line_qnty); console.log(updateProgressBar);
-      $(document).find('.progress-frame .progress-fill').css('width', updateProgressBar*cartQty+'%');
+        var updateProgressBar = Number(100/tier_4_line_qnty); console.log("ProgressBarr==>", updateProgressBar);
+        var calculateProgess = updateProgressBar*cartQty;
+        
+      $(document).find('.progress-frame .progress-fill').css('width', calculateProgess+'%');
      
       // var recalculateSubTotal = Number($('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_subtotal.js-cart_subtotal span.right span').attr('data-sutotal-price')); 
       var recalculateSubTotal = Number(cart.total_price);
