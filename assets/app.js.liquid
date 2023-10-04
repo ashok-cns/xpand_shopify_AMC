@@ -1217,7 +1217,7 @@ $(() => {
           cache: false,
           success(cart) {
         
-        var updateProgressBar = Number(100/tier_4_line_qnty); console.log("ProgressBarr==>", updateProgressBar);
+        var updateProgressBar = Number(100/tier_4_line_qnty); console.log("tier_4_line_qnty==>", tier_4_line_qnty, "ProgressBarr==>", updateProgressBar);
         var calculateProgess = updateProgressBar*cartQty;
         
       $(document).find('.progress-frame .progress-fill').css('width', calculateProgess+'%');
