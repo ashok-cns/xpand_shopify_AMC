@@ -55,8 +55,8 @@
                 {% if settings[progressBarContent] != blank %}
                   <div class="progress-bar-content-item">
                     <span class="progress-bar-content-icon" data-index="{{ forloop.index }}">
-                      {{ images['Group_4920.svg'] | img_url: '50x' | img_tag }}
-                      {{ images['Group_4917.svg'] | img_url: '50x' | img_tag }}
+                      {{ images['Group_4920.svg'] | img_url: '50x', class: 'test55' | img_tag | class: 'test' }}
+                      {{ images['Group_4917.svg'] | img_url: '50x', class: 'test66' | img_tag | class: 'test22' }}
                     </span>
                     <span class="progress-bar-content-text">{{ settings[progressBarContent] }}</span>
                   </div>
