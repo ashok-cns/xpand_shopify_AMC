@@ -48,7 +48,22 @@
           </div>
         {% endif %}
         <div class="progress-wrap text-center">
-
+          {% if section.settings.progress_bar_content_wrapper %}
+            <div class="progress-bar-content-wrapper">
+              {% for i in (1..3) %}
+                {% capture progressBarContent %}progress_bar_content_{{ i }}{% endcapture %}
+                {% if section.settings[progressBarContent] != blank %}
+                  <div class="progress-bar-content-item">
+                    <span class="progress-bar-content-icon" data-index="{{ forloop.index }}">
+                      {{ 'Group_4920.svg' | img_url: 'small' | img_tag | class: 'default-icn' }}
+                      {{ 'Group_4917.svg' | img_url: 'small' | img_tag | class: 'default-active' }}
+                    </span>
+                    <span class="progress-bar-content-text">{{ section.settings[progressBarContent] }}</span>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
           <div class="progress-frame">
             <div class="progress-fill" style="width: 8.33333%; background-color: {{ settings.cart_progress_bar_color }};"></div>
           </div>
