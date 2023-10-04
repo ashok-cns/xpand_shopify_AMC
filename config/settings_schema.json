@@ -1701,14 +1701,33 @@
       },
       {
         "type": "color",
-        "id": "cart_progress_bar_color",
-        "label": "Progress bar color",
+        "id": "cart_discount_hint_color",
+        "label": "Discount hint text color",
         "default": "#4a4a4a"
       },
       {
+        "type": "header",
+        "content": "Progress Bar"
+      },
+      {
+        "type": "richtext",
+        "id": "progress_bar_content_1",
+        "label": "Progress Bar content 1"
+      },
+      {
+        "type": "richtext",
+        "id": "progress_bar_content_2",
+        "label": "Progress Bar content 2"
+      },
+      {
+        "type": "richtext",
+        "id": "progress_bar_content_3",
+        "label": "Progress Bar content 3"
+      },
+      {
         "type": "color",
-        "id": "cart_discount_hint_color",
-        "label": "Discount hint text color",
+        "id": "cart_progress_bar_color",
+        "label": "Progress bar color",
         "default": "#4a4a4a"
       },
       {
