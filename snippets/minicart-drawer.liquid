@@ -18,17 +18,6 @@
       data-cart-form="mini-cart">
 
       <div class="head">
-        <div class="progress-wrap text-center">
-          <div class="text-wrapper" style="color: rgb(36, 114, 110);">
-            <p>You are 2 items (laces or socks) away from 17% off</p>
-          </div>
-          <div id="free-product-hints">
-            <p id="cm-hints" style="color: rgb(36, 114, 110);"></p>
-          </div>
-          <div class="progress-frame">
-            <div class="progress-fill" style="width: 8.33333%; background-color: {{ settings.cart_progress_bar_color }};"></div>
-          </div>
-        </div>
         {% if settings.show_cart_info and settings.cart_info_content != blank or settings.show_cart_mixmatch and settings.cart_mixmatch_content != blank %}
           <div class="cart_info_wrapper">
 
@@ -58,6 +47,18 @@
             {% endif %}
           </div>
         {% endif %}
+        <div class="progress-wrap text-center">
+          <div class="text-wrapper" style="color: rgb(36, 114, 110);">
+            <p>You are 2 items (laces or socks) away from 17% off</p>
+          </div>
+          <div id="free-product-hints">
+            <p id="cm-hints" style="color: rgb(36, 114, 110);"></p>
+          </div>
+          <div class="progress-frame">
+            <div class="progress-fill" style="width: 8.33333%; background-color: {{ settings.cart_progress_bar_color }};"></div>
+          </div>
+        </div>
+
       </div>
 
       <!-- <a class="cart_content__continue-shopping secondary_button">
