@@ -1219,7 +1219,15 @@ $(() => {
         
         var updateProgressBar = Number(100/tier_4_line_qnty); console.log("tier_4_line_qnty==>", tier_4_line_qnty, "ProgressBarr==>", updateProgressBar);
         var calculateProgess = updateProgressBar*cartQty;
-        
+        if(calculateProgess >= 100 ) {
+          $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index] img').toggleClass('hidden');
+        }else if(calculateProgess >= 50) {  
+          $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="3"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="2"] img.default-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="1"] img.default-icn').AddClass('hidden');
+          $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="1"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="2"] img.active-icn').removeClass('hidden');
+        }else if (calculateProgess >= 33) {
+          $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="3"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="2"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="1"] img.default-icn').AddClass('hidden');
+          $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="1"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="3"] img.default-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="2"] img.default-icn').removeClass('hidden');
+        }        
       $(document).find('.progress-frame .progress-fill').css('width', calculateProgess+'%');
      
       // var recalculateSubTotal = Number($('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_subtotal.js-cart_subtotal span.right span').attr('data-sutotal-price')); 
