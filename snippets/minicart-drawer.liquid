@@ -33,7 +33,17 @@
           <div class="cart_info_wrapper">
 
             {% if settings.cart_mixmatch_content != blank %}
-              <div class="cart_info_wrapper_item"></div>
+              <div class="cart_info_wrapper_item">
+                <span class="cart_info_wrapper_item_heading">Mix & Match</span>
+                <div>
+                  {% assign itemText = settings.cart_mixmatch_content | split: ' ' %}
+                  {% for item in itemText %}
+                    {{ item }}{% unless forloop.last %}
+                      <span class="divider-dot"></span>
+                    {% endunless %}
+                  {% endfor %}
+                </div>
+              </div>
             {% endif %}
             {% if settings.cart_info_content != blank %}
               <div class="cart_info_wrapper_item">
