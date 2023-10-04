@@ -1219,10 +1219,10 @@ $(() => {
         
         var updateProgressBar = Number(100/tier_4_line_qnty); console.log("tier_4_line_qnty==>", tier_4_line_qnty, "ProgressBarr==>", updateProgressBar);
         var calculateProgess = updateProgressBar*cartQty;
-       if (calculateProgess >= 33) {
+       if (calculateProgess >= 33 && calculateProgess < 50) {
           $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="3"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="2"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="1"] img.default-icn').addClass('hidden');
           $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="1"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="3"] img.default-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="2"] img.default-icn').removeClass('hidden');
-        }else if(calculateProgess >= 50) {  
+        }else if(calculateProgess >= 50 && calculateProgess < 100) {  
           $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="3"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="2"] img.default-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="1"] img.default-icn').addClass('hidden');
           $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="1"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="2"] img.active-icn').removeClass('hidden');
         }else  if(calculateProgess >= 100 ) {
