@@ -1,6 +1,7 @@
 {% unless settings.cart_action == 'ajax' and template contains 'cart' %}
-  <div class="cart-header text-center">Your Cart</div>
+
   <div class="tos_warning cart_content animated fadeIn">
+    <div class="cart-header text-center">Your Cart</div>
     <div class="js-empty-cart__message {% if cart.item_count > 0 %}hidden{% endif %}">
       <p class="empty_cart">{{ 'layout.general.empty_cart' | t }}</p>
       <a href="javascript:;" class="continue-shopping">{{ 'Continue Shopping' }}</a>
