@@ -43,6 +43,9 @@
                   {%- endunless -%}
                 {%- endfor -%}
               </div>
+              {% if settings.cart_info_content != blank %}
+                <span class="cart_info_wrapper_item_divider">|</span>
+              {% endif %}
             {% endif %}
             {% if settings.cart_info_content != blank %}
               <div class="cart_info_wrapper_item">
