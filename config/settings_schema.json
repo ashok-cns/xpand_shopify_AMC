@@ -1710,19 +1710,24 @@
         "content": "Progress Bar"
       },
       {
+        "type": "checkbox",
+        "id": "progress_bar_content_wrapper",
+        "label": "Show progress bar content"
+      },
+      {
         "type": "richtext",
         "id": "progress_bar_content_1",
-        "label": "Progress Bar content 1"
+        "label": "Progress bar content 1"
       },
       {
         "type": "richtext",
         "id": "progress_bar_content_2",
-        "label": "Progress Bar content 2"
+        "label": "Progress bar content 2"
       },
       {
         "type": "richtext",
         "id": "progress_bar_content_3",
-        "label": "Progress Bar content 3"
+        "label": "Progress bar content 3"
       },
       {
         "type": "color",
