@@ -810,7 +810,7 @@ $(() => {
             $addToCartBtn.find('.checkmark').removeClass('checkmark-active');
             $addToCartBtn.find('span').removeClass('zoomOut').addClass('fadeInDown');
             if($currentAjaxBtn.hasClass('cm-rec-pro-cta')){
-                $('.cm-rec-prod-cta-wrapper .cm-rec-prod-cta-content').removeClass('show-options');
+                $('.cm-rec-prod-cta-wrapper .cm-rec-prod-cta-content').removeClass('cm-item-added'); //show-options ;
             }
           }, 1000);
 
