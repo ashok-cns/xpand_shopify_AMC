@@ -804,6 +804,9 @@ $(() => {
         },
         success() {
           $addToCartBtn.find('.checkmark').addClass('checkmark-active');
+          if($currentAjaxBtn.hasClass('cm-rec-pro-cta')){
+            $('.cm-rec-prod-cta-wrapper .cm-rec-prod-cta-content').addClass('cm-item-added'); //show-options ;
+        }
 
           window.setTimeout(() => {
             $addToCartBtn.removeAttr('disabled').removeClass('disabled');
