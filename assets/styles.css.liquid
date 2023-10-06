@@ -20691,7 +20691,10 @@ div#alert-bar {
 
 }
 @media screen and (max-width: 798px) {
-  /* body.show-cart-overlay .header-fixed--true[data-header-is-absolute="true"]{
-    position: initial;
-  } */
+  .cart-overlay {
+    display: none;
+  }
+  body.show-cart-overlay .header-fixed--true[data-header-is-absolute="true"]{
+    position: inherit;
+  }
 }
