@@ -831,10 +831,13 @@ $(() => {
                 }
 
                 if ($('#header').is(':visible')) {
+                  console.log('in --1 ')
                   $('#header .cart-container, header[data-desktop-header]').addClass('active_link');
                 } else if ($('.sticky_nav--stick').length) {
+                  console.log('in --2')
                   $('.sticky_nav .cart-container, header[data-desktop-header]').addClass('active_link');
                 } else {
+                  console.log('in --3 ')
                   $('.top-bar .cart-container, header[data-desktop-header]').addClass('active_link');
                 }
 
