@@ -20702,7 +20702,10 @@ div#alert-bar {
   body.show-cart-overlay .cart-overlay {
     display: block;
   }
- .header-fixed--true[data-header-is-absolute="true"]{
+  .header-fixed--true[data-header-is-absolute="true"]{
+    position: sticky;
+  }
+  body.show-cart-overlay .header-fixed--true[data-header-is-absolute="true"]{
     position: inherit;
   }
 }
