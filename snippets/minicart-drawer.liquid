@@ -89,7 +89,7 @@
         <div class="cart-free-gift-wrapper">
           <div class="cart-free-gift-header">Free Gift</div>
           <div class="cart-free-gift-items">
-            {{ settings.free_product_list |  size }}==
+            {{ all_products[settings.free_product_item].title }}==
             {% for product in settings.free_product_list %}
               <div class="cart-free-gift-item">
                 <div class="cart-free-gift-item-img">
