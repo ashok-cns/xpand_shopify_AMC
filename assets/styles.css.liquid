@@ -20731,11 +20731,14 @@ div#alert-bar {
 /* MiniCart Free gift Items */
 .cart-free-gift-wrapper {
   padding: 15px 20px;
-  display: flex;
+  display: none;
   align-items: center;
   flex-wrap: wrap;
   justify-content: flex-start;
   border-bottom: 1px solid #ccc;
+}
+body.free-gift-product-visible .cart-free-gift-wrapper {
+  display: flex;
 }
 .cart-free-gift-header,
 .cart-free-gift-items { 
