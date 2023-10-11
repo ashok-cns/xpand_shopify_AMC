@@ -89,21 +89,21 @@
         <div class="cart-free-gift-wrapper">
           <div class="cart-free-gift-header">Free Gift</div>
           <div class="cart-free-gift-items">
-            {{ settings.free_product_list }}==
-            <div class="cart-free-gift-item">
-              <div class="cart-free-gift-item-img">
-                <img src="//www.xpandlaces.com/cdn/shop/products/3_-_Grey_320x.jpg?v=1618851024" alt="Magnetic Urban Elastic Belt - Grey / S (25&quot;-30&quot;)" class=" ls-is-cached lazyloaded">
-              </div>
-              <div class="cart-free-gift-item-info">
-                <div class="cart-free-gift-item-info-lft">
-                  <div class="cart-free-gift-item-title">Cushioned No-Show Socks</div>
-                  <button class="global-button global-button--primary ajax-submit cm-rec-pro-cta" type="button" data-add-to-cart="" data-selected-variant="31316328874095"> <span data-add-to-cart-text="">
-                              
-                                Select Gift</span> </button>
+            {% for product in settings.free_product_list %}
+              <div class="cart-free-gift-item">
+                <div class="cart-free-gift-item-img">
+                  <img src="{{ product.featured_image |  img_url: '100x' }}" alt="{{ product.featured_image.alt}}" class=" lazyloaded">
                 </div>
-                <div class="cart-free-gift-item-info-rgt">$19</div>
+                <div class="cart-free-gift-item-info">
+                  <div class="cart-free-gift-item-info-lft">
+                    <div class="cart-free-gift-item-title">{{ product.title}}</div>
+                    <button class="global-button global-button--primary ajax-submit cm-rec-pro-cta" type="button" data-add-to-cart="" data-selected-variant="{{ product.first_available_variant.id }}"> <span data-add-to-cart-text="">Select Gift</span> </button>
+                  </div>
+                  <div class="cart-free-gift-item-info-rgt">{{ product.price }}</div>
+                </div>
               </div>
-            </div>
+            {% endfor %}
+            
           </div>
         </div>
         {% endif %}
