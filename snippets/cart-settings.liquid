@@ -42,7 +42,8 @@
 </div>
 <script>
     window.addEventListener("DOMContentLoaded", (event) => {
-      var discountTiers = `[{% if settings.tier_1_line_qnty > 0 and settings.tier_1_dis_amount %}{
+      var discountTiers = `[`
+      {% if settings.tier_1_line_qnty > 0 and settings.tier_1_dis_amount %}`{
         type: "MinimumLineItemQuantityTier",
         min_cart_value: null,
         discount_amount: {{ settings.tier_1_dis_amount| times: 100 | replace:'.0','' }},
@@ -86,7 +87,7 @@
         discount_type: "fixed_amount",
         min_selected_products_quantity: null,
         min_selected_products_value: null
-      }{% endif %}]`
+      }`{% endif %}`]`
     console.log("DOM fully loaded and parsed for cart settings==>", JSON.parse(discountTiers));
     });
     
