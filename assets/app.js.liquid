@@ -1614,7 +1614,12 @@ $(document)
 
   // Show mobile Mega Nav from localStorage
   window.addEventListener("DOMContentLoaded", (event) => {
-    console.log('DiscountTiers==>', DiscountTiers)
+
+    var discountTiers = JSON.parse($(document).find('[discountTiers ]').innerHTML);
+    console.log("discountTiers==>", discountTiers);
+
+
+
     console.log("DOM fully loaded and parsed");
     $(document).on('click', '.mega-nav-dropdown', () => {
       console.log('hitMegaNav');
