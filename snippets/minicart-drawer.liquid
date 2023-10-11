@@ -90,7 +90,7 @@
           <div class="cart-free-gift-header">Free Gift</div>
           <div class="cart-free-gift-items">
 
-            {% for product in settings.free_product_list.products %}
+            {% for product in settings.free_product_list %}
               <div class="cart-free-gift-item">
                 <div class="cart-free-gift-item-img">
                   <img src="{{ product.featured_image |  img_url: '100x' }}" alt="{{ product.featured_image.alt}}" class=" lazyloaded">
