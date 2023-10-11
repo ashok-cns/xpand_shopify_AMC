@@ -40,7 +40,7 @@
     {% endif %}
 {% endfor %}
 </div>
-<script>
+<script type="application/json">
     window.addEventListener("DOMContentLoaded", (event) => {
       var discountTiers = `[{% if settings.tier_1_line_qnty > 0 and settings.tier_1_dis_amount %} {
         type: "MinimumLineItemQuantityTier",
