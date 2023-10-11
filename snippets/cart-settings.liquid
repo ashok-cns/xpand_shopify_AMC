@@ -42,7 +42,7 @@
 {% if settings.enable_free_product %}
   {% assign product = all_products[settings.free_product_item] %}
 <div data-tier_discount="{{ product.price }}" data-tier_qty="{{ settings.cart_free_product_item_count }}">{{ settings.cart_free_product_item_count }}--{{ product.price }}</div>
-freeShippingItemCount
+
 {% endif %}
 </div>
 <script>
