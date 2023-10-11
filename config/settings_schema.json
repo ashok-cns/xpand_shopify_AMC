@@ -1621,6 +1621,11 @@
         "label": "Free product list"
       },
       {
+        "type": "product",
+        "id": "free_product_item",
+        "label": "Free product item"
+      },
+      {
         "type": "text",
         "id": "cart_free_product_hint_text",
         "label": "Free Product hint text",
