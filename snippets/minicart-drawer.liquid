@@ -89,8 +89,9 @@
         <div class="cart-free-gift-wrapper">
           <div class="cart-free-gift-header">Free Gift</div>
           <div class="cart-free-gift-items">
-            {{ all_products[settings.free_product_item].title }}==
-            {% for product in settings.free_product_list %}
+            {% assign product = all_products[settings.free_product_item].title %}
+           
+            {% comment %} {% for product in settings.free_product_list %} {% endfor %} {% endcomment %}
               <div class="cart-free-gift-item">
                 <div class="cart-free-gift-item-img">
                   <img src="{{ product.featured_image |  img_url: '100x' }}" alt="{{ product.featured_image.alt}}" class=" lazyloaded">
@@ -103,7 +104,7 @@
                   <div class="cart-free-gift-item-info-rgt">{{ product.price | money }}</div>
                 </div>
               </div>
-            {% endfor %}
+           
             
           </div>
         </div>
