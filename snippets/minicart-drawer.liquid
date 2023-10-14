@@ -100,6 +100,7 @@
                   <div class="cart-free-gift-item-info-lft">
                     <div class="cart-free-gift-item-title">{{ product.title}}</div>
                     <button data-free-gift-product-cta class="global-button global-button--primary" type="button" data-selected-variant="{{ product.first_available_variant.id }}"> <span data-add-to-cart-text="">Select Gift</span> </button>
+                    <button class="global-button global-button--primary add_to_cart ajax-submit hidden" type="button" data-selected-variant="{{ product.first_available_variant.id }}"></button>
                   </div>
                   <div class="cart-free-gift-item-info-rgt free-gift-price">{{ product.price | money |  append: ' USD' }}</div>
                 </div>
