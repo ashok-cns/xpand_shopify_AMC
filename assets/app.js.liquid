@@ -776,7 +776,8 @@ $(() => {
       if($(this).hasClass('cm-rec-pro-cta')){
         var $variantId = $(this).attr('data-selected-variant');
         var $addToCartBtn = $(this).closest('.cm-rec-prod-cta-wrapper').find('.add_to_cart');
-        if($(this).hasAttr('data-free-gift-product-cta')){
+
+        if($(this).hasClass('free-gift-item')){
           var ajaxData = {
             quantity: 1,
             id: $variantId,
