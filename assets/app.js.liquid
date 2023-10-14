@@ -944,7 +944,10 @@ $(() => {
                 var cm_discountAmount = 0;
                 var cm_freeGiftProduct = 0;
 
-
+                if(cartQty >= free_product_active_count ){
+                  $('.cart-free-gift-wrapper').fadeIn();
+                  $('body').addClass('free-gift-product-visible');
+                }
                 
                 if(tier_4_line_qnty > 0 && tier_4_dis_amount && cm_itemsInDiscountGroup >= tier_4_line_qnty ) {
                   console.log('inside-4');
