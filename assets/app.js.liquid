@@ -905,6 +905,8 @@ $(() => {
       var tier_2_dis_amount = {{ settings.tier_2_dis_amount }};
       var tier_3_dis_amount = {{ settings.tier_3_dis_amount }};
       var tier_4_dis_amount = {{ settings.tier_4_dis_amount }};
+      var free_product_active_count = {{ settings.cart_free_product_item_count }};
+      var free_product_dis_amount = {{ all_products[settings.free_product_item].price }};
 
 
     function toAppendtagsonCartUpdate(){      
@@ -941,6 +943,9 @@ $(() => {
                 console.log('TotalQty==>', cartQty);
                 var cm_itemsInDiscountGroup = cartQty
                 var cm_discountAmount = 0;
+                var cm_freeGiftProduct = 0;
+
+
                 
                 if(tier_4_line_qnty > 0 && tier_4_dis_amount && cm_itemsInDiscountGroup >= tier_4_line_qnty ) {
                   console.log('inside-4');
