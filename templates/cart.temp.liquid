@@ -27,6 +27,6 @@
 class="cart-temp-data"
 data-line-id="{{ forloop.index }}"
 data-variant-id="{{ item.id }}"
-data-tags="{% for tag in item.product.tags %}{% if tag =='BOGOOFF' %}{{ tag }}{% endif %}{% endfor %}"></div>
+data-tags="{% for tag in item.product.tags %}{% if tag == 'free-product' %} {{ tag }} {% elsif tag =='BOGOOFF' %}{{ tag }}{% endif %}{% endfor %}"></div>
 {% endfor %}
 </div>
