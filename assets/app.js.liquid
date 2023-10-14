@@ -769,6 +769,12 @@ $(() => {
     }
   });
 
+  // Add free Gift prouct
+  $(document).on('click', '[data-free-gift-product-cta]', function(){
+
+  })
+
+
   if (window.PXUTheme.theme_settings.cart_action === 'ajax') {
     $(document).on('click', '.ajax-submit', function (e) {
       e.preventDefault();
@@ -776,10 +782,24 @@ $(() => {
       if($(this).hasClass('cm-rec-pro-cta')){
         var $variantId = $(this).attr('data-selected-variant');
         var $addToCartBtn = $(this).closest('.cm-rec-prod-cta-wrapper').find('.add_to_cart');
-        var ajaxData = {
-          quantity: 1,
-          id: $variantId,
+        if($(this).hasAttr('data-free-gift-product-cta')){
+          var ajaxData = {
+            quantity: 1,
+            id: $variantId,
+            properties: {
+              "freeShippingItemCount": $('body').attr('data-free-product-count'),
+              "productType": "free",
+              "discountAmount": $(this).attr('data-amount');
+            }
+
+          }
+        }else {
+          var ajaxData = {
+            quantity: 1,
+            id: $variantId,
+          }
         }
+        
       }else{
         var $addToCartForm = $(this).closest('form');
         var $addToCartBtn = $addToCartForm.find('.add_to_cart');
