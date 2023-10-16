@@ -29,7 +29,7 @@
             {% if tag == 'BOGOOFF' -%}
                 {{- tag -}}
             {%- elsif tag == 'free-product' and tag != 'BOGOOFF' -%}
-                {{- tag -}}
+                {{- 'free-product' -}}
             {%- endif -%}
         {%- endfor -%}
     {%- endcapture -%}
