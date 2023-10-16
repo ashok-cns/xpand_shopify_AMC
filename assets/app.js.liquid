@@ -961,7 +961,7 @@ $(() => {
                   $('body').removeClass('free-gift-product-visible');
                 } else {
                   if(cartQty >= free_product_active_count ){
-                  $('.cart-free-gift-wrapper').addClass('visible-item');
+                  //$('.cart-free-gift-wrapper').addClass('visible-item');
                   $('body').addClass('free-gift-product-visible');
                 }
                 }
@@ -1014,7 +1014,7 @@ $(() => {
         // var cartSubtotal = 
         console.log(cartQty ,'---', cm_next_tier_qty)
         if($('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_items.js-cart_items li[data-free-product]').length > 0){
-              $('body').addClass('free-gift-product-visible');
+              $('body').removeClass('free-gift-product-visible');
             }
         var lineItemSubtotal = 0;
         if(cartQty < cm_next_tier_qty){
