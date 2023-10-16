@@ -1616,11 +1616,6 @@
         "info": "This setting is for displaying the free Product hint."
       },
       {
-        "type": "product_list",
-        "id": "free_product_list",
-        "label": "Free product list"
-      },
-      {
         "type": "product",
         "id": "free_product_item",
         "label": "Free product item"
