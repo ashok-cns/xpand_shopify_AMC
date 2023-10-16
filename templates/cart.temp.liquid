@@ -24,7 +24,7 @@
 
 <div id="temp-cart-data">
 {% for item in cart.items %}
-    {%- capture tag -%}
+    {%- capture itemTag -%}
         {%- for tag in item.product.tags %}
             {% if tag =='BOGOOFF' and tag == 'free-product' -%}
                 {{- 'BOGOOFF' -}}
@@ -38,6 +38,6 @@ class="cart-temp-data"
 data-line-id="{{ forloop.index }}"
 data-variant-id="{{ item.id }}"
 
-data-tags="{{ tag }}"></div>
+data-tags="{{ itemTag }}"></div>
 {% endfor %}
 </div>
