@@ -939,9 +939,6 @@ $(() => {
             }
           },0);
           var checkTotalQtyAndTags = setInterval(function(){
-            if($('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_items.js-cart_items li[data-free-product]').length > 0){
-              $('body').removeClass('free-gift-product-visible');
-            }
             if( $('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_items.js-cart_items li[data-tags]').length > 0){
               var cartQty = 0;
               $('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_items.js-cart_items li[data-tags]').each(function(i){
@@ -959,10 +956,16 @@ $(() => {
                 var cm_discountAmount = 0;
                 var cm_freeGiftProduct = 0;
 
-                if(cartQty >= free_product_active_count ){
+                if($('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_items.js-cart_items li[data-free-product]').length > 0){
+                  $('body').removeClass('free-gift-product-visible');
+                } else {
+                  if(cartQty >= free_product_active_count ){
                   $('.cart-free-gift-wrapper').fadeIn();
                   $('body').addClass('free-gift-product-visible');
                 }
+                }
+
+                
                 
                 if(tier_4_line_qnty > 0 && tier_4_dis_amount && cm_itemsInDiscountGroup >= tier_4_line_qnty ) {
                   console.log('inside-4');
