@@ -27,7 +27,7 @@
 class="cart-temp-data"
 data-line-id="{{ forloop.index }}"
 data-variant-id="{{ item.id }}"
-{{ item.properties }}===
+{{ item.properties }}--
 data-tags="{%- if item.properties contains 'free' -%}
         {%- for p in item.properties -%}
           {%- if p.last contains 'free' -%}
