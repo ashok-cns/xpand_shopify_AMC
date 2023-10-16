@@ -124,7 +124,7 @@
               {%- assign total_saving = saving | plus: total_saving -%}
             {% endif %}
             <li
-              data-tags="{% for tag in item.product.tags %}{% if tag =='BOGOOFF' %}{{ tag }}{% elsif tag == 'free' %}{{ tag }}{% endif %}{% endfor %}"
+              data-tags="{% for tag in item.product.tags %}{% if tag =='BOGOOFF' %}{{ tag }}{% elsif tag == 'free-product' %}{{ tag }}{% endif %}{% endfor %}"
               class="mini-cart__item ert"
               data-cart-item
               data-line-id="{{ forloop.index }}"
