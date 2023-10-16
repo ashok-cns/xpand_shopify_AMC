@@ -961,7 +961,7 @@ $(() => {
                   $('body').removeClass('free-gift-product-visible');
                 } else {
                   if(cartQty >= free_product_active_count ){
-                  $('.cart-free-gift-wrapper').fadeIn();
+                  $('.cart-free-gift-wrapper').addClass('visible-item');
                   $('body').addClass('free-gift-product-visible');
                 }
                 }
