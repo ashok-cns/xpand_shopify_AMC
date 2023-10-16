@@ -169,7 +169,14 @@
                 </div>
 
 
-                <div class="mini-cart__item-price" data-tags="{% for tag in item.product.tags %}{% if tag =='free-product' %}{{ tag }}{% endif %}{% endfor %}">
+                <div class="mini-cart__item-price" data-tags="data-tags="{%- if item.properties -%}
+                  {%- for p in item.properties -%}
+                    {%- if p.last contains 'free' -%}
+                      {{- p.last -}}
+                    {%- endif -%}
+                  {%- endfor -%}
+                {%- else- %}
+          {%- for tag in item.product.tags %}{% if tag =='BOGOOFF' -%}{{- tag -}}{%- endif -%}{%- endfor -%}{%- endif -%}"">
                   {% if item.price > 0 %}
 
                     <span data-upate-price-default="{{ item.price }}"data-price="{{ item.price }}"data-original-price="{{ item.original_price }}"class="money {% if item.price < item.variant.compare_at_price or item.line_level_discount_allocations.size > 0 %}sale{% endif %}">
