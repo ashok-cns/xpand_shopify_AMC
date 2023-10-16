@@ -934,6 +934,7 @@ $(() => {
               //console.log('Temp DATA Exist in Dom');
               $('#temp-cart-data .cart-temp-data').each(function(){
                 $(document).find('.cart_items.js-cart_items li[data-line-id="'+$(this).attr('data-line-id')+'"]').attr('data-tags', $(this).attr('data-tags'));
+                $(document).find('.cart_items.js-cart_items li[data-line-id="'+$(this).attr('data-line-id')+'"]').attr('data-free-product', $(this).attr('data-free-product'));
               })
               clearInterval(updateDataAttr);
             }
