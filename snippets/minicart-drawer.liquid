@@ -124,7 +124,7 @@
               {%- assign total_saving = saving | plus: total_saving -%}
             {% endif %}
             <li
-              data-tags="{% for tag in item.product.tags %}{% if tag =='BOGOOFF' %}{{ tag }} {% elsif tag == 'free-product' %}{{ tag }}{% endif %}{% endfor %}"
+              data-tags="{% for tag in item.product.tags %}{% if tag =='BOGOOFF' %}{{ tag }}{% endif %}{% endfor %}"
               class="mini-cart__item ert"
               data-cart-item
               data-line-id="{{ forloop.index }}"
@@ -169,7 +169,7 @@
                 </div>
 
 
-                <div class="mini-cart__item-price">
+                <div class="mini-cart__item-price" data-tags="{% for tag in item.product.tags %}{% if tag =='free-product' %}{{ tag }}{% endif %}{% endfor %}">
                   {% if item.price > 0 %}
 
                     <span data-upate-price-default="{{ item.price }}"data-price="{{ item.price }}"data-original-price="{{ item.original_price }}"class="money {% if item.price < item.variant.compare_at_price or item.line_level_discount_allocations.size > 0 %}sale{% endif %}">
