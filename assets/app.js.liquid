@@ -929,15 +929,15 @@ $(() => {
         success(cartTempData) {
           //console.log('Get cartTempData==>', cartTempData);
           $('body').append(cartTempData);
-          var updateDataAttr = setInterval(function(){
-            if($('body').find('#temp-cart-data').length > 0 ){
-              //console.log('Temp DATA Exist in Dom');
-              $('#temp-cart-data .cart-temp-data').each(function(){
-                $(document).find('.cart_items.js-cart_items li[data-line-id="'+$(this).attr('data-line-id')+'"]').attr('data-tags', $(this).attr('data-tags'));
-              })
-              clearInterval(updateDataAttr);
-            }
-          },0);
+          // var updateDataAttr = setInterval(function(){
+          //   if($('body').find('#temp-cart-data').length > 0 ){
+          //     //console.log('Temp DATA Exist in Dom');
+          //     $('#temp-cart-data .cart-temp-data').each(function(){
+          //       $(document).find('.cart_items.js-cart_items li[data-line-id="'+$(this).attr('data-line-id')+'"]').attr('data-tags', $(this).attr('data-tags'));
+          //     })
+          //     clearInterval(updateDataAttr);
+          //   }
+          // },0);
           var checkTotalQtyAndTags = setInterval(function(){
             if( $('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_items.js-cart_items li[data-tags]').length > 0){
               var cartQty = 0;
