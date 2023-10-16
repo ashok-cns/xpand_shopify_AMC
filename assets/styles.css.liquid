@@ -7644,8 +7644,11 @@ ul.cart_items {
   border-bottom: 1px solid {{ settings.border_color }};
 }
 .cart_content li.mini-cart__item[data-free-product="free"] .mini-cart__item-price {
-  /* font-size: 0; */
-  text-decoration: line-through;
+  font-size: 0;
+  /* text-decoration: line-through; */
+}
+.cart_content li.mini-cart__item[data-free-product="free"] .mini-cart__item-price:before {
+  content: data-price;
 }
 .cart_content li.mini-cart__item[data-free-product="free"] .mini-cart__item-price:after {
   content: 'Free';
