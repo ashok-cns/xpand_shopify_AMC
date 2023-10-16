@@ -20,6 +20,15 @@
 </script>
 </div>
 {% endcomment %}
+{%- capture tag -%}
+    {%- for tag in item.product.tags %}
+        {% if tag =='BOGOOFF' and tag == 'free-product' -%}
+            {{- 'BOGOOFF' -}}
+        {%- elsif tag == 'free-product' -%}
+            {{- tag -}}
+        {%- endif -%}
+    {%- endfor -%}
+{%- endcapture -%}
 
 <div id="temp-cart-data">
 {% for item in cart.items %}
@@ -27,14 +36,7 @@
 class="cart-temp-data"
 data-line-id="{{ forloop.index }}"
 data-variant-id="{{ item.id }}"
-{{ item.properties | last }}--
-data-tags="{%- if item.properties contains 'free' -%}
-        {%- for p in item.properties -%}
-          {%- if p.last contains 'free' -%}
-            {{- p.last -}}
-          {%- endif -%}
-        {%- endfor -%}
-      {%- else- %}
-{%- for tag in item.product.tags %}{% if tag =='BOGOOFF' -%}{{- tag -}}{%- endif -%}{%- endfor -%}{%- endif -%}"></div>
+
+data-tags="{{ tag }}"></div>
 {% endfor %}
 </div>
