@@ -171,6 +171,7 @@
 
                 <div class="mini-cart__item-price" data-tags="{%- if item.properties -%}
                   {%- for p in item.properties -%}
+                    {{ p }}==
                     {%- if p.last contains 'free' -%}
                       {{- p.last -}}
                     {%- endif -%}
