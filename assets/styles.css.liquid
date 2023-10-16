@@ -7643,6 +7643,9 @@ ul.cart_items {
   margin-bottom: 15px;
   border-bottom: 1px solid {{ settings.border_color }};
 }
+.cart_content li.mini-cart__item[data-free-product="free"] .mini-cart__item-price:after {
+  content: '';
+}
 .cart_content li.mini-cart__item:last-child {
   margin-bottom: 0;
   border: 0;
