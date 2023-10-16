@@ -939,6 +939,9 @@ $(() => {
             }
           },0);
           var checkTotalQtyAndTags = setInterval(function(){
+            if($('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_items.js-cart_items li[data-free-product]').length > 0){
+              $('body').removeClass('free-gift-product-visible');
+            }
             if( $('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_items.js-cart_items li[data-tags]').length > 0){
               var cartQty = 0;
               $('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_items.js-cart_items li[data-tags]').each(function(i){
