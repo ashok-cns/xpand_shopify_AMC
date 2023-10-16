@@ -26,9 +26,9 @@
 {%- for item in cart.items -%}
     {%- capture itemTag -%}
         {%- for tag in item.product.tags %}
-            {% if tag =='BOGOOFF' and tag == 'free-product' -%}
+            {% if tag == 'BOGOOFF' and tag == 'free-product' -%}
                 {{- 'BOGOOFF' -}}
-            {%- elsif tag == 'free-product' -%}
+            {%- elsif tag == 'free-product' and tag != 'BOGOOFF' -%}
                 {{- tag -}}
             {%- endif -%}
         {%- endfor -%}
