@@ -21,23 +21,12 @@
 </div>
 {% endcomment %}
 
-
 <div id="temp-cart-data">
-{%- for item in cart.items -%}
-    {%- capture itemTag -%}
-        {%- for tag in item.product.tags %}
-            {% if tag == 'free-product' -%}
-                    {%  unless tag == 'BOGOOFF' %}
-                        {{ 'free-product' }}
-                    {% endunless %} 
-            {%- endif -%}
-        {%- endfor -%}
-    {%- endcapture -%}
+{% for item in cart.items %}
 <div
 class="cart-temp-data"
 data-line-id="{{ forloop.index }}"
 data-variant-id="{{ item.id }}"
-
-data-tags="{{ itemTag }}"></div>
-{%- endfor -%}
+data-tags="{% for tag in item.product.tags %}{% if tag =='BOGOOFF' %}{{ tag }}{% endif %}{% endfor %}"></div>
+{% endfor %}
 </div>
