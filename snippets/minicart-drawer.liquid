@@ -90,6 +90,7 @@
           <div class="cart-free-gift-header">Free Gift</div>
           <div class="cart-free-gift-items">
             {% assign product = all_products[settings.free_product_item] %}
+           
             {% comment %} {% for product in settings.free_product_list %} {% endfor %} {% endcomment %}
               <div class="cart-free-gift-item">
                 <div class="cart-free-gift-item-img">
@@ -169,15 +170,7 @@
                 </div>
 
 
-                <div class="mini-cart__item-price" data-tags="{%- if item.properties -%}
-                  {%- for p in item.properties -%}
-                    {{ p }}==
-                    {%- if p.last contains 'free' -%}
-                      {{- p.last -}}
-                    {%- endif -%}
-                  {%- endfor -%}
-                {%- else- %}
-          {%- for tag in item.product.tags %}{% if tag =='BOGOOFF' -%}{{- tag -}}{%- endif -%}{%- endfor -%}{%- endif -%}">
+                <div class="mini-cart__item-price">
                   {% if item.price > 0 %}
 
                     <span data-upate-price-default="{{ item.price }}"data-price="{{ item.price }}"data-original-price="{{ item.original_price }}"class="money {% if item.price < item.variant.compare_at_price or item.line_level_discount_allocations.size > 0 %}sale{% endif %}">
