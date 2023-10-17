@@ -243,7 +243,7 @@
     "98df7b96-c0a6-4283-b66b-3f8a65e0475b": {
       "type": "text-banner",
       "settings": {
-        "title": "",
+        "title": "How to Install",
         "text": "",
         "primary_cta_text": "",
         "primary_cta_link": "",
@@ -254,7 +254,7 @@
         "secondary_cta_link": "",
         "secondary_cta_text_color": "",
         "secondary_cta_bg_color": "",
-        "css_class": ""
+        "css_class": "landing-page"
       }
     },
     "132710a3-58c4-496b-a791-58b9a3915040": {
