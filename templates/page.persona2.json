@@ -234,7 +234,7 @@
         "activate_adaptiveHeight": false,
         "mobile_text_below_image": true,
         "mobile_text_color": "",
-        "css_class": "",
+        "css_class": "landing-page",
         "custom_css": ""
       }
     },
