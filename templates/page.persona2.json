@@ -22,6 +22,7 @@
         "text_position": "center",
         "text_align": "center",
         "caption_content_background": "darken_bg",
+        "mobile_image": "shopify:\/\/shop_images\/DSC01515_web-mobile.jpg",
         "mobile_text_below_image": false,
         "mobile_text_color": "",
         "css_class": "landing-page",
