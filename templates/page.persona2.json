@@ -284,6 +284,53 @@
         "css_class": "",
         "custom_css": ""
       }
+    },
+    "af57f79a-9676-4e71-9b9d-44938eb7dc11": {
+      "type": "faq",
+      "blocks": {
+        "template--15238162415727__af57f79a-9676-4e71-9b9d-44938eb7dc11-content-1": {
+          "type": "content",
+          "settings": {
+            "title": "Will Xpand Laces work on my shoes or boots?",
+            "answer": "<p>Xpand Lacing System works on all types of shoes - from kids shoes, adults sneakers, Timberlands to high-top boots.<\/p>"
+          }
+        },
+        "template--15238162415727__af57f79a-9676-4e71-9b9d-44938eb7dc11-content-2": {
+          "type": "content",
+          "settings": {
+            "title": "Are the Xpand Laces adjustable?",
+            "answer": "<p>Yes! Finding the perfect fit is easy with Xpand Laces. We recommend trying out the length before you trim the laces. Always set the initial adjustment on the loose side, so that you can always tighten them up if needed.<\/p>"
+          }
+        },
+        "template--15238162415727__af57f79a-9676-4e71-9b9d-44938eb7dc11-content-3": {
+          "type": "content",
+          "settings": {
+            "title": "How long are the laces?",
+            "answer": "<p>Xpand Laces are 52 inches long, and can stretch out to over twice that length, which makes them long enough for all types of shoes or boots.<\/p>"
+          }
+        },
+        "c7ebfe1a-8959-4004-8ecf-7b16d6f101d0": {
+          "type": "content",
+          "settings": {
+            "title": "What is your return and exchange policy?",
+            "answer": "<p>Xpand offers a 90 day satisfaction guarantee. If you are not 100% satisfied for any reason, we will refund your order. No questions asked!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15238162415727__af57f79a-9676-4e71-9b9d-44938eb7dc11-content-1",
+        "template--15238162415727__af57f79a-9676-4e71-9b9d-44938eb7dc11-content-2",
+        "template--15238162415727__af57f79a-9676-4e71-9b9d-44938eb7dc11-content-3",
+        "c7ebfe1a-8959-4004-8ecf-7b16d6f101d0"
+      ],
+      "settings": {
+        "sec_bg": "",
+        "title": "Frequently Asked Questions",
+        "link": "",
+        "link_text": "See All FAQs",
+        "sec_top": 35,
+        "sec_bottom": 35
+      }
     }
   },
   "order": [
@@ -294,6 +341,7 @@
     "3dd73cad-7519-4354-af72-778f549bc138",
     "99a3e00b-04a3-4797-a6c7-356edf1c5d7a",
     "ced90f77-4289-466e-a8e2-0917c3c60697",
-    "92bea67c-2bcf-4566-8e5d-0038170af2dd"
+    "92bea67c-2bcf-4566-8e5d-0038170af2dd",
+    "af57f79a-9676-4e71-9b9d-44938eb7dc11"
   ]
 }
