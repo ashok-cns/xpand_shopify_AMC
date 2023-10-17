@@ -1135,6 +1135,7 @@ $(() => {
               updates: updateFreeProduct
             }).done(function() {
              console.log('UPdate.js Scussess done');
+             $(document).find('li.mini-cart__item[data-free-product="free"]').remove();
             });
             
             
