@@ -2,7 +2,6 @@
   "sections": {
     "main": {
       "type": "page-landing-template",
-      "disabled": true,
       "settings": {
       }
     },
