@@ -77,11 +77,51 @@
         "css_class": "",
         "custom_css": ""
       }
+    },
+    "e1bce721-7ca4-4637-91ef-d3b95333ba28": {
+      "type": "product-feature",
+      "blocks": {
+        "48a5ffe9-c84e-46a5-8709-08a1d7de73ce": {
+          "type": "item",
+          "settings": {
+            "text": "Free Shipping",
+            "text_mobile": "Free Shipping",
+            "icon": "shopify:\/\/shop_images\/mobile-box.png"
+          }
+        },
+        "a65c72e9-f5d2-4426-a779-3ff085bc4c86": {
+          "type": "item",
+          "settings": {
+            "text": "Try Xpand for 90 days",
+            "text_mobile": "Try Xpand for 90 days",
+            "icon": "shopify:\/\/shop_images\/mobile-heart.png"
+          }
+        },
+        "03637f07-d99d-419c-931e-781843329abf": {
+          "type": "item",
+          "settings": {
+            "text": "100% Money Back Guarantee",
+            "text_mobile": "100% Satisfaction Guarantee",
+            "icon": "shopify:\/\/shop_images\/mobile-check.png"
+          }
+        }
+      },
+      "block_order": [
+        "48a5ffe9-c84e-46a5-8709-08a1d7de73ce",
+        "a65c72e9-f5d2-4426-a779-3ff085bc4c86",
+        "03637f07-d99d-419c-931e-781843329abf"
+      ],
+      "settings": {
+        "text_color": "#000000",
+        "sec_top": 35,
+        "sec_bottom": 35
+      }
     }
   },
   "order": [
     "main",
     "946fcdf1-889a-4c0c-9927-5f2a2aae2ca5",
-    "bea7ff2c-a043-4833-a841-50b1c752c56b"
+    "bea7ff2c-a043-4833-a841-50b1c752c56b",
+    "e1bce721-7ca4-4637-91ef-d3b95333ba28"
   ]
 }
