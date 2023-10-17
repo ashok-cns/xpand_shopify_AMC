@@ -124,6 +124,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit1.png",
             "title": "✨ No more bowties",
             "heading_size": "regular_text",
             "text": "",
@@ -139,6 +140,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit2.png",
             "title": "✨ One size fits all shoes",
             "heading_size": "regular_text",
             "text": "",
@@ -154,6 +156,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit3.png",
             "title": "✨ Easy to use",
             "heading_size": "regular_text",
             "text": "",
@@ -169,6 +172,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit4.png",
             "title": "✨ Slip on and go",
             "heading_size": "regular_text",
             "text": "",
