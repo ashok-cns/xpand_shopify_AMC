@@ -1,4 +1,12 @@
+
 {{ 'main-proudct.css' | asset_url | stylesheet_tag }}
+{%- stylesheet -%}
+  .landing-page .image-element__wrap .image-element__wrap img[data-sizes=auto].lazyloaded {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+{%- endstylesheet %}
 {%- comment -%}
 <section
   class="section">
