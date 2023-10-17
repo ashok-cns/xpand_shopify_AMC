@@ -75,7 +75,7 @@
         "slideshow_animation": "slide",
         "thumbnail_position": "left",
         "enable_thumbnail_slider": true,
-        "css_class": "",
+        "css_class": "landing-page",
         "custom_css": ""
       }
     },
