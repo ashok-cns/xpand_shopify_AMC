@@ -44,6 +44,7 @@
         },
         "template--15238162415727__bea7ff2c-a043-4833-a841-50b1c752c56b-description-1": {
           "type": "description",
+          "disabled": true,
           "settings": {
           }
         },
