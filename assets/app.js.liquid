@@ -1105,24 +1105,6 @@ $(() => {
                 'properties': { 'freeShippingItemCount': '', 'discountAmount':'' }
               }
             }
-
-            
-
-            
-            
-            console.log('LineItemData for ajax hit', lineItemData);
-            $.ajax({
-              url: '/cart/change.js',
-              dataType: 'json',
-              cache: false,
-              type: 'post',
-              async: false,
-              data: lineItemData,
-              success(data) {
-                console.log(data);
-              },
-            });
-
             if(cartQty < $('body').attr('data-free-product-count')) {
               $('body').removeClass('free-gift-product-visible');
               if($(document).find('li.mini-cart__item[data-free-product="free"]').length > 0) {
@@ -1138,6 +1120,21 @@ $(() => {
                 });
               }              
             }
+            
+            console.log('LineItemData for ajax hit', lineItemData);
+            $.ajax({
+              url: '/cart/change.js',
+              dataType: 'json',
+              cache: false,
+              type: 'post',
+              async: false,
+              data: lineItemData,
+              success(data) {
+                console.log(data);
+              },
+            });
+
+            
 
            
             
