@@ -1105,6 +1105,13 @@ $(() => {
                 'properties': { 'freeShippingItemCount': '', 'discountAmount':'' }
               }
             }
+
+            if(cartQty < $('body').attr('data-free-product-count') && $(document).find('li.mini-cart__item[data-free-product="free"]').length > 0){
+              var lineItemData =  {
+                'key': $(document).find('li.mini-cart__item[data-free-product="free"]').attr('data-key'),
+                'quantity': 0
+              }
+            }
             
             console.log('LineItemData for ajax hit', lineItemData);
             $.ajax({
