@@ -260,20 +260,20 @@
     "132710a3-58c4-496b-a791-58b9a3915040": {
       "type": "video",
       "settings": {
-        "wide_display": true,
+        "wide_display": false,
         "aspect_ratio": "16:9",
         "autoplay": false,
         "autoloop": true,
         "mute_video": false,
         "show_controls": true,
         "video_dark_overlay": false,
-        "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "iframe_video": "https:\/\/youtu.be\/eMSbyA9wNBo?si=YPRV1lx8TA5OSCjm",
         "html5_video": "",
         "display_text_over_video": false,
         "preheading": "",
         "heading": "",
         "subheading": "",
-        "button1_label": "Play Video",
+        "button1_label": "",
         "button1_link": "",
         "button1_style": "global-button--banner",
         "button2_label": "",
@@ -291,84 +291,48 @@
     "db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5": {
       "type": "faq",
       "blocks": {
-        "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-heading-1": {
-          "type": "heading",
-          "settings": {
-            "faq_title": "Section heading"
-          }
-        },
         "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-content-1": {
           "type": "content",
           "settings": {
-            "title": "Question",
-            "answer": "<p>Provide the answer to the question here.<\/p>"
+            "title": "Will Xpand Laces work on my shoes or boots?",
+            "answer": "<p>Xpand Lacing System works on all types of shoes - from kids shoes, adults sneakers, Timberlands to high-top boots.<\/p>"
           }
         },
         "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-content-2": {
           "type": "content",
           "settings": {
-            "title": "Question",
-            "answer": "<p>Provide the answer to the question here.<\/p>"
+            "title": "Are the Xpand Laces adjustable?",
+            "answer": "<p>Yes! Finding the perfect fit is easy with Xpand Laces. We recommend trying out the length before you trim the laces. Always set the initial adjustment on the loose side, so that you can always tighten them up if needed.<\/p>"
           }
         },
         "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-content-3": {
           "type": "content",
           "settings": {
-            "title": "Question",
-            "answer": "<p>Provide the answer to the question here.<\/p>"
-          }
-        },
-        "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-heading-2": {
-          "type": "heading",
-          "settings": {
-            "faq_title": "Section heading"
+            "title": "How long are the laces?",
+            "answer": "<p>Xpand Laces are 52 inches long, and can stretch out to over twice that length, which makes them long enough for all types of shoes or boots.<\/p>"
           }
         },
         "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-content-4": {
           "type": "content",
           "settings": {
-            "title": "Question",
-            "answer": "<p>Provide the answer to the question here.<\/p>"
-          }
-        },
-        "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-content-5": {
-          "type": "content",
-          "settings": {
-            "title": "Question",
-            "answer": "<p>Provide the answer to the question here.<\/p>"
-          }
-        },
-        "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-content-6": {
-          "type": "content",
-          "settings": {
-            "title": "Question",
-            "answer": "<p>Provide the answer to the question here.<\/p>"
-          }
-        },
-        "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-image-1": {
-          "type": "image",
-          "settings": {
+            "title": "What is your return and exchange policy?",
+            "answer": "<p>Xpand offers a 90 day satisfaction guarantee. If you are not 100% satisfied for any reason, we will refund your order. No questions asked!<\/p>"
           }
         }
       },
       "block_order": [
-        "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-heading-1",
         "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-content-1",
         "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-content-2",
         "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-content-3",
-        "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-heading-2",
-        "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-content-4",
-        "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-content-5",
-        "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-content-6",
-        "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-image-1"
+        "template--15238847823983__db16c567-f750-4ad6-a6c1-cb6ed5a6bcc5-content-4"
       ],
       "settings": {
         "sec_bg": "",
-        "title": "FAQ",
+        "title": "Frequently Asked Questions",
         "link": "",
         "link_text": "See All FAQs",
-        "sec_top": 0,
-        "sec_bottom": 0
+        "sec_top": 35,
+        "sec_bottom": 35
       }
     }
   },
