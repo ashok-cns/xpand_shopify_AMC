@@ -5269,11 +5269,22 @@ span.close-mini-cart-drawer:before {
   text-align: left;
   font-weight: bold;
   font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
+
+.cart_content .cart_subtotal > span.cart_subtotal_label{order: 1;}
+.cart_content .cart_subtotal > span.cart_subtotal_price_wapper {order:2;}
+.cart_content .cart_subtotal > .cart-message.meta {order: 3;}
+.cart_content .cart_subtotal > .cart-total-saving {order: 4;}
+
 .cart_content .cart_subtotal > .right:after {
   content: "USD";
   padding-left: 2px;
 }
+
 .cart_content .cart_subtotal.line-through .money[data-sutotal-price]{
   text-decoration:line-through;
   font-weight: normal;
