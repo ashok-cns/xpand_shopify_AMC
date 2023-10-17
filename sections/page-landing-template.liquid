@@ -1,12 +1,21 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
+{{ 'main-proudct.css' | asset_url | stylesheet_tag }}
+<section
+  class="section">
+  <div
+    class="
+            container
+            content
+            page
+          ">
+    <div
+      class="one-whole column">
+      <h1>{{ page.title }}</h1>
+      <div
+        class="feature-divider"></div>
+    </div>
 
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+    {%
+       render 'page-multi-column',
+       content: page.content, %}
+  </div>
+</section>
