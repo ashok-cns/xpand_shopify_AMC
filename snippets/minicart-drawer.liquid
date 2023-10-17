@@ -451,7 +451,7 @@
         </li>
 
         <li class="cart_subtotal js-cart_subtotal">
-          <span class="right">
+          <span class="right cart_subtotal_price_wapper">
             <span
               data-subtotal-cart-original="{{ cart.original_total_price }}"
               data-sutotal-price="{{ cart.total_price }}"
@@ -462,7 +462,7 @@
             </span>
           </span>
 
-          <span>{{ 'layout.general.subtotal' | t }}</span>
+          <span class="cart_subtotal_label">{{ 'layout.general.subtotal' | t }}</span>
 
           {%- capture taxes_shipping_checkout -%}
             {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
