@@ -1131,12 +1131,13 @@ $(() => {
               },
             });
 
-            jQuery.post(window.Shopify.routes.root + 'cart/update.js'{
+            jQuery.post(window.Shopify.routes.root + 'cart/update.js', {
               updates: updateFreeProduct
             }).done(function() {
              console.log('UPdate.js Scussess done');
-            })
-          
+            });
+            
+            
            
 
 
