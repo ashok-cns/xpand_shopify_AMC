@@ -10,7 +10,7 @@
       "settings": {
         "wide_display": true,
         "pretext": "",
-        "title": "Your Headline",
+        "title": "Laces to keep your sneakers on display",
         "subtitle": "",
         "button1": "",
         "button1_link": "",
@@ -23,7 +23,7 @@
         "caption_content_background": "original",
         "mobile_text_below_image": true,
         "mobile_text_color": "",
-        "css_class": "",
+        "css_class": "landing-page",
         "custom_css": ""
       }
     },
@@ -128,7 +128,7 @@
         "title": "Text columns with images",
         "link_text": "",
         "link": "",
-        "link_text_color": "#fff",
+        "link_text_color": "#ffffff",
         "link_bg_color": "#ff085a",
         "sec_bg": "",
         "css_class": "",
