@@ -7655,9 +7655,13 @@ ul.cart_items {
   border-bottom: 1px solid {{ settings.border_color }};
 }
 .cart_content li.mini-cart__item[data-free-product="free"] .mini-cart__item-price {
-  font-size: 0;
+
   justify-content: flex-end;
   flex: 0 0 100%;
+  margin-right: 5px;
+  text-decoration: line-through;
+  color: #8c8b8b;
+  font-weight: normal;
 }
 .cart_content li.mini-cart__item[data-free-product="free"] .mini-cart__item-price:before {
   content: attr(data-original-price);
