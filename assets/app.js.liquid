@@ -706,7 +706,7 @@ $(() => {
         cartDiscountsHTML += `-<span class="money">${amount}</span></span>`;
       }
 
-      cartActionHTML += `<span class="right"><span data-subtotal-cart-original="`+cart.original_total_price+`" data-sutotal-price="`+cart.total_price+`" class="money">${window.Shopify.formatMoney(cart.total_price, $('body').data('money-format'))}</span></span> <span>${window.PXUTheme.translation.cart_subtotal_text}</span>`;
+      cartActionHTML += `<span class="right cart_subtotal_price_wapper"><span data-subtotal-cart-original="`+cart.original_total_price+`" data-sutotal-price="`+cart.total_price+`" class="money">${window.Shopify.formatMoney(cart.total_price, $('body').data('money-format'))}</span></span> <span class="cart_subtotal_label">${window.PXUTheme.translation.cart_subtotal_text}</span>`;
       totalSaving += cart.total_discount;
       if (window.PXUTheme.theme_settings.display_savings && totalSaving > 0) {
         cartSavingsHTML = `<span class="right"><span class="money">${window.Shopify.formatMoney(totalSaving, $('body').data('money-format'))}</span></span>`
