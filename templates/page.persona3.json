@@ -22,7 +22,8 @@
         "text_position": "center",
         "text_align": "center",
         "caption_content_background": "darken_bg",
-        "mobile_text_below_image": true,
+        "mobile_image": "shopify:\/\/shop_images\/DSC02078_web_mobile.jpg",
+        "mobile_text_below_image": false,
         "mobile_text_color": "",
         "css_class": "landing-page",
         "custom_css": ""
@@ -44,6 +45,7 @@
         },
         "template--15238847823983__b17159fe-cb90-4d4c-843a-70c4e1418d15-description-1": {
           "type": "description",
+          "disabled": true,
           "settings": {
           }
         },
@@ -60,7 +62,7 @@
         "template--15238847823983__b17159fe-cb90-4d4c-843a-70c4e1418d15-form-1"
       ],
       "settings": {
-        "product": "",
+        "product": "no-tie-original-elastic-lacing-system",
         "wide_display": true,
         "media_position": "is-flex-row",
         "set_product_height": false,
@@ -74,16 +76,47 @@
         "slideshow_animation": "slide",
         "thumbnail_position": "bottom",
         "enable_thumbnail_slider": true,
-        "css_class": "",
+        "css_class": "landing-page",
         "custom_css": ""
       }
     },
     "e863c9ee-29f9-476e-a434-4b1411e2e781": {
       "type": "product-feature",
+      "blocks": {
+        "d589c207-19e3-4744-9456-4515bb7dd419": {
+          "type": "item",
+          "settings": {
+            "text": "Free Shipping",
+            "text_mobile": "Free Shipping",
+            "icon": "shopify:\/\/shop_images\/mobile-box.png"
+          }
+        },
+        "8d13d238-e9a4-423b-b5aa-6e44794ff0ce": {
+          "type": "item",
+          "settings": {
+            "text": "Try Xpand for 90 days",
+            "text_mobile": "Try Xpand for 90 days",
+            "icon": "shopify:\/\/shop_images\/mobile-heart.png"
+          }
+        },
+        "fd8d0698-3f15-4d70-9541-6c5b5f317852": {
+          "type": "item",
+          "settings": {
+            "text": "100% Money Back Guarantee",
+            "text_mobile": "100% Money Back Guarantee",
+            "icon": "shopify:\/\/shop_images\/mobile-check.png"
+          }
+        }
+      },
+      "block_order": [
+        "d589c207-19e3-4744-9456-4515bb7dd419",
+        "8d13d238-e9a4-423b-b5aa-6e44794ff0ce",
+        "fd8d0698-3f15-4d70-9541-6c5b5f317852"
+      ],
       "settings": {
         "text_color": "",
-        "sec_top": 0,
-        "sec_bottom": 0
+        "sec_top": 35,
+        "sec_bottom": 35
       }
     },
     "975cc46f-ef63-4627-ab23-357a35bb328c": {
