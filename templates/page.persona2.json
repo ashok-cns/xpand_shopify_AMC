@@ -73,7 +73,7 @@
         "activate_zoom": false,
         "slideshow_speed": 0,
         "slideshow_animation": "slide",
-        "thumbnail_position": "bottom",
+        "thumbnail_position": "left",
         "enable_thumbnail_slider": true,
         "css_class": "",
         "custom_css": ""
