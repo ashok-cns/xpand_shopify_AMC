@@ -76,7 +76,7 @@
         "thumbnail_position": "left",
         "enable_thumbnail_slider": true,
         "css_class": "landing-page",
-        "custom_css": ""
+        "custom_css": ".container {\n  background-color: #f1f2f2;\n}"
       }
     },
     "e1bce721-7ca4-4637-91ef-d3b95333ba28": {
