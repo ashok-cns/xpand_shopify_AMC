@@ -609,7 +609,7 @@ $(() => {
           });
         }
 
-        cartItemsHTML += '</div><div class="mini-cart__item-price" data-original-price="'+window.Shopify.formatMoney(original_price, $('body').data('money-format'))+'">';
+        cartItemsHTML += `</div><div class="mini-cart__item-price" data-original-price="${window.Shopify.formatMoney(original_price, $('body').data('money-format'))}">`;
 
         $.ajax({
           dataType: 'json',
