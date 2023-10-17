@@ -1,6 +1,10 @@
 
 {{ 'main-proudct.css' | asset_url | stylesheet_tag }}
 <style>
+  .landing-page .darken-bg {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
   /* Override poorly scoped CSS rule for images in style.css */
   .landing-page .image-element__wrap img[data-sizes=auto].lazyloaded {
     width: 100%;
