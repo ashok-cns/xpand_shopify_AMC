@@ -1108,15 +1108,7 @@ $(() => {
 
             
 
-            if(cartQty < $('body').attr('data-free-product-count')) {
-              $('body').removeClass('free-gift-product-visible');
-              if($(document).find('li.mini-cart__item[data-free-product="free"]').length > 0) {
-                var datakey = $(document).find('li.mini-cart__item[data-free-product="free"]').attr('data-key'); console.log('dataKey', datakey);
-                var updateFreeProduct = {
-                  [datakey] : 0
-                }
-              }              
-            }
+            
             
             console.log('LineItemData for ajax hit', lineItemData);
             $.ajax({
@@ -1131,12 +1123,23 @@ $(() => {
               },
             });
 
-            jQuery.post(window.Shopify.routes.root + 'cart/update.js', {
-              updates: updateFreeProduct
-            }).done(function() {
-             console.log('UPdate.js Scussess done');
-             $(document).find('li.mini-cart__item[data-free-product="free"]').remove();
-            });
+            if(cartQty < $('body').attr('data-free-product-count')) {
+              $('body').removeClass('free-gift-product-visible');
+              if($(document).find('li.mini-cart__item[data-free-product="free"]').length > 0) {
+                var datakey = $(document).find('li.mini-cart__item[data-free-product="free"]').attr('data-key'); console.log('dataKey', datakey);
+                var updateFreeProduct = {
+                  [datakey] : 0
+                }
+                jQuery.post(window.Shopify.routes.root + 'cart/update.js', {
+                  updates: updateFreeProduct
+                }).done(function() {
+                console.log('UPdate.js Scussess done');
+                $(document).find('li.mini-cart__item[data-free-product="free"]').remove();
+                });
+              }              
+            }
+
+           
             
             
            
