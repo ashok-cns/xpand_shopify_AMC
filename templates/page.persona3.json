@@ -214,55 +214,29 @@
           "type": "image",
           "settings": {
             "title": "Customer Testimonial",
-            "testimonial": "<p>Include some of your favorite customer quotes and feedback here as social proof, to build credibility and trust for your services and products.<\/p>",
+            "testimonial": "<p>★★★★★<\/p><p>\"I love these laces! The task of putting on and taking off your shoes several times a day has become so convenient. I walk and run with them and they are reliably secure.\"<\/p>",
             "name": "",
             "store_name": "",
             "link": "",
             "text_position": "center",
             "text_align": "center",
-            "caption_content_background": "original"
-          }
-        },
-        "template--15238847823983__d8bfaa1a-c5fe-4138-8837-2ff647a38188-image-2": {
-          "type": "image",
-          "settings": {
-            "title": "Customer Testimonial",
-            "testimonial": "<p>Include some of your favorite customer quotes and feedback here as social proof, to build credibility and trust for your services and products.<\/p>",
-            "name": "",
-            "store_name": "",
-            "link": "",
-            "text_position": "center",
-            "text_align": "center",
-            "caption_content_background": "original"
-          }
-        },
-        "template--15238847823983__d8bfaa1a-c5fe-4138-8837-2ff647a38188-image-3": {
-          "type": "image",
-          "settings": {
-            "title": "Customer Testimonial",
-            "testimonial": "<p>Include some of your favorite customer quotes and feedback here as social proof, to build credibility and trust for your services and products.<\/p>",
-            "name": "",
-            "store_name": "",
-            "link": "",
-            "text_position": "center",
-            "text_align": "center",
-            "caption_content_background": "original"
+            "image": "shopify:\/\/shop_images\/DSC04314_web.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/DSC04314_web_mobile.jpg",
+            "caption_content_background": "darken_bg"
           }
         }
       },
       "block_order": [
-        "template--15238847823983__d8bfaa1a-c5fe-4138-8837-2ff647a38188-image-1",
-        "template--15238847823983__d8bfaa1a-c5fe-4138-8837-2ff647a38188-image-2",
-        "template--15238847823983__d8bfaa1a-c5fe-4138-8837-2ff647a38188-image-3"
+        "template--15238847823983__d8bfaa1a-c5fe-4138-8837-2ff647a38188-image-1"
       ],
       "settings": {
         "wide_display": true,
-        "testimonial_text_animation": "fadeInDown",
+        "testimonial_text_animation": "",
         "testimonial_speed": 6,
         "activate_adaptiveHeight": false,
         "mobile_text_below_image": true,
         "mobile_text_color": "",
-        "css_class": "",
+        "css_class": "landing-page",
         "custom_css": ""
       }
     },
