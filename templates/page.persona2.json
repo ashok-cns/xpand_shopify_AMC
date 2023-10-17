@@ -116,12 +116,97 @@
         "sec_top": 35,
         "sec_bottom": 35
       }
+    },
+    "3dd73cad-7519-4354-af72-778f549bc138": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "template--15238162415727__3dd73cad-7519-4354-af72-778f549bc138-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "✨ No more bowties",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "template--15238162415727__3dd73cad-7519-4354-af72-778f549bc138-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "✨ One size fits all shoes",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "502666b9-d3ba-4431-9a05-215de1addb1a": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "✨ Easy to use",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "28c03fe2-2bef-4483-af2d-1f880bbdb5e1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "✨ Slip on and go",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15238162415727__3dd73cad-7519-4354-af72-778f549bc138-text_block-1",
+        "template--15238162415727__3dd73cad-7519-4354-af72-778f549bc138-text_block-2",
+        "502666b9-d3ba-4431-9a05-215de1addb1a",
+        "28c03fe2-2bef-4483-af2d-1f880bbdb5e1"
+      ],
+      "settings": {
+        "layout": "grid",
+        "title": "Get to Know our Laces",
+        "link_text": "",
+        "link": "",
+        "link_text_color": "#fff",
+        "link_bg_color": "#ff085a",
+        "sec_bg": "",
+        "css_class": "",
+        "custom_css": "",
+        "sec_top": 0,
+        "sec_bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "946fcdf1-889a-4c0c-9927-5f2a2aae2ca5",
     "bea7ff2c-a043-4833-a841-50b1c752c56b",
-    "e1bce721-7ca4-4637-91ef-d3b95333ba28"
+    "e1bce721-7ca4-4637-91ef-d3b95333ba28",
+    "3dd73cad-7519-4354-af72-778f549bc138"
   ]
 }
