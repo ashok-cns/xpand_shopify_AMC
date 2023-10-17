@@ -241,7 +241,7 @@
     "ced90f77-4289-466e-a8e2-0917c3c60697": {
       "type": "text-banner",
       "settings": {
-        "title": "<br>How to Install",
+        "title": "How to Install",
         "text": "",
         "primary_cta_text": "",
         "primary_cta_link": "",
@@ -258,7 +258,7 @@
     "92bea67c-2bcf-4566-8e5d-0038170af2dd": {
       "type": "video",
       "settings": {
-        "wide_display": true,
+        "wide_display": false,
         "aspect_ratio": "16:9",
         "autoplay": false,
         "autoloop": true,
