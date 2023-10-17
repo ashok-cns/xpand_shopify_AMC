@@ -1108,8 +1108,7 @@ $(() => {
 
             if(cartQty < $('body').attr('data-free-product-count') && $(document).find('li.mini-cart__item[data-free-product="free"]').length > 0){
               var updateFreeProduct =  {
-                'key': $(document).find('li.mini-cart__item[data-free-product="free"]').attr('data-key'),
-                'quantity': 0
+                $(document).find('li.mini-cart__item[data-free-product="free"]').attr('data-key'): 0
               }
             }
             
