@@ -1111,10 +1111,12 @@ $(() => {
             if(cartQty < $('body').attr('data-free-product-count')) {
               $('body').removeClass('free-gift-product-visible');
               if($(document).find('li.mini-cart__item[data-free-product="free"]').length > 0) {
-                var datakey = $(document).find('li.mini-cart__item[data-free-product="free"]').attr('data-key'); console.log('dataKey', datakey);
-                var updateFreeProduct = {
-                  [datakey] : 0
-                }
+                $(document).find('li.mini-cart__item[data-free-product="free"] a.js-cart-remove-btn').trigger('click');
+                
+                // var datakey = $(document).find('li.mini-cart__item[data-free-product="free"]').attr('data-key'); console.log('dataKey', datakey);
+                // var updateFreeProduct = {
+                //   [datakey] : 0
+                // }
               }              
             }
             
@@ -1131,9 +1133,9 @@ $(() => {
               },
             });
 
-            jQuery.post(window.Shopify.routes.root + 'cart/update.js', {
-              updates: updateFreeProduct
-            });
+            // jQuery.post(window.Shopify.routes.root + 'cart/update.js', {
+            //   updates: updateFreeProduct
+            // });
            
            
 
