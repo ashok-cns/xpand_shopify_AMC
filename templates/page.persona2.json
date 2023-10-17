@@ -22,7 +22,7 @@
         "text_position": "center",
         "text_align": "center",
         "caption_content_background": "darken_bg",
-        "mobile_text_below_image": true,
+        "mobile_text_below_image": false,
         "mobile_text_color": "",
         "css_class": "landing-page",
         "custom_css": ""
