@@ -126,12 +126,13 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "title": "Add a title or tagline",
+            "image": "shopify:\/\/shop_images\/Benefit1.png",
+            "title": "✨ No more bowties",
             "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "",
             "button_label": "",
             "button_link": "",
-            "align_text": "left",
+            "align_text": "center",
             "border_style": "none",
             "link_text_color": "",
             "link_bg_color": ""
@@ -141,12 +142,45 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "title": "Add a title or tagline",
+            "image": "shopify:\/\/shop_images\/Benefit2.png",
+            "title": "✨ One size fits all shoes",
             "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "",
             "button_label": "",
             "button_link": "",
-            "align_text": "left",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "9b423c35-4149-4a58-bdf0-bdbd31732209": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit3.png",
+            "title": "✨ Easy to use",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "f59d8bf7-441e-4bed-b6c8-2a995914de05": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit4.png",
+            "title": "✨ Slip on and go",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "✨ No more bowties",
+            "button_link": "",
+            "align_text": "center",
             "border_style": "none",
             "link_text_color": "",
             "link_bg_color": ""
@@ -155,17 +189,19 @@
       },
       "block_order": [
         "template--15238847823983__975cc46f-ef63-4627-ab23-357a35bb328c-text_block-1",
-        "template--15238847823983__975cc46f-ef63-4627-ab23-357a35bb328c-text_block-2"
+        "template--15238847823983__975cc46f-ef63-4627-ab23-357a35bb328c-text_block-2",
+        "9b423c35-4149-4a58-bdf0-bdbd31732209",
+        "f59d8bf7-441e-4bed-b6c8-2a995914de05"
       ],
       "settings": {
         "layout": "grid",
-        "title": "Text columns with images",
+        "title": "Get to Know our Laces",
         "link_text": "",
         "link": "",
         "link_text_color": "#ffffff",
         "link_bg_color": "#ff085a",
         "sec_bg": "",
-        "css_class": "",
+        "css_class": "landing-page",
         "custom_css": "",
         "sec_top": 0,
         "sec_bottom": 0
