@@ -1107,7 +1107,7 @@ $(() => {
             }
 
             if(cartQty < $('body').attr('data-free-product-count') && $(document).find('li.mini-cart__item[data-free-product="free"]').length > 0){
-              var lineItemData =  {
+              var updateFreeProduct =  {
                 'key': $(document).find('li.mini-cart__item[data-free-product="free"]').attr('data-key'),
                 'quantity': 0
               }
@@ -1124,6 +1124,10 @@ $(() => {
               success(data) {
                 console.log(data);
               },
+            });
+
+            jQuery.post(window.Shopify.routes.root + 'cart/update.js', {
+              updates: updateFreeProduct
             });
            
            
