@@ -1,20 +1,19 @@
 {
   "sections": {
     "main": {
-      "type": "page-template",
+      "type": "page-landing-template",
       "settings": {
       }
     },
-    "917fb3a7-cbab-4fe0-b651-8955cc1e6223": {
+    "946fcdf1-889a-4c0c-9927-5f2a2aae2ca5": {
       "type": "image-with-text-overlay",
-      "disabled": true,
       "settings": {
         "wide_display": true,
-        "image": "shopify:\/\/shop_images\/banner.png",
+        "image": "shopify:\/\/shop_images\/DSC02719_web.jpg",
         "pretext": "",
-        "title": "XPAND THELOVE",
+        "title": "Gain an extra moment in your day to just breathe",
         "subtitle": "",
-        "button1": "",
+        "button1": "SHOP NOW",
         "button1_link": "",
         "button1_style": "global-button--banner",
         "button2": "",
@@ -22,181 +21,328 @@
         "button2_style": "global-button--banner",
         "text_position": "center",
         "text_align": "center",
-        "caption_content_background": "original",
+        "caption_content_background": "darken_bg",
         "mobile_text_below_image": false,
         "mobile_text_color": "",
-        "css_class": "social-impact-banner-area",
+        "css_class": "landing-page",
         "custom_css": ""
       }
     },
-    "505aab9e-65bd-46c5-9c80-081a07d065a3": {
-      "type": "featured-text",
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "content": "<p>No matter what life looks like for you, our mission at Xpand is to help you move smarter. But, when our community showed us that our laces could do so much more, we knew we had to help. That's why we are committed to supporting initiatives to keep our communities safe and healthy. <\/p>",
-        "button_label": "",
-        "button_link": "",
-        "text_size": "featured_text",
-        "text_alignment": "center",
-        "css_class": "full-width-content-social-impact",
-        "custom_css": ""
-      }
-    },
-    "b502b4fe-e2f7-4126-b5bd-9829b6927d16": {
-      "type": "three-columns-icons-group",
+    "bea7ff2c-a043-4833-a841-50b1c752c56b": {
+      "type": "featured-product",
       "blocks": {
-        "9089d727-55c7-4e8f-ada9-9a3d8f06b212": {
-          "type": "col_item",
+        "template--15238162415727__bea7ff2c-a043-4833-a841-50b1c752c56b-title-1": {
+          "type": "title",
           "settings": {
-            "title": "Donations to Hospitals",
-            "image": "shopify:\/\/shop_images\/icon_1.png",
-            "content": "<p>A portion of Xpand sales will be donated to local and international hospitals. If you would like us to add a hospital to our list, email us at <a href=\"mailto:hello@xpandlaces.com\">hello@xpandlaces.com<\/a>.<\/p>",
-            "btn_txt": "EMAIL US",
-            "link": "mailto:hello@xpandlaces.com"
           }
         },
-        "52e9db47-a782-49e8-a81a-2945e8102b79": {
-          "type": "col_item",
+        "template--15238162415727__bea7ff2c-a043-4833-a841-50b1c752c56b-price-1": {
+          "type": "price",
           "settings": {
-            "title": "Donations to Medical Workers",
-            "image": "shopify:\/\/shop_images\/icon_2.png",
-            "content": "<p>We are donating our no-tie laces to hospitals in an effort to help ensure that medical workers stay safe and comfortable while they bravely tackle their work on the frontlines. <\/p>",
-            "btn_txt": "LEARN MORE",
-            "link": "https:\/\/heroes.xpandlaces.com\/"
+            "display_savings": true
           }
         },
-        "dee72588-443e-4c55-85db-3066ff032efc": {
-          "type": "col_item",
+        "template--15238162415727__bea7ff2c-a043-4833-a841-50b1c752c56b-description-1": {
+          "type": "description",
+          "disabled": true,
           "settings": {
-            "title": "Elastics for DIY masks",
-            "image": "shopify:\/\/shop_images\/icon_3.png",
-            "content": "<p>We are also donating our laces to community members who are currently sewing protective masks to donate to our healthcare heroes.<\/p>",
-            "btn_txt": "DIY MASK TUTORIAL",
-            "link": "https:\/\/www.xpandlaces.com\/blogs\/news\/how-to-make-homemade-medical-face-mask"
+          }
+        },
+        "template--15238162415727__bea7ff2c-a043-4833-a841-50b1c752c56b-form-1": {
+          "type": "form",
+          "settings": {
           }
         }
       },
       "block_order": [
-        "9089d727-55c7-4e8f-ada9-9a3d8f06b212",
-        "52e9db47-a782-49e8-a81a-2945e8102b79",
-        "dee72588-443e-4c55-85db-3066ff032efc"
+        "template--15238162415727__bea7ff2c-a043-4833-a841-50b1c752c56b-title-1",
+        "template--15238162415727__bea7ff2c-a043-4833-a841-50b1c752c56b-price-1",
+        "template--15238162415727__bea7ff2c-a043-4833-a841-50b1c752c56b-description-1",
+        "template--15238162415727__bea7ff2c-a043-4833-a841-50b1c752c56b-form-1"
       ],
-      "disabled": true,
       "settings": {
-        "listing_title": "Here’s How We’re Helping",
-        "youtube_embeded_path": "<iframe src=\"https:\/\/www.youtube.com\/embed\/7RrAESvWnXo?wmode=opaque\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\" width=\"100%\" height=\"100%\"><\/iframe>",
-        "bottom_header": "We'll continue updating you with new social impact  initiatives that we are working on."
-      }
-    },
-    "f26f6853-ee9f-4ef2-a33d-2f6a3b81005e": {
-      "type": "counter-section",
-      "blocks": {
-        "8a8b76e7-8b6e-44a0-812f-689dbe23047d": {
-          "type": "counter_item",
-          "settings": {
-            "counter_value": "650+",
-            "counter_title": "No-Tie Elastic Laces to  healthcare heroes"
-          }
-        },
-        "8cfd0f39-c004-4a05-818e-10cd3776f826": {
-          "type": "counter_item",
-          "settings": {
-            "counter_value": "3,200+",
-            "counter_title": "No-Tie Elastic Laces  for DIY masks"
-          }
-        },
-        "28226554-696e-4651-a503-b68e2d8ff8d8": {
-          "type": "counter_item",
-          "settings": {
-            "counter_value": "650+",
-            "counter_title": "N95 Masks to  hospitals"
-          }
-        }
-      },
-      "block_order": [
-        "8a8b76e7-8b6e-44a0-812f-689dbe23047d",
-        "8cfd0f39-c004-4a05-818e-10cd3776f826",
-        "28226554-696e-4651-a503-b68e2d8ff8d8"
-      ],
-      "disabled": true,
-      "settings": {
-        "listing_title": "With your support  Xpand has donated",
-        "bottom_title": "and counting..."
-      }
-    },
-    "1c1ebe63-43aa-4f86-852c-533d92598af7": {
-      "type": "full-width-image",
-      "disabled": true,
-      "settings": {
-        "section_image": "shopify:\/\/shop_images\/full_image.png",
-        "image_url": "#"
-      }
-    },
-    "dc97b34e-e17d-4127-9be5-5b70fdb1b333": {
-      "type": "section-header",
-      "disabled": true,
-      "settings": {
-        "title": "XPAND YOUR PRIDE",
-        "content": "<p>On rainy days, we like to search for the rainbow. <br\/>So, while 2020 has been a challenging year, we are feeling more inspired than ever to incite positive change within the Xpand community and beyond. That’s why we are excited to announce some new initiatives we are launching in honour of Pride Month to support and celebrate the diverse and vibrant LGBTQ2S community.<\/p>"
-      }
-    },
-    "c1cd5888-1d2e-4179-bf1d-cef53fb4f670": {
-      "type": "product-description",
-      "blocks": {
-        "612c44c3-e7f1-455a-b302-4db3df0325a0": {
-          "type": "col_item",
-          "settings": {
-            "title": "RAINBOW LACES",
-            "product_image": "shopify:\/\/shop_images\/product_1.jpg",
-            "product_description": "<p>Every time you purchase a pair of our rainbow laces, we will donate a portion of our sales to organizations that support the LGBTQ2S community.<\/p>",
-            "pdp_link": "",
-            "left_aligned_img": true
-          }
-        },
-        "59240f4d-5191-4dd5-bafc-e62aa0af436d": {
-          "type": "col_item",
-          "settings": {
-            "title": "CUSHIONED NO-SHOW",
-            "product_image": "shopify:\/\/shop_images\/product_2.jpg",
-            "product_description": "<p>During the month of June, for every pair of socks purchased, we will donate a pair to youth shelters who serve the LGBTQ2S community.<\/p>",
-            "pdp_link": "https:\/\/www.xpandlaces.com\/products\/cushioned-no-show-socks?variant=30296303173743",
-            "left_aligned_img": false
-          }
-        }
-      },
-      "block_order": [
-        "612c44c3-e7f1-455a-b302-4db3df0325a0",
-        "59240f4d-5191-4dd5-bafc-e62aa0af436d"
-      ],
-      "disabled": true,
-      "settings": {
-      }
-    },
-    "2dcd7396-7cc0-4e89-8141-2716c837037f": {
-      "type": "featured-text",
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "content": "<p><strong>We want to take this opportunity to thank you, our loyal customers.<\/strong><\/p><p>We want you to be proud of wearing Xpand knowing that with every step you take you are helping us support initiatives that keep our communities safe and healthy.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "text_size": "featured_text",
-        "text_alignment": "center",
-        "css_class": "cm_bottom_content",
+        "product": "no-tie-original-elastic-lacing-system",
+        "wide_display": true,
+        "media_position": "is-flex-row",
+        "set_product_height": false,
+        "product_height": 500,
+        "video_looping": false,
+        "product_thumbs": true,
+        "gallery_arrows": true,
+        "enable_product_lightbox": true,
+        "activate_zoom": false,
+        "slideshow_speed": 0,
+        "slideshow_animation": "slide",
+        "thumbnail_position": "left",
+        "enable_thumbnail_slider": true,
+        "css_class": "landing-page",
         "custom_css": ""
+      }
+    },
+    "e1bce721-7ca4-4637-91ef-d3b95333ba28": {
+      "type": "product-feature",
+      "blocks": {
+        "48a5ffe9-c84e-46a5-8709-08a1d7de73ce": {
+          "type": "item",
+          "settings": {
+            "text": "Free Shipping",
+            "text_mobile": "Free Shipping",
+            "icon": "shopify:\/\/shop_images\/mobile-box.png"
+          }
+        },
+        "a65c72e9-f5d2-4426-a779-3ff085bc4c86": {
+          "type": "item",
+          "settings": {
+            "text": "Try Xpand for 90 days",
+            "text_mobile": "Try Xpand for 90 days",
+            "icon": "shopify:\/\/shop_images\/mobile-heart.png"
+          }
+        },
+        "03637f07-d99d-419c-931e-781843329abf": {
+          "type": "item",
+          "settings": {
+            "text": "100% Money Back Guarantee",
+            "text_mobile": "100% Satisfaction Guarantee",
+            "icon": "shopify:\/\/shop_images\/mobile-check.png"
+          }
+        }
+      },
+      "block_order": [
+        "48a5ffe9-c84e-46a5-8709-08a1d7de73ce",
+        "a65c72e9-f5d2-4426-a779-3ff085bc4c86",
+        "03637f07-d99d-419c-931e-781843329abf"
+      ],
+      "settings": {
+        "text_color": "#000000",
+        "sec_top": 35,
+        "sec_bottom": 35
+      }
+    },
+    "3dd73cad-7519-4354-af72-778f549bc138": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "template--15238162415727__3dd73cad-7519-4354-af72-778f549bc138-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit1.png",
+            "title": "✨ No more bowties",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "template--15238162415727__3dd73cad-7519-4354-af72-778f549bc138-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit2.png",
+            "title": "✨ One size fits all shoes",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "502666b9-d3ba-4431-9a05-215de1addb1a": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit3.png",
+            "title": "✨ Easy to use",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "28c03fe2-2bef-4483-af2d-1f880bbdb5e1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit4.png",
+            "title": "✨ Slip on and go",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15238162415727__3dd73cad-7519-4354-af72-778f549bc138-text_block-1",
+        "template--15238162415727__3dd73cad-7519-4354-af72-778f549bc138-text_block-2",
+        "502666b9-d3ba-4431-9a05-215de1addb1a",
+        "28c03fe2-2bef-4483-af2d-1f880bbdb5e1"
+      ],
+      "settings": {
+        "layout": "grid",
+        "title": "Get to Know our Laces",
+        "link_text": "",
+        "link": "",
+        "link_text_color": "#ffffff",
+        "link_bg_color": "#ff085a",
+        "sec_bg": "",
+        "css_class": "landing-page",
+        "custom_css": "",
+        "sec_top": 0,
+        "sec_bottom": 0
+      }
+    },
+    "99a3e00b-04a3-4797-a6c7-356edf1c5d7a": {
+      "type": "testimonial",
+      "blocks": {
+        "template--15238162415727__99a3e00b-04a3-4797-a6c7-356edf1c5d7a-image-1": {
+          "type": "image",
+          "settings": {
+            "title": "I love these laces!",
+            "testimonial": "<p>★★★★★<\/p><p>\"I love these laces! The task of putting on and taking off your shoes several times a day has become so convenient. I walk and run with them and they are reliably secure.\"<\/p>",
+            "name": "Chrystal",
+            "store_name": "",
+            "link": "",
+            "text_position": "center",
+            "text_align": "center",
+            "image": "shopify:\/\/shop_images\/DSC01515_web_37b2db51-6148-43bd-bf35-a31d2e10f00c.jpg",
+            "caption_content_background": "darken_bg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15238162415727__99a3e00b-04a3-4797-a6c7-356edf1c5d7a-image-1"
+      ],
+      "settings": {
+        "wide_display": true,
+        "testimonial_text_animation": "",
+        "testimonial_speed": 12,
+        "activate_adaptiveHeight": false,
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "landing-page",
+        "custom_css": ""
+      }
+    },
+    "ced90f77-4289-466e-a8e2-0917c3c60697": {
+      "type": "text-banner",
+      "settings": {
+        "title": "How to Install",
+        "text": "",
+        "primary_cta_text": "",
+        "primary_cta_link": "",
+        "primary_cta_text_color": "",
+        "primary_cta_bg_color": "",
+        "enable_secondary_cta": false,
+        "secondary_cta_text": "",
+        "secondary_cta_link": "",
+        "secondary_cta_text_color": "",
+        "secondary_cta_bg_color": "",
+        "css_class": "landing-page"
+      }
+    },
+    "92bea67c-2bcf-4566-8e5d-0038170af2dd": {
+      "type": "video",
+      "settings": {
+        "wide_display": false,
+        "aspect_ratio": "16:9",
+        "autoplay": false,
+        "autoloop": true,
+        "mute_video": false,
+        "show_controls": true,
+        "video_dark_overlay": false,
+        "iframe_video": "https:\/\/youtu.be\/eMSbyA9wNBo?si=YPRV1lx8TA5OSCjm",
+        "html5_video": "",
+        "display_text_over_video": false,
+        "preheading": "",
+        "heading": "",
+        "subheading": "",
+        "button1_label": "",
+        "button1_link": "",
+        "button1_style": "global-button--banner",
+        "button2_label": "",
+        "button2_link": "",
+        "button2_style": "global-button--banner",
+        "text_position": "center",
+        "text_align": "center",
+        "caption_content_background": "original",
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "af57f79a-9676-4e71-9b9d-44938eb7dc11": {
+      "type": "faq",
+      "blocks": {
+        "template--15238162415727__af57f79a-9676-4e71-9b9d-44938eb7dc11-content-1": {
+          "type": "content",
+          "settings": {
+            "title": "Will Xpand Laces work on my shoes or boots?",
+            "answer": "<p>Xpand Lacing System works on all types of shoes - from kids shoes, adults sneakers, Timberlands to high-top boots.<\/p>"
+          }
+        },
+        "template--15238162415727__af57f79a-9676-4e71-9b9d-44938eb7dc11-content-2": {
+          "type": "content",
+          "settings": {
+            "title": "Are the Xpand Laces adjustable?",
+            "answer": "<p>Yes! Finding the perfect fit is easy with Xpand Laces. We recommend trying out the length before you trim the laces. Always set the initial adjustment on the loose side, so that you can always tighten them up if needed.<\/p>"
+          }
+        },
+        "template--15238162415727__af57f79a-9676-4e71-9b9d-44938eb7dc11-content-3": {
+          "type": "content",
+          "settings": {
+            "title": "How long are the laces?",
+            "answer": "<p>Xpand Laces are 52 inches long, and can stretch out to over twice that length, which makes them long enough for all types of shoes or boots.<\/p>"
+          }
+        },
+        "c7ebfe1a-8959-4004-8ecf-7b16d6f101d0": {
+          "type": "content",
+          "settings": {
+            "title": "What is your return and exchange policy?",
+            "answer": "<p>Xpand offers a 90 day satisfaction guarantee. If you are not 100% satisfied for any reason, we will refund your order. No questions asked!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15238162415727__af57f79a-9676-4e71-9b9d-44938eb7dc11-content-1",
+        "template--15238162415727__af57f79a-9676-4e71-9b9d-44938eb7dc11-content-2",
+        "template--15238162415727__af57f79a-9676-4e71-9b9d-44938eb7dc11-content-3",
+        "c7ebfe1a-8959-4004-8ecf-7b16d6f101d0"
+      ],
+      "settings": {
+        "sec_bg": "",
+        "title": "Frequently Asked Questions",
+        "link": "",
+        "link_text": "See All FAQs",
+        "sec_top": 35,
+        "sec_bottom": 35
       }
     }
   },
   "order": [
     "main",
-    "917fb3a7-cbab-4fe0-b651-8955cc1e6223",
-    "505aab9e-65bd-46c5-9c80-081a07d065a3",
-    "b502b4fe-e2f7-4126-b5bd-9829b6927d16",
-    "f26f6853-ee9f-4ef2-a33d-2f6a3b81005e",
-    "1c1ebe63-43aa-4f86-852c-533d92598af7",
-    "dc97b34e-e17d-4127-9be5-5b70fdb1b333",
-    "c1cd5888-1d2e-4179-bf1d-cef53fb4f670",
-    "2dcd7396-7cc0-4e89-8141-2716c837037f"
+    "946fcdf1-889a-4c0c-9927-5f2a2aae2ca5",
+    "bea7ff2c-a043-4833-a841-50b1c752c56b",
+    "e1bce721-7ca4-4637-91ef-d3b95333ba28",
+    "3dd73cad-7519-4354-af72-778f549bc138",
+    "99a3e00b-04a3-4797-a6c7-356edf1c5d7a",
+    "ced90f77-4289-466e-a8e2-0917c3c60697",
+    "92bea67c-2bcf-4566-8e5d-0038170af2dd",
+    "af57f79a-9676-4e71-9b9d-44938eb7dc11"
   ]
 }
