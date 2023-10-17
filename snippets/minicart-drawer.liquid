@@ -463,9 +463,7 @@
           </span>
 
           <span>{{ 'layout.general.subtotal' | t }}</span>
-        </li>
 
-        <li>
           {%- capture taxes_shipping_checkout -%}
             {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
               {{ 'cart.general.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
@@ -480,6 +478,22 @@
 
           <p class="cart-message meta ertt">{{ taxes_shipping_checkout }}</p>
         </li>
+
+        {% comment %} <li>
+          {%- capture taxes_shipping_checkout -%}
+            {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+              {{ 'cart.general.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
+            {%- elsif cart.taxes_included -%}
+              {{ 'cart.general.taxes_included_but_shipping_at_checkout' | t }}
+            {%- elsif shop.shipping_policy.body != blank -%}
+              {{ 'cart.general.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
+            {%- else -%}
+              {{ 'cart.general.tax_and_shipping' | t }}
+            {%- endif -%}
+          {%- endcapture -%}
+
+          <p class="cart-message meta ertt">{{ taxes_shipping_checkout }}</p>
+        </li> {% endcomment %}
 
         <li>
           {% if settings.display_special_instructions and settings.go_to_checkout %}
