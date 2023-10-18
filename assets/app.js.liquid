@@ -1107,20 +1107,8 @@ $(() => {
                 'properties': { 'freeShippingItemCount': '', 'discountAmount':'' }
               }
             }
-            
-            
-            console.log('LineItemData for ajax hit', lineItemData);
-            $.ajax({
-              url: '/cart/change.js',
-              dataType: 'json',
-              cache: false,
-              type: 'post',
-              async: false,
-              data: lineItemData,
-              success(data) {
-                console.log('Inside change.js 2')
-                console.log(data);
-                if(cartQty < $('body').attr('data-free-product-count')) {
+
+            if(cartQty < $('body').attr('data-free-product-count')) {
                   $('body').removeClass('free-gift-product-visible');
                   if($(document).find('li.mini-cart__item[data-free-product="free"]').length > 0) {
                     var datakey = $(document).find('li.mini-cart__item[data-free-product="free"]').attr('data-key'); console.log('dataKey', datakey);
@@ -1135,7 +1123,24 @@ $(() => {
                     });
                   }              
                 }
+            
+            
+            console.log('LineItemData for ajax hit', lineItemData);
+            $.ajax({
+              url: '/cart/change.js',
+              dataType: 'json',
+              cache: false,
+              type: 'post',
+              async: false,
+              data: lineItemData,
+              success: function(data) {
+                console.log('Inside change.js 2')
+                console.log(data);
               },
+              error: function(error, xhr){
+                console.log('ERRor change.js==>', error);
+                console.log('Error XHR', xhr)
+              }
             });
 
             
