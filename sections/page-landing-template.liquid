@@ -52,14 +52,14 @@
     });
   }
 
-  window.addEventListener('DOMContentLoaded', (event) => {
+  window.addEventListener('DOMContentLoaded', function(event) {
     if (Shopify.designMode) {
       document.addEventListener('shopify:section:load', init);
       document.addEventListener('shopify:section:unload', unload);
     }
   
     init();
-  }
+  });
 </script>
 
 {%- comment -%}
