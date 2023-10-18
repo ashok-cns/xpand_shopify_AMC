@@ -468,7 +468,7 @@ $(() => {
       type: 'post',
       data: {
         quantity: cartItem.quantity,
-        line: cartItem.variantID,
+        id: cartItem.variantID,
       },
       success(data) {
         console.log('Inside change.js 1')
