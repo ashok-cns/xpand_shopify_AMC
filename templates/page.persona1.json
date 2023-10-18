@@ -206,6 +206,39 @@
         "sec_top": 0,
         "sec_bottom": 0
       }
+    },
+    "00e61425-1c0d-4f06-9e8d-dfe828a3f60d": {
+      "type": "testimonial",
+      "blocks": {
+        "template--15242019602543__00e61425-1c0d-4f06-9e8d-dfe828a3f60d-image-1": {
+          "type": "image",
+          "settings": {
+            "title": "Great Concept!",
+            "testimonial": "<p>Great value and convenience. Use them for my soccer cleats and sambas, its made a difference! I love em!<\/p>",
+            "name": "Adim O.",
+            "store_name": "",
+            "link": "",
+            "text_position": "center",
+            "text_align": "center",
+            "image": "shopify:\/\/shop_images\/Photo_Oct_31_5_27_35_AM_web.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Photo_Oct_31_5_27_35_AM_web_mobile.jpg",
+            "caption_content_background": "darken_bg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15242019602543__00e61425-1c0d-4f06-9e8d-dfe828a3f60d-image-1"
+      ],
+      "settings": {
+        "wide_display": true,
+        "testimonial_text_animation": "",
+        "testimonial_speed": 6,
+        "activate_adaptiveHeight": false,
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "landing-page",
+        "custom_css": ""
+      }
     }
   },
   "order": [
@@ -213,6 +246,7 @@
     "8f792a3e-aa5e-4b04-85dd-030874db4f96",
     "4019e6b7-f1c5-43ca-804d-f8251b50da49",
     "3341b888-239e-4dad-9275-15afdd4b1981",
-    "4502e7ce-b626-4f68-ae5d-3b5572dd2c82"
+    "4502e7ce-b626-4f68-ae5d-3b5572dd2c82",
+    "00e61425-1c0d-4f06-9e8d-dfe828a3f60d"
   ]
 }
