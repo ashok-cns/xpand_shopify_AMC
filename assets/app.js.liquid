@@ -532,6 +532,10 @@ $(() => {
         applyDiscount();
         
       },
+              error: function(error, xhr){
+                console.log('ERRor 6 =>', error);
+                console.log('ERRor 6 =>', xhr)
+              }
     });
   }
 
@@ -1181,10 +1185,14 @@ $(() => {
                   type: 'post',
                   async: false,
                   data: lineItemData,
-                  success(data) {
-                    console.log('Inside change.js 3')
-                    console.log(data);
-                  },
+                  success: function(data) {
+                console.log('Inside change.js 3')
+                console.log(data);
+              },
+              error: function(error, xhr){
+                console.log('ERRor 3 =>', error);
+                console.log('ERRor 3 =>', xhr)
+              }
                 });
                 
             }
@@ -1242,10 +1250,14 @@ $(() => {
               type: 'post',
               async: false,
               data: lineItemData,
-              success(data) {
+              success: function(data) {
                 console.log('Inside change.js 4')
                 console.log(data);
               },
+              error: function(error, xhr){
+                console.log('ERRor 4 =>', error);
+                console.log('ERRor 4 =>', xhr)
+              }
             });
 
             
@@ -1276,10 +1288,14 @@ $(() => {
                 type: 'post',
                 async: false,
                 data: lineItemData,
-                success(data) {
-                  console.log('Inside change.js 5')
-                  console.log(data);
-                },
+                success: function(data) {
+                console.log('Inside change.js 5')
+                console.log(data);
+              },
+              error: function(error, xhr){
+                console.log('ERRor 5 =>', error);
+                console.log('ERRor 5 =>', xhr)
+              }
               });
               
             }
