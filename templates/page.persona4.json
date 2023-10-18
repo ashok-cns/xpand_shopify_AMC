@@ -25,7 +25,7 @@
         "mobile_image": "shopify:\/\/shop_images\/DSC06755_web_mobile.jpg",
         "mobile_text_below_image": false,
         "mobile_text_color": "",
-        "css_class": "landing-page",
+        "css_class": "landing-page shop-link",
         "custom_css": ""
       }
     },
@@ -198,7 +198,7 @@
         "title": "Get to Know our Laces",
         "link_text": "",
         "link": "",
-        "link_text_color": "#fff",
+        "link_text_color": "#ffffff",
         "link_bg_color": "#ff085a",
         "sec_bg": "",
         "css_class": "landing-page",
