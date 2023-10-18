@@ -739,6 +739,9 @@ $(() => {
       totalDiscount: $(this).parents('[data-cart-form]').data('total-discount'),
       $element: $(this).parents('[data-cart-item]'),
     };
+    console.log('CartItem00-====>',updateCartItemQuantity);
+    return false;
+
     // Disable button after click to prevent multiple clicks
     $(this).parents('.product-quantity-box').find('.js-change-quantity').addClass('is-disabled');
     updateCartItemQuantity(cartItem);
