@@ -1086,24 +1086,26 @@ $(() => {
 
             // Update ajax cart/change.js to update properties
             var getLineId = currentItem.attr('data-line-id'); console.log('getDataId == ', getLineId);
+
+
             var getLineVariantId = currentItem.attr('data-variant-id'); console.log('getLineVariantId == ', getLineVariantId);
             var getLineKey = currentItem.attr('data-key'); console.log('getLineKey == ', getLineKey);
             var discountItemQty = Number(currentItem.find('input[data-cart-quantity-input]').val()); console.log('==========>', discountItemQty)
             if(cm_tier_amount > 0 && cartQty >= freeShippingItemCount){
               var lineItemData =  {
-                'line': getLineId,
+                'id': getLineVariantId,
                 'quantity': discountItemQty,
                 'properties': { 'freeShippingItemCount': freeShippingItemCount, 'discountAmount': discountItemQty*cm_tier_amount*100 }
               }
             }else if(cm_tier_amount > 0 && cartQty < freeShippingItemCount) {
               var lineItemData =  {
-                'line': getLineId,
+                'id': getLineVariantId,
                 'quantity': discountItemQty,
                 'properties': { 'freeShippingItemCount': '', 'discountAmount': discountItemQty*cm_tier_amount*100 }
               }
             } else {
               var lineItemData =  {
-                'line': getLineId,
+                'id': getLineVariantId,
                 'quantity': discountItemQty,
                 'properties': { 'freeShippingItemCount': '', 'discountAmount':'' }
               }
