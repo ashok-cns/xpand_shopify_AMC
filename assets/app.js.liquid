@@ -1134,7 +1134,18 @@ $(() => {
                     }).done(function(data) {
                     console.log('UPdate.js Scussess done', data);
                     $(document).find('li.mini-cart__item[data-free-product="free"]').remove();
-                    refreshCart(data);
+                    $.ajax({
+                      url: '/cart.js',
+                      dataType: 'json',
+                      cache: false,
+                      success:function(data){
+                        refreshCart(data);
+                       },
+                       error: function(error, xhr){
+                        console.log('XHRR ',error, xhr)
+                       }
+                    })
+                    
                     });
                   }              
                 }
