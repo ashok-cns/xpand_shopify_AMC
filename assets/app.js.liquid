@@ -1097,13 +1097,13 @@ $(() => {
               var lineItemData =  {
                 'line': getLineId,
                 'quantity': discountItemQty,
-                'properties': { 'freeShippingItemCount': '', 'discountAmount': discountItemQty*cm_tier_amount*100 }
+                'properties': { 'discountAmount': discountItemQty*cm_tier_amount*100 }
               }
             } else {
               var lineItemData =  {
                 'line': getLineId,
-                'quantity': discountItemQty,
-                'properties': { 'freeShippingItemCount': '', 'discountAmount':'' }
+                'quantity': discountItemQty
+                // 'properties': { 'freeShippingItemCount': '', 'discountAmount':'' }
               }
             }
             
