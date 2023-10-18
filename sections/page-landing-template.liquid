@@ -31,7 +31,6 @@
 </style>
 
 <script>
-
   function handleShopLinkClickEvent(event) {
     event.preventDefault();
     console.log('Clicked');
@@ -40,6 +39,7 @@
   function init() {
     console.log('Init');
     var shopLinks = document.querySelectorAll('.landing-page.shop-link a');
+    console.log(shopLinks.length);
     shopLinks.forEach(function(link) {
       console.log('Attach click event');
       link.addEventListener('click', handleShopLinkClickEvent)
@@ -53,14 +53,12 @@
     });
   }
 
-  document.addEventListener('DOMContentLoaded', function(event) {
-    if (Shopify.designMode) {
-      document.addEventListener('shopify:section:load', init);
-      document.addEventListener('shopify:section:unload', unload);
-    }
-  
-    init();
-  });
+  if (Shopify.designMode) {
+    document.addEventListener('shopify:section:load', init);
+    document.addEventListener('shopify:section:unload', unload);
+  }
+
+  init();
 </script>
 {%- comment -%}
 <section
