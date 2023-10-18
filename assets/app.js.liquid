@@ -459,6 +459,7 @@ $(() => {
   }
 
   function updateCartItemQuantity(cartItem) {
+    console.log("UPdateCartItemQuantity", cartItem);
     $('body').addClass('loader-on');
     $.ajax({
       url: '/cart/change.js',
