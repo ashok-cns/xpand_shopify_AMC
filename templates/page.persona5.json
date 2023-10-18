@@ -206,6 +206,39 @@
         "sec_top": 0,
         "sec_bottom": 0
       }
+    },
+    "a5096b87-0ac6-413c-83c7-70a8b4047476": {
+      "type": "testimonial",
+      "blocks": {
+        "template--15245450707055__a5096b87-0ac6-413c-83c7-70a8b4047476-image-1": {
+          "type": "image",
+          "settings": {
+            "title": "Perfect for yoga sessions!",
+            "testimonial": "<p>I installed these on my gym shoes and love the ease of slipping them on and off. They also come in the cutest colors!<\/p>",
+            "name": "Jen C.",
+            "store_name": "",
+            "link": "",
+            "text_position": "center",
+            "text_align": "center",
+            "image": "shopify:\/\/shop_images\/DSC05411_web.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/DSC05411_web_mobile.jpg",
+            "caption_content_background": "darken_bg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15245450707055__a5096b87-0ac6-413c-83c7-70a8b4047476-image-1"
+      ],
+      "settings": {
+        "wide_display": true,
+        "testimonial_text_animation": "",
+        "testimonial_speed": 6,
+        "activate_adaptiveHeight": false,
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "landing-page",
+        "custom_css": ""
+      }
     }
   },
   "order": [
@@ -213,6 +246,7 @@
     "14711584-5323-41d6-8ccc-3cba7f5bb6f9",
     "eb97d9f4-1eab-41a4-9f6f-b41194d943b9",
     "3ed810b2-9e1d-4814-8109-2ef37daab83a",
-    "b5dc9394-d6ec-40c0-8337-2caa18901f2b"
+    "b5dc9394-d6ec-40c0-8337-2caa18901f2b",
+    "a5096b87-0ac6-413c-83c7-70a8b4047476"
   ]
 }
