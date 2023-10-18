@@ -206,6 +206,39 @@
         "sec_top": 0,
         "sec_bottom": 0
       }
+    },
+    "ddf759fc-db98-4eae-9bbf-2f989edf0596": {
+      "type": "testimonial",
+      "blocks": {
+        "template--15245450674287__ddf759fc-db98-4eae-9bbf-2f989edf0596-image-1": {
+          "type": "image",
+          "settings": {
+            "title": "Customer Testimonial",
+            "testimonial": "<p>Include some of your favorite customer quotes and feedback here as social proof, to build credibility and trust for your services and products.<\/p>",
+            "name": "",
+            "store_name": "",
+            "link": "",
+            "text_position": "center",
+            "text_align": "center",
+            "image": "shopify:\/\/shop_images\/DIY_web.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/DIY_web_mobile.jpg",
+            "caption_content_background": "original"
+          }
+        }
+      },
+      "block_order": [
+        "template--15245450674287__ddf759fc-db98-4eae-9bbf-2f989edf0596-image-1"
+      ],
+      "settings": {
+        "wide_display": true,
+        "testimonial_text_animation": "fadeInDown",
+        "testimonial_speed": 6,
+        "activate_adaptiveHeight": false,
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "landing-page",
+        "custom_css": ""
+      }
     }
   },
   "order": [
@@ -213,6 +246,7 @@
     "c48c0d70-b22b-4330-ae97-b70be8118813",
     "849ff445-9dd0-4bc3-b9bb-65613b6dba71",
     "340f083b-d186-4f9c-8878-51ce35044274",
-    "f703ea5d-5a4e-46cb-be3e-64dc3efed9af"
+    "f703ea5d-5a4e-46cb-be3e-64dc3efed9af",
+    "ddf759fc-db98-4eae-9bbf-2f989edf0596"
   ]
 }
