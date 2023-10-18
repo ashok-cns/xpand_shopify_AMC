@@ -239,6 +239,54 @@
         "css_class": "landing-page",
         "custom_css": ""
       }
+    },
+    "72d2268b-9439-4434-9dc4-eac5e995d030": {
+      "type": "text-banner",
+      "settings": {
+        "title": "How to Install",
+        "text": "",
+        "primary_cta_text": "",
+        "primary_cta_link": "",
+        "primary_cta_text_color": "",
+        "primary_cta_bg_color": "",
+        "enable_secondary_cta": false,
+        "secondary_cta_text": "",
+        "secondary_cta_link": "",
+        "secondary_cta_text_color": "",
+        "secondary_cta_bg_color": "",
+        "css_class": "landing-page"
+      }
+    },
+    "525addfe-0201-4720-b158-583807509b09": {
+      "type": "video",
+      "settings": {
+        "wide_display": false,
+        "aspect_ratio": "16:9",
+        "autoplay": false,
+        "autoloop": true,
+        "mute_video": false,
+        "show_controls": true,
+        "video_dark_overlay": false,
+        "iframe_video": "https:\/\/youtu.be\/eMSbyA9wNBo?si=YPRV1lx8TA5OSCjm",
+        "html5_video": "",
+        "display_text_over_video": false,
+        "preheading": "",
+        "heading": "",
+        "subheading": "",
+        "button1_label": "Play Video",
+        "button1_link": "",
+        "button1_style": "global-button--banner",
+        "button2_label": "",
+        "button2_link": "",
+        "button2_style": "global-button--banner",
+        "text_position": "center",
+        "text_align": "center",
+        "caption_content_background": "original",
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "",
+        "custom_css": ""
+      }
     }
   },
   "order": [
@@ -247,6 +295,8 @@
     "849ff445-9dd0-4bc3-b9bb-65613b6dba71",
     "340f083b-d186-4f9c-8878-51ce35044274",
     "f703ea5d-5a4e-46cb-be3e-64dc3efed9af",
-    "ddf759fc-db98-4eae-9bbf-2f989edf0596"
+    "ddf759fc-db98-4eae-9bbf-2f989edf0596",
+    "72d2268b-9439-4434-9dc4-eac5e995d030",
+    "525addfe-0201-4720-b158-583807509b09"
   ]
 }
