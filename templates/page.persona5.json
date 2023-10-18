@@ -79,11 +79,140 @@
         "css_class": "landing-page",
         "custom_css": ""
       }
+    },
+    "3ed810b2-9e1d-4814-8109-2ef37daab83a": {
+      "type": "product-feature",
+      "blocks": {
+        "e5b4c588-412a-4c56-a9ae-63ba046a9688": {
+          "type": "item",
+          "settings": {
+            "text": "Free Shipping",
+            "text_mobile": "Free Shipping",
+            "icon": "shopify:\/\/shop_images\/mobile-box.png"
+          }
+        },
+        "ac34f356-b8a5-42b1-8cba-7bef75e877cd": {
+          "type": "item",
+          "settings": {
+            "text": "Try Xpand for 90 days",
+            "text_mobile": "Try Xpand for 90 days",
+            "icon": "shopify:\/\/shop_images\/mobile-heart.png"
+          }
+        },
+        "06038036-f470-47c4-afc2-235288d876a4": {
+          "type": "item",
+          "settings": {
+            "text": "100% Money Back Guarantee",
+            "text_mobile": "100% Money Back Guarantee",
+            "icon": "shopify:\/\/shop_images\/mobile-check.png"
+          }
+        }
+      },
+      "block_order": [
+        "e5b4c588-412a-4c56-a9ae-63ba046a9688",
+        "ac34f356-b8a5-42b1-8cba-7bef75e877cd",
+        "06038036-f470-47c4-afc2-235288d876a4"
+      ],
+      "settings": {
+        "text_color": "",
+        "sec_top": 35,
+        "sec_bottom": 35
+      }
+    },
+    "b5dc9394-d6ec-40c0-8337-2caa18901f2b": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "template--15245450707055__b5dc9394-d6ec-40c0-8337-2caa18901f2b-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit1.png",
+            "title": "✨ No more bowties",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "template--15245450707055__b5dc9394-d6ec-40c0-8337-2caa18901f2b-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit2.png",
+            "title": "✨ One size fits all shoes",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "d7b04400-3de0-40d4-865c-5f13eafa8c19": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit3.png",
+            "title": "✨ Easy to use",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "e5de3965-8459-4e3b-951e-80fef515afef": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit4.png",
+            "title": "✨ Slip on and go",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15245450707055__b5dc9394-d6ec-40c0-8337-2caa18901f2b-text_block-1",
+        "template--15245450707055__b5dc9394-d6ec-40c0-8337-2caa18901f2b-text_block-2",
+        "d7b04400-3de0-40d4-865c-5f13eafa8c19",
+        "e5de3965-8459-4e3b-951e-80fef515afef"
+      ],
+      "settings": {
+        "layout": "grid",
+        "title": "Get to Know our Laces",
+        "link_text": "",
+        "link": "",
+        "link_text_color": "#fff",
+        "link_bg_color": "#ff085a",
+        "sec_bg": "",
+        "css_class": "landing-page",
+        "custom_css": "",
+        "sec_top": 0,
+        "sec_bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "14711584-5323-41d6-8ccc-3cba7f5bb6f9",
-    "eb97d9f4-1eab-41a4-9f6f-b41194d943b9"
+    "eb97d9f4-1eab-41a4-9f6f-b41194d943b9",
+    "3ed810b2-9e1d-4814-8109-2ef37daab83a",
+    "b5dc9394-d6ec-40c0-8337-2caa18901f2b"
   ]
 }
