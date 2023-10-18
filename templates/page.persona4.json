@@ -28,10 +28,62 @@
         "css_class": "landing-page",
         "custom_css": ""
       }
+    },
+    "849ff445-9dd0-4bc3-b9bb-65613b6dba71": {
+      "type": "featured-product",
+      "blocks": {
+        "template--15245450674287__849ff445-9dd0-4bc3-b9bb-65613b6dba71-title-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "template--15245450674287__849ff445-9dd0-4bc3-b9bb-65613b6dba71-price-1": {
+          "type": "price",
+          "settings": {
+            "display_savings": true
+          }
+        },
+        "template--15245450674287__849ff445-9dd0-4bc3-b9bb-65613b6dba71-description-1": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "template--15245450674287__849ff445-9dd0-4bc3-b9bb-65613b6dba71-form-1": {
+          "type": "form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15245450674287__849ff445-9dd0-4bc3-b9bb-65613b6dba71-title-1",
+        "template--15245450674287__849ff445-9dd0-4bc3-b9bb-65613b6dba71-price-1",
+        "template--15245450674287__849ff445-9dd0-4bc3-b9bb-65613b6dba71-description-1",
+        "template--15245450674287__849ff445-9dd0-4bc3-b9bb-65613b6dba71-form-1"
+      ],
+      "settings": {
+        "product": "no-tie-original-elastic-lacing-system",
+        "wide_display": true,
+        "media_position": "is-flex-row",
+        "set_product_height": false,
+        "product_height": 500,
+        "video_looping": false,
+        "product_thumbs": true,
+        "gallery_arrows": true,
+        "enable_product_lightbox": true,
+        "activate_zoom": false,
+        "slideshow_speed": 0,
+        "slideshow_animation": "slide",
+        "thumbnail_position": "left",
+        "enable_thumbnail_slider": true,
+        "css_class": "landing-page",
+        "custom_css": ""
+      }
     }
   },
   "order": [
     "main",
-    "c48c0d70-b22b-4330-ae97-b70be8118813"
+    "c48c0d70-b22b-4330-ae97-b70be8118813",
+    "849ff445-9dd0-4bc3-b9bb-65613b6dba71"
   ]
 }
