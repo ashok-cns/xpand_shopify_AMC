@@ -1139,7 +1139,9 @@ $(() => {
                       dataType: 'json',
                       cache: false,
                       success:function(cart){
-                        refreshCart(cart);
+                        console.log("CART==>", cart);
+                        return false;
+                        // refreshCart(cart);
                        },
                        error: function(error, xhr){
                         console.log('XHRR ',error, xhr)
