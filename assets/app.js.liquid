@@ -470,6 +470,7 @@ $(() => {
         line: cartItem.lineID,
       },
       success(data) {
+        console.log('Inside change.js 1')
         const cartItemsArray = data.items;
         const lineIDIndex = cartItem.lineID - 1;
         const totalCartItems = cartItem.parentCartForm.find('[data-variant-id]').length;
@@ -1117,6 +1118,7 @@ $(() => {
               async: false,
               data: lineItemData,
               success(data) {
+                console.log('Inside change.js 2')
                 console.log(data);
                 if(cartQty < $('body').attr('data-free-product-count')) {
                   $('body').removeClass('free-gift-product-visible');
@@ -1172,6 +1174,7 @@ $(() => {
                   async: false,
                   data: lineItemData,
                   success(data) {
+                    console.log('Inside change.js 3')
                     console.log(data);
                   },
                 });
@@ -1232,6 +1235,7 @@ $(() => {
               async: false,
               data: lineItemData,
               success(data) {
+                console.log('Inside change.js 4')
                 console.log(data);
               },
             });
@@ -1265,6 +1269,7 @@ $(() => {
                 async: false,
                 data: lineItemData,
                 success(data) {
+                  console.log('Inside change.js 5')
                   console.log(data);
                 },
               });
