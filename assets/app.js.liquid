@@ -927,6 +927,7 @@ $(() => {
         type: 'GET',
         url: '/cart?view=temp',
         cache: false,
+        async:false,
         success(cartTempData) {
           console.log('Get cartTempData==>', cartTempData);
           $('body').append(cartTempData);
