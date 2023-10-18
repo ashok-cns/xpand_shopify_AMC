@@ -31,16 +31,16 @@
 </style>
 
 <script>
-  console.log('Loaded');
-
   function handleShopLinkClickEvent(event) {
     event.preventDefault();
     console.log('Clicked');
   }
 
   function init() {
+    console.log('Init');
     var shopLinks = document.querySelectorAll('.landing-page.shop-link a');
     shopLinks.forEach(function(link) {
+      console.log('Attach click event');
       link.addEventListener('click', handleShopLinkClickEvent)
     });
   }
