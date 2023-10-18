@@ -1230,7 +1230,7 @@ $(() => {
             var getLineKey = currentItem.attr('data-key'); console.log('getLineKey == ', getLineKey);
             var discountItemQty = Number(currentItem.find('input[data-cart-quantity-input]').val()); console.log('111==========>', discountItemQty)
             var lineItemData =  {
-              'line': getLineId,
+              'id': getLineVariantId,
               'quantity': discountItemQty,
               'properties': { 'freeShippingItemCount': freeShippingItemCount, 'discountAmount': discountItemQty*cm_tier_amount*100 }
             }
@@ -1263,7 +1263,7 @@ $(() => {
 
               lineItemSubtotal = updateOriginalPrice; console.log('upatedSubtotal 33 => ', lineItemSubtotal)              
               var lineItemData =  {
-                'line': getLineId,
+                'id': getLineVariantId,
                 'quantity': discountItemQty,
                 'properties': { 'freeShippingItemCount': '', 'discountAmount':'' }
               }    
