@@ -273,7 +273,7 @@
         "preheading": "",
         "heading": "",
         "subheading": "",
-        "button1_label": "Play Video",
+        "button1_label": "",
         "button1_link": "",
         "button1_style": "global-button--banner",
         "button2_label": "",
@@ -287,6 +287,53 @@
         "css_class": "",
         "custom_css": ""
       }
+    },
+    "3c4f870f-1b12-49e4-a472-4b747770036b": {
+      "type": "faq",
+      "blocks": {
+        "template--15245450674287__3c4f870f-1b12-49e4-a472-4b747770036b-content-1": {
+          "type": "content",
+          "settings": {
+            "title": "Will Xpand Laces work on my shoes or boots?",
+            "answer": "<p>Xpand Lacing System works on all types of shoes - from kids shoes, adults sneakers, Timberlands to high-top boots.<\/p>"
+          }
+        },
+        "template--15245450674287__3c4f870f-1b12-49e4-a472-4b747770036b-content-2": {
+          "type": "content",
+          "settings": {
+            "title": "Are the Xpand Laces adjustable?",
+            "answer": "<p>Yes! Finding the perfect fit is easy with Xpand Laces. We recommend trying out the length before you trim the laces. Always set the initial adjustment on the loose side, so that you can always tighten them up if needed.<\/p>"
+          }
+        },
+        "template--15245450674287__3c4f870f-1b12-49e4-a472-4b747770036b-content-3": {
+          "type": "content",
+          "settings": {
+            "title": "How long are the laces?",
+            "answer": "<p>Xpand Laces are 52 inches long, and can stretch out to over twice that length, which makes them long enough for all types of shoes or boots.<\/p>"
+          }
+        },
+        "template--15245450674287__3c4f870f-1b12-49e4-a472-4b747770036b-content-4": {
+          "type": "content",
+          "settings": {
+            "title": "What is your return and exchange policy?",
+            "answer": "<p>Xpand offers a 90 day satisfaction guarantee. If you are not 100% satisfied for any reason, we will refund your order. No questions asked!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15245450674287__3c4f870f-1b12-49e4-a472-4b747770036b-content-1",
+        "template--15245450674287__3c4f870f-1b12-49e4-a472-4b747770036b-content-2",
+        "template--15245450674287__3c4f870f-1b12-49e4-a472-4b747770036b-content-3",
+        "template--15245450674287__3c4f870f-1b12-49e4-a472-4b747770036b-content-4"
+      ],
+      "settings": {
+        "sec_bg": "",
+        "title": "Frequently Asked Questions",
+        "link": "",
+        "link_text": "See All FAQs",
+        "sec_top": 35,
+        "sec_bottom": 0
+      }
     }
   },
   "order": [
@@ -297,6 +344,7 @@
     "f703ea5d-5a4e-46cb-be3e-64dc3efed9af",
     "ddf759fc-db98-4eae-9bbf-2f989edf0596",
     "72d2268b-9439-4434-9dc4-eac5e995d030",
-    "525addfe-0201-4720-b158-583807509b09"
+    "525addfe-0201-4720-b158-583807509b09",
+    "3c4f870f-1b12-49e4-a472-4b747770036b"
   ]
 }
