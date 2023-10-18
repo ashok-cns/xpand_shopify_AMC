@@ -1138,8 +1138,8 @@ $(() => {
                       url: '/cart.js',
                       dataType: 'json',
                       cache: false,
-                      success:function(data){
-                        refreshCart(data);
+                      success:function(cart){
+                        refreshCart(cart);
                        },
                        error: function(error, xhr){
                         console.log('XHRR ',error, xhr)
