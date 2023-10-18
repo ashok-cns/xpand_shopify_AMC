@@ -37,14 +37,14 @@
   }
 
   function init() {
-    var shopLinks = document.querySelectorAll('.landing-page a[href=#product]');
+    var shopLinks = document.querySelectorAll('.landing-page.shop-link a');
     shopLinks.forEach(function(link) {
       link.addEventListener('click', handleShopLinkClickEvent)
     });
   }
 
   function unload() {
-    var shopLinks = document.querySelectorAll('.landing-page a[href=#product]');
+    var shopLinks = document.querySelectorAll('.landing-page.shop-link a');
     shopLinks.forEach(function(link) {
       link.removeEventListener('click', handleShopLinkClickEvent)
     });
