@@ -239,6 +239,23 @@
         "css_class": "landing-page",
         "custom_css": ""
       }
+    },
+    "26866a07-35bb-4913-b585-5afda01b504e": {
+      "type": "text-banner",
+      "settings": {
+        "title": "How to Install",
+        "text": "",
+        "primary_cta_text": "",
+        "primary_cta_link": "",
+        "primary_cta_text_color": "",
+        "primary_cta_bg_color": "",
+        "enable_secondary_cta": false,
+        "secondary_cta_text": "",
+        "secondary_cta_link": "",
+        "secondary_cta_text_color": "",
+        "secondary_cta_bg_color": "",
+        "css_class": "landing-page"
+      }
     }
   },
   "order": [
@@ -247,6 +264,7 @@
     "4019e6b7-f1c5-43ca-804d-f8251b50da49",
     "3341b888-239e-4dad-9275-15afdd4b1981",
     "4502e7ce-b626-4f68-ae5d-3b5572dd2c82",
-    "00e61425-1c0d-4f06-9e8d-dfe828a3f60d"
+    "00e61425-1c0d-4f06-9e8d-dfe828a3f60d",
+    "26866a07-35bb-4913-b585-5afda01b504e"
   ]
 }
