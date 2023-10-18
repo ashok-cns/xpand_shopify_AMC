@@ -470,7 +470,6 @@ $(() => {
         line: cartItem.lineID,
       },
       success(data) {
-        refreshCart(data);
         console.log('Inside change.js 1')
         const cartItemsArray = data.items;
         const lineIDIndex = cartItem.lineID - 1;
@@ -1136,7 +1135,6 @@ $(() => {
               async: false,
               data: lineItemData,
               success: function(data) {
-                refreshCart(data);
                 console.log('Inside change.js 2')
                 console.log(data);
               },
