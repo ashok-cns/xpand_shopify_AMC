@@ -222,7 +222,7 @@
             "text_align": "center",
             "image": "shopify:\/\/shop_images\/DIY_web.jpg",
             "mobile_image": "shopify:\/\/shop_images\/DIY_web_mobile.jpg",
-            "caption_content_background": "original"
+            "caption_content_background": "darken_bg"
           }
         }
       },
