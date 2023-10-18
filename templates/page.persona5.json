@@ -22,7 +22,7 @@
         "text_position": "center",
         "text_align": "center",
         "caption_content_background": "darken_bg",
-        "mobile_image": "shopify:\/\/shop_images\/DSC04246_web_mobile.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/DSC04246_web_mobile_c09c941e-6a33-4c11-abc3-5de4b8e7fe55.jpg",
         "mobile_text_below_image": false,
         "mobile_text_color": "",
         "css_class": "landing-page shop-link",
@@ -221,7 +221,7 @@
             "text_position": "center",
             "text_align": "center",
             "image": "shopify:\/\/shop_images\/DSC05411_web.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/DSC05411_web_mobile.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/DSC05411_web_mobile_5a94b4f1-7cef-4d9c-84ff-1914cf1d1b8b.jpg",
             "caption_content_background": "darken_bg"
           }
         }
