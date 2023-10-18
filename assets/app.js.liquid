@@ -461,14 +461,14 @@ $(() => {
   function updateCartItemQuantity(cartItem) {
     $('body').addClass('loader-on');
     $.ajax({
-      url: '/cart/change.js',
+      url: '/cart.js',
       dataType: 'json',
       cache: false,
-      type: 'post',
-      data: {
-        quantity: cartItem.quantity,
-        line: cartItem.lineID,
-      },
+      type: 'GET',
+      // data: {
+      //   quantity: cartItem.quantity,
+      //   line: cartItem.lineID,
+      // },
       success(data) {
         console.log('Inside change.js 1')
         const cartItemsArray = data.items;
