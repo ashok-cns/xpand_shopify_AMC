@@ -1131,9 +1131,10 @@ $(() => {
                     }
                     jQuery.post(window.Shopify.routes.root + 'cart/update.js', {
                       updates: updateFreeProduct
-                    }).done(function() {
-                    console.log('UPdate.js Scussess done');
+                    }).done(function(data) {
+                    console.log('UPdate.js Scussess done', data);
                     $(document).find('li.mini-cart__item[data-free-product="free"]').remove();
+                    refreshCart(data);
                     });
                   }              
                 }
