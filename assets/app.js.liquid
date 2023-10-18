@@ -928,7 +928,7 @@ $(() => {
         url: '/cart?view=temp',
         cache: false,
         success(cartTempData) {
-          //console.log('Get cartTempData==>', cartTempData);
+          console.log('Get cartTempData==>', cartTempData);
           $('body').append(cartTempData);
           var updateDataAttr = setInterval(function(){
             if($('body').find('#temp-cart-data').length > 0 ){
@@ -936,13 +936,14 @@ $(() => {
               $('#temp-cart-data .cart-temp-data').each(function(){
                 $(document).find('.cart_items.js-cart_items li[data-line-id="'+$(this).attr('data-line-id')+'"]').attr('data-tags', $(this).attr('data-tags'));
                 if($(this).attr('data-free-product')){
+                  console.log('data-free-Exist');
                   $(document).find('.cart_items.js-cart_items li[data-line-id="'+$(this).attr('data-line-id')+'"]').attr('data-free-product', $(this).attr('data-free-product'));
                 }
                 
               })
               clearInterval(updateDataAttr);
             }
-          },0);
+          },10);
           var checkTotalQtyAndTags = setInterval(function(){
             if( $('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_items.js-cart_items li[data-tags]').length > 0){
               var cartQty = 0;
