@@ -14,7 +14,7 @@
         "title": "Gain an extra moment in your day to just breathe",
         "subtitle": "",
         "button1": "SHOP NOW",
-        "button1_link": "#product",
+        "button1_link": "",
         "button1_style": "global-button--banner",
         "button2": "",
         "button2_link": "",
@@ -25,7 +25,7 @@
         "mobile_image": "shopify:\/\/shop_images\/DSC01515_web-mobile.jpg",
         "mobile_text_below_image": false,
         "mobile_text_color": "",
-        "css_class": "landing-page",
+        "css_class": "landing-page shop-link",
         "custom_css": ""
       }
     },
