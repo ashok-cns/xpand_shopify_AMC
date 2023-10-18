@@ -1011,6 +1011,7 @@ $(() => {
       });
     }
     function updateDiscountProgressBar(cartQty, cm_discountAmount, cm_tier_qty, cm_tier_amount, cm_next_tier_qty, cm_next_tier_discount) {
+      
         console.log('updateDiscountProgressBar==>', cartQty,'--',cm_discountAmount,'--', cm_tier_qty,'--', cm_tier_amount,'--', cm_next_tier_qty,'--', cm_next_tier_discount)
         var lineItemDiscount = 0;
         var updateOriginalPrice = 0;
@@ -1135,6 +1136,7 @@ $(() => {
               async: false,
               data: lineItemData,
               success: function(data) {
+                refreshCart(data);
                 console.log('Inside change.js 2')
                 console.log(data);
               },
