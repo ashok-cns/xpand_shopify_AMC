@@ -118,12 +118,101 @@
         "sec_top": 35,
         "sec_bottom": 35
       }
+    },
+    "4502e7ce-b626-4f68-ae5d-3b5572dd2c82": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "template--15242019602543__4502e7ce-b626-4f68-ae5d-3b5572dd2c82-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit1.png",
+            "title": "✨ No more bowties",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "template--15242019602543__4502e7ce-b626-4f68-ae5d-3b5572dd2c82-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit2.png",
+            "title": "✨ One size fits all shoes",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "1a7b1f72-a286-49ef-8b8a-28087a639e06": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit3.png",
+            "title": "✨ Easy to use",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "f125d1a2-f247-4f88-9a24-31041240f03c": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit4.png",
+            "title": "✨ Slip on and go",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15242019602543__4502e7ce-b626-4f68-ae5d-3b5572dd2c82-text_block-1",
+        "template--15242019602543__4502e7ce-b626-4f68-ae5d-3b5572dd2c82-text_block-2",
+        "1a7b1f72-a286-49ef-8b8a-28087a639e06",
+        "f125d1a2-f247-4f88-9a24-31041240f03c"
+      ],
+      "settings": {
+        "layout": "grid",
+        "title": "Get to Know our Laces",
+        "link_text": "",
+        "link": "",
+        "link_text_color": "#fff",
+        "link_bg_color": "#ff085a",
+        "sec_bg": "",
+        "css_class": "landing-page",
+        "custom_css": "",
+        "sec_top": 0,
+        "sec_bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "8f792a3e-aa5e-4b04-85dd-030874db4f96",
     "4019e6b7-f1c5-43ca-804d-f8251b50da49",
-    "3341b888-239e-4dad-9275-15afdd4b1981"
+    "3341b888-239e-4dad-9275-15afdd4b1981",
+    "4502e7ce-b626-4f68-ae5d-3b5572dd2c82"
   ]
 }
