@@ -159,11 +159,6 @@
     "cart_discount_applied_text": "Congrats, you just received discountPercentage% off!",
     "cart_free_shipping_hint_text": "You are quantity pack away from free shipping!",
     "enable_free_product": true,
-    "free_product_list": [
-      "cushioned-no-show-socks",
-      "belt-loop-pack-of-2",
-      "explorer-belt"
-    ],
     "free_product_item": "xpand-quick-wipes-pack-of-10-free-product-for-test",
     "cart_free_product_hint_text": "You are quantity pack away to get a free product!",
     "cart_no_discount_hint_text": "You’re all set. Continue to shop or proceed to checkout!",
@@ -229,6 +224,11 @@
     "checkout_accent_color": "#197bbd",
     "checkout_button_color": "#197bbd",
     "checkout_error_color": "#e1255f",
+    "free_product_list": [
+      "cushioned-no-show-socks",
+      "belt-loop-pack-of-2",
+      "explorer-belt"
+    ],
     "recommended_product_one": "cushioned-no-show-socks",
     "recommended_product_two": "urban-belt",
     "recommended_product_three": "explorer-belt",
@@ -873,7 +873,7 @@
           "vertical_menu": true,
           "dropdown_click": false,
           "search_enabled": false,
-          "fixed_header": true,
+          "fixed_header": false,
           "logo_position": "center",
           "logo_alignment": "center",
           "menu_position": "inline",
