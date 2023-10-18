@@ -470,6 +470,7 @@ $(() => {
         line: cartItem.lineID,
       },
       success(data) {
+        refreshCart(data);
         console.log('Inside change.js 1')
         const cartItemsArray = data.items;
         const lineIDIndex = cartItem.lineID - 1;
