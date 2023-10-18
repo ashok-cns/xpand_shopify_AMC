@@ -23,7 +23,7 @@
         "text_align": "center",
         "caption_content_background": "original",
         "mobile_image": "shopify:\/\/shop_images\/DSC06755_web_mobile.jpg",
-        "mobile_text_below_image": true,
+        "mobile_text_below_image": false,
         "mobile_text_color": "",
         "css_class": "landing-page",
         "custom_css": ""
