@@ -7654,14 +7654,14 @@ ul.cart_items {
   margin-bottom: 15px;
   border-bottom: 1px solid {{ settings.border_color }};
 }
-.cart_content li.mini-cart__item[data-free-product="free"] .mini-cart__item-price {
+.cart_content li.mini-cart__item:not([data-tags="BOGOOFF"])[data-free-product="free"] .mini-cart__item-price {
   font-size: 0;
   justify-content: flex-end;
   flex: 0 0 100%;
   margin-right: 5px;
   
 }
-.cart_content li.mini-cart__item[data-free-product="free"] .mini-cart__item-price:before {
+.cart_content li.mini-cart__item:not([data-tags="BOGOOFF"])[data-free-product="free"] .mini-cart__item-price:before {
   content: attr(data-original-price);
   font-size: 16px;
   text-decoration: line-through;
@@ -7669,11 +7669,11 @@ ul.cart_items {
   color: #8c8b8b;
   font-weight: normal;
 }
-.cart_content li.mini-cart__item[data-free-product="free"] .mini-cart__item-price:after {
+.cart_content li.mini-cart__item:not([data-tags="BOGOOFF"])[data-free-product="free"] .mini-cart__item-price:after {
   content: 'Free';
   font-size: 16px;
 }
-.cart_content li.mini-cart__item[data-free-product="free"] .product-quantity-box {
+.cart_content li.mini-cart__item:not([data-tags="BOGOOFF"])[data-free-product="free"] .product-quantity-box {
   display: none !important;
 }
 .cart_content li.mini-cart__item:last-child {
