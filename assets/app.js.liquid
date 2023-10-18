@@ -459,7 +459,6 @@ $(() => {
   }
 
   function updateCartItemQuantity(cartItem) {
-    console.log("UPdateCartItemQuantity", cartItem);
     $('body').addClass('loader-on');
     $.ajax({
       url: '/cart/change.js',
@@ -468,10 +467,9 @@ $(() => {
       type: 'post',
       data: {
         quantity: cartItem.quantity,
-        id: cartItem.variantID,
+        line: cartItem.lineID,
       },
       success(data) {
-        console.log('Inside change.js 1')
         const cartItemsArray = data.items;
         const lineIDIndex = cartItem.lineID - 1;
         const totalCartItems = cartItem.parentCartForm.find('[data-variant-id]').length;
@@ -533,10 +531,6 @@ $(() => {
         applyDiscount();
         
       },
-              error: function(error, xhr){
-                console.log('ERRor 6 =>', error);
-                console.log('ERRor 6 =>', xhr)
-              }
     });
   }
 
@@ -1015,7 +1009,6 @@ $(() => {
       });
     }
     function updateDiscountProgressBar(cartQty, cm_discountAmount, cm_tier_qty, cm_tier_amount, cm_next_tier_qty, cm_next_tier_discount) {
-      
         console.log('updateDiscountProgressBar==>', cartQty,'--',cm_discountAmount,'--', cm_tier_qty,'--', cm_tier_amount,'--', cm_next_tier_qty,'--', cm_next_tier_discount)
         var lineItemDiscount = 0;
         var updateOriginalPrice = 0;
@@ -1091,32 +1084,41 @@ $(() => {
 
             // Update ajax cart/change.js to update properties
             var getLineId = currentItem.attr('data-line-id'); console.log('getDataId == ', getLineId);
-
-
             var getLineVariantId = currentItem.attr('data-variant-id'); console.log('getLineVariantId == ', getLineVariantId);
             var getLineKey = currentItem.attr('data-key'); console.log('getLineKey == ', getLineKey);
             var discountItemQty = Number(currentItem.find('input[data-cart-quantity-input]').val()); console.log('==========>', discountItemQty)
             if(cm_tier_amount > 0 && cartQty >= freeShippingItemCount){
               var lineItemData =  {
-                'id': getLineVariantId,
+                'line': getLineId,
                 'quantity': discountItemQty,
                 'properties': { 'freeShippingItemCount': freeShippingItemCount, 'discountAmount': discountItemQty*cm_tier_amount*100 }
               }
             }else if(cm_tier_amount > 0 && cartQty < freeShippingItemCount) {
               var lineItemData =  {
-                'id': getLineVariantId,
+                'line': getLineId,
                 'quantity': discountItemQty,
                 'properties': { 'freeShippingItemCount': '', 'discountAmount': discountItemQty*cm_tier_amount*100 }
               }
             } else {
               var lineItemData =  {
-                'id': getLineVariantId,
+                'line': getLineId,
                 'quantity': discountItemQty,
                 'properties': { 'freeShippingItemCount': '', 'discountAmount':'' }
               }
             }
-
-            if(cartQty < $('body').attr('data-free-product-count')) {
+            
+            
+            console.log('LineItemData for ajax hit', lineItemData);
+            $.ajax({
+              url: '/cart/change.js',
+              dataType: 'json',
+              cache: false,
+              type: 'post',
+              async: false,
+              data: lineItemData,
+              success(data) {
+                console.log(data);
+                if(cartQty < $('body').attr('data-free-product-count')) {
                   $('body').removeClass('free-gift-product-visible');
                   if($(document).find('li.mini-cart__item[data-free-product="free"]').length > 0) {
                     var datakey = $(document).find('li.mini-cart__item[data-free-product="free"]').attr('data-key'); console.log('dataKey', datakey);
@@ -1131,24 +1133,7 @@ $(() => {
                     });
                   }              
                 }
-            
-            
-            console.log('LineItemData for ajax hit', lineItemData);
-            $.ajax({
-              url: '/cart/change.js',
-              dataType: 'json',
-              cache: false,
-              type: 'post',
-              async: false,
-              data: lineItemData,
-              success: function(data) {
-                console.log('Inside change.js 2')
-                console.log(data);
               },
-              error: function(error, xhr){
-                console.log('ERRor change.js==>', error);
-                console.log('Error XHR', xhr)
-              }
             });
 
             
@@ -1173,7 +1158,7 @@ $(() => {
               // lineItemSubtotal = lineItemSubtotal + Number(checkqty * checkItemPrice); console.log('upatedSubtotal 11 => ', lineItemSubtotal)              
               lineItemSubtotal = lineItemSubtotal + updateOriginalPrice;
                 var lineItemData =  {
-                  'id': getLineVariantId,
+                  'line': getLineId,
                   'quantity': discountItemQty,
                   'properties': { 'freeShippingItemCount': '', 'discountAmount':'' }
                 }    
@@ -1186,14 +1171,9 @@ $(() => {
                   type: 'post',
                   async: false,
                   data: lineItemData,
-                  success: function(data) {
-                console.log('Inside change.js 3')
-                console.log(data);
-              },
-              error: function(error, xhr){
-                console.log('ERRor 3 =>', error);
-                console.log('ERRor 3 =>', xhr)
-              }
+                  success(data) {
+                    console.log(data);
+                  },
                 });
                 
             }
@@ -1239,7 +1219,7 @@ $(() => {
             var getLineKey = currentItem.attr('data-key'); console.log('getLineKey == ', getLineKey);
             var discountItemQty = Number(currentItem.find('input[data-cart-quantity-input]').val()); console.log('111==========>', discountItemQty)
             var lineItemData =  {
-              'id': getLineVariantId,
+              'line': getLineId,
               'quantity': discountItemQty,
               'properties': { 'freeShippingItemCount': freeShippingItemCount, 'discountAmount': discountItemQty*cm_tier_amount*100 }
             }
@@ -1251,14 +1231,9 @@ $(() => {
               type: 'post',
               async: false,
               data: lineItemData,
-              success: function(data) {
-                console.log('Inside change.js 4')
+              success(data) {
                 console.log(data);
               },
-              error: function(error, xhr){
-                console.log('ERRor 4 =>', error);
-                console.log('ERRor 4 =>', xhr)
-              }
             });
 
             
@@ -1276,7 +1251,7 @@ $(() => {
 
               lineItemSubtotal = updateOriginalPrice; console.log('upatedSubtotal 33 => ', lineItemSubtotal)              
               var lineItemData =  {
-                'id': getLineVariantId,
+                'line': getLineId,
                 'quantity': discountItemQty,
                 'properties': { 'freeShippingItemCount': '', 'discountAmount':'' }
               }    
@@ -1289,14 +1264,9 @@ $(() => {
                 type: 'post',
                 async: false,
                 data: lineItemData,
-                success: function(data) {
-                console.log('Inside change.js 5')
-                console.log(data);
-              },
-              error: function(error, xhr){
-                console.log('ERRor 5 =>', error);
-                console.log('ERRor 5 =>', xhr)
-              }
+                success(data) {
+                  console.log(data);
+                },
               });
               
             }
