@@ -1168,7 +1168,7 @@ $(() => {
               // lineItemSubtotal = lineItemSubtotal + Number(checkqty * checkItemPrice); console.log('upatedSubtotal 11 => ', lineItemSubtotal)              
               lineItemSubtotal = lineItemSubtotal + updateOriginalPrice;
                 var lineItemData =  {
-                  'line': getLineId,
+                  'id': getLineVariantId,
                   'quantity': discountItemQty,
                   'properties': { 'freeShippingItemCount': '', 'discountAmount':'' }
                 }    
