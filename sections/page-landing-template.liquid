@@ -53,6 +53,7 @@
   }
 
   document.addEventListener('DOMContentLoaded', function(event) {
+    console.log('Loaded');
     if (Shopify.designMode) {
       document.addEventListener('shopify:section:load', init);
       document.addEventListener('shopify:section:unload', unload);
