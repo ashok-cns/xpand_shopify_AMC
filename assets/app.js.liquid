@@ -739,13 +739,9 @@ $(() => {
       totalDiscount: $(this).parents('[data-cart-form]').data('total-discount'),
       $element: $(this).parents('[data-cart-item]'),
     };
-   
-
     // Disable button after click to prevent multiple clicks
     $(this).parents('.product-quantity-box').find('.js-change-quantity').addClass('is-disabled');
     updateCartItemQuantity(cartItem);
-    console.log('CartItem00-====>',cartItem);
-    return false;
 
   });
 
@@ -1101,13 +1097,13 @@ $(() => {
               var lineItemData =  {
                 'line': getLineId,
                 'quantity': discountItemQty,
-                'properties': { 'discountAmount': discountItemQty*cm_tier_amount*100 }
+                'properties': { 'freeShippingItemCount': '', 'discountAmount': discountItemQty*cm_tier_amount*100 }
               }
             } else {
               var lineItemData =  {
                 'line': getLineId,
-                'quantity': discountItemQty
-                // 'properties': { 'freeShippingItemCount': '', 'discountAmount':'' }
+                'quantity': discountItemQty,
+                'properties': { 'freeShippingItemCount': '', 'discountAmount':'' }
               }
             }
             
@@ -1131,8 +1127,8 @@ $(() => {
                     }
                     jQuery.post(window.Shopify.routes.root + 'cart/update.js', {
                       updates: updateFreeProduct
-                    }).done(function(data) {
-                    console.log('UPdate.js Scussess done', data);
+                    }).done(function() {
+                    console.log('UPdate.js Scussess done');
                     $(document).find('li.mini-cart__item[data-free-product="free"]').remove();
                     $.ajax({
                       url: '/cart.js',
@@ -1140,14 +1136,12 @@ $(() => {
                       cache: false,
                       success:function(cart){
                         console.log("CART==>", cart);
-                        return false;
-                        // refreshCart(cart);
+                         refreshCart(cart);
                        },
                        error: function(error, xhr){
                         console.log('XHRR ',error, xhr)
                        }
                     })
-                    
                     });
                   }              
                 }
@@ -1336,7 +1330,7 @@ $(() => {
     }
     });
     $('#header .cart-container').html($('[data-desktop-header] .cart-container').html());
-      },1500)
+      },1000)
       
     }    
 
