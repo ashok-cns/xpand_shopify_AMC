@@ -86,7 +86,7 @@
           </div>
         </div>
         {% if settings.enable_free_product %}
-        <div class="cart-free-gift-wrapper">
+        <div class="cart-free-gift-wrapper hide_mobile">
           <div class="cart-free-gift-header">Free Gift</div>
           <div class="cart-free-gift-items">
             {% assign product = all_products[settings.free_product_item] %}
@@ -120,6 +120,34 @@
       {{ 'cart.general.continue_shopping' | t }}
       </a> -->
       <div class="cart_items__content__wrapper">
+        {% if settings.enable_free_product %}
+          <div class="cart-free-gift-wrapper hide_desktop">
+            <div class="cart-free-gift-header">Free Gift</div>
+            <div class="cart-free-gift-items">
+              {% assign product = all_products[settings.free_product_item] %}
+             
+              {% comment %} {% for product in settings.free_product_list %} {% endfor %} {% endcomment %}
+                <div class="cart-free-gift-item">
+                  <div class="cart-free-gift-item-img">
+                    <img src="{{ product.featured_image |  img_url: '100x' }}" alt="{{ product.featured_image.alt}}" class=" lazyloaded">
+                  </div>
+                  <div class="cart-free-gift-item-info">
+                    <div class="cart-free-gift-item-info-lft">
+                      <div class="cart-free-gift-item-title">{{ product.title}}</div>
+                      <div class="free-gift-price"><del>{{ product.price | money }}</del> <span>Free</span></div>
+                      
+                    </div>
+                    <div class="cart-free-gift-item-info-rgt">
+                      <button  data-free-gift-product-cta class="global-button global-button--primary add_to_cart ajax-submit free-gift-item" type="button" data-amount="{{  product.price }}" data-selected-variant="{{ product.first_available_variant.id }}"><span data-add-to-cart-text="">Select Gift</span></button>
+                    </div>
+                   
+                  </div>
+                </div>
+             
+              
+            </div>
+          </div>
+          {% endif %}
         <ul class="cart_items js-cart_items">
           {%- assign total_saving = 0 -%}
 
