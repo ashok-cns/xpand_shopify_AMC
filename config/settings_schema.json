@@ -1616,10 +1616,9 @@
         "info": "This setting is for displaying the free Product hint."
       },
       {
-        "type":"product",
+        "type": "product",
         "id": "free_product_item",
         "label": "Free product item"
-        
       },
       {
         "type": "text",
@@ -1741,7 +1740,7 @@
         "id": "cart_progress_bar_color",
         "label": "Progress bar color",
         "default": "#4a4a4a"
-      },      
+      },
       {
         "type": "header",
         "content": "Drawer Foot"
