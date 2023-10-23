@@ -20852,6 +20852,14 @@ body.free-gift-product-visible .cart-free-gift-wrapper {
   display: flex;
   justify-content: space-between;
 }
+.cart-free-gift-item-info-rgt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.cart-free-gift-item .cart-free-gift-item-info-rgt .free-gift-price {order: 2;}
+.cart-free-gift-item .cart-free-gift-item-info-rgt  .global-button {order:1;}
 @media screen and (max-width: 480px ) {
   .cart_content ul {
     padding: 15px 10px;
@@ -20885,5 +20893,7 @@ body.free-gift-product-visible .cart-free-gift-wrapper {
  body.show-cart-overlay.free-gift-product-visible .cart_items__content__wrapper {
   max-height: calc(100vh - 381px);
 }
+.cart-free-gift-item .cart-free-gift-item-info-rgt .free-gift-price {order: 1; flex: 0 0 100%;}
+.cart-free-gift-item .cart-free-gift-item-info-rgt  .global-button {order:2; flex: 0 0 100%;}
 
 }
