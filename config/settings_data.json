@@ -159,6 +159,10 @@
     "cart_discount_applied_text": "Congrats, you just received discountPercentage% off!",
     "cart_free_shipping_hint_text": "You are quantity pack away from free shipping!",
     "enable_free_product": true,
+<<<<<<< HEAD
+=======
+    "free_product_item": "xpand-quick-wipes-pack-of-10-free-product-for-test",
+>>>>>>> 0f48a34fd918f25b21de92e29a6653d81fc443f4
     "cart_free_product_hint_text": "You are quantity pack away to get a free product!",
     "cart_no_discount_hint_text": "You’re all set. Continue to shop or proceed to checkout!",
     "tier_1_dis_amount": "1.99",
@@ -223,6 +227,11 @@
     "checkout_accent_color": "#197bbd",
     "checkout_button_color": "#197bbd",
     "checkout_error_color": "#e1255f",
+    "free_product_list": [
+      "cushioned-no-show-socks",
+      "belt-loop-pack-of-2",
+      "explorer-belt"
+    ],
     "recommended_product_one": "cushioned-no-show-socks",
     "recommended_product_two": "urban-belt",
     "recommended_product_three": "explorer-belt",
@@ -2110,7 +2119,12 @@
       "855628211100114053": {
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
+<<<<<<< HEAD
         "settings": {}
+=======
+        "settings": {
+        }
+>>>>>>> 0f48a34fd918f25b21de92e29a6653d81fc443f4
       }
     }
   }
