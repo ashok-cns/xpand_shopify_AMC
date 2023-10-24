@@ -13,7 +13,8 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+          }
         },
         "743770d4-49ae-40cf-bda3-31d01c1f3a57": {
           "type": "text",
@@ -23,7 +24,8 @@
         },
         "5a3dd3eb-8b9d-44a1-ac37-a69e1a645dbc": {
           "type": "rating",
-          "settings": {}
+          "settings": {
+          }
         },
         "acdd1f33-c781-4997-8856-8de88bf35d19": {
           "type": "custom-liquid",
@@ -41,16 +43,19 @@
         },
         "description": {
           "type": "description",
-          "settings": {}
+          "settings": {
+          }
         },
         "form": {
           "type": "form",
-          "settings": {}
+          "settings": {
+          }
         },
         "share": {
           "type": "share",
           "disabled": true,
-          "settings": {}
+          "settings": {
+          }
         },
         "27b7e7a7-b6bc-47b5-acf5-c1bfbfab6c6c": {
           "type": "popup",
@@ -155,8 +160,8 @@
           "type": "about",
           "settings": {
             "name": "Overview",
-            "title": "Meet the world’s most comfortable socks",
-            "block_desc": "",
+            "title": "",
+            "block_desc": "<p>{{ product.metafields.custom.primary_overview_video1_heading_text.value }}<\/p>",
             "accessories_1_type": "video",
             "accessories_video1_url": "shopify:\/\/files\/videos\/(GIF-1)-Cushioned-No-Show-v1585155742390_5be89c6e-7a11-448c-88fe-c8e01f6274cd.mp4",
             "accessories_video1_icon": "shopify:\/\/shop_images\/Countour-Seam-v1585586263310_37152b2b-fc9f-468c-a7ab-b8fdd044357d.svg",
@@ -213,6 +218,7 @@
         },
         "98d75cb0-4d74-41f3-82f5-e860a9501597": {
           "type": "size_chart",
+          "disabled": true,
           "settings": {
             "name": "Details & Sizing",
             "accessories_sizechart_top_title": "SIZE CHART",
@@ -244,6 +250,7 @@
         },
         "2eb496a0-8435-428d-89ea-b978b9701b3f": {
           "type": "specs",
+          "disabled": true,
           "settings": {
             "name": "Social Impact",
             "accessories_title": "We believe in the power of giving",
@@ -264,8 +271,8 @@
         "98d75cb0-4d74-41f3-82f5-e860a9501597",
         "2eb496a0-8435-428d-89ea-b978b9701b3f"
       ],
-      "disabled": true,
-      "settings": {}
+      "settings": {
+      }
     },
     "ff7c6ca4-f31a-42f4-9b0d-2190b71016f5": {
       "type": "custom-html",
