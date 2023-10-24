@@ -152,20 +152,20 @@
             "link_bg_color": "#0090fc"
           }
         },
-        "25fb6d2d-c187-4690-b0f2-b761d614ff8b": {
+        "325a5d8a-634d-48c7-8104-6c8818e94840": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Urban_belt_Insert_for_Website-smallest.jpg",
-            "title": "Magnetic Urban <br> Elastic Belt",
+            "image": "shopify:\/\/shop_images\/wipes-blue.png",
+            "title": "Quick Wipes <br> Instant Clean",
             "heading_size": "regular_text",
             "text": "",
-            "button_label": "URBAN BELT",
-            "button_link": "shopify:\/\/products\/urban-belt",
+            "button_label": "SHOP WIPES",
+            "button_link": "shopify:\/\/products\/xpand-shoe-wipes",
             "align_text": "center",
             "border_style": "none",
             "link_text_color": "#ffffff",
-            "link_bg_color": "#0090fc"
+            "link_bg_color": "#008ffd"
           }
         },
         "bd3a6469-81d2-4769-bf97-fcdfe27706ab": {
@@ -184,28 +184,29 @@
             "link_bg_color": "#0090fc"
           }
         },
-        "325a5d8a-634d-48c7-8104-6c8818e94840": {
+        "25fb6d2d-c187-4690-b0f2-b761d614ff8b": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "title": "Add a title or tagline",
+            "image": "shopify:\/\/shop_images\/Urban_belt_Insert_for_Website-smallest.jpg",
+            "title": "Magnetic Urban <br> Elastic Belt",
             "heading_size": "regular_text",
             "text": "",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "left",
+            "button_label": "URBAN BELT",
+            "button_link": "shopify:\/\/products\/urban-belt",
+            "align_text": "center",
             "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
+            "link_text_color": "#ffffff",
+            "link_bg_color": "#0090fc"
           }
         }
       },
       "block_order": [
         "16315440459bd794b1-0",
         "16315440459bd794b1-1",
-        "25fb6d2d-c187-4690-b0f2-b761d614ff8b",
+        "325a5d8a-634d-48c7-8104-6c8818e94840",
         "bd3a6469-81d2-4769-bf97-fcdfe27706ab",
-        "325a5d8a-634d-48c7-8104-6c8818e94840"
+        "25fb6d2d-c187-4690-b0f2-b761d614ff8b"
       ],
       "settings": {
         "layout": "grid",
@@ -280,7 +281,7 @@
       ],
       "settings": {
         "layout": "grid",
-        "title": "Feel the Differnece",
+        "title": "Feel the Difference",
         "link_text": "",
         "link": "",
         "link_text_color": "#ffffff",

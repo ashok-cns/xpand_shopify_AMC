@@ -1,0 +1,87 @@
+{{ 'main-proudct.css' | asset_url | stylesheet_tag }}
+<style>
+  .landing-page .darken-bg {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .landing-page .caption-content h1,
+  .landing-page .caption-content.testimonial-text p.headline {
+    font-family: neuzeitgroteskblack;
+    line-height: normal;
+  }
+
+  /* Override poorly scoped CSS rule for images in style.css */
+  .landing-page .image-element__wrap img[data-sizes=auto].lazyloaded {
+    width: 100%;
+    
+    height: auto !important; /* !important for precedence */
+    margin-bottom: 0;
+  }
+
+  .landing-page .product_section.container {
+    justify-content: center;
+    background-color: #f1f2f2;
+  }
+
+  .landing-page.text-banner h2 {
+    margin-top: 1.5em;
+    margin-bottom: 0.25em;
+  }
+</style>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function(event) {
+    function handleShopLinkClickEvent(event) {
+      event.preventDefault();
+      var productSection = document.querySelector('.landing-page .product-main');
+      if (productSection) {
+        productSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  
+    function init() {
+      var shopLinks = document.querySelectorAll('.landing-page.shop-link a');
+      console.log(shopLinks.length);
+      shopLinks.forEach(function(link) {
+        link.addEventListener('click', handleShopLinkClickEvent)
+      });
+    }
+  
+    function unload() {
+      var shopLinks = document.querySelectorAll('.landing-page.shop-link a');
+      shopLinks.forEach(function(link) {
+        link.removeEventListener('click', handleShopLinkClickEvent)
+      });
+    }
+
+    if (Shopify.designMode) {
+      document.addEventListener('shopify:section:load', init);
+      document.addEventListener('shopify:section:unload', unload);
+    }
+
+    init();
+  });
+</script>
+
+{%- comment -%}
+<section
+  class="section">
+  <div
+    class="
+            container
+            content
+            page
+          ">
+    <div
+      class="one-whole column">
+      <h1>{{ page.title }}</h1>
+      <div
+        class="feature-divider"></div>
+    </div>
+
+    {%
+       render 'page-multi-column',
+       content: page.content, %}
+  </div>
+</section>
+{%- endcomment -%}

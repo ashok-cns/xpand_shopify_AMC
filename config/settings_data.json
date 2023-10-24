@@ -159,10 +159,7 @@
     "cart_discount_applied_text": "Congrats, you just received discountPercentage% off!",
     "cart_free_shipping_hint_text": "You are quantity pack away from free shipping!",
     "enable_free_product": true,
-<<<<<<< HEAD
-=======
     "free_product_item": "xpand-quick-wipes-pack-of-10-free-product-for-test",
->>>>>>> 0f48a34fd918f25b21de92e29a6653d81fc443f4
     "cart_free_product_hint_text": "You are quantity pack away to get a free product!",
     "cart_no_discount_hint_text": "You’re all set. Continue to shop or proceed to checkout!",
     "tier_1_dis_amount": "1.99",
@@ -842,21 +839,22 @@
           "show_alert_bar": true,
           "enable_alert_bar_slider": true,
           "enable_view_all_offer": true,
-          "alert_icon_1": "shopify:\/\/shop_images\/Promo_Free_Shipping_icon_110x100_a8c5cf43-7822-4902-a97c-0e70719bfd3e.png",
-          "alert_text_1": "<p>AS FEATURED ON<strong> 'GOOD MORNING AMERICA'<\/strong><\/p>",
-          "alert_text_desc_1": "<p>We offer free shipping for orders over $10.01 in the U.S. and $5 shipping for orders under $10.01. Need it faster? Choose expedited shipping for $15 in the U.S.<\/p>",
-          "alert_icon_2": "shopify:\/\/shop_images\/Promo_International_Shipping_icon_110x100_9bff6d25-4db2-4240-a823-0964044d62df.png",
-          "alert_text_2": "<p>AS FEATURED ON<strong> 'GOOD MORNING AMERICA 2'<\/strong><\/p>",
-          "alert_text_desc_2": "<p>We offer free shipping for orders over $10.01 in the U.S. and $5 shipping for orders under $10.01. Need it faster? Choose expedited shipping for $15 in the U.S..<\/p>",
-          "alert_icon_3": "shopify:\/\/shop_images\/BYP_promo_01c_110x100_fedb7dff-a381-438f-90ef-6a351e7f29a7.png",
-          "alert_text_3": "<p>AS FEATURED ON<strong> 'GOOD MORNING AMERICA 3'<\/strong><\/p>",
-          "alert_text_desc_3": "<p>We offer free shipping for orders over $10.01 in the U.S. and $5 shipping for orders under $10.01. Need it faster? Choose expedited shipping for $15 in the U.S..<\/p>",
-          "alert_icon_4": "shopify:\/\/shop_images\/Promo_30_day_Returns_Icon_110x100_ec8889ca-4ce2-4a26-9296-02be73c14ffe.png",
-          "alert_text_4": "<p>AS FEATURED ON<strong> 'GOOD MORNING AMERICA 4'<\/strong><\/p>",
-          "alert_text_desc_4": "<p>We offer free shipping for orders over $10.01 in the U.S. and $5 shipping for orders under $10.01. Need it faster? Choose expedited shipping for $15 in the U.S..<\/p>",
-          "alert_icon_5": "shopify:\/\/shop_images\/Promo_Signup_icon_110x100_dd6901be-ecc7-4fc9-9fcd-b6eeb5c7f488.png",
-          "alert_text_5": "<p>AS FEATURED ON<strong> 'GOOD MORNING AMERICA 5'<\/strong><\/p>",
-          "alert_text_desc_5": "<p>We offer free shipping for orders over $10.01 in the U.S. and $5 shipping for orders under $10.01. Need it faster? Choose expedited shipping for $15 in the U.S..<\/p>",
+          "enable_mobile_dropdown_slider": true,
+          "alert_icon_1": "shopify:\/\/shop_images\/3_9df04767-bd8b-4678-9f01-e5ad7c395c89.png",
+          "alert_text_1": "<p>Free Shipping to the USA. Orders $30 or more<\/p>",
+          "alert_text_desc_1": "<p>We offer free shipping for orders $30 or more in the U.S. and $2.99 shipping for orders under $30.<strong>Need it faster? <\/strong>Choose 2 day shipping for $10.99 to the USA.<\/p>",
+          "alert_icon_2": "shopify:\/\/shop_images\/Untitled_design_8_df05e506-4ddd-45c6-adc9-f5da2a407097.png",
+          "alert_text_2": "<p>Free Shipping On Canada Orders $30 or more<\/p>",
+          "alert_text_desc_2": "<p>Canadian orders $30 or more qualify for free shipping, and shipping costs $8.99 - $10.99<em>(depending on province)<\/em>for orders under $30.<\/p>",
+          "alert_icon_3": "shopify:\/\/shop_images\/2_4a8e63fd-c75b-47f5-9fea-7e052c3910e2.png",
+          "alert_text_3": "<p>Bundle Savings. Mix & Match<\/p>",
+          "alert_text_desc_3": "<p><strong>Saveextra<\/strong>when you buy more. Mix & match between <a href=\"https:\/\/www.xpandlaces.com\/products\/no-tie-original-elastic-lacing-system\" title=\"Original No-Tie Lacing System\">flat laces<\/a>,<a href=\"https:\/\/www.xpandlaces.com\/products\/quick-release-round-lacing-system\" title=\"Quick-Release Lacing System\">round laces<\/a>,<a href=\"https:\/\/www.xpandlaces.com\/products\/cushioned-no-show-socks\" title=\"Cushioned No-Show Socks\">socks<\/a>, or<a href=\"https:\/\/www.xpandlaces.com\/products\/xpand-shoe-wipes\" title=\"Xpand Quick Wipes - Pack of 10\">shoewipes<\/a>.<br\/><br\/>Any 3 items for $30<br\/>Any 6 items for $40<br\/>Any 8 items for $50<\/p>",
+          "alert_icon_4": "shopify:\/\/shop_images\/4_b48189e4-ba5d-40dc-a660-c83d97cb9342.png",
+          "alert_text_4": "<p>Want It Quick? Free 2-Day Shipping for USA.<\/p>",
+          "alert_text_desc_4": "<p>No more long waits! For orders $50 and more, use code \"<strong>VIPUSA<\/strong>\" at checkout to enjoy an automatic upgrade to DHL Express for swift 2-day delivery.<\/p>",
+          "alert_icon_5": "shopify:\/\/shop_images\/5_d15db2b0-484e-4381-a9cc-e8b4eb977a6c.png",
+          "alert_text_5": "<p>90-Day Peace of Mind Promise<\/p>",
+          "alert_text_desc_5": "<p>At Xpand, we stand by the quality of our laces. That's why we offer a full 90-day satisfaction guarantee. If they don't meet your expectations within this time, just reach out to us, and we'll make it right.<\/p>",
           "alert_text_color": "#ffffff",
           "alert_bg_color": "#008ffd",
           "social_icons_header": false,
@@ -1286,7 +1284,8 @@
         "blocks": {
           "1489175056408": {
             "type": "search",
-            "settings": {}
+            "settings": {
+            }
           },
           "1489175058545": {
             "type": "recent_posts",
@@ -2119,12 +2118,8 @@
       "855628211100114053": {
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-<<<<<<< HEAD
-        "settings": {}
-=======
         "settings": {
         }
->>>>>>> 0f48a34fd918f25b21de92e29a6653d81fc443f4
       }
     }
   }

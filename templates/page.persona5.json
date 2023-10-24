@@ -1,0 +1,350 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-landing-template",
+      "settings": {
+      }
+    },
+    "14711584-5323-41d6-8ccc-3cba7f5bb6f9": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "wide_display": true,
+        "image": "shopify:\/\/shop_images\/DSC04246_web.jpg",
+        "pretext": "",
+        "title": "Laces that keep you balanced",
+        "subtitle": "",
+        "button1": "SHOP NOW",
+        "button1_link": "",
+        "button1_style": "global-button--banner-highlighted",
+        "button2": "",
+        "button2_link": "",
+        "button2_style": "global-button--banner",
+        "text_position": "center",
+        "text_align": "center",
+        "caption_content_background": "darken_bg",
+        "mobile_image": "shopify:\/\/shop_images\/DSC04246_web_mobile_c09c941e-6a33-4c11-abc3-5de4b8e7fe55.jpg",
+        "mobile_text_below_image": false,
+        "mobile_text_color": "",
+        "css_class": "landing-page shop-link",
+        "custom_css": ""
+      }
+    },
+    "eb97d9f4-1eab-41a4-9f6f-b41194d943b9": {
+      "type": "featured-product",
+      "blocks": {
+        "template--15245450707055__eb97d9f4-1eab-41a4-9f6f-b41194d943b9-title-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "template--15245450707055__eb97d9f4-1eab-41a4-9f6f-b41194d943b9-price-1": {
+          "type": "price",
+          "settings": {
+            "display_savings": true
+          }
+        },
+        "template--15245450707055__eb97d9f4-1eab-41a4-9f6f-b41194d943b9-description-1": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "template--15245450707055__eb97d9f4-1eab-41a4-9f6f-b41194d943b9-form-1": {
+          "type": "form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15245450707055__eb97d9f4-1eab-41a4-9f6f-b41194d943b9-title-1",
+        "template--15245450707055__eb97d9f4-1eab-41a4-9f6f-b41194d943b9-price-1",
+        "template--15245450707055__eb97d9f4-1eab-41a4-9f6f-b41194d943b9-description-1",
+        "template--15245450707055__eb97d9f4-1eab-41a4-9f6f-b41194d943b9-form-1"
+      ],
+      "settings": {
+        "product": "no-tie-original-elastic-lacing-system",
+        "wide_display": true,
+        "media_position": "is-flex-row",
+        "set_product_height": false,
+        "product_height": 500,
+        "video_looping": false,
+        "product_thumbs": true,
+        "gallery_arrows": true,
+        "enable_product_lightbox": true,
+        "activate_zoom": false,
+        "slideshow_speed": 0,
+        "slideshow_animation": "slide",
+        "thumbnail_position": "left",
+        "enable_thumbnail_slider": true,
+        "css_class": "landing-page",
+        "custom_css": ""
+      }
+    },
+    "3ed810b2-9e1d-4814-8109-2ef37daab83a": {
+      "type": "product-feature",
+      "blocks": {
+        "e5b4c588-412a-4c56-a9ae-63ba046a9688": {
+          "type": "item",
+          "settings": {
+            "text": "Free Shipping",
+            "text_mobile": "Free Shipping",
+            "icon": "shopify:\/\/shop_images\/mobile-box.png"
+          }
+        },
+        "ac34f356-b8a5-42b1-8cba-7bef75e877cd": {
+          "type": "item",
+          "settings": {
+            "text": "Try Xpand for 90 days",
+            "text_mobile": "Try Xpand for 90 days",
+            "icon": "shopify:\/\/shop_images\/mobile-heart.png"
+          }
+        },
+        "06038036-f470-47c4-afc2-235288d876a4": {
+          "type": "item",
+          "settings": {
+            "text": "100% Money Back Guarantee",
+            "text_mobile": "100% Money Back Guarantee",
+            "icon": "shopify:\/\/shop_images\/mobile-check.png"
+          }
+        }
+      },
+      "block_order": [
+        "e5b4c588-412a-4c56-a9ae-63ba046a9688",
+        "ac34f356-b8a5-42b1-8cba-7bef75e877cd",
+        "06038036-f470-47c4-afc2-235288d876a4"
+      ],
+      "settings": {
+        "text_color": "",
+        "sec_top": 35,
+        "sec_bottom": 35
+      }
+    },
+    "b5dc9394-d6ec-40c0-8337-2caa18901f2b": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "template--15245450707055__b5dc9394-d6ec-40c0-8337-2caa18901f2b-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit1.png",
+            "title": "✨ No more bowties",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "template--15245450707055__b5dc9394-d6ec-40c0-8337-2caa18901f2b-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit2.png",
+            "title": "✨ One size fits all shoes",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "d7b04400-3de0-40d4-865c-5f13eafa8c19": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit3.png",
+            "title": "✨ Easy to use",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "e5de3965-8459-4e3b-951e-80fef515afef": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit4.png",
+            "title": "✨ Slip on and go",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15245450707055__b5dc9394-d6ec-40c0-8337-2caa18901f2b-text_block-1",
+        "template--15245450707055__b5dc9394-d6ec-40c0-8337-2caa18901f2b-text_block-2",
+        "d7b04400-3de0-40d4-865c-5f13eafa8c19",
+        "e5de3965-8459-4e3b-951e-80fef515afef"
+      ],
+      "settings": {
+        "layout": "grid",
+        "title": "Get to Know our Laces",
+        "link_text": "",
+        "link": "",
+        "link_text_color": "#ffffff",
+        "link_bg_color": "#ff085a",
+        "sec_bg": "",
+        "css_class": "landing-page",
+        "custom_css": "",
+        "sec_top": 0,
+        "sec_bottom": 0
+      }
+    },
+    "a5096b87-0ac6-413c-83c7-70a8b4047476": {
+      "type": "testimonial",
+      "blocks": {
+        "template--15245450707055__a5096b87-0ac6-413c-83c7-70a8b4047476-image-1": {
+          "type": "image",
+          "settings": {
+            "title": "Perfect To Slip On & Off At Yoga!",
+            "testimonial": "<p>★★★★★<br\/><\/p><p>\"I installed these on my gym shoes and love the ease of slipping them on and off. They also come in the cutest colors!\"<\/p>",
+            "name": "Jen C.",
+            "store_name": "",
+            "link": "",
+            "text_position": "center",
+            "text_align": "center",
+            "image": "shopify:\/\/shop_images\/DSC05411_web.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/DSC05411_web_mobile_5a94b4f1-7cef-4d9c-84ff-1914cf1d1b8b.jpg",
+            "caption_content_background": "darken_bg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15245450707055__a5096b87-0ac6-413c-83c7-70a8b4047476-image-1"
+      ],
+      "settings": {
+        "wide_display": true,
+        "testimonial_text_animation": "",
+        "testimonial_speed": 6,
+        "activate_adaptiveHeight": false,
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "landing-page",
+        "custom_css": ""
+      }
+    },
+    "d678f0c7-976e-4d3a-a00d-ab22fd8caa5c": {
+      "type": "text-banner",
+      "settings": {
+        "title": "How to Install",
+        "text": "",
+        "primary_cta_text": "",
+        "primary_cta_link": "",
+        "primary_cta_text_color": "",
+        "primary_cta_bg_color": "",
+        "enable_secondary_cta": false,
+        "secondary_cta_text": "",
+        "secondary_cta_link": "",
+        "secondary_cta_text_color": "",
+        "secondary_cta_bg_color": "",
+        "css_class": "landing-page"
+      }
+    },
+    "6033bc93-e2b9-43dc-8038-78eb6656ac7d": {
+      "type": "video",
+      "settings": {
+        "wide_display": false,
+        "aspect_ratio": "16:9",
+        "autoplay": false,
+        "autoloop": true,
+        "mute_video": false,
+        "show_controls": true,
+        "video_dark_overlay": false,
+        "iframe_video": "https:\/\/youtu.be\/eMSbyA9wNBo?si=YPRV1lx8TA5OSCjm",
+        "html5_video": "",
+        "display_text_over_video": false,
+        "preheading": "",
+        "heading": "",
+        "subheading": "",
+        "button1_label": "",
+        "button1_link": "",
+        "button1_style": "global-button--banner",
+        "button2_label": "",
+        "button2_link": "",
+        "button2_style": "global-button--banner",
+        "text_position": "center",
+        "text_align": "center",
+        "caption_content_background": "original",
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "d0837782-04d5-4ef2-bbd3-5bdcc851be55": {
+      "type": "faq",
+      "blocks": {
+        "template--15245450707055__d0837782-04d5-4ef2-bbd3-5bdcc851be55-content-2": {
+          "type": "content",
+          "settings": {
+            "title": "Will Xpand Laces work on my shoes or boots?",
+            "answer": "<p>Xpand Lacing System works on all types of shoes - from kids shoes, adults sneakers, Timberlands to high-top boots.<\/p>"
+          }
+        },
+        "template--15245450707055__d0837782-04d5-4ef2-bbd3-5bdcc851be55-content-3": {
+          "type": "content",
+          "settings": {
+            "title": "Are the Xpand Laces adjustable?",
+            "answer": "<p>Yes! Finding the perfect fit is easy with Xpand Laces. We recommend trying out the length before you trim the laces. Always set the initial adjustment on the loose side, so that you can always tighten them up if needed.<\/p>"
+          }
+        },
+        "template--15245450707055__d0837782-04d5-4ef2-bbd3-5bdcc851be55-content-4": {
+          "type": "content",
+          "settings": {
+            "title": "How long are the laces?",
+            "answer": "<p>Xpand Laces are 52 inches long, and can stretch out to over twice that length, which makes them long enough for all types of shoes or boots.<\/p>"
+          }
+        },
+        "template--15245450707055__d0837782-04d5-4ef2-bbd3-5bdcc851be55-content-5": {
+          "type": "content",
+          "settings": {
+            "title": "What is your return and exchange policy?",
+            "answer": "<p>Xpand offers a 90 day satisfaction guarantee. If you are not 100% satisfied for any reason, we will refund your order. No questions asked!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15245450707055__d0837782-04d5-4ef2-bbd3-5bdcc851be55-content-2",
+        "template--15245450707055__d0837782-04d5-4ef2-bbd3-5bdcc851be55-content-3",
+        "template--15245450707055__d0837782-04d5-4ef2-bbd3-5bdcc851be55-content-4",
+        "template--15245450707055__d0837782-04d5-4ef2-bbd3-5bdcc851be55-content-5"
+      ],
+      "settings": {
+        "sec_bg": "",
+        "title": "Frequently Asked Questions",
+        "link": "",
+        "link_text": "See All FAQs",
+        "sec_top": 35,
+        "sec_bottom": 35
+      }
+    }
+  },
+  "order": [
+    "main",
+    "14711584-5323-41d6-8ccc-3cba7f5bb6f9",
+    "eb97d9f4-1eab-41a4-9f6f-b41194d943b9",
+    "3ed810b2-9e1d-4814-8109-2ef37daab83a",
+    "b5dc9394-d6ec-40c0-8337-2caa18901f2b",
+    "a5096b87-0ac6-413c-83c7-70a8b4047476",
+    "d678f0c7-976e-4d3a-a00d-ab22fd8caa5c",
+    "6033bc93-e2b9-43dc-8038-78eb6656ac7d",
+    "d0837782-04d5-4ef2-bbd3-5bdcc851be55"
+  ]
+}

@@ -25,7 +25,7 @@
       topbar-overlay=""
       data-overlay=""
       class="alert-offer-overlay"></div>
-    <div data-modal="topbar-offers" class="alert-offer-modal bg-white topbar-modal">
+    <div data-modal="topbar-offers" class="alert-offer-modal bg-white topbar-modal{% if section.settings.enable_mobile_dropdown_slider %} enable_mobile_dropdown_slider{% endif %}">
       <h2 class="topbar-modal__title text-primary">All Offers</h2>
       <button
         data-modal-hide=""
@@ -34,46 +34,53 @@
         <div class="modal__close-inner"></div>
       </button>
 
-      <div modal-content="topbar-offers" class="modal__container">
-        {% for i in (1..5) %}
-          {% capture alertText %}alert_text_{{ i }}{% endcapture %}
-          {% capture alertIcon %}alert_icon_{{ i }}{% endcapture %}
-          {% capture alertDesc %}alert_text_desc_{{ i }}{% endcapture %}
-          <div
-            data-offer-id="1"
-            data-offer-type="expandable"
-            class="offer">
-            <div class="offer__image-wrapper"><img
-                loading="lazy"
-                src="{{ section.settings[alertIcon] | img_url: '200x' }}"
-                alt="{{ section.settings[alertText] }}"
-                class="offer__image loaded"></div>
-            <div class="offer__title-wrapper">
-              <h4 class="offer__title text-navy-900">
-                <p>{{ section.settings[alertText] }}</p>
-              </h4>
-              <button
-                offer-cta-expand="1"
-                aria-expanded="false"
-                aria-label="Open 'Free Shipping On U.S. Orders $10+'"
-                class="offer__cta">Learn More</button>
-            </div>
+      <div modal-content="topbar-offers" class="modal__container swiper-container">
+        <div class="swiper-wrapper">
+          {% for i in (1..5) %}
+            {% capture alertText %}alert_text_{{ i }}{% endcapture %}
+            {% capture alertIcon %}alert_icon_{{ i }}{% endcapture %}
+            {% capture alertDesc %}alert_text_desc_{{ i }}{% endcapture %}
             <div
-              aria-hidden="true"
-              offer-block-id="1"
-              class="offer__body-wrapper">
-              <div class="offer__body">
-                <p>{{ section.settings[alertDesc] }}</p>
+              data-offer-id="1"
+              data-offer-type="expandable"
+              class="offer swiper-slide">
+              <div class="offer__image-wrapper"><img
+                  loading="lazy"
+                  src="{{ section.settings[alertIcon] | img_url: '200x' }}"
+                  alt="{{ section.settings[alertText] }}"
+                  class="offer__image loaded"></div>
+              <div class="offer__title-wrapper">
+                <h4 class="offer__title text-navy-900">
+                  <p>{{ section.settings[alertText] }}</p>
+                </h4>
+                <button
+                  offer-cta-expand="1"
+                  aria-expanded="false"
+                  aria-label="Open 'Free Shipping On U.S. Orders $10+'"
+                  class="offer__cta">Learn More</button>
               </div>
-              <button
-                offer-cta-collapse=""
-                aria-label="Close 'Free Shipping On U.S. Orders $10+'"
-                class="offer__cta">Show Less</button>
+              <div
+                aria-hidden="true"
+                offer-block-id="1"
+                class="offer__body-wrapper">
+                <div class="offer__body">
+                  <p>{{ section.settings[alertDesc] }}</p>
+                </div>
+                <button
+                  offer-cta-collapse=""
+                  aria-label="Close 'Free Shipping On U.S. Orders $10+'"
+                  class="offer__cta">Show Less</button>
+              </div>
             </div>
-          </div>
-        {% endfor %}
-
-
+          {% endfor %}
+        </div>
+        <div class="swiper-navigation">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="swiper-slider-current-slide">
+          <span class="current-slide">1</span>/<span class="total-slide">5</span>
+        </div>
       </div>
     </div>
   {% endif %}
@@ -86,7 +93,30 @@
   data-section-id="{{ section.id }}"></script>
 
 {% comment %} Structured data {% endcomment %}
-
+{% if section.settings.enable_mobile_dropdown_slider %}
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    if (window.matchMedia('(max-width: 749px)').matches) {
+      $('.swiper-slider-current-slide .total-slide').text($('.enable_mobile_dropdown_slider .offer').length);
+      var swiper = new Swiper('.swiper-container', {
+        speed: 500,
+        slidesPerView: 1.25,
+        loop: false,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        on: {
+          slideChange: function () {
+            console.log('this.realIndex', this.realIndex);
+            $('.swiper-slider-current-slide .current-slide').text(this.realIndex + 1);
+          }
+        }
+      });
+    }
+  });
+</script>
+{% endif %}
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
@@ -973,6 +1003,11 @@ editor events, etc.
         "type": "checkbox",
         "id": "enable_view_all_offer",
         "label": "Show View all offer button",
+        "default": true
+      }, {
+        "type": "checkbox",
+        "id": "enable_mobile_dropdown_slider",
+        "label": "Show View all offer in dropdown for mobile",
         "default": true
       }, {
         "type": "image_picker",
