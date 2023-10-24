@@ -1488,6 +1488,17 @@
       },
       {
         "type": "checkbox",
+        "id": "show_cart_mixmatch",
+        "label": "Show Mix & Match information ",
+        "default": true
+      },
+      {
+        "type": "richtext",
+        "id": "cart_mixmatch_content",
+        "label": "Cart Mix & Match content"
+      },
+      {
+        "type": "checkbox",
         "id": "show_cart_info",
         "label": "Show cart information ",
         "default": true
@@ -1605,6 +1616,11 @@
         "info": "This setting is for displaying the free Product hint."
       },
       {
+        "type": "product",
+        "id": "free_product_item",
+        "label": "Free product item"
+      },
+      {
         "type": "text",
         "id": "cart_free_product_hint_text",
         "label": "Free Product hint text",
@@ -1690,14 +1706,39 @@
       },
       {
         "type": "color",
-        "id": "cart_progress_bar_color",
-        "label": "Progress bar color",
+        "id": "cart_discount_hint_color",
+        "label": "Discount hint text color",
         "default": "#4a4a4a"
       },
       {
+        "type": "header",
+        "content": "Progress Bar"
+      },
+      {
+        "type": "checkbox",
+        "id": "progress_bar_content_wrapper",
+        "label": "Show progress bar content",
+        "default": true
+      },
+      {
+        "type": "richtext",
+        "id": "progress_bar_content_1",
+        "label": "Progress bar content 1"
+      },
+      {
+        "type": "richtext",
+        "id": "progress_bar_content_2",
+        "label": "Progress bar content 2"
+      },
+      {
+        "type": "richtext",
+        "id": "progress_bar_content_3",
+        "label": "Progress bar content 3"
+      },
+      {
         "type": "color",
-        "id": "cart_discount_hint_color",
-        "label": "Discount hint text color",
+        "id": "cart_progress_bar_color",
+        "label": "Progress bar color",
         "default": "#4a4a4a"
       },
       {

@@ -340,7 +340,11 @@ window.TriplePixelData={TripleName:"xpandlaces.myshopify.com",ver:"1.9.0"},funct
         data-shop-currency="{{ shop.currency }}"
         data-shop-url="{{ shop.url }}"
         data-request="{{ request.path }}"
-        data-template="{{ template.suffix }}">
+        data-template="{{ template.suffix }}"
+        {% if settings.enable_free_product %}
+        data-free-product="true"
+        data-free-product-count="{{ settings.cart_free_product_item_count }}"
+      {% endif %}>
 
   <div style="--background-color: {{ settings.shop_bg_color }}">
     {% 

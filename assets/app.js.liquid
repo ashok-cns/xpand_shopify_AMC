@@ -609,7 +609,7 @@ $(() => {
           });
         }
 
-        cartItemsHTML += '</div><div class="mini-cart__item-price">';
+        cartItemsHTML += `</div><div class="mini-cart__item-price" data-original-price="${window.Shopify.formatMoney(item.original_price, $('body').data('money-format'))}">`;
 
         $.ajax({
           dataType: 'json',
@@ -688,7 +688,11 @@ $(() => {
         cartItemsHTML += `<input type="number" min="0" class="quantity" name="updates[]" id="updates_${item.id}" value="${item.quantity}" data-cart-quantity-input="mini-cart" />`;
         cartItemsHTML += '<span class="ss-icon product-plus js-change-quantity" data-func="plus"><span class="icon-plus"></span></span>';
         cartItemsHTML += '</div></div></div>';
-        cartItemsHTML += `<a href="/cart/change?line=${lineID}&amp;quantity=0" class="js-cart-remove-btn cart__remove-btn" data-line-id="${lineID}" data-remove-item="mini-cart"><span class="remove-icon"></span></a>`;
+        cartItemsHTML += `<a href="/cart/change?line=${lineID}&amp;quantity=0" class="js-cart-remove-btn cart__remove-btn" data-line-id="${lineID}" data-remove-item="mini-cart"><span class="remove-icon"><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.77778 3.96297L4.43762 16.1351C4.50518 16.6306 4.92838 17 5.42845 17H12.5312C13.0484 17 13.4803 16.6056 13.5271 16.0905L14.6296 3.96297M16.4074 3.96297H1" stroke="#B5B5B5" stroke-linecap="round"/>
+        <path d="M5.74121 3.37037V2C5.74121 1.44772 6.18893 1 6.74121 1H10.6671C11.2194 1 11.6671 1.44772 11.6671 2V3.37037" stroke="#B5B5B5" stroke-linecap="round"/>
+        </svg>
+        </span></a>`;
       });
 
       const cartDiscounts = cart.cart_level_discount_applications;
@@ -702,7 +706,7 @@ $(() => {
         cartDiscountsHTML += `-<span class="money">${amount}</span></span>`;
       }
 
-      cartActionHTML += `<span class="right"><span data-subtotal-cart-original="`+cart.original_total_price+`" data-sutotal-price="`+cart.total_price+`" class="money">${window.Shopify.formatMoney(cart.total_price, $('body').data('money-format'))}</span></span> <span>${window.PXUTheme.translation.cart_subtotal_text}</span>`;
+      cartActionHTML += `<span class="right cart_subtotal_price_wapper"><span data-subtotal-cart-original="`+cart.original_total_price+`" data-sutotal-price="`+cart.total_price+`" class="money">${window.Shopify.formatMoney(cart.total_price, $('body').data('money-format'))}</span></span> <span class="cart_subtotal_label">${window.PXUTheme.translation.cart_subtotal_text}</span> <p class="cart-message meta ertt">{{ 'Taxes and shipping calculated at checkout' }}</p>`;
       totalSaving += cart.total_discount;
       if (window.PXUTheme.theme_settings.display_savings && totalSaving > 0) {
         cartSavingsHTML = `<span class="right"><span class="money">${window.Shopify.formatMoney(totalSaving, $('body').data('money-format'))}</span></span>`
@@ -769,13 +773,26 @@ $(() => {
     $(document).on('click', '.ajax-submit', function (e) {
       e.preventDefault();
       var $currentAjaxBtn = $(this);
-      if($(this).hasClass('cm-rec-pro-cta')){
-        var $variantId = $(this).attr('data-selected-variant');
-        var $addToCartBtn = $(this).closest('.cm-rec-prod-cta-wrapper').find('.add_to_cart');
-        var ajaxData = {
-          quantity: 1,
-          id: $variantId,
-        }
+      var $variantId = $(this).attr('data-selected-variant');
+      var $addToCartBtn = $(this).closest('.cm-rec-prod-cta-wrapper').find('.add_to_cart');
+      if($(this).hasClass('free-gift-item')){
+        $('body').addClass('loader-on');
+          var ajaxData = {
+            quantity: 1,
+            id: $variantId,
+            properties: {
+              "freeShippingItemCount": $('body').attr('data-free-product-count'),
+              "productType": "free",
+              "discountAmount": $(this).attr('data-amount')
+            }
+
+          }
+          console.log("ajaxData==>", ajaxData);
+        }else if($(this).hasClass('cm-rec-pro-cta')){
+          var ajaxData = {
+            quantity: 1,
+            id: $variantId,
+          }
       }else{
         var $addToCartForm = $(this).closest('form');
         var $addToCartBtn = $addToCartForm.find('.add_to_cart');
@@ -800,13 +817,18 @@ $(() => {
         },
         success() {
           $addToCartBtn.find('.checkmark').addClass('checkmark-active');
+          if($currentAjaxBtn.hasClass('cm-rec-pro-cta')){
+            $('.cm-rec-prod-cta-wrapper .cm-rec-prod-cta-content').addClass('cm-item-added'); //show-options ;
+            $currentAjaxBtn.closest('li').addClass('selected-option');
+        }
 
           window.setTimeout(() => {
             $addToCartBtn.removeAttr('disabled').removeClass('disabled');
             $addToCartBtn.find('.checkmark').removeClass('checkmark-active');
             $addToCartBtn.find('span').removeClass('zoomOut').addClass('fadeInDown');
             if($currentAjaxBtn.hasClass('cm-rec-pro-cta')){
-                $('.cm-rec-prod-cta-wrapper .cm-rec-prod-cta-content').removeClass('show-options');
+                $('.cm-rec-prod-cta-wrapper .cm-rec-prod-cta-content').removeClass('cm-item-added'); //show-options ;
+                $currentAjaxBtn.closest('li').removeClass('selected-option');
             }
           }, 1000);
 
@@ -822,10 +844,13 @@ $(() => {
                 }
 
                 if ($('#header').is(':visible')) {
+                  console.log('in --1 ')
                   $('#header .cart-container, header[data-desktop-header]').addClass('active_link');
                 } else if ($('.sticky_nav--stick').length) {
+                  console.log('in --2')
                   $('.sticky_nav .cart-container, header[data-desktop-header]').addClass('active_link');
                 } else {
+                  console.log('in --3 ')
                   $('.top-bar .cart-container, header[data-desktop-header]').addClass('active_link');
                 }
 
@@ -893,6 +918,7 @@ $(() => {
       var tier_2_dis_amount = {{ settings.tier_2_dis_amount }};
       var tier_3_dis_amount = {{ settings.tier_3_dis_amount }};
       var tier_4_dis_amount = {{ settings.tier_4_dis_amount }};
+      var free_product_active_count = {{ settings.cart_free_product_item_count }};
 
 
     function toAppendtagsonCartUpdate(){      
@@ -901,18 +927,24 @@ $(() => {
         type: 'GET',
         url: '/cart?view=temp',
         cache: false,
+        async:false,
         success(cartTempData) {
-          //console.log('Get cartTempData==>', cartTempData);
+          console.log('Get cartTempData==>', cartTempData);
           $('body').append(cartTempData);
           var updateDataAttr = setInterval(function(){
             if($('body').find('#temp-cart-data').length > 0 ){
               //console.log('Temp DATA Exist in Dom');
               $('#temp-cart-data .cart-temp-data').each(function(){
                 $(document).find('.cart_items.js-cart_items li[data-line-id="'+$(this).attr('data-line-id')+'"]').attr('data-tags', $(this).attr('data-tags'));
+                if($(this).attr('data-free-product')){
+                  console.log('data-free-Exist');
+                  $(document).find('.cart_items.js-cart_items li[data-line-id="'+$(this).attr('data-line-id')+'"]').attr('data-free-product', $(this).attr('data-free-product'));
+                }
+                
               })
               clearInterval(updateDataAttr);
             }
-          },0);
+          },100);
           var checkTotalQtyAndTags = setInterval(function(){
             if( $('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_items.js-cart_items li[data-tags]').length > 0){
               var cartQty = 0;
@@ -929,6 +961,19 @@ $(() => {
                 console.log('TotalQty==>', cartQty);
                 var cm_itemsInDiscountGroup = cartQty
                 var cm_discountAmount = 0;
+                var cm_freeGiftProduct = 0;
+
+                if($('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_items.js-cart_items li[data-free-product]').length > 0){
+                  $('body').removeClass('free-gift-product-visible');
+                  $(document).find('li.mini-cart__item[data-free-product="free"] .product-quantity-box').remove();
+                } else {
+                  if(cartQty >= free_product_active_count ){
+                  //$('.cart-free-gift-wrapper').addClass('visible-item');
+                  $('body').addClass('free-gift-product-visible');
+                }
+                }
+
+                
                 
                 if(tier_4_line_qnty > 0 && tier_4_dis_amount && cm_itemsInDiscountGroup >= tier_4_line_qnty ) {
                   console.log('inside-4');
@@ -975,6 +1020,9 @@ $(() => {
        
         // var cartSubtotal = 
         console.log(cartQty ,'---', cm_next_tier_qty)
+        if($('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_items.js-cart_items li[data-free-product]').length > 0){
+              $('body').removeClass('free-gift-product-visible');
+            }
         var lineItemSubtotal = 0;
         if(cartQty < cm_next_tier_qty){
           console.log('inside If condition --1' );
@@ -999,7 +1047,7 @@ $(() => {
             console.log('match freeshipping count')
             $(document).find('.progress-wrap .text-wrapper').html('<p>'+freeShippingAppliedText+'</p>');
             setTimeout(function(){
-              $(document).find('.progress-wrap .text-wrapper').html('<p>You are '+pendingQty+' items (laces, socks or shoewipes) away from '+makePercentage+'% off</p>')
+              $(document).find('.progress-wrap .text-wrapper').html('<p>You are '+pendingQty+' items away from '+makePercentage+'% off</p>')
             },2000)
            } else if(cartQty == freeShippingItemCount-1){
             $(document).find('.progress-wrap .text-wrapper').html('<p>'+freeShippingTextHint+'</p>');
@@ -1009,10 +1057,10 @@ $(() => {
             if(cartQty == cm_tier_qty){
               $(document).find('.progress-wrap .text-wrapper').html('<p>'+discountAppliedText.replace('discountPercentage', ''+savedPercentage+'')+'</p>');
               setTimeout(function(){
-                $(document).find('.progress-wrap .text-wrapper').html('<p>You are '+pendingQty+' items (laces, socks or shoewipes) away from '+makePercentage+'% off</p>')
+                $(document).find('.progress-wrap .text-wrapper').html('<p>You are '+pendingQty+' items away from '+makePercentage+'% off</p>')
               },2000)
             }else {
-              $(document).find('.progress-wrap .text-wrapper').html('<p>You are '+pendingQty+' items (laces, socks or shoewipes) away from '+makePercentage+'% off</p>')
+              $(document).find('.progress-wrap .text-wrapper').html('<p>You are '+pendingQty+' items away from '+makePercentage+'% off</p>')
             }
             
            }
@@ -1064,6 +1112,7 @@ $(() => {
               }
             }
             
+            
             console.log('LineItemData for ajax hit', lineItemData);
             $.ajax({
               url: '/cart/change.js',
@@ -1074,13 +1123,46 @@ $(() => {
               data: lineItemData,
               success(data) {
                 console.log(data);
+                if(cartQty < $('body').attr('data-free-product-count')) {
+                  $('body').removeClass('free-gift-product-visible');
+                  if($(document).find('li.mini-cart__item[data-free-product="free"]').length > 0) {
+                    var datakey = $(document).find('li.mini-cart__item[data-free-product="free"]').attr('data-key'); console.log('dataKey', datakey);
+                    var updateFreeProduct = {
+                      [datakey] : 0
+                    }
+                    jQuery.post(window.Shopify.routes.root + 'cart/update.js', {
+                      updates: updateFreeProduct
+                    }).done(function() {
+                    console.log('UPdate.js Scussess done');
+                    $(document).find('li.mini-cart__item[data-free-product="free"]').remove();
+                    $.ajax({
+                      url: '/cart.js',
+                      dataType: 'json',
+                      cache: false,
+                      success:function(cart){
+                        console.log("CART==>", cart);
+                         refreshCart(cart);
+                       },
+                       error: function(error, xhr){
+                        console.log('XHRR ',error, xhr)
+                       }
+                    })
+                    });
+                  }              
+                }
               },
             });
+
+            
+
            
+            
+            
            
 
 
             }else {
+              console.log('outof freeItemmeess==>');
               console.log('outside BogoOff tag item');
               console.log('inside If condition --1' );
               var checkqty = Number(currentItem.find('input[data-cart-quantity-input]').val()); console.log('checkqty==:', checkqty)
@@ -1217,8 +1299,19 @@ $(() => {
           cache: false,
           success(cart) {
         
-        var updateProgressBar = Number(100/tier_4_line_qnty); console.log(updateProgressBar);
-      $(document).find('.progress-frame .progress-fill').css('width', updateProgressBar*cartQty+'%');
+        var updateProgressBar = Number(100/tier_4_line_qnty); console.log("tier_4_line_qnty==>", tier_4_line_qnty, "ProgressBarr==>", updateProgressBar);
+        var calculateProgess = updateProgressBar*cartQty;
+       if (calculateProgess >= 33 && calculateProgess < 50) {
+          $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="3"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="2"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="1"] img.default-icn').addClass('hidden');
+          $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="1"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="3"] img.default-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="2"] img.default-icn').removeClass('hidden');
+        }else if(calculateProgess >= 50 && calculateProgess < 100) {  
+          $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="3"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="2"] img.default-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="1"] img.default-icn').addClass('hidden');
+          $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="1"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="2"] img.active-icn').removeClass('hidden');
+        }else  if(calculateProgess >= 100 ) {
+          $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="3"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="2"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="1"] img.active-icn').removeClass('hidden');
+          $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="1"] img.default-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="3"] img.default-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="2"] img.default-icn').addClass('hidden');
+        }
+      $(document).find('.progress-frame .progress-fill').css('width', calculateProgess+'%');
      
       // var recalculateSubTotal = Number($('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_subtotal.js-cart_subtotal span.right span').attr('data-sutotal-price')); 
       var recalculateSubTotal = Number(cart.total_price);
@@ -1660,7 +1753,7 @@ $(document).on('click', '.go-to-top', () => {
     $(document).on('click','.cm-rec-prod-cta-content li', function(){
       $(this).addClass('selected-option').siblings().removeClass('selected-option');
       let variantId = $(this).attr('data-variantid');
-      $(this).closest('.cm-rec-prod-cta-wrapper').find('button[data-add-to-cart]').attr('data-selected-variant', variantId).removeAttr('disabled');
+      // $(this).closest('.cm-rec-prod-cta-wrapper').find('button[data-add-to-cart]').attr('data-selected-variant', variantId).removeAttr('disabled');
 
 
     });

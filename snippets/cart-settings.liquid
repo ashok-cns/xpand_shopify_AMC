@@ -39,6 +39,11 @@
       <div data-tier_discount="{{ settings[tierDiscountAmt] | times: 100 | replace:'.0','' }}" data-tier_qty="{{ settings[tierQty] }}">{{ settings[tierQty] }}--{{ settings[tierDiscountAmt] }}</div>
     {% endif %}
 {% endfor %}
+{% if settings.enable_free_product %}
+  {% assign product = all_products[settings.free_product_item] %}
+<div data-free_product_discount="{{ product.price }}" data-free_product_qty="{{ settings.cart_free_product_item_count }}">{{ settings.cart_free_product_item_count }}--{{ product.price }}</div>
+
+{% endif %}
 </div>
 <script>
     window.addEventListener("DOMContentLoaded", (event) => {
