@@ -162,6 +162,7 @@
             "name": "Overview",
             "title": "",
             "block_desc": "<p>{{ product.metafields.custom.primary_overview_video1_heading_text.value }}<\/p>",
+            "accessories_top_video_url": "{{ product.metafields.custom.primary_overview_video1.value }}",
             "accessories_1_type": "video",
             "accessories_video1_url": "shopify:\/\/files\/videos\/(GIF-1)-Cushioned-No-Show-v1585155742390_5be89c6e-7a11-448c-88fe-c8e01f6274cd.mp4",
             "accessories_video1_icon": "shopify:\/\/shop_images\/Countour-Seam-v1585586263310_37152b2b-fc9f-468c-a7ab-b8fdd044357d.svg",
