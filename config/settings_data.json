@@ -182,7 +182,7 @@
     "recommended_variant_4": "19252660928623",
     "show_shipping_calculator": false,
     "shipping_calculator_default_country": "United States",
-    "currency_format": "money_with_currency_format",
+    "currency_format": "money_format",
     "show_multiple_currencies": true,
     "supported_currencies": "USD CAD AUD GBP EUR JPY",
     "default_currency": "USD",
