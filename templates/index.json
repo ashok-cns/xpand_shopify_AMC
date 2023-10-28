@@ -27,6 +27,7 @@
       "block_order": [
         "template--15136041599087__b619a8be-7c8f-49e8-9051-78f443438c49-16825912694215c06d-0"
       ],
+      "disabled": true,
       "settings": {
         "wide_display": true,
         "slideshow_text_animation": "",
@@ -35,6 +36,37 @@
         "activate_adaptiveHeight": false,
         "mobile_text_below_image": false,
         "mobile_text_color": "#03a196",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "b91c0a78-ee41-4331-8474-213be8d38f76": {
+      "type": "video",
+      "settings": {
+        "wide_display": true,
+        "aspect_ratio": "16:9",
+        "autoplay": true,
+        "autoloop": true,
+        "mute_video": false,
+        "show_controls": false,
+        "video_dark_overlay": false,
+        "iframe_video": "https:\/\/vimeo.com\/878912461?share=copy",
+        "html5_video": "",
+        "display_text_over_video": false,
+        "preheading": "",
+        "heading": "",
+        "subheading": "",
+        "button1_label": "Play Video",
+        "button1_link": "",
+        "button1_style": "global-button--banner",
+        "button2_label": "",
+        "button2_link": "",
+        "button2_style": "global-button--banner",
+        "text_position": "center",
+        "text_align": "center",
+        "caption_content_background": "original",
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
         "css_class": "",
         "custom_css": ""
       }
@@ -445,48 +477,17 @@
         "sec_top": 45,
         "sec_bottom": 45
       }
-    },
-    "b91c0a78-ee41-4331-8474-213be8d38f76": {
-      "type": "video",
-      "settings": {
-        "wide_display": true,
-        "aspect_ratio": "16:9",
-        "autoplay": true,
-        "autoloop": true,
-        "mute_video": false,
-        "show_controls": false,
-        "video_dark_overlay": false,
-        "iframe_video": "https:\/\/vimeo.com\/878912461?share=copy",
-        "html5_video": "",
-        "display_text_over_video": false,
-        "preheading": "",
-        "heading": "",
-        "subheading": "",
-        "button1_label": "Play Video",
-        "button1_link": "",
-        "button1_style": "global-button--banner",
-        "button2_label": "",
-        "button2_link": "",
-        "button2_style": "global-button--banner",
-        "text_position": "center",
-        "text_align": "center",
-        "caption_content_background": "original",
-        "mobile_text_below_image": true,
-        "mobile_text_color": "",
-        "css_class": "",
-        "custom_css": ""
-      }
     }
   },
   "order": [
     "b619a8be-7c8f-49e8-9051-78f443438c49",
+    "b91c0a78-ee41-4331-8474-213be8d38f76",
     "df8ceda1-9819-455f-98a1-34334a39aa53",
     "4f32cbc4-47c1-4a16-9034-e75c8f8be3fc",
     "16315440459bd794b1",
     "24a492b5-ae5b-4733-8f59-11b8eba2f0de",
     "d11d965a-e275-4b0a-8fcd-69482d0027c3",
     "f17be46f-e031-40af-8cac-bb37b68eb353",
-    "18848a44-fcb3-477f-bebd-00e85475a9a6",
-    "b91c0a78-ee41-4331-8474-213be8d38f76"
+    "18848a44-fcb3-477f-bebd-00e85475a9a6"
   ]
 }
