@@ -1,46 +1,6 @@
 {
   "sections": {
-    "b619a8be-7c8f-49e8-9051-78f443438c49": {
-      "type": "slideshow",
-      "blocks": {
-        "template--15136041599087__b619a8be-7c8f-49e8-9051-78f443438c49-16825912694215c06d-0": {
-          "type": "image",
-          "settings": {
-            "type": "video",
-            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/ba68d5f1d2124c3ab23608e26b98cba2.mp4",
-            "video_poster": "shopify:\/\/shop_images\/Thumbnail_0d247f6c-11fb-4052-bbca-dd589fe25ec9.jpg",
-            "pretext": "",
-            "title": "",
-            "subtitle": "",
-            "button1": "",
-            "button1_link": "",
-            "button1_style": "global-button--banner",
-            "button2": "",
-            "button2_link": "",
-            "button2_style": "global-button--banner",
-            "text_position": "center",
-            "text_align": "center",
-            "caption_content_background": "original"
-          }
-        }
-      },
-      "block_order": [
-        "template--15136041599087__b619a8be-7c8f-49e8-9051-78f443438c49-16825912694215c06d-0"
-      ],
-      "disabled": true,
-      "settings": {
-        "wide_display": true,
-        "slideshow_text_animation": "",
-        "slideshow_animation": "slide",
-        "slideshow_speed": 6,
-        "activate_adaptiveHeight": false,
-        "mobile_text_below_image": false,
-        "mobile_text_color": "#03a196",
-        "css_class": "",
-        "custom_css": ""
-      }
-    },
-    "b91c0a78-ee41-4331-8474-213be8d38f76": {
+    "4eb44a74-fb32-41e1-8170-d35b99588e67": {
       "type": "video",
       "settings": {
         "wide_display": true,
@@ -69,23 +29,6 @@
         "mobile_text_color": "",
         "css_class": "",
         "custom_css": ""
-      }
-    },
-    "df8ceda1-9819-455f-98a1-34334a39aa53": {
-      "type": "text-banner",
-      "settings": {
-        "title": "NEVER TIE YOUR SHOES AGAIN",
-        "text": "<p><strong>No-Tie Shoelace System for Adults & Kids<\/strong><\/p>",
-        "primary_cta_text": "SHOP NOW",
-        "primary_cta_link": "shopify:\/\/products\/no-tie-original-elastic-lacing-system",
-        "primary_cta_text_color": "#ffffff",
-        "primary_cta_bg_color": "#008ffd",
-        "enable_secondary_cta": true,
-        "secondary_cta_text": "HOW IT WORKS",
-        "secondary_cta_link": "shopify:\/\/pages\/install-video",
-        "secondary_cta_text_color": "#ffffff",
-        "secondary_cta_bg_color": "#a6b4be",
-        "css_class": ""
       }
     },
     "4f32cbc4-47c1-4a16-9034-e75c8f8be3fc": {
@@ -480,9 +423,7 @@
     }
   },
   "order": [
-    "b619a8be-7c8f-49e8-9051-78f443438c49",
-    "b91c0a78-ee41-4331-8474-213be8d38f76",
-    "df8ceda1-9819-455f-98a1-34334a39aa53",
+    "4eb44a74-fb32-41e1-8170-d35b99588e67",
     "4f32cbc4-47c1-4a16-9034-e75c8f8be3fc",
     "16315440459bd794b1",
     "24a492b5-ae5b-4733-8f59-11b8eba2f0de",
