@@ -341,7 +341,9 @@
                     {% for variant in all_products[settings[prodObj]].variants %}
                       {% if variantListItem contains variant.id %}
                         {% assign prodImg = variant.featured_image %}
-
+                        {% capture variantImg %}
+                          <img src="{{ prodImg | img_url: 'medium' }}" alt="{{ prodTitle}}">
+                        {% endcapture %}
                       {% endif %}
                     {% endfor %}
                     {% if forloop.index == 1 %}
@@ -355,6 +357,9 @@
                     {% for variant in all_products[settings[prodObj]].variants %}
                       {% if variantListItem contains variant.id %}
                         {% assign prodImg = variant.featured_image %}
+                        {% capture variantImg %}
+                          <img src="{{ prodImg | img_url: 'medium' }}" alt="{{ prodTitle}}">
+                        {% endcapture %}
                       {% endif %}
                     {% endfor %}
                   {% endfor %}
@@ -362,7 +367,11 @@
               {% else %}
                 {% assign variantId = all_products[settings[prodObj]].selected_or_first_available_variant.id %}
                 {% assign prodImg = all_products[settings[prodObj]].selected_or_first_available_variant.featured_image %}
+                {% capture variantImg %}
+                  <img src="{{ prodImg | img_url: 'medium' }}" alt="{{ prodTitle}}">
+                {% endcapture %}
               {% endif %}
+
               {% assign produHandle = all_products[settings[prodObj]].handle %}
               {% assign prodUrl = all_products[settings[prodObj]].url %}
               {% assign prodPrice = all_products[settings[prodObj]].price %}
@@ -373,7 +382,8 @@
               {% if settings[prodObj] != blank %}
                 <div class="cm-rec-pro-item" data-count="{{ variantIdListCount }}">
                   <div class="cm-rec-pro-img" data-img="{{ prodImg | img_url: 'medium' }}">
-                    <img src="{{ prodImg | img_url: 'medium' }}" alt="{{ prodTitle}}"></div>
+                    {{ variantImg }}
+                    </div>
                   <div class="cm-rec-pro-info">
                     <h3>
                       <a href="{{ prodUrl}}">{{ prodTitle }}</a>
