@@ -7,7 +7,7 @@
         "aspect_ratio": "16:9",
         "autoplay": true,
         "autoloop": true,
-        "mute_video": false,
+        "mute_video": true,
         "show_controls": false,
         "video_dark_overlay": false,
         "iframe_video": "https:\/\/vimeo.com\/878912461?share=copy",
