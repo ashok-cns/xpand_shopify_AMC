@@ -348,19 +348,17 @@
                       {% break %}
                     {% endif %}
                   {% endfor %}
+                  
                 {% else %}
                   {% for variantListItem in variantIdList %}
                     {% for variant in all_products[settings[prodObj]].variants %}
                       {% if variantListItem contains variant.id %}
-                        {% assign prodImg = variant.featured_image %}
+                        {% assign prodImg = variant.image %}
                       {% endif %}
                     {% endfor %}
                   {% endfor %}
                 {% endif %}
-                  {{ '2' }}
               {% else %}
-              {{ '1' }}
-
                 {% assign variantId = all_products[settings[prodObj]].selected_or_first_available_variant.id %}
                 {% assign prodImg = all_products[settings[prodObj]].selected_or_first_available_variant.featured_image %}
               {% endif %}
