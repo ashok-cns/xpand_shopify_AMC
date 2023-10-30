@@ -340,7 +340,7 @@
                   {% for variantListItem in variantIdList %}
                     {% for variant in all_products[settings[prodObj]].variants %}
                       {% if variantListItem contains variant.id %}
-                        {% assign prodImg = variant.image %}
+                        {% assign prodImg = variant.featured_image %}
 
                       {% endif %}
                     {% endfor %}
@@ -353,7 +353,7 @@
                   {% for variantListItem in variantIdList %}
                     {% for variant in all_products[settings[prodObj]].variants %}
                       {% if variantListItem contains variant.id %}
-                        {% assign prodImg = variant.image %}
+                        {% assign prodImg = variant.featured_image %}
                       {% endif %}
                     {% endfor %}
                   {% endfor %}
