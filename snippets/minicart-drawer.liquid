@@ -361,7 +361,7 @@
               {% else %}
 
                 {% assign variantId = all_products[settings[prodObj]].selected_or_first_available_variant.id %}
-                {% assign prodImg = all_products[settings[prodObj]].selected_or_first_available_variant.featured_image %}
+                {% assign prodImg = all_products[settings[prodObj]].selected_variant.featured_image %}
               {% endif %}
               {% assign produHandle = all_products[settings[prodObj]].handle %}
               {% assign prodUrl = all_products[settings[prodObj]].url %}
