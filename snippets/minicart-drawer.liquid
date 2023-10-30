@@ -370,7 +370,7 @@
 
 
 
-              {% unless settings[prodObj] == blank %}
+              {% if settings[prodObj] != blank %}
                 <div class="cm-rec-pro-item" data-count="{{ variantIdListCount }}">
                   <div class="cm-rec-pro-img" data-img="{{ prodImg | img_url: 'medium' }}">
                     <img src="{{ prodImg | img_url: 'medium' }}" alt="{{ prodTitle}}"></div>
@@ -461,7 +461,7 @@
                     </div>
                   </div>
                 </div>
-              {% endunless %}
+                    {% endif %}
             {% endfor %}
           </div>
         </div>
