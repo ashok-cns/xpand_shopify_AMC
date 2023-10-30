@@ -350,12 +350,14 @@
                   {% endfor %}
                   
                 {% else %}
+                {{ variantIdList }}====
                   {% for variantListItem in variantIdList %}
                     {% for variant in all_products[settings[prodObj]].variants %}
                       {% if variantListItem contains variant.id %}
                         {% assign prodImg = variant.featured_image %}
                       {% endif %}
                     {% endfor %}
+                    {% assign prodImg = variant.featured_image %}
                   {% endfor %}
                 {% endif %}
               {% else %}
