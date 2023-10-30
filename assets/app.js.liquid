@@ -453,6 +453,7 @@ $(() => {
       type: 'post',
       data: $cart.serialize(),
       success(data) {
+        console.log("CART Responseeeee22==>", cart);
         refreshCart(data);
       },
     });
@@ -515,6 +516,7 @@ $(() => {
               // Refreshes cart if inventory is available
               cartItem.parentCartForm.submit();
             } else {
+              console.log("CART Responseeeee33==>", cart);
               refreshCart(data);
             }
           } else {
@@ -526,6 +528,7 @@ $(() => {
           // Refreshes cart if inventory is available
           cartItem.parentCartForm.submit();
         } else {
+          console.log("CART Responseeeee44==>", cart);
           refreshCart(data);
         }
         applyDiscount();
@@ -838,6 +841,7 @@ $(() => {
             cache: false,
             success(cart) {
               setTimeout(function () {
+                console.log("CART Responseeeee55==>", cart);
                 refreshCart(cart);
                 if ($('body').hasClass('fancybox-active')) {
                   $.fancybox.close();
@@ -1140,7 +1144,7 @@ $(() => {
                       dataType: 'json',
                       cache: false,
                       success:function(cart){
-                        console.log("CART Responseeeee==>", cart);
+                        console.log("CART Responseeeee11==>", cart);
                          refreshCart(cart);
                        },
                        error: function(error, xhr){
