@@ -1334,7 +1334,6 @@ $(() => {
         $('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_subtotal.js-cart_subtotal').append('<p class="cart-total-saving">You saved '+saveAmountOfSubtotalInPercent+'%</p>');
       } else {
         console.log('inside subtotalNot Matched===>')
-        <span data-pp="1" data-subtotal-cart-original="2398" data-sutotal-price="1801" class="money">$ 18.01</span>
         $('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_subtotal.js-cart_subtotal span.right').html('<span data-subtotal-cart-original="'+cart.original_total_price+'" data-sutotal-price="'+cart.original_total_price+'" class="update-subtotal-cart money"> $ '+cart.original_total_price/100+'</span>');
         $('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_subtotal.js-cart_subtotal').removeClass('line-through');
         $('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_subtotal.js-cart_subtotal span.right span.update-subtotal-cart, header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_subtotal.js-cart_subtotal .cart-total-saving').remove();
