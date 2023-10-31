@@ -388,9 +388,9 @@
                     </div>
                   <div class="cm-rec-pro-info">
                     <h3>
-                      <a href="{{ prodUrl}}">{{ prodTitle }} {{ variantTitle }}</a>
+                      <a href="{{ prodUrl}}">{{ prodTitle }} </a>
                     </h3>
-                    <h6></h6>
+                    <h6>{{ variantTitle }}</h6>
                     <span class="cm-crnt-price">{{ prodPrice | money }}</span>
                     <div class="cm-rec-prod-cta-wrapper">
                       {% if settings[prodVariantId] != blank %}
