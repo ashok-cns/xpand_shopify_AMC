@@ -127,7 +127,7 @@
           "settings": {
             "enable_image": true,
             "image": "shopify:\/\/shop_images\/Benefit1-Persona2.png",
-            "title": "✨ No more bowties",
+            "title": "No more bowties",
             "heading_size": "regular_text",
             "text": "",
             "button_label": "",
@@ -143,7 +143,7 @@
           "settings": {
             "enable_image": true,
             "image": "shopify:\/\/shop_images\/Benefit2-Persona2.png",
-            "title": "✨ One size fits all shoes",
+            "title": "One size fits all shoes",
             "heading_size": "regular_text",
             "text": "",
             "button_label": "",
@@ -159,7 +159,7 @@
           "settings": {
             "enable_image": true,
             "image": "shopify:\/\/shop_images\/Benefit3-Persona2.png",
-            "title": "✨ Easy to use",
+            "title": "Easy to use",
             "heading_size": "regular_text",
             "text": "",
             "button_label": "",
@@ -175,7 +175,7 @@
           "settings": {
             "enable_image": true,
             "image": "shopify:\/\/shop_images\/Benefit4-Persona2.png",
-            "title": "✨ Slip on and go",
+            "title": "Slip on and go",
             "heading_size": "regular_text",
             "text": "",
             "button_label": "",
@@ -195,7 +195,7 @@
       ],
       "settings": {
         "layout": "grid",
-        "title": "Get to Know our Laces",
+        "title": "Get to Know Our Laces",
         "link_text": "",
         "link": "",
         "link_text_color": "#ffffff",
@@ -214,7 +214,7 @@
           "type": "image",
           "settings": {
             "title": "Reliable, Secure for Runs & Walks",
-            "testimonial": "<p>★★★★★<\/p><p>\"I love these laces! The task of putting on and taking off your shoes several times a day has become so convenient. I walk and run with them and they are reliably secure.\"<\/p>",
+            "testimonial": "<p>⭐⭐⭐⭐⭐<\/p><p>\"I love these laces! The task of putting on and taking off your shoes several times a day has become so convenient. I walk and run with them and they are reliably secure.\"<\/p>",
             "name": "Chrystal",
             "store_name": "",
             "link": "",
