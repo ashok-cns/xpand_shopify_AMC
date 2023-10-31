@@ -341,6 +341,7 @@
                     {% for variant in all_products[settings[prodObj]].variants %}
                       {% if variantListItem contains variant.id %}
                         {% assign prodImg = variant.featured_image %}
+                        {% assign variantTitle = variant.title %}
                         {% capture variantImg %}
                           <img src="{{ prodImg | img_url: 'medium' }}" alt="{{ prodTitle}}">
                         {% endcapture %}
@@ -357,6 +358,7 @@
                     {% for variant in all_products[settings[prodObj]].variants %}
                       {% if variantListItem contains variant.id %}
                         {% assign prodImg = variant.featured_image %}
+                        {% assign variantTitle = variant.title %}
                         {% capture variantImg %}
                           <img src="{{ prodImg | img_url: 'medium' }}" alt="{{ prodTitle}}">
                         {% endcapture %}
@@ -386,7 +388,7 @@
                     </div>
                   <div class="cm-rec-pro-info">
                     <h3>
-                      <a href="{{ prodUrl}}">{{ prodTitle }}</a>
+                      <a href="{{ prodUrl}}">{{ prodTitle }} {{ variantTitle }}</a>
                     </h3>
                     <h6></h6>
                     <span class="cm-crnt-price">{{ prodPrice | money }}</span>
