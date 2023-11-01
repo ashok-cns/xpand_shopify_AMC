@@ -209,7 +209,7 @@
         "link": "",
         "link_text_color": "#ffffff",
         "link_bg_color": "#ff085a",
-        "sec_bg": "#f1f2f2",
+        "sec_bg": "#ffffff",
         "css_class": "featured-box",
         "custom_css": "",
         "sec_top": 30,
