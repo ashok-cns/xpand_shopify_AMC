@@ -102,9 +102,9 @@
         "1a162373-a611-4745-94a3-8ac5142ae7b4"
       ],
       "settings": {
-        "title": "As Featured On",
+        "title": "",
         "layout": "slider",
-        "sec_bg": "#f1f2f2",
+        "sec_bg": "rgba(0,0,0,0)",
         "css_class": "",
         "custom_css": "",
         "sec_top": 30,
