@@ -19388,7 +19388,7 @@ body[data-template="primary"] .is-product-sidebar.content {
 }
 .featured-box .text-align--center h3,
 .featured-box .text-align--center a {
-  {% comment %} position: absolute; {% endcomment %}
+  position: absolute;
   width: 100%;
   height: 30%;
   z-index: 1;
@@ -21073,6 +21073,10 @@ body.free-gift-product-visible .cart-free-gift-wrapper {
 }
 .section.text-banner .banner_cta_wrap .primary-cta + .secondary-cta {
   margin-left: 50px;
+}
+body.index .featured-box .text-align--center h3,
+body.index .featured-box .text-align--center a {
+  position: initial;
 }
 @media screen and (max-width: 749px ) {
   .section.text-banner .banner_cta_wrap .primary-cta + .secondary-cta {
