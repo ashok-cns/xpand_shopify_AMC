@@ -487,6 +487,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Benefit1-Persona5.png",
             "link": ""
           }
         },
