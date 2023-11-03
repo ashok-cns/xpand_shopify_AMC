@@ -56,10 +56,6 @@
               {% endif %}
             {% endif %}
 
-            {% if block.settings.title != blank %}
-              <h3 class="{{ block.settings.heading_size }}">{{ block.settings.title | strip_newlines }}</h3>
-            {% endif %}
-
             {% if block.settings.text != blank %}
               <div class="rte-setting">
                 {{ block.settings.text }}
@@ -201,20 +197,6 @@
             "default": "Add a title or tagline"
           },
           {
-            "type": "select",
-            "id": "heading_size",
-            "label": "Heading size",
-            "default": "regular_text",
-            "options": [
-              {
-                "value": "regular_text",
-                "label": "Regular"
-              }, {
-                "value": "large_text",
-                "label": "Large"
-              }
-            ]
-          }, {
             "type": "richtext",
             "id": "text",
             "label": "Text",
