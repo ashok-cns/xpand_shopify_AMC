@@ -474,7 +474,7 @@
         "link_text_color": "#fff",
         "link_bg_color": "#ff085a",
         "sec_bg": "",
-        "css_class": "",
+        "css_class": "featured-banner-area",
         "custom_css": "",
         "sec_top": 0,
         "sec_bottom": 0
