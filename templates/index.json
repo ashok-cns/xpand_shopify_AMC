@@ -441,6 +441,44 @@
         "sec_top": 45,
         "sec_bottom": 45
       }
+    },
+    "d67afc51-2d73-42c2-b8ab-d6f7fa5d787d": {
+      "type": "single-text-columns-with-image",
+      "blocks": {
+        "template--15266355282031__d67afc51-2d73-42c2-b8ab-d6f7fa5d787d-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/icon2.png",
+            "title": "Adjustable Tension",
+            "heading_size": "regular_text",
+            "text": "<p>Designed to move with you and work for you. Need more compression? Need more room? Xpand laces are easy to adjust on the fly.<\/p>",
+            "image_2": "shopify:\/\/shop_images\/Screenshot_2023-05-23_at_2.53_1.png",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15266355282031__d67afc51-2d73-42c2-b8ab-d6f7fa5d787d-text_block-1"
+      ],
+      "settings": {
+        "layout": "grid",
+        "title": "",
+        "link_text": "",
+        "link": "",
+        "link_text_color": "#fff",
+        "link_bg_color": "#ff085a",
+        "sec_bg": "",
+        "css_class": "",
+        "custom_css": "",
+        "sec_top": 0,
+        "sec_bottom": 0
+      }
     }
   },
   "order": [
@@ -451,6 +489,7 @@
     "24a492b5-ae5b-4733-8f59-11b8eba2f0de",
     "d11d965a-e275-4b0a-8fcd-69482d0027c3",
     "f17be46f-e031-40af-8cac-bb37b68eb353",
-    "18848a44-fcb3-477f-bebd-00e85475a9a6"
+    "18848a44-fcb3-477f-bebd-00e85475a9a6",
+    "d67afc51-2d73-42c2-b8ab-d6f7fa5d787d"
   ]
 }
