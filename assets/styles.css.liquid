@@ -21104,7 +21104,7 @@ body.index .logo-list__item .image-element__wrap{
 }
 .single-text-columns-with-image-section .image-element__wrap img[data-sizes=auto].lazyloaded.text-image{
   max-width: 150px;
-  object-fit: contain;
+  width: 100%;
   height: auto !important;
 }
 @media screen and (min-width: 750px ) {
@@ -21122,8 +21122,14 @@ body.index .logo-list__item .image-element__wrap{
     font-weight: 600;
     margin-left: 10px;
   }
+  .desktop_hide{
+    display: none !important;
+  }
 }
 @media screen and (max-width: 749px ) {
+  .mobile_hide{
+    display: none !important;
+  }
   .section.text-banner .banner_cta_wrap .primary-cta + .secondary-cta {
     margin-left: 15px;
   }
