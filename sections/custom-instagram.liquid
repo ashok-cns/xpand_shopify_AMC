@@ -44,7 +44,9 @@
         {% comment %} End content settings {% endcomment %}
 
         <div class="instagram_item" {{ block.shopify_attributes }}>
-          <div class="">
+          {% if block.settings.link %}
+            <a href="{{block.settings.link}}" >
+          {% endif %}
             {% if block.settings.enable_image %}
               {% if image != blank %}
                 {%
@@ -58,6 +60,9 @@
                 </p>
               {% endif %}
             {% endif %}
+          {% if block.settings.link %}
+            </a>
+          {% endif %}
           </div>
         </div>
       {% endfor %}
