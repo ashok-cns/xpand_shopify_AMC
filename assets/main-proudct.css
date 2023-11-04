@@ -1064,6 +1064,14 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
         border-radius: 0;
         height: 42px;
     }
+    .smart-payment-button--false .purchase-details p.selected-swatch-text{
+        width: 100%;
+        margin-bottom: 1px;
+        font-size: 14px;
+        text-transform: capitalize;
+        font-family: neuzeit_grotesk_light;
+        letter-spacing: 1px;
+    }
     .shoes-types {
         padding-bottom: 15px;
     }
