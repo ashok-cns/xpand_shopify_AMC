@@ -1010,6 +1010,9 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
         padding-bottom: 12.2%;
         position: relative;
     }
+    ul.pdp-custom-swatch-lists li.active{
+        padding-bottom: 12.2%;
+    }
     ul.pdp-custom-swatch-lists li img{
         position: absolute;
         width: 100%;
