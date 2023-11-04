@@ -1012,6 +1012,10 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
     }
     ul.pdp-custom-swatch-lists li.active{
         padding-bottom: calc(12.2% - 4px);
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
     }
     ul.pdp-custom-swatch-lists li img{
         position: absolute;
