@@ -43,6 +43,10 @@
 
         <div class="{% render 'column-width', value: blocks.size %} column {% if blocks.size > 3 %}{% if forloop.index == 1 %}medium-down--one-half{% else %}small-down--one-half{% endif %}{% else %}medium-down--one-whole{% endif %} text-column" {{ block.shopify_attributes }}>
           <div class="border-style--{{ block.settings.border_style }} text-align--{{ block.settings.align_text }}">
+            
+            {% if block.settings.button_label == blank and block.settings.button_link != blank %}
+            <a href="{{block.settings.button_link}}">
+            {% endif %}
             {% if block.settings.enable_image %}
               {% if image != blank %}
                 {% if mobile_image != blank and forloop.index == 1 %}
@@ -80,7 +84,9 @@
                 {{ block.settings.text }}
               </div>
             {% endif %}
-
+            {% if block.settings.button_label == blank and block.settings.button_link != blank %}
+            </a>
+            {% endif %}
             {% if block.settings.button_label != blank and block.settings.button_link != blank %}
               <a
                 href="{{ block.settings.button_link }}"
