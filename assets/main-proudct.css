@@ -1047,6 +1047,7 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
     }
     .purchase-details__quantity.product-quantity-box>.ss-icon{
         border: 1px solid #ddd;
+        flex: 0 0 40px;
     }
     .purchase-details__quantity.product-quantity-box>.ss-icon[data-func="minus"]{
         border-top-right-radius: 0;
@@ -1058,8 +1059,11 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
     }
     .product-quantity-box.purchase-details__quantity input.quantity{
         border: 1px solid #ddd;
-        width: calc(100% - 66px);
+        border-left: none;
+        border-right: none;
+        width: calc(100% - 80px);
         border-radius: 0;
+        height: 42px;
     }
     .shoes-types {
         padding-bottom: 15px;
