@@ -1045,6 +1045,14 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
         background-color: #fff;
         box-shadow: 0 0 12px 0px rgba(0,0,0,0.1);
     }
+    .purchase-details__quantity.product-quantity-box>.ss-icon{
+        border: 1px solid #ddd;
+    }
+    .product-quantity-box.purchase-details__quantity input.quantity{
+        border: 1px solid #ddd;
+        width: calc(100% - 66px);
+        border-radius: 0;
+    }
     .shoes-types {
         padding-bottom: 15px;
     }
