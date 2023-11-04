@@ -185,6 +185,12 @@ If true, show dynamic checkout button
               <h1 class="product_name">
                 {{- product.title | escape -}}
               </h1>
+              <p
+                class="selected-swatch-text desktop hide_desktop"
+                data-template="{{ template.suffix }}"
+                data-type="color">Color:
+                <span class="selected-swatch-text-value"></span>
+              </p>
             {% else %}
               <h2 class="product_name">
                 <a href="{{ product.url }}">
@@ -637,12 +643,6 @@ If true, show dynamic checkout button
                   <span class="visually-hidden">{{ product.metafields.reviews.rating_count }} {{ "general.accessibility.total_reviews" | t }}</span>
                 </p>
               </div>
-              <p
-                class="selected-swatch-text desktop hide_desktop"
-                data-template="{{ template.suffix }}"
-                data-type="color">Color:
-                <span class="selected-swatch-text-value"></span>
-              </p>
             {% endif %}
             {% when 'popup' %}
             {% if block.settings.page != blank %}
