@@ -1034,6 +1034,16 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
     .smart-payment-button--false .purchase-details{
         padding-bottom: 15px;
     }
+    .product_form.smart-payment-button--false .purchase-details{
+        padding-bottom: 10px;
+        padding-bottom: 10px;
+        position: fixed;
+        z-index: 9;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+    }
     .shoes-types {
         padding-bottom: 15px;
     }
