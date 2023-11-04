@@ -1138,3 +1138,9 @@ body[data-template=primary-alternate] .pdp-custom-swatch-dropdown .pdp-custom-sw
         margin-bottom: 10px;
     }
 }
+@media screen and (max-width: 749px ) {
+    ul.pdp-custom-swatch-lists{
+    overflow-x: scroll;
+    flex-wrap: initial;
+  }
+}
