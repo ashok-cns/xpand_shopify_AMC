@@ -1197,6 +1197,9 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
         right: 15px;
         justify-content: end;
     }
+    h1.product_name{
+        max-width: calc(100% - 100px);
+    }
 }
 @media screen and (max-width: 798px) {
     .product__images.three-fifths {
