@@ -119,6 +119,7 @@
           "settings": {
             "enable_image": true,
             "image": "shopify:\/\/shop_images\/Flat_Lace_3_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_220_bae9d69d-7713-4d96-9785-9d4c3d07d192.png",
             "title": "Original No-Tie <br> Lacing System",
             "heading_size": "regular_text",
             "text": "<p>All day, all over odor protection<\/p>",
