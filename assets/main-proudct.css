@@ -1184,6 +1184,7 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
         justify-content: end;
         font-size: 18px;
         order: 0;
+        min-width: 100px;
     }
     .price-note{
         order: 1;
