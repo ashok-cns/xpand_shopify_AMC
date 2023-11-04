@@ -1035,7 +1035,7 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
         padding-bottom: 15px;
     }
     .product_form.smart-payment-button--false .purchase-details{
-        padding-bottom: 10px;
+        padding-top: 10px;
         padding-bottom: 10px;
         position: fixed;
         z-index: 9;
