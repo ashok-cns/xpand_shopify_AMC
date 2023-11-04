@@ -38,32 +38,18 @@
       {% for block in blocks %}
         {% comment %} Content settings {% endcomment %}
         {%- assign image = block.settings.image -%}
-        {%- assign mobile_image = block.settings.mobile_image -%}
+        {%- assign image_2 = block.settings.image_2 -%}
         {% comment %} End content settings {% endcomment %}
 
         <div class="{% render 'column-width', value: blocks.size %} column {% if blocks.size > 3 %}{% if forloop.index == 1 %}medium-down--one-half{% else %}small-down--one-half{% endif %}{% else %}medium-down--one-whole{% endif %} text-column" {{ block.shopify_attributes }}>
           <div class="border-style--{{ block.settings.border_style }} text-align--{{ block.settings.align_text }}">
             {% if block.settings.enable_image %}
               {% if image != blank %}
-                {% if mobile_image != blank and forloop.index == 1 %}
-                  {% assign additional_classes = 'mobile_hide' %}
-                {% else %}
-                  {% assign additional_classes = '' %}
-                {% endif %}
                 {%
                    render 'image-element',
                  image: image,
                  alt: image.alt,
-                 focal_point: image.presentation.focal_point,
-                 additional_classes: additional_classes %}
-                 {% if mobile_image != blank and forloop.index == 1 %}
-                  {%
-                    render 'image-element',
-                  image: mobile_image,
-                  alt: mobile_image.alt,
-                  focal_point: mobile_image.presentation.focal_point,
-                  additional_classes: 'desktop_hide' %}
-                  {% endif %}
+                 focal_point: image.presentation.focal_point, %}
               {% else %}
                 <p>
                   {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
@@ -79,6 +65,14 @@
               <div class="rte-setting">
                 {{ block.settings.text }}
               </div>
+            {% endif %}
+            {% if image_2 != blank %}
+                {%
+                   render 'image-element',
+                 image: image_2,
+                 alt: image_2.alt,
+                 focal_point: image_2.presentation.focal_point,
+                 additional_classes: 'text-image' %}
             {% endif %}
 
             {% if block.settings.button_label != blank and block.settings.button_link != blank %}
@@ -108,8 +102,8 @@
 
 {% schema %}
   {
-    "name": "Text columns with images",
-    "class": "shopify-section--text-columns-with-images",
+    "name": "Single Text with image",
+    "class": "shopify-section--text-columns-with-images single-text-columns-with-image-section",
     "settings": [
       {
         "type": "radio",
@@ -129,8 +123,7 @@
       {
         "type": "text",
         "id": "title",
-        "label": "Heading",
-        "default": "Text columns with images"
+        "label": "Heading"
       },
       {
         "type": "text",
@@ -196,7 +189,7 @@
       {
         "type": "text_block",
         "name": "Column",
-        "limit": 5,
+        "limit": 1,
         "settings": [
           {
             "type": "checkbox",
@@ -208,11 +201,6 @@
             "type": "image_picker",
             "id": "image",
             "label": "Image"
-          },
-          {
-            "type": "image_picker",
-            "id": "mobile_image",
-            "label": "Mobile Image"
           },
           {
             "type": "text",
@@ -239,7 +227,12 @@
             "id": "text",
             "label": "Text",
             "default": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>"
-          }, {
+          }, 
+          {
+            "type": "image_picker",
+            "id": "image_2",
+            "label": "Image second"
+          },{
             "type": "text",
             "id": "button_label",
             "label": "Button label"
@@ -295,12 +288,10 @@
     ],
     "presets": [
       {
-        "name": "Text columns with images",
+        "name": "Single Text with image",
         "category": "Text",
         "blocks": [
           {
-            "type": "text_block"
-          }, {
             "type": "text_block"
           }
         ]
