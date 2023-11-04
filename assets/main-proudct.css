@@ -1043,6 +1043,7 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
         left: 0;
         right: 0;
         background-color: #fff;
+        box-shadow: 0 0 12px 0px rgba(0,0,0,0.1);
     }
     .shoes-types {
         padding-bottom: 15px;
