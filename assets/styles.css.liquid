@@ -21168,7 +21168,6 @@ body.index .logo-list__item .image-element__wrap{
 }
 @media screen and (max-width: 1024px ) {
   .instagram_grid{
-    display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
   }
 }
@@ -21198,5 +21197,13 @@ body.index .logo-list__item .image-element__wrap{
     margin-left: calc(-20px / 2);
     margin-right: calc(-20px / 2);
     width: calc(100% + 20px);
+  }
+  .instagram_grid{
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+}
+@media screen and (max-width: 749px ) {
+  .instagram_grid{
+    grid-template-columns: 50% 50%;
   }
 }
