@@ -19876,7 +19876,7 @@ body.promo-banner--show{
 .three-item-banner p.link-button {
   display: none;
 }
-.featured-box .text-align--center a {
+.featured-box .text-align--center a:not(.link_all_content) {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     background: #0090fc;
     border: none;
@@ -21146,6 +21146,18 @@ body.index .logo-list__item .image-element__wrap{
   font-weight: 600;
   margin: 4px 0 0;
   color: #ffffff;
+}
+.featured-box .text-align--center a.link_all_content{
+  display: block;
+  transform: initial;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  max-height: initial;
+  font-family: 'neuzeit_grotesk_regular';
+  font-weight: 300;
+  color: #333333;
 }
 @media screen and (min-width: 750px ) {
   body.index .logo-list__item_content{

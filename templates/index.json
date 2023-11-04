@@ -488,7 +488,7 @@
           "settings": {
             "enable_image": true,
             "image": "shopify:\/\/shop_images\/Benefit1-Persona5.png",
-            "link": ""
+            "link": "#"
           }
         },
         "c0a07d56-d4af-4f82-98e3-b1b7ea602bde": {
@@ -594,7 +594,6 @@
         "9a1ffac2-0be4-4a72-a336-80949a6d6e8c",
         "4bb14ca5-d0ec-4dee-b8cb-ea3df2b76753"
       ],
-      "disabled": true,
       "settings": {
         "layout": "grid",
         "title": "",
