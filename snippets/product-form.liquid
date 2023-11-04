@@ -92,13 +92,13 @@
       </div>
     {% endif %}
   {% endif %}
-  <p
-    class="selected-swatch-text desktop hide_desktop"
-    data-template="{{ template.suffix }}"
-    data-type="color">Color:
-    <span class="selected-swatch-text-value"></span>
-  </p>
   <div class="purchase-details">
+    <p
+      class="selected-swatch-text desktop hide_desktop"
+      data-template="{{ template.suffix }}"
+      data-type="color">Color:
+      <span class="selected-swatch-text-value"></span>
+    </p>
     {% if settings.display_product_quantity %}
       <div class="purchase-details__quantity product-quantity-box">
         {% comment %} <label for="quantity">{{ 'products.product.quantity' | t }}</label> {% endcomment %}
