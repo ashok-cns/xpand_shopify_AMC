@@ -1187,7 +1187,9 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
     }
     .price-note{
         order: 1;
-        justify-content: end;
+        text-align: right;
+        font-size: 12px;
+        padding: 0;
     }
     .product-block.product-block--price{
         position: absolute;
