@@ -21138,6 +21138,7 @@ body.index .logo-list__item .image-element__wrap{
     position: relative;
   }
   .instagram_grid .instagram_item_content{
+    opacity: 0;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -21150,6 +21151,17 @@ body.index .logo-list__item .image-element__wrap{
     background-color: rgba(0,0,0,0.3);
     color: #ffffff;
     z-index: 2;
+  }
+  .instagram_grid:hover .instagram_item_content{
+    opacity: 1;
+  }
+  .instagram_grid .instagram_item_content span{
+    font-size: 24px;
+  }
+  .instagram_grid .instagram_item_content p{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 4px 0 0;
   }
 }
 @media screen and (max-width: 749px ) {
