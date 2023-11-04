@@ -1048,6 +1048,14 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
     .purchase-details__quantity.product-quantity-box>.ss-icon{
         border: 1px solid #ddd;
     }
+    .purchase-details__quantity.product-quantity-box>.ss-icon[data-func="minus"]{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .purchase-details__quantity.product-quantity-box>.ss-icon[data-func="plus"]{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
     .product-quantity-box.purchase-details__quantity input.quantity{
         border: 1px solid #ddd;
         width: calc(100% - 66px);
