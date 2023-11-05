@@ -209,7 +209,7 @@
                 </span>
               {% endif %} {% endcomment %}
               {% if section.settings[promoImage] != blank %}
-              <img class="announcement-icon lazyload" data-src="{{ section.settings[promoImage] | file_url }}">
+              <img class="announcement-icon lazyload" data-src="{{ section.settings[promoImage] | img_url }}">
               {% endif %}
               {{ section.settings[promoText] }}
             </div>
@@ -438,7 +438,7 @@
                   </span>
                 {% endif %} {% endcomment %}
                 {% if section.settings[promoImage] != blank %}
-                <img class="announcement-icon lazyload" data-src="{{ section.settings[promoImage] | file_url }}">
+                <img class="announcement-icon lazyload" data-src="{{ section.settings[promoImage] | img_url }}">
                 {% endif %}
                 {{ section.settings[promoText] }}
               </div>
