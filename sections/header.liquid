@@ -331,7 +331,7 @@
       {% endif %}
 
       <!-- Mobile Mega Menu -->
-      {% if section.settings.desktop_cta_text != blank %}
+      {% comment %} {% if section.settings.desktop_cta_text != blank %}
         <div class="mobile-mega-nav-wrapper">
           <a
             class="mega-nav-dropdown"
@@ -349,7 +349,7 @@
 // console.log("Mobile Nav", mobileSubNav);
           window.localStorage.setItem('mobileMegaNav', mobileSubNav);
         </script>
-      {% endif %}
+      {% endif %} {% endcomment %}
 
       {% if section.settings.show_cart %}
         <div class="cart-container">
