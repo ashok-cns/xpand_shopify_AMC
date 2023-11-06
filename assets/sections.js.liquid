@@ -2408,14 +2408,11 @@ window.header = {
     }
 
     // Click anywhere outside of dropdown to close
-    $(document).on('click', event => {      
-      if (!$(event.target).closest('.cart-container, .cart_content').length ) {
-        
-          closeMiniCart();
-        
-        
-      }
-    });
+    // $(document).on('click', event => {      
+    //   if (!$(event.target).closest('.cart-container, .cart_content').length ) {
+    //       closeMiniCart();
+    //   }
+    // });
 
     // Close the mini cart when the mobile menu is clicked
     $('.mobile_nav').on('click', event => {
