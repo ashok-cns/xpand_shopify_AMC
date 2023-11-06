@@ -1,5 +1,5 @@
 {% unless settings.cart_action == 'ajax' and template contains 'cart' %}
-  <div class="cart-overlay"></div>
+  
   <div class="tos_warning cart_content animated fadeIn">
     <div class="cart-header text-center">Your Cart<span class="close-mini-cart-drawer"></span>
     </div>
@@ -600,4 +600,5 @@
       </ul>
     </form>
   </div>
+  <div class="cart-overlay"></div>
 {% endunless %}
