@@ -39,38 +39,6 @@
         "custom_css": ""
       }
     },
-    "4eb44a74-fb32-41e1-8170-d35b99588e67": {
-      "type": "video",
-      "disabled": true,
-      "settings": {
-        "wide_display": true,
-        "aspect_ratio": "16:9",
-        "autoplay": true,
-        "autoloop": true,
-        "mute_video": true,
-        "show_controls": false,
-        "video_dark_overlay": false,
-        "iframe_video": "",
-        "html5_video": "",
-        "display_text_over_video": false,
-        "preheading": "",
-        "heading": "",
-        "subheading": "",
-        "button1_label": "Play Video",
-        "button1_link": "",
-        "button1_style": "global-button--banner",
-        "button2_label": "",
-        "button2_link": "",
-        "button2_style": "global-button--banner",
-        "text_position": "center",
-        "text_align": "center",
-        "caption_content_background": "original",
-        "mobile_text_below_image": true,
-        "mobile_text_color": "",
-        "css_class": "",
-        "custom_css": ""
-      }
-    },
     "4f32cbc4-47c1-4a16-9034-e75c8f8be3fc": {
       "type": "logo-bar",
       "blocks": {
@@ -464,7 +432,6 @@
   },
   "order": [
     "e7fa14c2-5a3d-452a-a7e4-b3d4d5445a44",
-    "4eb44a74-fb32-41e1-8170-d35b99588e67",
     "4f32cbc4-47c1-4a16-9034-e75c8f8be3fc",
     "16315440459bd794b1",
     "24a492b5-ae5b-4733-8f59-11b8eba2f0de",
