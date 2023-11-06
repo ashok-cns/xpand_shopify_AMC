@@ -2532,8 +2532,8 @@ window.header = {
       $('.mini_cart').on('click ', function () {
         const $cartContainer = $(document).find('header[data-desktop-header]');//$(this).parent();
         if ($cartContainer.hasClass('active_link')) {
-
-          //closeMiniCart();
+          
+          closeMiniCart();
         } else {
           openMiniCart($cartContainer);
         }
