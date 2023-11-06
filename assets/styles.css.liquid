@@ -5276,8 +5276,8 @@ span.close-mini-cart-drawer:before {
   justify-content: space-between;
 }
 
-.cart_content .cart_subtotal > span.cart_subtotal_label{order: 1;}
-.cart_content .cart_subtotal > span.cart_subtotal_price_wapper {order:2;}
+.cart_content .cart_subtotal > span.cart_subtotal_label{order: 1; flex: 0 0 50%;}
+.cart_content .cart_subtotal > span.cart_subtotal_price_wapper {order:2; flex: 0 0 50%; text-align: right;}
 .cart_content .cart_subtotal > .cart-message.meta {order: 3;}
 .cart_content .cart_subtotal > .cart-total-saving {order: 4;}
 
@@ -19672,6 +19672,10 @@ body[data-template="primary"] .is-product-sidebar.content {
 body.promo-banner--show .nav-drop.row.mega-drop.desktop{
   top: 90px;
 }
+
+body.safari.promo-banner--show .nav-drop.row.mega-drop.desktop{
+  top: 39px;
+}
 .nav-drop.row.mega-drop.desktop > .item {
   padding: 0 40px;
   text-align: center;
@@ -20935,6 +20939,7 @@ div#alert-bar {
   body.show-cart-overlay div#alert-bar {
     z-index: 0;
   }
+  
 }
 
 /* MiniCart Free gift Items */
