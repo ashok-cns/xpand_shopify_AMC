@@ -6,7 +6,7 @@
         "wide_display": true,
         "aspect_ratio": "16:9",
         "autoplay": true,
-        "autoloop": false,
+        "autoloop": true,
         "mute_video": true,
         "show_controls": false,
         "video_dark_overlay": false,
