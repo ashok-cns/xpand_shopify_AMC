@@ -1,7 +1,47 @@
 {
   "sections": {
+    "e7fa14c2-5a3d-452a-a7e4-b3d4d5445a44": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15176954740847__e7fa14c2-5a3d-452a-a7e4-b3d4d5445a44-image-1": {
+          "type": "image",
+          "settings": {
+            "type": "video",
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/ba68d5f1d2124c3ab23608e26b98cba2.mp4",
+            "video_poster": "shopify:\/\/shop_images\/Thumbnail_0d247f6c-11fb-4052-bbca-dd589fe25ec9.jpg",
+            "pretext": "",
+            "title": "Turbo Shopify Theme",
+            "subtitle": "",
+            "button1": "",
+            "button1_link": "",
+            "button1_style": "global-button--banner",
+            "button2": "",
+            "button2_link": "",
+            "button2_style": "global-button--banner",
+            "text_position": "center",
+            "text_align": "center",
+            "caption_content_background": "original"
+          }
+        }
+      },
+      "block_order": [
+        "template--15176954740847__e7fa14c2-5a3d-452a-a7e4-b3d4d5445a44-image-1"
+      ],
+      "settings": {
+        "wide_display": true,
+        "slideshow_text_animation": "fadeInDown",
+        "slideshow_animation": "fade",
+        "slideshow_speed": 6,
+        "activate_adaptiveHeight": false,
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
     "4eb44a74-fb32-41e1-8170-d35b99588e67": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "wide_display": true,
         "aspect_ratio": "16:9",
@@ -10,7 +50,7 @@
         "mute_video": true,
         "show_controls": false,
         "video_dark_overlay": false,
-        "iframe_video": "https:\/\/vimeo.com\/878912461?share=copy",
+        "iframe_video": "",
         "html5_video": "",
         "display_text_over_video": false,
         "preheading": "",
@@ -423,6 +463,7 @@
     }
   },
   "order": [
+    "e7fa14c2-5a3d-452a-a7e4-b3d4d5445a44",
     "4eb44a74-fb32-41e1-8170-d35b99588e67",
     "4f32cbc4-47c1-4a16-9034-e75c8f8be3fc",
     "16315440459bd794b1",
