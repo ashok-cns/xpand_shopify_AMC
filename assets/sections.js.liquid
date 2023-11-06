@@ -2410,13 +2410,14 @@ window.header = {
     // Click anywhere outside of dropdown to close
     $('html').on('click', event => {
         console.log('event==target', event.target);
-       
-      if (!$(event.target).closest('.cart-container, .cart_content').length ) {
         if($('.cart_content:visible').length > 0){
+      if (!$(event.target).closest('.cart-container, .cart_content').length ) {
+        
           closeMiniCart();
-        }
+        
         
       }
+    }
     });
 
     // Close the mini cart when the mobile menu is clicked
