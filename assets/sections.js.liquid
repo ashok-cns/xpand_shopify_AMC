@@ -2409,8 +2409,9 @@ window.header = {
 
     // Click anywhere outside of dropdown to close
     $('html').on('click', event => {
-      if (!$(event.target).closest('.cart-container, .cart_content').length ) {
-        //closeMiniCart();
+      // target = $('.mobile_nav-fixed--true .cart-container')
+      if (!$(event.target).find('.cart-container, .cart_content').length ) {
+        closeMiniCart();
       }
     });
 
