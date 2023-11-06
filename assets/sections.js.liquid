@@ -2409,7 +2409,7 @@ window.header = {
 
     // Click anywhere outside of dropdown to close
     $(document).on('click', event => {   
-      if(window.innerWidth > 767){
+      if(window.innerWidth > 991){
         if (!$(event.target).closest('.cart-container, .cart_content').length ) {
           closeMiniCart();
       }
