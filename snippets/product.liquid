@@ -185,12 +185,12 @@ If true, show dynamic checkout button
               <h1 class="product_name">
                 {{- product.title | escape -}}
               </h1>
-              <p
+              {% comment %} <p
                 class="selected-swatch-text desktop hide_desktop"
                 data-template="{{ template.suffix }}"
                 data-type="color">Color:
                 <span class="selected-swatch-text-value"></span>
-              </p>
+              </p> {% endcomment %}
             {% else %}
               <h2 class="product_name">
                 <a href="{{ product.url }}">
