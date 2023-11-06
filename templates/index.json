@@ -213,7 +213,7 @@
         "sec_bg": "#ffffff",
         "css_class": "featured-box",
         "custom_css": "",
-        "sec_top": 30,
+        "sec_top": 10,
         "sec_bottom": 0
       }
     },
