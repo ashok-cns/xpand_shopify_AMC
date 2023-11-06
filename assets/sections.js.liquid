@@ -2408,7 +2408,7 @@ window.header = {
     }
 
     // Click anywhere outside of dropdown to close
-    $(document).on('click', event => {   
+    $('html').on('click', event => {   
       if(window.innerWidth > 991){
         if (!$(event.target).closest('.cart-container, .cart_content').length ) {
           closeMiniCart();
@@ -2423,7 +2423,7 @@ window.header = {
       }
     });
 
-    $(document).on('click', '.close-mini-cart-drawer', function(){
+    $(document).on('click', '.close-mini-cart-drawer, .cart-overlay', function(){
       closeMiniCart();
     })
 
