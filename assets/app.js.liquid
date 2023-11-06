@@ -1767,7 +1767,7 @@ $(document).on('click', '.go-to-top', () => {
     });
   })
 
-
+(function (){
   function fnBrowserDetect(){
 
   let userAgent = navigator.userAgent;
@@ -1816,3 +1816,4 @@ $(document).on('click', '.go-to-top', () => {
 
 fnBrowserDetect();
 detectOS();
+})()
