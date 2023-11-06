@@ -1,5 +1,8 @@
 {% unless settings.cart_action == 'ajax' and template contains 'cart' %}
+  <div class="cart-overlay"></div>
   <div class="tos_warning cart_content animated fadeIn">
+    <div class="cart-header text-center">Your Cart<span class="close-mini-cart-drawer"></span>
+    </div>
     <div class="js-empty-cart__message {% if cart.item_count > 0 %}hidden{% endif %}">
       <p class="empty_cart">{{ 'layout.general.empty_cart' | t }}</p>
       <a href="javascript:;" class="continue-shopping">{{ 'Continue Shopping' }}</a>
@@ -16,32 +19,137 @@
       data-cart-form="mini-cart">
 
       <div class="head">
+        {% if settings.show_cart_info and settings.cart_info_content != blank or settings.show_cart_mixmatch and settings.cart_mixmatch_content != blank %}
+          <div class="cart_info_wrapper">
+
+            {% if settings.cart_mixmatch_content != blank %}
+              <div class="cart_info_wrapper_item">
+                <span class="cart_info_wrapper_item_heading">Mix & Match</span>
+
+                {% assign itemText = settings.cart_mixmatch_content | split: ' ' %}
+                {%- for item in itemText -%}
+                  {{- item -}}{%- unless forloop.last -%}
+                    <span class="divider-dot"></span>
+                  {%- endunless -%}
+                {%- endfor -%}
+              </div>
+              {% if settings.cart_info_content != blank %}
+                <span class="cart_info_wrapper_item_divider">|</span>
+              {% endif %}
+            {% endif %}
+            {% if settings.cart_info_content != blank %}
+              <div class="cart_info_wrapper_item">
+                {% if settings.cart_info_icon != blank %}
+                  <div class="cart_info_icn">{{ settings.cart_info_icon | img_url: '50x' | img_tag }}</div>
+                {% endif %}
+                <div class="cart_info_content">{{ settings.cart_info_content }}
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
         <div class="progress-wrap text-center">
+          {% if settings.progress_bar_content_wrapper %}
+            <div class="progress-bar-content-wrapper">
+              {% for i in (1..3) %}
+                {% capture progressBarContent %}progress_bar_content_{{ i }}{% endcapture %}
+                {% if settings[progressBarContent] != blank %}
+                  <div class="progress-bar-content-item" data-index="{{ forloop.index }}">
+                    <span class="progress-bar-content-icon">
+                      <img
+                        src="{{ images['Group_4920.svg'] | img_url: '50x' }}"
+                        alt=""
+                        width=""
+                        height=""
+                        class="default-icn" />
+                      <img
+                        src="{{ images['Group_4917.svg'] | img_url: '50x' }}"
+                        alt=""
+                        width=""
+                        height=""
+                        class="active-icn hidden" />
+                    </span>
+                    <span class="progress-bar-content-text">{{ settings[progressBarContent] }}</span>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+          <div class="progress-frame">
+            <div class="progress-fill" style="width: 8.33333%; background-color: {{ settings.cart_progress_bar_color }};"></div>
+          </div>
           <div class="text-wrapper" style="color: rgb(36, 114, 110);">
-            <p>You are 2 items (laces or socks) away from 17% off</p>
+            <p>You are 2 items away from 17% off</p>
           </div>
           <div id="free-product-hints">
             <p id="cm-hints" style="color: rgb(36, 114, 110);"></p>
           </div>
-          <div class="progress-frame">
-            <div class="progress-fill" style="width: 8.33333%; background-color: rgb(30, 200, 101);"></div>
+        </div>
+        {% if settings.enable_free_product %}
+        <div class="cart-free-gift-wrapper hide_mobile">
+          <div class="cart-free-gift-header">Free Gift</div>
+          <div class="cart-free-gift-items">
+            {% assign product = all_products[settings.free_product_item] %}
+           
+            {% comment %} {% for product in settings.free_product_list %} {% endfor %} {% endcomment %}
+              <div class="cart-free-gift-item">
+                <div class="cart-free-gift-item-img">
+                  <img src="{{ product.featured_image |  img_url: '100x' }}" alt="{{ product.featured_image.alt}}" class=" lazyloaded">
+                </div>
+                <div class="cart-free-gift-item-info">
+                  <div class="cart-free-gift-item-info-lft">
+                    <div class="cart-free-gift-item-title">{{ product.title}}</div>
+                    
+                    
+                  </div>
+                  <div class="cart-free-gift-item-info-rgt">
+                    <div class="free-gift-price"><del>{{ product.price | money }}</del> <span>Free</span></div>
+                    <button  data-free-gift-product-cta class="global-button global-button--primary add_to_cart ajax-submit free-gift-item" type="button" data-amount="{{  product.price }}" data-selected-variant="{{ product.first_available_variant.id }}"><span data-add-to-cart-text="">Select Gift</span></button>
+                  </div>
+                 
+                </div>
+              </div>
+           
+            
           </div>
         </div>
-        {% if settings.show_cart_info and settings.cart_info_content != blank %}
-          <div class="cart_info_wrapper">
-            {% if settings.cart_info_icon != blank %}
-              <div class="cart_info_icn">{{ settings.cart_info_icon | img_url: '50x' | img_tag }}</div>
-            {% endif %}
-            <div class="cart_info_content">{{ settings.cart_info_content }}
-            </div>
-          </div>
         {% endif %}
+
       </div>
 
       <!-- <a class="cart_content__continue-shopping secondary_button">
       {{ 'cart.general.continue_shopping' | t }}
       </a> -->
       <div class="cart_items__content__wrapper">
+        {% if settings.enable_free_product %}
+          <div class="cart-free-gift-wrapper hide_desktop">
+            <div class="cart-free-gift-header">Free Gift</div>
+            <div class="cart-free-gift-items">
+              {% assign product = all_products[settings.free_product_item] %}
+             
+              {% comment %} {% for product in settings.free_product_list %} {% endfor %} {% endcomment %}
+                <div class="cart-free-gift-item">
+                  <div class="cart-free-gift-item-img">
+                    <img src="{{ product.featured_image |  img_url: '100x' }}" alt="{{ product.featured_image.alt}}" class=" lazyloaded">
+                  </div>
+                  <div class="cart-free-gift-item-info">
+                    <div class="cart-free-gift-item-info-lft">
+                      <div class="cart-free-gift-item-title">{{ product.title}}</div>
+                     
+                      
+                    </div>
+                    <div class="cart-free-gift-item-info-rgt">
+                      <div class="free-gift-price"><del>{{ product.price | money }}</del> <span>Free</span></div>
+                      <button  data-free-gift-product-cta class="global-button global-button--primary add_to_cart ajax-submit free-gift-item" type="button" data-amount="{{  product.price }}" data-selected-variant="{{ product.first_available_variant.id }}"><span data-add-to-cart-text="">Select Gift</span></button>
+                    </div>
+                   
+                  </div>
+                </div>
+             
+              
+            </div>
+          </div>
+          {% endif %}
         <ul class="cart_items js-cart_items">
           {%- assign total_saving = 0 -%}
 
@@ -52,6 +160,7 @@
             {% endif %}
             <li
               data-tags="{% for tag in item.product.tags %}{% if tag =='BOGOOFF' %}{{ tag }}{% endif %}{% endfor %}"
+              {% if item.properties %}{% for p in item.properties %}{% if p.last contains 'free' %}data-free-product="{{ p.last }}"{% endif %}{% endfor %}{% endif %}
               class="mini-cart__item ert"
               data-cart-item
               data-line-id="{{ forloop.index }}"
@@ -96,7 +205,7 @@
                 </div>
 
 
-                <div class="mini-cart__item-price">
+                <div class="mini-cart__item-price" data-original-price="{{ item.original_price |  prepend: '$ '  }}">
                   {% if item.price > 0 %}
 
                     <span data-upate-price-default="{{ item.price }}"data-price="{{ item.price }}"data-original-price="{{ item.original_price }}"class="money {% if item.price < item.variant.compare_at_price or item.line_level_discount_allocations.size > 0 %}sale{% endif %}">
@@ -161,7 +270,23 @@
                 class="cart__remove-btn"
                 data-line-id="{{ forloop.index }}"
                 data-remove-item="mini-cart">
-                <span class="remove-icon"></span>
+                <span class="remove-icon">
+                  <svg
+                    width="17"
+                    height="18"
+                    viewBox="0 0 17 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.77778 3.96297L4.43762 16.1351C4.50518 16.6306 4.92838 17 5.42845 17H12.5312C13.0484 17 13.4803 16.6056 13.5271 16.0905L14.6296 3.96297M16.4074 3.96297H1"
+                      stroke="#B5B5B5"
+                      stroke-linecap="round" />
+                    <path
+                      d="M5.74121 3.37037V2C5.74121 1.44772 6.18893 1 6.74121 1H10.6671C11.2194 1 11.6671 1.44772 11.6671 2V3.37037"
+                      stroke="#B5B5B5"
+                      stroke-linecap="round" />
+                  </svg>
+                </span>
               </a>
             </li>
           {% endfor %}
@@ -190,7 +315,17 @@
                         {% for variant in all_products[settings[prodObj]].variants %}
                           {% if variantListItem contains variant.id %}
                             {% if variant.available %}
-                              <li data-variantId="{{ variant.id }}">{{ variant.title }}</li>
+                              <li data-variantId="{{ variant.id }}">{{ variant.title }}
+                                <button
+                                  class="add_to_cart ajax-submit cm-rec-pro-cta"
+                                  type="button"
+                                  data-add-to-cart
+                                  data-selected-variant="{{ variant.id }}">
+                                  <span data-add-to-cart-text>
+                                    Add to cart
+                                  </span>
+                                </button>
+                              </li>
                             {% else %}
                               <li data-variantId="{{ variant.id }}" disabled>
                                 <del>{{ variant.title }}</del>
@@ -201,57 +336,44 @@
                         {% endfor %}
                       {% endfor %}
                     </ul>
-                    <button
-                      class="add_to_cart global-button global-button--primary ajax-submit cm-rec-pro-cta"
-                      type="button"
-                      data-add-to-cart
-                      data-selected-variant=""
-                      disabled="disabled">
-                      <span data-add-to-cart-text>
-                        Add to cart
-                      </span>
-                      <svg
-                        x="0px"
-                        y="0px"
-                        width="32px"
-                        height="32px"
-                        viewBox="0 0 32 32"
-                        class="checkmark">
-                        <path
-                          fill="none"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                          stroke-miterlimit="10"
-                          d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11" />
-                      </svg>
-                    </button>
                   {% endcapture %}
                   {% for variantListItem in variantIdList %}
                     {% for variant in all_products[settings[prodObj]].variants %}
                       {% if variantListItem contains variant.id %}
                         {% assign prodImg = variant.featured_image %}
-
+                        {% assign variantTitle = variant.title %}
+                        {% capture variantImg %}
+                          <img src="{{ prodImg | img_url: 'medium' }}" alt="{{ prodTitle}}">
+                        {% endcapture %}
                       {% endif %}
                     {% endfor %}
                     {% if forloop.index == 1 %}
                       {% break %}
                     {% endif %}
                   {% endfor %}
+                  
                 {% else %}
+                
                   {% for variantListItem in variantIdList %}
                     {% for variant in all_products[settings[prodObj]].variants %}
                       {% if variantListItem contains variant.id %}
                         {% assign prodImg = variant.featured_image %}
+                        {% assign variantTitle = variant.title %}
+                        {% capture variantImg %}
+                          <img src="{{ prodImg | img_url: 'medium' }}" alt="{{ prodTitle}}">
+                        {% endcapture %}
                       {% endif %}
                     {% endfor %}
                   {% endfor %}
                 {% endif %}
-
               {% else %}
-
                 {% assign variantId = all_products[settings[prodObj]].selected_or_first_available_variant.id %}
                 {% assign prodImg = all_products[settings[prodObj]].selected_or_first_available_variant.featured_image %}
+                {% capture variantImg %}
+                  <img src="{{ prodImg | img_url: 'medium' }}" alt="{{ prodTitle}}">
+                {% endcapture %}
               {% endif %}
+
               {% assign produHandle = all_products[settings[prodObj]].handle %}
               {% assign prodUrl = all_products[settings[prodObj]].url %}
               {% assign prodPrice = all_products[settings[prodObj]].price %}
@@ -259,15 +381,16 @@
 
 
 
-              {% unless settings[prodObj] == blank %}
-                <div class="cm-rec-pro-item">
-                  <div class="cm-rec-pro-img">
-                    <img src="{{ prodImg | img_url: 'medium' }}" alt="{{ prodTitle}}"></div>
+              {% if settings[prodObj] != blank %}
+                <div class="cm-rec-pro-item" data-count="{{ variantIdListCount }}">
+                  <div class="cm-rec-pro-img" data-img="{{ prodImg | img_url: 'medium' }}">
+                    {{ variantImg }}
+                    </div>
                   <div class="cm-rec-pro-info">
                     <h3>
-                      <a href="{{ prodUrl}}">{{ prodTitle }}</a>
+                      <a href="{{ prodUrl}}">{{ prodTitle }} </a>
                     </h3>
-                    <h6></h6>
+                    <h6>{{ variantTitle }}</h6>
                     <span class="cm-crnt-price">{{ prodPrice | money }}</span>
                     <div class="cm-rec-prod-cta-wrapper">
                       {% if settings[prodVariantId] != blank %}
@@ -350,7 +473,7 @@
                     </div>
                   </div>
                 </div>
-              {% endunless %}
+                    {% endif %}
             {% endfor %}
           </div>
         </div>
@@ -374,7 +497,7 @@
         </li>
 
         <li class="cart_subtotal js-cart_subtotal">
-          <span class="right">
+          <span class="right cart_subtotal_price_wapper">
             <span
               data-subtotal-cart-original="{{ cart.original_total_price }}"
               data-sutotal-price="{{ cart.total_price }}"
@@ -385,10 +508,8 @@
             </span>
           </span>
 
-          <span>{{ 'layout.general.subtotal' | t }}</span>
-        </li>
+          <span class="cart_subtotal_label">{{ 'layout.general.subtotal' | t }}</span>
 
-        <li>
           {%- capture taxes_shipping_checkout -%}
             {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
               {{ 'cart.general.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
@@ -401,8 +522,24 @@
             {%- endif -%}
           {%- endcapture -%}
 
-          <p class="cart-message meta">{{ taxes_shipping_checkout }}</p>
+          <p class="cart-message meta ertt">{{ taxes_shipping_checkout }}</p>
         </li>
+
+        {% comment %} <li>
+          {%- capture taxes_shipping_checkout -%}
+            {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+              {{ 'cart.general.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
+            {%- elsif cart.taxes_included -%}
+              {{ 'cart.general.taxes_included_but_shipping_at_checkout' | t }}
+            {%- elsif shop.shipping_policy.body != blank -%}
+              {{ 'cart.general.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
+            {%- else -%}
+              {{ 'cart.general.tax_and_shipping' | t }}
+            {%- endif -%}
+          {%- endcapture -%}
+
+          <p class="cart-message meta ertt">{{ taxes_shipping_checkout }}</p>
+        </li> {% endcomment %}
 
         <li>
           {% if settings.display_special_instructions and settings.go_to_checkout %}
