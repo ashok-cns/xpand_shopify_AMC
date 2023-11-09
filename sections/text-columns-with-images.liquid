@@ -27,7 +27,7 @@
         <h2 class="title center">
           {{ title | strip_html }}
         </h2>
-        {% comment %} <div class="feature-divider"></div> {% endcomment %}
+        <div class="feature-divider"></div>
       </div>
     {% endif %}
    
@@ -38,36 +38,17 @@
       {% for block in blocks %}
         {% comment %} Content settings {% endcomment %}
         {%- assign image = block.settings.image -%}
-        {%- assign mobile_image = block.settings.mobile_image -%}
         {% comment %} End content settings {% endcomment %}
 
-        <div class="{% render 'column-width', value: blocks.size %} column {% if blocks.size > 3 %}{% if forloop.index == 1 %}medium-down--one-half{% else %}small-down--one-half{% endif %}{% else %}medium-down--one-whole{% endif %} text-column" {{ block.shopify_attributes }}>
+        <div class="{% render 'column-width', value: blocks.size %} column {% if blocks.size > 3 %}medium-down--one-half{% else %}medium-down--one-whole{% endif %} text-column" {{ block.shopify_attributes }}>
           <div class="border-style--{{ block.settings.border_style }} text-align--{{ block.settings.align_text }}">
-            
-            {% if block.settings.button_label == blank and block.settings.button_link != blank %}
-            <a href="{{block.settings.button_link}}" class="link_all_content">
-            {% endif %}
             {% if block.settings.enable_image %}
               {% if image != blank %}
-                {% if mobile_image != blank and forloop.index == 1 %}
-                  {% assign additional_classes = 'mobile_hide' %}
-                {% else %}
-                  {% assign additional_classes = '' %}
-                {% endif %}
                 {%
                    render 'image-element',
                  image: image,
                  alt: image.alt,
-                 focal_point: image.presentation.focal_point,
-                 additional_classes: additional_classes %}
-                 {% if mobile_image != blank and forloop.index == 1 %}
-                  {%
-                    render 'image-element',
-                  image: mobile_image,
-                  alt: mobile_image.alt,
-                  focal_point: mobile_image.presentation.focal_point,
-                  additional_classes: 'desktop_hide' %}
-                  {% endif %}
+                 focal_point: image.presentation.focal_point, %}
               {% else %}
                 <p>
                   {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
@@ -84,9 +65,7 @@
                 {{ block.settings.text }}
               </div>
             {% endif %}
-            {% if block.settings.button_label == blank and block.settings.button_link != blank %}
-            </a>
-            {% endif %}
+
             {% if block.settings.button_label != blank and block.settings.button_link != blank %}
               <a
                 href="{{ block.settings.button_link }}"
@@ -214,11 +193,6 @@
             "type": "image_picker",
             "id": "image",
             "label": "Image"
-          },
-          {
-            "type": "image_picker",
-            "id": "mobile_image",
-            "label": "Mobile Image"
           },
           {
             "type": "text",
