@@ -8,8 +8,6 @@
       {{ section.settings.text }}
     {% endif %}
 
-    {% if section.settings.primary_cta_text != blank or section.settings.enable_secondary_cta != blank %}
-    <div class="banner_cta_wrap">
     {% if section.settings.primary_cta_text != blank %}
       <p class="primary-cta">
         <a
@@ -30,8 +28,6 @@
           {{ section.settings.secondary_cta_text }}
         </a>
       </p>
-    {% endif %}
-    </div>
     {% endif %}
   </div>
 </section>
