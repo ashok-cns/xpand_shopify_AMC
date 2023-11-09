@@ -31,573 +31,55 @@
         "custom_css": ""
       }
     },
-    "b41e1ff4-2406-400f-90aa-3263cd6bfcad": {
-      "type": "text-banner",
-      "settings": {
-        "title": "NEVER TIE YOUR SHOES AGAIN",
-        "text": "<p><strong>No-Tie Shoelace System for Adults & Kids<\/strong><\/p>",
-        "primary_cta_text": "SHOP NOW",
-        "primary_cta_link": "shopify:\/\/products\/no-tie-original-elastic-lacing-system",
-        "primary_cta_text_color": "#ffffff",
-        "primary_cta_bg_color": "#008ffd",
-        "enable_secondary_cta": true,
-        "secondary_cta_text": "HOW IT WORKS",
-        "secondary_cta_link": "shopify:\/\/pages\/install-video",
-        "secondary_cta_text_color": "#ffffff",
-        "secondary_cta_bg_color": "#a6b4be",
-        "css_class": ""
-      }
-    },
-    "4f32cbc4-47c1-4a16-9034-e75c8f8be3fc": {
+    "8b4bdfac-6ad8-48e0-9419-1bfc730c2d81": {
       "type": "logo-bar",
       "blocks": {
-        "template--15136041599087__4f32cbc4-47c1-4a16-9034-e75c8f8be3fc-1682596656447a8bc5-0": {
+        "bf890151-e70d-4e20-a540-571baba425df": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Promo_Free_Shipping_icon_110x100_a8c5cf43-7822-4902-a97c-0e70719bfd3e.png",
-            "link": "https:\/\/www.today.com\/home\/10-must-have-products-make-even-busiest-mornings-easy-t137729",
-            "lcn-content": "<p>Free Shipping On U.S. Orders $10+<\/p>"
+            "link": "",
+            "lcn-content": ""
           }
         },
-        "template--15136041599087__4f32cbc4-47c1-4a16-9034-e75c8f8be3fc-1682596656447a8bc5-1": {
+        "61af3b1d-ff70-49d0-a3d5-9e14c26da272": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Promo_Signup_icon_110x100_dd6901be-ecc7-4fc9-9fcd-b6eeb5c7f488.png",
-            "link": "https:\/\/twitter.com\/TheEllenShow\/status\/994695612812611584",
-            "lcn-content": "<p>Sign Up to Get Discounts<\/p>"
+            "link": "",
+            "lcn-content": ""
           }
         },
-        "template--15136041599087__4f32cbc4-47c1-4a16-9034-e75c8f8be3fc-1682596656447a8bc5-2": {
+        "9dd8ef9b-e6ce-47b3-b026-1eac1a1268aa": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Promo_30_day_Returns_Icon_110x100_ec8889ca-4ce2-4a26-9296-02be73c14ffe.png",
-            "link": "https:\/\/www.cbc.ca\/news\/business\/shoelace-shoes-fitness-fashion-health-foot-health-podiatry-christmas-gifts-1.4949031",
-            "lcn-content": "<p>Free & Easy Returns<\/p>"
+            "link": "",
+            "lcn-content": ""
           }
         },
-        "template--15136041599087__4f32cbc4-47c1-4a16-9034-e75c8f8be3fc-1682596656447a8bc5-3": {
+        "c7ead89b-56af-49a8-855e-1c25484bacbd": {
           "type": "logo_image",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kickstarter_logo1_1_618076b8-15dd-4391-985a-d29a6142fd08.png",
-            "link": "https:\/\/www.kickstarter.com\/projects\/914635363\/xpand-lacing-system",
-            "lcn-content": "<p>The $1.2 Million<\/p><p>Kickstarter success<\/p>"
+            "link": "",
+            "lcn-content": ""
           }
         },
-        "1a162373-a611-4745-94a3-8ac5142ae7b4": {
+        "f5c1e272-45f9-4cff-805f-64e15e426416": {
           "type": "logo_image",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Breakfast_Television_logo_1_4a1b4307-72f7-4522-af5f-335ff11828d4.png",
-            "link": "#",
-            "lcn-content": "<p>Breakfast Television<\/p>"
+            "link": "",
+            "lcn-content": ""
           }
         }
       },
       "block_order": [
-        "template--15136041599087__4f32cbc4-47c1-4a16-9034-e75c8f8be3fc-1682596656447a8bc5-0",
-        "template--15136041599087__4f32cbc4-47c1-4a16-9034-e75c8f8be3fc-1682596656447a8bc5-1",
-        "template--15136041599087__4f32cbc4-47c1-4a16-9034-e75c8f8be3fc-1682596656447a8bc5-2",
-        "template--15136041599087__4f32cbc4-47c1-4a16-9034-e75c8f8be3fc-1682596656447a8bc5-3",
-        "1a162373-a611-4745-94a3-8ac5142ae7b4"
+        "bf890151-e70d-4e20-a540-571baba425df",
+        "61af3b1d-ff70-49d0-a3d5-9e14c26da272",
+        "9dd8ef9b-e6ce-47b3-b026-1eac1a1268aa",
+        "c7ead89b-56af-49a8-855e-1c25484bacbd",
+        "f5c1e272-45f9-4cff-805f-64e15e426416"
       ],
       "settings": {
-        "title": "",
-        "layout": "slider",
-        "sec_bg": "rgba(0,0,0,0)",
-        "css_class": "",
-        "custom_css": "",
-        "sec_top": 30,
-        "sec_bottom": 20
-      }
-    },
-    "16315440459bd794b1": {
-      "type": "text-columns-with-images",
-      "blocks": {
-        "16315440459bd794b1-0": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Flat_Lace_3_1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_220_bae9d69d-7713-4d96-9785-9d4c3d07d192.png",
-            "title": "Original No-Tie <br> Lacing System",
-            "heading_size": "regular_text",
-            "text": "<p>All day, all over odor protection<\/p>",
-            "button_label": "",
-            "button_link": "#",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "#ffffff",
-            "link_bg_color": "#0090fc"
-          }
-        },
-        "16315440459bd794b1-1": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Round_Lace_1.jpg",
-            "title": "Quick-Release <br> Lacing System",
-            "heading_size": "regular_text",
-            "text": "<p>The same body wash you love, packaged in a lot less plastic<\/p>",
-            "button_label": "",
-            "button_link": "shopify:\/\/products\/quick-release-round-lacing-system",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "#ffffff",
-            "link_bg_color": "#0090fc"
-          }
-        },
-        "325a5d8a-634d-48c7-8104-6c8818e94840": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/wipes-blue.png",
-            "title": "Quick Wipes <br> Instant Clean",
-            "heading_size": "regular_text",
-            "text": "<p>All day, all over odor protection<\/p>",
-            "button_label": "",
-            "button_link": "shopify:\/\/products\/xpand-shoe-wipes",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "#ffffff",
-            "link_bg_color": "#008ffd"
-          }
-        },
-        "bd3a6469-81d2-4769-bf97-fcdfe27706ab": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/noshowsockss_1.png",
-            "title": "Cushioned <br> No-Show Socks",
-            "heading_size": "regular_text",
-            "text": "<p>The same body wash you love, packaged in a lot less plastic<\/p>",
-            "button_label": "",
-            "button_link": "shopify:\/\/products\/cushioned-no-show-socks",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "#ffffff",
-            "link_bg_color": "#0090fc"
-          }
-        },
-        "25fb6d2d-c187-4690-b0f2-b761d614ff8b": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Urban_belt_Insert_for_Website-smallest.jpg",
-            "title": "Magnetic Urban <br> Elastic Belt",
-            "heading_size": "regular_text",
-            "text": "<p>All day, all over odor protection<\/p>",
-            "button_label": "",
-            "button_link": "shopify:\/\/products\/urban-belt",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "#ffffff",
-            "link_bg_color": "#0090fc"
-          }
-        }
-      },
-      "block_order": [
-        "16315440459bd794b1-0",
-        "16315440459bd794b1-1",
-        "325a5d8a-634d-48c7-8104-6c8818e94840",
-        "bd3a6469-81d2-4769-bf97-fcdfe27706ab",
-        "25fb6d2d-c187-4690-b0f2-b761d614ff8b"
-      ],
-      "settings": {
+        "title": "Logo list",
         "layout": "grid",
-        "title": "Shop Our Picks",
-        "link_text": "",
-        "link": "",
-        "link_text_color": "#ffffff",
-        "link_bg_color": "#ff085a",
-        "sec_bg": "#ffffff",
-        "css_class": "featured-box",
-        "custom_css": "",
-        "sec_top": 10,
-        "sec_bottom": 0
-      }
-    },
-    "24a492b5-ae5b-4733-8f59-11b8eba2f0de": {
-      "type": "text-columns-with-images",
-      "blocks": {
-        "template--15136041599087__24a492b5-ae5b-4733-8f59-11b8eba2f0de-1682601552bc1c764e-0": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/icon1.png",
-            "title": "Secure Fit",
-            "heading_size": "regular_text",
-            "text": "<p>Set it and forget it with our patented lace anchor technology. Zero distractions, perfect support, all day long.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        },
-        "template--15136041599087__24a492b5-ae5b-4733-8f59-11b8eba2f0de-1682601552bc1c764e-1": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/icon2.png",
-            "title": "Adjustable Tension",
-            "heading_size": "regular_text",
-            "text": "<p>Designed to move with you and work for you. Need more compression? Need more room? Xpand laces are easy to adjust on the fly.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        },
-        "279c2789-0b7e-4580-8d18-ff137becebac": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/icon3.png",
-            "title": "One Size Fits All",
-            "heading_size": "regular_text",
-            "text": "<p>No need to search for the right size and hope for the best. Whether you’re shopping for an adult or a child, sneakers, or boots, you can’t go wrong. Trim to your desired length and you’re good to go!<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--15136041599087__24a492b5-ae5b-4733-8f59-11b8eba2f0de-1682601552bc1c764e-0",
-        "template--15136041599087__24a492b5-ae5b-4733-8f59-11b8eba2f0de-1682601552bc1c764e-1",
-        "279c2789-0b7e-4580-8d18-ff137becebac"
-      ],
-      "settings": {
-        "layout": "slider",
-        "title": "Feel the Difference",
-        "link_text": "",
-        "link": "",
-        "link_text_color": "#ffffff",
-        "link_bg_color": "#ff085a",
-        "sec_bg": "",
-        "css_class": "featured-banner-area",
-        "custom_css": "",
-        "sec_top": 20,
-        "sec_bottom": 20
-      }
-    },
-    "d11d965a-e275-4b0a-8fcd-69482d0027c3": {
-      "type": "custom-html",
-      "settings": {
-        "title": "Over 2 Million Customers",
-        "custom_html": "<div id=\"stamped-reviews-widget\" data-widget-type=\"visual-gallery\" data-feed-type=\"carousel\" data-min-rating=\"3\" data-with-photos=\"true\"><\/div>",
-        "css_class": "stamped-reviwed-section",
-        "custom_css": ""
-      }
-    },
-    "f17be46f-e031-40af-8cac-bb37b68eb353": {
-      "type": "text-columns-with-images",
-      "blocks": {
-        "template--15136041599087__f17be46f-e031-40af-8cac-bb37b68eb353-168268913550fe9399-0": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/icons-01.png",
-            "title": "",
-            "heading_size": "regular_text",
-            "text": "<p>Try Xpand<\/p><p>for 90 days<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        },
-        "template--15136041599087__f17be46f-e031-40af-8cac-bb37b68eb353-168268913550fe9399-1": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/icons-03.png",
-            "title": "",
-            "heading_size": "regular_text",
-            "text": "<p>Free North America<\/p><p>shipping<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        },
-        "9e06b700-1a99-4dd6-8075-38a88fd35c3b": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/icons-02.png",
-            "title": "",
-            "heading_size": "regular_text",
-            "text": "<p>100% money back<\/p><p>guarantee!<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--15136041599087__f17be46f-e031-40af-8cac-bb37b68eb353-168268913550fe9399-0",
-        "template--15136041599087__f17be46f-e031-40af-8cac-bb37b68eb353-168268913550fe9399-1",
-        "9e06b700-1a99-4dd6-8075-38a88fd35c3b"
-      ],
-      "disabled": true,
-      "settings": {
-        "layout": "slider",
-        "title": "100% Satisfaction Guarantee",
-        "link_text": "SHOP NOW",
-        "link": "shopify:\/\/products\/no-tie-original-elastic-lacing-system",
-        "link_text_color": "#ffffff",
-        "link_bg_color": "#008ffd",
-        "sec_bg": "#42aca7",
-        "css_class": "three-item-banner",
-        "custom_css": "",
-        "sec_top": 25,
-        "sec_bottom": 25
-      }
-    },
-    "18848a44-fcb3-477f-bebd-00e85475a9a6": {
-      "type": "featured-products",
-      "blocks": {
-        "5e7e5bbf-e688-45ae-a44f-58090cde80a6": {
-          "type": "product",
-          "settings": {
-            "enable_block": true,
-            "product": "no-tie-original-elastic-lacing-system",
-            "variant_id": "19252571471983",
-            "image": "shopify:\/\/shop_images\/Black_Pop_colors.jpg",
-            "title": "ORIGINAL NO-TIE LACING SYSTEM",
-            "caption": "<p>BLACK<\/p>",
-            "font_color": "#ffffff",
-            "link_text": "view product"
-          }
-        },
-        "67f505ba-bb8e-48ae-a05c-3653251384cd": {
-          "type": "product",
-          "settings": {
-            "enable_block": true,
-            "product": "no-tie-original-elastic-lacing-system",
-            "variant_id": "19252660273263",
-            "image": "shopify:\/\/shop_images\/White_Pop.jpg",
-            "title": "ORIGINAL NO-TIE LACING SYSTEM",
-            "caption": "<p>WHITE<\/p>",
-            "font_color": "#ffffff",
-            "link_text": "view product"
-          }
-        },
-        "48b194da-6e47-44a2-98da-375a201afd4f": {
-          "type": "product",
-          "settings": {
-            "enable_block": true,
-            "product": "no-tie-original-elastic-lacing-system",
-            "variant_id": "19252660764783",
-            "image": "shopify:\/\/shop_images\/Red_Pop_colors.jpg",
-            "title": "ORIGINAL NO-TIE LACING SYSTEM",
-            "caption": "<p>RED<\/p>",
-            "font_color": "#000000",
-            "link_text": "view product"
-          }
-        },
-        "9d331677-d522-4786-ae0f-ad6547983b98": {
-          "type": "product",
-          "settings": {
-            "enable_block": true,
-            "product": "quick-release-round-lacing-system",
-            "variant_id": "19252728004719",
-            "image": "shopify:\/\/shop_images\/Blue_Pop_colors.jpg",
-            "title": "QUICK-RELEASE LACING SYSTEM",
-            "caption": "<p>TRUE BLUE<\/p>",
-            "font_color": "#ffffff",
-            "link_text": "view product"
-          }
-        }
-      },
-      "block_order": [
-        "5e7e5bbf-e688-45ae-a44f-58090cde80a6",
-        "67f505ba-bb8e-48ae-a05c-3653251384cd",
-        "48b194da-6e47-44a2-98da-375a201afd4f",
-        "9d331677-d522-4786-ae0f-ad6547983b98"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Best Sellers",
-        "link_text": "VIEW ALL COLORS",
-        "link": "shopify:\/\/products\/no-tie-original-elastic-lacing-system",
-        "link_text_color": "#ffffff",
-        "link_bg_color": "#008ffd",
-        "sec_bg": "#f3f4f4",
-        "sec_top": 45,
-        "sec_bottom": 45
-      }
-    },
-    "d67afc51-2d73-42c2-b8ab-d6f7fa5d787d": {
-      "type": "single-text-columns-with-image",
-      "blocks": {
-        "template--15266355282031__d67afc51-2d73-42c2-b8ab-d6f7fa5d787d-text_block-1": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/icon2.png",
-            "title": "Adjustable Tension",
-            "heading_size": "regular_text",
-            "text": "<p>Designed to move with you and work for you. Need more compression? Need more room? Xpand laces are easy to adjust on the fly.<\/p>",
-            "image_2": "shopify:\/\/shop_images\/Screenshot_2023-05-23_at_2.53_1.png",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "left",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--15266355282031__d67afc51-2d73-42c2-b8ab-d6f7fa5d787d-text_block-1"
-      ],
-      "settings": {
-        "layout": "grid",
-        "title": "",
-        "link_text": "",
-        "link": "",
-        "link_text_color": "#ffffff",
-        "link_bg_color": "#ff085a",
-        "sec_bg": "",
-        "css_class": "featured-banner-area",
-        "custom_css": "",
-        "sec_top": 40,
-        "sec_bottom": 40
-      }
-    },
-    "ae309700-8afa-4900-b089-ef0362efdfda": {
-      "type": "custom-instagram",
-      "blocks": {
-        "3c84fc93-2d38-4249-96a8-bf2308a57468": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Benefit1-Persona5.png",
-            "link": "#"
-          }
-        },
-        "c0a07d56-d4af-4f82-98e3-b1b7ea602bde": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Benefit1-Persona5.png",
-            "link": ""
-          }
-        },
-        "18403f0b-1f64-45fd-95a3-8060109d2f5c": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Benefit1-Persona5.png",
-            "link": ""
-          }
-        },
-        "7a247438-5d87-4385-9e24-dc663f45a1dc": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Benefit1-Persona5.png",
-            "link": ""
-          }
-        },
-        "8f191d7e-66e7-442e-a46b-e0ed512eb36a": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Benefit1-Persona5.png",
-            "link": ""
-          }
-        },
-        "bf5cf063-1a2f-4239-b365-d9a83234354d": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Benefit1-Persona5.png",
-            "link": ""
-          }
-        },
-        "1f90d112-6cf1-4b4a-b5f4-662cd1bf82b3": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Benefit1-Persona5.png",
-            "link": ""
-          }
-        },
-        "3e6814ad-0ee6-4639-8937-ec8b5bea0752": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Benefit1-Persona5.png",
-            "link": ""
-          }
-        },
-        "c88846c4-da1e-4202-84e8-d5f1225cfd84": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Benefit1-Persona5.png",
-            "link": ""
-          }
-        },
-        "34b0eaf5-22f3-41ff-b43b-c1db85bf6f76": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Benefit1-Persona5.png",
-            "link": ""
-          }
-        },
-        "9a1ffac2-0be4-4a72-a336-80949a6d6e8c": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Benefit1-Persona5.png",
-            "link": ""
-          }
-        },
-        "4bb14ca5-d0ec-4dee-b8cb-ea3df2b76753": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Benefit1-Persona5.png",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "3c84fc93-2d38-4249-96a8-bf2308a57468",
-        "c0a07d56-d4af-4f82-98e3-b1b7ea602bde",
-        "18403f0b-1f64-45fd-95a3-8060109d2f5c",
-        "7a247438-5d87-4385-9e24-dc663f45a1dc",
-        "8f191d7e-66e7-442e-a46b-e0ed512eb36a",
-        "bf5cf063-1a2f-4239-b365-d9a83234354d",
-        "1f90d112-6cf1-4b4a-b5f4-662cd1bf82b3",
-        "3e6814ad-0ee6-4639-8937-ec8b5bea0752",
-        "c88846c4-da1e-4202-84e8-d5f1225cfd84",
-        "34b0eaf5-22f3-41ff-b43b-c1db85bf6f76",
-        "9a1ffac2-0be4-4a72-a336-80949a6d6e8c",
-        "4bb14ca5-d0ec-4dee-b8cb-ea3df2b76753"
-      ],
-      "settings": {
-        "layout": "grid",
-        "title": "",
         "sec_bg": "",
         "css_class": "",
         "custom_css": "",
@@ -608,14 +90,6 @@
   },
   "order": [
     "4eb44a74-fb32-41e1-8170-d35b99588e67",
-    "b41e1ff4-2406-400f-90aa-3263cd6bfcad",
-    "4f32cbc4-47c1-4a16-9034-e75c8f8be3fc",
-    "16315440459bd794b1",
-    "24a492b5-ae5b-4733-8f59-11b8eba2f0de",
-    "d11d965a-e275-4b0a-8fcd-69482d0027c3",
-    "f17be46f-e031-40af-8cac-bb37b68eb353",
-    "18848a44-fcb3-477f-bebd-00e85475a9a6",
-    "d67afc51-2d73-42c2-b8ab-d6f7fa5d787d",
-    "ae309700-8afa-4900-b089-ef0362efdfda"
+    "8b4bdfac-6ad8-48e0-9419-1bfc730c2d81"
   ]
 }
