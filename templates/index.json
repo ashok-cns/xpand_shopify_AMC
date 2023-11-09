@@ -37,36 +37,41 @@
         "bf890151-e70d-4e20-a540-571baba425df": {
           "type": "logo_image",
           "settings": {
-            "link": "",
-            "lcn-content": ""
+            "image": "shopify:\/\/shop_images\/today_show_010ba4e0-504a-4bcd-94d4-dcbd3802eaff.png",
+            "link": "https:\/\/www.today.com\/home\/10-must-have-products-make-even-busiest-mornings-easy-t137729",
+            "lcn-content": "<p>The Today Show<\/p>"
           }
         },
         "61af3b1d-ff70-49d0-a3d5-9e14c26da272": {
           "type": "logo_image",
           "settings": {
-            "link": "",
-            "lcn-content": ""
+            "image": "shopify:\/\/shop_images\/Ellen_1_3f85b3d6-3179-4276-91eb-023d6f292629.png",
+            "link": "https:\/\/twitter.com\/TheEllenShow\/status\/994695612812611584",
+            "lcn-content": "<p>Ellen DeGeneres<\/p>"
           }
         },
         "9dd8ef9b-e6ce-47b3-b026-1eac1a1268aa": {
           "type": "logo_image",
           "settings": {
-            "link": "",
-            "lcn-content": ""
+            "image": "shopify:\/\/shop_images\/50777438-90041a00-12d6-11e9-9e68-d06f82c61f25_3166b84a-248d-4ded-8be7-dd934af86662.png",
+            "link": "https:\/\/www.cbc.ca\/news\/business\/shoelace-shoes-fitness-fashion-health-foot-health-podiatry-christmas-gifts-1.4949031",
+            "lcn-content": "<p>CBC National<\/p>"
           }
         },
         "c7ead89b-56af-49a8-855e-1c25484bacbd": {
           "type": "logo_image",
           "settings": {
-            "link": "",
-            "lcn-content": ""
+            "image": "shopify:\/\/shop_images\/Kickstarter_logo1_1_618076b8-15dd-4391-985a-d29a6142fd08.png",
+            "link": "https:\/\/www.kickstarter.com\/projects\/914635363\/xpand-lacing-system",
+            "lcn-content": "<p>The $1.2 Million<\/p><p>Kickstarter success<\/p>"
           }
         },
         "f5c1e272-45f9-4cff-805f-64e15e426416": {
           "type": "logo_image",
           "settings": {
-            "link": "",
-            "lcn-content": ""
+            "image": "shopify:\/\/shop_images\/Breakfast_Television_logo_1_4a1b4307-72f7-4522-af5f-335ff11828d4.png",
+            "link": "#",
+            "lcn-content": "<p>Breakfast Television<\/p>"
           }
         }
       },
@@ -78,13 +83,13 @@
         "f5c1e272-45f9-4cff-805f-64e15e426416"
       ],
       "settings": {
-        "title": "Logo list",
-        "layout": "grid",
-        "sec_bg": "",
+        "title": "As Featured On",
+        "layout": "slider",
+        "sec_bg": "#f1f2f2",
         "css_class": "",
         "custom_css": "",
-        "sec_top": 0,
-        "sec_bottom": 0
+        "sec_top": 30,
+        "sec_bottom": 20
       }
     }
   },
