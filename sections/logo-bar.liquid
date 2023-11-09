@@ -30,7 +30,7 @@
             {% if block.settings.link != blank %}
               <a class="logo-list__item-link" href="{{ block.settings.link }}">
               {% endif %}
-              <div class="logo-list__item_content">
+
               {% if block.settings.image != blank %}
                 {%
                    render 'image-element',
@@ -43,7 +43,6 @@
               {% if block.settings.lcn-content != blank %}
                 {{ block.settings.lcn-content }}
               {% endif %}
-              </div>
               {% if block.settings.link != blank %}
               </a>
             {% endif %}
