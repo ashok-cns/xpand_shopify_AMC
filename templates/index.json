@@ -284,12 +284,13 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "title": "Add a title or tagline",
+            "image": "shopify:\/\/shop_images\/icons-01.png",
+            "title": "",
             "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "<p>Try Xpand<\/p><p>for 90 days<\/p>",
             "button_label": "",
             "button_link": "",
-            "align_text": "left",
+            "align_text": "center",
             "border_style": "none",
             "link_text_color": "",
             "link_bg_color": ""
@@ -299,12 +300,13 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "title": "Add a title or tagline",
+            "image": "shopify:\/\/shop_images\/icons-03.png",
+            "title": "",
             "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "<p>Free North America<\/p><p>shipping<\/p>",
             "button_label": "",
             "button_link": "",
-            "align_text": "left",
+            "align_text": "center",
             "border_style": "none",
             "link_text_color": "",
             "link_bg_color": ""
@@ -314,12 +316,13 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "title": "Add a title or tagline",
+            "image": "shopify:\/\/shop_images\/icons-02.png",
+            "title": "",
             "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "<p>100% money back<\/p><p>guarantee!<\/p>",
             "button_label": "",
             "button_link": "",
-            "align_text": "left",
+            "align_text": "center",
             "border_style": "none",
             "link_text_color": "",
             "link_bg_color": ""
@@ -332,17 +335,17 @@
         "bfb53f56-a9e9-46b9-8154-768ed6e1c2d1"
       ],
       "settings": {
-        "layout": "grid",
-        "title": "Text columns with images",
-        "link_text": "",
-        "link": "",
-        "link_text_color": "#fff",
-        "link_bg_color": "#ff085a",
-        "sec_bg": "",
-        "css_class": "",
+        "layout": "slider",
+        "title": "100% Satisfaction Guarantee",
+        "link_text": "SHOP NOW",
+        "link": "shopify:\/\/products\/no-tie-original-elastic-lacing-system",
+        "link_text_color": "#ffffff",
+        "link_bg_color": "#008ffd",
+        "sec_bg": "#42aca7",
+        "css_class": "three-item-banner",
         "custom_css": "",
-        "sec_top": 0,
-        "sec_bottom": 0
+        "sec_top": 25,
+        "sec_bottom": 25
       }
     },
     "2ca3a8be-acb3-4083-b592-eccc1d00275a": {
@@ -352,10 +355,11 @@
           "type": "product",
           "settings": {
             "enable_block": true,
-            "product": "",
-            "variant_id": "",
-            "title": "",
-            "caption": "",
+            "product": "no-tie-original-elastic-lacing-system",
+            "variant_id": "19252571471983",
+            "image": "shopify:\/\/shop_images\/Black_Pop_colors.jpg",
+            "title": "ORIGINAL NO-TIE LACING SYSTEM",
+            "caption": "<p>BLACK<\/p>",
             "font_color": "#ffffff",
             "link_text": "view product"
           }
@@ -364,10 +368,11 @@
           "type": "product",
           "settings": {
             "enable_block": true,
-            "product": "",
-            "variant_id": "",
-            "title": "",
-            "caption": "",
+            "product": "no-tie-original-elastic-lacing-system",
+            "variant_id": "19252660273263",
+            "image": "shopify:\/\/shop_images\/White_Pop.jpg",
+            "title": "ORIGINAL NO-TIE LACING SYSTEM",
+            "caption": "<p>WHITE<\/p>",
             "font_color": "#ffffff",
             "link_text": "view product"
           }
@@ -376,11 +381,12 @@
           "type": "product",
           "settings": {
             "enable_block": true,
-            "product": "",
-            "variant_id": "",
-            "title": "",
-            "caption": "",
-            "font_color": "#ffffff",
+            "product": "no-tie-original-elastic-lacing-system",
+            "variant_id": "19252660764783",
+            "image": "shopify:\/\/shop_images\/Red_Pop_colors.jpg",
+            "title": "ORIGINAL NO-TIE LACING SYSTEM",
+            "caption": "<p>RED<\/p>",
+            "font_color": "#000000",
             "link_text": "view product"
           }
         },
@@ -388,10 +394,11 @@
           "type": "product",
           "settings": {
             "enable_block": true,
-            "product": "",
-            "variant_id": "",
-            "title": "",
-            "caption": "",
+            "product": "quick-release-round-lacing-system",
+            "variant_id": "19252728004719",
+            "image": "shopify:\/\/shop_images\/Blue_Pop_colors.jpg",
+            "title": "QUICK-RELEASE LACING SYSTEM",
+            "caption": "<p>TRUE BLUE<\/p>",
             "font_color": "#ffffff",
             "link_text": "view product"
           }
@@ -404,14 +411,14 @@
         "4c38c804-d533-4a98-85f9-aab97aef5fd3"
       ],
       "settings": {
-        "title": "",
-        "link_text": "",
-        "link": "",
-        "link_text_color": "#fff",
-        "link_bg_color": "#ff085a",
-        "sec_bg": "",
-        "sec_top": 0,
-        "sec_bottom": 0
+        "title": "Best Sellers",
+        "link_text": "VIEW ALL COLORS",
+        "link": "shopify:\/\/products\/no-tie-original-elastic-lacing-system",
+        "link_text_color": "#ffffff",
+        "link_bg_color": "#008ffd",
+        "sec_bg": "#f3f4f4",
+        "sec_top": 45,
+        "sec_bottom": 45
       }
     }
   },
