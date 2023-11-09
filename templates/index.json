@@ -99,75 +99,80 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "title": "Add a title or tagline",
+            "image": "shopify:\/\/shop_images\/Flat_Lace_3_1.jpg",
+            "title": "Original No-Tie <br> Lacing System",
             "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "left",
+            "text": "",
+            "button_label": "FLAT LACES",
+            "button_link": "shopify:\/\/products\/no-tie-original-elastic-lacing-system",
+            "align_text": "center",
             "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
+            "link_text_color": "#ffffff",
+            "link_bg_color": "#0090fc"
           }
         },
         "template--15266355282031__dcd38f47-4d01-4c89-9500-e275fc45a3b7-text_block-2": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "title": "Add a title or tagline",
+            "image": "shopify:\/\/shop_images\/Round_Lace_1.jpg",
+            "title": "Quick-Release <br> Lacing System",
             "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "left",
+            "text": "",
+            "button_label": "ROUND LACES",
+            "button_link": "shopify:\/\/products\/quick-release-round-lacing-system",
+            "align_text": "center",
             "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
+            "link_text_color": "#ffffff",
+            "link_bg_color": "#0090fc"
           }
         },
         "7ded0ec0-25a7-4314-97c8-5f46bb0a5268": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "title": "Add a title or tagline",
+            "image": "shopify:\/\/shop_images\/wipes-blue.png",
+            "title": "Quick Wipes <br> Instant Clean",
             "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "left",
+            "text": "",
+            "button_label": "SHOP WIPES",
+            "button_link": "shopify:\/\/products\/xpand-shoe-wipes",
+            "align_text": "center",
             "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
+            "link_text_color": "#ffffff",
+            "link_bg_color": "#008ffd"
           }
         },
         "02b79a59-b6a7-454d-a7f1-2bab8a1cf2c3": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "title": "Add a title or tagline",
+            "image": "shopify:\/\/shop_images\/noshowsockss_1.png",
+            "title": "Cushioned <br> No-Show Socks",
             "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "left",
+            "text": "",
+            "button_label": "SHOP SOCKS",
+            "button_link": "shopify:\/\/products\/cushioned-no-show-socks",
+            "align_text": "center",
             "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
+            "link_text_color": "#ffffff",
+            "link_bg_color": "#0090fc"
           }
         },
         "151b0f3f-a071-48e6-bf2a-62cc97f56fb5": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "title": "Add a title or tagline",
+            "image": "shopify:\/\/shop_images\/Urban_belt_Insert_for_Website-smallest.jpg",
+            "title": "Magnetic Urban <br> Elastic Belt",
             "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "left",
+            "text": "",
+            "button_label": "URBAN BELT",
+            "button_link": "shopify:\/\/products\/urban-belt",
+            "align_text": "center",
             "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
+            "link_text_color": "#ffffff",
+            "link_bg_color": "#0090fc"
           }
         }
       },
@@ -180,15 +185,15 @@
       ],
       "settings": {
         "layout": "grid",
-        "title": "Text columns with images",
+        "title": "",
         "link_text": "",
         "link": "",
-        "link_text_color": "#fff",
+        "link_text_color": "#ffffff",
         "link_bg_color": "#ff085a",
-        "sec_bg": "",
-        "css_class": "",
+        "sec_bg": "#f1f2f2",
+        "css_class": "featured-box",
         "custom_css": "",
-        "sec_top": 0,
+        "sec_top": 30,
         "sec_bottom": 0
       }
     },
@@ -199,12 +204,13 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "title": "Add a title or tagline",
+            "image": "shopify:\/\/shop_images\/icon1.png",
+            "title": "Secure Fit",
             "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "<p>Set it and forget it with our patented lace anchor technology. Zero distractions, perfect support, all day long.<\/p>",
             "button_label": "",
             "button_link": "",
-            "align_text": "left",
+            "align_text": "center",
             "border_style": "none",
             "link_text_color": "",
             "link_bg_color": ""
@@ -214,12 +220,13 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "title": "Add a title or tagline",
+            "image": "shopify:\/\/shop_images\/icon2.png",
+            "title": "Adjustable Tension",
             "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "<p>Designed to move with you and work for you. Need more compression? Need more room? Xpand laces are easy to adjust on the fly.<\/p>",
             "button_label": "",
             "button_link": "",
-            "align_text": "left",
+            "align_text": "center",
             "border_style": "none",
             "link_text_color": "",
             "link_bg_color": ""
@@ -229,12 +236,13 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "title": "Add a title or tagline",
+            "image": "shopify:\/\/shop_images\/icon3.png",
+            "title": "One Size Fits All",
             "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "<p>No need to search for the right size and hope for the best. Whether you’re shopping for an adult or a child, sneakers, or boots, you can’t go wrong. Trim to your desired length and you’re good to go!<\/p>",
             "button_label": "",
             "button_link": "",
-            "align_text": "left",
+            "align_text": "center",
             "border_style": "none",
             "link_text_color": "",
             "link_bg_color": ""
@@ -248,16 +256,16 @@
       ],
       "settings": {
         "layout": "grid",
-        "title": "Text columns with images",
+        "title": "Feel the Difference",
         "link_text": "",
         "link": "",
-        "link_text_color": "#fff",
+        "link_text_color": "#ffffff",
         "link_bg_color": "#ff085a",
         "sec_bg": "",
-        "css_class": "",
+        "css_class": "featured-banner-area",
         "custom_css": "",
-        "sec_top": 0,
-        "sec_bottom": 0
+        "sec_top": 40,
+        "sec_bottom": 40
       }
     }
   },
