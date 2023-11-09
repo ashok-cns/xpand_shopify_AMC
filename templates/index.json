@@ -267,12 +267,22 @@
         "sec_top": 40,
         "sec_bottom": 40
       }
+    },
+    "f9c8783f-8ca3-4744-9187-c08bf43a22f3": {
+      "type": "custom-html",
+      "settings": {
+        "title": "Over 2 Million Customers",
+        "custom_html": "<div id=\"stamped-reviews-widget\" data-widget-type=\"visual-gallery\" data-feed-type=\"carousel\" data-min-rating=\"3\" data-with-photos=\"true\"><\/div>",
+        "css_class": "stamped-reviwed-section",
+        "custom_css": ""
+      }
     }
   },
   "order": [
     "4eb44a74-fb32-41e1-8170-d35b99588e67",
     "8b4bdfac-6ad8-48e0-9419-1bfc730c2d81",
     "dcd38f47-4d01-4c89-9500-e275fc45a3b7",
-    "80f4c16b-a976-42cf-bba2-81aca3dcc870"
+    "80f4c16b-a976-42cf-bba2-81aca3dcc870",
+    "f9c8783f-8ca3-4744-9187-c08bf43a22f3"
   ]
 }
