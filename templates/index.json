@@ -276,6 +276,143 @@
         "css_class": "stamped-reviwed-section",
         "custom_css": ""
       }
+    },
+    "e1722e7a-35fe-4249-b951-23d06ba5a66e": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "template--15266355282031__e1722e7a-35fe-4249-b951-23d06ba5a66e-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "Add a title or tagline",
+            "heading_size": "regular_text",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "template--15266355282031__e1722e7a-35fe-4249-b951-23d06ba5a66e-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "Add a title or tagline",
+            "heading_size": "regular_text",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "bfb53f56-a9e9-46b9-8154-768ed6e1c2d1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "Add a title or tagline",
+            "heading_size": "regular_text",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15266355282031__e1722e7a-35fe-4249-b951-23d06ba5a66e-text_block-1",
+        "template--15266355282031__e1722e7a-35fe-4249-b951-23d06ba5a66e-text_block-2",
+        "bfb53f56-a9e9-46b9-8154-768ed6e1c2d1"
+      ],
+      "settings": {
+        "layout": "grid",
+        "title": "Text columns with images",
+        "link_text": "",
+        "link": "",
+        "link_text_color": "#fff",
+        "link_bg_color": "#ff085a",
+        "sec_bg": "",
+        "css_class": "",
+        "custom_css": "",
+        "sec_top": 0,
+        "sec_bottom": 0
+      }
+    },
+    "2ca3a8be-acb3-4083-b592-eccc1d00275a": {
+      "type": "featured-products",
+      "blocks": {
+        "e01a889f-87aa-4d44-986d-213fc69b9cc9": {
+          "type": "product",
+          "settings": {
+            "enable_block": true,
+            "product": "",
+            "variant_id": "",
+            "title": "",
+            "caption": "",
+            "font_color": "#ffffff",
+            "link_text": "view product"
+          }
+        },
+        "dfb318cb-9235-4275-b8ad-0b59dbfc9a31": {
+          "type": "product",
+          "settings": {
+            "enable_block": true,
+            "product": "",
+            "variant_id": "",
+            "title": "",
+            "caption": "",
+            "font_color": "#ffffff",
+            "link_text": "view product"
+          }
+        },
+        "f659556e-4ac5-41e9-b797-8affb7dbd07b": {
+          "type": "product",
+          "settings": {
+            "enable_block": true,
+            "product": "",
+            "variant_id": "",
+            "title": "",
+            "caption": "",
+            "font_color": "#ffffff",
+            "link_text": "view product"
+          }
+        },
+        "4c38c804-d533-4a98-85f9-aab97aef5fd3": {
+          "type": "product",
+          "settings": {
+            "enable_block": true,
+            "product": "",
+            "variant_id": "",
+            "title": "",
+            "caption": "",
+            "font_color": "#ffffff",
+            "link_text": "view product"
+          }
+        }
+      },
+      "block_order": [
+        "e01a889f-87aa-4d44-986d-213fc69b9cc9",
+        "dfb318cb-9235-4275-b8ad-0b59dbfc9a31",
+        "f659556e-4ac5-41e9-b797-8affb7dbd07b",
+        "4c38c804-d533-4a98-85f9-aab97aef5fd3"
+      ],
+      "settings": {
+        "title": "",
+        "link_text": "",
+        "link": "",
+        "link_text_color": "#fff",
+        "link_bg_color": "#ff085a",
+        "sec_bg": "",
+        "sec_top": 0,
+        "sec_bottom": 0
+      }
     }
   },
   "order": [
@@ -283,6 +420,8 @@
     "8b4bdfac-6ad8-48e0-9419-1bfc730c2d81",
     "dcd38f47-4d01-4c89-9500-e275fc45a3b7",
     "80f4c16b-a976-42cf-bba2-81aca3dcc870",
-    "f9c8783f-8ca3-4744-9187-c08bf43a22f3"
+    "f9c8783f-8ca3-4744-9187-c08bf43a22f3",
+    "e1722e7a-35fe-4249-b951-23d06ba5a66e",
+    "2ca3a8be-acb3-4083-b592-eccc1d00275a"
   ]
 }
