@@ -1731,21 +1731,25 @@ $(document).on('click', '.go-to-top', () => {
     scrollTop: $("body").offset().top
     }, 500)
 })    
-
-    headerHeight = 0;
-    headerHeight += Number($('#alert-bar').innerHeight());
-    headerHeight += Number($('#header').innerHeight());
-    console.log("Header Height==>", headerHeight);
-    $('body').css('margin-top',headerHeight)
+    if(window.innerWidth < 799){
+      headerHeight = 0;
+      headerHeight += Number($('#alert-bar').innerHeight());
+      headerHeight += Number($('#header').innerHeight());
+      console.log("Header Height==>", headerHeight);
+      $('body').css('margin-top',headerHeight)
+    }
+    
   });
 
   window.addEventListener("load", (event) => {
+    if(window.innerWidth < 799){
     console.log("page is fully loaded");
     headerHeight = 0;
     headerHeight += Number($('#alert-bar').innerHeight());
     headerHeight += Number($('#header').innerHeight());
     console.log("Header Height on load==>", headerHeight);
     $('body').css('margin-top',headerHeight)
+    }
   
 });
 
