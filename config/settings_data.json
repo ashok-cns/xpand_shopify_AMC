@@ -836,7 +836,7 @@
           "hide_mobile_promo_1": true,
           "promo_image_1": "shopify:\/\/shop_images\/mix_2.svg",
           "promo_text_1": "<p><strong>Mix & Match:<\/strong>Laces | Socks | Shoewipes<\/p>",
-          "hide_mobile_promo_2": false,
+          "hide_mobile_promo_2": true,
           "promo_image_2": "shopify:\/\/shop_images\/promo_3.svg",
           "promo_text_2": "<p><strong>Limited Time:<\/strong>Any 6 for $40 | Any 8 for $50<\/p>",
           "hide_mobile_promo_3": false,
