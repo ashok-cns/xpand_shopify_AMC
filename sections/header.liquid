@@ -191,7 +191,7 @@
     <div class="promo-banner" style="background:{{ section.settings.ab_bg_color }}; color: {{ section.settings.ab_text_color }}">
       <div class="promo-banner__content">
         {% for i in (1..3) %}
-          {% capture visibleInMobile %}enable_mobile_promo_{{ i }}{% endcapture %}
+          {% capture visibleInMobile %}hide_mobile_promo_{{ i }}{% endcapture %}
           {% capture promoText %}promo_text_{{ i }}{% endcapture %}
           {% capture promoImage %}promo_image_{{ i }}{% endcapture %}
           {% if section.settings[promoText] != blank %}
@@ -986,8 +986,8 @@ editor events, etc.
       },
       {
         "type": "checkbox",
-        "id": "enable_mobile_promo_1",
-        "label": "Show in mobile",
+        "id": "hide_mobile_promo_1",
+        "label": "Hide in mobile",
         "default": false
       },
       {
@@ -1002,8 +1002,8 @@ editor events, etc.
       },
       {
         "type": "checkbox",
-        "id": "enable_mobile_promo_2",
-        "label": "Show in mobile",
+        "id": "hide_mobile_promo_2",
+        "label": "Hide in mobile",
         "default": false
       },
       {
@@ -1018,8 +1018,8 @@ editor events, etc.
       },
       {
         "type": "checkbox",
-        "id": "enable_mobile_promo_3",
-        "label": "Show in mobile",
+        "id": "hide_mobile_promo_3",
+        "label": "Hide in mobile",
         "default": false
       },
       {
