@@ -1736,6 +1736,7 @@ $(document).on('click', '.go-to-top', () => {
     headerHeight += Number($('#alert-bar').innerHeight());
     headerHeight += Number($('#header').innerHeight());
     console.log("Header Height==>", headerHeight);
+    $('body').css('margin-top',headerHeight)
   });
 
   window.addEventListener("load", (event) => {
@@ -1744,6 +1745,7 @@ $(document).on('click', '.go-to-top', () => {
     headerHeight += Number($('#alert-bar').innerHeight());
     headerHeight += Number($('#header').innerHeight());
     console.log("Header Height on load==>", headerHeight);
+    $('body').css('margin-top',headerHeight)
   
 });
 
