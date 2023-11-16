@@ -191,7 +191,7 @@
     <div class="promo-banner" style="background:{{ section.settings.ab_bg_color }}; color: {{ section.settings.ab_text_color }}">
       <div class="promo-banner__content">
         {% for i in (1..3) %}
-          {% capture visibleInMobile %}enable_mobile_promo_{{ i }}{% endcapture %}%}
+          {% capture visibleInMobile %}enable_mobile_promo_{{ i }}{% endcapture %}
           {% capture promoText %}promo_text_{{ i }}{% endcapture %}
           {% capture promoImage %}promo_image_{{ i }}{% endcapture %}
           {% if section.settings[promoText] != blank %}
