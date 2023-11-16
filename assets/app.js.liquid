@@ -1731,7 +1731,23 @@ $(document).on('click', '.go-to-top', () => {
     scrollTop: $("body").offset().top
     }, 500)
 })    
+
+    headerHeight = 0;
+    headerHeight += Number($('#alert-bar').innerHeight());
+    headerHeight += Number($('#header').innerHeight());
+    console.log("Header Height==>", headerHeight);
   });
+
+  window.addEventListener("load", (event) => {
+    console.log("page is fully loaded");
+    headerHeight = 0;
+    headerHeight += Number($('#alert-bar').innerHeight());
+    headerHeight += Number($('#header').innerHeight());
+    console.log("Header Height==>", headerHeight);
+  
+});
+
+
   window.addEventListener("DOMContentLoaded", (event) => {
     var swiper = new Swiper(".mySwiper", {
       centeredSlides: true,
