@@ -195,7 +195,7 @@
           {% capture promoText %}promo_text_{{ i }}{% endcapture %}
           {% capture promoImage %}promo_image_{{ i }}{% endcapture %}
           {% if section.settings[promoText] != blank %}
-          <div class="text-wrapp {% if section.settigns[hideInMobile] %}hide-mobile{% endif %}">
+          <div class="text-wrapp {% if section.settings[hideInMobile] %}hide-mobile{% endif %}">
               {% comment %} {% if forloop.index == 1 %}
                 <img class="announcement-icon lazyload" data-src="{{ 'mix_2.svg' | file_url }}">
               {% elsif forloop.index == 2 %}
