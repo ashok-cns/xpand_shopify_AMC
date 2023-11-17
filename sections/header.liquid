@@ -40,6 +40,7 @@
             {% capture alertText %}alert_text_{{ i }}{% endcapture %}
             {% capture alertIcon %}alert_icon_{{ i }}{% endcapture %}
             {% capture alertDesc %}alert_text_desc_{{ i }}{% endcapture %}
+              {% if section.settings[alertText] != blank and section.settings[alertIcon] != blank and section.settings[alertDesc] != blank %}
             <div
               data-offer-id="1"
               data-offer-type="expandable"
@@ -72,6 +73,7 @@
                   class="offer__cta">Show Less</button>
               </div>
             </div>
+              {% endif %}
           {% endfor %}
         </div>
         <div class="swiper-navigation">
