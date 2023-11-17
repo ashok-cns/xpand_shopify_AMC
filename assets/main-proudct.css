@@ -1221,9 +1221,5 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
     body[data-template=primary] .pdp-custom-swatch-dropdown h3.pdp-custom-swatch-heading{
         margin-bottom: 10px;
     }
-    .body-content[data-type="about"] h2 {
-        font-size: 18px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
+    
 }
