@@ -1201,6 +1201,11 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
     h1.product_name{
         max-width: calc(100% - 100px);
     }
+    .body-content[data-type="about"] h2 {
+        font-size: 18px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
 }
 @media screen and (max-width: 798px) {
     .product__images.three-fifths {
