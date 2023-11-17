@@ -1206,7 +1206,7 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
         margin-bottom: 0px;
         margin-top: 0px;
     }
-    [data-logo-slider], .slider-on-mobile[data-logo-slider] .flickity-viewport {
+    .slider-on-mobile[data-logo-slider] .flickity-viewport {
         height: auto !important;
         min-height: 155px;
     }
