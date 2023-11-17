@@ -1210,6 +1210,12 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
         height: auto !important;
         min-height: 155px;
     }
+    .product__details--product-page {
+        border-bottom: 0px;
+    }
+    body[data-template="primary"] .section.product-feature {
+        padding-top: 0px !important;
+    }
 }
 @media screen and (max-width: 798px) {
     .product__images.three-fifths {
