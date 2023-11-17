@@ -1180,7 +1180,7 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
     .product__details--product-page{
         position: relative;
     }
-    .product_section .modal_price{
+    body:not([data-template="primary"]) .product_section .modal_price{
         justify-content: end;
         font-size: 18px;
         order: 0;
