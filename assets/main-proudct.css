@@ -1188,6 +1188,9 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
     body[data-template="primary-alternate"] .product_section .modal_price{
         justify-content: flex-start;
     }
+    body[data-template="primary-alternate"] .is-product-main.content {
+        padding-top:0px;
+    }
     .price-note{
         order: 1;
         text-align: right;
