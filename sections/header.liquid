@@ -305,7 +305,7 @@
             </li>
           {% endif %}
 
-          {% if shop.customer_accounts_enabled %}
+          <!-- {% if shop.customer_accounts_enabled %}
             {% if customer %}
               <li>
                 <a href="{{ routes.account_url }}" data-no-instant>{{ customer.name }}</a>
@@ -319,7 +319,7 @@
                 <a href="{{ routes.account_login_url }}" id="customer_login_link">{{ 'layout.customer.log_in' | t }}</a>
               </li>
             {% endif %}
-          {% endif %}
+          {% endif %} -->
 
           {% if locale_selector or currency_selector or settings.show_multiple_currencies == true %}
             {%
