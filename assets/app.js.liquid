@@ -971,7 +971,7 @@ $(() => {
                   $('body').removeClass('free-gift-product-visible');
                   $(document).find('li.mini-cart__item[data-free-product="free"] .product-quantity-box').remove();
                 } else {
-                  if(cartQty >= free_product_active_count ){
+                  if($('body').attr('data-free-product') == 'true' && cartQty >= free_product_active_count ){
                   //$('.cart-free-gift-wrapper').addClass('visible-item');
                   $('body').addClass('free-gift-product-visible');
                 }
@@ -1731,7 +1731,29 @@ $(document).on('click', '.go-to-top', () => {
     scrollTop: $("body").offset().top
     }, 500)
 })    
+    if(window.innerWidth < 799){
+      headerHeight = 0;
+      headerHeight += Number($('#alert-bar').innerHeight());
+      headerHeight += Number($('#header').innerHeight());
+      console.log("Header Height==>", headerHeight);
+      $('body').css('margin-top',headerHeight)
+    }
+    
   });
+
+  window.addEventListener("load", (event) => {
+    if(window.innerWidth < 799){
+    console.log("page is fully loaded");
+    headerHeight = 0;
+    headerHeight += Number($('#alert-bar').innerHeight());
+    headerHeight += Number($('#header').innerHeight());
+    console.log("Header Height on load==>", headerHeight);
+    $('body').css('margin-top',headerHeight)
+    }
+  
+});
+
+
   window.addEventListener("DOMContentLoaded", (event) => {
     var swiper = new Swiper(".mySwiper", {
       centeredSlides: true,

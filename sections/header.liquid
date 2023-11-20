@@ -40,6 +40,7 @@
             {% capture alertText %}alert_text_{{ i }}{% endcapture %}
             {% capture alertIcon %}alert_icon_{{ i }}{% endcapture %}
             {% capture alertDesc %}alert_text_desc_{{ i }}{% endcapture %}
+              {% if section.settings[alertText] != blank and section.settings[alertIcon] != blank and section.settings[alertDesc] != blank %}
             <div
               data-offer-id="1"
               data-offer-type="expandable"
@@ -72,6 +73,7 @@
                   class="offer__cta">Show Less</button>
               </div>
             </div>
+              {% endif %}
           {% endfor %}
         </div>
         <div class="swiper-navigation">
@@ -190,11 +192,13 @@
   {% if section.settings.announcement_bar_enabled %}
     <div class="promo-banner" style="background:{{ section.settings.ab_bg_color }}; color: {{ section.settings.ab_text_color }}">
       <div class="promo-banner__content">
-        {% for i in (1..3) %}
+        <marquee width="100%" direction="left" class="hideDesktop">
+          {% for i in (1..3) %}          
           {% capture promoText %}promo_text_{{ i }}{% endcapture %}
+          {% capture promoImage %}promo_image_{{ i }}{% endcapture %}
           {% if section.settings[promoText] != blank %}
-            <div class="text-wrapp">
-              {% if forloop.index == 1 %}
+          <div class="text-wrapp">
+              {% comment %} {% if forloop.index == 1 %}
                 <img class="announcement-icon lazyload" data-src="{{ 'mix_2.svg' | file_url }}">
               {% elsif forloop.index == 2 %}
                 <img class="announcement-icon lazyload" data-src="{{ 'box.svg' | asset_url }}">
@@ -206,11 +210,43 @@
                     viewBox="0 0 1792 1792"
                     xmlns="http://www.w3.org/2000/svg"><path d="M896 1664q-26 0-44-18l-624-602q-10-8-27.5-26t-55.5-65.5-68-97.5-53.5-121-23.5-138q0-220 127-344t351-124q62 0 126.5 21.5t120 58 95.5 68.5 76 68q36-36 76-68t95.5-68.5 120-58 126.5-21.5q224 0 351 124t127 344q0 221-229 450l-623 600q-18 18-44 18z" /></svg>
                 </span>
+              {% endif %} {% endcomment %}
+              {% if section.settings[promoImage] != blank %}
+              <img class="announcement-icon lazyload" data-src="{{ section.settings[promoImage] | img_url }}">
               {% endif %}
               {{ section.settings[promoText] }}
             </div>
           {% endif %}
         {% endfor %}
+        </marquee>
+        <div class="hideMobile">
+          {% for i in (1..3) %}          
+          {% capture promoText %}promo_text_{{ i }}{% endcapture %}
+          {% capture promoImage %}promo_image_{{ i }}{% endcapture %}
+          {% if section.settings[promoText] != blank %}
+          <div class="text-wrapp">
+              {% comment %} {% if forloop.index == 1 %}
+                <img class="announcement-icon lazyload" data-src="{{ 'mix_2.svg' | file_url }}">
+              {% elsif forloop.index == 2 %}
+                <img class="announcement-icon lazyload" data-src="{{ 'box.svg' | asset_url }}">
+              {% else %}
+                <span class="announcement-icon">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 1792 1792"
+                    xmlns="http://www.w3.org/2000/svg"><path d="M896 1664q-26 0-44-18l-624-602q-10-8-27.5-26t-55.5-65.5-68-97.5-53.5-121-23.5-138q0-220 127-344t351-124q62 0 126.5 21.5t120 58 95.5 68.5 76 68q36-36 76-68t95.5-68.5 120-58 126.5-21.5q224 0 351 124t127 344q0 221-229 450l-623 600q-18 18-44 18z" /></svg>
+                </span>
+              {% endif %} {% endcomment %}
+              {% if section.settings[promoImage] != blank %}
+              <img class="announcement-icon lazyload" data-src="{{ section.settings[promoImage] | img_url }}">
+              {% endif %}
+              {{ section.settings[promoText] }}
+            </div>
+          {% endif %}
+        {% endfor %}
+        </div>
+        
       </div>
       <div class="promo-banner__close"></div>
     </div>
@@ -244,6 +280,19 @@
 
       </summary>
       <div class="mobile-menu-container dropdown" data-nav>
+        {% if section.blocks.size > 0 %}
+          <div class="nav-drop row mobile_product_drop">
+            {% for block in section.blocks %}
+              {% if block.settings.enable_block %}
+                <a href="{{ block.settings.link }}" class="item">
+                  <img class="lazyload" data-src="{{ block.settings.image | img_url: 'x200' }}">
+                  <h3>{{ block.settings.name }}</h3>
+                  {{ block.settings.caption }}
+                </a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
         <ul class="menu" id="mobile_menu">
           {%
              render 'mobile-menu',
@@ -314,7 +363,7 @@
       {% endif %}
 
       <!-- Mobile Mega Menu -->
-      {% if section.settings.desktop_cta_text != blank %}
+      {% comment %} {% if section.settings.desktop_cta_text != blank %}
         <div class="mobile-mega-nav-wrapper">
           <a
             class="mega-nav-dropdown"
@@ -332,7 +381,7 @@
 // console.log("Mobile Nav", mobileSubNav);
           window.localStorage.setItem('mobileMegaNav', mobileSubNav);
         </script>
-      {% endif %}
+      {% endif %} {% endcomment %}
 
       {% if section.settings.show_cart %}
         <div class="cart-container">
@@ -417,9 +466,10 @@
         <div class="promo-banner__content">
           {% for i in (1..3) %}
             {% capture promoText %}promo_text_{{ i }}{% endcapture %}
+            {% capture promoImage %}promo_image_{{ i }}{% endcapture %}
             {% if section.settings[promoText] != blank %}
               <div class="text-wrapp">
-                {% if forloop.index == 1 %}
+                {% comment %} {% if forloop.index == 1 %}
                   <img class="announcement-icon lazyload" data-src="{{ 'mix_2.svg' | file_url }}">
                 {% elsif forloop.index == 2 %}
                   <img class="announcement-icon lazyload" data-src="{{ 'box.svg' | asset_url }}">
@@ -431,6 +481,9 @@
                       viewBox="0 0 1792 1792"
                       xmlns="http://www.w3.org/2000/svg"><path d="M896 1664q-26 0-44-18l-624-602q-10-8-27.5-26t-55.5-65.5-68-97.5-53.5-121-23.5-138q0-220 127-344t351-124q62 0 126.5 21.5t120 58 95.5 68.5 76 68q36-36 76-68t95.5-68.5 120-58 126.5-21.5q224 0 351 124t127 344q0 221-229 450l-623 600q-18 18-44 18z" /></svg>
                   </span>
+                {% endif %} {% endcomment %}
+                {% if section.settings[promoImage] != blank %}
+                <img class="announcement-icon lazyload" data-src="{{ section.settings[promoImage] | img_url }}">
                 {% endif %}
                 {{ section.settings[promoText] }}
               </div>
@@ -963,14 +1016,29 @@ editor events, etc.
         "default": true
       },
       {
+        "type": "image_picker",
+        "id": "promo_image_1",
+        "label": "Promo Image 1"
+      },
+      {
         "type": "richtext",
         "id": "promo_text_1",
         "label": "General Text"
       },
       {
+        "type": "image_picker",
+        "id": "promo_image_2",
+        "label": "Promo Image 2"
+      },
+      {
         "type": "richtext",
         "id": "promo_text_2",
         "label": "Shipping Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "promo_image_3",
+        "label": "Promo Image 3"
       }, {
         "type": "richtext",
         "id": "promo_text_3",

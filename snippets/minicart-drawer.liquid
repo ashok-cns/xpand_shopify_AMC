@@ -390,8 +390,10 @@
                     <h3>
                       <a href="{{ prodUrl}}">{{ prodTitle }} </a>
                     </h3>
+                    <div class="cm-rec-pro-info-price-wrapper">
                     <h6>{{ variantTitle }}</h6>
                     <span class="cm-crnt-price">{{ prodPrice | money }}</span>
+                    </div>
                     <div class="cm-rec-prod-cta-wrapper">
                       {% if settings[prodVariantId] != blank %}
                         {% if variantIdListCount > 1 %}

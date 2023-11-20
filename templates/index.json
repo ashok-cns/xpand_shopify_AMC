@@ -1,9 +1,9 @@
 {
   "sections": {
-    "e7fa14c2-5a3d-452a-a7e4-b3d4d5445a44": {
+    "2ae6f0aa-f4c4-48db-b9ad-358fdabf5ba7": {
       "type": "slideshow",
       "blocks": {
-        "template--15176954740847__e7fa14c2-5a3d-452a-a7e4-b3d4d5445a44-image-1": {
+        "template--15266355282031__2ae6f0aa-f4c4-48db-b9ad-358fdabf5ba7-image-1": {
           "type": "image",
           "settings": {
             "type": "video",
@@ -25,7 +25,7 @@
         }
       },
       "block_order": [
-        "template--15176954740847__e7fa14c2-5a3d-452a-a7e4-b3d4d5445a44-image-1"
+        "template--15266355282031__2ae6f0aa-f4c4-48db-b9ad-358fdabf5ba7-image-1"
       ],
       "settings": {
         "wide_display": true,
@@ -39,10 +39,10 @@
         "custom_css": ""
       }
     },
-    "4f32cbc4-47c1-4a16-9034-e75c8f8be3fc": {
+    "8b4bdfac-6ad8-48e0-9419-1bfc730c2d81": {
       "type": "logo-bar",
       "blocks": {
-        "template--15136041599087__4f32cbc4-47c1-4a16-9034-e75c8f8be3fc-1682596656447a8bc5-0": {
+        "bf890151-e70d-4e20-a540-571baba425df": {
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/today_show_010ba4e0-504a-4bcd-94d4-dcbd3802eaff.png",
@@ -50,7 +50,7 @@
             "lcn-content": "<p>The Today Show<\/p>"
           }
         },
-        "template--15136041599087__4f32cbc4-47c1-4a16-9034-e75c8f8be3fc-1682596656447a8bc5-1": {
+        "61af3b1d-ff70-49d0-a3d5-9e14c26da272": {
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Ellen_1_3f85b3d6-3179-4276-91eb-023d6f292629.png",
@@ -58,7 +58,7 @@
             "lcn-content": "<p>Ellen DeGeneres<\/p>"
           }
         },
-        "template--15136041599087__4f32cbc4-47c1-4a16-9034-e75c8f8be3fc-1682596656447a8bc5-2": {
+        "9dd8ef9b-e6ce-47b3-b026-1eac1a1268aa": {
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/50777438-90041a00-12d6-11e9-9e68-d06f82c61f25_3166b84a-248d-4ded-8be7-dd934af86662.png",
@@ -66,7 +66,7 @@
             "lcn-content": "<p>CBC National<\/p>"
           }
         },
-        "template--15136041599087__4f32cbc4-47c1-4a16-9034-e75c8f8be3fc-1682596656447a8bc5-3": {
+        "c7ead89b-56af-49a8-855e-1c25484bacbd": {
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Kickstarter_logo1_1_618076b8-15dd-4391-985a-d29a6142fd08.png",
@@ -74,7 +74,7 @@
             "lcn-content": "<p>The $1.2 Million<\/p><p>Kickstarter success<\/p>"
           }
         },
-        "1a162373-a611-4745-94a3-8ac5142ae7b4": {
+        "f5c1e272-45f9-4cff-805f-64e15e426416": {
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Breakfast_Television_logo_1_4a1b4307-72f7-4522-af5f-335ff11828d4.png",
@@ -84,11 +84,11 @@
         }
       },
       "block_order": [
-        "template--15136041599087__4f32cbc4-47c1-4a16-9034-e75c8f8be3fc-1682596656447a8bc5-0",
-        "template--15136041599087__4f32cbc4-47c1-4a16-9034-e75c8f8be3fc-1682596656447a8bc5-1",
-        "template--15136041599087__4f32cbc4-47c1-4a16-9034-e75c8f8be3fc-1682596656447a8bc5-2",
-        "template--15136041599087__4f32cbc4-47c1-4a16-9034-e75c8f8be3fc-1682596656447a8bc5-3",
-        "1a162373-a611-4745-94a3-8ac5142ae7b4"
+        "bf890151-e70d-4e20-a540-571baba425df",
+        "61af3b1d-ff70-49d0-a3d5-9e14c26da272",
+        "9dd8ef9b-e6ce-47b3-b026-1eac1a1268aa",
+        "c7ead89b-56af-49a8-855e-1c25484bacbd",
+        "f5c1e272-45f9-4cff-805f-64e15e426416"
       ],
       "settings": {
         "title": "As Featured On",
@@ -100,10 +100,10 @@
         "sec_bottom": 20
       }
     },
-    "16315440459bd794b1": {
+    "dcd38f47-4d01-4c89-9500-e275fc45a3b7": {
       "type": "text-columns-with-images",
       "blocks": {
-        "16315440459bd794b1-0": {
+        "template--15266355282031__dcd38f47-4d01-4c89-9500-e275fc45a3b7-text_block-1": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
@@ -119,7 +119,7 @@
             "link_bg_color": "#0090fc"
           }
         },
-        "16315440459bd794b1-1": {
+        "template--15266355282031__dcd38f47-4d01-4c89-9500-e275fc45a3b7-text_block-2": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
@@ -135,7 +135,7 @@
             "link_bg_color": "#0090fc"
           }
         },
-        "325a5d8a-634d-48c7-8104-6c8818e94840": {
+        "7ded0ec0-25a7-4314-97c8-5f46bb0a5268": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
@@ -151,7 +151,7 @@
             "link_bg_color": "#008ffd"
           }
         },
-        "bd3a6469-81d2-4769-bf97-fcdfe27706ab": {
+        "02b79a59-b6a7-454d-a7f1-2bab8a1cf2c3": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
@@ -167,7 +167,7 @@
             "link_bg_color": "#0090fc"
           }
         },
-        "25fb6d2d-c187-4690-b0f2-b761d614ff8b": {
+        "151b0f3f-a071-48e6-bf2a-62cc97f56fb5": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
@@ -185,11 +185,11 @@
         }
       },
       "block_order": [
-        "16315440459bd794b1-0",
-        "16315440459bd794b1-1",
-        "325a5d8a-634d-48c7-8104-6c8818e94840",
-        "bd3a6469-81d2-4769-bf97-fcdfe27706ab",
-        "25fb6d2d-c187-4690-b0f2-b761d614ff8b"
+        "template--15266355282031__dcd38f47-4d01-4c89-9500-e275fc45a3b7-text_block-1",
+        "template--15266355282031__dcd38f47-4d01-4c89-9500-e275fc45a3b7-text_block-2",
+        "7ded0ec0-25a7-4314-97c8-5f46bb0a5268",
+        "02b79a59-b6a7-454d-a7f1-2bab8a1cf2c3",
+        "151b0f3f-a071-48e6-bf2a-62cc97f56fb5"
       ],
       "settings": {
         "layout": "grid",
@@ -205,10 +205,10 @@
         "sec_bottom": 0
       }
     },
-    "24a492b5-ae5b-4733-8f59-11b8eba2f0de": {
+    "80f4c16b-a976-42cf-bba2-81aca3dcc870": {
       "type": "text-columns-with-images",
       "blocks": {
-        "template--15136041599087__24a492b5-ae5b-4733-8f59-11b8eba2f0de-1682601552bc1c764e-0": {
+        "template--15266355282031__80f4c16b-a976-42cf-bba2-81aca3dcc870-text_block-1": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
@@ -224,7 +224,7 @@
             "link_bg_color": ""
           }
         },
-        "template--15136041599087__24a492b5-ae5b-4733-8f59-11b8eba2f0de-1682601552bc1c764e-1": {
+        "template--15266355282031__80f4c16b-a976-42cf-bba2-81aca3dcc870-text_block-2": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
@@ -240,7 +240,7 @@
             "link_bg_color": ""
           }
         },
-        "279c2789-0b7e-4580-8d18-ff137becebac": {
+        "de9ce7c3-d3d9-4611-9b41-741a534a6962": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
@@ -258,9 +258,9 @@
         }
       },
       "block_order": [
-        "template--15136041599087__24a492b5-ae5b-4733-8f59-11b8eba2f0de-1682601552bc1c764e-0",
-        "template--15136041599087__24a492b5-ae5b-4733-8f59-11b8eba2f0de-1682601552bc1c764e-1",
-        "279c2789-0b7e-4580-8d18-ff137becebac"
+        "template--15266355282031__80f4c16b-a976-42cf-bba2-81aca3dcc870-text_block-1",
+        "template--15266355282031__80f4c16b-a976-42cf-bba2-81aca3dcc870-text_block-2",
+        "de9ce7c3-d3d9-4611-9b41-741a534a6962"
       ],
       "settings": {
         "layout": "grid",
@@ -276,7 +276,7 @@
         "sec_bottom": 40
       }
     },
-    "d11d965a-e275-4b0a-8fcd-69482d0027c3": {
+    "f9c8783f-8ca3-4744-9187-c08bf43a22f3": {
       "type": "custom-html",
       "settings": {
         "title": "Over 2 Million Customers",
@@ -285,10 +285,10 @@
         "custom_css": ""
       }
     },
-    "f17be46f-e031-40af-8cac-bb37b68eb353": {
+    "e1722e7a-35fe-4249-b951-23d06ba5a66e": {
       "type": "text-columns-with-images",
       "blocks": {
-        "template--15136041599087__f17be46f-e031-40af-8cac-bb37b68eb353-168268913550fe9399-0": {
+        "template--15266355282031__e1722e7a-35fe-4249-b951-23d06ba5a66e-text_block-1": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
@@ -304,7 +304,7 @@
             "link_bg_color": ""
           }
         },
-        "template--15136041599087__f17be46f-e031-40af-8cac-bb37b68eb353-168268913550fe9399-1": {
+        "template--15266355282031__e1722e7a-35fe-4249-b951-23d06ba5a66e-text_block-2": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
@@ -320,7 +320,7 @@
             "link_bg_color": ""
           }
         },
-        "9e06b700-1a99-4dd6-8075-38a88fd35c3b": {
+        "bfb53f56-a9e9-46b9-8154-768ed6e1c2d1": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
@@ -338,9 +338,9 @@
         }
       },
       "block_order": [
-        "template--15136041599087__f17be46f-e031-40af-8cac-bb37b68eb353-168268913550fe9399-0",
-        "template--15136041599087__f17be46f-e031-40af-8cac-bb37b68eb353-168268913550fe9399-1",
-        "9e06b700-1a99-4dd6-8075-38a88fd35c3b"
+        "template--15266355282031__e1722e7a-35fe-4249-b951-23d06ba5a66e-text_block-1",
+        "template--15266355282031__e1722e7a-35fe-4249-b951-23d06ba5a66e-text_block-2",
+        "bfb53f56-a9e9-46b9-8154-768ed6e1c2d1"
       ],
       "settings": {
         "layout": "slider",
@@ -356,10 +356,10 @@
         "sec_bottom": 25
       }
     },
-    "18848a44-fcb3-477f-bebd-00e85475a9a6": {
+    "2ca3a8be-acb3-4083-b592-eccc1d00275a": {
       "type": "featured-products",
       "blocks": {
-        "5e7e5bbf-e688-45ae-a44f-58090cde80a6": {
+        "e01a889f-87aa-4d44-986d-213fc69b9cc9": {
           "type": "product",
           "settings": {
             "enable_block": true,
@@ -372,7 +372,7 @@
             "link_text": "view product"
           }
         },
-        "67f505ba-bb8e-48ae-a05c-3653251384cd": {
+        "dfb318cb-9235-4275-b8ad-0b59dbfc9a31": {
           "type": "product",
           "settings": {
             "enable_block": true,
@@ -385,7 +385,7 @@
             "link_text": "view product"
           }
         },
-        "48b194da-6e47-44a2-98da-375a201afd4f": {
+        "f659556e-4ac5-41e9-b797-8affb7dbd07b": {
           "type": "product",
           "settings": {
             "enable_block": true,
@@ -398,7 +398,7 @@
             "link_text": "view product"
           }
         },
-        "9d331677-d522-4786-ae0f-ad6547983b98": {
+        "4c38c804-d533-4a98-85f9-aab97aef5fd3": {
           "type": "product",
           "settings": {
             "enable_block": true,
@@ -413,10 +413,10 @@
         }
       },
       "block_order": [
-        "5e7e5bbf-e688-45ae-a44f-58090cde80a6",
-        "67f505ba-bb8e-48ae-a05c-3653251384cd",
-        "48b194da-6e47-44a2-98da-375a201afd4f",
-        "9d331677-d522-4786-ae0f-ad6547983b98"
+        "e01a889f-87aa-4d44-986d-213fc69b9cc9",
+        "dfb318cb-9235-4275-b8ad-0b59dbfc9a31",
+        "f659556e-4ac5-41e9-b797-8affb7dbd07b",
+        "4c38c804-d533-4a98-85f9-aab97aef5fd3"
       ],
       "settings": {
         "title": "Best Sellers",
@@ -431,12 +431,12 @@
     }
   },
   "order": [
-    "e7fa14c2-5a3d-452a-a7e4-b3d4d5445a44",
-    "4f32cbc4-47c1-4a16-9034-e75c8f8be3fc",
-    "16315440459bd794b1",
-    "24a492b5-ae5b-4733-8f59-11b8eba2f0de",
-    "d11d965a-e275-4b0a-8fcd-69482d0027c3",
-    "f17be46f-e031-40af-8cac-bb37b68eb353",
-    "18848a44-fcb3-477f-bebd-00e85475a9a6"
+    "2ae6f0aa-f4c4-48db-b9ad-358fdabf5ba7",
+    "8b4bdfac-6ad8-48e0-9419-1bfc730c2d81",
+    "dcd38f47-4d01-4c89-9500-e275fc45a3b7",
+    "80f4c16b-a976-42cf-bba2-81aca3dcc870",
+    "f9c8783f-8ca3-4744-9187-c08bf43a22f3",
+    "e1722e7a-35fe-4249-b951-23d06ba5a66e",
+    "2ca3a8be-acb3-4083-b592-eccc1d00275a"
   ]
 }
