@@ -844,7 +844,7 @@
           "enable_view_all_offer": true,
           "enable_mobile_dropdown_slider": true,
           "alert_icon_1": "shopify:\/\/shop_images\/up_to_15_off.png",
-          "alert_text_1": "<p>Black Friday Sale. CODE: <strong>BF15   <\/strong>for an extra 15% off sitewide<\/p>",
+          "alert_text_1": "<p>Black Friday Sale. CODE: BF15 for an extra 15% off<\/p>",
           "alert_text_desc_1": "<p>Gift Xpand. Enjoy extra savings during our early Black Friday event.<\/p><p><br\/><a href=\"\/products\/no-tie-original-elastic-lacing-system\" title=\"Original No-Tie Lacing System\"><strong>Shop Now<\/strong><\/a><\/p>",
           "alert_icon_2": "shopify:\/\/shop_images\/3_9df04767-bd8b-4678-9f01-e5ad7c395c89.png",
           "alert_text_2": "<p>Free Shipping to the USA. Orders $30 or more<\/p>",
