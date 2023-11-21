@@ -304,21 +304,21 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
   }
   window.addEventListener("DOMContentLoaded", (event) => {
     new Swiper('.swiper-container', {
-     
+      loop: false,
+      lazy: true,
       slidesPerView: 1,
-      // centeredSlides: true,
-      spaceBetween: 10,
+      allowTouchMove: true,
 
 // If we need pagination
-      // pagination: {
-      //   el: '.swiper-pagination',
-      //   clickable: true,
-      //   renderBullet: function(index, className) {
-      //     return `<span class="outer-dot swiper-pagination-bullet" data-index="${
-      //       index + 1
-      //     }"><span class="inner-dot"></span></span>`;
-      //   }
-      // },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function(index, className) {
+          return `<span class="outer-dot swiper-pagination-bullet" data-index="${
+            index + 1
+          }"><span class="inner-dot"></span></span>`;
+        }
+      },
 
 // Navigation arrows
 // navigation: {
