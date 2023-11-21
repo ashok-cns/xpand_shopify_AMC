@@ -239,12 +239,12 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
       }
     });
 
-    // $(document).on('click', '.product-gallery__thumbnail', function() {
-    //   let getCurrentIndex = Number($(this).attr('data-ind'));
-    //   $(document).find('.swiper-pagination .swiper-pagination-bullet[data-index="' + (
-    //     getCurrentIndex + 1
-    //   ) + '"]').click();
-    // })
+    $(document).on('click', '.product-gallery__thumbnail', function() {
+      let getCurrentIndex = Number($(this).attr('data-ind'));
+      $(document).find('.swiper-pagination .swiper-pagination-bullet[data-index="' + (
+        getCurrentIndex + 1
+      ) + '"]').click();
+    })
 
   });
   window.addEventListener("load", (event) => {
