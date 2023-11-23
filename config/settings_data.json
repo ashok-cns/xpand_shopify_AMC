@@ -822,6 +822,18 @@
               "caption": "<p>On-the-Go Cleaning Solution<\/p>",
               "link": "shopify:\/\/products\/xpand-shoe-wipes"
             }
+          },
+          "777a9eb0-0893-4154-9e52-4f69c4ee5d36": {
+            "type": "promo_content",
+            "settings": {
+              "promo_text": "<p><strong>Mix & Match:<\/strong>Laces | Socks | Shoewipes<\/p>"
+            }
+          },
+          "1d7a6db0-4947-4e62-bfb2-8fdefb4dfd3a": {
+            "type": "promo_content",
+            "settings": {
+              "promo_text": "<p><strong>Limited Time:<\/strong>Any 6 for $40 | Any 8 for $50<\/p>"
+            }
           }
         },
         "block_order": [
@@ -830,7 +842,9 @@
           "ef86e50b-b317-4ee6-b898-56f3329b51e9",
           "546f108e-5941-45f0-b039-646185ab2b3e",
           "66538e64-a4f3-43c3-9585-e78dcbb6053c",
-          "4c49e9d3-7311-44c8-ade5-855821ae4385"
+          "4c49e9d3-7311-44c8-ade5-855821ae4385",
+          "777a9eb0-0893-4154-9e52-4f69c4ee5d36",
+          "1d7a6db0-4947-4e62-bfb2-8fdefb4dfd3a"
         ],
         "settings": {
           "announcement_bar_enabled": true,
