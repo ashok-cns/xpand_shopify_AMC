@@ -321,9 +321,10 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
       },
       on: {
           slideChange: function () {
-            console.log('this.realIndex', this.realIndex);
+           
             $('.swiper-slider-current-slide .current-slide').text(this.realIndex + 1);
-            $(document).find('[data-product-gallery-featured] .swiper-pagination .swiper-pagination-bullet[data-index="'+this.realIndex + 1+'"]').addClass('swiper-pagination-bullet-active').siblings().removeClass('swiper-pagination-bullet-active');            
+            let updatedIndex = this.realIndex+1;  console.log('this.realIndex====>',updatedIndex);
+            $(document).find('[data-product-gallery-featured] .swiper-pagination .swiper-pagination-bullet[data-index="'+updatedIndex+'"]').addClass('swiper-pagination-bullet-active').siblings().removeClass('swiper-pagination-bullet-active');            
           }
         }
 
