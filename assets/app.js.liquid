@@ -901,6 +901,7 @@ $(() => {
         success(cartData) {
           //console.log('Get Updated Cart==>', cartData);
           toAppendtagsonCartUpdate();
+          $('.cart_items__content__wrapper').animate({ scrollTop: 0  }, 'slow');
         },
         error(XMLHttpRequest) {
           console.log('Get Updated Cart Error==>', XMLHttpRequest);
@@ -1024,7 +1025,7 @@ $(() => {
        
         // var cartSubtotal = 
         console.log(cartQty ,'---', cm_next_tier_qty)
-        $('.cart_items__content__wrapper').animate({ scrollTop: 0  }, 'slow');
+        
         if($('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_items.js-cart_items li[data-free-product]').length > 0){
               $('body').removeClass('free-gift-product-visible');
             }
