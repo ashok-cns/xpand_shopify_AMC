@@ -1340,6 +1340,7 @@ $(() => {
       }  
       $('body').removeClass('loader-on');
       $('button[data-minicart-checkout-button]').removeAttr('disabled');
+      $('.cart_items__content__wrapper').animate({ scrollTop: 0  }, 'slow');
     }
     });
     $('#header .cart-container').html($('[data-desktop-header] .cart-container').html());
