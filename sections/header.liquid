@@ -15,11 +15,11 @@
         {%- endfor -%}
 
 
-        {% for i in (1..5) %}
+        {% comment %} {% for i in (1..5) %}
           {% capture alertText %}alert_text_{{ i }}{% endcapture %}
           {% capture alertIcon %}alert_icon_{{ i }}{% endcapture %}
           <div class="cm-inner-alert-box swiper-slide">{{ section.settings[alertText] }}</div>
-        {% endfor %}
+        {% endfor %} {% endcomment %}
 
 
       </div>
@@ -89,7 +89,7 @@
           {%- endfor -%}
 
 
-          {% for i in (1..5) %}
+          {% comment %} {% for i in (1..5) %}
             {% capture alertText %}alert_text_{{ i }}{% endcapture %}
             {% capture alertIcon %}alert_icon_{{ i }}{% endcapture %}
             {% capture alertDesc %}alert_text_desc_{{ i }}{% endcapture %}
@@ -127,7 +127,7 @@
               </div>
             </div>
               {% endif %}
-          {% endfor %}
+          {% endfor %} {% endcomment %}
         </div>
         <div class="swiper-navigation">
           <div class="swiper-button-prev"></div>
