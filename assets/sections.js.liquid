@@ -2390,6 +2390,7 @@ window.header = {
         
       $('.dropdown_link').removeClass('active_link');
        $('body').addClass('show-cart-overlay');
+       $('.cart_items__content__wrapper').animate({ scrollTop: 0  }, 'slow');
       $cart_container.addClass('active_link');
     };
 
