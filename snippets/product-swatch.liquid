@@ -297,6 +297,7 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
     $('.product-gallery__thumbnail.showThis').each(function(i) {
       $(this).attr('data-ind', i);
     })
+    $('[data-product-gallery-featured] .swiper-pagination .swiper-pagination-bullet[data-index="1"]').trigger('click');
     $('html,body').animate({ scrollTop: $('body').offset().top - 140 }, 'slow');
   }
   function updatepdpSizeOption(selectedSize) {
