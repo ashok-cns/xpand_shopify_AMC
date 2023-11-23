@@ -766,13 +766,13 @@
           "563aebb0-e538-478d-946b-ed43ac496bf1": {
             "type": "promo_content",
             "settings": {
-              "promo_text": ""
+              "promo_text": "<p><strong>Mix & Match:<\/strong>Laces | Socks | Shoewipes<\/p>"
             }
           },
           "aeb8462e-7bc4-48f5-a590-2e79ed764b71": {
             "type": "promo_content",
             "settings": {
-              "promo_text": ""
+              "promo_text": "<p><strong>Limited Time:<\/strong>Any 6 for $40 | Any 8 for $50<\/p>"
             }
           },
           "d3fd4efb-50f5-43bb-9a40-01e4e2235980": {
@@ -838,36 +838,41 @@
           "8172cb1e-68c5-4369-b6a5-6f8cf3a42477": {
             "type": "alert_content",
             "settings": {
-              "alert_text": "",
-              "alert_text_desc": ""
+              "alert_icon": "shopify:\/\/shop_images\/up_to_15_off.png",
+              "alert_text": "<p>Gift Xpand. Black Friday Sale is here.<\/p>",
+              "alert_text_desc": "<p>Use code \"<strong>BF15<\/strong>\" to enjoy an additional 15% off sitewide.<\/p>"
             }
           },
           "256ab9f7-5b47-4192-964d-9e98b87dee64": {
             "type": "alert_content",
             "settings": {
-              "alert_text": "",
-              "alert_text_desc": ""
+              "alert_icon": "shopify:\/\/shop_images\/3_9df04767-bd8b-4678-9f01-e5ad7c395c89.png",
+              "alert_text": "<p>Free Shipping to the USA. Orders $30 or more<\/p>",
+              "alert_text_desc": "<p>We offer free shipping for orders $30 or more in the U.S. and $2.99 shipping for orders under $30. <strong>Need it faster? <\/strong> Choose 2 day shipping for $10.99 to the USA.<\/p>"
             }
           },
           "de8e7a28-3268-45e8-b050-9117f93d059e": {
             "type": "alert_content",
             "settings": {
-              "alert_text": "",
-              "alert_text_desc": ""
+              "alert_icon": "shopify:\/\/shop_images\/Untitled_design_8_df05e506-4ddd-45c6-adc9-f5da2a407097.png",
+              "alert_text": "<p>Free Shipping On Canada Orders $30 or more<\/p>",
+              "alert_text_desc": "<p>Canadian orders $30 or more qualify for free shipping, and shipping costs $8.99 - $10.99 <em>(depending on province)<\/em> for orders under $30.<\/p>"
             }
           },
           "d76268cc-795b-4498-bfc9-d906a796e3c1": {
             "type": "alert_content",
             "settings": {
-              "alert_text": "",
-              "alert_text_desc": ""
+              "alert_icon": "shopify:\/\/shop_images\/2_4a8e63fd-c75b-47f5-9fea-7e052c3910e2.png",
+              "alert_text": "<p>Bundle Savings. Mix & Match<\/p>",
+              "alert_text_desc": "<p><strong>Save extra<\/strong>  when you buy more. Mix & match between <a href=\"https:\/\/www.xpandlaces.com\/products\/no-tie-original-elastic-lacing-system\" title=\"Original No-Tie Lacing System\">flat laces<\/a>, <a href=\"https:\/\/www.xpandlaces.com\/products\/quick-release-round-lacing-system\" title=\"Quick-Release Lacing System\">round laces<\/a>, <a href=\"https:\/\/www.xpandlaces.com\/products\/cushioned-no-show-socks\" title=\"Cushioned No-Show Socks\">socks<\/a>, or <a href=\"https:\/\/www.xpandlaces.com\/products\/xpand-shoe-wipes\" title=\"Xpand Quick Wipes - Pack of 10\">shoewipes<\/a>.<br\/><br\/>Any 3 items for $30<br\/>Any 6 items for $40<br\/>Any 8 items for $50<\/p>"
             }
           },
           "a8cf62fb-fdd2-483e-8eda-3190fb26a1ad": {
             "type": "alert_content",
             "settings": {
-              "alert_text": "",
-              "alert_text_desc": ""
+              "alert_icon": "shopify:\/\/shop_images\/4_b48189e4-ba5d-40dc-a660-c83d97cb9342.png",
+              "alert_text": "<p>Want It Quick? Free 2-Day Shipping for USA.<\/p>",
+              "alert_text_desc": "<p>No more long waits! For orders $50 and more, use code \"<strong>VIPUSA<\/strong>\" at checkout to enjoy an automatic upgrade to DHL Express for swift 2-day delivery.<\/p>"
             }
           }
         },
