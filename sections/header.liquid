@@ -202,7 +202,7 @@
           {% capture promoText %}promo_text{% endcapture %}
           {% capture promoImage %}promo_image{% endcapture %}
           {% if block.settings[promoText] != blank %}
-          <div class="text-wrapp">
+          <div class="text-wrapp block--promo--data">
               {% if block.settings[promoImage] != blank %}
               <img class="announcement-icon lazyload" data-src="{{ block.settings[promoImage] | img_url }}">
               {% endif %}
