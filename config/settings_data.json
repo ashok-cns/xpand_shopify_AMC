@@ -834,6 +834,46 @@
               "caption": "<p>On-the-Go Cleaning Solution<\/p>",
               "link": "shopify:\/\/products\/xpand-shoe-wipes"
             }
+          },
+          "bbac3046-aad3-4015-a5e7-38cb57eefa2a": {
+            "type": "alert_content",
+            "settings": {
+              "alert_icon": "shopify:\/\/shop_images\/up_to_15_off.png",
+              "alert_text": "<p>Gift Xpand. Black Friday Sale is here.<\/p>",
+              "alert_text_desc": "<p>Use code \"<strong>BF15<\/strong>\" to enjoy an additional 15% off sitewide.<\/p>"
+            }
+          },
+          "1d036b9f-d046-4ca6-a85f-64dee0e7a592": {
+            "type": "alert_content",
+            "settings": {
+              "alert_icon": "shopify:\/\/shop_images\/3_9df04767-bd8b-4678-9f01-e5ad7c395c89.png",
+              "alert_text": "<p>Free Shipping to the USA. Orders $30 or more<\/p>",
+              "alert_text_desc": "<p>We offer free shipping for orders $30 or more in the U.S. and $2.99 shipping for orders under $30. <strong>Need it faster? <\/strong> Choose 2 day shipping for $10.99 to the USA.<\/p>"
+            }
+          },
+          "d489d705-dfee-4345-80d6-248b8d4e303b": {
+            "type": "alert_content",
+            "settings": {
+              "alert_icon": "shopify:\/\/shop_images\/Untitled_design_8_df05e506-4ddd-45c6-adc9-f5da2a407097.png",
+              "alert_text": "<p>Free Shipping On Canada Orders $30 or more<\/p>",
+              "alert_text_desc": "<p>Canadian orders $30 or more qualify for free shipping, and shipping costs $8.99 - $10.99 <em>(depending on province)<\/em> for orders under $30.<\/p>"
+            }
+          },
+          "4e86b503-a25b-4a29-bb7f-2ea26b9e16ea": {
+            "type": "alert_content",
+            "settings": {
+              "alert_icon": "shopify:\/\/shop_images\/2_4a8e63fd-c75b-47f5-9fea-7e052c3910e2.png",
+              "alert_text": "<p>Bundle Savings. Mix & Match<\/p>",
+              "alert_text_desc": "<p><strong>Save extra<\/strong>  when you buy more. Mix & match between <a href=\"https:\/\/www.xpandlaces.com\/products\/no-tie-original-elastic-lacing-system\" title=\"Original No-Tie Lacing System\">flat laces<\/a>, <a href=\"https:\/\/www.xpandlaces.com\/products\/quick-release-round-lacing-system\" title=\"Quick-Release Lacing System\">round laces<\/a>, <a href=\"https:\/\/www.xpandlaces.com\/products\/cushioned-no-show-socks\" title=\"Cushioned No-Show Socks\">socks<\/a>, or <a href=\"https:\/\/www.xpandlaces.com\/products\/xpand-shoe-wipes\" title=\"Xpand Quick Wipes - Pack of 10\">shoewipes<\/a>.<br\/><br\/>Any 3 items for $30<br\/>Any 6 items for $40<br\/>Any 8 items for $50<\/p>"
+            }
+          },
+          "ec9faec9-7595-4045-af18-195a0a489fb8": {
+            "type": "alert_content",
+            "settings": {
+              "alert_icon": "shopify:\/\/shop_images\/4_b48189e4-ba5d-40dc-a660-c83d97cb9342.png",
+              "alert_text": "<p>Want It Quick? Free 2-Day Shipping for USA.<\/p>",
+              "alert_text_desc": "<p>No more long waits! For orders $50 and more, use code \"<strong>VIPUSA<\/strong>\" at checkout to enjoy an automatic upgrade to DHL Express for swift 2-day delivery.<\/p>"
+            }
           }
         },
         "block_order": [
@@ -844,13 +884,15 @@
           "ef86e50b-b317-4ee6-b898-56f3329b51e9",
           "546f108e-5941-45f0-b039-646185ab2b3e",
           "66538e64-a4f3-43c3-9585-e78dcbb6053c",
-          "4c49e9d3-7311-44c8-ade5-855821ae4385"
+          "4c49e9d3-7311-44c8-ade5-855821ae4385",
+          "bbac3046-aad3-4015-a5e7-38cb57eefa2a",
+          "1d036b9f-d046-4ca6-a85f-64dee0e7a592",
+          "d489d705-dfee-4345-80d6-248b8d4e303b",
+          "4e86b503-a25b-4a29-bb7f-2ea26b9e16ea",
+          "ec9faec9-7595-4045-af18-195a0a489fb8"
         ],
         "settings": {
           "announcement_bar_enabled": true,
-          "promo_text_1": "<p><strong>Mix & Match:<\/strong>Laces | Socks | Shoewipes<\/p>",
-          "promo_text_2": "<p><strong>Limited Time:<\/strong>Any 6 for $40 | Any 8 for $50<\/p>",
-          "promo_text_3": "",
           "ab_text_color": "#000000",
           "ab_bg_color": "#ffd828",
           "show_alert_bar": true,
