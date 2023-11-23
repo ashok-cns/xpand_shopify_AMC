@@ -6,12 +6,22 @@
     {% if section.settings.enable_alert_bar_slider %}data-slider-enabled{% endif %}>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        {% for i in (1..5) %}
+        {%- for block in section.blocks -%}
+          {% if block.type == 'alert_content' %}
+          {% capture alertText %}alert_text{% endcapture %}
+          {% capture alertIcon %}alert_icon{% endcapture %}
+          <div class="cm-inner-alert-box swiper-slide">{{ block.settings[alertText] }}</div>
+          {% endif %}
+        {%- endfor -%}
+
+
+        {% comment %} {% for i in (1..5) %}
           {% capture alertText %}alert_text_{{ i }}{% endcapture %}
           {% capture alertIcon %}alert_icon_{{ i }}{% endcapture %}
-
           <div class="cm-inner-alert-box swiper-slide">{{ section.settings[alertText] }}</div>
-        {% endfor %}
+        {% endfor %} {% endcomment %}
+
+
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
@@ -36,7 +46,50 @@
 
       <div modal-content="topbar-offers" class="modal__container swiper-container">
         <div class="swiper-wrapper">
-          {% for i in (1..5) %}
+          {%- for block in section.blocks -%}
+            {% if block.type == 'alert_content' %}
+            {% capture alertText %}alert_text{% endcapture %}
+            {% capture alertIcon %}alert_icon{% endcapture %}
+            {% capture alertDesc %}alert_text_desc{% endcapture %}
+              {% if block.settings[alertText] != blank and block.settings[alertIcon] != blank and block.settings[alertDesc] != blank %}
+                <div
+                  data-offer-id="{{ forloop.index }}"
+                  data-offer-type="expandable"
+                  class="offer swiper-slide">
+                  <div class="offer__image-wrapper"><img
+                      loading="lazy"
+                      src="{{ block.settings[alertIcon] | img_url: '200x' }}"
+                      alt="{{ block.settings[alertText] }}"
+                      class="offer__image loaded"></div>
+                  <div class="offer__title-wrapper">
+                    <h4 class="offer__title text-navy-900">
+                      <p>{{ block.settings[alertText] }}</p>
+                    </h4>
+                    <button
+                      offer-cta-expand="{{ forloop.index }}"
+                      aria-expanded="false"
+                      aria-label="{{ block.settings[alertText] }}'"
+                      class="offer__cta">Learn More</button>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    offer-block-id="{{ forloop.index }}"
+                    class="offer__body-wrapper">
+                    <div class="offer__body">
+                      <p>{{ block.settings[alertDesc] }}</p>
+                    </div>
+                    <button
+                      offer-cta-collapse=""
+                      aria-label="{{ block.settings[alertText] }}"
+                      class="offer__cta">Show Less</button>
+                  </div>
+                </div>
+                  {% endif %}
+            {% endif %}
+          {%- endfor -%}
+
+
+          {% comment %} {% for i in (1..5) %}
             {% capture alertText %}alert_text_{{ i }}{% endcapture %}
             {% capture alertIcon %}alert_icon_{{ i }}{% endcapture %}
             {% capture alertDesc %}alert_text_desc_{{ i }}{% endcapture %}
@@ -74,7 +127,7 @@
               </div>
             </div>
               {% endif %}
-          {% endfor %}
+          {% endfor %} {% endcomment %}
         </div>
         <div class="swiper-navigation">
           <div class="swiper-button-prev"></div>
@@ -112,6 +165,8 @@
           slideChange: function () {
             console.log('this.realIndex', this.realIndex);
             $('.swiper-slider-current-slide .current-slide').text(this.realIndex + 1);
+            $('[data-product-gallery-featured] .swiper-pagination .swiper-pagination-bullet[data-index="'${this.realIndex + 1}'"]').addClass('swiper-pagination-bullet-active').siblings().removeClass('swiper-pagination-bullet-active');
+            
           }
         }
       });
@@ -191,61 +246,64 @@
 <header id="header" class="mobile_nav-fixed--{{ section.settings.fixed_header }}">
   {% if section.settings.announcement_bar_enabled %}
     <div class="promo-banner" style="background:{{ section.settings.ab_bg_color }}; color: {{ section.settings.ab_text_color }}">
+
       <div class="promo-banner__content">
         <marquee width="100%" direction="left" scrollamount="3" class="hideDesktop"   
   >
-          {% for i in (1..3) %}          
+          {%- for block in section.blocks -%}
+            {% if block.type == 'promo_content' %}
+          {% capture promoText %}promo_text{% endcapture %}
+          {% capture promoImage %}promo_image{% endcapture %}
+          {% if block.settings[promoText] != blank %}
+          <div class="text-wrapp block--promo--data">
+              {% if block.settings[promoImage] != blank %}
+              <img class="announcement-icon lazyload" data-src="{{ block.settings[promoImage] | img_url }}">
+              {% endif %}
+              {{ block.settings[promoText] }}
+            </div>
+          {% endif %}
+        {% endif %}
+          {%- endfor -%}
+          {% comment %} {% for i in (1..3) %}          
           {% capture promoText %}promo_text_{{ i }}{% endcapture %}
           {% capture promoImage %}promo_image_{{ i }}{% endcapture %}
           {% if section.settings[promoText] != blank %}
           <div class="text-wrapp">
-              {% comment %} {% if forloop.index == 1 %}
-                <img class="announcement-icon lazyload" data-src="{{ 'mix_2.svg' | file_url }}">
-              {% elsif forloop.index == 2 %}
-                <img class="announcement-icon lazyload" data-src="{{ 'box.svg' | asset_url }}">
-              {% else %}
-                <span class="announcement-icon">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 1792 1792"
-                    xmlns="http://www.w3.org/2000/svg"><path d="M896 1664q-26 0-44-18l-624-602q-10-8-27.5-26t-55.5-65.5-68-97.5-53.5-121-23.5-138q0-220 127-344t351-124q62 0 126.5 21.5t120 58 95.5 68.5 76 68q36-36 76-68t95.5-68.5 120-58 126.5-21.5q224 0 351 124t127 344q0 221-229 450l-623 600q-18 18-44 18z" /></svg>
-                </span>
-              {% endif %} {% endcomment %}
               {% if section.settings[promoImage] != blank %}
               <img class="announcement-icon lazyload" data-src="{{ section.settings[promoImage] | img_url }}">
               {% endif %}
               {{ section.settings[promoText] }}
             </div>
           {% endif %}
-        {% endfor %}
+        {% endfor %} {% endcomment %}
         </marquee>
         <div class="hideMobile">
-          {% for i in (1..3) %}          
+          {%- for block in section.blocks -%}
+            {% if block.type == 'promo_content' %}
+          {% capture promoText %}promo_text{% endcapture %}
+          {% capture promoImage %}promo_image{% endcapture %}
+          {% if block.settings[promoText] != blank %}
+          <div class="text-wrapp block--promo--data">
+              {% if block.settings[promoImage] != blank %}
+              <img class="announcement-icon lazyload" data-src="{{ block.settings[promoImage] | img_url }}">
+              {% endif %}
+              {{ block.settings[promoText] }}
+            </div>
+          {% endif %}
+        {% endif %}
+          {%- endfor -%}
+          {% comment %} {% for i in (1..3) %}          
           {% capture promoText %}promo_text_{{ i }}{% endcapture %}
           {% capture promoImage %}promo_image_{{ i }}{% endcapture %}
           {% if section.settings[promoText] != blank %}
           <div class="text-wrapp">
-              {% comment %} {% if forloop.index == 1 %}
-                <img class="announcement-icon lazyload" data-src="{{ 'mix_2.svg' | file_url }}">
-              {% elsif forloop.index == 2 %}
-                <img class="announcement-icon lazyload" data-src="{{ 'box.svg' | asset_url }}">
-              {% else %}
-                <span class="announcement-icon">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 1792 1792"
-                    xmlns="http://www.w3.org/2000/svg"><path d="M896 1664q-26 0-44-18l-624-602q-10-8-27.5-26t-55.5-65.5-68-97.5-53.5-121-23.5-138q0-220 127-344t351-124q62 0 126.5 21.5t120 58 95.5 68.5 76 68q36-36 76-68t95.5-68.5 120-58 126.5-21.5q224 0 351 124t127 344q0 221-229 450l-623 600q-18 18-44 18z" /></svg>
-                </span>
-              {% endif %} {% endcomment %}
               {% if section.settings[promoImage] != blank %}
               <img class="announcement-icon lazyload" data-src="{{ section.settings[promoImage] | img_url }}">
               {% endif %}
               {{ section.settings[promoText] }}
             </div>
           {% endif %}
-        {% endfor %}
+        {% endfor %} {% endcomment %}
         </div>
         
       </div>
@@ -465,31 +523,32 @@
     {% if section.settings.announcement_bar_enabled %}
       <div class="promo-banner" style="background:{{ section.settings.ab_bg_color }}; color: {{ section.settings.ab_text_color }}">
         <div class="promo-banner__content">
-          {% for i in (1..3) %}
+          {%- for block in section.blocks -%}
+            {% if block.type == 'promo_content' %}
+          {% capture promoText %}promo_text{% endcapture %}
+          {% capture promoImage %}promo_image{% endcapture %}
+          {% if block.settings[promoText] != blank %}
+          <div class="text-wrapp block--promo--data">
+              {% if block.settings[promoImage] != blank %}
+              <img class="announcement-icon lazyload" data-src="{{ block.settings[promoImage] | img_url }}">
+              {% endif %}
+              {{ block.settings[promoText] }}
+            </div>
+          {% endif %}
+        {% endif %}
+          {%- endfor -%}
+          {% comment %} {% for i in (1..3) %}
             {% capture promoText %}promo_text_{{ i }}{% endcapture %}
             {% capture promoImage %}promo_image_{{ i }}{% endcapture %}
             {% if section.settings[promoText] != blank %}
               <div class="text-wrapp">
-                {% comment %} {% if forloop.index == 1 %}
-                  <img class="announcement-icon lazyload" data-src="{{ 'mix_2.svg' | file_url }}">
-                {% elsif forloop.index == 2 %}
-                  <img class="announcement-icon lazyload" data-src="{{ 'box.svg' | asset_url }}">
-                {% else %}
-                  <span class="announcement-icon">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 1792 1792"
-                      xmlns="http://www.w3.org/2000/svg"><path d="M896 1664q-26 0-44-18l-624-602q-10-8-27.5-26t-55.5-65.5-68-97.5-53.5-121-23.5-138q0-220 127-344t351-124q62 0 126.5 21.5t120 58 95.5 68.5 76 68q36-36 76-68t95.5-68.5 120-58 126.5-21.5q224 0 351 124t127 344q0 221-229 450l-623 600q-18 18-44 18z" /></svg>
-                  </span>
-                {% endif %} {% endcomment %}
                 {% if section.settings[promoImage] != blank %}
                 <img class="announcement-icon lazyload" data-src="{{ section.settings[promoImage] | img_url }}">
                 {% endif %}
                 {{ section.settings[promoText] }}
               </div>
             {% endif %}
-          {% endfor %}
+          {% endfor %} {% endcomment %}
         </div>
         <div class="promo-banner__close"></div>
       </div>
@@ -1017,35 +1076,6 @@ editor events, etc.
         "default": true
       },
       {
-        "type": "image_picker",
-        "id": "promo_image_1",
-        "label": "Promo Image 1"
-      },
-      {
-        "type": "richtext",
-        "id": "promo_text_1",
-        "label": "General Text"
-      },
-      {
-        "type": "image_picker",
-        "id": "promo_image_2",
-        "label": "Promo Image 2"
-      },
-      {
-        "type": "richtext",
-        "id": "promo_text_2",
-        "label": "Shipping Text"
-      },
-      {
-        "type": "image_picker",
-        "id": "promo_image_3",
-        "label": "Promo Image 3"
-      }, {
-        "type": "richtext",
-        "id": "promo_text_3",
-        "label": "Text",
-        "info": "Maximum character limit is 170"
-      }, {
         "type": "color",
         "id": "ab_text_color",
         "label": "Text Color",
@@ -1078,66 +1108,6 @@ editor events, etc.
         "id": "enable_mobile_dropdown_slider",
         "label": "Show View all offer in dropdown for mobile",
         "default": true
-      }, {
-        "type": "image_picker",
-        "id": "alert_icon_1",
-        "label": "Alet Icon 1"
-      }, {
-        "type": "richtext",
-        "id": "alert_text_1",
-        "label": "Alert Text 1"
-      }, {
-        "type": "richtext",
-        "id": "alert_text_desc_1",
-        "label": "Alert Description 1"
-      }, {
-        "type": "image_picker",
-        "id": "alert_icon_2",
-        "label": "Alet Icon 2"
-      }, {
-        "type": "richtext",
-        "id": "alert_text_2",
-        "label": "Alert Text 2"
-      }, {
-        "type": "richtext",
-        "id": "alert_text_desc_2",
-        "label": "Alert Description 2"
-      }, {
-        "type": "image_picker",
-        "id": "alert_icon_3",
-        "label": "Alet Icon 3"
-      }, {
-        "type": "richtext",
-        "id": "alert_text_3",
-        "label": "Alert Text 3"
-      }, {
-        "type": "richtext",
-        "id": "alert_text_desc_3",
-        "label": "Alert Description 3"
-      }, {
-        "type": "image_picker",
-        "id": "alert_icon_4",
-        "label": "Alet Icon 4"
-      }, {
-        "type": "richtext",
-        "id": "alert_text_4",
-        "label": "Alert Text 4"
-      }, {
-        "type": "richtext",
-        "id": "alert_text_desc_4",
-        "label": "Alert Description 4"
-      }, {
-        "type": "image_picker",
-        "id": "alert_icon_5",
-        "label": "Alet Icon 5"
-      }, {
-        "type": "richtext",
-        "id": "alert_text_5",
-        "label": "Alert Text 5"
-      }, {
-        "type": "richtext",
-        "id": "alert_text_desc_5",
-        "label": "Alert Description 5"
       }, {
         "type": "color",
         "id": "alert_text_color",
@@ -1345,7 +1315,6 @@ editor events, etc.
         ]
       }
     ],
-    "max_blocks": 6,
     "blocks": [
       {
         "type": "mega_item",
@@ -1375,6 +1344,41 @@ editor events, etc.
             "type": "url",
             "id": "link",
             "label": "Link"
+          }
+        ]
+      },
+      {
+        "type": "promo_content",
+        "name": "Promo Content",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "promo_image",
+            "label": "Promo Image"
+          },
+          {
+            "type": "richtext",
+            "id": "promo_text",
+            "label": "General Text"
+          }
+        ]
+      },
+      {
+        "type": "alert_content",
+        "name": "Alert Content",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "alert_icon",
+            "label": "Alert Icon"
+          }, {
+            "type": "richtext",
+            "id": "alert_text",
+            "label": "Alert Text"
+          }, {
+            "type": "richtext",
+            "id": "alert_text_desc",
+            "label": "Alert Description"
           }
         ]
       }

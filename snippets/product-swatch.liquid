@@ -297,6 +297,7 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
     $('.product-gallery__thumbnail.showThis').each(function(i) {
       $(this).attr('data-ind', i);
     })
+    $('[data-product-gallery-featured] .swiper-pagination .swiper-pagination-bullet[data-index="1"]').trigger('click');
     $('html,body').animate({ scrollTop: $('body').offset().top - 140 }, 'slow');
   }
   function updatepdpSizeOption(selectedSize) {
@@ -318,12 +319,16 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
           }"><span class="inner-dot"></span></span>`;
         }
       },
+      on: {
+          slideChange: function () {
+           
+            $('.swiper-slider-current-slide .current-slide').text(this.realIndex + 1);
+            let updatedIndex = this.realIndex+1;  console.log('this.realIndex====>',updatedIndex);
+            $(document).find('[data-product-gallery-featured] .swiper-pagination .swiper-pagination-bullet[data-index="'+updatedIndex+'"]').addClass('swiper-pagination-bullet-active').siblings().removeClass('swiper-pagination-bullet-active');            
+          }
+        }
 
-// Navigation arrows
-// navigation: {
-// nextEl: '.swiper-button-next',
-// prevEl: '.swiper-button-prev',
-// },
+
     });
   })
 </script>
