@@ -305,26 +305,38 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
   }
   window.addEventListener("DOMContentLoaded", (event) => {
     new Swiper('.swiper-container', {
-      loop: false,
-      lazy: true,
-      slidesPerView: 1,
+//       loop: false,
+//       lazy: true,
+//       slidesPerView: 1,
 
-// If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function(index, className) {
-          return `<span class="outer-dot swiper-pagination-bullet" data-index="${
-            index + 1
-          }"><span class="inner-dot"></span></span>`;
+// // If we need pagination
+//       pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//         renderBullet: function(index, className) {
+//           return `<span class="outer-dot swiper-pagination-bullet" data-index="${
+//             index + 1
+//           }"><span class="inner-dot"></span></span>`;
+//         }
+//       },
+        speed: 500,
+        slidesPerView: 1,
+        loop: false,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        on: {
+          slideChange: function () {
+            console.log('this.realIndex', this.realIndex);
+            $('.swiper-slider-current-slide .current-slide').text(this.realIndex + 1);
+            $('[data-product-gallery-featured] .swiper-pagination .swiper-pagination-bullet[data-index="'${this.realIndex + 1}'"]').addClass('swiper-pagination-bullet-active').siblings().removeClass('swiper-pagination-bullet-active');
+            
+          }
         }
-      },
+      });
 
-// Navigation arrows
-// navigation: {
-// nextEl: '.swiper-button-next',
-// prevEl: '.swiper-button-prev',
-// },
+
     });
   })
 </script>
