@@ -6,12 +6,22 @@
     {% if section.settings.enable_alert_bar_slider %}data-slider-enabled{% endif %}>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
+        {%- for block in section.blocks -%}
+          {% if block.type == 'alert_content' %}
+          {% capture alertText %}alert_text{% endcapture %}
+          {% capture alertIcon %}alert_icon{% endcapture %}
+          <div class="cm-inner-alert-box swiper-slide">{{ block.settings[alertText] }}</div>
+          {% endif %}
+        {%- endfor -%}
+
+
         {% for i in (1..5) %}
           {% capture alertText %}alert_text_{{ i }}{% endcapture %}
           {% capture alertIcon %}alert_icon_{{ i }}{% endcapture %}
-
           <div class="cm-inner-alert-box swiper-slide">{{ section.settings[alertText] }}</div>
         {% endfor %}
+
+
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
@@ -36,6 +46,49 @@
 
       <div modal-content="topbar-offers" class="modal__container swiper-container">
         <div class="swiper-wrapper">
+          {%- for block in section.blocks -%}
+            {% if block.type == 'alert_content' %}
+            {% capture alertText %}alert_text{% endcapture %}
+            {% capture alertIcon %}alert_icon{% endcapture %}
+            {% capture alertDesc %}alert_text_desc{% endcapture %}
+              {% if block.settings[alertText] != blank and block.settings[alertIcon] != blank and block.settings[alertDesc] != blank %}
+                <div
+                  data-offer-id="{{ forloop.index }}"
+                  data-offer-type="expandable"
+                  class="offer swiper-slide">
+                  <div class="offer__image-wrapper"><img
+                      loading="lazy"
+                      src="{{ block.settings[alertIcon] | img_url: '200x' }}"
+                      alt="{{ block.settings[alertText] }}"
+                      class="offer__image loaded"></div>
+                  <div class="offer__title-wrapper">
+                    <h4 class="offer__title text-navy-900">
+                      <p>{{ block.settings[alertText] }}</p>
+                    </h4>
+                    <button
+                      offer-cta-expand="{{ forloop.index }}"
+                      aria-expanded="false"
+                      aria-label="{{ block.settings[alertText] }}'"
+                      class="offer__cta">Learn More</button>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    offer-block-id="{{ forloop.index }}"
+                    class="offer__body-wrapper">
+                    <div class="offer__body">
+                      <p>{{ block.settings[alertDesc] }}</p>
+                    </div>
+                    <button
+                      offer-cta-collapse=""
+                      aria-label="{{ block.settings[alertText] }}"
+                      class="offer__cta">Show Less</button>
+                  </div>
+                </div>
+                  {% endif %}
+            {% endif %}
+          {%- endfor -%}
+
+
           {% for i in (1..5) %}
             {% capture alertText %}alert_text_{{ i }}{% endcapture %}
             {% capture alertIcon %}alert_icon_{{ i }}{% endcapture %}
