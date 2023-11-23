@@ -428,6 +428,37 @@
         "sec_top": 45,
         "sec_bottom": 45
       }
+    },
+    "0be62f2d-45ca-4ef0-8def-407a6a4f2249": {
+      "type": "video",
+      "settings": {
+        "wide_display": true,
+        "aspect_ratio": "16:9",
+        "autoplay": false,
+        "autoloop": true,
+        "mute_video": true,
+        "show_controls": false,
+        "video_dark_overlay": false,
+        "iframe_video": "https:\/\/vimeo.com\/878912461?share=copy",
+        "html5_video": "",
+        "display_text_over_video": false,
+        "preheading": "",
+        "heading": "",
+        "subheading": "",
+        "button1_label": "Play Video",
+        "button1_link": "",
+        "button1_style": "global-button--banner",
+        "button2_label": "",
+        "button2_link": "",
+        "button2_style": "global-button--banner",
+        "text_position": "center",
+        "text_align": "center",
+        "caption_content_background": "original",
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "",
+        "custom_css": ""
+      }
     }
   },
   "order": [
@@ -437,6 +468,7 @@
     "80f4c16b-a976-42cf-bba2-81aca3dcc870",
     "f9c8783f-8ca3-4744-9187-c08bf43a22f3",
     "e1722e7a-35fe-4249-b951-23d06ba5a66e",
-    "2ca3a8be-acb3-4083-b592-eccc1d00275a"
+    "2ca3a8be-acb3-4083-b592-eccc1d00275a",
+    "0be62f2d-45ca-4ef0-8def-407a6a4f2249"
   ]
 }
