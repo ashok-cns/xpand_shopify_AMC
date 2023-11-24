@@ -434,7 +434,7 @@
       "settings": {
         "wide_display": true,
         "aspect_ratio": "16:9",
-        "autoplay": false,
+        "autoplay": true,
         "autoloop": true,
         "mute_video": true,
         "show_controls": false,
