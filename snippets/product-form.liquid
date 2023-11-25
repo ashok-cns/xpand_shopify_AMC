@@ -93,12 +93,27 @@
     {% endif %}
   {% endif %}
   <div class="purchase-details">
-    <p
-      class="selected-swatch-text desktop hide_desktop"
-      data-template="{{ template.suffix }}"
-      data-type="color">Color:
-      <span class="selected-swatch-text-value"></span>
-    </p>
+    {% assign optionName = product.options_with_values | map: 'name' | join:',' | downcase %}
+    {% if optionName contains 'color' or optionName contains 'size' %}
+      <div class="selected-swatch-text-wrap">
+        {% if optionName contains 'color' %}
+        <p
+          class="selected-swatch-text desktop hide_desktop mobile_fixed"
+          data-template="{{ template.suffix }}"
+          data-type="color">Color:
+          <span class="selected-swatch-text-value"></span>
+        </p>
+        {% endif %}
+        {% if optionName contains 'size' %}
+        <p
+          class="selected-swatch-text desktop hide_desktop mobile_fixed"
+          data-template="{{ template.suffix }}"
+          data-type="size">Size:
+          <span class="selected-swatch-text-value"></span>
+        </p>
+        {% endif %}
+      </div>
+    {% endif %}
     {% if settings.display_product_quantity %}
       <div class="purchase-details__quantity product-quantity-box">
         {% comment %} <label for="quantity">{{ 'products.product.quantity' | t }}</label> {% endcomment %}

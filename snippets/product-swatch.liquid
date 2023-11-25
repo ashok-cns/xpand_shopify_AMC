@@ -32,12 +32,28 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
         <h3 class="pdp-custom-swatch-heading">{{ color_group }}</h3>
         <ul class="pdp-custom-swatch-lists xyz">
           {% for list in colors_list %}
+            {% assign value = list | remove: '"'  | strip %}
+            {% assign optionAvailable = false %}
+            {% assign optionQty = 0 %}
+            {% for c_variant in product.variants %}
+              {% assign c_variant_title_downcase = c_variant.title | downcase %}
+              {% assign value_downcase = value | downcase %}
+              {% if c_variant_title_downcase == value_downcase %}
+                {% assign optionAvailable = true %}
+                {% if c_variant.inventory_management != blank and c_variant.inventory_quantity > 0 %}
+                  {% assign optionQty = c_variant.inventory_quantity %}
+                {% endif %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
             {% assign itemName = list | handleize | append: '.png' | prepend: colorinit | downcase | asset_url %}
-            <li class="pdp-custom-swatch-list-item" data-color="{{ list | remove: '"' | strip | downcase }}">
+            {% if optionAvailable %}
+            <li class="pdp-custom-swatch-list-item{% if optionQty == 0 %} pdp-custom-swatch-soldout{% endif %}" data-color="{{ list | remove: '"' | strip | downcase }}">
               <img
                 loading="lazy"
                 src="{{ itemName }}"
                 alt="{{ list | remove: '"'  | strip }}" /></li>
+            {% endif %}
           {% endfor %}
         </ul>
 
@@ -207,6 +223,7 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
         console.log('dataVal', dataVal);
         if (dataVal == selectedOption) {
           $('#pdp-custom-swatch-size-selected-option').text($this.attr('data-value'));
+          $('.selected-swatch-text[data-type="size"] .selected-swatch-text-value').text(selectedOption);
           $this.find('label').trigger('click');
         }
       })
@@ -302,6 +319,7 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
   }
   function updatepdpSizeOption(selectedSize) {
     $('.swatch[data-option-index][data-title="size"]  .swatch-element[data-value="' + selectedSize + '"] label').trigger('click');
+    $('.selected-swatch-text[data-type="size"] .selected-swatch-text-value').text(selectedSize);
   }
   window.addEventListener("DOMContentLoaded", (event) => {
     new Swiper('.swiper-container', {

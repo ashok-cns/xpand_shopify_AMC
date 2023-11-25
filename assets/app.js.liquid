@@ -1842,3 +1842,9 @@ fnBrowserDetect();
 detectOS();
   })
 
+$('body').on('click', '.product__details--product-page .product-rating', () => {
+  $('.product-tab #tab-3').click();
+  $('html,body').animate({
+    scrollTop: $(".shopify-section-product-tab").offset().top - 120},
+  'slow');
+});

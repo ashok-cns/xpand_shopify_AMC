@@ -67,6 +67,26 @@ max-width: 160px;
 ul.pdp-custom-swatch-lists li.active img{
     border-width: 0;
 }
+ul.pdp-custom-swatch-lists li.pdp-custom-swatch-soldout{
+    opacity: 0.7;
+    border-color: #bdbdbd;
+    pointer-events: none;
+    position: relative;
+}
+ul.pdp-custom-swatch-lists li.pdp-custom-swatch-soldout::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url('https://www.xpandlaces.com/cdn/shop/t/231/assets/soldout.png?v=12033488525615444041700847549');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.5;
+}
 h1.product_name{
     font-family: neuzeitgroteskblack;
     letter-spacing: 0;
@@ -92,8 +112,8 @@ body[data-template="primary-alternate"] h1.product_name  {
 body[data-template="primary-alternate"] .product-block.product-block--price {
     justify-content: space-between;
 }
-body[data-template="primary-alternate"] form.shopify-product-form p.selected-swatch-text,
-body[data-template="primary"] form.shopify-product-form p.selected-swatch-text{
+body[data-template="primary-alternate"] form.shopify-product-form p.selected-swatch-text:not(.mobile_fixed),
+body[data-template="primary"] form.shopify-product-form p.selected-swatch-text:not(.mobile_fixed){
     display: none!important;
 }
 .price-note{
@@ -871,6 +891,10 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
 .product_gallery img {
      background-color: transparent!important;   
 }
+.product__details--product-page .product-rating{
+    cursor: pointer;
+    display: inline-flex;
+}
 @media screen and (max-width: 767px) {
     .product-tab .tab-head .columns {border-bottom: 0;}
     .product-tab .tab-head .columns li {
@@ -1037,7 +1061,7 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
     .product_form.smart-payment-button--false .purchase-details{
         padding: 10px;
         position: fixed;
-        z-index: 9;
+        z-index: 10;
         bottom: 0;
         left: 0;
         right: 0;
@@ -1064,13 +1088,20 @@ body[data-template="primary-alternate"] .body-content .videos-columns {
         border-radius: 0;
         height: 42px;
     }
-    .smart-payment-button--false .purchase-details p.selected-swatch-text{
+
+    .smart-payment-button--false .purchase-details .selected-swatch-text-wrap{
         width: 100%;
+        display: flex;
+    }
+    .smart-payment-button--false .purchase-details p.selected-swatch-text{
         margin-bottom: 1px;
         font-size: 14px;
         text-transform: capitalize;
         font-family: neuzeit_grotesk_light;
         letter-spacing: 1px;
+    }
+    .smart-payment-button--false .purchase-details p.selected-swatch-text + p.selected-swatch-text{
+        margin-left: 20px;
     }
     .shoes-types {
         padding-bottom: 15px;
