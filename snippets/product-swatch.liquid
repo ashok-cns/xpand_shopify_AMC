@@ -223,7 +223,7 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
         console.log('dataVal', dataVal);
         if (dataVal == selectedOption) {
           $('#pdp-custom-swatch-size-selected-option').text($this.attr('data-value'));
-          $('.selected-swatch-text[data-type="size"] .selected-swatch-text-value').text(selectedOption);
+          $('.selected-swatch-text[data-type="size"] .selected-swatch-text-value').text(selectedOption.replaceAll('~','"'));
           $this.find('label').trigger('click');
         }
       })
