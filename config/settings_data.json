@@ -839,8 +839,8 @@
             "type": "alert_content",
             "settings": {
               "alert_icon": "shopify:\/\/shop_images\/up_to_15_off.png",
-              "alert_text": "<p>Black Friday Sale. CODE: <em><strong>BF15<\/strong><\/em> for an extra 15% off<\/p>",
-              "alert_text_desc": "<p>Use code \"<strong>BF15<\/strong>\" to enjoy an additional 15% off sitewide.<\/p>"
+              "alert_text": "<p>Cyber Monday Sale. CODE: <em><strong>CM15<\/strong><\/em> for an extra 15% off<\/p>",
+              "alert_text_desc": "<p>Use code \"<strong>CM15<\/strong>\" to enjoy an additional 15% off sitewide.<\/p>"
             }
           },
           "256ab9f7-5b47-4192-964d-9e98b87dee64": {
