@@ -835,14 +835,6 @@
               "link": "shopify:\/\/products\/xpand-shoe-wipes"
             }
           },
-          "8172cb1e-68c5-4369-b6a5-6f8cf3a42477": {
-            "type": "alert_content",
-            "settings": {
-              "alert_icon": "shopify:\/\/shop_images\/up_to_15_off.png",
-              "alert_text": "<p>Cyber Monday Sale. CODE: <em><strong>CM15<\/strong><\/em> for an extra 15% off<\/p>",
-              "alert_text_desc": "<p>Use code \"<strong>CM15<\/strong>\" to enjoy an additional 15% off sitewide.<\/p>"
-            }
-          },
           "256ab9f7-5b47-4192-964d-9e98b87dee64": {
             "type": "alert_content",
             "settings": {
@@ -874,6 +866,15 @@
               "alert_text": "<p>Want It Quick? Free 2-Day Shipping for USA.<\/p>",
               "alert_text_desc": "<p>No more long waits! For orders $50 and more, use code \"<strong>VIPUSA<\/strong>\" at checkout to enjoy an automatic upgrade to DHL Express for swift 2-day delivery.<\/p>"
             }
+          },
+          "8172cb1e-68c5-4369-b6a5-6f8cf3a42477": {
+            "type": "alert_content",
+            "disabled": true,
+            "settings": {
+              "alert_icon": "shopify:\/\/shop_images\/up_to_15_off.png",
+              "alert_text": "<p>Cyber Monday Sale. CODE: <em><strong>CM15<\/strong><\/em> for an extra 15% off<\/p>",
+              "alert_text_desc": "<p>Use code \"<strong>CM15<\/strong>\" to enjoy an additional 15% off sitewide.<\/p>"
+            }
           }
         },
         "block_order": [
@@ -885,11 +886,11 @@
           "546f108e-5941-45f0-b039-646185ab2b3e",
           "66538e64-a4f3-43c3-9585-e78dcbb6053c",
           "4c49e9d3-7311-44c8-ade5-855821ae4385",
-          "8172cb1e-68c5-4369-b6a5-6f8cf3a42477",
           "256ab9f7-5b47-4192-964d-9e98b87dee64",
           "de8e7a28-3268-45e8-b050-9117f93d059e",
           "d76268cc-795b-4498-bfc9-d906a796e3c1",
-          "a8cf62fb-fdd2-483e-8eda-3190fb26a1ad"
+          "a8cf62fb-fdd2-483e-8eda-3190fb26a1ad",
+          "8172cb1e-68c5-4369-b6a5-6f8cf3a42477"
         ],
         "settings": {
           "announcement_bar_enabled": true,
