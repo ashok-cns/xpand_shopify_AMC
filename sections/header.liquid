@@ -10,7 +10,12 @@
           {% if block.type == 'alert_content' %}
           {% capture alertText %}alert_text{% endcapture %}
           {% capture alertIcon %}alert_icon{% endcapture %}
-          <div class="cm-inner-alert-box swiper-slide">{{ block.settings[alertText] }}</div>
+          {% capture announcementBarIcon %}announcement_bar_icon{% endcapture %}
+          <div class="cm-inner-alert-box swiper-slide">
+            {% if block.settings[announcementBarIcon] != blank %}
+              <img class="announcement-alert-icon lazyload" data-src="{{ block.settings[announcementBarIcon] | img_url }}">
+            {% endif %}
+          {{ block.settings[alertText] }}</div>
           {% endif %}
         {%- endfor -%}
 
@@ -1366,7 +1371,11 @@ editor events, etc.
       {
         "type": "alert_content",
         "name": "Alert Content",
-        "settings": [
+        "settings": [{
+            "type": "image_picker",
+            "id": "announcement_bar_icon",
+            "label": "Announcement Bar Alert Icon"
+          },
           {
             "type": "image_picker",
             "id": "alert_icon",
