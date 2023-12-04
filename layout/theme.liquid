@@ -56,18 +56,6 @@ window.TriplePixelData={TripleName:"xpandlaces.myshopify.com",ver:"1.9.0"},funct
     </script>
     <!-- End Anti-flicker snippet -->
 
-    <!--  Hotjar Tracking Code for Xpand Laces -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3666338,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-    
     
     <script> window._Sendlane = window._Sendlane || []; 
       _Sendlane.push
@@ -293,6 +281,18 @@ window.TriplePixelData={TripleName:"xpandlaces.myshopify.com",ver:"1.9.0"},funct
     {% if collection.next_product %}<link rel="next" href="{{ collection.next_product }}">{% endif %}
   
   {% render 'shogun-head' %}
+
+        <!--  Hotjar Tracking Code for Xpand Laces -->
+  <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:3666338,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
 </head>
 
   {% if template contains "index" %}
