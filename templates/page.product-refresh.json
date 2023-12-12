@@ -94,11 +94,52 @@
         "sec_top": 35,
         "sec_bottom": 35
       }
+    },
+    "2f5561ef-d4a5-481e-bc1d-78163928e285": {
+      "type": "slideshow",
+      "blocks": {
+        "132284ad-520c-4cd0-8096-f64d569cbc77": {
+          "type": "image",
+          "settings": {
+            "type": "image",
+            "image": "shopify:\/\/shop_images\/Get_to_Know_our_Laces_-_Desktop.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Get_to_Know_our_Laces_-_Mobile_cb5f8669-7a11-4704-a76d-bd756fce28df.png",
+            "video_url": "",
+            "pretext": "",
+            "title": "",
+            "subtitle": "",
+            "button1": "",
+            "button1_link": "",
+            "button1_style": "global-button--banner",
+            "button2": "",
+            "button2_link": "",
+            "button2_style": "global-button--banner",
+            "text_position": "center",
+            "text_align": "center",
+            "caption_content_background": "original"
+          }
+        }
+      },
+      "block_order": [
+        "132284ad-520c-4cd0-8096-f64d569cbc77"
+      ],
+      "settings": {
+        "wide_display": true,
+        "slideshow_text_animation": "fadeInDown",
+        "slideshow_animation": "fade",
+        "slideshow_speed": 6,
+        "activate_adaptiveHeight": false,
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "",
+        "custom_css": ""
+      }
     }
   },
   "order": [
     "main",
     "e09375ef-62a7-4a56-84f4-bc649c34a35f",
-    "4d1a06a9-618a-4fd4-8005-1dfe983f9e17"
+    "4d1a06a9-618a-4fd4-8005-1dfe983f9e17",
+    "2f5561ef-d4a5-481e-bc1d-78163928e285"
   ]
 }
