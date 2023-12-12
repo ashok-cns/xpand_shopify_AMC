@@ -55,10 +55,48 @@
         "css_class": "landing-page",
         "custom_css": ""
       }
+    },
+    "4d1a06a9-618a-4fd4-8005-1dfe983f9e17": {
+      "type": "product-feature",
+      "blocks": {
+        "3596302c-4666-4a3c-8f89-08e6ee72033a": {
+          "type": "item",
+          "settings": {
+            "text": "FREE SHIPPING",
+            "text_mobile": "FREE SHIPPING",
+            "icon": "shopify:\/\/shop_images\/mobile-box.png"
+          }
+        },
+        "b0ae08bc-0925-481e-9bd7-fd87f3ce014d": {
+          "type": "item",
+          "settings": {
+            "text": "",
+            "text_mobile": ""
+          }
+        },
+        "8f87430d-fa88-4f7f-baf8-d38b42c46a41": {
+          "type": "item",
+          "settings": {
+            "text": "",
+            "text_mobile": ""
+          }
+        }
+      },
+      "block_order": [
+        "3596302c-4666-4a3c-8f89-08e6ee72033a",
+        "b0ae08bc-0925-481e-9bd7-fd87f3ce014d",
+        "8f87430d-fa88-4f7f-baf8-d38b42c46a41"
+      ],
+      "settings": {
+        "text_color": "",
+        "sec_top": 0,
+        "sec_bottom": 0
+      }
     }
   },
   "order": [
     "main",
-    "e09375ef-62a7-4a56-84f4-bc649c34a35f"
+    "e09375ef-62a7-4a56-84f4-bc649c34a35f",
+    "4d1a06a9-618a-4fd4-8005-1dfe983f9e17"
   ]
 }
