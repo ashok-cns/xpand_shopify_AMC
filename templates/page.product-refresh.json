@@ -70,15 +70,17 @@
         "b0ae08bc-0925-481e-9bd7-fd87f3ce014d": {
           "type": "item",
           "settings": {
-            "text": "",
-            "text_mobile": ""
+            "text": "TRY XPAND FOR 90 DAYS",
+            "text_mobile": "TRY XPAND FOR 90 DAYS",
+            "icon": "shopify:\/\/shop_images\/mobile-heart.png"
           }
         },
         "8f87430d-fa88-4f7f-baf8-d38b42c46a41": {
           "type": "item",
           "settings": {
-            "text": "",
-            "text_mobile": ""
+            "text": "100% MONEY BACK GUARANTEE",
+            "text_mobile": "100% MONEY BACK GUARANTEE",
+            "icon": "shopify:\/\/shop_images\/mobile-check.png"
           }
         }
       },
