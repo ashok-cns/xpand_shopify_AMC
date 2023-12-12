@@ -89,8 +89,8 @@
       ],
       "settings": {
         "text_color": "",
-        "sec_top": 0,
-        "sec_bottom": 0
+        "sec_top": 35,
+        "sec_bottom": 35
       }
     }
   },
