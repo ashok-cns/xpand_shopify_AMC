@@ -22,6 +22,7 @@
         },
         "template--15471082930287__e09375ef-62a7-4a56-84f4-bc649c34a35f-description-1": {
           "type": "description",
+          "disabled": true,
           "settings": {
           }
         },
