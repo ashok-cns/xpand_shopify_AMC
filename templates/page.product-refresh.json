@@ -336,7 +336,7 @@
     "76c06d67-c19d-47b1-a147-df2ea1df0295": {
       "type": "custom-html",
       "settings": {
-        "title": "Custom Html Heading",
+        "title": "",
         "custom_html": "",
         "css_class": "",
         "custom_css": ""
