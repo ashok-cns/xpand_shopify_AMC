@@ -286,6 +286,52 @@
         "css_class": "",
         "custom_css": ""
       }
+    },
+    "e7617db3-7829-4080-a6d3-83013a6760e2": {
+      "type": "gallery",
+      "blocks": {
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-1": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-2": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-3": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-4": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-5": {
+          "type": "image",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-1",
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-2",
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-3",
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-4",
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-5"
+      ],
+      "settings": {
+        "wide_display": false,
+        "title": "Gallery",
+        "gallery_type": "classic",
+        "grid-size": 5,
+        "enable_lightbox": true,
+        "css_class": "",
+        "custom_css": ""
+      }
     }
   },
   "order": [
@@ -297,6 +343,7 @@
     "ebdf0e96-4bb5-4285-a698-42466eccfa23",
     "4cb86ccb-737f-4152-97e4-00e0e8e28ad4",
     "96a53893-4156-4635-939d-f86bdae541ed",
-    "86a6455c-a44b-471d-8109-2ad979fe5ba0"
+    "86a6455c-a44b-471d-8109-2ad979fe5ba0",
+    "e7617db3-7829-4080-a6d3-83013a6760e2"
   ]
 }
