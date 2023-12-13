@@ -141,6 +141,7 @@
         "template--15471082930287__505e700f-50d0-4023-bc45-d3d28c8acf1c-image-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/1.gif",
             "title": "LONG-LASTING ELASTIC LACES",
             "text": "<p>Xpand Laces are made with zero-memory elastic rubber, which ensure a consistent comfortable fit throughout your day and during your workouts. Xpand Laces work on all types of shoes and boots as you simply trim off the excess ends.<\/p>",
             "button_label": "",
@@ -152,6 +153,7 @@
         "template--15471082930287__505e700f-50d0-4023-bc45-d3d28c8acf1c-image-2": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/2.gif",
             "title": "LACE ANCHOR CLIPS",
             "text": "<p>Our patented Lace Anchors secure your laces in place through any intense activities, while maintaining an amazing comfortable fit.<\/p>",
             "button_label": "",
