@@ -325,19 +325,10 @@
       ],
       "settings": {
         "wide_display": false,
-        "title": "Gallery",
+        "title": "Other Ways to Tie",
         "gallery_type": "classic",
         "grid-size": 5,
         "enable_lightbox": true,
-        "css_class": "",
-        "custom_css": ""
-      }
-    },
-    "76c06d67-c19d-47b1-a147-df2ea1df0295": {
-      "type": "custom-html",
-      "settings": {
-        "title": "",
-        "custom_html": "",
         "css_class": "",
         "custom_css": ""
       }
@@ -353,7 +344,6 @@
     "4cb86ccb-737f-4152-97e4-00e0e8e28ad4",
     "96a53893-4156-4635-939d-f86bdae541ed",
     "86a6455c-a44b-471d-8109-2ad979fe5ba0",
-    "e7617db3-7829-4080-a6d3-83013a6760e2",
-    "76c06d67-c19d-47b1-a147-df2ea1df0295"
+    "e7617db3-7829-4080-a6d3-83013a6760e2"
   ]
 }
