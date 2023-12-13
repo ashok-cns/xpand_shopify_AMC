@@ -363,12 +363,6 @@
     "c081241e-b9d7-408e-94e1-5280392ffadb": {
       "type": "faq",
       "blocks": {
-        "template--15471082930287__c081241e-b9d7-408e-94e1-5280392ffadb-heading-1": {
-          "type": "heading",
-          "settings": {
-            "faq_title": "FAQs"
-          }
-        },
         "template--15471082930287__c081241e-b9d7-408e-94e1-5280392ffadb-content-1": {
           "type": "content",
           "settings": {
@@ -399,7 +393,6 @@
         }
       },
       "block_order": [
-        "template--15471082930287__c081241e-b9d7-408e-94e1-5280392ffadb-heading-1",
         "template--15471082930287__c081241e-b9d7-408e-94e1-5280392ffadb-content-1",
         "template--15471082930287__c081241e-b9d7-408e-94e1-5280392ffadb-content-2",
         "template--15471082930287__c081241e-b9d7-408e-94e1-5280392ffadb-content-3",
@@ -407,7 +400,7 @@
       ],
       "settings": {
         "sec_bg": "",
-        "title": "FAQ",
+        "title": "FAQs",
         "link": "shopify:\/\/pages\/faqs",
         "link_text": "See All FAQs",
         "sec_top": 0,
