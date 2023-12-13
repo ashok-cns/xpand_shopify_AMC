@@ -293,26 +293,31 @@
         "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Gallery-5050Lacing.png"
           }
         },
         "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-2": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Gallery-BarLacing.png"
           }
         },
         "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-3": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Gallery-DIamondLacing2.png"
           }
         },
         "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-4": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Gallery-TripleX.png"
           }
         },
         "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-5": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Gallery-AngledBar.png"
           }
         }
       },
