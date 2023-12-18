@@ -94,11 +94,92 @@
         "sec_top": 35,
         "sec_bottom": 35
       }
+    },
+    "7a736303-e48b-458d-bcd1-1431cb5ad520": {
+      "type": "slideshow",
+      "blocks": {
+        "dc26112c-0032-46b0-b0b3-5dad116a3179": {
+          "type": "image",
+          "settings": {
+            "type": "image",
+            "image": "shopify:\/\/shop_images\/Get_to_Know_our_Laces_-_Desktop.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Get_to_Know_our_Laces_-_Mobile_cb5f8669-7a11-4704-a76d-bd756fce28df.png",
+            "video_url": "",
+            "pretext": "",
+            "title": "",
+            "subtitle": "",
+            "button1": "",
+            "button1_link": "",
+            "button1_style": "global-button--banner",
+            "button2": "",
+            "button2_link": "",
+            "button2_style": "global-button--banner",
+            "text_position": "center",
+            "text_align": "center",
+            "caption_content_background": "original"
+          }
+        }
+      },
+      "block_order": [
+        "dc26112c-0032-46b0-b0b3-5dad116a3179"
+      ],
+      "settings": {
+        "wide_display": true,
+        "slideshow_text_animation": "",
+        "slideshow_animation": "fade",
+        "slideshow_speed": 6,
+        "activate_adaptiveHeight": false,
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "4a274efc-1beb-4959-8056-246dbbd75e4c": {
+      "type": "image-text",
+      "blocks": {
+        "template--15495455047791__4a274efc-1beb-4959-8056-246dbbd75e4c-image-1": {
+          "type": "image",
+          "settings": {
+            "title": "GUARANTEED NOT TO SLIP",
+            "text": "<p>The Xpand Lock holds over 30 pounds (16.5 kg) of pressure, ensuring that your feet are secure in your shoe, even during physical activities. The Xpand Lacing System has been tested to be 4 times stronger than any other clip design.<\/p>",
+            "button_label": "View all",
+            "link": "",
+            "bg_color": "",
+            "text_color": ""
+          }
+        },
+        "template--15495455047791__4a274efc-1beb-4959-8056-246dbbd75e4c-image-2": {
+          "type": "image",
+          "settings": {
+            "title": "Your headline",
+            "text": "<p>Promotion description appears here.<\/p>",
+            "button_label": "View all",
+            "link": "",
+            "bg_color": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15495455047791__4a274efc-1beb-4959-8056-246dbbd75e4c-image-1",
+        "template--15495455047791__4a274efc-1beb-4959-8056-246dbbd75e4c-image-2"
+      ],
+      "settings": {
+        "wide_display": false,
+        "featured_links_per_row": "1",
+        "frontpage_text_align": "left",
+        "frontpage_image_position": "row",
+        "css_class": "",
+        "custom_css": ""
+      }
     }
   },
   "order": [
     "main",
     "ab6b0a00-3faf-4639-805d-bb4879571868",
-    "a8f19772-6225-42ac-8d54-6679a9de5343"
+    "a8f19772-6225-42ac-8d54-6679a9de5343",
+    "7a736303-e48b-458d-bcd1-1431cb5ad520",
+    "4a274efc-1beb-4959-8056-246dbbd75e4c"
   ]
 }
