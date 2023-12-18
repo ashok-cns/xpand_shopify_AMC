@@ -213,6 +213,15 @@
         "css_class": "",
         "custom_css": ""
       }
+    },
+    "448d19fd-6286-4ccd-aae0-e80fa991bfc2": {
+      "type": "custom-html",
+      "settings": {
+        "title": "HOW TO INSTALL",
+        "custom_html": "",
+        "css_class": "",
+        "custom_css": ""
+      }
     }
   },
   "order": [
@@ -221,6 +230,7 @@
     "a8f19772-6225-42ac-8d54-6679a9de5343",
     "7a736303-e48b-458d-bcd1-1431cb5ad520",
     "4a274efc-1beb-4959-8056-246dbbd75e4c",
-    "3f9412db-e981-41ed-9f77-592a989db020"
+    "3f9412db-e981-41ed-9f77-592a989db020",
+    "448d19fd-6286-4ccd-aae0-e80fa991bfc2"
   ]
 }
