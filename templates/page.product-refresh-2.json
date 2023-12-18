@@ -141,6 +141,7 @@
         "template--15495455047791__4a274efc-1beb-4959-8056-246dbbd75e4c-image-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/4.gif",
             "title": "GUARANTEED NOT TO SLIP",
             "text": "<p>The Xpand Lock holds over 30 pounds (16.5 kg) of pressure, ensuring that your feet are secure in your shoe, even during physical activities. The Xpand Lacing System has been tested to be 4 times stronger than any other clip design.<\/p>",
             "button_label": "",
@@ -152,6 +153,7 @@
         "template--15495455047791__4a274efc-1beb-4959-8056-246dbbd75e4c-image-2": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/3.gif",
             "title": "QUICK-RELEASE LOCKING SYSTEM",
             "text": "<p>The Xpand Quick-Release Lock is a one piece design that is simple to install and even easier to use. Made with fiber reinforced resin, the patent-pending Quick-Release Lock is nearly indestructible.<\/p>",
             "button_label": "",
@@ -254,46 +256,6 @@
         "custom_css": ""
       }
     },
-    "fcaa67b3-77e1-4935-9c18-971a9973828f": {
-      "type": "gallery",
-      "blocks": {
-        "template--15495455047791__fcaa67b3-77e1-4935-9c18-971a9973828f-image-1": {
-          "type": "image",
-          "settings": {
-          }
-        },
-        "template--15495455047791__fcaa67b3-77e1-4935-9c18-971a9973828f-image-2": {
-          "type": "image",
-          "settings": {
-          }
-        },
-        "template--15495455047791__fcaa67b3-77e1-4935-9c18-971a9973828f-image-3": {
-          "type": "image",
-          "settings": {
-          }
-        },
-        "template--15495455047791__fcaa67b3-77e1-4935-9c18-971a9973828f-image-6": {
-          "type": "image",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--15495455047791__fcaa67b3-77e1-4935-9c18-971a9973828f-image-1",
-        "template--15495455047791__fcaa67b3-77e1-4935-9c18-971a9973828f-image-2",
-        "template--15495455047791__fcaa67b3-77e1-4935-9c18-971a9973828f-image-3",
-        "template--15495455047791__fcaa67b3-77e1-4935-9c18-971a9973828f-image-6"
-      ],
-      "settings": {
-        "wide_display": false,
-        "title": "MORE WAYS TO LACE",
-        "gallery_type": "classic",
-        "grid-size": 4,
-        "enable_lightbox": true,
-        "css_class": "",
-        "custom_css": ""
-      }
-    },
     "17029299529bfc8cf5": {
       "type": "apps",
       "blocks": {
@@ -360,7 +322,7 @@
         "link": "shopify:\/\/pages\/faqs",
         "link_text": "See All FAQs",
         "sec_top": 0,
-        "sec_bottom": 0
+        "sec_bottom": 50
       }
     }
   },
@@ -373,7 +335,6 @@
     "3f9412db-e981-41ed-9f77-592a989db020",
     "448d19fd-6286-4ccd-aae0-e80fa991bfc2",
     "8ef4376e-6351-46c2-80b0-48e79cf70a03",
-    "fcaa67b3-77e1-4935-9c18-971a9973828f",
     "17029299529bfc8cf5",
     "6b5dc53f-b5f9-4dbe-9678-c846e7b33434"
   ]
