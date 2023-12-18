@@ -222,6 +222,37 @@
         "css_class": "",
         "custom_css": ""
       }
+    },
+    "8ef4376e-6351-46c2-80b0-48e79cf70a03": {
+      "type": "video",
+      "settings": {
+        "wide_display": true,
+        "aspect_ratio": "16:9",
+        "autoplay": false,
+        "autoloop": true,
+        "mute_video": false,
+        "show_controls": true,
+        "video_dark_overlay": false,
+        "iframe_video": "https:\/\/youtu.be\/8hMcup2C-ds",
+        "html5_video": "",
+        "display_text_over_video": false,
+        "preheading": "",
+        "heading": "",
+        "subheading": "",
+        "button1_label": "",
+        "button1_link": "",
+        "button1_style": "global-button--banner",
+        "button2_label": "",
+        "button2_link": "",
+        "button2_style": "global-button--banner",
+        "text_position": "center",
+        "text_align": "center",
+        "caption_content_background": "original",
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "",
+        "custom_css": ""
+      }
     }
   },
   "order": [
@@ -231,6 +262,7 @@
     "7a736303-e48b-458d-bcd1-1431cb5ad520",
     "4a274efc-1beb-4959-8056-246dbbd75e4c",
     "3f9412db-e981-41ed-9f77-592a989db020",
-    "448d19fd-6286-4ccd-aae0-e80fa991bfc2"
+    "448d19fd-6286-4ccd-aae0-e80fa991bfc2",
+    "8ef4376e-6351-46c2-80b0-48e79cf70a03"
   ]
 }
