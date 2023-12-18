@@ -173,6 +173,46 @@
         "css_class": "",
         "custom_css": ""
       }
+    },
+    "3f9412db-e981-41ed-9f77-592a989db020": {
+      "type": "slideshow",
+      "blocks": {
+        "8c803ec7-b522-4729-b207-4bd33ef92e17": {
+          "type": "image",
+          "settings": {
+            "type": "image",
+            "image": "shopify:\/\/shop_images\/Take_a_Peek_Inside_-_Desktop.png",
+            "mobile_image": "shopify:\/\/shop_images\/Take_a_Peek_Inside_-_Mobile.png",
+            "video_url": "",
+            "pretext": "",
+            "title": "",
+            "subtitle": "",
+            "button1": "",
+            "button1_link": "",
+            "button1_style": "global-button--banner",
+            "button2": "",
+            "button2_link": "",
+            "button2_style": "global-button--banner",
+            "text_position": "center",
+            "text_align": "center",
+            "caption_content_background": "original"
+          }
+        }
+      },
+      "block_order": [
+        "8c803ec7-b522-4729-b207-4bd33ef92e17"
+      ],
+      "settings": {
+        "wide_display": true,
+        "slideshow_text_animation": "fadeInDown",
+        "slideshow_animation": "fade",
+        "slideshow_speed": 6,
+        "activate_adaptiveHeight": false,
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "",
+        "custom_css": ""
+      }
     }
   },
   "order": [
@@ -180,6 +220,7 @@
     "ab6b0a00-3faf-4639-805d-bb4879571868",
     "a8f19772-6225-42ac-8d54-6679a9de5343",
     "7a736303-e48b-458d-bcd1-1431cb5ad520",
-    "4a274efc-1beb-4959-8056-246dbbd75e4c"
+    "4a274efc-1beb-4959-8056-246dbbd75e4c",
+    "3f9412db-e981-41ed-9f77-592a989db020"
   ]
 }
