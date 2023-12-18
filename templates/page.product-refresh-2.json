@@ -288,10 +288,79 @@
         "wide_display": false,
         "title": "MORE WAYS TO LACE",
         "gallery_type": "classic",
-        "grid-size": 5,
+        "grid-size": 4,
         "enable_lightbox": true,
         "css_class": "",
         "custom_css": ""
+      }
+    },
+    "17029299529bfc8cf5": {
+      "type": "apps",
+      "blocks": {
+        "3b3e0376-070c-4bd4-8304-a03594276a03": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "3b3e0376-070c-4bd4-8304-a03594276a03"
+      ],
+      "settings": {
+      }
+    },
+    "6b5dc53f-b5f9-4dbe-9678-c846e7b33434": {
+      "type": "faq",
+      "blocks": {
+        "template--15495455047791__6b5dc53f-b5f9-4dbe-9678-c846e7b33434-content-1": {
+          "type": "content",
+          "settings": {
+            "title": "Will Xpand Laces work on my shoes or boots?",
+            "answer": "<p>Xpand Lacing System works on all types of shoes - from kids shoes, adults sneakers, Timberlands to  high-top boots.<\/p>"
+          }
+        },
+        "template--15495455047791__6b5dc53f-b5f9-4dbe-9678-c846e7b33434-content-2": {
+          "type": "content",
+          "settings": {
+            "title": "Are the Xpand Laces adjustable?",
+            "answer": "<p>Yes! Finding the perfect fit is easy with Xpand Laces. We recommend trying out the length before you trim the laces. Always set the initial adjustment on the loose side, so that you can always tighten them up if needed.<\/p>"
+          }
+        },
+        "template--15495455047791__6b5dc53f-b5f9-4dbe-9678-c846e7b33434-content-3": {
+          "type": "content",
+          "settings": {
+            "title": "How long are the laces?",
+            "answer": "<p>Xpand Laces are 52 inches long, and can stretch out to over twice that length, which makes them long enough for all types of shoes or boots.<\/p>"
+          }
+        },
+        "template--15495455047791__6b5dc53f-b5f9-4dbe-9678-c846e7b33434-content-4": {
+          "type": "content",
+          "settings": {
+            "title": "What is your return and exchange policy?",
+            "answer": "<p>Xpand offers a 90 day satisfaction guarantee. If you are not 100% satisfied for any reason, we will refund your order. No questions asked!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15495455047791__6b5dc53f-b5f9-4dbe-9678-c846e7b33434-content-1",
+        "template--15495455047791__6b5dc53f-b5f9-4dbe-9678-c846e7b33434-content-2",
+        "template--15495455047791__6b5dc53f-b5f9-4dbe-9678-c846e7b33434-content-3",
+        "template--15495455047791__6b5dc53f-b5f9-4dbe-9678-c846e7b33434-content-4"
+      ],
+      "settings": {
+        "sec_bg": "",
+        "title": "FAQ",
+        "link": "",
+        "link_text": "See All FAQs",
+        "sec_top": 0,
+        "sec_bottom": 0
       }
     }
   },
@@ -304,6 +373,8 @@
     "3f9412db-e981-41ed-9f77-592a989db020",
     "448d19fd-6286-4ccd-aae0-e80fa991bfc2",
     "8ef4376e-6351-46c2-80b0-48e79cf70a03",
-    "fcaa67b3-77e1-4935-9c18-971a9973828f"
+    "fcaa67b3-77e1-4935-9c18-971a9973828f",
+    "17029299529bfc8cf5",
+    "6b5dc53f-b5f9-4dbe-9678-c846e7b33434"
   ]
 }
