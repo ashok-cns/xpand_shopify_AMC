@@ -125,7 +125,7 @@
       ],
       "settings": {
         "wide_display": true,
-        "slideshow_text_animation": "fadeInDown",
+        "slideshow_text_animation": "",
         "slideshow_animation": "fade",
         "slideshow_speed": 6,
         "activate_adaptiveHeight": false,
