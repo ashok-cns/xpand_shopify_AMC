@@ -313,26 +313,19 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Gallery-TripleX.png"
           }
-        },
-        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-5": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Gallery-AngledBar.png"
-          }
         }
       },
       "block_order": [
         "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-1",
         "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-2",
         "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-3",
-        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-4",
-        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-5"
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-4"
       ],
       "settings": {
         "wide_display": false,
         "title": "MORE WAYS TO LACE",
         "gallery_type": "classic",
-        "grid-size": 5,
+        "grid-size": 4,
         "enable_lightbox": true,
         "css_class": "",
         "custom_css": ""

@@ -253,6 +253,46 @@
         "css_class": "",
         "custom_css": ""
       }
+    },
+    "fcaa67b3-77e1-4935-9c18-971a9973828f": {
+      "type": "gallery",
+      "blocks": {
+        "template--15495455047791__fcaa67b3-77e1-4935-9c18-971a9973828f-image-1": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "template--15495455047791__fcaa67b3-77e1-4935-9c18-971a9973828f-image-2": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "template--15495455047791__fcaa67b3-77e1-4935-9c18-971a9973828f-image-3": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "template--15495455047791__fcaa67b3-77e1-4935-9c18-971a9973828f-image-6": {
+          "type": "image",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15495455047791__fcaa67b3-77e1-4935-9c18-971a9973828f-image-1",
+        "template--15495455047791__fcaa67b3-77e1-4935-9c18-971a9973828f-image-2",
+        "template--15495455047791__fcaa67b3-77e1-4935-9c18-971a9973828f-image-3",
+        "template--15495455047791__fcaa67b3-77e1-4935-9c18-971a9973828f-image-6"
+      ],
+      "settings": {
+        "wide_display": false,
+        "title": "MORE WAYS TO LACE",
+        "gallery_type": "classic",
+        "grid-size": 5,
+        "enable_lightbox": true,
+        "css_class": "",
+        "custom_css": ""
+      }
     }
   },
   "order": [
@@ -263,6 +303,7 @@
     "4a274efc-1beb-4959-8056-246dbbd75e4c",
     "3f9412db-e981-41ed-9f77-592a989db020",
     "448d19fd-6286-4ccd-aae0-e80fa991bfc2",
-    "8ef4376e-6351-46c2-80b0-48e79cf70a03"
+    "8ef4376e-6351-46c2-80b0-48e79cf70a03",
+    "fcaa67b3-77e1-4935-9c18-971a9973828f"
   ]
 }
