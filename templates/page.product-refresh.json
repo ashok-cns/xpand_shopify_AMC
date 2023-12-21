@@ -451,7 +451,7 @@
       ],
       "settings": {
         "layout": "grid",
-        "title": "Text columns with images",
+        "title": "How to Install",
         "link_text": "",
         "link": "",
         "link_text_color": "#fff",
@@ -459,8 +459,8 @@
         "sec_bg": "",
         "css_class": "",
         "custom_css": "",
-        "sec_top": 0,
-        "sec_bottom": 0
+        "sec_top": 50,
+        "sec_bottom": 40
       }
     }
   },
