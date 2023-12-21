@@ -435,10 +435,10 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "enable_media": "image",
+            "enable_media": "video",
             "iframe_video": "https:\/\/youtu.be\/xp-4EMkwNQQ",
             "title": "",
-            "heading_size": "regular_text",
+            "heading_size": "large_text",
             "text": "",
             "button_label": "",
             "button_link": "",
