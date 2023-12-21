@@ -418,6 +418,8 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "enable_media": "image",
+            "iframe_video": "https:\/\/youtu.be\/eMSbyA9wNBo",
             "title": "",
             "heading_size": "regular_text",
             "text": "",
@@ -433,6 +435,8 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "enable_media": "image",
+            "iframe_video": "https:\/\/youtu.be\/xp-4EMkwNQQ",
             "title": "",
             "heading_size": "regular_text",
             "text": "",
@@ -454,7 +458,7 @@
         "title": "How to Install",
         "link_text": "",
         "link": "",
-        "link_text_color": "#fff",
+        "link_text_color": "#ffffff",
         "link_bg_color": "#ff085a",
         "sec_bg": "",
         "css_class": "",
