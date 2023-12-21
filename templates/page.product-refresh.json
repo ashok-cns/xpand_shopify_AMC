@@ -137,7 +137,7 @@
       "settings": {
         "wide_display": true,
         "slideshow_text_animation": "",
-        "slideshow_animation": "fade",
+        "slideshow_animation": "slide",
         "slideshow_speed": 6,
         "activate_adaptiveHeight": false,
         "mobile_text_below_image": true,
