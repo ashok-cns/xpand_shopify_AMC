@@ -1,5 +1,6 @@
 {{ 'main-proudct.css' | asset_url | stylesheet_tag }}
 <style>
+  
   .landing-page .darken-bg {
     background: rgba(0, 0, 0, 0.45);
   }
@@ -26,6 +27,11 @@
   .landing-page.text-banner h2 {
     margin-top: 1.5em;
     margin-bottom: 0.25em;
+  }
+  @media screen and (min-width: 768px)
+  .shopify-section--featured-product .product__details {
+    width: 500px;
+    max-width: 50%;
   }
 </style>
 
