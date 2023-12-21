@@ -9252,9 +9252,12 @@ div.is-absolute,
 .image-element__wrap img[data-sizes=auto].lazyloaded {
   margin: 0 auto;
   margin-bottom: 10px;
-  height: 50px!important;
   width: auto;
   display: block;
+}
+:not(.shopify-section--slideshow) .image-element__wrap img[data-sizes=auto].lazyloaded {
+  height: 50px!important;
+  
 }
 section.featured-banner-area .image-element__wrap img[data-sizes=auto],
 section.featured-banner-area .image-element__wrap img[data-sizes=auto].lazyloaded {
