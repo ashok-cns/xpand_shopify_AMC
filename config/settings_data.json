@@ -1889,48 +1889,6 @@
           "custom_css": ""
         }
       },
-      "162626912517793253": {
-        "type": "text-columns-with-images",
-        "blocks": {
-          "162626912517793253-0": {
-            "type": "text_block",
-            "settings": {
-              "enable_image": true,
-              "image": "shopify:\/\/shop_images\/yoga-mats.jpg",
-              "title": "Eco-friendly Mats",
-              "heading_size": "large_text",
-              "text": "<p>Innovative with extra cushioning, our mats are both supportive and sustainably sourced – meet your new go-to mat.<\/p>",
-              "button_label": "Shop Now",
-              "button_link": "shopify:\/\/collections\/mats",
-              "align_text": "left",
-              "border_style": "none"
-            }
-          },
-          "162626912517793253-1": {
-            "type": "text_block",
-            "settings": {
-              "enable_image": true,
-              "image": "shopify:\/\/shop_images\/yoga-props.jpg",
-              "title": "Helpful Extras",
-              "heading_size": "large_text",
-              "text": "<p>From yoga blocks, to bags and socks – simple designs that are perfect for almost anything related to your yoga practice.<\/p>",
-              "button_label": "Shop now",
-              "button_link": "shopify:\/\/collections\/accessories",
-              "align_text": "left",
-              "border_style": "none"
-            }
-          }
-        },
-        "block_order": [
-          "162626912517793253-0",
-          "162626912517793253-1"
-        ],
-        "settings": {
-          "title": "",
-          "css_class": "",
-          "custom_css": ""
-        }
-      },
       "162626913042498125": {
         "type": "featured-promotions",
         "blocks": {
@@ -2155,7 +2113,6 @@
       "16262695402e12d8ba",
       "16262694051052d112",
       "1626269376ae5cce45",
-      "162626912517793253",
       "162626921266c1019e",
       "162627792188827216"
     ],

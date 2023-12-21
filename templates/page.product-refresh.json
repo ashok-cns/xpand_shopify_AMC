@@ -410,6 +410,58 @@
         "sec_top": 0,
         "sec_bottom": 50
       }
+    },
+    "25a1864b-743e-47df-bab2-8933779d9e7e": {
+      "type": "text-columns-with-images-video",
+      "blocks": {
+        "template--15471082930287__25a1864b-743e-47df-bab2-8933779d9e7e-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "Add a title or tagline",
+            "heading_size": "regular_text",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "template--15471082930287__25a1864b-743e-47df-bab2-8933779d9e7e-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "Add a title or tagline",
+            "heading_size": "regular_text",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15471082930287__25a1864b-743e-47df-bab2-8933779d9e7e-text_block-1",
+        "template--15471082930287__25a1864b-743e-47df-bab2-8933779d9e7e-text_block-2"
+      ],
+      "settings": {
+        "layout": "grid",
+        "title": "Text columns with images",
+        "link_text": "",
+        "link": "",
+        "link_text_color": "#fff",
+        "link_bg_color": "#ff085a",
+        "sec_bg": "",
+        "css_class": "",
+        "custom_css": "",
+        "sec_top": 0,
+        "sec_bottom": 0
+      }
     }
   },
   "order": [
@@ -424,6 +476,7 @@
     "86a6455c-a44b-471d-8109-2ad979fe5ba0",
     "e7617db3-7829-4080-a6d3-83013a6760e2",
     "1702488506458e051f",
-    "c081241e-b9d7-408e-94e1-5280392ffadb"
+    "c081241e-b9d7-408e-94e1-5280392ffadb",
+    "25a1864b-743e-47df-bab2-8933779d9e7e"
   ]
 }
