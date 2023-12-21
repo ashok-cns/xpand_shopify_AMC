@@ -58,24 +58,24 @@
             {% endif %}
         {% if block.settings.enable_media == 'video' %}
 
-            {% if section.settings.iframe_video != blank %}
-              {% if section.settings.iframe_video.type == 'vimeo' %}
+            {% if block.settings.iframe_video != blank %}
+              {% if block.settings.iframe_video.type == 'vimeo' %}
                 <div
                   class="plyr__video-embed"
-                  id="video-{{ section.id }}"
+                  id="video-{{ block.id }}"
                   data-video-element
                   data-external-video
                 >
-                  <iframe src="https://player.vimeo.com/video/{{ section.settings.iframe_video.id }}?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media" allowfullscreen allowtransparency allow="autoplay"></iframe>
+                  <iframe src="https://player.vimeo.com/video/{{ block.settings.iframe_video.id }}?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media" allowfullscreen allowtransparency allow="autoplay"></iframe>
                 </div>
-              {% elsif section.settings.iframe_video.type == 'youtube' %}
+              {% elsif block.settings.iframe_video.type == 'youtube' %}
                 <div
                   class="plyr__video-embed"
-                  id="video-{{ section.id }}"
+                  id="video-{{ block.id }}"
                   data-video-element
                   data-external-video
                 >
-                  <iframe src="https://www.youtube.com/embed/{{ section.settings.iframe_video.id }}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allowtransparency allow="autoplay"></iframe>
+                  <iframe src="https://www.youtube.com/embed/{{ block.settings.iframe_video.id }}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allowtransparency allow="autoplay"></iframe>
                 </div>
               {% endif %}
               {% endif %}
