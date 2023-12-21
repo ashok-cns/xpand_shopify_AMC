@@ -13,19 +13,29 @@
           "settings": {
           }
         },
-        "template--15471082930287__e09375ef-62a7-4a56-84f4-bc649c34a35f-price-1": {
+        "e1c81c4e-7c86-47fd-8067-3069482b6313": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/product-rating-image\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "api_key": "",
+            "store_hash": "",
+            "product_id": "",
+            "width": "",
+            "height": ""
+          }
+        },
+        "3c1ef2e1-d225-4e74-be81-683e1192538f": {
           "type": "price",
           "settings": {
             "display_savings": true
           }
         },
-        "template--15471082930287__e09375ef-62a7-4a56-84f4-bc649c34a35f-description-1": {
+        "89aa1cea-4b33-431d-8f73-45cff7e7843c": {
           "type": "description",
           "disabled": true,
           "settings": {
           }
         },
-        "template--15471082930287__e09375ef-62a7-4a56-84f4-bc649c34a35f-form-1": {
+        "659d05b2-d697-4b3f-bb4f-cb0f1a37cc78": {
           "type": "form",
           "settings": {
           }
@@ -33,9 +43,10 @@
       },
       "block_order": [
         "template--15471082930287__e09375ef-62a7-4a56-84f4-bc649c34a35f-title-1",
-        "template--15471082930287__e09375ef-62a7-4a56-84f4-bc649c34a35f-price-1",
-        "template--15471082930287__e09375ef-62a7-4a56-84f4-bc649c34a35f-description-1",
-        "template--15471082930287__e09375ef-62a7-4a56-84f4-bc649c34a35f-form-1"
+        "e1c81c4e-7c86-47fd-8067-3069482b6313",
+        "3c1ef2e1-d225-4e74-be81-683e1192538f",
+        "89aa1cea-4b33-431d-8f73-45cff7e7843c",
+        "659d05b2-d697-4b3f-bb4f-cb0f1a37cc78"
       ],
       "settings": {
         "product": "no-tie-original-elastic-lacing-system",
