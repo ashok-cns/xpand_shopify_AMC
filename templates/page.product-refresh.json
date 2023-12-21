@@ -418,7 +418,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "enable_media": "image",
+            "enable_media": "video",
             "iframe_video": "https:\/\/youtu.be\/eMSbyA9wNBo",
             "title": "",
             "heading_size": "regular_text",
