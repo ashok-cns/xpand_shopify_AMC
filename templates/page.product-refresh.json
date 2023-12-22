@@ -305,7 +305,6 @@
         },
         "template--15471082930287__25a1864b-743e-47df-bab2-8933779d9e7e-text_block-2": {
           "type": "text_block",
-          "disabled": true,
           "settings": {
             "enable_image": true,
             "enable_media": "video",
