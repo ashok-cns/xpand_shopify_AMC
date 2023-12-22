@@ -55,6 +55,8 @@
         "set_product_height": false,
         "product_height": 400,
         "video_looping": false,
+        "price_note_desktop": "{{ section.settings.product.metafields.custom.price_note_desktop.value }}",
+        "price_note_mobile": "{{ section.settings.product.metafields.custom.price_note_mobile.value }}",
         "product_thumbs": true,
         "gallery_arrows": true,
         "enable_product_lightbox": true,
