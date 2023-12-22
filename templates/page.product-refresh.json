@@ -239,50 +239,6 @@
         "custom_css": ""
       }
     },
-    "e7617db3-7829-4080-a6d3-83013a6760e2": {
-      "type": "gallery",
-      "blocks": {
-        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Gallery-5050Lacing.png"
-          }
-        },
-        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Gallery-BarLacing.png"
-          }
-        },
-        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Gallery-DIamondLacing2.png"
-          }
-        },
-        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Gallery-TripleX.png"
-          }
-        }
-      },
-      "block_order": [
-        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-1",
-        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-2",
-        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-3",
-        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-4"
-      ],
-      "settings": {
-        "wide_display": false,
-        "title": "MORE WAYS TO LACE",
-        "gallery_type": "classic",
-        "grid-size": 4,
-        "enable_lightbox": true,
-        "css_class": "",
-        "custom_css": ""
-      }
-    },
     "25a1864b-743e-47df-bab2-8933779d9e7e": {
       "type": "text-columns-with-images-video",
       "blocks": {
@@ -337,6 +293,50 @@
         "custom_css": "",
         "sec_top": 50,
         "sec_bottom": 40
+      }
+    },
+    "e7617db3-7829-4080-a6d3-83013a6760e2": {
+      "type": "gallery",
+      "blocks": {
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gallery-5050Lacing.png"
+          }
+        },
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gallery-BarLacing.png"
+          }
+        },
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gallery-DIamondLacing2.png"
+          }
+        },
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gallery-TripleX.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-1",
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-2",
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-3",
+        "template--15471082930287__e7617db3-7829-4080-a6d3-83013a6760e2-image-4"
+      ],
+      "settings": {
+        "wide_display": false,
+        "title": "MORE WAYS TO LACE",
+        "gallery_type": "classic",
+        "grid-size": 4,
+        "enable_lightbox": true,
+        "css_class": "",
+        "custom_css": ""
       }
     },
     "1702488506458e051f": {
@@ -417,8 +417,8 @@
     "505e700f-50d0-4023-bc45-d3d28c8acf1c",
     "ebdf0e96-4bb5-4285-a698-42466eccfa23",
     "4cb86ccb-737f-4152-97e4-00e0e8e28ad4",
-    "e7617db3-7829-4080-a6d3-83013a6760e2",
     "25a1864b-743e-47df-bab2-8933779d9e7e",
+    "e7617db3-7829-4080-a6d3-83013a6760e2",
     "1702488506458e051f",
     "c081241e-b9d7-408e-94e1-5280392ffadb"
   ]
