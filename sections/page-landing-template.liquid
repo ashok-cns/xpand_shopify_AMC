@@ -68,8 +68,15 @@
     .shopify-section--featured-product .product__details {
       padding-top:0px;
     }
+    .product_section .modal_price {
+     flex: 0 0 100%;
+    }
     body:not([data-template=primary]) .product-block.product-block--price {
       position: relative;
+      justify-content: start;
+    }
+    body:not([data-template=primary]) .product_section .modal_price {
+          justify-content: end;
     }
   }
   @media screen and (min-width: 768px) {
