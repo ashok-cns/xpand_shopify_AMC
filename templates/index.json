@@ -100,88 +100,6 @@
         "sec_bottom": 20
       }
     },
-    "f9c8783f-8ca3-4744-9187-c08bf43a22f3": {
-      "type": "custom-html",
-      "settings": {
-        "title": "Over 2 Million Customers",
-        "custom_html": "<div id=\"stamped-reviews-widget\" data-widget-type=\"visual-gallery\" data-feed-type=\"carousel\" data-min-rating=\"3\" data-with-photos=\"true\"><\/div>",
-        "css_class": "stamped-reviwed-section",
-        "custom_css": ""
-      }
-    },
-    "2ca3a8be-acb3-4083-b592-eccc1d00275a": {
-      "type": "featured-products",
-      "blocks": {
-        "e01a889f-87aa-4d44-986d-213fc69b9cc9": {
-          "type": "product",
-          "settings": {
-            "enable_block": true,
-            "product": "no-tie-original-elastic-lacing-system",
-            "variant_id": "19252571471983",
-            "image": "shopify:\/\/shop_images\/Black_Pop_colors.jpg",
-            "title": "ORIGINAL NO-TIE LACING SYSTEM",
-            "caption": "<p>BLACK<\/p>",
-            "font_color": "#ffffff",
-            "link_text": "view product"
-          }
-        },
-        "dfb318cb-9235-4275-b8ad-0b59dbfc9a31": {
-          "type": "product",
-          "settings": {
-            "enable_block": true,
-            "product": "no-tie-original-elastic-lacing-system",
-            "variant_id": "19252660273263",
-            "image": "shopify:\/\/shop_images\/White_Pop.jpg",
-            "title": "ORIGINAL NO-TIE LACING SYSTEM",
-            "caption": "<p>WHITE<\/p>",
-            "font_color": "#ffffff",
-            "link_text": "view product"
-          }
-        },
-        "f659556e-4ac5-41e9-b797-8affb7dbd07b": {
-          "type": "product",
-          "settings": {
-            "enable_block": true,
-            "product": "no-tie-original-elastic-lacing-system",
-            "variant_id": "19252660764783",
-            "image": "shopify:\/\/shop_images\/Red_Pop_colors.jpg",
-            "title": "ORIGINAL NO-TIE LACING SYSTEM",
-            "caption": "<p>RED<\/p>",
-            "font_color": "#000000",
-            "link_text": "view product"
-          }
-        },
-        "4c38c804-d533-4a98-85f9-aab97aef5fd3": {
-          "type": "product",
-          "settings": {
-            "enable_block": true,
-            "product": "quick-release-round-lacing-system",
-            "variant_id": "19252728004719",
-            "image": "shopify:\/\/shop_images\/Blue_Pop_colors.jpg",
-            "title": "QUICK-RELEASE LACING SYSTEM",
-            "caption": "<p>TRUE BLUE<\/p>",
-            "font_color": "#ffffff",
-            "link_text": "view product"
-          }
-        }
-      },
-      "block_order": [
-        "e01a889f-87aa-4d44-986d-213fc69b9cc9",
-        "dfb318cb-9235-4275-b8ad-0b59dbfc9a31",
-        "f659556e-4ac5-41e9-b797-8affb7dbd07b",
-        "4c38c804-d533-4a98-85f9-aab97aef5fd3"
-      ],
-      "settings": {
-        "title": "Best Sellers",
-        "link_text": "VIEW ALL COLORS",
-        "link": "shopify:\/\/products\/no-tie-original-elastic-lacing-system",
-        "link_text_color": "#ffffff",
-        "link_bg_color": "#008ffd",
-        "sec_bg": "#f3f4f4",
-        "sec_top": 45,
-        "sec_bottom": 45
-      }
-    },
     "text_columns_with_images_video_d9m7mQ": {
       "type": "text-columns-with-images-video",
       "blocks": {
@@ -290,19 +208,179 @@
         "link": "",
         "link_text_color": "#fff",
         "link_bg_color": "#ff085a",
-        "sec_bg": "",
+        "sec_bg": "#f1f2f2",
         "css_class": "featured-box",
         "custom_css": "",
         "sec_top": 30,
         "sec_bottom": 0
+      }
+    },
+    "f9c8783f-8ca3-4744-9187-c08bf43a22f3": {
+      "type": "custom-html",
+      "settings": {
+        "title": "Over 2 Million Customers",
+        "custom_html": "<div id=\"stamped-reviews-widget\" data-widget-type=\"visual-gallery\" data-feed-type=\"carousel\" data-min-rating=\"3\" data-with-photos=\"true\"><\/div>",
+        "css_class": "stamped-reviwed-section",
+        "custom_css": ""
+      }
+    },
+    "2ca3a8be-acb3-4083-b592-eccc1d00275a": {
+      "type": "featured-products",
+      "blocks": {
+        "e01a889f-87aa-4d44-986d-213fc69b9cc9": {
+          "type": "product",
+          "settings": {
+            "enable_block": true,
+            "product": "no-tie-original-elastic-lacing-system",
+            "variant_id": "19252571471983",
+            "image": "shopify:\/\/shop_images\/Black_Pop_colors.jpg",
+            "title": "ORIGINAL NO-TIE LACING SYSTEM",
+            "caption": "<p>BLACK<\/p>",
+            "font_color": "#ffffff",
+            "link_text": "view product"
+          }
+        },
+        "dfb318cb-9235-4275-b8ad-0b59dbfc9a31": {
+          "type": "product",
+          "settings": {
+            "enable_block": true,
+            "product": "no-tie-original-elastic-lacing-system",
+            "variant_id": "19252660273263",
+            "image": "shopify:\/\/shop_images\/White_Pop.jpg",
+            "title": "ORIGINAL NO-TIE LACING SYSTEM",
+            "caption": "<p>WHITE<\/p>",
+            "font_color": "#ffffff",
+            "link_text": "view product"
+          }
+        },
+        "f659556e-4ac5-41e9-b797-8affb7dbd07b": {
+          "type": "product",
+          "settings": {
+            "enable_block": true,
+            "product": "no-tie-original-elastic-lacing-system",
+            "variant_id": "19252660764783",
+            "image": "shopify:\/\/shop_images\/Red_Pop_colors.jpg",
+            "title": "ORIGINAL NO-TIE LACING SYSTEM",
+            "caption": "<p>RED<\/p>",
+            "font_color": "#000000",
+            "link_text": "view product"
+          }
+        },
+        "4c38c804-d533-4a98-85f9-aab97aef5fd3": {
+          "type": "product",
+          "settings": {
+            "enable_block": true,
+            "product": "quick-release-round-lacing-system",
+            "variant_id": "19252728004719",
+            "image": "shopify:\/\/shop_images\/Blue_Pop_colors.jpg",
+            "title": "QUICK-RELEASE LACING SYSTEM",
+            "caption": "<p>TRUE BLUE<\/p>",
+            "font_color": "#ffffff",
+            "link_text": "view product"
+          }
+        }
+      },
+      "block_order": [
+        "e01a889f-87aa-4d44-986d-213fc69b9cc9",
+        "dfb318cb-9235-4275-b8ad-0b59dbfc9a31",
+        "f659556e-4ac5-41e9-b797-8affb7dbd07b",
+        "4c38c804-d533-4a98-85f9-aab97aef5fd3"
+      ],
+      "settings": {
+        "title": "Best Sellers",
+        "link_text": "VIEW ALL COLORS",
+        "link": "shopify:\/\/products\/no-tie-original-elastic-lacing-system",
+        "link_text_color": "#ffffff",
+        "link_bg_color": "#008ffd",
+        "sec_bg": "#f3f4f4",
+        "sec_top": 45,
+        "sec_bottom": 45
+      }
+    },
+    "text_columns_with_images_video_gndaTr": {
+      "type": "text-columns-with-images-video",
+      "blocks": {
+        "text_block_p7FaqJ": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/icon1.png",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "title": "Secure Fit",
+            "heading_size": "regular_text",
+            "text": "<p>Set it and forget it with our patented lace anchor technology. Zero distractions, perfect support, all day long.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "text_block_Ge4kTA": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/icon2.png",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "title": "Adjustable Tension",
+            "heading_size": "regular_text",
+            "text": "<p>Designed to move with you and work for you. Need more compression? Need more room? Xpand laces are easy to adjust on the fly.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "text_block_rgJE3C": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/icon3.png",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "title": "One Size Fits All",
+            "heading_size": "regular_text",
+            "text": "<p>No need to search for the right size and hope for the best. Whether you’re shopping for an adult or a child, sneakers, or boots, you can’t go wrong. Trim to your desired length and you’re good to go!<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_p7FaqJ",
+        "text_block_Ge4kTA",
+        "text_block_rgJE3C"
+      ],
+      "settings": {
+        "layout": "grid",
+        "title": "Feel the Difference",
+        "link_text": "",
+        "link": "",
+        "link_text_color": "#fff",
+        "link_bg_color": "#ff085a",
+        "sec_bg": "",
+        "css_class": "featured-banner-area",
+        "custom_css": "",
+        "sec_top": 40,
+        "sec_bottom": 40
       }
     }
   },
   "order": [
     "2ae6f0aa-f4c4-48db-b9ad-358fdabf5ba7",
     "8b4bdfac-6ad8-48e0-9419-1bfc730c2d81",
+    "text_columns_with_images_video_d9m7mQ",
     "f9c8783f-8ca3-4744-9187-c08bf43a22f3",
     "2ca3a8be-acb3-4083-b592-eccc1d00275a",
-    "text_columns_with_images_video_d9m7mQ"
+    "text_columns_with_images_video_gndaTr"
   ]
 }
