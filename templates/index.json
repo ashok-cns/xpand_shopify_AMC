@@ -100,182 +100,6 @@
         "sec_bottom": 20
       }
     },
-    "dcd38f47-4d01-4c89-9500-e275fc45a3b7": {
-      "type": "text-columns-with-images",
-      "blocks": {
-        "template--15266355282031__dcd38f47-4d01-4c89-9500-e275fc45a3b7-text_block-1": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Flat_Lace_3_1.jpg",
-            "title": "Original No-Tie <br> Lacing System",
-            "heading_size": "regular_text",
-            "text": "",
-            "button_label": "FLAT LACES",
-            "button_link": "shopify:\/\/products\/no-tie-original-elastic-lacing-system",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "#ffffff",
-            "link_bg_color": "#0090fc"
-          }
-        },
-        "template--15266355282031__dcd38f47-4d01-4c89-9500-e275fc45a3b7-text_block-2": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Round_Lace_1.jpg",
-            "title": "Quick-Release <br> Lacing System",
-            "heading_size": "regular_text",
-            "text": "",
-            "button_label": "ROUND LACES",
-            "button_link": "shopify:\/\/products\/quick-release-round-lacing-system",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "#ffffff",
-            "link_bg_color": "#0090fc"
-          }
-        },
-        "7ded0ec0-25a7-4314-97c8-5f46bb0a5268": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/wipes-blue.png",
-            "title": "Quick Wipes <br> Instant Clean",
-            "heading_size": "regular_text",
-            "text": "",
-            "button_label": "SHOP WIPES",
-            "button_link": "shopify:\/\/products\/xpand-shoe-wipes",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "#ffffff",
-            "link_bg_color": "#008ffd"
-          }
-        },
-        "02b79a59-b6a7-454d-a7f1-2bab8a1cf2c3": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/noshowsockss_1.png",
-            "title": "Cushioned <br> No-Show Socks",
-            "heading_size": "regular_text",
-            "text": "",
-            "button_label": "SHOP SOCKS",
-            "button_link": "shopify:\/\/products\/cushioned-no-show-socks",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "#ffffff",
-            "link_bg_color": "#0090fc"
-          }
-        },
-        "151b0f3f-a071-48e6-bf2a-62cc97f56fb5": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Urban_belt_Insert_for_Website-smallest.jpg",
-            "title": "Magnetic Urban <br> Elastic Belt",
-            "heading_size": "regular_text",
-            "text": "",
-            "button_label": "URBAN BELT",
-            "button_link": "shopify:\/\/products\/urban-belt",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "#ffffff",
-            "link_bg_color": "#0090fc"
-          }
-        }
-      },
-      "block_order": [
-        "template--15266355282031__dcd38f47-4d01-4c89-9500-e275fc45a3b7-text_block-1",
-        "template--15266355282031__dcd38f47-4d01-4c89-9500-e275fc45a3b7-text_block-2",
-        "7ded0ec0-25a7-4314-97c8-5f46bb0a5268",
-        "02b79a59-b6a7-454d-a7f1-2bab8a1cf2c3",
-        "151b0f3f-a071-48e6-bf2a-62cc97f56fb5"
-      ],
-      "settings": {
-        "layout": "grid",
-        "title": "",
-        "link_text": "",
-        "link": "",
-        "link_text_color": "#ffffff",
-        "link_bg_color": "#ff085a",
-        "sec_bg": "#f1f2f2",
-        "css_class": "featured-box",
-        "custom_css": "",
-        "sec_top": 30,
-        "sec_bottom": 0
-      }
-    },
-    "80f4c16b-a976-42cf-bba2-81aca3dcc870": {
-      "type": "text-columns-with-images",
-      "blocks": {
-        "template--15266355282031__80f4c16b-a976-42cf-bba2-81aca3dcc870-text_block-1": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/icon1.png",
-            "title": "Secure Fit",
-            "heading_size": "regular_text",
-            "text": "<p>Set it and forget it with our patented lace anchor technology. Zero distractions, perfect support, all day long.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        },
-        "template--15266355282031__80f4c16b-a976-42cf-bba2-81aca3dcc870-text_block-2": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/icon2.png",
-            "title": "Adjustable Tension",
-            "heading_size": "regular_text",
-            "text": "<p>Designed to move with you and work for you. Need more compression? Need more room? Xpand laces are easy to adjust on the fly.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        },
-        "de9ce7c3-d3d9-4611-9b41-741a534a6962": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/icon3.png",
-            "title": "One Size Fits All",
-            "heading_size": "regular_text",
-            "text": "<p>No need to search for the right size and hope for the best. Whether you’re shopping for an adult or a child, sneakers, or boots, you can’t go wrong. Trim to your desired length and you’re good to go!<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--15266355282031__80f4c16b-a976-42cf-bba2-81aca3dcc870-text_block-1",
-        "template--15266355282031__80f4c16b-a976-42cf-bba2-81aca3dcc870-text_block-2",
-        "de9ce7c3-d3d9-4611-9b41-741a534a6962"
-      ],
-      "settings": {
-        "layout": "grid",
-        "title": "Feel the Difference",
-        "link_text": "",
-        "link": "",
-        "link_text_color": "#ffffff",
-        "link_bg_color": "#ff085a",
-        "sec_bg": "",
-        "css_class": "featured-banner-area",
-        "custom_css": "",
-        "sec_top": 40,
-        "sec_bottom": 40
-      }
-    },
     "f9c8783f-8ca3-4744-9187-c08bf43a22f3": {
       "type": "custom-html",
       "settings": {
@@ -283,77 +107,6 @@
         "custom_html": "<div id=\"stamped-reviews-widget\" data-widget-type=\"visual-gallery\" data-feed-type=\"carousel\" data-min-rating=\"3\" data-with-photos=\"true\"><\/div>",
         "css_class": "stamped-reviwed-section",
         "custom_css": ""
-      }
-    },
-    "e1722e7a-35fe-4249-b951-23d06ba5a66e": {
-      "type": "text-columns-with-images",
-      "blocks": {
-        "template--15266355282031__e1722e7a-35fe-4249-b951-23d06ba5a66e-text_block-1": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/icons-01.png",
-            "title": "",
-            "heading_size": "regular_text",
-            "text": "<p>Try Xpand<\/p><p>for 90 days<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        },
-        "template--15266355282031__e1722e7a-35fe-4249-b951-23d06ba5a66e-text_block-2": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/icons-03.png",
-            "title": "",
-            "heading_size": "regular_text",
-            "text": "<p>Free North America<\/p><p>shipping<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        },
-        "bfb53f56-a9e9-46b9-8154-768ed6e1c2d1": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/icons-02.png",
-            "title": "",
-            "heading_size": "regular_text",
-            "text": "<p>100% money back<\/p><p>guarantee!<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--15266355282031__e1722e7a-35fe-4249-b951-23d06ba5a66e-text_block-1",
-        "template--15266355282031__e1722e7a-35fe-4249-b951-23d06ba5a66e-text_block-2",
-        "bfb53f56-a9e9-46b9-8154-768ed6e1c2d1"
-      ],
-      "settings": {
-        "layout": "slider",
-        "title": "100% Satisfaction Guarantee",
-        "link_text": "SHOP NOW",
-        "link": "shopify:\/\/products\/no-tie-original-elastic-lacing-system",
-        "link_text_color": "#ffffff",
-        "link_bg_color": "#008ffd",
-        "sec_bg": "#42aca7",
-        "css_class": "three-item-banner",
-        "custom_css": "",
-        "sec_top": 25,
-        "sec_bottom": 25
       }
     },
     "2ca3a8be-acb3-4083-b592-eccc1d00275a": {
@@ -428,15 +181,109 @@
         "sec_top": 45,
         "sec_bottom": 45
       }
+    },
+    "text_columns_with_images_video_d9m7mQ": {
+      "type": "text-columns-with-images-video",
+      "blocks": {
+        "text_block_dRJ3mk": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/Flat_Lace_3_1.jpg",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "title": "Original No-Tie <br> Lacing System",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "FLAT LACES",
+            "button_link": "shopify:\/\/products\/no-tie-original-elastic-lacing-system",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "#ffffff",
+            "link_bg_color": "#0090fc"
+          }
+        },
+        "text_block_nrdemK": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/Round_Lace_1.jpg",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "title": "Quick-Release <br> Lacing System",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "ROUND LACES",
+            "button_link": "shopify:\/\/products\/quick-release-round-lacing-system",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "#ffffff",
+            "link_bg_color": "#0090fc"
+          }
+        },
+        "text_block_gGJHAR": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/wipes-blue.png",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "title": "Quick Wipes <br> Instant Clean",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "SHOP WIPES",
+            "button_link": "shopify:\/\/products\/xpand-shoe-wipes",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "#ffffff",
+            "link_bg_color": "#0090fc"
+          }
+        },
+        "text_block_BBK7Nt": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/noshowsockss_1.png",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "title": "Cushioned <br> No-Show Socks",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "SHOP SOCKS",
+            "button_link": "shopify:\/\/products\/cushioned-no-show-socks",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "#ffffff",
+            "link_bg_color": "#0090fc"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_dRJ3mk",
+        "text_block_nrdemK",
+        "text_block_gGJHAR",
+        "text_block_BBK7Nt"
+      ],
+      "settings": {
+        "layout": "grid",
+        "title": "",
+        "link_text": "",
+        "link": "",
+        "link_text_color": "#fff",
+        "link_bg_color": "#ff085a",
+        "sec_bg": "",
+        "css_class": "featured-box",
+        "custom_css": "",
+        "sec_top": 30,
+        "sec_bottom": 0
+      }
     }
   },
   "order": [
     "2ae6f0aa-f4c4-48db-b9ad-358fdabf5ba7",
     "8b4bdfac-6ad8-48e0-9419-1bfc730c2d81",
-    "dcd38f47-4d01-4c89-9500-e275fc45a3b7",
-    "80f4c16b-a976-42cf-bba2-81aca3dcc870",
     "f9c8783f-8ca3-4744-9187-c08bf43a22f3",
-    "e1722e7a-35fe-4249-b951-23d06ba5a66e",
-    "2ca3a8be-acb3-4083-b592-eccc1d00275a"
+    "2ca3a8be-acb3-4083-b592-eccc1d00275a",
+    "text_columns_with_images_video_d9m7mQ"
   ]
 }
