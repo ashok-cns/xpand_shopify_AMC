@@ -373,6 +373,63 @@
         "sec_top": 45,
         "sec_bottom": 45
       }
+    },
+    "text_columns_with_images_video_LTKbj9": {
+      "type": "text-columns-with-images-video",
+      "blocks": {
+        "text_block_bhKcQB": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/icons-01.png",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "title": "",
+            "heading_size": "regular_text",
+            "text": "<p>Try Xpand<\/p><p>for 90 days<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "text_block_qxMCmj": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "title": "Add a title or tagline",
+            "heading_size": "regular_text",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_bhKcQB",
+        "text_block_qxMCmj"
+      ],
+      "settings": {
+        "layout": "grid",
+        "title": "100% Satisfaction Guarantee",
+        "link_text": "SHOP NOW",
+        "link": "shopify:\/\/products\/no-tie-original-elastic-lacing-system",
+        "link_text_color": "#ffffff",
+        "link_bg_color": "#008ffd",
+        "sec_bg": "#42aca7",
+        "css_class": "three-item-banner",
+        "custom_css": "",
+        "sec_top": 25,
+        "sec_bottom": 25
+      }
     }
   },
   "order": [
@@ -381,6 +438,7 @@
     "text_columns_with_images_video_d9m7mQ",
     "text_columns_with_images_video_gndaTr",
     "f9c8783f-8ca3-4744-9187-c08bf43a22f3",
-    "2ca3a8be-acb3-4083-b592-eccc1d00275a"
+    "2ca3a8be-acb3-4083-b592-eccc1d00275a",
+    "text_columns_with_images_video_LTKbj9"
   ]
 }
