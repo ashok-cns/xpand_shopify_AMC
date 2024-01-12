@@ -301,79 +301,6 @@
         "custom_css": ""
       }
     },
-    "2ca3a8be-acb3-4083-b592-eccc1d00275a": {
-      "type": "featured-products",
-      "blocks": {
-        "e01a889f-87aa-4d44-986d-213fc69b9cc9": {
-          "type": "product",
-          "settings": {
-            "enable_block": true,
-            "product": "no-tie-original-elastic-lacing-system",
-            "variant_id": "19252571471983",
-            "image": "shopify:\/\/shop_images\/Black_Pop_colors.jpg",
-            "title": "ORIGINAL NO-TIE LACING SYSTEM",
-            "caption": "<p>BLACK<\/p>",
-            "font_color": "#ffffff",
-            "link_text": "view product"
-          }
-        },
-        "dfb318cb-9235-4275-b8ad-0b59dbfc9a31": {
-          "type": "product",
-          "settings": {
-            "enable_block": true,
-            "product": "no-tie-original-elastic-lacing-system",
-            "variant_id": "19252660273263",
-            "image": "shopify:\/\/shop_images\/White_Pop.jpg",
-            "title": "ORIGINAL NO-TIE LACING SYSTEM",
-            "caption": "<p>WHITE<\/p>",
-            "font_color": "#ffffff",
-            "link_text": "view product"
-          }
-        },
-        "f659556e-4ac5-41e9-b797-8affb7dbd07b": {
-          "type": "product",
-          "settings": {
-            "enable_block": true,
-            "product": "no-tie-original-elastic-lacing-system",
-            "variant_id": "19252660764783",
-            "image": "shopify:\/\/shop_images\/Red_Pop_colors.jpg",
-            "title": "ORIGINAL NO-TIE LACING SYSTEM",
-            "caption": "<p>RED<\/p>",
-            "font_color": "#000000",
-            "link_text": "view product"
-          }
-        },
-        "4c38c804-d533-4a98-85f9-aab97aef5fd3": {
-          "type": "product",
-          "settings": {
-            "enable_block": true,
-            "product": "quick-release-round-lacing-system",
-            "variant_id": "19252728004719",
-            "image": "shopify:\/\/shop_images\/Blue_Pop_colors.jpg",
-            "title": "QUICK-RELEASE LACING SYSTEM",
-            "caption": "<p>TRUE BLUE<\/p>",
-            "font_color": "#ffffff",
-            "link_text": "view product"
-          }
-        }
-      },
-      "block_order": [
-        "e01a889f-87aa-4d44-986d-213fc69b9cc9",
-        "dfb318cb-9235-4275-b8ad-0b59dbfc9a31",
-        "f659556e-4ac5-41e9-b797-8affb7dbd07b",
-        "4c38c804-d533-4a98-85f9-aab97aef5fd3"
-      ],
-      "settings": {
-        "title": "Best Sellers",
-        "link_text": "VIEW ALL COLORS",
-        "link": "shopify:\/\/products\/no-tie-original-elastic-lacing-system",
-        "link_text_color": "#ffffff",
-        "link_bg_color": "#008ffd",
-        "sec_bg": "#f3f4f4",
-        "sec_top": 45,
-        "sec_bottom": 45
-      }
-    },
     "text_columns_with_images_video_LTKbj9": {
       "type": "text-columns-with-images-video",
       "blocks": {
@@ -450,6 +377,110 @@
         "sec_top": 25,
         "sec_bottom": 25
       }
+    },
+    "2ca3a8be-acb3-4083-b592-eccc1d00275a": {
+      "type": "featured-products",
+      "blocks": {
+        "e01a889f-87aa-4d44-986d-213fc69b9cc9": {
+          "type": "product",
+          "settings": {
+            "enable_block": true,
+            "product": "no-tie-original-elastic-lacing-system",
+            "variant_id": "19252571471983",
+            "image": "shopify:\/\/shop_images\/Black_Pop_colors.jpg",
+            "title": "ORIGINAL NO-TIE LACING SYSTEM",
+            "caption": "<p>BLACK<\/p>",
+            "font_color": "#ffffff",
+            "link_text": "view product"
+          }
+        },
+        "dfb318cb-9235-4275-b8ad-0b59dbfc9a31": {
+          "type": "product",
+          "settings": {
+            "enable_block": true,
+            "product": "no-tie-original-elastic-lacing-system",
+            "variant_id": "19252660273263",
+            "image": "shopify:\/\/shop_images\/White_Pop.jpg",
+            "title": "ORIGINAL NO-TIE LACING SYSTEM",
+            "caption": "<p>WHITE<\/p>",
+            "font_color": "#ffffff",
+            "link_text": "view product"
+          }
+        },
+        "f659556e-4ac5-41e9-b797-8affb7dbd07b": {
+          "type": "product",
+          "settings": {
+            "enable_block": true,
+            "product": "no-tie-original-elastic-lacing-system",
+            "variant_id": "19252660764783",
+            "image": "shopify:\/\/shop_images\/Red_Pop_colors.jpg",
+            "title": "ORIGINAL NO-TIE LACING SYSTEM",
+            "caption": "<p>RED<\/p>",
+            "font_color": "#000000",
+            "link_text": "view product"
+          }
+        },
+        "4c38c804-d533-4a98-85f9-aab97aef5fd3": {
+          "type": "product",
+          "settings": {
+            "enable_block": true,
+            "product": "quick-release-round-lacing-system",
+            "variant_id": "19252728004719",
+            "image": "shopify:\/\/shop_images\/Blue_Pop_colors.jpg",
+            "title": "QUICK-RELEASE LACING SYSTEM",
+            "caption": "<p>TRUE BLUE<\/p>",
+            "font_color": "#ffffff",
+            "link_text": "view product"
+          }
+        }
+      },
+      "block_order": [
+        "e01a889f-87aa-4d44-986d-213fc69b9cc9",
+        "dfb318cb-9235-4275-b8ad-0b59dbfc9a31",
+        "f659556e-4ac5-41e9-b797-8affb7dbd07b",
+        "4c38c804-d533-4a98-85f9-aab97aef5fd3"
+      ],
+      "settings": {
+        "title": "Best Sellers",
+        "link_text": "VIEW ALL COLORS",
+        "link": "shopify:\/\/products\/no-tie-original-elastic-lacing-system",
+        "link_text_color": "#ffffff",
+        "link_bg_color": "#008ffd",
+        "sec_bg": "#f3f4f4",
+        "sec_top": 45,
+        "sec_bottom": 45
+      }
+    },
+    "video_kmFWDe": {
+      "type": "video",
+      "settings": {
+        "wide_display": true,
+        "aspect_ratio": "16:9",
+        "autoplay": true,
+        "autoloop": true,
+        "mute_video": true,
+        "show_controls": false,
+        "video_dark_overlay": false,
+        "iframe_video": "https:\/\/vimeo.com\/878912461?share=copy",
+        "html5_video": "",
+        "display_text_over_video": false,
+        "preheading": "",
+        "heading": "",
+        "subheading": "",
+        "button1_label": "Play Video",
+        "button1_link": "",
+        "button1_style": "global-button--banner",
+        "button2_label": "",
+        "button2_link": "",
+        "button2_style": "global-button--banner",
+        "text_position": "center",
+        "text_align": "center",
+        "caption_content_background": "original",
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "",
+        "custom_css": ""
+      }
     }
   },
   "order": [
@@ -458,7 +489,8 @@
     "text_columns_with_images_video_d9m7mQ",
     "text_columns_with_images_video_gndaTr",
     "f9c8783f-8ca3-4744-9187-c08bf43a22f3",
+    "text_columns_with_images_video_LTKbj9",
     "2ca3a8be-acb3-4083-b592-eccc1d00275a",
-    "text_columns_with_images_video_LTKbj9"
+    "video_kmFWDe"
   ]
 }
