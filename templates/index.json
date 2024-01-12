@@ -256,13 +256,32 @@
             "link_text_color": "#ffffff",
             "link_bg_color": "#0090fc"
           }
+        },
+        "text_block_9krdfE": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/Urban_belt_Insert_for_Website-smallest.jpg",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "title": "Magnetic Urban <br> Elastic Belt",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "URBAN BELT",
+            "button_link": "shopify:\/\/products\/urban-belt",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "#ffffff",
+            "link_bg_color": "#0090fc"
+          }
         }
       },
       "block_order": [
         "text_block_dRJ3mk",
         "text_block_nrdemK",
         "text_block_gGJHAR",
-        "text_block_BBK7Nt"
+        "text_block_BBK7Nt",
+        "text_block_9krdfE"
       ],
       "settings": {
         "layout": "grid",
