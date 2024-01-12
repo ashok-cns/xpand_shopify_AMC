@@ -215,6 +215,83 @@
         "sec_bottom": 0
       }
     },
+    "text_columns_with_images_video_gndaTr": {
+      "type": "text-columns-with-images-video",
+      "blocks": {
+        "text_block_p7FaqJ": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/icon1.png",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "title": "Secure Fit",
+            "heading_size": "regular_text",
+            "text": "<p>Set it and forget it with our patented lace anchor technology. Zero distractions, perfect support, all day long.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "text_block_Ge4kTA": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/icon2.png",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "title": "Adjustable Tension",
+            "heading_size": "regular_text",
+            "text": "<p>Designed to move with you and work for you. Need more compression? Need more room? Xpand laces are easy to adjust on the fly.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "text_block_rgJE3C": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/icon3.png",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "title": "One Size Fits All",
+            "heading_size": "regular_text",
+            "text": "<p>No need to search for the right size and hope for the best. Whether you’re shopping for an adult or a child, sneakers, or boots, you can’t go wrong. Trim to your desired length and you’re good to go!<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_p7FaqJ",
+        "text_block_Ge4kTA",
+        "text_block_rgJE3C"
+      ],
+      "settings": {
+        "layout": "grid",
+        "title": "Feel the Difference",
+        "link_text": "",
+        "link": "",
+        "link_text_color": "#fff",
+        "link_bg_color": "#ff085a",
+        "sec_bg": "",
+        "css_class": "featured-banner-area",
+        "custom_css": "",
+        "sec_top": 40,
+        "sec_bottom": 40
+      }
+    },
     "f9c8783f-8ca3-4744-9187-c08bf43a22f3": {
       "type": "custom-html",
       "settings": {
@@ -296,91 +373,14 @@
         "sec_top": 45,
         "sec_bottom": 45
       }
-    },
-    "text_columns_with_images_video_gndaTr": {
-      "type": "text-columns-with-images-video",
-      "blocks": {
-        "text_block_p7FaqJ": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "enable_media": "image",
-            "image": "shopify:\/\/shop_images\/icon1.png",
-            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "title": "Secure Fit",
-            "heading_size": "regular_text",
-            "text": "<p>Set it and forget it with our patented lace anchor technology. Zero distractions, perfect support, all day long.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        },
-        "text_block_Ge4kTA": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "enable_media": "image",
-            "image": "shopify:\/\/shop_images\/icon2.png",
-            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "title": "Adjustable Tension",
-            "heading_size": "regular_text",
-            "text": "<p>Designed to move with you and work for you. Need more compression? Need more room? Xpand laces are easy to adjust on the fly.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        },
-        "text_block_rgJE3C": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "enable_media": "image",
-            "image": "shopify:\/\/shop_images\/icon3.png",
-            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "title": "One Size Fits All",
-            "heading_size": "regular_text",
-            "text": "<p>No need to search for the right size and hope for the best. Whether you’re shopping for an adult or a child, sneakers, or boots, you can’t go wrong. Trim to your desired length and you’re good to go!<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "align_text": "center",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_block_p7FaqJ",
-        "text_block_Ge4kTA",
-        "text_block_rgJE3C"
-      ],
-      "settings": {
-        "layout": "grid",
-        "title": "Feel the Difference",
-        "link_text": "",
-        "link": "",
-        "link_text_color": "#fff",
-        "link_bg_color": "#ff085a",
-        "sec_bg": "",
-        "css_class": "featured-banner-area",
-        "custom_css": "",
-        "sec_top": 40,
-        "sec_bottom": 40
-      }
     }
   },
   "order": [
     "2ae6f0aa-f4c4-48db-b9ad-358fdabf5ba7",
     "8b4bdfac-6ad8-48e0-9419-1bfc730c2d81",
     "text_columns_with_images_video_d9m7mQ",
+    "text_columns_with_images_video_gndaTr",
     "f9c8783f-8ca3-4744-9187-c08bf43a22f3",
-    "2ca3a8be-acb3-4083-b592-eccc1d00275a",
-    "text_columns_with_images_video_gndaTr"
+    "2ca3a8be-acb3-4083-b592-eccc1d00275a"
   ]
 }
