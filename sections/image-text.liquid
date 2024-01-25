@@ -90,14 +90,14 @@
         >
           <div class="featured-link--wrap">
             {%- if blockType == 'video'-%}
-            <a {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% endif %} title="{{ block.settings.title }}">
+           
               {% comment %} {% assign videoPoster = block.settings.video_poster %} {% endcomment %}
             {% assign videoSrc = block.settings.video_url %}
             {{ videoSrc | video_tag: image_size: 'master', autoplay: true, muted: true, controls: false, loop: true }}
             {% comment %} <video preload="none" autoplay="autoplay" loop="loop" muted="muted" playsinline="" poster="{{ videoPoster | img_url: 'original' }}">
               <source data-v-597623a8="" src="{{ videoSrc }}" type="video/mp4">
             </video> {% endcomment %}
-              </a>
+            
             {%- else -%}
             <a {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% endif %} title="{{ block.settings.title }}">
               {% if image != blank %}
