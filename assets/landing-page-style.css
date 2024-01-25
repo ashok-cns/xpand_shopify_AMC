@@ -87,6 +87,7 @@
       height: 0;
       padding-bottom: 100%;
       overflow: hidden;
+      position: relative;
   }
   .featured-link--wrap video {
     position: absolute;
