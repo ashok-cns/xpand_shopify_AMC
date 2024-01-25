@@ -9,7 +9,7 @@
   }
 
   /* Override poorly scoped CSS rule for images in style.css */
-  .landing-page .image-element__wrap img[data-sizes=auto].lazyloaded {
+  .image-element__wrap img[data-sizes=auto].lazyloaded {
     width: 100%;
     
     height: auto !important; /* !important for precedence */
