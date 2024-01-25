@@ -218,7 +218,7 @@
         "3c25279a-9bfe-4983-91d4-7e7a4eb81f9f"
       ],
       "settings": {
-        "wide_display": true,
+        "wide_display": false,
         "slideshow_text_animation": "fadeInDown",
         "slideshow_animation": "fade",
         "slideshow_speed": 6,
