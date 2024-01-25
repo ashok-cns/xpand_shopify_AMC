@@ -137,7 +137,7 @@
         "132284ad-520c-4cd0-8096-f64d569cbc77"
       ],
       "settings": {
-        "wide_display": true,
+        "wide_display": false,
         "slideshow_text_animation": "",
         "slideshow_animation": "slide",
         "slideshow_speed": 6,
