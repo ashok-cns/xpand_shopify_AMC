@@ -49,6 +49,7 @@
 >
   {% if blocks.size > 0 %}
     {% for block in blocks %}
+      {% assign blockType = block.settings.type %}
       <div
         class="
           container
@@ -88,6 +89,15 @@
           "
         >
           <div class="featured-link--wrap">
+            {%- if blockType == 'video'-%}
+            <a {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% endif %} title="{{ block.settings.title }}">
+              {% assign videoPoster = block.settings.video_poster %}
+            {% assign videoSrc = block.settings.video_url %}
+            <video preload="none" autoplay="autoplay" loop="loop" muted="muted" playsinline="" poster="{{ videoPoster | img_url: 'original' }}">
+              <source data-v-597623a8="" src="{{ videoSrc }}" type="video/mp4">
+            </video>
+              </a>
+            {%- else -%}
             <a {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% endif %} title="{{ block.settings.title }}">
               {% if image != blank %}
                 {%
@@ -102,6 +112,7 @@
                 {{ 'collection-' | append: i | placeholder_svg_tag: 'placeholder-svg placeholder-svg--promotions' }}
               {% endif %}
             </a>
+            {%- endif -%}
           </div>
         </div>
         <div class="featured-link--half one-half column image-with-text__text-column is-flex is-align-center image-with-text__column medium-down--one-whole block--{{ block.id }}">
@@ -270,12 +281,39 @@
       "type": "image",
       "name": "Image with text",
       "settings": [
+          {
+            "type": "radio",
+            "id": "type",
+            "label": "Enable",
+            "options": [
+              {
+                "value": "image",
+                "label": "Image"
+              }, {
+                "value": "video",
+                "label": "Video"
+              }
+            ],
+            "default": "image"
+          },
         {
           "type": "image_picker",
           "id": "image",
           "label": "Image",
           "info": "1024 x 1024px recommended"
         },
+        {
+            "type": "header",
+            "content": "Video"
+          }, {
+            "type": "text",
+            "id": "video_url",
+            "label": "Video URL"
+          }, {
+            "type": "image_picker",
+            "id": "video_poster",
+            "label": "Video Poster"
+          },
         {
           "type": "text",
           "id": "title",
