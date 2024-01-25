@@ -168,8 +168,9 @@
         "template--15471082930287__505e700f-50d0-4023-bc45-d3d28c8acf1c-image-2": {
           "type": "image",
           "settings": {
-            "type": "image",
+            "type": "video",
             "image": "shopify:\/\/shop_images\/2.gif",
+            "video_url": "shopify:\/\/files\/videos\/Flat_-_Install_and_Adjust.mp4",
             "title": "LACE ANCHOR CLIPS",
             "text": "<p>Our patented Lace Anchors secure your laces in place through any intense activities, while maintaining an amazing comfortable fit.<\/p>",
             "button_label": "",
