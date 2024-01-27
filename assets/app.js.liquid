@@ -1052,11 +1052,15 @@ $(() => {
            if(cartQty == freeShippingItemCount ){
             console.log('match freeshipping count')
             $(document).find('.progress-wrap .text-wrapper').html('<p>'+freeShippingAppliedText+'</p>');
+            $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="freeship-msg"] img.default-icn').addClass('hidden');
+            $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="freeship-msg"] img.active-icn').removeClass('hidden');
             setTimeout(function(){
               $(document).find('.progress-wrap .text-wrapper').html('<p>You are '+pendingQty+' items away from '+makePercentage+'% off</p>')
             },5000)
            } else if(cartQty == freeShippingItemCount-1){
             $(document).find('.progress-wrap .text-wrapper').html('<p>'+freeShippingTextHint+'</p>');
+            $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="freeship-msg"] img.active-icn').addClass('hidden');
+            $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="freeship-msg"] img.default-icn').removeClass('hidden');
             
            }
            else {
