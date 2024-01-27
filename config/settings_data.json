@@ -168,7 +168,7 @@
     "tier_4_line_qnty": 12,
     "tier_4_dis_amount": "5.74",
     "cart_discount_hint_color": "#24726e",
-    "enable_pb_freeship": true,
+    "enable_pb_freeship": false,
     "content_freeship": "<p><strong>Free ship<\/strong><\/p>",
     "progress_bar_content_1": "<p><strong>3for30<\/strong> (Save $6)<\/p>",
     "progress_bar_content_2": "<p><strong>6for40<\/strong> (Save $32)<\/p>",
