@@ -1091,6 +1091,11 @@ $(() => {
             }
             var checkqty = Number(currentItem.find('input[data-cart-quantity-input]').val()); console.log('checkqty==22:', checkqty)
             var checkItemPrice = Number(currentItem.find('.mini-cart__item-price span.updated-amount[data-upate-price]').attr('data-upate-price')); console.log('66checkItemPrice==:', checkItemPrice)
+            // Active free shipping icons start//
+            $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="freeship-msg"] img.default-icn').addClass('hidden');
+            $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="freeship-msg"] img.active-icn').removeClass('hidden');
+            // Active free shipping icons end//
+
             // lineItemSubtotal = lineItemSubtotal + Number(checkqty * checkItemPrice); console.log('upatedSubtotal 44 => ', lineItemSubtotal);
             updateOriginalPrice = updateOriginalPrice + checkqty*currentItem.find('.mini-cart__item-price span').attr('data-original-price'); console.log('Updated Original SubtotalPrice', updateOriginalPrice);
             lineItemSubtotal = updateOriginalPrice; console.log('upatedSubtotal 44 => ', lineItemSubtotal);
