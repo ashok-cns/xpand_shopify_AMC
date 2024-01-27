@@ -1736,6 +1736,11 @@
         "label": "Progress bar content 3"
       },
       {
+        "type": "richtext",
+        "id": "progress_bar_content_4",
+        "label": "Progress bar content 4"
+      },
+      {
         "type": "color",
         "id": "cart_progress_bar_color",
         "label": "Progress bar color",
