@@ -1721,6 +1721,17 @@
         "default": true
       },
       {
+        "type": "checkbox",
+        "id": "enable_pb_freeship",
+        "label": "Enable Free ship content",
+        "default": false
+      },
+      {
+        "type": "richtext",
+        "id": "content_freeship",
+        "label": "Progress bar content Free ship"
+      },
+      {
         "type": "richtext",
         "id": "progress_bar_content_1",
         "label": "Progress bar content 1"
@@ -1734,11 +1745,6 @@
         "type": "richtext",
         "id": "progress_bar_content_3",
         "label": "Progress bar content 3"
-      },
-      {
-        "type": "richtext",
-        "id": "progress_bar_content_4",
-        "label": "Progress bar content 4"
       },
       {
         "type": "color",
