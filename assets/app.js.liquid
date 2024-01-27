@@ -1054,7 +1054,7 @@ $(() => {
             $(document).find('.progress-wrap .text-wrapper').html('<p>'+freeShippingAppliedText+'</p>');
             setTimeout(function(){
               $(document).find('.progress-wrap .text-wrapper').html('<p>You are '+pendingQty+' items away from '+makePercentage+'% off</p>')
-            },2000)
+            },5000)
            } else if(cartQty == freeShippingItemCount-1){
             $(document).find('.progress-wrap .text-wrapper').html('<p>'+freeShippingTextHint+'</p>');
             
