@@ -37,6 +37,7 @@
   }
   h2.product_name {
     margin-top: 0px;
+    margin-bottom: 8px;
   }
   .image-with-text-container {
     flex-direction: row-reverse;
