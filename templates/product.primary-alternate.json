@@ -13,7 +13,8 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+          }
         },
         "743770d4-49ae-40cf-bda3-31d01c1f3a57": {
           "type": "text",
@@ -23,7 +24,8 @@
         },
         "5a3dd3eb-8b9d-44a1-ac37-a69e1a645dbc": {
           "type": "rating",
-          "settings": {}
+          "settings": {
+          }
         },
         "acdd1f33-c781-4997-8856-8de88bf35d19": {
           "type": "custom-liquid",
@@ -40,16 +42,19 @@
         "description": {
           "type": "description",
           "disabled": true,
-          "settings": {}
+          "settings": {
+          }
         },
         "form": {
           "type": "form",
-          "settings": {}
+          "settings": {
+          }
         },
         "share": {
           "type": "share",
           "disabled": true,
-          "settings": {}
+          "settings": {
+          }
         },
         "27b7e7a7-b6bc-47b5-acf5-c1bfbfab6c6c": {
           "type": "popup",
@@ -164,8 +169,8 @@
             "accessories_2_type": "image",
             "accessories_2_image": "shopify:\/\/shop_images\/download2.gif",
             "accessories_video2_icon": "shopify:\/\/shop_images\/Anti-heel-slip-v1585586100508_651f2551-45dd-41b1-80bd-97b0df5c9398.svg",
-            "accessories_video2_heading": "Anti-slip Heel Lock",
-            "accessories_video2_text": "Keeps your no-shows intact throughout the day as well as slipping on and off shoes.",
+            "accessories_video2_heading": "{{ product.metafields.global.video_2_heading.value }}",
+            "accessories_video2_text": "",
             "accessories_3_type": "image",
             "accessories_3_image": "shopify:\/\/shop_images\/download3.webp",
             "accessories_video3_icon": "shopify:\/\/shop_images\/Ergonomic-v1585586113490_1ce16e33-7534-4e3a-bec3-690c1860c876.svg",
@@ -263,7 +268,8 @@
         "98d75cb0-4d74-41f3-82f5-e860a9501597",
         "2eb496a0-8435-428d-89ea-b978b9701b3f"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "ff7c6ca4-f31a-42f4-9b0d-2190b71016f5": {
       "type": "custom-html",
