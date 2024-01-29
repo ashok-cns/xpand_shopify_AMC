@@ -321,6 +321,7 @@
         "template--15136042287215__817d4b3d-7e40-4b23-b84e-dd690db248f0-168362432268695d48-3",
         "template--15136042287215__817d4b3d-7e40-4b23-b84e-dd690db248f0-168362432268695d48-5"
       ],
+      "disabled": true,
       "settings": {
         "sec_bg": "#f7f7f7",
         "title": "Frequently Asked Questions",
