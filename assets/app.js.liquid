@@ -1331,9 +1331,9 @@ $(() => {
         } else {
           console.log('progress enable 4')
           $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="1"] img.default-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="3"] img.default-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="2"] img.default-icn').removeClass('hidden');
-          $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="3"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="2"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="1"] img.active-icn').addClass('hidden');
-          
+          $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="3"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="2"] img.active-icn, .progress-bar-content-wrapper .progress-bar-content-item[data-index="1"] img.active-icn').addClass('hidden');         
         }
+        console.log(cartQty, '<', freeShippingAppliedText)
         if(cartQty < freeShippingAppliedText ) {
           $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="freeship-msg"] img.active-icn').addClass('hidden');
           $(document).find('.progress-bar-content-wrapper .progress-bar-content-item[data-index="freeship-msg"] img.default-icn').removeClass('hidden');
