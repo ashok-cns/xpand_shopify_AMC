@@ -201,5 +201,6 @@ img[src*="stamped.io"] {
     .shopify-section--featured-product .product__details {
       width: 500px;
       max-width: 50%;
+      padding-top: 5px;
     }
   }
