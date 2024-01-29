@@ -1622,6 +1622,11 @@
       },
       {
         "type": "text",
+        "id": "free_product_item_vid",
+        "label": "Free product variant ID"
+      },
+      {
+        "type": "text",
         "id": "cart_free_product_hint_text",
         "label": "Free Product hint text",
         "default": "You are {{quantity}} pack away to get a free product!",
