@@ -111,6 +111,7 @@
           <div class="cart-free-gift-header">Free Gift</div>
           <div class="cart-free-gift-items">
             {% assign product = all_products[settings.free_product_item] %}
+            {% assign freeProdVId = settings.free_product_item_vid %}
            
             {% comment %} {% for product in settings.free_product_list %} {% endfor %} {% endcomment %}
               <div class="cart-free-gift-item">
@@ -125,7 +126,7 @@
                   </div>
                   <div class="cart-free-gift-item-info-rgt">
                     <div class="free-gift-price"><del>{{ product.price | money }}</del> <span>Free</span></div>
-                    <button  data-free-gift-product-cta class="global-button global-button--primary add_to_cart ajax-submit free-gift-item" type="button" data-amount="{{  product.price }}" data-selected-variant="{{ product.first_available_variant.id }}"><span data-add-to-cart-text="">Select Gift</span></button>
+                    <button  data-free-gift-product-cta class="global-button global-button--primary add_to_cart ajax-submit free-gift-item" type="button" data-amount="{{  product.price }}" data-selected-variant="{{ freeProdVId }}"><span data-add-to-cart-text="">Select Gift</span></button>
                   </div>
                  
                 </div>
