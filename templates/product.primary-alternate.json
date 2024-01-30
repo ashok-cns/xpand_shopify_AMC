@@ -162,6 +162,7 @@
             "title": "Meet the world’s most comfortable socks",
             "block_desc": "",
             "accessories_1_type": "video",
+            "accessories_1_image": "{{ product.metafields.custom.primary_alternate_video_1_url.value }}",
             "accessories_video1_url": "shopify:\/\/files\/videos\/(GIF-1)-Cushioned-No-Show-v1585155742390_5be89c6e-7a11-448c-88fe-c8e01f6274cd.mp4",
             "accessories_video1_icon": "shopify:\/\/shop_images\/Countour-Seam-v1585586263310_37152b2b-fc9f-468c-a7ab-b8fdd044357d.svg",
             "accessories_video1_heading": "Completely Hidden",
