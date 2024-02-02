@@ -12,6 +12,7 @@ body.product .product-main .product_section.container {
 .product__details--product-page {
     max-width: 360px;
     padding-bottom: 40px;
+    padding-top: 20px;
 }
 .product__details--product-page .price-ui .savings {
     display: none;
