@@ -598,7 +598,7 @@ $(() => {
             + '</div></a>';
         }
 
-        cartItemsHTML += `<div class="mini-cart__item-content"><div class="mini-cart__item-title estt"><a href="${item.url}">${item.title}</a>`;
+        cartItemsHTML += `<div class="mini-cart__item-content"><div class="mini-cart__item-title estt"><a href="${item.url}">${item.product_title}</a>`;
 
         if (item.selling_plan_allocation) {
           cartItemsHTML += `<div class="meta">${item.selling_plan_allocation.selling_plan.name}</div>`;
