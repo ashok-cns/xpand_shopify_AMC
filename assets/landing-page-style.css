@@ -203,7 +203,7 @@ img[src*="stamped.io"] {
       max-width: 50%;
       padding-top: 20px;
     }
-    .product__images.one-half.column.medium-down--one-whole {
+    .product__images.column {
       padding: 10px;
     }
 
