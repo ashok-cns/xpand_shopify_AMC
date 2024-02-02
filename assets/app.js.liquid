@@ -957,7 +957,7 @@ $(() => {
           var checkTotalQtyAndTags = setInterval(function(){
             if( $('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_items.js-cart_items li[data-tags]').length > 0){
               var cartQty = 0;
-              $('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_items.js-cart_items li[data-tags]').each(function(i){
+              $('header[data-desktop-header] .main-nav__wrapper .nav.nav--right .cart_items.js-cart_items li[data-tags]:not([data-free-product])').each(function(i){
                 //console.log('inside the topnav', i);
                 
 
