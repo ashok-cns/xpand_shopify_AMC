@@ -197,10 +197,14 @@ img[src*="stamped.io"] {
       padding: 0;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 798px) {
     .shopify-section--featured-product .product__details {
       width: 500px;
       max-width: 50%;
       padding-top: 20px;
     }
+    .product__images.one-half.column.medium-down--one-whole {
+      padding: 10px;
+    }
+
   }
