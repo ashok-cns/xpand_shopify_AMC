@@ -273,6 +273,7 @@
     },
     "ff7c6ca4-f31a-42f4-9b0d-2190b71016f5": {
       "type": "custom-html",
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 28px; font-weight: 700; color: #008ffd; letter-spacing: 0; margin-bottom: 30px; text-align: center; font-family: inherit;}"
       ],
