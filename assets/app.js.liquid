@@ -902,7 +902,7 @@ $(() => {
           
 
           const warning = `<p class="warning animated bounceIn">${response.replace('All 1 ', 'All ')}</p>`;
-          $addToCartForm.after(warning);
+          //$addToCartForm.after(warning);
           $addToCartBtn.removeAttr('disabled').removeClass('disabled');
           $addToCartBtn.find('span').text(window.PXUTheme.translation.add_to_cart).removeClass('zoomOut').addClass('zoomIn');
           
