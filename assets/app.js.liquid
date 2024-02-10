@@ -885,6 +885,11 @@ $(() => {
           if(XMLHttpRequest.status == '422') {
             $('body').removeClass('loader-on');
             $currentAjaxBtn.after('<p class="removeAddtoCartWarningMsg">'+response+'</p>')
+            setTimeout(=>{
+              $(document).find('.removeAddtoCartWarningMsg').remove();
+            }, 2000);
+            
+
           }
           
 
