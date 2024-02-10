@@ -884,7 +884,7 @@ $(() => {
           $('.warning').remove();
           if(XMLHttpRequest.status == '422') {
             $('body').removeClass('loader-on');
-            if($(this).closest().hasClass('cart-free-gift-item-info-rgt')){
+            if($(this).hasAttr('data-free-gift-product-cta')){
               $currentAjaxBtn.closest('.cart-free-gift-item-info-rgt').append('<p class="removeAddtoCartWarningMsg">'+response+'</p>')
             }
             
