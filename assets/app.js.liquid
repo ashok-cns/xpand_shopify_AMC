@@ -882,14 +882,17 @@ $(() => {
           let response = eval(`(${XMLHttpRequest.responseText})`);
           response = response.description;
           $('.warning').remove();
+          if(XMLHttpRequest.status == '422') {
+            $('body').removeClass('loader-on');
+            $currentAjaxBtn.after('<p class="removeAddtoCartWarningMsg">'+response+'</p>')
+          }
+          
 
           const warning = `<p class="warning animated bounceIn">${response.replace('All 1 ', 'All ')}</p>`;
           $addToCartForm.after(warning);
           $addToCartBtn.removeAttr('disabled').removeClass('disabled');
           $addToCartBtn.find('span').text(window.PXUTheme.translation.add_to_cart).removeClass('zoomOut').addClass('zoomIn');
-          if(XMLHttpRequest.status == '422') {
-            $('body').removeClass('loader-on');
-          }
+          
         },
       });
 
