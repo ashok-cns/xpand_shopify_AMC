@@ -878,6 +878,7 @@ $(() => {
           });
         },
         error(XMLHttpRequest) {
+          console.log('XMLHttpRequest==>', XMLHttpRequest);
           let response = eval(`(${XMLHttpRequest.responseText})`);
           response = response.description;
           $('.warning').remove();
