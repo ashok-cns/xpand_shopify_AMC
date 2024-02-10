@@ -885,7 +885,7 @@ $(() => {
           if(XMLHttpRequest.status == '422') {
             $('body').removeClass('loader-on');
 
-            var attrFreeGiftProd = $(this).attr('data-free-gift-product-cta');
+            var attrFreeGiftProd = $currentAjaxBtn.attr('data-free-gift-product-cta');
 
             // For some browsers, `attr` is undefined; for others, `attr` is false. Check for both.
             if (typeof attrFreeGiftProd !== typeof undefined && attrFreeGiftProd !== false) {
