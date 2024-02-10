@@ -878,7 +878,7 @@ $(() => {
           });
         },
         error(XMLHttpRequest) {
-          console.log('XMLHttpRequest==>', XMLHttpRequest);
+          console.log($addToCartBtn, 'XMLHttpRequest==>', XMLHttpRequest);
           let response = eval(`(${XMLHttpRequest.responseText})`);
           response = response.description;
           $('.warning').remove();
@@ -887,6 +887,9 @@ $(() => {
           $addToCartForm.after(warning);
           $addToCartBtn.removeAttr('disabled').removeClass('disabled');
           $addToCartBtn.find('span').text(window.PXUTheme.translation.add_to_cart).removeClass('zoomOut').addClass('zoomIn');
+          if(XMLHttpRequest.status == '422') {
+            $('body').removeClass('loader-on');
+          }
         },
       });
 
