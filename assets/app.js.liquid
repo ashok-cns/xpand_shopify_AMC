@@ -890,7 +890,7 @@ $(() => {
             // For some browsers, `attr` is undefined; for others, `attr` is false. Check for both.
             if (typeof attrFreeGiftProd !== typeof undefined && attrFreeGiftProd !== false) {
               // Element has this attribute
-              $currentAjaxBtn.closest('.cart-free-gift-item-info-rgt').after('<p class="removeAddtoCartWarningMsg">'+response+'</p>')
+              $$(this).closest('.cart-free-gift-item-info-rgt').after('<p class="removeAddtoCartWarningMsg">'+response+'</p>')
             }
             
             setTimeout( ()=>{
