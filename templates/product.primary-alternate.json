@@ -177,7 +177,7 @@
             "accessories_video3_heading": "{{ product.metafields.custom.primary_alternate_video3_heading_text.value }}",
             "accessories_video3_text": "{{ product.metafields.custom.primary_alternate_video4_text.value }}",
             "accessories_4_type": "image",
-            "accessories_4_image": "shopify:\/\/shop_images\/download4.webp",
+            "accessories_4_image": "{{ product.metafields.custom.primary_alternate_image_4.value }}",
             "accessories_video4_icon": "shopify:\/\/shop_images\/Breathable-v1585586243160_e526e5f5-96e0-4a61-8371-7757e3dfee90.svg",
             "accessories_video4_heading": "{{ product.metafields.global.video_3_heading.value }}",
             "accessories_video4_text": "{{ product.metafields.custom.primary_alternate_video3_text | metafield_text }}",
