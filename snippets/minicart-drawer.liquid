@@ -206,7 +206,7 @@
                   </a>
                   {% unless item.product.has_only_default_variant or item.variant.title contains "Title" %}
                     {% for option in item.product.options %}
-                      {{ item.variant.options[forloop.index0] }}
+                      <span class="mini-cart__item-variant__title">{{ item.variant.options[forloop.index0] }}</span>
                       {% unless forloop.last %}/{% endunless %}
                     {% endfor %}
                   {% endunless %}
