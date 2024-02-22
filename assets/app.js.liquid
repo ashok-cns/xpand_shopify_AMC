@@ -1101,7 +1101,7 @@ $(() => {
 
 
             
-            var lineItemDiscountAmnt = Number(currentItem.find('.mini-cart__item-price span').attr('data-original-price')/100) - cm_tier_amount; 
+            var lineItemDiscountAmnt = Number(currentItem.find('.mini-cart__item-price span').attr('data-original-price')/100) - cm_tier_amount;  console.log('FREE lineDiscountAmount2222==>>>', lineItemDiscountAmnt);
             if(currentItem.find('.mini-cart__item-price span').attr('data-original-price')/100 == lineItemDiscountAmnt){
               currentItem.find('.mini-cart__item-price span.updated-amount[data-upate-price]').remove();
               console.log('inside If price match');
@@ -1251,7 +1251,7 @@ $(() => {
            makePercentage = Math.ceil(makePercentage);  console.log('makePercentage', Math.ceil(makePercentage));
            $(document).find('.progress-wrap .text-wrapper').html('<p>'+noDiscountHintText+'</p>');
 
-           var lineItemDiscountAmnt = Number(currentItem.find('.mini-cart__item-price span').attr('data-original-price')/100) - cm_tier_amount; 
+           var lineItemDiscountAmnt = Number(currentItem.find('.mini-cart__item-price span').attr('data-original-price')/100) - cm_tier_amount;  console.log('FREE lineDiscountAmount==>>>', lineItemDiscountAmnt);
             if(currentItem.find('.mini-cart__item-price span').attr('data-original-price')/100 == lineItemDiscountAmnt){
               currentItem.find('.mini-cart__item-price span.updated-amount[data-upate-price]').remove();
               console.log('inside If price match');
