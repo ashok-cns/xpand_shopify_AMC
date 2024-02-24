@@ -1104,11 +1104,11 @@ $(() => {
             var lineItemDiscountAmnt = Number(currentItem.find('.mini-cart__item-price span').attr('data-original-price')/100) - cm_tier_amount;  console.log('FREE lineDiscountAmount2222==>>>', lineItemDiscountAmnt);
             if(currentItem.find('.mini-cart__item-price span').attr('data-original-price')/100 == lineItemDiscountAmnt){
               currentItem.find('.mini-cart__item-price span.updated-amount[data-upate-price]').remove();
-              console.log('inside If price match');
+              console.log('inside If price match-333');
             currentItem.find('.mini-cart__item-price').removeClass('text-strikethrough');
             currentItem.find('.mini-cart__item-price').append('<span data-discount-price="'+cm_tier_amount*100+'" data-upate-price="'+lineItemDiscountAmnt*100+'" class="updated-amount hidden">$ '+lineItemDiscountAmnt.toFixed(2)+'</span>');
             }else {
-              console.log('inside If price not match')
+              console.log('inside If price not match-444')
               currentItem.find('.mini-cart__item-price span.updated-amount[data-upate-price]').remove();
             currentItem.find('.mini-cart__item-price').addClass('text-strikethrough');
             currentItem.find('.mini-cart__item-price').append('<span data-discount-price="'+cm_tier_amount*100+'" data-upate-price="'+lineItemDiscountAmnt*100+'" class="updated-amount">$ '+lineItemDiscountAmnt.toFixed(2)+'</span>');
@@ -1254,11 +1254,11 @@ $(() => {
            var lineItemDiscountAmnt = Number(currentItem.find('.mini-cart__item-price span').attr('data-original-price')/100) - cm_tier_amount;  console.log('FREE lineDiscountAmount==>>>', lineItemDiscountAmnt);
             if(currentItem.find('.mini-cart__item-price span').attr('data-original-price')/100 == lineItemDiscountAmnt){
               currentItem.find('.mini-cart__item-price span.updated-amount[data-upate-price]').remove();
-              console.log('inside If price match');
+              console.log('inside If price match-1111');
             currentItem.find('.mini-cart__item-price').removeClass('text-strikethrough');
             currentItem.find('.mini-cart__item-price').append('<span data-discount-price="'+cm_tier_amount*100+'" data-upate-price="'+lineItemDiscountAmnt*100+'" class="updated-amount hidden">$ '+lineItemDiscountAmnt.toFixed(2)+'</span>');
             }else {
-              console.log('inside If price not match')
+              console.log('inside If price not match-2222')
               currentItem.find('.mini-cart__item-price span.updated-amount[data-upate-price]').remove();
             currentItem.find('.mini-cart__item-price').addClass('text-strikethrough');
             currentItem.find('.mini-cart__item-price').append('<span data-discount-price="'+cm_tier_amount*100+'" data-upate-price="'+lineItemDiscountAmnt*100+'" class="updated-amount">$ '+lineItemDiscountAmnt.toFixed(2)+'</span>');
