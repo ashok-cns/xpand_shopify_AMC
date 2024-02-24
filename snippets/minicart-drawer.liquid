@@ -116,7 +116,7 @@
             {% comment %} {% for product in settings.free_product_list %} {% endfor %} {% endcomment %}
               {% if freeProdVId != blank %}
                 {% for variant in product.variants %}
-                  {{ variant.id }} == {{ freeProdVId }}
+                  <p>{{ variant.id }} == {{ freeProdVId }}</p>
                   {% if variant.id == freeProdVId %}
                     <div class="cart-free-gift-item">
                       <div class="cart-free-gift-item-img">
