@@ -119,7 +119,15 @@ img[src*="stamped.io"] {
       padding-bottom: 100%;
     }
      h2.product_name {
-       font-size: 30px;
+       /* font-size: 30px; */
+       font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: .3px;
+      max-width: calc(100% - 100px);
+      text-transform: none;
+      padding-top: 10px;
+      margin-bottom: 10px;
+      color: #000;
      } 
     .shopify-section--text-columns-with-images h2.title, 
     .gallery-section.gallery-classic h2.title {
