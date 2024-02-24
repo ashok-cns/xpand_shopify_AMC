@@ -247,10 +247,6 @@
                     {% endif %}
                   {% else %}
                     {{ settings.free_price_text }}
-
-                    <span data-upate-price="{{ item.price }}" data-price="{{  item.price }}" data-original-price="{{  item.price }}" class="money sale 22">{{ item.price | money }}</span><span class="money was_price">{{ item.price | money }}</span><span data-discount-price="{{ item.price }}" data-upate-price="{{ item.price }}" class="updated-amount">{{ item.price | money }}</span>
-
-
                   {% endif %}
                 </div>
 
