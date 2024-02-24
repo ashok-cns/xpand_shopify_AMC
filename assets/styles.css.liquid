@@ -7678,11 +7678,12 @@ ul.cart_items {
 }
 .cart_content li.mini-cart__item[data-free-product="free"] .mini-cart__item-price:before {
   content: attr(data-original-price);
-  font-size: 16px;
-  text-decoration: line-through;
-  margin-right: 5px;
-  color: #8c8b8b;
-  font-weight: normal;
+    font-size: 16px;
+    order: 1;
+    padding-right: 10px;
+    text-decoration: line-through;
+    color: #8c8b8b;
+    font-weight: normal;
 }
 .cart_content li.mini-cart__item[data-free-product="free"] .mini-cart__item-price:after {
   content: 'Free';
