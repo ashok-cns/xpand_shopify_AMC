@@ -111,7 +111,7 @@
           <div class="cart-free-gift-header">Free Gift</div>
           <div class="cart-free-gift-items">
             {% assign product = all_products[settings.free_product_item] %}
-            {% assign freeProdVId = settings.free_product_item_vid %}
+            {% assign freeProdVId = settings.free_product_item_vid | plus: 0 %}
            
             {% comment %} {% for product in settings.free_product_list %} {% endfor %} {% endcomment %}
               {% if freeProdVId != blank %}
