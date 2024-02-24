@@ -1112,7 +1112,7 @@ $(() => {
               currentItem.find('.mini-cart__item-price span.updated-amount[data-upate-price]').remove();
             currentItem.find('.mini-cart__item-price').addClass('text-strikethrough');
             if(currentItem.attr('data-free-product') == 'free'){
-              currentItem.find('.mini-cart__item-price').append('<span data-discount-price="'+cm_tier_amount*100+'" data-upate-price="'cm_tier_amount+'" class="updated-amount">$ '+Number(cm_tier_amount*100).toFixed(2)+'</span>');
+              currentItem.find('.mini-cart__item-price').append('<span data-discount-price="'+cm_tier_amount*100+'" data-upate-price="'+cm_tier_amount+'" class="updated-amount">$ '+Number(cm_tier_amount*100).toFixed(2)+'</span>');
             }
             else{
               currentItem.find('.mini-cart__item-price').append('<span data-discount-price="'+cm_tier_amount*100+'" data-upate-price="'+lineItemDiscountAmnt*100+'" class="updated-amount">$ '+lineItemDiscountAmnt.toFixed(2)+'</span>');
