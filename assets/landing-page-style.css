@@ -133,16 +133,24 @@ img[src*="stamped.io"] {
      flex: 0 0 100%;
     }
     body:not([data-template=primary]) .product-block.product-block--price {
-      position: relative;
+      /* position: relative;
       justify-content: start;
       top: initial;
-      right: initial;
+      right: initial; */
+      position: absolute;
+      top: 23px;
+      right: 15px;
+      justify-content: end;
+      min-width: 100px;
     }
     body:not([data-template=primary]) .product_section .modal_price {
-          justify-content: start;
+          /* justify-content: start; */
+          justify-content: end;
+    font-size: 18px;
+    order: 0;
     }
     .price-note {
-      text-align: left;
+      /* text-align: left; */
     }
     .shoes-types {
       padding-bottom: 0;
