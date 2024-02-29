@@ -107,7 +107,7 @@
           </div>
         </div>
         {% if settings.enable_free_product %}
-        <div class="cart-free-gift-wrapper hide_mobile">
+        <div class="cart-free-gift-wrapper">
           <div class="cart-free-gift-header">Free Gift</div>
           <div class="cart-free-gift-items">
             {% assign product = all_products[settings.free_product_item] %}
@@ -174,7 +174,7 @@
       </a> -->
       <div class="cart_items__content__wrapper">
         {% if settings.enable_free_product %}
-          <div class="cart-free-gift-wrapper hide_desktop">
+          <div class="cart-free-gift-wrapper hide_desktop hide_mobile">
             <div class="cart-free-gift-header">Free Gift</div>
             <div class="cart-free-gift-items">
               {% assign product = all_products[settings.free_product_item] %}
