@@ -829,16 +829,6 @@
               "link": "shopify:\/\/products\/cushioned-no-show-socks"
             }
           },
-          "4c49e9d3-7311-44c8-ade5-855821ae4385": {
-            "type": "mega_item",
-            "settings": {
-              "enable_block": true,
-              "image": "shopify:\/\/shop_images\/Untitled_design_7.png",
-              "name": "Shoe Wipes",
-              "caption": "<p>On-the-Go Cleaning Solution<\/p>",
-              "link": "shopify:\/\/products\/xpand-shoe-wipes"
-            }
-          },
           "mega_item_RzLwQG": {
             "type": "mega_item",
             "settings": {
@@ -847,6 +837,16 @@
               "name": "Lightweight No-Show",
               "caption": "<p>Socks<\/p>",
               "link": "shopify:\/\/products\/lightweight-no-show-socks"
+            }
+          },
+          "4c49e9d3-7311-44c8-ade5-855821ae4385": {
+            "type": "mega_item",
+            "settings": {
+              "enable_block": true,
+              "image": "shopify:\/\/shop_images\/Untitled_design_7.png",
+              "name": "Shoe Wipes",
+              "caption": "<p>On-the-Go Cleaning Solution<\/p>",
+              "link": "shopify:\/\/products\/xpand-shoe-wipes"
             }
           },
           "256ab9f7-5b47-4192-964d-9e98b87dee64": {
@@ -899,8 +899,8 @@
           "ef86e50b-b317-4ee6-b898-56f3329b51e9",
           "546f108e-5941-45f0-b039-646185ab2b3e",
           "66538e64-a4f3-43c3-9585-e78dcbb6053c",
-          "4c49e9d3-7311-44c8-ade5-855821ae4385",
           "mega_item_RzLwQG",
+          "4c49e9d3-7311-44c8-ade5-855821ae4385",
           "256ab9f7-5b47-4192-964d-9e98b87dee64",
           "de8e7a28-3268-45e8-b050-9117f93d059e",
           "d76268cc-795b-4498-bfc9-d906a796e3c1",
