@@ -186,8 +186,19 @@
                   </div>
                   <div class="cart-free-gift-item-info">
                     <div class="cart-free-gift-item-info-lft">
-                      <div class="cart-free-gift-item-title">{{ product.title}}</div>
-                     
+                      <div class="cart-free-gift-item-title">
+                        {% comment %} {{ product.title}} {% endcomment %}
+
+                      <a href="{{ item.url }}" data-title="{{ item.product.title }}">
+                    {{- item.product.title | escape -}}
+                  </a>
+                  {% unless item.product.has_only_default_variant or item.variant.title contains "Title" %}
+                    {% for option in item.product.options %}
+                      <span class="mini-cart__item-variant__title">{{ item.variant.options[forloop.index0] }}</span>
+                      {% unless forloop.last %}/{% endunless %}
+                    {% endfor %}
+                  {% endunless %}
+                  </div>
                       
                     </div>
                     <div class="cart-free-gift-item-info-rgt">
