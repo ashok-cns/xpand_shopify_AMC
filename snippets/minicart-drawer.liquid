@@ -190,11 +190,11 @@
                         {% comment %} {{ product.title}} {% endcomment %}
 
                       <a href="{{ item.url }}" data-title="{{ item.product.title }}">
-                    {{- item.product.title | escape -}}
+                    {{- iproduct.title | escape -}}
                   </a>
-                  {% unless item.product.has_only_default_variant or item.variant.title contains "Title" %}
-                    {% for option in item.product.options %}
-                      <span class="mini-cart__item-variant__title">{{ item.variant.options[forloop.index0] }}</span>
+                  {% unless product.has_only_default_variant or product.variant.title contains "Title" %}
+                    {% for option in product.options %}
+                      <span class="mini-cart__item-variant__title">{{ product.variant.options[forloop.index0] }}</span>
                       {% unless forloop.last %}/{% endunless %}
                     {% endfor %}
                   {% endunless %}
