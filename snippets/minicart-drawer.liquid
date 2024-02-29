@@ -190,7 +190,7 @@
                         {% comment %} {{ product.title}} {% endcomment %}
 
                       <a href="{{ item.url }}" data-title="{{ item.product.title }}">
-                    {{- iproduct.title | escape -}}
+                    {{- product.title | escape -}}
                   </a>
                   {% unless product.has_only_default_variant or product.variant.title contains "Title" %}
                     {% for option in product.options %}
