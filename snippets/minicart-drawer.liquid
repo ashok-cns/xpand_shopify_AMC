@@ -125,7 +125,7 @@
                       </div>
                       <div class="cart-free-gift-item-info">
                         <div class="cart-free-gift-item-info-lft">
-                          <div class="cart-free-gift-item-title">{{ product.title }}<span class="mini-cart__item-variant__title">{{  variant.title }}</span></div>
+                          <div class="cart-free-gift-item-title">{{ product.title }}<span class="mini-cart__item-variant__title 22">{{  variant.title }}</span></div>
                           
                           
                           
@@ -194,7 +194,7 @@
                   </a>
                   {% unless product.has_only_default_variant or product.variant.title contains "Title" %}
                     {% for option in product.options %}
-                      <span class="mini-cart__item-variant__title">{{ product.variant.options[forloop.index0] }}</span>
+                      <span class="mini-cart__item-variant__title 33">{{ product.variant.options[forloop.index0] }}</span>
                       {% unless forloop.last %}/{% endunless %}
                     {% endfor %}
                   {% endunless %}
@@ -247,7 +247,7 @@
                   </a>
                   {% unless item.product.has_only_default_variant or item.variant.title contains "Title" %}
                     {% for option in item.product.options %}
-                      <span class="mini-cart__item-variant__title">{{ item.variant.options[forloop.index0] }}</span>
+                      <span class="mini-cart__item-variant__title 11">{{ item.variant.options[forloop.index0] }}</span>
                       {% unless forloop.last %}/{% endunless %}
                     {% endfor %}
                   {% endunless %}
