@@ -246,12 +246,8 @@
                     {{- item.product.title | escape -}}
                   </a>
                   {% unless item.product.has_only_default_variant or item.variant.title contains "Title" %}
-                    {% for option in item.product.options %}
-                      {{ option }}==
-                      <span class="mini-cart__item-variant__title 11">{{ item.variant.title }}</span>
-                      {% unless forloop.last %}/{% endunless %}
-                    {% endfor %}
-                  {% endunless %}
+                    <span class="mini-cart__item-variant__title 11">{{ item.variant.title }}</span>                      
+                    {% endunless %}
 
                   {% if item.selling_plan_allocation.selling_plan %}
                     <p class="meta">{{ item.selling_plan_allocation.selling_plan.name }}</p>
