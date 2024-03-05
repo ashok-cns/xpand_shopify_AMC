@@ -594,7 +594,7 @@ $(() => {
           + `<a href="${item.url}">`;
         if (item.image) {
           cartItemsHTML += `${'<div class="cart_image">'
-              + '<img class="mini-cart__item--img" src="'}${item.image.replace(/(\.[^.]*)$/, '_compact$1').replace('http:', '')}" alt="${htmlEncode(item.title)}" />`
+              + '<img class="mini-cart__item--img" data-url="'+item.image+'" src="'}${item.image.replace(/(\.[^.]*)$/, '_compact$1').replace('http:', '')}" alt="${htmlEncode(item.title)}" />`
             + '</div></a>';
         }
 
