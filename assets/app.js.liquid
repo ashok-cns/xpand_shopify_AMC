@@ -1162,6 +1162,7 @@ $(() => {
               data: lineItemData,
               success(data) {
                 console.log(data);
+                console.log('Check Condition for free product count', cartQty,'==>', $('body').attr('data-free-product-count'));
                 if(cartQty < $('body').attr('data-free-product-count')) {
                   $('body').removeClass('free-gift-product-visible');
                   if($(document).find('li.mini-cart__item[data-free-product="free"]').length > 0) {
