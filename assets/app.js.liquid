@@ -1189,19 +1189,6 @@ $(() => {
                     })
                     });
                   }              
-                } else {
-                  $.ajax({
-                      url: '/cart.js',
-                      dataType: 'json',
-                      cache: false,
-                      success:function(cart){
-                        console.log("CART Responseeeee11222==>", cart);
-                         refreshCart(cart);
-                       },
-                       error: function(error, xhr){
-                        console.log('XHRR ',error, xhr)
-                       }
-                    })
                 }
               },
             });
