@@ -460,7 +460,7 @@
                           <div class="cm-rec-prod-cta-content">
                             {{ variantId }}
                           </div>
-                          <button type="button" class="cm-rec-prod-opt-btn global-button global-button--primary">Add | {{ product.selected_or_first_available_variant.price }}</button>
+                          <button type="button" class="cm-rec-prod-opt-btn global-button global-button--primary">Add | {{ all_products[settings[prodObj]].selected_or_first_available_variant.price }}</button>
                         {% else %}
 
                           {% for variantListItem in variantIdList %}
