@@ -158,7 +158,7 @@
     "cart_message": "",
     "cart_discount_applied_text": "Congrats, you just received discountPercentage% off!",
     "cart_free_shipping_hint_text": "You are quantity pack away from free shipping!",
-    "enable_free_product": false,
+    "enable_free_product": true,
     "free_product_item": "no-tie-original-elastic-lacing-system",
     "free_product_item_vid": "19252660371567",
     "cart_free_product_hint_text": "You are quantity pack away to get a free product!",
@@ -2134,12 +2134,6 @@
     "blocks": {
       "855628211100114053": {
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "7878088468538493966": {
-        "type": "shopify:\/\/apps\/wisepops-smart-popups-bars\/blocks\/app-embed\/e7d7a4f7-0df4-4073-9375-5f36db513952",
         "disabled": false,
         "settings": {
         }
