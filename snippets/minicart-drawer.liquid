@@ -510,7 +510,7 @@
 
                           <span data-add-to-cart-text>
                             {% if all_products[settings[prodObj]].available %}
-                              {{ 'products.product.add_to_cart' | t }}
+                              Add | {{ all_products[settings[prodObj]].price }}
                             {% else %}
                               {{ 'products.product.sold_out' | t }}
                             {% endif %}
