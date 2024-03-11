@@ -474,7 +474,7 @@
                                   data-selected-variant="{{ variant.id }}">
                                   <span data-add-to-cart-text>
                                     {% if variant.available %}
-                                      Add | {{ all_products[settings[prodObj]].selected_or_first_available_variant.price }}
+                                      Add | {{ all_products[settings[prodObj]].selected_or_first_available_variant.price | money }}
                                     {% else %}
                                       {{ 'products.product.sold_out' | t }}
                                     {% endif %}
@@ -510,7 +510,7 @@
 
                           <span data-add-to-cart-text>
                             {% if all_products[settings[prodObj]].available %}
-                              Add | {{ all_products[settings[prodObj]].price }}
+                              Add | {{ all_products[settings[prodObj]].price | money }}
                             {% else %}
                               {{ 'products.product.sold_out' | t }}
                             {% endif %}
