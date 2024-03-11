@@ -474,7 +474,7 @@
                                   data-selected-variant="{{ variant.id }}">
                                   <span data-add-to-cart-text>
                                     {% if variant.available %}
-                                      {{ 'products.product.add_to_cart' | t }}
+                                      Add | {{ all_products[settings[prodObj]].selected_or_first_available_variant.price }}
                                     {% else %}
                                       {{ 'products.product.sold_out' | t }}
                                     {% endif %}
