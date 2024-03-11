@@ -452,7 +452,7 @@
                     </h3>
                     <div class="cm-rec-pro-info-price-wrapper">
                     <h6>{{ variantTitle }}</h6>
-                    <span class="cm-crnt-price">{{ prodPrice | money }}</span>
+                    {% comment %} <span class="cm-crnt-price">{{ prodPrice | money }}</span> {% endcomment %}
                     </div>
                     <div class="cm-rec-prod-cta-wrapper">
                       {% if settings[prodVariantId] != blank %}
