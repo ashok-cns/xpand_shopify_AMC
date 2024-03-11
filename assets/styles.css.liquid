@@ -21327,10 +21327,11 @@ div#shopify-block-b46db0b8-acf5-4b73-99d5-10da33612ee7:before {
   }
 }
 
-.tooltip {
+.cm-rec-pro-info > h3 {
   position: relative;
 }
-.tooltip .top {
+
+.tooltip + .top {
   min-width:200px;
   max-width:400px;
   top:-20px;
@@ -21349,11 +21350,11 @@ div#shopify-block-b46db0b8-acf5-4b73-99d5-10da33612ee7:before {
   display:none;
 }
 
-.tooltip:hover .top {
+.tooltip:hover + .top {
   display:block;
 }
 
-.tooltip .top i {
+.tooltip + .top i {
   position:absolute;
   top:100%;
   left:30%;
@@ -21363,7 +21364,7 @@ div#shopify-block-b46db0b8-acf5-4b73-99d5-10da33612ee7:before {
   overflow:hidden;
 }
 
-.tooltip .top i::after {
+.tooltip + .top i::after {
   content:'';
   position:absolute;
   width:15px;
