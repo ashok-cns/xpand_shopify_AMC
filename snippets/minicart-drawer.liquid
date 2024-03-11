@@ -659,6 +659,11 @@
             </button>
           {% endif %}
         </li>
+        {% if settings.cart_free_shipping_message_text != blank %}
+          <li class="free-shipping-message-text">
+              {{ settings.cart_free_shipping_message_text }}            
+          </li>
+        {% endif %}
       </ul>
     </form>
   </div>
