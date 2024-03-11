@@ -1647,6 +1647,13 @@
         "info": "Text to display when there is no discount hint"
       },
       {
+        "type": "text",
+        "id": "cart_free_shipping_message_text",
+        "label": "Free shipping text",
+        "default": "Free shipping on order $30 and up",
+        "info": "This message is displayed free shipping message"
+      },
+      {
         "type": "header",
         "content": "Discount Tiers"
       },
