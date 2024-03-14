@@ -448,11 +448,15 @@
                     </div>
                   <div class="cm-rec-pro-info">
                     <h3>
-                      <a href="{{ prodUrl}}">{{ prodTitle }} </a>
+                      <a class="tooltip" data-title="{{ prodTitle }}" href="{{ prodUrl}}">{{ prodTitle }} </a>
+                      <div class="top">
+                        {{ prodTitle }}
+                          <i></i>
+                      </div>
                     </h3>
                     <div class="cm-rec-pro-info-price-wrapper">
                     <h6>{{ variantTitle }}</h6>
-                    <span class="cm-crnt-price">{{ prodPrice | money }}</span>
+                    {% comment %} <span class="cm-crnt-price">{{ prodPrice | money }}</span> {% endcomment %}
                     </div>
                     <div class="cm-rec-prod-cta-wrapper">
                       {% if settings[prodVariantId] != blank %}
@@ -460,7 +464,7 @@
                           <div class="cm-rec-prod-cta-content">
                             {{ variantId }}
                           </div>
-                          <button type="button" class="cm-rec-prod-opt-btn global-button global-button--primary">Options</button>
+                          <button type="button" class="cm-rec-prod-opt-btn global-button global-button--primary">Add | {{ all_products[settings[prodObj]].selected_or_first_available_variant.price | money }}</button>
                         {% else %}
 
                           {% for variantListItem in variantIdList %}
@@ -474,7 +478,7 @@
                                   data-selected-variant="{{ variant.id }}">
                                   <span data-add-to-cart-text>
                                     {% if variant.available %}
-                                      {{ 'products.product.add_to_cart' | t }}
+                                      Add | {{ all_products[settings[prodObj]].selected_or_first_available_variant.price | money }}
                                     {% else %}
                                       {{ 'products.product.sold_out' | t }}
                                     {% endif %}
@@ -510,7 +514,7 @@
 
                           <span data-add-to-cart-text>
                             {% if all_products[settings[prodObj]].available %}
-                              {{ 'products.product.add_to_cart' | t }}
+                              Add | {{ all_products[settings[prodObj]].price | money }}
                             {% else %}
                               {{ 'products.product.sold_out' | t }}
                             {% endif %}
@@ -659,6 +663,11 @@
             </button>
           {% endif %}
         </li>
+        {% if settings.cart_free_shipping_message_text != blank %}
+          <li class="free-shipping-message-text">
+              {{ settings.cart_free_shipping_message_text }}            
+          </li>
+        {% endif %}
       </ul>
     </form>
   </div>
