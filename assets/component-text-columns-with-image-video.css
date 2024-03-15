@@ -5,8 +5,8 @@
     max-width: 600px;
 }
 .shopify-section--text-columns-with-images .text-column{
-    padding-left: calc(10px / 2);
-    padding-right: calc(10px / 2);
+    padding-left: calc(16px / 2);
+    padding-right: calc(16px / 2);
     margin: 0;
     width: 25%;
 }
