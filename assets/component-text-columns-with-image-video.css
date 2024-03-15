@@ -9,7 +9,7 @@
     width: 25%;
     margin-bottom: 0;
 }
-.shopify-section--text-columns-with-images  .column{
+.shopify-section--text-columns-with-images .text-column{
     padding-left: calc(30px / 2);
     padding-right: calc(30px / 2);
     margin: 0;
