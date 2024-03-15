@@ -33,7 +33,7 @@
 }
 }
 @media screen and (max-width: 798px) {
-    .caption.position-left {
+    .shopify-section--image-with-text-overlay .caption.position-left {
         top: initial;
         bottom: 50px;
         transform: translateY(0);
