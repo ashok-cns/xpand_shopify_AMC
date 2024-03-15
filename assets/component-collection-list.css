@@ -31,3 +31,14 @@ a.list-collection-overlay .list-collection-title {
     color: white;
     letter-spacing: 2px;
 }
+
+@media screen and (max-width: 767px) {
+    .list-collections.equal-columns--outside-trim .one-fourth {
+        width: 50%;
+    }
+    .container .list-collections .column {
+        padding-left: 8px;
+        padding-right: 8px;
+        margin: 8px 0;
+    }
+}
