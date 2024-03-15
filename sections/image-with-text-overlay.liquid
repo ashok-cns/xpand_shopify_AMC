@@ -2,6 +2,7 @@
   type="application/json"
   data-section-type="image-with-text-overlay"
   data-section-id="{{ section.id }}"></script>
+  {{ 'component-image-with-text-overlay.css' | asset_url }}
 
 {% assign object_selector = '#shopify-section-' | append: section.id %}
 {% assign mobile_text_alpha = section.settings.mobile_text_color | default: 'rgba(0,0,0,0)' | color_extract: 'alpha' %}
