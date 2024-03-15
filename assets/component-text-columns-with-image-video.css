@@ -21,8 +21,6 @@
     bottom: 0;
     padding: 15px 30px;
     height: 100%;
-    display: flex;
-    align-items: end;
 }
 .shopify-section--text-columns-with-images  .text-columns-with-images__content-overlay_wrapper > a{
     height: 100%;
