@@ -34,34 +34,6 @@
         "custom_css": ""
       }
     },
-    "image_with_text_overlay_JPwmWz": {
-      "type": "image-with-text-overlay",
-      "settings": {
-        "wide_display": true,
-        "image": "shopify:\/\/shop_images\/image-10-65f3bef4a0749.webp",
-        "pretext": "",
-        "title": "ELEVATE YOUR EVERYDAY",
-        "subtitle": "<p>We’re on a mission to create innovative apparel and accessories for optimal comfort and performance for everyday life.<\/p>",
-        "button1": "OUR MISSION",
-        "button1_link": "shopify:\/\/collections\/best-sellers",
-        "button1_style": "global-button--banner",
-        "button1_bg": "",
-        "button1_text_color": "",
-        "button2": "",
-        "button2_link": "",
-        "button2_style": "global-button--banner",
-        "button2_bg": "",
-        "button2_text_color": "",
-        "text_position": "right",
-        "text_align": "right",
-        "caption_content_background": "darken_bg",
-        "mobile_image": "shopify:\/\/shop_images\/image-10-1-65f3bef4342c4.webp",
-        "mobile_text_below_image": false,
-        "mobile_text_color": "",
-        "css_class": "",
-        "custom_css": ""
-      }
-    },
     "collection_list_bT9wwf": {
       "type": "collection-list",
       "blocks": {
@@ -108,12 +80,40 @@
         "css_class": "",
         "custom_css": ""
       }
+    },
+    "image_with_text_overlay_JPwmWz": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "wide_display": true,
+        "image": "shopify:\/\/shop_images\/image-10-65f3bef4a0749.webp",
+        "pretext": "",
+        "title": "ELEVATE YOUR EVERYDAY",
+        "subtitle": "<p>We’re on a mission to create innovative apparel and accessories for optimal comfort and performance for everyday life.<\/p>",
+        "button1": "OUR MISSION",
+        "button1_link": "shopify:\/\/collections\/best-sellers",
+        "button1_style": "global-button--banner",
+        "button1_bg": "",
+        "button1_text_color": "",
+        "button2": "",
+        "button2_link": "",
+        "button2_style": "global-button--banner",
+        "button2_bg": "",
+        "button2_text_color": "",
+        "text_position": "right",
+        "text_align": "right",
+        "caption_content_background": "darken_bg",
+        "mobile_image": "shopify:\/\/shop_images\/image-10-1-65f3bef4342c4.webp",
+        "mobile_text_below_image": false,
+        "mobile_text_color": "",
+        "css_class": "",
+        "custom_css": ""
+      }
     }
   },
   "order": [
     "main",
     "917fb3a7-cbab-4fe0-b651-8955cc1e6223",
-    "image_with_text_overlay_JPwmWz",
-    "collection_list_bT9wwf"
+    "collection_list_bT9wwf",
+    "image_with_text_overlay_JPwmWz"
   ]
 }
