@@ -42,8 +42,8 @@
           "settings": {
             "feature_collection": "laces",
             "image": "shopify:\/\/shop_images\/1collection-img-65f3c4abe57ee.webp",
-            "title": "",
-            "link": ""
+            "title": "LACES",
+            "link": "shopify:\/\/collections\/laces"
           }
         },
         "collection_kgk6A9": {
@@ -51,8 +51,8 @@
           "settings": {
             "feature_collection": "socks",
             "image": "shopify:\/\/shop_images\/2collection-img-65f3c4ab0d6fa.webp",
-            "title": "",
-            "link": ""
+            "title": "SOCKS",
+            "link": "shopify:\/\/collections\/socks"
           }
         },
         "collection_q9iUaf": {
@@ -60,8 +60,8 @@
           "settings": {
             "feature_collection": "",
             "image": "shopify:\/\/shop_images\/3collection-img-65f3c4aa20b86.webp",
-            "title": "",
-            "link": ""
+            "title": "ATHLETICS",
+            "link": "shopify:\/\/collections\/belts"
           }
         },
         "collection_rQHYEW": {
@@ -69,8 +69,8 @@
           "settings": {
             "feature_collection": "xtra-parts",
             "image": "shopify:\/\/shop_images\/4collection-img-65f3c4ab17a8d.webp",
-            "title": "",
-            "link": ""
+            "title": "ACCESSORIES",
+            "link": "shopify:\/\/collections\/all-accessories"
           }
         }
       },
