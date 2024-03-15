@@ -1,3 +1,10 @@
+.list-collections .equal-columns--outside-trim .one-fourth {
+    width: calc(25% - (30px - (30px / 4)));
+}
+.list-collections .container .column{
+    margin-left: calc(30px / 2);
+    margin-right: calc(30px / 2);
+}
 .list-collections .image-element__wrap img[data-sizes=auto].lazyloaded {
     width: 100%;
     margin-bottom: 0;
