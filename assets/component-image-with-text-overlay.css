@@ -22,9 +22,11 @@
 }
 .shopify-section--image-with-text-overlay .caption .subtitle {
     font-size: 18px;
-    max-width: 500px;
     font-weight: normal;
     padding: 10px 0;
+}
+.shopify-section--image-with-text-overlay .caption .align-left  .subtitle {
+    max-width: 500px;
 }
 .shopify-section--image-with-text-overlay .caption .button-grid-container {
     margin-top: 10px;
