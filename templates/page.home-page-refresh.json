@@ -119,12 +119,109 @@
         "css_class": "",
         "custom_css": ""
       }
+    },
+    "text_columns_with_images_video_tnRtTH": {
+      "type": "text-columns-with-images-video",
+      "blocks": {
+        "text_block_yn4UWU": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/1-1-65f42198c9372.webp",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "title": "PLAY HARD, LACE EASY",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "text_block_7JekrN": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/dsc05472-1-65f4219897d21.webp",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "title": "COMFORTABLE trail-ready essentials",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "text_block_wht3k4": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/image-11-65f4219753e00.webp",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "title": "MOM-APPROVED: SLIP ONS FOR KIDS",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "text_block_dYLDzD": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/image-13-65f421976c131.webp",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "title": "DAY IN THE LIFE OF A fULL-TIME CAREGIVER",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_yn4UWU",
+        "text_block_7JekrN",
+        "text_block_wht3k4",
+        "text_block_dYLDzD"
+      ],
+      "settings": {
+        "layout": "slider",
+        "title": "community stories that move",
+        "link_text": "",
+        "link": "",
+        "link_text_color": "#ffffff",
+        "link_bg_color": "#ffffff",
+        "sec_bg": "#203129",
+        "css_class": "",
+        "custom_css": "",
+        "sec_top": 0,
+        "sec_bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "917fb3a7-cbab-4fe0-b651-8955cc1e6223",
     "collection_list_bT9wwf",
-    "image_with_text_overlay_JPwmWz"
+    "image_with_text_overlay_JPwmWz",
+    "text_columns_with_images_video_tnRtTH"
   ]
 }
