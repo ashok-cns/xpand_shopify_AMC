@@ -70,6 +70,7 @@
       "block_order": [
         "image_BfzcHB"
       ],
+      "disabled": true,
       "settings": {
         "wide_display": true,
         "slideshow_text_animation": "",
