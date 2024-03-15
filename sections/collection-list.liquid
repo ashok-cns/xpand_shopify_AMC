@@ -26,8 +26,9 @@
 {% endstyle %}
 
 {%  style %}
-  #{{ section.id }} .is--padding {
-
+  #shopify-section-{{ section.id }} .is--padding {
+    margin-top: {{ section.settings.spacing_top }};
+    margin-bottom: {{ section.settings.spacing_bottom }};
   }
 {% endstyle %}
 
