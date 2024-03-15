@@ -1,3 +1,7 @@
 .shopify-section--image-with-text-overlay .is-width-wide .banner:not(.homepage-slideshow) .image-element__wrap img[data-sizes=auto].lazyloaded {
     height: auto!important;
 }
+.shopify-section--image-with-text-overlay .is-width-wide .image-element__wrap img[data-sizes=auto].lazyloaded {
+    width: 100%;
+    max-width: 100%;
+}
