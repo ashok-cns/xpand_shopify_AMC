@@ -12,6 +12,9 @@
 .shopify-section--image-with-text-overlay .caption a.global-button--primary,
 .shopify-section--image-with-text-overlay .caption a.global-button--banner {
     border-radius: 6px;
+    padding: 15px 25px;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -31,13 +34,6 @@
 }
 .shopify-section--image-with-text-overlay .caption .button-grid-container {
     margin-top: 10px;
-}
-.shopify-section--image-with-text-overlay .caption a.global-button--primary {
-    border-radius: 6px;
-    padding: 15px 25px;
-    font-size: 14px;
-    font-weight: 700;
-    border-radius: 6px;
 }
 }
 @media screen and (max-width: 640px) {
