@@ -227,8 +227,8 @@
         "sec_bg": "#203129",
         "css_class": "",
         "custom_css": "",
-        "sec_top": 0,
-        "sec_bottom": 0
+        "sec_top": 40,
+        "sec_bottom": 40
       }
     }
   },
