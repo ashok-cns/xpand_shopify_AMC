@@ -1,5 +1,6 @@
 .list-collections .equal-columns--outside-trim .one-fourth {
     width: calc(25% - (30px - (30px / 4)));
+    margin-bottom: 0;
 }
 .list-collections .container .column{
     margin-left: calc(30px / 2);
