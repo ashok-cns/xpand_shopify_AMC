@@ -33,3 +33,6 @@
 .shopify-section--text-columns-with-images  .text-columns-with-images__content-overlay_wrapper h3.regular_text {
     text-transform: uppercase;
 }
+.shopify-section--text-columns-with-images  .text-columns-with-images__content-overlay_wrapper h3.regular_text {
+    margin-bottom: 0;
+}
