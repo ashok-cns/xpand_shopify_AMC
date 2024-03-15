@@ -82,6 +82,8 @@
         
           {% endif %}
 
+        {% if section.settings.text_as_overlay %}<div class="text-columns-with-images__content-overlay_wrapper">{% endif %}
+
             {% if block.settings.title != blank %}
               <h3 class="{{ block.settings.heading_size }}">{{ block.settings.title | strip_newlines }}</h3>
             {% endif %}
@@ -98,6 +100,7 @@
                 class="text-columns-with-images__button global-button global-button--text"
                 style="color: {{ block.settings.link_text_color }}; background: {{ block.settings.link_bg_color }};">{{ block.settings.button_label | escape }}</a>
             {% endif %}
+          {% if section.settings.text_as_overlay %}</div>{% endif %}
           </div>
         </div>
       {% endfor %}
