@@ -22,7 +22,7 @@
     id: id %}
 {% endstyle %}
 
-  <section class="{{ css_class }}" style="background: {{ section.settings.sec_bg }}; padding-top:{{ section.settings.sec_top }}px; padding-bottom:{{ section.settings.sec_bottom }}px;"> <div class="section container">
+ <section class="{{ css_class }}" style="background: {{ section.settings.sec_bg }}; padding-top:{{ section.settings.sec_top }}px; padding-bottom:{{ section.settings.sec_bottom }}px;"> <div class="section container">
     {% if title != blank %}
       <div class="one-whole column">
         <h2 class="title center">
@@ -85,13 +85,13 @@
         {% if section.settings.text_as_overlay %}<div class="text-columns-with-images__content-overlay_wrapper">{% endif %}
 
         {% if block.settings.enable_icon %}<div class="text-columns-with-images__content">{% endif %}
-          {%-  unless  block.settings.caption == blank %}<div class="text-columns-with-images__caption">{{ block.settings.caption }}</div>{% endunless %}
+          {%-  unless  block.settings.caption == blank %}<div class="text-columns-with-images__caption" style="color: {{ block.settings.text_color }};">{{ block.settings.caption }}</div>{% endunless %}
           {% if block.settings.title != blank %}
-            <h3 class="{{ block.settings.heading_size }}">{{ block.settings.title | strip_newlines }}</h3>
+            <h3 class="{{ block.settings.heading_size }}" style="color: {{ block.settings.text_color }};">{{ block.settings.title | strip_newlines }}</h3>
           {% endif %}
 
             {% if block.settings.text != blank %}
-              <div class="rte-setting">
+              <div class="rte-setting" style="color: {{ block.settings.text_color }};">
                 {{ block.settings.text }}
               </div>
             {% endif %}

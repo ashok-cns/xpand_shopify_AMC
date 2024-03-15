@@ -134,13 +134,13 @@
             "title": "PLAY HARD, LACE EASY",
             "heading_size": "regular_text",
             "text": "",
-            "enable_icon": false,
+            "enable_icon": true,
             "button_label": "",
             "button_link": "",
             "align_text": "left",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
+            "border_style": "quote",
+            "link_text_color": "#ffffff",
+            "link_bg_color": "#ffffff"
           }
         },
         "text_block_7JekrN": {
