@@ -1,0 +1,16 @@
+.shopify-section--text-columns-with-images h2.title{
+    font-size: 50px;
+    line-height: 1;
+    margin: 0;
+    max-width: 600px;
+}
+
+.shopify-section--text-columns-with-images .equal-columns--outside-trim .one-fourth {
+    width: 25%;
+    margin-bottom: 0;
+}
+.shopify-section--text-columns-with-images  .column{
+    padding-left: calc(30px / 2);
+    padding-right: calc(30px / 2);
+    margin: 0;
+}
