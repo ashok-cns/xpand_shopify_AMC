@@ -9,7 +9,8 @@
 .shopify-section--image-with-text-overlay .caption .subtitle p {
     margin-bottom: 0;
 }
-.shopify-section--image-with-text-overlay .caption a.global-button--primary {
+.shopify-section--image-with-text-overlay .caption a.global-button--primary,
+.shopify-section--image-with-text-overlay .caption a.global-button--banner {
     border-radius: 6px;
 }
 
