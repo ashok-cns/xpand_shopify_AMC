@@ -19,6 +19,9 @@
     font-weight: normal;
     padding: 10px 0;
 }
+.shopify-section--image-with-text-overlay .caption .subtitle p {
+    margin-bottom: 0;
+}
 .shopify-section--image-with-text-overlay .caption .button-grid-container {
     margin-top: 10px;
 }
