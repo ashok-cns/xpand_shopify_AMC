@@ -25,7 +25,7 @@
         "caption_content_background": "darken_bg",
         "mobile_text_below_image": false,
         "mobile_text_color": "",
-        "css_class": "social-impact-banner-area",
+        "css_class": "",
         "custom_css": ""
       }
     },
