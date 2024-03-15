@@ -55,7 +55,8 @@
         "text_position": "right",
         "text_align": "right",
         "caption_content_background": "darken_bg",
-        "mobile_text_below_image": true,
+        "mobile_image": "shopify:\/\/shop_images\/image-10-1-65f3bef4342c4.webp",
+        "mobile_text_below_image": false,
         "mobile_text_color": "",
         "css_class": "",
         "custom_css": ""
