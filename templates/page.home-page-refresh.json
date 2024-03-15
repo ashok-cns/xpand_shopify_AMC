@@ -34,55 +34,28 @@
         "custom_css": ""
       }
     },
-    "505aab9e-65bd-46c5-9c80-081a07d065a3": {
-      "type": "featured-text",
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "content": "<p>No matter what life looks like for you, our mission at Xpand is to help you move smarter. But, when our community showed us that our laces could do so much more, we knew we had to help. That's why we are committed to supporting initiatives to keep our communities safe and healthy. <\/p>",
-        "button_label": "",
-        "button_link": "",
-        "text_size": "featured_text",
-        "text_alignment": "center",
-        "css_class": "full-width-content-social-impact",
-        "custom_css": ""
-      }
-    },
-    "slideshow_QcTkkA": {
-      "type": "slideshow",
-      "blocks": {
-        "image_BfzcHB": {
-          "type": "image",
-          "settings": {
-            "type": "image",
-            "image": "shopify:\/\/shop_images\/image-5-65f3a53d97f1f.webp",
-            "video_url": "",
-            "pretext": "",
-            "title": "Turbo Shopify Theme",
-            "subtitle": "",
-            "button1": "",
-            "button1_link": "",
-            "button1_style": "global-button--banner",
-            "button2": "",
-            "button2_link": "",
-            "button2_style": "global-button--banner",
-            "text_position": "center",
-            "text_align": "center",
-            "caption_content_background": "darken_bg"
-          }
-        }
-      },
-      "block_order": [
-        "image_BfzcHB"
-      ],
-      "disabled": true,
+    "image_with_text_overlay_JPwmWz": {
+      "type": "image-with-text-overlay",
       "settings": {
         "wide_display": true,
-        "slideshow_text_animation": "",
-        "slideshow_animation": "fade",
-        "slideshow_speed": 6,
-        "activate_adaptiveHeight": false,
-        "mobile_text_below_image": false,
+        "image": "shopify:\/\/shop_images\/image-10-65f3bef4a0749.webp",
+        "pretext": "",
+        "title": "ELEVATE YOUR EVERYDAY",
+        "subtitle": "<p>We’re on a mission to create innovative apparel and accessories for optimal comfort and performance for everyday life.<\/p>",
+        "button1": "OUR MISSION",
+        "button1_link": "shopify:\/\/collections\/best-sellers",
+        "button1_style": "global-button--banner",
+        "button1_bg": "",
+        "button1_text_color": "",
+        "button2": "",
+        "button2_link": "",
+        "button2_style": "global-button--banner",
+        "button2_bg": "",
+        "button2_text_color": "",
+        "text_position": "right",
+        "text_align": "right",
+        "caption_content_background": "darken_bg",
+        "mobile_text_below_image": true,
         "mobile_text_color": "",
         "css_class": "",
         "custom_css": ""
@@ -92,7 +65,6 @@
   "order": [
     "main",
     "917fb3a7-cbab-4fe0-b651-8955cc1e6223",
-    "505aab9e-65bd-46c5-9c80-081a07d065a3",
-    "slideshow_QcTkkA"
+    "image_with_text_overlay_JPwmWz"
   ]
 }
