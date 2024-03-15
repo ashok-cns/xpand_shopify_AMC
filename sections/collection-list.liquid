@@ -25,8 +25,14 @@
   %}
 {% endstyle %}
 
+{%  style %}
+  #{{ section.id }} .is--padding {
+
+  }
+{% endstyle %}
+
 {% if blocks.size > 0 %}
-  <section class="section {{ css_class }}">
+<section data-id="{{ section.id }}" class="section {{ css_class }} {% if section.settings.spacing_bottom != blank or section.settings.spacing_top != blank %} is--padding{% endif %}">
     <div class="container">
       {% if title != blank %}
         <div class="one-whole column center">
