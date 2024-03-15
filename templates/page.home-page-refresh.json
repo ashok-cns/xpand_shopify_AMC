@@ -61,11 +61,59 @@
         "css_class": "",
         "custom_css": ""
       }
+    },
+    "collection_list_bT9wwf": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_QcDbnw": {
+          "type": "collection",
+          "settings": {
+            "feature_collection": "laces",
+            "image": "shopify:\/\/shop_images\/1collection-img-65f3c4abe57ee.webp"
+          }
+        },
+        "collection_kgk6A9": {
+          "type": "collection",
+          "settings": {
+            "feature_collection": "socks",
+            "image": "shopify:\/\/shop_images\/2collection-img-65f3c4ab0d6fa.webp"
+          }
+        },
+        "collection_q9iUaf": {
+          "type": "collection",
+          "settings": {
+            "feature_collection": "",
+            "image": "shopify:\/\/shop_images\/3collection-img-65f3c4aa20b86.webp"
+          }
+        },
+        "collection_rQHYEW": {
+          "type": "collection",
+          "settings": {
+            "feature_collection": "xtra-parts",
+            "image": "shopify:\/\/shop_images\/4collection-img-65f3c4ab17a8d.webp"
+          }
+        }
+      },
+      "block_order": [
+        "collection_QcDbnw",
+        "collection_kgk6A9",
+        "collection_q9iUaf",
+        "collection_rQHYEW"
+      ],
+      "settings": {
+        "title": "",
+        "align_height": false,
+        "collection_height": 200,
+        "frontpage_collections_per_row": 4,
+        "css_class": "",
+        "custom_css": ""
+      }
     }
   },
   "order": [
     "main",
     "917fb3a7-cbab-4fe0-b651-8955cc1e6223",
-    "image_with_text_overlay_JPwmWz"
+    "image_with_text_overlay_JPwmWz",
+    "collection_list_bT9wwf"
   ]
 }
