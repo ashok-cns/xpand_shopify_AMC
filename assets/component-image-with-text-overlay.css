@@ -40,7 +40,7 @@
 @media screen and (max-width: 798px) {
     .shopify-section--image-with-text-overlay .caption.position-left {
         top: initial;
-        bottom: 50px;
+        bottom: 30px;
         transform: translateY(0);
     }
     .caption .headline {
