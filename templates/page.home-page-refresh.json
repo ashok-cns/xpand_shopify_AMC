@@ -78,7 +78,9 @@
         "collection_height": 200,
         "frontpage_collections_per_row": 4,
         "css_class": "",
-        "custom_css": ""
+        "custom_css": "",
+        "spacing_top": 40,
+        "spacing_bottom": 40
       }
     },
     "image_with_text_overlay_JPwmWz": {
