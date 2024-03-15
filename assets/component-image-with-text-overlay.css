@@ -32,3 +32,10 @@
     font-weight: 700;
 }
 }
+@media screen and (max-width: 798px) {
+    .caption.position-left {
+        top: initial;
+        bottom: 50px;
+        transform: translateY(0);
+    }
+}
