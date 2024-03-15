@@ -80,8 +80,11 @@
                     {{ 'collection-' | append: num | placeholder_svg_tag: 'placeholder-svg' }}
                   {% endif %}
 
-              
-
+                  {% if section.settings.text_as_overlay %}
+                  <a href="{%- if block.settings.link != blank-%}{{ block.settings.link }}{%- else -%}{{ collection.url }}{%- endif -%}" class="list-collection-overlay">
+                      <div class="list-collection-title">{%- if block.settings.title != blank -%}{{ block.settings.title }}{%- else -%}{{ collection.title }}{%- endif -%}</div>
+                    </a>
+                    {% else %}
                   <a href="{{ collection.url }}" class="hidden-product-link">
                     {% if collection != blank %}
                       {{ collection.title }}
@@ -90,7 +93,7 @@
                     {% endif %}
                   </a>
 
-                  {% if section.settings.text_as_overlay %}
+                  {% if settings.thumbnail_hover_enabled %}
                     <div class="thumbnail-overlay">
                       <a href="{{ collection.url }}" class="hidden-product-link">
                         {% if collection != blank %}
@@ -121,7 +124,7 @@
                     </div>
                   {% endif %}
 
-                  <a class="collection-info__caption {% if settings.text_as_overlay %}hidden{% endif %}" href="{{ collection.url }}">
+                  <a class="collection-info__caption {% if settings.thumbnail_hover_enabled %}hidden{% endif %}" href="{{ collection.url }}">
                     <span class="title">
                       {% if collection != blank %}
                         {{ collection.title }}
@@ -130,6 +133,7 @@
                       {% endif %}
                     </span>
                   </a>
+                    {% endif %}
                 </div>
               </div>
             {% endfor %}
