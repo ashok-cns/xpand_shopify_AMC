@@ -5,6 +5,7 @@
 .container .list-collections .column{
     padding-left: calc(30px / 2);
     padding-right: calc(30px / 2);
+    margin: 0;
 }
 .list-collections .image-element__wrap img[data-sizes=auto].lazyloaded {
     width: 100%;
