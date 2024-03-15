@@ -9,6 +9,9 @@
 .shopify-section--image-with-text-overlay .caption .subtitle p {
     margin-bottom: 0;
 }
+.shopify-section--image-with-text-overlay .caption a.global-button--primary {
+    border-radius: 6px;
+}
 
 @media only screen and (min-width: 1025px) {
 .shopify-section--image-with-text-overlay .caption .headline {
