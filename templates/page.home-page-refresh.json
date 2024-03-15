@@ -139,7 +139,7 @@
             "button_label": "",
             "button_link": "shopify:\/\/blogs\/news\/outdoor-workout-tips-to-help-you-get-the-most-out-of-your-sweat-session",
             "align_text": "left",
-            "border_style": "quote",
+            "border_style": "none",
             "link_text_color": "#ffffff",
             "link_bg_color": "#ffffff"
           }
