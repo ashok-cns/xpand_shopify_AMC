@@ -25,7 +25,7 @@
  <section class="{{ css_class }}" style="background: {{ section.settings.sec_bg }}; padding-top:{{ section.settings.sec_top }}px; padding-bottom:{{ section.settings.sec_bottom }}px;"> <div class="section container">
     {% if title != blank %}
       <div class="one-whole column">
-        <h2 class="title center">
+        <h2 class="title center" style="color: {{ section.settings.section_title_color }}; text-align: {{ section.settings.sec_heading_align_text }}">
           {{ title | strip_html }}
         </h2>
         <div class="feature-divider"></div>
@@ -153,6 +153,12 @@
         "default": "Text columns with images"
       },
       {
+        "type": "color",
+        "id": "section_title_color",
+        "label": "Title color"
+      },
+      
+      {
         "type": "text",
         "id": "link_text",
         "label": "Link Text"
@@ -171,7 +177,26 @@
         "id": "link_bg_color",
         "label": "Link Background Color",
         "default": "#ff085a"
-      }, {
+      }, 
+      {
+            "type": "select",
+            "id": "sec_heading_align_text",
+            "label": "Heading text alignment",
+            "default": "left",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              }, {
+                "value": "center",
+                "label": "Center"
+              }, {
+                "value": "right",
+                "label": "Right"
+              }
+            ]
+          },
+          {
         "type": "checkbox",
         "id": "text_as_overlay",
         "label": "Show text as an overlay",
