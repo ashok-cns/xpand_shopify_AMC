@@ -283,26 +283,6 @@
             "link_bg_color": ""
           }
         },
-        "text_block_kWzPcy": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "enable_media": "image",
-            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "caption": "",
-            "title": "Add a title or tagline",
-            "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_color": "",
-            "enable_icon": false,
-            "button_label": "",
-            "button_link": "",
-            "align_text": "left",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        },
         "text_block_rCtDkk": {
           "type": "text_block",
           "settings": {
@@ -313,7 +293,7 @@
             "caption": "",
             "title": "NO-TIE LACES",
             "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "",
             "text_color": "",
             "enable_icon": false,
             "button_label": "",
@@ -355,7 +335,7 @@
             "caption": "",
             "title": "QUICK-RELEASE LACES",
             "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "",
             "text_color": "",
             "enable_icon": false,
             "button_label": "",
@@ -371,76 +351,17 @@
           "settings": {
             "enable_image": true,
             "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/image-9-65f5216186a3c.webp",
             "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "caption": "",
-            "title": "Add a title or tagline",
+            "title": "QUICK-RELEASE LACES",
             "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "",
             "text_color": "",
             "enable_icon": false,
             "button_label": "",
-            "button_link": "",
-            "align_text": "left",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        },
-        "text_block_LFGrkY": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "enable_media": "image",
-            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "caption": "",
-            "title": "Add a title or tagline",
-            "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_color": "",
-            "enable_icon": false,
-            "button_label": "",
-            "button_link": "",
-            "align_text": "left",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        },
-        "text_block_gLnQF7": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "enable_media": "image",
-            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "caption": "",
-            "title": "Add a title or tagline",
-            "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_color": "",
-            "enable_icon": false,
-            "button_label": "",
-            "button_link": "",
-            "align_text": "left",
-            "border_style": "none",
-            "link_text_color": "",
-            "link_bg_color": ""
-          }
-        },
-        "text_block_fKLX9b": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "enable_media": "image",
-            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "caption": "",
-            "title": "Add a title or tagline",
-            "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_color": "",
-            "enable_icon": false,
-            "button_label": "",
-            "button_link": "",
-            "align_text": "left",
+            "button_link": "shopify:\/\/products\/round-lacing-system-lace-ends",
+            "align_text": "center",
             "border_style": "none",
             "link_text_color": "",
             "link_bg_color": ""
@@ -449,14 +370,10 @@
       },
       "block_order": [
         "text_block_YptTgR",
-        "text_block_kWzPcy",
         "text_block_rCtDkk",
         "text_block_RUezDM",
         "text_block_eCt9wD",
-        "text_block_377FGU",
-        "text_block_LFGrkY",
-        "text_block_gLnQF7",
-        "text_block_fKLX9b"
+        "text_block_377FGU"
       ],
       "settings": {
         "layout": "slider",
