@@ -98,7 +98,7 @@
             {% endif %}
           {% if block.settings.enable_icon %}</div> {% endif %}
             {% if block.settings.enable_icon %}
-              <div class="text-columns-with-images__link--icon">{{ 'Group_12.svg' |  file_img_url: '50x' |  img_tag }}</div>
+              <div class="text-columns-with-images__link--icon"><img src="{{ 'Group_12.svg' | file_url }}" alt="" /></div>
               {% else %}
             {% if block.settings.button_label != blank and block.settings.button_link != blank %}
               <a
