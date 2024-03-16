@@ -23,6 +23,7 @@
 @media screen and (max-width: 798px) {
     .shopify-section--image-with-text .wide-section-one-half-img .featured-link--half .collection_title {
         font-size: 36px;
+        padding-left: 0;
     }
     .shopify-section--image-with-text .wide-section-one-half-img .featured-link--half .description {
         font-size: 15px;
