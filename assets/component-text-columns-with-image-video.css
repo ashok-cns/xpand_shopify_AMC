@@ -88,4 +88,7 @@
     .text-columns-with-images__link--icon {
         flex: 0 0 35px;
     }
+    .slider-on-mobile .flickity-page-dots {
+        display: none;
+    }
 }
