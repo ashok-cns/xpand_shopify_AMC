@@ -1,7 +1,6 @@
 .shopify-section--image-with-text .wide-section-one-half-img .image-element__wrap img[data-sizes=auto].lazyloaded {
     width: 100%;   
 }
-
 .shopify-section--image-with-text .wide-section-one-half-img .featured-link--half .collection_title{
     font-size: 48px;
     font-weight: bold;
@@ -13,4 +12,11 @@
     line-height: 1.4;
     letter-spacing: 0.5px;
     font-weight: normal;
+}
+.shopify-section--image-with-text .wide-section-one-half-img .featured-link--half  .global-button {
+    border-radius: 6px;
+    padding: 14px 25px;
+    font-size: 14px;
+    font-weight: 700;
+    min-width: 220px;
 }
