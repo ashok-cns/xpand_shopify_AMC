@@ -238,12 +238,13 @@
           "type": "image",
           "settings": {
             "type": "image",
-            "title": "Your headline",
-            "text": "<p>Promotion description appears here.<\/p>",
-            "button_label": "View all",
-            "link": "",
-            "bg_color": "",
-            "text_color": ""
+            "image": "shopify:\/\/shop_images\/dsc01515-1-65f52163eaf83.webp",
+            "title": "MEET OUR BESTSELLING LACES",
+            "text": "<p>The original no-tie laces that put us on the map. Made with zero-memory elastic rubber, which ensure a consistent and comfortable fit throughout your day, no matter what life throws at you.<\/p>",
+            "button_label": "SHOP LACES",
+            "link": "shopify:\/\/collections\/all-laces",
+            "bg_color": "#3e8df5",
+            "text_color": "#ffffff"
           }
         }
       },
@@ -376,12 +377,12 @@
         "text_block_377FGU"
       ],
       "settings": {
-        "layout": "slider",
+        "layout": "grid",
         "title": "DISCOVER NO-TIE LACES",
         "section_title_color": "",
         "link_text": "SHOP ALL LACES",
         "link": "shopify:\/\/collections\/all-laces",
-        "link_text_color": "#3e8df5",
+        "link_text_color": "rgba(0,0,0,0)",
         "link_bg_color": "rgba(0,0,0,0)",
         "sec_heading_align_text": "center",
         "text_as_overlay": false,
