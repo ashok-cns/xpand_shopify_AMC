@@ -20,3 +20,11 @@
     font-weight: 700;
     min-width: 220px;
 }
+@media screen and (max-width: 798px) {
+    .shopify-section--image-with-text .wide-section-one-half-img .featured-link--half .collection_title {
+        font-size: 36px;
+    }
+    .shopify-section--image-with-text .wide-section-one-half-img .featured-link--half .description {
+        font-size: 15px;
+    }
+}
