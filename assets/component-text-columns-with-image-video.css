@@ -60,7 +60,8 @@
     .shopify-section--text-columns-with-images .text-column.medium-down--one-half{
         width: 70%;
     }
-    .shopify-section--text-columns-with-images  .container .slider-on-mobile {
+    .shopify-section--text-columns-with-images  .container .slider-on-mobile,
+    .shopify-section--text-columns-with-images h2.title {
         padding-left: 30px;
     }
     .shopify-section--text-columns-with-images .text-column {
