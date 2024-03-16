@@ -267,15 +267,16 @@
           "settings": {
             "enable_image": true,
             "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/2-white-a-1-65f52163169a6.webp",
             "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "caption": "",
-            "title": "Add a title or tagline",
+            "title": "No-TIE LACES",
             "heading_size": "regular_text",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "",
             "text_color": "",
             "enable_icon": false,
             "button_label": "",
-            "button_link": "",
+            "button_link": "shopify:\/\/collections\/laces",
             "align_text": "left",
             "border_style": "none",
             "link_text_color": "",
@@ -302,20 +303,42 @@
             "link_bg_color": ""
           }
         },
-        "text_block_RUezDM": {
+        "text_block_rCtDkk": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
             "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/image-6-65f521624ed74.webp",
             "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "caption": "",
-            "title": "Add a title or tagline",
+            "title": "NO-TIE LACES",
             "heading_size": "regular_text",
             "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
             "text_color": "",
             "enable_icon": false,
             "button_label": "",
-            "button_link": "",
+            "button_link": "shopify:\/\/collections\/laces",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "text_block_RUezDM": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/image-7-65f521624eba6.webp",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "caption": "",
+            "title": "NO-TIE LACES",
+            "heading_size": "regular_text",
+            "text": "",
+            "text_color": "",
+            "enable_icon": false,
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/laces",
             "align_text": "left",
             "border_style": "none",
             "link_text_color": "",
@@ -327,16 +350,17 @@
           "settings": {
             "enable_image": true,
             "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/image-8-65f521617f70a.webp",
             "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "caption": "",
-            "title": "Add a title or tagline",
+            "title": "QUICK-RELEASE LACES",
             "heading_size": "regular_text",
             "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
             "text_color": "",
             "enable_icon": false,
             "button_label": "",
-            "button_link": "",
-            "align_text": "left",
+            "button_link": "shopify:\/\/products\/quick-release-round-lacing-system",
+            "align_text": "center",
             "border_style": "none",
             "link_text_color": "",
             "link_bg_color": ""
@@ -361,30 +385,139 @@
             "link_text_color": "",
             "link_bg_color": ""
           }
+        },
+        "text_block_LFGrkY": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "caption": "",
+            "title": "Add a title or tagline",
+            "heading_size": "regular_text",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_color": "",
+            "enable_icon": false,
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "text_block_gLnQF7": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "caption": "",
+            "title": "Add a title or tagline",
+            "heading_size": "regular_text",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_color": "",
+            "enable_icon": false,
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
+        },
+        "text_block_fKLX9b": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "caption": "",
+            "title": "Add a title or tagline",
+            "heading_size": "regular_text",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_color": "",
+            "enable_icon": false,
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
         }
       },
       "block_order": [
         "text_block_YptTgR",
         "text_block_kWzPcy",
+        "text_block_rCtDkk",
         "text_block_RUezDM",
         "text_block_eCt9wD",
-        "text_block_377FGU"
+        "text_block_377FGU",
+        "text_block_LFGrkY",
+        "text_block_gLnQF7",
+        "text_block_fKLX9b"
       ],
       "settings": {
         "layout": "slider",
-        "title": "Text columns with images",
+        "title": "DISCOVER NO-TIE LACES",
         "section_title_color": "",
-        "link_text": "",
-        "link": "",
-        "link_text_color": "#fff",
-        "link_bg_color": "#ff085a",
-        "sec_heading_align_text": "left",
+        "link_text": "SHOP ALL LACES",
+        "link": "shopify:\/\/collections\/all-laces",
+        "link_text_color": "#3e8df5",
+        "link_bg_color": "rgba(0,0,0,0)",
+        "sec_heading_align_text": "center",
         "text_as_overlay": false,
         "sec_bg": "",
         "css_class": "",
         "custom_css": "",
-        "sec_top": 0,
-        "sec_bottom": 0
+        "sec_top": 60,
+        "sec_bottom": 65
+      }
+    },
+    "three_columns_icons_group_ywAdRi": {
+      "type": "three-columns-icons-group",
+      "blocks": {
+        "col_item_6yzfhm": {
+          "type": "col_item",
+          "settings": {
+            "title": "Free Shipping",
+            "image": "shopify:\/\/shop_images\/Promo_Free_Shipping_icon_110x100_a8c5cf43-7822-4902-a97c-0e70719bfd3e.png",
+            "content": "",
+            "btn_txt": "",
+            "link": ""
+          }
+        },
+        "col_item_cx6DLb": {
+          "type": "col_item",
+          "settings": {
+            "title": "Try for 90 days",
+            "image": "shopify:\/\/shop_images\/mobile-box_40x_3dd73bb2-6210-47e8-ad58-a414ea80d386.png",
+            "content": "",
+            "btn_txt": "",
+            "link": ""
+          }
+        },
+        "col_item_LTJKBe": {
+          "type": "col_item",
+          "settings": {
+            "title": "100% Money Back Guarantee",
+            "image": "shopify:\/\/shop_images\/Guarantee.png",
+            "content": "",
+            "btn_txt": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "col_item_6yzfhm",
+        "col_item_cx6DLb",
+        "col_item_LTJKBe"
+      ],
+      "settings": {
+        "listing_title": "",
+        "youtube_embeded_path": "",
+        "bottom_header": ""
       }
     }
   },
@@ -395,6 +528,7 @@
     "image_with_text_overlay_JPwmWz",
     "text_columns_with_images_video_tnRtTH",
     "image_text_gqEKbX",
-    "text_columns_with_images_video_mdecWf"
+    "text_columns_with_images_video_mdecWf",
+    "three_columns_icons_group_ywAdRi"
   ]
 }
