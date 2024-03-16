@@ -256,7 +256,7 @@
         "featured_links_per_row": "1",
         "frontpage_text_align": "left",
         "frontpage_image_position": "row-reverse",
-        "css_class": "wide-section-half-img",
+        "css_class": "wide-section-one-half-img",
         "custom_css": ""
       }
     },
