@@ -8,7 +8,6 @@
     padding-left: calc(16px / 2);
     padding-right: calc(16px / 2);
     margin: 0;
-    width: 25%;
 }
 .shopify-section--text-columns-with-images .image-element__wrap img[data-sizes=auto].lazyloaded {
     width: 100%;
@@ -48,4 +47,10 @@
 }
 .text-columns-with-images__link--icon img {
     margin-bottom: 0;
+}
+@media screen and (min-width: 989px) {
+
+    .shopify-section--text-columns-with-images .text-column{
+        width: 25%;
+    }
 }
