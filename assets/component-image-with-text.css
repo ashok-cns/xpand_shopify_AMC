@@ -27,4 +27,7 @@
     .shopify-section--image-with-text .wide-section-one-half-img .featured-link--half .description {
         font-size: 15px;
     }
+    .featured-link--half .info {
+        padding: 3rem 0;
+    }
 }
