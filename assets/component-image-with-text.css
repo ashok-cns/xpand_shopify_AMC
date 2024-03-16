@@ -1,4 +1,16 @@
 .shopify-section--image-with-text .wide-section-one-half-img .image-element__wrap img[data-sizes=auto].lazyloaded {
-    width: 100%;
-    
+    width: 100%;   
+}
+
+.shopify-section--image-with-text .wide-section-one-half-img .featured-link--half .collection_title{
+    font-size: 48px;
+    font-weight: bold;
+    font-family: neuzeitgroteskblack;
+    line-height: 1;
+}
+.shopify-section--image-with-text .wide-section-one-half-img .featured-link--half .description {
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    font-weight: normal;
 }
