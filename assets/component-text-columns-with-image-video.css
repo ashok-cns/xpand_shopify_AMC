@@ -57,7 +57,7 @@
 
 @media screen and (max-width: 798px) {
     .shopify-section--text-columns-with-images .text-column.medium-down--one-half{
-        /* width: 60%; */
+        width: 70%;
     }
     .shopify-section--text-columns-with-images  .container {
         padding-left: 30px;
