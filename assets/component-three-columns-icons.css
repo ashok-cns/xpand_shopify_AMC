@@ -104,3 +104,17 @@
     line-height: 1.2;
     letter-spacing: 0;
 }
+.hp-refresh-column-icons .three_column_icons_group_wrapper {
+    display: flex;
+    flex: 0 0 100%;
+    text-align: center;
+}
+.hp-refresh-column-icons .cm_col_listing_wrapper {
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+    flex: 0 0 100%;
+}
+.hp-refresh-column-icons .cm-block-item-inner {
+    max-width: 300px;
+}
