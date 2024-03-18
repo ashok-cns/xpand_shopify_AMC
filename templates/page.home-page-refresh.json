@@ -12,7 +12,7 @@
         "wide_display": true,
         "image": "shopify:\/\/shop_images\/image-5-65f3a53d97f1f.webp",
         "pretext": "",
-        "title": "WHERE<br> COMFORT MEETS PERFORMANCE",
+        "title": "WHERE COMFORT MEETS PERFORMANCE",
         "subtitle": "<p>Introducing FlexFit: lightweight stretch, breathable cuts designed for you to move smarter.<\/p>",
         "button1": "SHOP NEW ATHLETICS",
         "button1_link": "shopify:\/\/collections\/all-accessories",
@@ -403,7 +403,7 @@
             "image": "shopify:\/\/shop_images\/Promo_Free_Shipping_icon_110x100_a8c5cf43-7822-4902-a97c-0e70719bfd3e.png",
             "content": "",
             "btn_txt": "",
-            "link": ""
+            "link": "shopify:\/\/pages\/shipping-delivery"
           }
         },
         "col_item_cx6DLb": {
@@ -413,7 +413,7 @@
             "image": "shopify:\/\/shop_images\/mobile-box_40x_3dd73bb2-6210-47e8-ad58-a414ea80d386.png",
             "content": "",
             "btn_txt": "",
-            "link": ""
+            "link": "shopify:\/\/pages\/privacy-policy-1"
           }
         },
         "col_item_LTJKBe": {
@@ -423,7 +423,7 @@
             "image": "shopify:\/\/shop_images\/Guarantee.png",
             "content": "",
             "btn_txt": "",
-            "link": ""
+            "link": "shopify:\/\/pages\/privacy-policy-1"
           }
         }
       },
@@ -437,6 +437,7 @@
         "listing_title": "",
         "youtube_embeded_path": "",
         "bottom_header": "",
+        "sec_custom_class": "",
         "sec_top": 30,
         "sec_bottom": 30
       }
