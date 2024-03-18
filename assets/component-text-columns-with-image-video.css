@@ -115,9 +115,10 @@
     .shopify-section--text-columns-with-images>:not(section.featured-banner-area,section.three-item-banner) h2.title {
         font-size: 36px;
     }
-    .shopify-section--text-columns-with-images>:not(section.featured-banner-area,section.three-item-banner) h2.title {
+    .shopify-section--text-columns-with-images .feature-porduct-items h2.title {
         max-width: 250px;
         margin: 0 auto;
+        padding-left: 0;
     }
     .shopify-section--text-columns-with-images .text-columns-with-images__content-overlay_wrapper {
         width: calc(100% - 10px);
