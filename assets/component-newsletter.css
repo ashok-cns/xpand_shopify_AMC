@@ -76,6 +76,7 @@
     }
     .home-refresh-newsletter .newsletter_section .newsletter-text {
         font-size: 15px;
+        max-width: 250px;
     }
     .home-refresh-newsletter .container .columns {
         flex-wrap: wrap;
