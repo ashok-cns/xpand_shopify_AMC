@@ -44,5 +44,6 @@ a.list-collection-overlay .list-collection-title {
     }
     a.list-collection-overlay .list-collection-title {
         bottom: 10px;
+        font-size: 20px;
     }
 }
