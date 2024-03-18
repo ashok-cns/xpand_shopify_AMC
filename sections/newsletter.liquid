@@ -5,7 +5,12 @@
     data-section-id="{{ section.id }}"></script>
 
   <div class="section-wrapper--{{ template.name }} {% if section.settings.wide_display %}is-width-wide{% endif %}">
-    {% include 'include-newsletter' %}
+    
+    {% if section.sttings.custom_html != blank %}
+      {{ section.sttings.custom_html }}
+      {% else %}
+      {% include 'include-newsletter' %}
+    {% endif  %}
   </div>
 {% endif %}
 {% schema %}
