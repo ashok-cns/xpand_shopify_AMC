@@ -51,7 +51,7 @@
 }
 @media screen and (min-width: 989px) {
 
-    .shopify-section--text-columns-with-images .text-column{
+    .shopify-section--text-columns-with-images .text-column.one-fourth{
         width: 25%;
     }
 }
