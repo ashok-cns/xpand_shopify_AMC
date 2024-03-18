@@ -36,12 +36,12 @@
 .home-refresh-newsletter  input[type=email]{
     height: 42px;
     min-height: 42px;
-    border-radius: 6px 0 0 6px;
+    border-radius: 3px 0 0 3px;
   
 }
 .home-refresh-newsletter  #contact_form .newsletter-form__sign-up {
     text-transform: uppercase;
-    border-radius: 0 6px 6px 0;
+    border-radius: 0 3px 3px 0;
     font-size: 16px;
     border: none;
     max-width: 100px;
@@ -80,5 +80,17 @@
     }
     .home-refresh-newsletter .container .columns {
         flex-wrap: wrap;
+    }
+    .newsletter_section.newsletter-bgr-true input.contact_email[type=email] {
+        max-width: 300px;
+    }
+    .home-refresh-newsletter  input[type=email]{
+        border-radius: 3px;
+        margin-bottom: 10px;
+      
+    }
+    .home-refresh-newsletter  #contact_form .newsletter-form__sign-up {     
+        border-radius: 3px;
+        max-width: 200px;
     }
 }
