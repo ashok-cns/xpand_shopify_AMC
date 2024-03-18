@@ -66,7 +66,7 @@
       data-sizes="100vw"
     {% endif %}
   >
-    <div class="container">
+  <div class="container {% if newsletter_title != blank and newsletter_text != blank %} section{% endif %}">
       <div class="{% if object.settings.newsletter_section_text_align == "center" %}offset-by-three{% elsif object.settings.newsletter_section_text_align == "right" %}offset-by-six{% endif %} five-eighths columns medium-down--one-whole is-hidden-offset-mobile-only section_form">
       {% if newsletter_title != blank and newsletter_text != blank %}<div class="newsletter-content-wrapper">{% endif %}
         {% if newsletter_title != blank %}
