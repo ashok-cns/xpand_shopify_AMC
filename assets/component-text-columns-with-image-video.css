@@ -81,7 +81,7 @@
     font-size: 14px;
     font-weight: 700;
     min-width: 220px;
-    border: 1px solid #3E8DF5!important;
+    border: 2px solid #3E8DF5!important;
     display: inline-block;
 }
 @media screen and (min-width: 989px) {
