@@ -116,8 +116,8 @@
         font-size: 36px;
     }
     .shopify-section--text-columns-with-images .feature-porduct-items h2.title {
-        max-width: 250px;
-        margin: 0 auto;
+        max-width: 250px !important;
+        margin: 0 auto !important;
         padding-left: 0;
     }
     .shopify-section--text-columns-with-images .text-columns-with-images__content-overlay_wrapper {
