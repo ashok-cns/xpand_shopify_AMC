@@ -16,6 +16,7 @@
     font-size: 14px;
     font-weight: 700;
     min-width: 220px;
+  border: 2px solid;
 }
 
 @media only screen and (min-width: 1025px) {
