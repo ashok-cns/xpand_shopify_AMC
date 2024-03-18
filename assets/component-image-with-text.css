@@ -19,6 +19,7 @@
     font-size: 14px;
     font-weight: 700;
     min-width: 220px;
+  border: 2px solid;
 }
 @media screen and (max-width: 798px) {
     .shopify-section--image-with-text .wide-section-one-half-img .featured-link--half .collection_title {
