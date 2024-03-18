@@ -4,7 +4,7 @@
     margin: 0;
     max-width: 600px;
 }
-.shopify-section--text-columns-with-images >:not(.feature-porduct-items) h2.title {
+.shopify-section--text-columns-with-images >:not(section.feature-porduct-items) h2.title {
     max-width: 100%;
 }
 .shopify-section--text-columns-with-images .text-column{
