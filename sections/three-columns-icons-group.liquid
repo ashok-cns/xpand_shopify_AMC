@@ -196,6 +196,11 @@ h3.cm-block-title {
   {
     "name": "Three Column Icons Group",
     "settings": [
+      {
+        "type": "color",
+        "id": "sec_bg",
+        "label": "Section header"
+      },
 		{
            "type":      "text",
            "id":        "listing_title",
@@ -213,7 +218,29 @@ h3.cm-block-title {
            "id":        "bottom_header",
            "label":     "Bottom Header",
            "placeholder": "Bottom Header"
-        }
+        },
+        {
+        "type": "header",
+        "content": "Spacing"
+      }, {
+        "type": "range",
+        "id": "sec_top",
+        "step": 5,
+        "min": 0,
+        "max": 80,
+        "unit": "px",
+        "default": 0,
+        "label": "Padding top"
+      }, {
+        "type": "range",
+        "id": "sec_bottom",
+        "step": 5,
+        "min": 0,
+        "max": 80,
+        "unit": "px",
+        "default": 0,
+        "label": "Padding bottom"
+      }
 	],
     "max_blocks": 3,
     "blocks": [
