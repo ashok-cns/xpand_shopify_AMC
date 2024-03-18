@@ -55,6 +55,7 @@
 .shopify-section--text-columns-with-images section.feature-porduct-items .regular_text,
 .shopify-section--text-columns-with-images section.feature-porduct-items .text-columns-with-image__subheading {
     text-align: center;
+    margin-bottom: 0px;
 }
 @media screen and (min-width: 989px) {
 
