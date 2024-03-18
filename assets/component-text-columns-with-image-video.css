@@ -135,6 +135,6 @@
         display: none;
     }
     .section-community-story {
-        padding-bottom: 0!important;
+        padding-bottom: 10px!important;
     }
 }
