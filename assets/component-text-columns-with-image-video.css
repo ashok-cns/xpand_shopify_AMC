@@ -92,7 +92,8 @@
 }
 
 @media screen and (max-width: 798px) {
-    .shopify-section--text-columns-with-images .text-column.medium-down--one-half{
+    .shopify-section--text-columns-with-images .text-column.medium-down--one-half,
+    .shopify-section--text-columns-with-images .feature-porduct-items .section.container .text-column{
         width: 70%;
     }
     .shopify-section--text-columns-with-images  .container .slider-on-mobile,
