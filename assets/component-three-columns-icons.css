@@ -119,6 +119,9 @@
     max-width: 300px;
 }
 @media screen and (max-width: 767px) {
+    .hp-refresh-column-icons .cm_col_listing_wrapper {
+        flex-wrap: wrap;
+    }
     .hp-refresh-column-icons .cm_col_listing_wrapper > div.cm-block-item {
         width: 100%;
         float: left;
