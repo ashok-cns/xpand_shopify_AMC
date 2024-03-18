@@ -90,6 +90,9 @@
           {% if block.settings.title != blank %}
             <h3 class="{{ block.settings.heading_size }}" style="color: {{ block.settings.text_color }};">{{ block.settings.title | strip_newlines }}</h3>
           {% endif %}
+          {%  unless block.settings.sub_title == blank %}
+          <div class="text-columns-with-image__subheading">{{ block.settings.sub_title }}</div>
+          {% endunless %}
 
             {% if block.settings.text != blank %}
               <div class="rte-setting" style="color: {{ block.settings.text_color }};">
