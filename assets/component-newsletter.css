@@ -36,13 +36,14 @@
     height: 42px;
     min-height: 42px;
     border-radius: 6px 0 0 6px;
-    max-width: 100px;
+  
 }
 .home-refresh-newsletter  #contact_form .newsletter-form__sign-up {
     text-transform: uppercase;
     border-radius: 0 6px 6px 0;
     font-size: 16px;
     border: none;
+    max-width: 100px;
 }
 
 .home-refresh-newsletter  input[type=email]::-webkit-input-placeholder {
