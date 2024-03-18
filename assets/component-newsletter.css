@@ -9,3 +9,14 @@
 .home-refresh-newsletter .newsletter_section .newsletter-text {
     color: white;
 }
+.home-refresh-newsletter .container .columns  .newsletter-content-wrapper {
+    max-width: 500px;
+}
+.home-refresh-newsletter .newsletter_section h2 {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.home-refresh-newsletter .newsletter_section .newsletter-text {
+    font-size: 18px;
+}
