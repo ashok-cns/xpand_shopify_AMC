@@ -973,12 +973,12 @@
               "social_icons_footer": false
             }
           },
-          "dccd0d38-bf0a-400b-96e7-1a4a405dd35f": {
-            "type": "link_list",
-            "disabled": true,
+          "text_ktRV3W": {
+            "type": "text",
             "settings": {
-              "menu": "contact-us",
-              "social_icons_footer": false
+              "title": "Follow Us",
+              "content": "",
+              "social_icons_footer": true
             }
           }
         },
@@ -987,7 +987,7 @@
           "6b67dfaf-4a11-4cec-841c-9a8f8cf2c680",
           "link_list_G4TbTn",
           "d0893317-9750-4ea4-b72c-af861abbfa0d",
-          "dccd0d38-bf0a-400b-96e7-1a4a405dd35f"
+          "text_ktRV3W"
         ],
         "settings": {
           "copyright_text": "",
