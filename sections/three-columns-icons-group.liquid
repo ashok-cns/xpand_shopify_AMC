@@ -166,6 +166,7 @@ h3.cm-block-title {
           {% for block in section.blocks %}
           <div class="cm-block-item">
             <div class="cm-block-item-inner">
+          {% if block.settings.btn_txt == blank and  block.settings.link != blank%}<a href="{{ block.settings.link }}">{% endif %}
               <div class="cm-block-image">
                 <img src="{{ block.settings.image|img_url:'master' }}" alt="{{ block.settings.title }}"/>
               </div>
@@ -173,9 +174,12 @@ h3.cm-block-title {
               <div class="cm-block-content">
                 {{ block.settings.content }}
               </div>
+            {% if block.settings.btn_txt == blank and  block.settings.link != blank%}<a href="{{ block.settings.link }}"></a>{% endif %}
+              {%  unless block.settings.btn_txt == blank %}  
               <div class="cm-block-button">
                 <a href="{{ block.settings.link }}"><span>{{ block.settings.btn_txt }}  ⟶</span></a>
               </div>
+            {% endunless %}
             </div>
           </div>
           {% endfor %}
