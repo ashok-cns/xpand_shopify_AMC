@@ -396,7 +396,7 @@
         "sec_heading_align_text": "center",
         "text_as_overlay": false,
         "sec_bg": "",
-        "css_class": "",
+        "css_class": "feature-porduct-items",
         "custom_css": "",
         "sec_top": 60,
         "sec_bottom": 65
