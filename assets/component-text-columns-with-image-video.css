@@ -52,13 +52,16 @@
 .text-columns-with-images__link--icon img {
     margin-bottom: 0;
 }
-.shopify-section--text-columns-with-images section.feature-porduct-items .regular_text,
-.shopify-section--text-columns-with-images section.feature-porduct-items .text-columns-with-image__subheading {
+.shopify-section--text-columns-with-images section.feature-porduct-items .regular_text {
     text-align: center;
     margin-bottom: 0px;
     font-family: neuzeitgroteskblack;
     letter-spacing: 0;
     font-size: 20px;
+}
+.shopify-section--text-columns-with-images section.feature-porduct-items .text-columns-with-image__subheading {
+    font-size: 18px;
+    letter-spacing: 0;
 }
 @media screen and (min-width: 989px) {
 
