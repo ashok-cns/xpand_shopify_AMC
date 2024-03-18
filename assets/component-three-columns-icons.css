@@ -118,3 +118,12 @@
 .hp-refresh-column-icons .cm-block-item-inner {
     max-width: 300px;
 }
+@media screen and (max-width: 767) {
+    cm_col_listing_wrapper>div.cm-block-item {
+        width: 100%;
+        float: left;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+}
