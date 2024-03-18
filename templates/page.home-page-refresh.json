@@ -437,7 +437,7 @@
         "section_title_color": "",
         "link_text": "SHOP ALL LACES",
         "link": "shopify:\/\/collections\/all-laces",
-        "link_text_color": "rgba(0,0,0,0)",
+        "link_text_color": "#3e8df5",
         "link_bg_color": "rgba(0,0,0,0)",
         "sec_heading_align_text": "center",
         "text_as_overlay": false,
