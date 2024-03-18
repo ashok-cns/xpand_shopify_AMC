@@ -4,7 +4,7 @@
     data-section-type="newsletter"
     data-section-id="{{ section.id }}"></script>
 
-  <div class="section-wrapper--{{ template.name }} {% if section.settings.wide_display %}is-width-wide{% endif %}">
+  <div class=" {%  unless section.sttings.css_class ==  blank %} {{ section.sttings.css_class }} {% endunless %} section-wrapper--{{ template.name }} {% if section.settings.wide_display %}is-width-wide{% endif %}">
     
     {% if section.sttings.custom_html != blank %}
       {{ section.sttings.custom_html }}
