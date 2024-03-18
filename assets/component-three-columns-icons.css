@@ -98,12 +98,8 @@
 }
 .hp-refresh-column-icons h3.cm-block-title {
     font-family: 'neuzeitgroteskblack';
-    font-weight: 700;
-    font-style: normal;
     font-size: 24px;
-    color: #000;
-    margin: 10px 0;
+    margin: 10px 0 0;
     text-transform: uppercase;
-    font-weight: normal;
     line-height: 1.2;
 }
