@@ -67,6 +67,10 @@
     padding: 50px 0;
 }
 @media screen and (max-width: 767px) {
+    .home-refresh-newsletter .newsletter_section h2,
+    .home-refresh-newsletter .newsletter_section .newsletter-text {
+        text-align: left;
+    }
     .home-refresh-newsletter .newsletter_section h2 {
         font-size: 36px;
     }
