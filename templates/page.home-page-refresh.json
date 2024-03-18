@@ -442,6 +442,22 @@
         "sec_top": 30,
         "sec_bottom": 30
       }
+    },
+    "newsletter_HppgVb": {
+      "type": "newsletter",
+      "settings": {
+        "enable_newsleeter": true,
+        "wide_display": true,
+        "display_first_name": false,
+        "display_last_name": false,
+        "newsletter_title": "STAY IN THE LOOP",
+        "newsletter_text": "<p>Sign up for 10% off your first order. Get first-access to exclusive launches and offers.  <\/p>",
+        "newsletter_section_text_align": "right",
+        "image": "shopify:\/\/shop_images\/dsc06396-1-65f521650332b.webp",
+        "mobile_image": "shopify:\/\/shop_images\/dsc06396-1-1-65f7c0d296aea.webp",
+        "css_class": "",
+        "custom_css": ""
+      }
     }
   },
   "order": [
@@ -452,6 +468,7 @@
     "text_columns_with_images_video_tnRtTH",
     "image_text_gqEKbX",
     "text_columns_with_images_video_mdecWf",
-    "three_columns_icons_group_ywAdRi"
+    "three_columns_icons_group_ywAdRi",
+    "newsletter_HppgVb"
   ]
 }
