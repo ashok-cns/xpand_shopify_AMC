@@ -447,6 +447,7 @@
       "type": "newsletter",
       "settings": {
         "enable_newsleeter": true,
+        "custom_html": "",
         "wide_display": true,
         "display_first_name": false,
         "display_last_name": false,
@@ -455,7 +456,7 @@
         "newsletter_section_text_align": "right",
         "image": "shopify:\/\/shop_images\/dsc06396-1-65f521650332b.webp",
         "mobile_image": "shopify:\/\/shop_images\/dsc06396-1-1-65f7c0d296aea.webp",
-        "css_class": "",
+        "css_class": "home-refresh-newsletter",
         "custom_css": ""
       }
     }
