@@ -5,3 +5,7 @@
     align-items: center;
     justify-content: space-between;
 }
+.home-refresh-newsletter .newsletter_section h2,
+.home-refresh-newsletter .newsletter_section .newsletter-text {
+    color: white;
+}
