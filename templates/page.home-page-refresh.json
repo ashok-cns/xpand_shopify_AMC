@@ -455,7 +455,7 @@
           "type": "col_item",
           "settings": {
             "title": "Free Shipping",
-            "image": "shopify:\/\/shop_images\/5.svg",
+            "image": "shopify:\/\/shop_images\/5.webp",
             "content": "",
             "btn_txt": "",
             "link": "shopify:\/\/pages\/shipping-delivery"
