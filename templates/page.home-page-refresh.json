@@ -433,11 +433,12 @@
         "col_item_LTJKBe"
       ],
       "settings": {
+        "sec_full_width": false,
         "sec_bg": "#fcdb32",
         "listing_title": "",
         "youtube_embeded_path": "",
         "bottom_header": "",
-        "sec_custom_class": "",
+        "sec_custom_class": "hp-refresh-column-icons",
         "sec_top": 30,
         "sec_bottom": 30
       }
