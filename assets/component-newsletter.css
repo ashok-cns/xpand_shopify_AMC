@@ -36,6 +36,7 @@
     height: 42px;
     min-height: 42px;
     border-radius: 6px 0 0 6px;
+    max-width: 100px;
 }
 .home-refresh-newsletter  #contact_form .newsletter-form__sign-up {
     text-transform: uppercase;
