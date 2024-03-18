@@ -65,3 +65,11 @@
   .home-refresh-newsletter .newsletter_section {
     padding: 50px 0;
 }
+@media screen and (max-width: 767px) {
+    .home-refresh-newsletter .newsletter_section h2 {
+        font-size: 36px;
+    }
+    .home-refresh-newsletter .newsletter_section .newsletter-text {
+        font-size: 15px;
+    }
+}
