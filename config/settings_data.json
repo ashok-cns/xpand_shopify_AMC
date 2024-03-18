@@ -955,21 +955,21 @@
           "6b67dfaf-4a11-4cec-841c-9a8f8cf2c680": {
             "type": "link_list",
             "settings": {
-              "menu": "new-footer-menu-3",
+              "menu": "n_about",
               "social_icons_footer": false
             }
           },
           "link_list_G4TbTn": {
             "type": "link_list",
             "settings": {
-              "menu": "x-shop",
+              "menu": "n_shop",
               "social_icons_footer": false
             }
           },
           "d0893317-9750-4ea4-b72c-af861abbfa0d": {
             "type": "link_list",
             "settings": {
-              "menu": "support",
+              "menu": "n_support",
               "social_icons_footer": false
             }
           },
