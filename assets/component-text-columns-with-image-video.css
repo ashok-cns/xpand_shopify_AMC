@@ -14,6 +14,9 @@
     padding-right: calc(16px / 2);
     margin: 0;
 }
+.shopify-section--text-columns-with-images .feature-porduct-items .section.container .text-column {
+    width: calc(20% - 20px);
+}
 .shopify-section--text-columns-with-images .image-element__wrap img[data-sizes=auto].lazyloaded {
     width: 100%;
     margin-bottom: 0;
