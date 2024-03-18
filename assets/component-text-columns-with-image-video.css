@@ -111,7 +111,8 @@
     .shopify-section--text-columns-with-images  .text-columns-with-images__content-overlay_wrapper h3.regular_text {
         font-size: 20px;
     }
-    .shopify-section--text-columns-with-images h2.title {
+    .shopify-section--text-columns-with-images h2.title,
+    .shopify-section--text-columns-with-images>:not(section.featured-banner-area,section.three-item-banner) h2.title {
         font-size: 36px;
     }
     .shopify-section--text-columns-with-images .text-columns-with-images__content-overlay_wrapper {
