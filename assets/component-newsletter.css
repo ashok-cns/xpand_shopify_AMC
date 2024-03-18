@@ -41,6 +41,7 @@
     text-transform: uppercase;
     border-radius: 0 6px 6px 0;
     font-size: 16px;
+    border: none;
 }
 
 .home-refresh-newsletter  input[type=email]::-webkit-input-placeholder {
