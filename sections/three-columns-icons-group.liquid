@@ -184,14 +184,14 @@ h3.cm-block-title {
           </div>
           {% endfor %}
         </div>
-
+      {%  unless section.settings.youtube_embeded_path == blank %} 
       <div class="cm-youtube-video-section">
         <div class="cm-youtube-video">
           {{ section.settings.youtube_embeded_path }}
         </div>
         <h3>{{ section.settings.bottom_header }}</h3>
       </div>
-
+    {% endunless %}
     </div>
   </div>
 </div>
