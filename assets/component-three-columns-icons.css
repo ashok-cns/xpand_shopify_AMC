@@ -83,3 +83,16 @@
   .cm-block-item-inner {
     max-width: 350px;
   }
+  .hp-refresh-column-icons .cm-block-image {
+    width: 65px;
+    height: 65px;
+    background: white;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+  .hp-refresh-column-icons .cm-block-image img {  
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 65px;
+}
