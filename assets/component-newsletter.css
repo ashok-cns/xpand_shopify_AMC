@@ -34,7 +34,7 @@
 
 .home-refresh-newsletter  input[type=email]{
     height: 42px;
-    max-height: 42px;
+    min-height: 42px;
     border-radius: 6px 0 0 6px;
 }
 .home-refresh-newsletter  #contact_form .newsletter-form__sign-up {
