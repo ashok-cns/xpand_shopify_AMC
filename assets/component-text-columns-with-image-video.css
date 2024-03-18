@@ -80,7 +80,7 @@
     font-size: 14px;
     font-weight: 700;
     min-width: 220px;
-    border-color: #3E8DF5;
+    border: 1px solid #3E8DF5!important;
 }
 @media screen and (min-width: 989px) {
 
