@@ -1,0 +1,84 @@
+.cm_col_listing_wrapper > div.cm-block-item {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+  }
+  
+  .cm_col_listing_wrapper {
+    overflow: hidden;
+    margin-top: 0;
+  }
+  
+  .cm-block-image img {
+    width: 150px;
+  }
+  
+  h3.cm-block-title {
+      font-family:'neuzeit_grotesk_regular';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin: 10px 0;
+  }
+  
+  .cm-block-item-inner {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
+  .cm_social_impact_page .container {
+    max-width: 970px;
+    padding:0 20px;
+  }
+  
+  .cm-block-content {
+      font-family:'neuzeit_grotesk_light';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .cm-block-button > a {
+      font-family:'neuzeit_grotesk_light';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    background: rgba(253,214,0,1);
+    box-shadow: none;
+    text-shadow: none;
+    color: #000000;
+    display: block;
+    line-height: 40px;
+    width: 210px;
+    margin: 0 auto;
+  }
+  
+  .cm-block-button {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .cm_col_listing_wrapper .cm_col_listing_wrapper {
+    margin-top: 40px;
+  }
+  
+  .cm-block-content a {
+    color: inherit;
+    text-decoration: underline;
+  }
+  
+  .cm-block-button > a,
+  .cm-block-button > a span {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .cm_col_listing_wrapper > div.cm-block-item {
+    padding: 0 15px;
+  }
+  
+  .cm-block-item-inner {
+    max-width: 350px;
+  }
