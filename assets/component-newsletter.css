@@ -8,6 +8,7 @@
 .home-refresh-newsletter .newsletter_section h2,
 .home-refresh-newsletter .newsletter_section .newsletter-text {
     color: white;
+    letter-spacing: 0;
 }
 .home-refresh-newsletter .container .columns  .newsletter-content-wrapper {
     max-width: 500px;
