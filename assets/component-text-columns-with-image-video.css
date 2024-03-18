@@ -52,6 +52,10 @@
 .text-columns-with-images__link--icon img {
     margin-bottom: 0;
 }
+.shopify-section--text-columns-with-images section.feature-porduct-items .regular_text,
+.shopify-section--text-columns-with-images section.feature-porduct-items .text-columns-with-image__subheading {
+    text-align: center;
+}
 @media screen and (min-width: 989px) {
 
     .shopify-section--text-columns-with-images .text-column.one-fourth{
