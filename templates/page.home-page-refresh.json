@@ -433,9 +433,12 @@
         "col_item_LTJKBe"
       ],
       "settings": {
+        "sec_bg": "#fcdb32",
         "listing_title": "",
         "youtube_embeded_path": "",
-        "bottom_header": ""
+        "bottom_header": "",
+        "sec_top": 30,
+        "sec_bottom": 30
       }
     }
   },
