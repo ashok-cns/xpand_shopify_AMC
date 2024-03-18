@@ -400,7 +400,7 @@
           "type": "col_item",
           "settings": {
             "title": "Free Shipping",
-            "image": "shopify:\/\/shop_images\/Promo_Free_Shipping_icon_110x100_a8c5cf43-7822-4902-a97c-0e70719bfd3e.png",
+            "image": "shopify:\/\/shop_images\/5.svg",
             "content": "",
             "btn_txt": "",
             "link": "shopify:\/\/pages\/shipping-delivery"
@@ -410,7 +410,7 @@
           "type": "col_item",
           "settings": {
             "title": "Try for 90 days",
-            "image": "shopify:\/\/shop_images\/mobile-box_40x_3dd73bb2-6210-47e8-ad58-a414ea80d386.png",
+            "image": "shopify:\/\/shop_images\/6.svg",
             "content": "",
             "btn_txt": "",
             "link": "shopify:\/\/pages\/privacy-policy-1"
@@ -420,7 +420,7 @@
           "type": "col_item",
           "settings": {
             "title": "100% Money Back Guarantee",
-            "image": "shopify:\/\/shop_images\/Guarantee.png",
+            "image": "shopify:\/\/shop_images\/7.svg",
             "content": "",
             "btn_txt": "",
             "link": "shopify:\/\/pages\/privacy-policy-1"
