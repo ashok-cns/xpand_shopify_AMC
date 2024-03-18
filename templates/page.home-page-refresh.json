@@ -229,7 +229,7 @@
         "sec_heading_align_text": "left",
         "text_as_overlay": true,
         "sec_bg": "#203129",
-        "css_class": "",
+        "css_class": "section-community-story",
         "custom_css": "",
         "sec_top": 40,
         "sec_bottom": 80
