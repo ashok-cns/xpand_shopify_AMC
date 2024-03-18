@@ -398,6 +398,28 @@
             "link_text_color": "",
             "link_bg_color": ""
           }
+        },
+        "text_block_89WQP8": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "enable_media": "image",
+            "image": "shopify:\/\/shop_images\/image-6-65f521624ed74.webp",
+            "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "caption": "",
+            "title": "NO-TIE LACES",
+            "sub_title": "Black",
+            "heading_size": "regular_text",
+            "text": "",
+            "text_color": "",
+            "enable_icon": false,
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none",
+            "link_text_color": "",
+            "link_bg_color": ""
+          }
         }
       },
       "block_order": [
@@ -406,7 +428,8 @@
         "text_block_RUezDM",
         "text_block_eCt9wD",
         "text_block_377FGU",
-        "text_block_QkXtBV"
+        "text_block_QkXtBV",
+        "text_block_89WQP8"
       ],
       "settings": {
         "layout": "slider",
