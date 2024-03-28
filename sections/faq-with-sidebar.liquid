@@ -62,16 +62,16 @@
                 {%- for i in (1..20) -%}
                   {%- capture blockQues -%}title_{{ i}}{%- endcapture -%}
                   {%- capture blockAns -%}answer_{{ i}}{%- endcapture -%}
-                  {%- if blockQues != blank and blockAns != blank -%}
+                  {%- if block.settings[blockQues] != blank and block.settings[blockAns] != blank -%}
                     <div class="item">
-                      <div class="title">{{ blockQues }}
+                      <div class="title">{{ block.settings[blockQues] }}
                         <span class="icon">
                           <img src="//designeroptics.com/cdn/shop/files/up_arrow.svg?v=14545366826402941915">
                           <img src="//designeroptics.com/cdn/shop/files/down_arrow.svg?v=8315576297344205504">
                         </span>
                       </div>
                       <div class="body">
-                        {{ blockAns }}
+                        {{ block.settings[blockAns] }}
                       </div>
                     </div>
                   {%- endif -%}
