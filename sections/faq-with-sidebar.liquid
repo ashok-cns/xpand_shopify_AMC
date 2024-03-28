@@ -33,9 +33,9 @@
               {%- for block in section.blocks -%}
                 {%- assign blockHeading = block.settings.faq_title -%}
                 {%- assign blockIcon = block.settings.image -%}
-                <div class="maintitle" data-title="shipping">
+                <div class="maintitle" data-title="{{ blockHeading | handleize }}">
 
-                  {% if blockIcon != blank %}
+                  {% if blockHeading != blank and blockIcon != blank %}
                     {% render 'image-element'
                       , image: blockIcon
                       , alt: blockIcon.alt
@@ -44,38 +44,46 @@
                   {% else %}
                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                   {% endif %}
-                  <h3>Shipping</h3>
+                  {%- unless blockHeading == blank -%}
+                    <h3>{{ blockHeading }}</h3>
+                  {%- endunless -%}
                 </div>
               {%- endfor -%}
             </div>
           {%- endif -%}.
           <div class="main--content">
-            <div class="accordion-wrapper">
-              <h2>Returns &amp; Cancellations</h2>
-              <div class="item">
-                <div class="title">How do I cancel my order?
-                  <span class="icon">
-                    <img src="//designeroptics.com/cdn/shop/files/up_arrow.svg?v=14545366826402941915">
-                    <img src="//designeroptics.com/cdn/shop/files/down_arrow.svg?v=8315576297344205504">
-                  </span>
+            {%- for block in section.blocks -%}
+              {%- assign blockHeading = block.settings.faq_title -%}
+              {%- assign blockIcon = block.settings.image -%}
+              <div class="accordion-wrapper">
+                {%- unless blockHeading == blank -%}
+                  <h2>{{ blockHeading }}</h2>
+                {%- endunless -%}
+                <div class="item">
+                  <div class="title">How do I cancel my order?
+                    <span class="icon">
+                      <img src="//designeroptics.com/cdn/shop/files/up_arrow.svg?v=14545366826402941915">
+                      <img src="//designeroptics.com/cdn/shop/files/down_arrow.svg?v=8315576297344205504">
+                    </span>
+                  </div>
+                  <div class="body">
+                    <p>if you decide to cancel your order, you have 1 hour from when the order was submitted to cancel it on your own. after one hour you will have to contact us to cancel it, since it might already be shipped,&nbsp;<a href="https://designeroptics.com/blogs/faqs/how-do-i-cancel-my-order">Click here for more information</a>
+                    </p>
+                  </div>
                 </div>
-                <div class="body">
-                  <p>if you decide to cancel your order, you have 1 hour from when the order was submitted to cancel it on your own. after one hour you will have to contact us to cancel it, since it might already be shipped,&nbsp;<a href="https://designeroptics.com/blogs/faqs/how-do-i-cancel-my-order">Click here for more information</a>
-                  </p>
+                <div class="item">
+                  <div class="title">Do you have a return policy
+                    <span class="icon">
+                      <img src="//designeroptics.com/cdn/shop/files/up_arrow.svg?v=14545366826402941915">
+                      <img src="//designeroptics.com/cdn/shop/files/down_arrow.svg?v=8315576297344205504">
+                    </span>
+                  </div>
+                  <div class="body">
+                    <p>Yes we do. Click&nbsp;<a href="https://designeroptics.com/pages/returns">here</a>&nbsp;to read our Return Policy and to start a return&nbsp;</p>
+                  </div>
                 </div>
               </div>
-              <div class="item">
-                <div class="title">Do you have a return policy
-                  <span class="icon">
-                    <img src="//designeroptics.com/cdn/shop/files/up_arrow.svg?v=14545366826402941915">
-                    <img src="//designeroptics.com/cdn/shop/files/down_arrow.svg?v=8315576297344205504">
-                  </span>
-                </div>
-                <div class="body">
-                  <p>Yes we do. Click&nbsp;<a href="https://designeroptics.com/pages/returns">here</a>&nbsp;to read our Return Policy and to start a return&nbsp;</p>
-                </div>
-              </div>
-            </div>
+            {%- endfor -%}
           </div>
         </div>
 
