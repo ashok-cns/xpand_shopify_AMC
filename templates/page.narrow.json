@@ -291,6 +291,7 @@
       ],
       "settings": {
         "sec_bg": "",
+        "enable_sidebar": true,
         "title": "FAQ",
         "link": "",
         "link_text": "See All FAQs",
