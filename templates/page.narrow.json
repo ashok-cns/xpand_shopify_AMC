@@ -2,10 +2,89 @@
   "sections": {
     "main": {
       "type": "page-narrow-template",
-      "settings": {}
+      "settings": {
+      }
+    },
+    "faq_TAyG9x": {
+      "type": "faq",
+      "blocks": {
+        "heading_Vn8a47": {
+          "type": "heading",
+          "settings": {
+            "faq_title": "Section Heading 1"
+          }
+        },
+        "content_bXxFbc": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.<\/p>"
+          }
+        },
+        "content_xFFfxy": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.<\/p>"
+          }
+        },
+        "content_6kXTqA": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.<\/p>"
+          }
+        },
+        "heading_jdtDQQ": {
+          "type": "heading",
+          "settings": {
+            "faq_title": "Section heading 2"
+          }
+        },
+        "content_p9qgK4": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.<\/p>"
+          }
+        },
+        "content_mCb9eK": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.<\/p>"
+          }
+        },
+        "content_KJwpYL": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Vn8a47",
+        "content_bXxFbc",
+        "content_xFFfxy",
+        "content_6kXTqA",
+        "heading_jdtDQQ",
+        "content_p9qgK4",
+        "content_mCb9eK",
+        "content_KJwpYL"
+      ],
+      "settings": {
+        "sec_bg": "",
+        "title": "",
+        "link": "",
+        "link_text": "See All FAQs",
+        "sec_top": 0,
+        "sec_bottom": 0
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "faq_TAyG9x"
   ]
 }
