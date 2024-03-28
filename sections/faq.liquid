@@ -13,10 +13,10 @@
       ">
       {% if section.settings.title != blank %}
         <div class="
-                                                      one-whole
-                                                      column
-                                                      page
-                                                    ">
+            one-whole
+            column
+            page
+          ">
           <h2 class="title">
             {{ section.settings.title | escape }}
           </h2>
@@ -25,11 +25,11 @@
 
 
       <div class="       
-          one-whole
+        one-whole
         medium-down--one-whole
-                                    column
-                                    faq
-                                    faq__column-1">
+        column
+        faq
+        faq__column-1">
         {% if section.blocks.size > 0 %}
           <dl class="faqAccordion">
             {% for block in section.blocks %}
@@ -57,32 +57,6 @@
           </dl>
         {% endif %}
       </div>
-
-      {% if section.blocks.size > 0 %}
-        {% for block in section.blocks %}
-          {% if block.type == 'image' %}
-            <div class="
-                                                                          one-half
-                                                                          medium-down--one-whole
-                                                                          column
-                                                                          faq
-                                                                          faq--image
-                                                                          faq__column-2
-                                                                        ">
-              {% if block.settings.image != blank %}
-                {%
-                  render 'image-element'
-                  , image: block.settings.image
-                  , alt: block.settings.image.alt
-                  , focal_point: block.settings.image.presentation.focal_point
-                  , %}
-              {% else %}
-                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-              {% endif %}
-            </div>
-          {% endif %}
-        {% endfor %}
-      {% endif %}
       {% if section.settings.link != blank and section.settings.link_text != blank %}
         <a href="{{ section.settings.link }}" class="button">{{ section.settings.link_text }}</a>
       {% endif %}
