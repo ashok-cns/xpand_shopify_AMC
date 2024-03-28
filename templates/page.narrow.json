@@ -82,8 +82,10 @@
         "content_WYJjjK"
       ],
       "settings": {
+        "enable_faq_sidebar": true,
         "sec_bg": "",
         "title": "",
+        "alignment": "left",
         "link": "",
         "link_text": "See All FAQs",
         "sec_top": 0,
