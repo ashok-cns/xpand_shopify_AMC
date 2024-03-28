@@ -59,32 +59,23 @@
                 {%- unless blockHeading == blank -%}
                   <h2>{{ blockHeading }}</h2>
                 {%- endunless -%}
-                {% for i in (1..20) %}
-                  {{ i }}--
-                {% endfor %}
-                <div class="item">
-                  <div class="title">How do I cancel my order?
-                    <span class="icon">
-                      <img src="//designeroptics.com/cdn/shop/files/up_arrow.svg?v=14545366826402941915">
-                      <img src="//designeroptics.com/cdn/shop/files/down_arrow.svg?v=8315576297344205504">
-                    </span>
-                  </div>
-                  <div class="body">
-                    <p>if you decide to cancel your order, you have 1 hour from when the order was submitted to cancel it on your own. after one hour you will have to contact us to cancel it, since it might already be shipped,&nbsp;<a href="https://designeroptics.com/blogs/faqs/how-do-i-cancel-my-order">Click here for more information</a>
-                    </p>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="title">Do you have a return policy
-                    <span class="icon">
-                      <img src="//designeroptics.com/cdn/shop/files/up_arrow.svg?v=14545366826402941915">
-                      <img src="//designeroptics.com/cdn/shop/files/down_arrow.svg?v=8315576297344205504">
-                    </span>
-                  </div>
-                  <div class="body">
-                    <p>Yes we do. Click&nbsp;<a href="https://designeroptics.com/pages/returns">here</a>&nbsp;to read our Return Policy and to start a return&nbsp;</p>
-                  </div>
-                </div>
+                {%- for i in (1..20) -%}
+                  {%- capture blockQues -%}title_{{ i}}{%- endcapture -%}
+                  {%- capture blockAns -%}answer_{{ i}}{%- endcapture -%}
+                  {%- if blockQues != blank and blockAns != blank -%}
+                    <div class="item">
+                      <div class="title">{{ blockQues }}
+                        <span class="icon">
+                          <img src="//designeroptics.com/cdn/shop/files/up_arrow.svg?v=14545366826402941915">
+                          <img src="//designeroptics.com/cdn/shop/files/down_arrow.svg?v=8315576297344205504">
+                        </span>
+                      </div>
+                      <div class="body">
+                        {{ blockAns }}
+                      </div>
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
               </div>
             {%- endfor -%}
           </div>
