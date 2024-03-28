@@ -1,0 +1,278 @@
+{% schema %}
+  {
+    "name": "FAQ with sidebar",
+    "class": "shopify-section--faq-with-sidebar",
+    "settings": [
+      {
+        "type": "color",
+        "id": "sec_bg",
+        "label": "Section background color"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "FAQ"
+      },
+      {
+        "type": "url",
+        "id": "link",
+        "label": "Button Link"
+      },
+      {
+        "type": "text",
+        "id": "link_text",
+        "label": "Button Label",
+        "default": "See All FAQs"
+      }, {
+        "type": "header",
+        "content": "Spacing"
+      }, {
+        "type": "range",
+        "id": "sec_top",
+        "step": 5,
+        "min": 0,
+        "max": 80,
+        "unit": "px",
+        "default": 0,
+        "label": "Padding top"
+      }, {
+        "type": "range",
+        "id": "sec_bottom",
+        "step": 5,
+        "min": 0,
+        "max": 80,
+        "unit": "px",
+        "default": 0,
+        "label": "Padding bottom"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Frequently Asked Question",
+        "type": "content",
+        "settings": [
+          {
+            "type": "text",
+            "id": "faq_title",
+            "label": "Heading",
+            "default": "Section heading"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Icon"
+          },
+          {
+            "type": "text",
+            "id": "title_1",
+            "label": "Question 1",
+            "default": "Question"
+          },
+          {
+            "type": "richtext",
+            "id": "answer_1",
+            "label": "Answer 1",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_2",
+            "label": "Question 2",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_2",
+            "label": "Answer 2",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_3",
+            "label": "Question 3",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_3",
+            "label": "Answer 3",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_4",
+            "label": "Question 4",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_4",
+            "label": "Answer 4",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_5",
+            "label": "Question 5",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_5",
+            "label": "Answer 5",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_6",
+            "label": "Question 6",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_6",
+            "label": "Answer 6",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_7",
+            "label": "Question 7",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_7",
+            "label": "Answer 7",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_8",
+            "label": "Question 8",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_8",
+            "label": "Answer 8",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_9",
+            "label": "Question 9",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_9",
+            "label": "Answer 9",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_10",
+            "label": "Question 10",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_10",
+            "label": "Answer 10",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_11",
+            "label": "Question 11",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_11",
+            "label": "Answer 11",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_12",
+            "label": "Question 12",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_12",
+            "label": "Answer 12",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_13",
+            "label": "Question 13",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_13",
+            "label": "Answer 13",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_14",
+            "label": "Question 14",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_14",
+            "label": "Answer 14",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_15",
+            "label": "Question 15",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_15",
+            "label": "Answer 15",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_16",
+            "label": "Question 16",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_16",
+            "label": "Answer 16",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_17",
+            "label": "Question 17",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_17",
+            "label": "Answer 17",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_18",
+            "label": "Question 18",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_18",
+            "label": "Answer 18",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_19",
+            "label": "Question 19",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_19",
+            "label": "Answer 19",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }, {
+            "type": "text",
+            "id": "title_20",
+            "label": "Question 20",
+            "default": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer_20",
+            "label": "Answer 20",
+            "default": "<p>Provide the answer to the question here.</p>"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "FAQ with sidebar",
+        "category": "Store information"
+      }
+    ]
+  }
+{% endschema %}
