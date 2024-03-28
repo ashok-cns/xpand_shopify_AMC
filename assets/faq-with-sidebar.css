@@ -1,0 +1,39 @@
+.faq-accordion .mobile_dropdownbtn {
+    display: none;
+}
+.sidebar {
+    width: 29.25%;
+    margin-right: 5.55%;
+}
+@media (max-width: 798px) {
+    .faq-accordion .sidebar {
+        width: 100%;
+        padding: 0;
+    }
+    .faq-accordion .mobile_dropdownbtn {
+        display: block;
+        background: #fff;
+        padding: 9px 8px;
+        border: 1px solid #ccc;
+        position: relative;
+    }
+    .faq-accordion .mobile_dropdownbtn::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        background: url(https://cdn.shopify.com/s/files/1/2807/8986/files/down_arrow.svg?v=1609139503);
+        z-index: 1;
+        background-repeat: no-repeat;
+        transform: translate(0px, -13%);
+    }
+    .faq-accordion .mobile_dropdownbtn h3 {
+        font-size: 20px;
+        font-weight: 700;    
+    }
+    .faq-accordion .mobile_dropdownbtn span {
+        color: #333;
+    }
+}
