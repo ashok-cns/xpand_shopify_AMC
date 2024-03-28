@@ -31,8 +31,19 @@
                 </div>
               {%- endif -%}
               {%- for block in section.blocks -%}
+                {%- assign blockHeading = block.settings.faq_title -%}
+                {%- assign blockIcon = block.settings.image -%}
                 <div class="maintitle" data-title="shipping">
-                  <img src="" alt="">
+
+                  {% if blockIcon != blank %}
+                    {% render 'image-element'
+                      , image: blockIcon
+                      , alt: blockIcon.alt
+                      , focal_point: blockIcon.presentation.focal_point
+                      , %}
+                  {% else %}
+                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                  {% endif %}
                   <h3>Shipping</h3>
                 </div>
               {%- endfor -%}
@@ -139,8 +150,7 @@
           {
             "type": "text",
             "id": "faq_title",
-            "label": "Heading",
-            "default": "Section heading"
+            "label": "Heading"
           },
           {
             "type": "image_picker",
