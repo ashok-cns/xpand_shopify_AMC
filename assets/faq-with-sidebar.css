@@ -34,6 +34,17 @@
     padding: 10px 0;
     cursor: pointer;
 }
+.faq-accordion .item .body {
+    display: none;
+}
+.faq-accordion .item .body p {
+    text-align: justify;
+    font-size: 16px;
+    letter-spacing: 0;
+    color: #000;
+    padding: 8px 8px 18px 0px;
+    margin: 0 0 0 20px;
+}
 @media (max-width: 798px) {
     .faq-accordion .sidebar {
         width: 100%;
