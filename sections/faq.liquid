@@ -23,21 +23,11 @@
         </div>
       {% endif %}
 
-      {% if section.blocks.size > 0 %}
-        {% for block in section.blocks %}
-          {% if block.type == 'image' %}
-            {% assign image = true %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
+  
 
       <div
-        class="
-        {% if image == true %}
-          one-half
-        {% else %}
+        class="       
           one-whole
-        {% endif %}
         medium-down--one-whole
                                     column
                                     faq
