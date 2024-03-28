@@ -1,58 +1,66 @@
-{{ 'faq-with-sidebar.css' | asset_url | stylesheet_tag }}
-<section class="section-wapper" style="background: {{ section.settings.sec_bg }}; padding-top: {{ section.settings.sec_top | append: 'px' }}; padding-bottom: {{ section.settings.sec_bottom | append: 'px' }}">
-  <div class="section faq-main-container">
-    <div class="faq-accordion">
-      <!-- mobile dropdown -->
-      <div class="mobile_dropdownbtn">
-        <h3>
-          <span>General</span>
-        </h3>
-      </div>
-      <!-- Accordian container -->
-      <div class="faq-accordian-container">
-        <div class="sidebar">
-          <div class="maintitle">
-            <img src="" alt="General">
-            <h3 class="general">General</h3>
-          </div>
-          <div class="maintitle" data-title="shipping">
-            <img src="" alt="">
-            <h3>Shipping</h3>
-          </div>
-        </div>
-        <div class="main--content">
-          <div class="accordion-wrapper">
-            <h2>Returns &amp; Cancellations</h2>
-            <div class="item">
-              <div class="title">How do I cancel my order?
-                <span class="icon">
-                  <img src="//designeroptics.com/cdn/shop/files/up_arrow.svg?v=14545366826402941915">
-                  <img src="//designeroptics.com/cdn/shop/files/down_arrow.svg?v=8315576297344205504">
-                </span>
-              </div>
-              <div class="body">
-                <p>if you decide to cancel your order, you have 1 hour from when the order was submitted to cancel it on your own. after one hour you will have to contact us to cancel it, since it might already be shipped,&nbsp;<a href="https://designeroptics.com/blogs/faqs/how-do-i-cancel-my-order">Click here for more information</a>
-                </p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="title">Do you have a return policy
-                <span class="icon">
-                  <img src="//designeroptics.com/cdn/shop/files/up_arrow.svg?v=14545366826402941915">
-                  <img src="//designeroptics.com/cdn/shop/files/down_arrow.svg?v=8315576297344205504">
-                </span>
-              </div>
-              <div class="body">
-                <p>Yes we do. Click&nbsp;<a href="https://designeroptics.com/pages/returns">here</a>&nbsp;to read our Return Policy and to start a return&nbsp;</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+{%- if section.blocks.size > 0 -%}
+  {%- assign sidebarEnable = section.settings.enable_sidebar -%}
+  {%- assign sectionTitle = section.settings.title -%}
+  {%- assign sectionCTALink = section.settings.link -%}
+  {%- assign sectionCTA = section.settings.link_text -%}
+  {{ 'faq-with-sidebar.css' | asset_url | stylesheet_tag }}
+  <section class="section-wapper" style="background: {{ section.settings.sec_bg }}; padding-top: {{ section.settings.sec_top | append: 'px' }}; padding-bottom: {{ section.settings.sec_bottom | append: 'px' }}">
+    <div class="section faq-main-container">
 
+      <div class="faq-accordion">
+        <!-- mobile dropdown -->
+
+        <div class="mobile_dropdownbtn">
+          <h3>
+            <span>General</span>
+          </h3>
+        </div>
+        <!-- Accordian container -->
+        <div class="faq-accordian-container">
+          <div class="sidebar">
+            <div class="maintitle">
+              <img src="" alt="General">
+              <h3 class="general">General</h3>
+            </div>
+            <div class="maintitle" data-title="shipping">
+              <img src="" alt="">
+              <h3>Shipping</h3>
+            </div>
+          </div>
+          <div class="main--content">
+            <div class="accordion-wrapper">
+              <h2>Returns &amp; Cancellations</h2>
+              <div class="item">
+                <div class="title">How do I cancel my order?
+                  <span class="icon">
+                    <img src="//designeroptics.com/cdn/shop/files/up_arrow.svg?v=14545366826402941915">
+                    <img src="//designeroptics.com/cdn/shop/files/down_arrow.svg?v=8315576297344205504">
+                  </span>
+                </div>
+                <div class="body">
+                  <p>if you decide to cancel your order, you have 1 hour from when the order was submitted to cancel it on your own. after one hour you will have to contact us to cancel it, since it might already be shipped,&nbsp;<a href="https://designeroptics.com/blogs/faqs/how-do-i-cancel-my-order">Click here for more information</a>
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="title">Do you have a return policy
+                  <span class="icon">
+                    <img src="//designeroptics.com/cdn/shop/files/up_arrow.svg?v=14545366826402941915">
+                    <img src="//designeroptics.com/cdn/shop/files/down_arrow.svg?v=8315576297344205504">
+                  </span>
+                </div>
+                <div class="body">
+                  <p>Yes we do. Click&nbsp;<a href="https://designeroptics.com/pages/returns">here</a>&nbsp;to read our Return Policy and to start a return&nbsp;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+{%- endif -%}
 {% schema %}
   {
     "name": "FAQ with sidebar",
