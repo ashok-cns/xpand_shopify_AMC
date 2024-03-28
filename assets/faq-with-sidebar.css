@@ -5,10 +5,18 @@
     width: 29.25%;
     margin-right: 5.55%;
 }
+.faq-accordion .main--content {
+    width: 63.5%;
+    margin-top: 0;
+}
 @media (max-width: 798px) {
     .faq-accordion .sidebar {
         width: 100%;
         padding: 0;
+    }
+    .faq-accordion .main--content {
+        width: 100%;
+        margin-top: 30px;
     }
     .faq-accordion .mobile_dropdownbtn {
         display: block;
