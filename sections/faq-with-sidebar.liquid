@@ -13,12 +13,13 @@
       {%- endunless -%}
       <div class="faq-accordion">
         <!-- mobile dropdown -->
-
-        <div class="mobile_dropdownbtn">
-          <h3>
-            <span>General</span>
-          </h3>
-        </div>
+        {%- if sidebarEnable -%}
+          <div class="mobile_dropdownbtn">
+            <h3>
+              <span>General</span>
+            </h3>
+          </div>
+        {%- endif -%}
         <!-- Accordian container -->
         <div class="faq-accordian-container">
           <div class="sidebar">
