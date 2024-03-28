@@ -22,16 +22,22 @@
         {%- endif -%}
         <!-- Accordian container -->
         <div class="faq-accordian-container">
-          <div class="sidebar">
-            <div class="maintitle">
-              <img src="" alt="General">
-              <h3 class="general">General</h3>
+          {%- if sidebarEnable -%}
+            <div class="sidebar">
+              {%- if section.blocks.size > 1 -%}
+                <div class="maintitle">
+                  <img src="https://cdn.shopify.com/s/files/1/1206/8416/files/5.webp" alt="General">
+                  <h3 class="general">General</h3>
+                </div>
+              {%- endif -%}
+              {%- for block in section.blocks -%}
+                <div class="maintitle" data-title="shipping">
+                  <img src="" alt="">
+                  <h3>Shipping</h3>
+                </div>
+              {%- endfor -%}
             </div>
-            <div class="maintitle" data-title="shipping">
-              <img src="" alt="">
-              <h3>Shipping</h3>
-            </div>
-          </div>
+          {%- endif -%}.
           <div class="main--content">
             <div class="accordion-wrapper">
               <h2>Returns &amp; Cancellations</h2>
