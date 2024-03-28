@@ -61,6 +61,13 @@
             "title": "Question",
             "answer": "<p>Provide the answer to the question here.<\/p>"
           }
+        },
+        "content_WYJjjK": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -71,7 +78,8 @@
         "heading_jdtDQQ",
         "content_p9qgK4",
         "content_mCb9eK",
-        "content_KJwpYL"
+        "content_KJwpYL",
+        "content_WYJjjK"
       ],
       "settings": {
         "sec_bg": "",
