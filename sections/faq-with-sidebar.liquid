@@ -6,7 +6,11 @@
   {{ 'faq-with-sidebar.css' | asset_url | stylesheet_tag }}
   <section class="section-wapper" style="background: {{ section.settings.sec_bg }}; padding-top: {{ section.settings.sec_top | append: 'px' }}; padding-bottom: {{ section.settings.sec_bottom | append: 'px' }}">
     <div class="section faq-main-container">
-
+      {%- unless sectionTitle == blank -%}
+        <h2 class="title">
+          {{ sectionTitle | escape }}
+        </h2>
+      {%- endunless -%}
       <div class="faq-accordion">
         <!-- mobile dropdown -->
 
@@ -56,6 +60,12 @@
             </div>
           </div>
         </div>
+
+        {%- if sectionCTALink != blank and sectionCTA != blank -%}
+          <div class="faq-section-cta">
+            <a href="{{ sectionCTALink }}" class="button">{{ sectionCTA }}</a>
+          </div>
+        {%- endif -%}
 
       </div>
     </div>
