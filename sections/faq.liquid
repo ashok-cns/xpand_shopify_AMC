@@ -23,10 +23,8 @@
         </div>
       {% endif %}
 
-  
 
-      <div
-        class="       
+      <div class="       
           one-whole
         medium-down--one-whole
                                     column
@@ -73,10 +71,11 @@
                                                                         ">
               {% if block.settings.image != blank %}
                 {%
-                   render 'image-element',
-                 image: block.settings.image,
-                 alt: block.settings.image.alt,
-                 focal_point: block.settings.image.presentation.focal_point, %}
+                  render 'image-element'
+                  , image: block.settings.image
+                  , alt: block.settings.image.alt
+                  , focal_point: block.settings.image.presentation.focal_point
+                  , %}
               {% else %}
                 {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
               {% endif %}
