@@ -292,8 +292,8 @@
       "settings": {
         "sec_bg": "",
         "enable_sidebar": true,
-        "title": "FAQ",
-        "link": "",
+        "title": "",
+        "link": "shopify:\/\/pages\/contact-us",
         "link_text": "See All FAQs",
         "sec_top": 0,
         "sec_bottom": 0
