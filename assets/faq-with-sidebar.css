@@ -35,6 +35,9 @@
 .faq-accordion .maintitle.active {
     background: #008ffd 0 0 no-repeat padding-box;
 }
+.faq-accordion .maintitle.active h3 {
+    color: #fff;
+}
 .faq-accordion .maintitle.active::before {
     content: '';
     position: absolute;
