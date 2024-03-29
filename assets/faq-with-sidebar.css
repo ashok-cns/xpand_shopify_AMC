@@ -127,6 +127,9 @@
     border-radius: 5px;
 }
 @media screen and (max-width: 798px) {
+    .faq-accordion .maintitle:before {
+        display: none;
+    }
     .faq-accordion {
         padding: 0 10px;
     }
