@@ -1894,3 +1894,10 @@ $('body').on('click', '.product__details--product-page .product-rating', () => {
     scrollTop: $(".shopify-section-product-tab").offset().top - 120},
   'slow');
 });
+
+// FAQ with sidebar accorion functionality
+$('body').on('click', '.faq-accordion .item .title', () => {
+  $(this).closest('.item').addClass('active').siblings('.item').removeClass('active');
+  $(this).closest('.item').find('.body').slideToggle();
+  $(this).closest('.item').siblings('.item').find('.body').slideUp();
+})
