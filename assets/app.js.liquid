@@ -1798,15 +1798,7 @@ $(document).on('click', '.go-to-top', () => {
     headerHeight += Number($('#header').innerHeight());
     console.log("Header Height on load==>", headerHeight);
     $('body').css('margin-top',headerHeight)
-    }
-
-       // FAQ with sidebar accorion functionality
-       $(document).on('click', '.item .title', () => {
-      $(this).closest('.item').addClass('active').siblings('.item').removeClass('active');
-      $(this).closest('.item').find('.body').slideToggle();
-      $(this).closest('.item').siblings('.item').find('.body').slideUp();
-    })
-  
+    }  
 });
 
 
