@@ -32,6 +32,17 @@
     padding: 16px 0;
     cursor: default;
 }
+.faq-accordion .maintitle.active::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    background: #c63b3d;
+    z-index: 0;
+    transform: rotate(45deg);
+}
 .faq-accordion .main--content {
     width: 63.5%;
     margin-top: 0;
