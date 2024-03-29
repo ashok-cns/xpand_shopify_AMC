@@ -127,6 +127,9 @@
     border-radius: 5px;
 }
 @media screen and (max-width: 798px) {
+    .faq-accordion {
+        padding: 0 10px;
+    }
     .faq-accordian-container {
         display: flex;
         flex-direction: column;
