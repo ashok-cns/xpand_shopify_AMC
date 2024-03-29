@@ -1,6 +1,11 @@
 .faq-accordion .mobile_dropdownbtn {
     display: none;
 }
+.faq-accordian-container {
+    display: flex;
+    max-width: 1350px;
+    margin: auto;
+}
 .sidebar {
     width: 29.25%;
     margin-right: 5.55%;
