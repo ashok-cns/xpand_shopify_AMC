@@ -57,6 +57,9 @@
     display: none;
     margin-bottom: 37.5px;
 }
+.faq-accordion .main--content .accordion-wrapper.active {
+    display: block;
+}
 .faq-accordion .main--content .accordion-wrapper h2 {
     text-align: left;
     font-size: 24px;
