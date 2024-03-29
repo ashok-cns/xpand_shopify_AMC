@@ -1832,7 +1832,10 @@ $(document).on('click', '.go-to-top', () => {
         $('.faq-accordian-container .main--content .accordion-wrapper').removeClass('active')
         $('.faq-accordian-container .main--content .accordion-wrapper[data-title="'+dataTitle+'"]').addClass('active');
       }
+    })
 
+    $('body').on('click', '.faq-accordion .mobile_dropdownbtn', function(){
+      $('.faq-accordion .faq-accordian-container .sidebar').slideToggle()
     })
 
     // Event to show alert offer modal box
