@@ -20,7 +20,9 @@
 }
 .faq-accordion .maintitle>img {
     margin-right: 10px;
-    max-height: 25px;
+    height: 45px;
+    width: 45px;
+    object-fit: contain;
 }
 .faq-accordion .maintitle h3 {
     text-align: left;
