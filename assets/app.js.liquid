@@ -1815,6 +1815,14 @@ $(document).on('click', '.go-to-top', () => {
       },
     });
 
+
+    // FAQ with sidebar accorion functionality
+    $('body').on('click', '.item .title', function() {
+      $(this).closest('.item').addClass('active').siblings('.item').removeClass('active');
+      $(this).closest('.item').find('.body').slideToggle();
+      $(this).closest('.item').siblings('.item').find('.body').slideUp();
+    })
+
     // Event to show alert offer modal box
     $(document).on('click', '#alert_offer_modal_cta', function(){
       $(document).find('.alert-offer-overlay, .alert-offer-modal').addClass('is-active ');
