@@ -127,6 +127,10 @@
     border-radius: 5px;
 }
 @media screen and (max-width: 798px) {
+    .faq-accordian-container {
+        display: flex;
+        flex-direction: column;
+    }
     .faq-accordion .sidebar {
         width: 100%;
         padding: 0;
