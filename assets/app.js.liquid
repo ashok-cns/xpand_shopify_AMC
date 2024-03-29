@@ -1823,6 +1823,17 @@ $(document).on('click', '.go-to-top', () => {
       $(this).closest('.item').siblings('.item').find('.body').slideUp();
     })
 
+    $('body').on('click', '.faq-accordion .maintitle', function(){
+      let dataTitle = $(this).attr('data-title');
+      if(dataTitle == 'general'){
+        $('.faq-accordian-container .main--content .accordion-wrapper').addClass('active')
+      } else {
+        $('.faq-accordian-container .main--content .accordion-wrapper').removeClass('active')
+        $('.faq-accordian-container .main--content .accordion-wrapper[data-title="'+dataTitle+'"]').addClass('active');
+      }
+
+    })
+
     // Event to show alert offer modal box
     $(document).on('click', '#alert_offer_modal_cta', function(){
       $(document).find('.alert-offer-overlay, .alert-offer-modal').addClass('is-active ');
