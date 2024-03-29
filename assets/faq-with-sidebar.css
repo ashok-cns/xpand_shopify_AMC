@@ -66,6 +66,7 @@
     letter-spacing: 0;
     color: #000;
     opacity: 1;
+    margin-top: 0;
     margin-bottom: 10px;
 }
 .faq-accordion .item .title {
