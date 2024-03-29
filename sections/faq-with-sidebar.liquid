@@ -1,8 +1,3 @@
-<script
-  type="application/json"
-  data-section-type="faq"
-  data-section-id="{{ section.id }}"></script>
-
 {%- if section.blocks.size > 0 -%}
   {%- assign sidebarEnable = section.settings.enable_sidebar -%}
   {%- assign sectionTitle = section.settings.title -%}
@@ -337,3 +332,11 @@
     ]
   }
 {% endschema %}
+<script>
+    // FAQ with sidebar accorion functionality
+    $(document).on('click', '.item .title', () => {
+      $(this).closest('.item').addClass('active').siblings('.item').removeClass('active');
+      $(this).closest('.item').find('.body').slideToggle();
+      $(this).closest('.item').siblings('.item').find('.body').slideUp();
+    })
+</script>
