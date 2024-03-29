@@ -97,6 +97,17 @@
     padding: 8px 8px 18px 0px;
     margin: 0 0 0 20px;
 }
+.faq-accordion .main--content .accordion-wrapper .item .title span.icon img {
+    display: block;
+    padding-top: 5px;
+}
+.faq-accordion .main--content .accordion-wrapper .item .title span.icon img:first-child,
+.faq-accordion .main--content .accordion-wrapper .item.active .title span.icon img:last-child {
+    display: none;
+}
+.faq-accordion .main--content .accordion-wrapper .item.active .title span.icon img:first-child {
+    display: block;
+}
 @media (max-width: 798px) {
     .faq-accordion .sidebar {
         width: 100%;
