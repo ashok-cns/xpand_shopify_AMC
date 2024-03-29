@@ -36,11 +36,7 @@
                 <div class="maintitle" data-title="{{ blockHeading | handleize }}">
 
                   {% if blockHeading != blank and blockIcon != blank %}
-                    {% render 'image-element'
-                      , image: blockIcon
-                      , alt: blockIcon.alt
-                      , focal_point: blockIcon.presentation.focal_point
-                      , %}
+                    <img src="{{ blockIcon | img_url: '150x' }}" alt="General">
                   {% else %}
                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                   {% endif %}
