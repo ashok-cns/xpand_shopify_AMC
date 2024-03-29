@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "page-narrow-template",
+      "disabled": true,
       "settings": {
       }
     },
@@ -10,12 +11,14 @@
       "blocks": {
         "heading_Vn8a47": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "faq_title": "Section Heading 1"
           }
         },
         "content_bXxFbc": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "title": "Question",
             "answer": "<p>Provide the answer to the question here.<\/p>"
@@ -23,6 +26,7 @@
         },
         "content_xFFfxy": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "title": "Question",
             "answer": "<p>Provide the answer to the question here.<\/p>"
@@ -30,6 +34,7 @@
         },
         "content_6kXTqA": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "title": "Question",
             "answer": "<p>Provide the answer to the question here.<\/p>"
@@ -37,12 +42,14 @@
         },
         "heading_jdtDQQ": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "faq_title": "Section heading 2"
           }
         },
         "content_p9qgK4": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "title": "Question",
             "answer": "<p>Provide the answer to the question here.<\/p>"
@@ -50,6 +57,7 @@
         },
         "content_mCb9eK": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "title": "Question",
             "answer": "<p>Provide the answer to the question here.<\/p>"
@@ -57,6 +65,7 @@
         },
         "content_KJwpYL": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "title": "Question",
             "answer": "<p>Provide the answer to the question here.<\/p>"
@@ -64,6 +73,7 @@
         },
         "content_WYJjjK": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "title": "Question",
             "answer": "<p>Provide the answer to the question here.<\/p>"
@@ -81,10 +91,9 @@
         "content_KJwpYL",
         "content_WYJjjK"
       ],
-      "disabled": true,
       "settings": {
         "sec_bg": "",
-        "title": "",
+        "title": "Frequently Asked Questions",
         "link": "",
         "link_text": "See All FAQs",
         "sec_top": 0,
@@ -239,7 +248,7 @@
           "type": "content",
           "settings": {
             "faq_title": "Block 4",
-            "image": "shopify:\/\/shop_images\/4_b48189e4-ba5d-40dc-a660-c83d97cb9342.png",
+            "image": "shopify:\/\/shop_images\/5.webp",
             "title_1": "How do I re-open the Lace Ends?",
             "answer_1": "<p>You can see our tutorial videos on re-opening our Lace Ends for our Original No-Tie Flat Lacing System through this<a href=\"https:\/\/www.youtube.com\/watch?v=cFA6pYLM_EU\">link<\/a>and our Quick-Release Round Lacing System through this<a href=\"https:\/\/youtu.be\/UW776nQt41U\">link<\/a>.<\/p>",
             "title_2": "Do you ship worldwide?",
