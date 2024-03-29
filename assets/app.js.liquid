@@ -1806,7 +1806,7 @@ $(document).on('click', '.go-to-top', () => {
   window.addEventListener("DOMContentLoaded", (event) => {
 
     // FAQ with sidebar accorion functionality
-    $('body').on('click', '.faq-accordion .item .title', () => {
+    $(document).on('click', '.item .title', () => {
       $(this).closest('.item').addClass('active').siblings('.item').removeClass('active');
       $(this).closest('.item').find('.body').slideToggle();
       $(this).closest('.item').siblings('.item').find('.body').slideUp();
