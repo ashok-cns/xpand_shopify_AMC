@@ -108,6 +108,24 @@
 .faq-accordion .main--content .accordion-wrapper .item.active .title span.icon img:first-child {
     display: block;
 }
+.faq-section-cta {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.faq-section-cta a {
+    background: #008ffd;
+    color: #fff;
+    border: 1px solid #008ffd;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    font-size: 14px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    border-radius: 5px;
+}
 @media (max-width: 798px) {
     .faq-accordion .sidebar {
         width: 100%;
