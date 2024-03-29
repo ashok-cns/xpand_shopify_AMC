@@ -22,6 +22,16 @@
     margin-right: 10px;
     width: 25px;
 }
+.faq-accordion .maintitle h3 {
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0;
+    color: #3c3c3c;
+    opacity: 1;
+    width: 100%;
+    padding: 16px 0;
+    cursor: default;
+}
 .faq-accordion .main--content {
     width: 63.5%;
     margin-top: 0;
