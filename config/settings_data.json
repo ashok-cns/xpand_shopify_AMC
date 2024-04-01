@@ -849,6 +849,14 @@
               "link": "shopify:\/\/products\/xpand-shoe-wipes"
             }
           },
+          "8172cb1e-68c5-4369-b6a5-6f8cf3a42477": {
+            "type": "alert_content",
+            "settings": {
+              "alert_icon": "shopify:\/\/shop_images\/up_to_15_off_d5622553-3157-4884-b54a-79e3e0b51f71.png",
+              "alert_text": "<p>Happy April 1st. Enter <strong>\"FOOLS\"<\/strong> for an extra 15% off<\/p>",
+              "alert_text_desc": "<p>Use code \"<strong>FOOLS<\/strong>\" to enjoy an additional 15% off sitewide.<\/p>"
+            }
+          },
           "256ab9f7-5b47-4192-964d-9e98b87dee64": {
             "type": "alert_content",
             "settings": {
@@ -880,15 +888,6 @@
               "alert_text": "<p>Free Upgrade to Express Shipping on orders over $50<\/p>",
               "alert_text_desc": "<p>No more long waits!<br\/><br\/>Express shipping options become avaialble at checkout for orders over $50.<br\/><br\/><em>(available only for the USA & CA)<\/em><\/p>"
             }
-          },
-          "8172cb1e-68c5-4369-b6a5-6f8cf3a42477": {
-            "type": "alert_content",
-            "disabled": true,
-            "settings": {
-              "alert_icon": "shopify:\/\/shop_images\/up_to_15_off.png",
-              "alert_text": "<p>Cyber Monday Sale. CODE: <em><strong>CM15<\/strong><\/em> for an extra 15% off<\/p>",
-              "alert_text_desc": "<p>Use code \"<strong>CM15<\/strong>\" to enjoy an additional 15% off sitewide.<\/p>"
-            }
           }
         },
         "block_order": [
@@ -901,11 +900,11 @@
           "66538e64-a4f3-43c3-9585-e78dcbb6053c",
           "mega_item_RzLwQG",
           "4c49e9d3-7311-44c8-ade5-855821ae4385",
+          "8172cb1e-68c5-4369-b6a5-6f8cf3a42477",
           "256ab9f7-5b47-4192-964d-9e98b87dee64",
           "de8e7a28-3268-45e8-b050-9117f93d059e",
           "d76268cc-795b-4498-bfc9-d906a796e3c1",
-          "a8cf62fb-fdd2-483e-8eda-3190fb26a1ad",
-          "8172cb1e-68c5-4369-b6a5-6f8cf3a42477"
+          "a8cf62fb-fdd2-483e-8eda-3190fb26a1ad"
         ],
         "settings": {
           "announcement_bar_enabled": true,
