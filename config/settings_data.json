@@ -889,6 +889,14 @@
               "alert_text": "<p>Free Shipping to Canada on orders over $30<\/p>",
               "alert_text_desc": "<p>Canadian orders $30 or more qualify for free shipping, and shipping costs $8.99 - $10.99 <em>(depending on province)<\/em> for orders under $30.<\/p>"
             }
+          },
+          "alert_content_q3cAtF": {
+            "type": "alert_content",
+            "disabled": true,
+            "settings": {
+              "alert_text": "<p>90-day Satisfaction Guaranteed<\/p>",
+              "alert_text_desc": ""
+            }
           }
         },
         "block_order": [
@@ -905,7 +913,8 @@
           "a8cf62fb-fdd2-483e-8eda-3190fb26a1ad",
           "d76268cc-795b-4498-bfc9-d906a796e3c1",
           "256ab9f7-5b47-4192-964d-9e98b87dee64",
-          "de8e7a28-3268-45e8-b050-9117f93d059e"
+          "de8e7a28-3268-45e8-b050-9117f93d059e",
+          "alert_content_q3cAtF"
         ],
         "settings": {
           "announcement_bar_enabled": true,
