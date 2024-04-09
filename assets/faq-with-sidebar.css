@@ -1,0 +1,177 @@
+.faq-accordion .mobile_dropdownbtn {
+    display: none;
+}
+.faq-accordian-container {
+    display: flex;
+    max-width: 1350px;
+    margin: auto;
+}
+.sidebar {
+    width: 29.25%;
+    margin-right: 5.55%;
+}
+.faq-accordion .maintitle {
+    padding: 0 16px;
+    margin-bottom: 6px;
+    background: #e9e9e9 0 0 no-repeat padding-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.faq-accordion .maintitle img {
+    margin-right: 10px;
+    height: 45px;
+    width: 45px;
+    object-fit: contain;
+}
+.faq-accordion .maintitle h3 {
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0;
+    color: #3c3c3c;
+    opacity: 1;
+    width: 100%;
+    padding: 16px 0;
+    margin-bottom: 0;
+    cursor: default;
+}
+.faq-accordion .maintitle.active {
+    background: #008ffd 0 0 no-repeat padding-box;
+}
+.faq-accordion .maintitle.active h3 {
+    color: #fff;
+}
+.faq-accordion .maintitle.active::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    background: #008ffd;
+    z-index: 0;
+    transform: rotate(45deg);
+}
+.faq-accordion .main--content {
+    width: 63.5%;
+    margin-top: 0;
+}
+.faq-accordion .main--content .accordion-wrapper {
+    display: none;
+    margin-bottom: 37.5px;
+}
+.faq-accordion .main--content .accordion-wrapper.active {
+    display: block;
+}
+.faq-accordion .main--content .accordion-wrapper h2 {
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 0;
+    color: #000;
+    opacity: 1;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'neuzeit_grotesk_light';
+    font-weight: bold;
+}
+.faq-accordion .item .title {
+    text-align: left;
+    font-size: 19px;
+    letter-spacing: 0;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #d9d9d9;
+    background: 0 0;
+    padding: 10px 0;
+    cursor: pointer;
+    font-family: 'neuzeit_grotesk_light';
+}
+.faq-accordion .item .body {
+    display: none;
+    font-family: 'neuzeit_grotesk_light';
+}
+.faq-accordion .item .body p {
+    text-align: justify;
+    font-size: 16px;
+    letter-spacing: 0;
+    color: #000;
+    padding: 8px 8px 18px 0px;
+    margin: 0 0 0 20px;
+}
+.faq-accordion .main--content .accordion-wrapper .item .title span.icon img {
+    display: block;
+    padding-top: 5px;
+}
+.faq-accordion .main--content .accordion-wrapper .item .title span.icon img:first-child,
+.faq-accordion .main--content .accordion-wrapper .item.active .title span.icon img:last-child {
+    display: none;
+}
+.faq-accordion .main--content .accordion-wrapper .item.active .title span.icon img:first-child {
+    display: block;
+}
+.faq-section-cta {
+    text-align: center;
+    margin: 20px 0;
+}
+.faq-section-cta a {
+    background: #008ffd;
+    color: #fff;
+    border: 1px solid #008ffd;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    font-size: 14px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 798px) {
+    .faq-accordion .maintitle:before {
+        display: none;
+    }
+    .faq-accordion {
+        padding: 0 10px;
+    }
+    .faq-accordian-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .faq-accordion .sidebar {
+        width: 100%;
+        padding: 0;
+    }
+    .faq-accordion .main--content {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .faq-accordion .mobile_dropdownbtn {
+        display: block;
+        background: #fff;
+        padding: 9px 8px;
+        border: 1px solid #ccc;
+        position: relative;
+    }
+    .faq-accordion .mobile_dropdownbtn::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        background: url(https://cdn.shopify.com/s/files/1/2807/8986/files/down_arrow.svg?v=1609139503);
+        z-index: 1;
+        background-repeat: no-repeat;
+        transform: translate(0px, -13%);
+    }
+    .faq-accordion .mobile_dropdownbtn h3 {
+        font-size: 20px;
+        font-weight: 700;    
+    }
+    .faq-accordion .mobile_dropdownbtn span {
+        color: #333;
+    }
+}
