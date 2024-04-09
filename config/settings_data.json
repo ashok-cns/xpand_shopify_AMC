@@ -852,9 +852,9 @@
           "8172cb1e-68c5-4369-b6a5-6f8cf3a42477": {
             "type": "alert_content",
             "settings": {
-              "alert_icon": "shopify:\/\/shop_images\/up_to_15_off_1.png",
-              "alert_text": "<p>Rainbow Day! Extra 25% off rainbow colored laces. Use code <strong>COLORFUL<\/strong><\/p>",
-              "alert_text_desc": "<p>Additional 25% off rainbow colored <a href=\"https:\/\/www.xpandlaces.com\/products\/no-tie-original-elastic-lacing-system?variant=19252661452911\" target=\"_blank\" title=\"https:\/\/www.xpandlaces.com\/products\/no-tie-original-elastic-lacing-system?variant=19252661452911\">flat<\/a> and <a href=\"https:\/\/www.xpandlaces.com\/products\/quick-release-round-lacing-system?variant=40628712013935\" target=\"_blank\" title=\"https:\/\/www.xpandlaces.com\/products\/quick-release-round-lacing-system?variant=40628712013935\">round<\/a> laces. <br\/>Enter promo code <strong>COLORFUL<\/strong> at checkout<br\/><br\/><\/p>"
+              "alert_icon": "shopify:\/\/shop_images\/up_to_15_off_1_9d56ff71-12e8-4ebb-b034-b8dfa1def594.png",
+              "alert_text": "<p>Autism Awareness Month. Use code <strong>AUSTISM<\/strong> for an extra 15% off.<\/p>",
+              "alert_text_desc": "<p>Additional 15% off sitewide. Enter promo code <strong>AUTISM<\/strong> at checkout.<br\/><br\/><\/p>"
             }
           },
           "a8cf62fb-fdd2-483e-8eda-3190fb26a1ad": {
