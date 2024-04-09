@@ -1894,3 +1894,27 @@ $('body').on('click', '.product__details--product-page .product-rating', () => {
     scrollTop: $(".shopify-section-product-tab").offset().top - 120},
   'slow');
 });
+
+
+
+// FAQ with sidebar accorion functionality
+    $('body').on('click', '.item .title', function() {
+      $(this).closest('.item').addClass('active').siblings('.item').removeClass('active');
+      $(this).closest('.item').find('.body').slideToggle();
+      $(this).closest('.item').siblings('.item').find('.body').slideUp();
+    })
+
+    $('body').on('click', '.faq-accordion .maintitle', function(){
+      $(this).addClass('active').siblings('.maintitle').removeClass('active');
+      let dataTitle = $(this).attr('data-title');
+      if(dataTitle == 'general'){
+        $('.faq-accordian-container .main--content .accordion-wrapper').addClass('active')
+      } else {
+        $('.faq-accordian-container .main--content .accordion-wrapper').removeClass('active')
+        $('.faq-accordian-container .main--content .accordion-wrapper[data-title="'+dataTitle+'"]').addClass('active');
+      }
+    })
+
+    $('body').on('click', '.faq-accordion .mobile_dropdownbtn', function(){
+      $('.faq-accordion .faq-accordian-container .sidebar').slideToggle()
+    })
