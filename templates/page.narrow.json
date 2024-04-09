@@ -2,10 +2,138 @@
   "sections": {
     "main": {
       "type": "page-narrow-template",
-      "settings": {}
+      "settings": {
+      }
+    },
+    "faq_ijktWy": {
+      "type": "faq",
+      "disabled": true,
+      "settings": {
+        "sec_bg": "",
+        "title": "Frequently Asked Questions",
+        "link": "",
+        "link_text": "See All FAQs",
+        "sec_top": 0,
+        "sec_bottom": 0
+      }
+    },
+    "faq_with_sidebar_jRRjXB": {
+      "type": "faq-with-sidebar",
+      "blocks": {
+        "content_rfAGr7": {
+          "type": "content",
+          "settings": {
+            "faq_title": "Block 1",
+            "image": "shopify:\/\/shop_images\/5.webp",
+            "title_1": "Can I still shop online during COVID-19?",
+            "answer_1": "<p>We are continuing to process orders with no disruptions so you can expect standard delivery times as shown<a href=\"https:\/\/www.xpandlaces.com\/pages\/shipping-delivery\">here<\/a>.<\/p>",
+            "title_2": "",
+            "answer_2": "",
+            "title_3": "",
+            "answer_3": "",
+            "title_4": "",
+            "answer_4": "",
+            "title_5": "",
+            "answer_5": "",
+            "title_6": "",
+            "answer_6": "",
+            "title_7": "",
+            "answer_7": "",
+            "title_8": "",
+            "answer_8": "",
+            "title_9": "",
+            "answer_9": "",
+            "title_10": "",
+            "answer_10": "",
+            "title_11": "",
+            "answer_11": "",
+            "title_12": "",
+            "answer_12": "",
+            "title_13": "",
+            "answer_13": "",
+            "title_14": "",
+            "answer_14": "",
+            "title_15": "",
+            "answer_15": "",
+            "title_16": "",
+            "answer_16": "",
+            "title_17": "",
+            "answer_17": "",
+            "title_18": "",
+            "answer_18": "",
+            "title_19": "",
+            "answer_19": "",
+            "title_20": "",
+            "answer_20": ""
+          }
+        },
+        "content_8EQL78": {
+          "type": "content",
+          "settings": {
+            "faq_title": "Block 2",
+            "image": "shopify:\/\/shop_images\/7_010cfb72-7b6a-4d68-b90c-2515647fb140.png",
+            "title_1": "",
+            "answer_1": "",
+            "title_2": "",
+            "answer_2": "",
+            "title_3": "",
+            "answer_3": "",
+            "title_4": "",
+            "answer_4": "",
+            "title_5": "",
+            "answer_5": "",
+            "title_6": "",
+            "answer_6": "",
+            "title_7": "",
+            "answer_7": "",
+            "title_8": "",
+            "answer_8": "",
+            "title_9": "",
+            "answer_9": "",
+            "title_10": "",
+            "answer_10": "",
+            "title_11": "",
+            "answer_11": "",
+            "title_12": "",
+            "answer_12": "",
+            "title_13": "",
+            "answer_13": "",
+            "title_14": "",
+            "answer_14": "",
+            "title_15": "",
+            "answer_15": "",
+            "title_16": "",
+            "answer_16": "",
+            "title_17": "",
+            "answer_17": "",
+            "title_18": "",
+            "answer_18": "",
+            "title_19": "",
+            "answer_19": "",
+            "title_20": "",
+            "answer_20": ""
+          }
+        }
+      },
+      "block_order": [
+        "content_rfAGr7",
+        "content_8EQL78"
+      ],
+      "disabled": true,
+      "settings": {
+        "sec_bg": "",
+        "enable_sidebar": true,
+        "title": "",
+        "link": "",
+        "link_text": "See All FAQs",
+        "sec_top": 0,
+        "sec_bottom": 0
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "faq_ijktWy",
+    "faq_with_sidebar_jRRjXB"
   ]
 }
