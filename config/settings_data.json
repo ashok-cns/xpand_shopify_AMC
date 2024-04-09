@@ -158,10 +158,13 @@
     "cart_message": "",
     "cart_discount_applied_text": "Congrats, you just received discountPercentage% off!",
     "cart_free_shipping_hint_text": "You are quantity pack away from free shipping!",
+    "cart_free_shipping_item_count": 4,
     "enable_free_product": false,
-    "free_product_item": "no-tie-original-elastic-lacing-system",
-    "free_product_item_vid": "19252660371567",
-    "cart_free_product_hint_text": "You are quantity pack away to get a free product!",
+    "cart_free_product_item_count": 3,
+    "free_product_item": "xpand-quick-wipes-pack-of-2",
+    "free_product_item_vid": "7329302446191",
+    "cart_free_product_hint_text": "You are one item away from a free gift!",
+    "cart_free_product_applied_text": "Free Gift Unlock!",
     "cart_no_discount_hint_text": "You’re all set. Continue to shop or proceed to checkout!",
     "tier_1_dis_amount": "1.99",
     "tier_2_dis_amount": "5.33",
@@ -2141,12 +2144,6 @@
       "162627792188827216"
     ],
     "blocks": {
-      "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "15683396631634586217": {
         "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": true,
@@ -2157,6 +2154,12 @@
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "lowest",
           "greeting_message": "👋 Hi, message us with any questions. We're happy to help!"
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": true,
+        "settings": {
         }
       }
     }
