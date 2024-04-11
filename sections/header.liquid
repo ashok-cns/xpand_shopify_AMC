@@ -61,6 +61,7 @@
                   data-offer-id="{{ forloop.index }}"
                   data-offer-type="expandable"
                   class="offer swiper-slide">
+                  <div class="swiper-image-with-text">
                   <div class="offer__image-wrapper"><img
                       loading="lazy"
                       src="{{ block.settings[alertIcon] | img_url: '200x' }}"
@@ -76,6 +77,7 @@
                       aria-label="{{ block.settings[alertText] }}'"
                       class="offer__cta">Learn More</button>
                   </div>
+                    </div>
                   <div
                     aria-hidden="true"
                     offer-block-id="{{ forloop.index }}"
