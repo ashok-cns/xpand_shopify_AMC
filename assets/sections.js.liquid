@@ -2531,9 +2531,41 @@ window.header = {
     let closeTimer = null;
 
     // Toggle mini-cart with menu icon
+    // if (window.PXUTheme.theme_settings.cart_action !== 'redirect_cart') {
+    //   $('.mini_cart').on('click ', function () {
+    //     const $cartContainer = $(document).find('header[data-desktop-header]');//$(this).parent();
+    //     if ($cartContainer.hasClass('active_link')) {
+          
+    //       closeMiniCart();
+    //     } else {
+    //       openMiniCart($cartContainer);
+    //     }
+    //   });
+
+    //   $('.cart-container').on('mouseenter', function () {
+    //     const $cartContainer = $(document).find('header[data-desktop-header]');//$(this);
+    //     clearTimeout(closeTimer);
+    //     openMiniCart($cartContainer);
+    //   });
+
+    //   $('.cart-container').on('mouseleave', () => {
+    //     //closeTimer = setTimeout(() => closeMiniCart(), 400);
+    //   });
+    // }
+
+    // Toggle mini-cart with menu icon
     if (window.PXUTheme.theme_settings.cart_action !== 'redirect_cart') {
-      $('.mini_cart').on('click ', function () {
+  // Function to open mini cart
+  function openMiniCartForMobile($cartContainer) {
+    clearTimeout(closeTimer);
+    openMiniCart($cartContainer);
+  }
+
+  // Check viewport width and execute script accordingly
+  function handleMobileView() {
+    $('.mini_cart').on('click ', function () {
         const $cartContainer = $(document).find('header[data-desktop-header]');//$(this).parent();
+        //alert('hello box');
         if ($cartContainer.hasClass('active_link')) {
           
           closeMiniCart();
@@ -2541,17 +2573,27 @@ window.header = {
           openMiniCart($cartContainer);
         }
       });
+    
+    const viewportWidth = window.innerWidth;
+    const isMobileView = viewportWidth <= 768; // Adjust this value as per your mobile breakpoint
 
+    if (isMobileView) {
+      // Event handler for mobile view
       $('.cart-container').on('mouseenter', function () {
-        const $cartContainer = $(document).find('header[data-desktop-header]');//$(this);
-        clearTimeout(closeTimer);
-        openMiniCart($cartContainer);
+        const $cartContainer = $(document).find('header[data-desktop-header]');
+        openMiniCartForMobile($cartContainer);
       });
 
       $('.cart-container').on('mouseleave', () => {
         //closeTimer = setTimeout(() => closeMiniCart(), 400);
       });
     }
+  }
+
+  // Call the function initially and on window resize
+  handleMobileView();
+  $(window).resize(handleMobileView);
+}
 
     $('.cart_content__continue-shopping').on('click', () => {
       closeMiniCart();
