@@ -223,7 +223,7 @@
           "settings": {
             "enable_image": true,
             "enable_media": "image",
-            "image": "shopify:\/\/shop_images\/icon1.png",
+            "image": "shopify:\/\/shop_images\/secure-fit.png",
             "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "title": "Secure Fit",
             "heading_size": "regular_text",
@@ -241,7 +241,7 @@
           "settings": {
             "enable_image": true,
             "enable_media": "image",
-            "image": "shopify:\/\/shop_images\/icon2.png",
+            "image": "shopify:\/\/shop_images\/adjustable-tension.png",
             "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "title": "Adjustable Tension",
             "heading_size": "regular_text",
@@ -259,7 +259,7 @@
           "settings": {
             "enable_image": true,
             "enable_media": "image",
-            "image": "shopify:\/\/shop_images\/icon3.png",
+            "image": "shopify:\/\/shop_images\/one-size.png",
             "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "title": "One Size Fits All",
             "heading_size": "regular_text",
