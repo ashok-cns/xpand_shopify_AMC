@@ -4,7 +4,7 @@
 .featured-banner-area .image-element__wrap {background: #d9f0f6;padding: 25px;border-radius: 50%;width: 100px;height: 100px;}
 .featured-banner-area .image-element__wrap img{width:100%;}
 section.featured-banner-area .image-element__wrap img[data-sizes="auto"], section.featured-banner-area .image-element__wrap img[data-sizes="auto"].lazyloaded{height:auto !important;}
-.three-item-banner .image-element__wrap {border:1px solid #000;padding: 15px;border-radius: 50%;width: 100px;height: 100px; margin-bottom: 15px;}
+.three-item-banner .image-element__wrap {border:1px solid #000;padding: 15px;border-radius: 50%;width: 100px;height: 100px; margin-bottom: 15px;background: #fff;}
 .three-item-banner h2,.three-item-banner .rte-setting p{color:#000;}
 .three-item-banner .image-element__wrap img{width:100% !important;}
 
