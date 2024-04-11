@@ -1,3 +1,62 @@
 .logo-list img,.logo-list .image-element__wrap img {height: 40px !important;}
 .logo-list__item p{color:#333;}
 .logo-list__item-link:hover{opacity:1;}
+.featured-banner-area .image-element__wrap {background: #d9f0f6;padding: 25px;border-radius: 50%;width: 100px;height: 100px;}
+.featured-banner-area .image-element__wrap img{width:100%;}
+section.featured-banner-area .image-element__wrap img[data-sizes="auto"], section.featured-banner-area .image-element__wrap img[data-sizes="auto"].lazyloaded{height:auto !important;}
+.three-item-banner .image-element__wrap {border:1px solid #000;padding: 15px;border-radius: 50%;width: 100px;height: 100px; margin-bottom: 15px;}
+.three-item-banner h2,.three-item-banner .rte-setting p{color:#000;}
+.three-item-banner .image-element__wrap img{width:100% !important;}
+
+#shopify-section-footer{overflow:visible;}
+footer .newsletter_section .social_icons a:hover {background: #000;color: #fff;font-size:16px;}
+
+
+@media(max-width:798px){
+.footer-menu-wrap .one-fifth.column:last-child{order: -1;}
+.footer_menu {border-top: 1px solid #000;padding: 5px 0;}
+.footer-menu-wrap .one-fifth.column:nth-child(4) .footer_menu{border-bottom: 1px solid #000;}  
+.toggle_contents,.go-to-top { display: none;} 
+.footer .toggle_contents ul li p{line-height:1;}  
+ 
+.container.footer-menu-wrap .one-fifth {margin: 0 !important;padding: 0 20px;flex: 0 0 100%;}
+.footer-menu-wrap .one-fifth.column:last-child {flex: 0 0 100%;}
+.newsletter_section {text-align: center;margin-bottom: 30px;}
+.shopify-section--footer .newsletter_section h6{font-size:22px;letter-spacing: 0px;}
+.footer .footer-menu-wrap h6{color:#000;}
+.footer .newsletter form{margin:auto;}
+footer .social_icons{text-align:center;}
+.footer .footer-menu-wrap h6 > span.right{display:block !important;top: 0px;} 
+.footer .footer-menu-wrap .footer_menu h6{pointer-events:auto !important;letter-spacing: 0px;font-size:18px;text-transform:capitalize;}  
+ 
+ }
+
+/* 09-04-2024 */
+@media only screen and (max-width: 767px) {
+.swiper-image-with-text {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    width: 100%;
+    margin-bottom:20px;
+}
+.swiper-image-with-text .offer__title-wrapper {
+    width: calc(100% - 64px);
+}
+.swiper-image-with-text .offer__image-wrapper {
+    margin-right: 0px !important;
+    max-width: 64px !important;
+    height: 64px !important;
+    width: inherit !important;
+
+}
+.swiper-image-with-text .offer__title-wrapper .offer__title p {
+    font-size: 18px !important;
+}
+.alert-offer-modal.topbar-modal .modal__container {
+    overflow: hidden;
+}
+}
+
+
+/* 09-04-2024 end */
