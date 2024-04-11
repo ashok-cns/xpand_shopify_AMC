@@ -122,6 +122,9 @@ window.TriplePixelData={TripleName:"xpandlaces.myshopify.com",ver:"2.12",plat:"S
     <link rel="preload" href="{{ 'sections.js' | asset_url }}" as="script">
     <link rel="preload" href="{{ 'utilities.js' | asset_url }}" as="script">
     <link rel="preload" href="{{ 'app.js' | asset_url }}" as="script">
+    {% comment %}
+    {{ 'custom.js' | asset_url | script_tag }}
+     {% endcomment %}
 
     <!-- Stylesheet for Fancybox library -->
     {{ 'fancybox.css' | asset_url | stylesheet_tag }}
