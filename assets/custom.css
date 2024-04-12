@@ -33,7 +33,7 @@ footer .social_icons{text-align:center;}
  
  }
 
-
+/**12-04-2024**/
 .alert-offer-modal.topbar-modal .offer__title{font-weight:bold;}
 @media(max-width:749px){
 .enable_mobile_dropdown_slider.alert-offer-modal.topbar-modal .offer{display:grid !important;}
@@ -48,7 +48,7 @@ footer .social_icons{text-align:center;}
 @media(max-width:340px){
 .product__details h1.product_name{font-size:14px;}
 }
-
+/**12-04-2024**/
 /* 09-04-2024 */
 @media only screen and (max-width: 767px) {
 .swiper-image-with-text {
