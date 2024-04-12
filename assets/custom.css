@@ -46,7 +46,7 @@ footer .social_icons{text-align:center;}
 .product__details h1.product_name{font-size:16px;}
 }
 @media(max-width:340px){
-h1.product_name{font-size:14px;}
+.product__details h1.product_name{font-size:14px;}
 }
 
 /* 09-04-2024 */
