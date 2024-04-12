@@ -8,6 +8,8 @@ section.featured-banner-area .image-element__wrap img[data-sizes="auto"], sectio
 .three-item-banner h2,.three-item-banner .rte-setting p{color:#000;}
 .three-item-banner .image-element__wrap img{width:100% !important;}
 
+.alert-offer-modal.topbar-modal .offer__title{font-weight:bold;}
+
 #shopify-section-footer{overflow:visible;}
 footer .newsletter_section .social_icons a:hover {background: #000;color: #fff;font-size:16px;}
 
