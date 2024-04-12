@@ -34,7 +34,7 @@ footer .social_icons{text-align:center;}
  }
 
 /**12-04-2024**/
-.alert-offer-modal.topbar-modal .offer__title{font-weight:bold;}
+.alert-offer-modal.topbar-modal .offer__title{font-weight:bold;font-size:20px;}
 @media(max-width:749px){
 .enable_mobile_dropdown_slider.alert-offer-modal.topbar-modal .offer{display:grid !important;}
 .enable_mobile_dropdown_slider.alert-offer-modal.topbar-modal .offer__body-wrapper{margin-top: 20px;} 
