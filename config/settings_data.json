@@ -854,6 +854,7 @@
           },
           "alert_content_VkVb3F": {
             "type": "alert_content",
+            "disabled": true,
             "settings": {
               "alert_icon": "shopify:\/\/shop_images\/up_to_15_off_2.png",
               "alert_text": "<p>Weekend Special: No-Show Lightweight Socks<\/p>",
