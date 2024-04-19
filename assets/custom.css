@@ -78,3 +78,8 @@ footer .social_icons{text-align:center;}
 
 
 /* 09-04-2024 end */
+
+
+body.product .footer {
+    padding-bottom: 100px;
+}
