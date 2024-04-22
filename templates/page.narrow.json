@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "page-narrow-template",
+      "disabled": true,
       "settings": {
       }
     },
@@ -319,6 +320,12 @@
         "sec_bottom": 0
       }
     },
+    "page_header_BiGxtq": {
+      "type": "page-header",
+      "settings": {
+        "top_page_header": "Frequently Asked Questions"
+      }
+    },
     "faq_new_cCANPa": {
       "type": "faq-new",
       "blocks": {
@@ -458,6 +465,7 @@
     "main",
     "faq_ijktWy",
     "faq_with_sidebar_jRRjXB",
+    "page_header_BiGxtq",
     "faq_new_cCANPa",
     "faq_new_i67QnE",
     "faq_new_DdnGHM"
