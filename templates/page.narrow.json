@@ -449,7 +449,7 @@
           "type": "faq",
           "settings": {
             "faq_title": "What material is it?",
-            "faq_body": ""
+            "faq_body": "<p>Lightweight no-show sock is a blend of cotton, polyester, nylon and elastine.<\/p><p>Cushioned no-show sock is a blend of cotton, polyester and spandex.<\/p><p><\/p>"
           }
         },
         "faq_eVKzKB": {
@@ -491,12 +491,20 @@
             "faq_title": "Is it TSA approved?",
             "faq_body": "<p>Explorer belt is TSA approved, but not the Urban Belt because of the neodymium magnet in the belt buckle.<\/p>"
           }
+        },
+        "faq_depzk3": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "What size belt is best for me?",
+            "faq_body": "<p>See our size chart <a href=\"https:\/\/public-uploads.gorgias.io\/MNVgn6mXLzx1j8BO\/image-123ef992-1fcc-450d-9c5c-fccf4eaa33e4.png\" title=\"https:\/\/public-uploads.gorgias.io\/MNVgn6mXLzx1j8BO\/image-123ef992-1fcc-450d-9c5c-fccf4eaa33e4.png\">here<\/a>.<\/p>"
+          }
         }
       },
       "block_order": [
         "faq_xnecU9",
         "faq_rYAnkD",
-        "faq_D3R3Qh"
+        "faq_D3R3Qh",
+        "faq_depzk3"
       ],
       "settings": {
         "section_title": "No-Show Belt"
