@@ -1,6 +1,332 @@
+ <section class="faq-sec">
+  <div class="faqs-container">
+    <div class="faq-head-n">
+      <h2>{{ section.settings.section_title }}</h2>
+    </div>
+
+    <div class="faq-wraps-n">
+      
+      <div class="faq-wraps-area">
+        {%- for block in section.blocks -%}
+        {%- case block.type -%}
+        
+        {%- when 'faq' -%}
+     
+      <div class="faq-areaa">
+      {% if block.settings.faq_title %}
+      <h3>{{ block.settings.faq_title }}</h3>
+      {% endif %}
+
+      {% if block.settings.faq_body %}
+        <div class="faq-body-areaa" style="display:none;">
+          {{ block.settings.faq_body }}
+        </div>
+      {% endif %}
+      </div>
+        
+        {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<style>
+  
+
+  .faq-areaa.active-faq h3:before {
+    transform: rotate(360deg);
+    left:-4px;
+    width:7px;
+    height:2px;
+    top:47%;
+}
+
+.faq-areaa.active-faq h3:after {
+    transform: translate(-50%, 0) rotate(360deg) !important;
+    opacity:0;
+}
+
+  .faq-body-areaa p {
+    line-height: 1.5;
+}
+  
+  .faq-container {
+    padding: 75px 40px 75px 5%;
+    max-width: 1920px;
+    margin: 0 auto;
+    cursor:pointer;
+}
+
+.head-faq h2 {
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    color: #324556;
+    font-size: 55px;
+}
+
+.faq-area-wraps {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4%;
+}
+
+.faq-left-area {
+    width: 40%;
+}
+
+.faq-right-area {
+    width: 56%;
+}
+
+.faq-wrapss {
+    padding: 0px 0 0 0;
+}
+
+.faq-areaa h3 {
+    margin: 0 0 0;
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 8px 24px;
+    position: relative;
+    width: 100%;
+      letter-spacing: 0;
+}
+
+.faq-body-areaa , .faq-body-areaa * {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.faq-body-areaa {
+    padding: 0 24px;
+    margin-bottom: 8px;
+}
+
+.feature-left-area {
+    max-width: 1000px;
+    margin-left: auto;
+}
+
+.faq-areaa {
+    border: 1px solid #d2d4d6;
+    box-shadow: inset 0 3px #0000000a, 0 2px #00000005;
+    margin-top: 12px;
+    padding: 13px 14px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.faq-areaa h3:before, .faq-areaa h3:after {
+    content: '';
+    background: #008ffd;
+    position: absolute;
+    /* left: -60px; */
+    left: 0px;
+    transition: all .3s ease-in-out;
+    cursor:pointer;
+}
+  
+.faq-areaa h3:before {
+    width: 8px;
+    height: 2px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.faq-body-areaa a {
+    color: #0090fc !important;
+    text-decoration: underline !important;
+}
+
+.faq-areaa h3:after {
+    height: 8px;
+    width: 2px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* left: -49px; */
+    left: 0px;
+}
+.title-page-sec {
+    padding: 50px 20px 0;
+}
+
+.title-page-sec h1 {
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    color: ##0090fc;
+    font-size: 50px;
+    text-align: center;
+}
+
+.faq-head-n h2 {
+font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 25px;
+    font-size: 30px;
+    color: #0090fc;
+    font-family: neuzeit_grotesk_light;
+    letter-spacing: 2px;
+}
+
+.faqs-container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 72px 0;
+    border-bottom:1px solid #e5e5e5;
+}
+
+.faq-wraps-area {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4%;
+}
+.Faqs-new:last-child .faq-sec .faqs-container {
+    border: 0;
+}
+.faq-wraps-area > * {
+    width: 48%;
+}
+  
+@media (max-width:767px) {
+    .faq-sec {
+      padding:0px 15px !important;
+    }
+    .faqs-container {
+    padding: 40px 0;
+}
+  .faq-head-n h2 {
+    font-size: 24px;
+    margin: 0 0 8px;
+    text-align: center;
+}
+.faq-areaa h3 {
+    font-size: 16px;
+}
+  
+.faq-areaa h3:after {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+}
+
+@media (max-width:1024px) {
+  
+    .faq-wraps-area > * {
+        width:100% !important;
+    }
+
+    .title-page-sec h1 {
+        font-size: 35px;
+    }
+
+  .faq-head-n h2 {
+    font-size: 24px;
+    margin: 0 0 8px;
+    text-align: center;
+}
+
+    .faq-sec {
+      padding: 50px 15px;
+    }
+    
+}
+
+  
+</style>
+
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
-  }
+  "name": "Faqs-new",
+  "class": "Faqs-new",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "WaterH Product FAQ"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "FAQ",
+      "type": "faq",
+      "settings": [
+        {
+          "type": "text",
+          "id": "faq_title",
+          "label": "Faq Title"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_body",
+          "label": "Faq Body"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Faqs-new"
+    }
+  ]
+}  
 {% endschema %}
+
+{% stylesheet %}
+
+   
+{% endstylesheet %}
+
+{% javascript %}
+
+    $(document).ready(function () {
+      
+  $('.faq-areaa:not(.faq-body-areaa)').click(function () { 
+    $(this).toggleClass('active-faq');
+    $(this).find('.faq-body-areaa').toggle('fast');
+});
+
+
+jQuery(function($) {
+    var num_cols = 2,
+    container = jQuery('.faq-wraps-area'),
+    listItem = '.faq-areaa',
+    listClass = 'sub-list';
+    container.each(function() {
+        var items_per_col = new Array(),
+        items = $(this).find(listItem),
+        min_items_per_col = Math.floor(items.length / num_cols),
+        difference = items.length - (min_items_per_col * num_cols);
+        for (var i = 0; i < num_cols; i++) {
+            if (i < difference) {
+                items_per_col[i] = min_items_per_col + 1;
+            } else {
+                items_per_col[i] = min_items_per_col;
+            }
+        }
+        for (var i = 0; i < num_cols; i++) {
+            jQuery(this).append($('<div></div>').addClass(listClass));
+            for (var j = 0; j < items_per_col[i]; j++) {
+                var pointer = 0;
+                for (var k = 0; k < i; k++) {
+                    pointer += items_per_col[k];
+                }
+                jQuery(this).find('.' + listClass).last().append(items[j + pointer]);
+            }
+        }
+    });
+});
+ 
+      });   
+  
+{% endjavascript %}
