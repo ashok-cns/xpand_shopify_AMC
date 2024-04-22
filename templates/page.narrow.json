@@ -389,7 +389,7 @@
           "type": "faq",
           "settings": {
             "faq_title": "How do I re-open the Lace Ends?",
-            "faq_body": "<p>You can see our tutorial videos on re-opening our Lace Ends for our Original No-Tie Flat Lacing System through this <a href=\"https:\/\/www.youtube.com\/watch?v=cFA6pYLM_EU\">link<\/a>and our Quick-Release Round Lacing System through this <a href=\"https:\/\/youtu.be\/UW776nQt41U\">link<\/a>.<\/p>"
+            "faq_body": "<p>You can see our tutorial videos on re-opening our Lace Ends for our Original No-Tie Flat Lacing System through this <a href=\"https:\/\/www.youtube.com\/watch?v=cFA6pYLM_EU\">link <\/a>and our Quick-Release Round Lacing System through this <a href=\"https:\/\/youtu.be\/UW776nQt41U\">link<\/a>.<\/p>"
           }
         }
       },
@@ -405,6 +405,50 @@
     },
     "faq_new_DdnGHM": {
       "type": "faq-new",
+      "blocks": {
+        "faq_jNdCRB": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Do you ship worldwide?",
+            "faq_body": "<p>Worldwide shipping is available. And better yet, when you buy 4 or more laces, international shipping fees is free of charge for select countries. For more information on our shipping, learn more <a href=\"https:\/\/www.xpandlaces.com\/pages\/shipping-delivery\">here<\/a>.<\/p>"
+          }
+        },
+        "faq_z3TwEm": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Can I cancel \/ edit my order?",
+            "faq_body": "<p>Please send an email to hello@xpandlaces.com with the subject line “Cancel\/Edit My Order” and include your the order confirmation number (starting with a B#####). Unfortunately we are unable to provide guarantees that we can edit\/cancel your order prior to the item being sent out, but we'll do our very best to help! Please understand that if we're unable to manually intercept your order prior to it leaving our facility, the responsibility of returning the items for a refund or exchange will be subjected to our regular <a href=\"https:\/\/www.xpandlaces.com\/pages\/shipping-delivery\">Returns & Exchanges Policy.<\/a><\/p>"
+          }
+        },
+        "faq_DtYaYG": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Where is my order?",
+            "faq_body": "<p>If you are an international shopper and have chosen International Standard Mail or International Expedited Mail, please note that the package is delivering to the destination country and will be handed to the destination country's local couriers for a final leg delivery. Local courier's delivery speed may vary dependent on country.<\/p><p>In the scenario that the package has arrived to the destination country and more than 10 business days have passed with no signs of local courier delivery, please reach out to us at hello@xpandlaces.com and we'll be happy to further assist. <\/p>"
+          }
+        },
+        "faq_JCntQx": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "How come my order tracking is frozen?",
+            "faq_body": "<p>If you are an international shopper and your order tracking is frozen, please note that the tracking updates are given upon the package reaching delivery milestones. A frozen tracking doesn't mean the package isn't moving, rather it's currently en-route travelling from one milestone to another.<\/p>"
+          }
+        },
+        "faq_wXxXrN": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Where do I enter the coupon\/promo code?",
+            "faq_body": "<p>Once you proceed to checkout and enter your shipping address, the next page of the checkout will have a field where you can enter your promo code. Once the code is entered, the discount will be reflected in the final price.<\/p><p>If you are checking out using PayPal, your coupon code must be entered after you have logged into your PayPal account and redirected back to our site to complete your purchase. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_jNdCRB",
+        "faq_z3TwEm",
+        "faq_DtYaYG",
+        "faq_JCntQx",
+        "faq_wXxXrN"
+      ],
       "settings": {
         "section_title": "Shipping"
       }
