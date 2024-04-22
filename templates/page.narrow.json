@@ -384,15 +384,29 @@
             "faq_title": "Where can I purchase additional accessories, Lace Anchors, End Clips and other hardware?",
             "faq_body": "<p>You can purchase additional accessories through <a href=\"https:\/\/www.xpandlaces.com\/collections\/xtra-parts\" target=\"_blank\">this link<\/a>.  <\/p>"
           }
+        },
+        "faq_afpGbX": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "How do I re-open the Lace Ends?",
+            "faq_body": "<p>You can see our tutorial videos on re-opening our Lace Ends for our Original No-Tie Flat Lacing System through this <a href=\"https:\/\/www.youtube.com\/watch?v=cFA6pYLM_EU\">link<\/a>and our Quick-Release Round Lacing System through this <a href=\"https:\/\/youtu.be\/UW776nQt41U\">link<\/a>.<\/p>"
+          }
         }
       },
       "block_order": [
         "faq_prc8TF",
         "faq_NbJzHC",
-        "faq_jwMVmx"
+        "faq_jwMVmx",
+        "faq_afpGbX"
       ],
       "settings": {
         "section_title": "Order & Return"
+      }
+    },
+    "faq_new_DdnGHM": {
+      "type": "faq-new",
+      "settings": {
+        "section_title": "Shipping"
       }
     }
   },
@@ -401,6 +415,7 @@
     "faq_ijktWy",
     "faq_with_sidebar_jRRjXB",
     "faq_new_cCANPa",
-    "faq_new_i67QnE"
+    "faq_new_i67QnE",
+    "faq_new_DdnGHM"
   ]
 }
