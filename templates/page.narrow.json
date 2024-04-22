@@ -448,21 +448,21 @@
         "faq_Fn6k86": {
           "type": "faq",
           "settings": {
-            "faq_title": "What material is it?",
-            "faq_body": "<p>Lightweight no-show sock is a blend of cotton, polyester, nylon and elastine.<\/p><p>Cushioned no-show sock is a blend of cotton, polyester and spandex.<\/p><p><\/p>"
+            "faq_title": "What material is the No-Show Lightweight Sock?",
+            "faq_body": "<p>Lightweight no-show sock is a blend of cotton, polyester, nylon and elastine.<\/p><p><\/p>"
           }
         },
-        "faq_eVKzKB": {
+        "faq_XExCnC": {
           "type": "faq",
           "settings": {
-            "faq_title": "Which size is right for me?",
-            "faq_body": ""
+            "faq_title": "What material is the No-Show Cushioned Sock?",
+            "faq_body": "<p>Cushioned no-show sock is a blend of cotton, polyester and spandex.<\/p>"
           }
         }
       },
       "block_order": [
         "faq_Fn6k86",
-        "faq_eVKzKB"
+        "faq_XExCnC"
       ],
       "settings": {
         "section_title": "No-Show Socks"
