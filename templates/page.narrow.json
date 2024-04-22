@@ -322,19 +322,77 @@
     "faq_new_cCANPa": {
       "type": "faq-new",
       "blocks": {
-        "faqs_hGrHci": {
-          "type": "faqs",
+        "faq_Fn6k86": {
+          "type": "faq",
           "settings": {
-            "question_": "Can I still shop online during COVID-19?",
-            "answer": "We are continuing to process orders with no disruptions so you can expect standard delivery times as shown here."
+            "faq_title": "Can I still shop online during COVID-19?",
+            "faq_body": "<p>We are continuing to process orders with no disruptions so you can expect standard delivery times as shown <a href=\"https:\/\/www.xpandlaces.com\/pages\/shipping-delivery\">here<\/a>.<\/p>"
+          }
+        },
+        "faq_eVKzKB": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Will Xpand Laces fit high-tops, boots and kids' shoes?",
+            "faq_body": "<p>Absolutely! Xpand Lacing System is designed to stretch and be trimmed, which allows it to fit all types of shoes. For this reason, Xpand Laces can work on shoes from kid's shoes to adult boots. For more detailed instructions, see our <a href=\"https:\/\/www.xpandlaces.com\/pages\/install-video\" target=\"_blank\">installation page<\/a>.<\/p>"
+          }
+        },
+        "faq_pnbiyJ": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Are Xpand Laces adjustable after I trim them?",
+            "faq_body": "<p>Finding the perfect fit is easy with Xpand Laces, as long as you don't trim them too short initially. We recommend testing the length before you make any cuts, and always set the initial adjustment on the loose side, so that you can always tighten them up if needed.<\/p>"
+          }
+        },
+        "faq_JrnTtg": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "What are lengths of the Xpand shoelaces?",
+            "faq_body": "<p>Xpand Laces are 52 inches long, and can stretch out to over twice that length, which makes them long enough for both high tops, Jordans and boots.<\/p>"
           }
         }
       },
       "block_order": [
-        "faqs_hGrHci"
+        "faq_Fn6k86",
+        "faq_eVKzKB",
+        "faq_pnbiyJ",
+        "faq_JrnTtg"
       ],
       "settings": {
-        "top_heading": "Top Questions"
+        "section_title": "Product FAQ"
+      }
+    },
+    "faq_new_i67QnE": {
+      "type": "faq-new",
+      "blocks": {
+        "faq_prc8TF": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Can I use Xpand® Lacing System for running and other sports?",
+            "faq_body": "<p>Many of our satisfied customers choose Xpand Laces to meet their athletic needs. Depending on the demands of your sport, the tension can be adjusted to provide enough support and comfort. But remember that any shoelace worn too loose can result in a rolled ankle.<\/p>"
+          }
+        },
+        "faq_NbJzHC": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "What is Xpand's return policy?",
+            "faq_body": "<p>Xpand offers a 90 day money back guarantee. If you are not satisfied with your order for any reason in the first 90 days, we will refund your order - no questions asked.<\/p>"
+          }
+        },
+        "faq_jwMVmx": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Where can I purchase additional accessories, Lace Anchors, End Clips and other hardware?",
+            "faq_body": "<p>You can purchase additional accessories through <a href=\"https:\/\/www.xpandlaces.com\/collections\/xtra-parts\" target=\"_blank\">this link<\/a>.  <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_prc8TF",
+        "faq_NbJzHC",
+        "faq_jwMVmx"
+      ],
+      "settings": {
+        "section_title": "Order & Return"
       }
     }
   },
@@ -342,6 +400,7 @@
     "main",
     "faq_ijktWy",
     "faq_with_sidebar_jRRjXB",
-    "faq_new_cCANPa"
+    "faq_new_cCANPa",
+    "faq_new_i67QnE"
   ]
 }
