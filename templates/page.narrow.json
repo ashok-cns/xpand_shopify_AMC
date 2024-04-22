@@ -326,126 +326,49 @@
         "top_page_header": "Frequently Asked Questions"
       }
     },
-    "faq_new_cCANPa": {
-      "type": "faq-new",
-      "blocks": {
-        "faq_Fn6k86": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "Can I still shop online during COVID-19?",
-            "faq_body": "<p>We are continuing to process orders with no disruptions so you can expect standard delivery times as shown <a href=\"https:\/\/www.xpandlaces.com\/pages\/shipping-delivery\">here<\/a>.<\/p>"
-          }
-        },
-        "faq_eVKzKB": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "Will Xpand Laces fit high-tops, boots and kids' shoes?",
-            "faq_body": "<p>Absolutely! Xpand Lacing System is designed to stretch and be trimmed, which allows it to fit all types of shoes. For this reason, Xpand Laces can work on shoes from kid's shoes to adult boots. For more detailed instructions, see our <a href=\"https:\/\/www.xpandlaces.com\/pages\/install-video\" target=\"_blank\">installation page<\/a>.<\/p>"
-          }
-        },
-        "faq_pnbiyJ": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "Are Xpand Laces adjustable after I trim them?",
-            "faq_body": "<p>Finding the perfect fit is easy with Xpand Laces, as long as you don't trim them too short initially. We recommend testing the length before you make any cuts, and always set the initial adjustment on the loose side, so that you can always tighten them up if needed.<\/p>"
-          }
-        },
-        "faq_JrnTtg": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "What are lengths of the Xpand shoelaces?",
-            "faq_body": "<p>Xpand Laces are 52 inches long, and can stretch out to over twice that length, which makes them long enough for both high tops, Jordans and boots.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "faq_Fn6k86",
-        "faq_eVKzKB",
-        "faq_pnbiyJ",
-        "faq_JrnTtg"
-      ],
-      "settings": {
-        "section_title": "Product FAQ"
-      }
-    },
-    "faq_new_i67QnE": {
-      "type": "faq-new",
-      "blocks": {
-        "faq_prc8TF": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "Can I use Xpand® Lacing System for running and other sports?",
-            "faq_body": "<p>Many of our satisfied customers choose Xpand Laces to meet their athletic needs. Depending on the demands of your sport, the tension can be adjusted to provide enough support and comfort. But remember that any shoelace worn too loose can result in a rolled ankle.<\/p>"
-          }
-        },
-        "faq_NbJzHC": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "What is Xpand's return policy?",
-            "faq_body": "<p>Xpand offers a 90 day money back guarantee. If you are not satisfied with your order for any reason in the first 90 days, we will refund your order - no questions asked.<\/p>"
-          }
-        },
-        "faq_jwMVmx": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "Where can I purchase additional accessories, Lace Anchors, End Clips and other hardware?",
-            "faq_body": "<p>You can purchase additional accessories through <a href=\"https:\/\/www.xpandlaces.com\/collections\/xtra-parts\" target=\"_blank\">this link<\/a>.  <\/p>"
-          }
-        },
-        "faq_afpGbX": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "How do I re-open the Lace Ends?",
-            "faq_body": "<p>You can see our tutorial videos on re-opening our Lace Ends for our Original No-Tie Flat Lacing System through this <a href=\"https:\/\/www.youtube.com\/watch?v=cFA6pYLM_EU\">link <\/a> and our Quick-Release Round Lacing System through this <a href=\"https:\/\/youtu.be\/UW776nQt41U\">link<\/a>.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "faq_prc8TF",
-        "faq_NbJzHC",
-        "faq_jwMVmx",
-        "faq_afpGbX"
-      ],
-      "settings": {
-        "section_title": "Order & Return"
-      }
-    },
     "faq_new_DdnGHM": {
       "type": "faq-new",
       "blocks": {
         "faq_jNdCRB": {
           "type": "faq",
           "settings": {
-            "faq_title": "Do you ship worldwide?",
-            "faq_body": "<p>Worldwide shipping is available. And better yet, when you buy 4 or more laces, international shipping fees is free of charge for select countries. For more information on our shipping, learn more <a href=\"https:\/\/www.xpandlaces.com\/pages\/shipping-delivery\">here<\/a>.<\/p>"
+            "faq_title": "How much is shipping?",
+            "faq_body": "<p>Free Shipping on orders $30 and more.<\/p><p>For orders under $30:<\/p><ul><li>USA: $4.99 - $6.99<\/li><li>Canada: $8.99 - $10.99<\/li><li>INTL: varies by location. See rate at checkout<\/li><\/ul>"
           }
         },
         "faq_z3TwEm": {
           "type": "faq",
           "settings": {
-            "faq_title": "Can I cancel \/ edit my order?",
-            "faq_body": "<p>Please send an email to hello@xpandlaces.com with the subject line “Cancel\/Edit My Order” and include your the order confirmation number (starting with a B#####). Unfortunately we are unable to provide guarantees that we can edit\/cancel your order prior to the item being sent out, but we'll do our very best to help! Please understand that if we're unable to manually intercept your order prior to it leaving our facility, the responsibility of returning the items for a refund or exchange will be subjected to our regular <a href=\"https:\/\/www.xpandlaces.com\/pages\/shipping-delivery\">Returns & Exchanges Policy.<\/a><\/p>"
+            "faq_title": "What is your return policy?",
+            "faq_body": "<p>If you don’t enjoy your first package from Xpand, let us know so that we can help you return or exchange your products within 90 days of receipt for a full refund.<\/p><p>Please note that shipping fees are non-refundable and orders that took advantage of free shipping will be refunded the amount minus the cost of standard shipping.<br\/><br\/>Please reach out to hello@xpandlaces.com with any questions you may have!<\/p>"
           }
         },
         "faq_DtYaYG": {
           "type": "faq",
           "settings": {
-            "faq_title": "Where is my order?",
-            "faq_body": "<p>If you are an international shopper and have chosen International Standard Mail or International Expedited Mail, please note that the package is delivering to the destination country and will be handed to the destination country's local couriers for a final leg delivery. Local courier's delivery speed may vary dependent on country.<\/p><p>In the scenario that the package has arrived to the destination country and more than 10 business days have passed with no signs of local courier delivery, please reach out to us at hello@xpandlaces.com and we'll be happy to further assist. <\/p>"
+            "faq_title": "How can I track my order",
+            "faq_body": "<p><strong>USA orders:<\/strong><\/p><ul><li>For stardard, expedited and priority , enter your tracking number <a href=\"https:\/\/stallionexpress.ca\/track\/\" target=\"_blank\" title=\"https:\/\/stallionexpress.ca\/track\/\">here<\/a>.<\/li><li>For DHL Express USA orders, enter your tracking number <a href=\"https:\/\/www.dhl.com\/ca-en\/home\/tracking.html\" target=\"_blank\" title=\"https:\/\/www.dhl.com\/ca-en\/home\/tracking.html\">here.<\/a><\/li><\/ul><p><\/p><p>For Canada orders, enter your tracking number <a href=\"https:\/\/www.canadapost-postescanada.ca\/track-reperage\/en\" target=\"_blank\" title=\"https:\/\/www.canadapost-postescanada.ca\/track-reperage\/en\">here<\/a>.<\/p><p>For INTL orders, enter your tracking number <a href=\"https:\/\/stallionexpress.ca\/track\/\" target=\"_blank\" title=\"https:\/\/stallionexpress.ca\/track\/\">here<\/a>.<\/p><p>Please note that it often takes the service carrier 24-48 hours to scan a package and then update the tracking information within their system. Rest assured that your order has shipped and is on its way to you! You should be able to see an update within 2 business days of shipment.<\/p>"
           }
         },
         "faq_JCntQx": {
           "type": "faq",
           "settings": {
-            "faq_title": "How come my order tracking is frozen?",
-            "faq_body": "<p>If you are an international shopper and your order tracking is frozen, please note that the tracking updates are given upon the package reaching delivery milestones. A frozen tracking doesn't mean the package isn't moving, rather it's currently en-route travelling from one milestone to another.<\/p>"
+            "faq_title": "How long will it take to get my package?",
+            "faq_body": "<p>We ship all orders within one to two business days. <\/p><p><strong>USA:<\/strong><\/p><ul><li>Standard Shipping: 3 - 7 business days average<\/li><li>Expedited Shipping: 2 - 5 business days average<\/li><li>Priority Shipping: 2 - 4 business days average<\/li><\/ul><p><br\/><strong>Canada: <\/strong><\/p><ul><li>Standard Shipping: 3 - 7 business days average<\/li><li>Expedited Shipping: 3 - 5 business days average<\/li><li>Express Shipping: 1 - 3 business days average<\/li><\/ul>"
           }
         },
         "faq_wXxXrN": {
           "type": "faq",
           "settings": {
-            "faq_title": "Where do I enter the coupon\/promo code?",
-            "faq_body": "<p>Once you proceed to checkout and enter your shipping address, the next page of the checkout will have a field where you can enter your promo code. Once the code is entered, the discount will be reflected in the final price.<\/p><p>If you are checking out using PayPal, your coupon code must be entered after you have logged into your PayPal account and redirected back to our site to complete your purchase. <\/p>"
+            "faq_title": "Can I expedite my order?",
+            "faq_body": "<p>Yes!<\/p><p>For the USA & Canada, we offer express shipping options for $19.99 regardless of the size of your order. This allows for you to receive your package 1-3 business days after it is shipped. <br\/><br\/>Shipping cost are are non-refundable. <\/p>"
+          }
+        },
+        "faq_d9U9qK": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Do you allow for exchanges?",
+            "faq_body": "<p>Yes!<\/p><p>If you need to exchange an item, send us an email at <a href=\"mailto:example@example.com\" target=\"_blank\">hello@xpandlaces.com<\/a> and we’ll be happy to help start the process. Items returned for exchange purposes must include the \"<a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1206\/8416\/files\/Xpand_Return_Form.pdf?817362\" target=\"_blank\">Return\/Exchange Form<\/a>” inside the returning package in order for our time to process your request in a timely manner. <br\/><br\/>Xpand will reship the new item at no extra shipping cost. However, the customer is responsible for paying shipping costs for the item(s) that is to be exchanged. <\/p><p>Please note that exchanging will void the return policy.<\/p>"
           }
         }
       },
@@ -454,10 +377,172 @@
         "faq_z3TwEm",
         "faq_DtYaYG",
         "faq_JCntQx",
-        "faq_wXxXrN"
+        "faq_wXxXrN",
+        "faq_d9U9qK"
       ],
       "settings": {
-        "section_title": "Shipping"
+        "section_title": "Shipping & Return"
+      }
+    },
+    "faq_new_AJXYr8": {
+      "type": "faq-new",
+      "blocks": {
+        "faq_QUzLFk": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "What is the difference between flat and round laces?",
+            "faq_body": ""
+          }
+        },
+        "faq_Ggfd9H": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Will it fit my shoes?",
+            "faq_body": "<p>Absolutely! Xpand Lacing System is designed to stretch and be trimmed, which allows it to fit all types of shoes. For this reason, Xpand Laces can work on shoes from kid's shoes to adult boots. For more detailed instructions, see our <a href=\"https:\/\/www.xpandlaces.com\/pages\/install-video\" target=\"_blank\">installation page<\/a>.<\/p>"
+          }
+        },
+        "faq_h4X4xR": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Are they adjustable?",
+            "faq_body": "<p>Finding the perfect fit is easy with Xpand Laces, as long as you don't trim them too short initially. We recommend testing the length before you make any cuts, and always set the initial adjustment on the loose side, so that you can always tighten them up if needed.<\/p>"
+          }
+        },
+        "faq_qQGChW": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "What are the lengths of the Xpand laces?",
+            "faq_body": "<p>Xpand Laces are 52 inches long, and can stretch out to over twice that length, which makes them long enough for both high tops, Jordans and boots.<\/p>"
+          }
+        },
+        "faq_XqLjeP": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Where can I purchase additional accessories, Lace Anchors, End Clips and other hardware?",
+            "faq_body": "<p>You can purchase additional accessories through <a href=\"https:\/\/www.xpandlaces.com\/collections\/xtra-parts\" target=\"_blank\">this link<\/a>.  <\/p>"
+          }
+        },
+        "faq_pTMkhX": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "How do I re-open the Lace Ends?",
+            "faq_body": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_QUzLFk",
+        "faq_Ggfd9H",
+        "faq_h4X4xR",
+        "faq_qQGChW",
+        "faq_XqLjeP",
+        "faq_pTMkhX"
+      ],
+      "settings": {
+        "section_title": "Xpand Laces"
+      }
+    },
+    "faq_new_cCANPa": {
+      "type": "faq-new",
+      "blocks": {
+        "faq_Fn6k86": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "What material is it?",
+            "faq_body": ""
+          }
+        },
+        "faq_eVKzKB": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Which size is right for me?",
+            "faq_body": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_Fn6k86",
+        "faq_eVKzKB"
+      ],
+      "settings": {
+        "section_title": "No-Show Socks"
+      }
+    },
+    "faq_new_i9XjV6": {
+      "type": "faq-new",
+      "blocks": {
+        "faq_xnecU9": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "What is the difference between the Urban and Explorer buckle?",
+            "faq_body": "<p>For starters, the Urban buckle is a two piece buckle made with high grade plastic + a super strong neodymium magnet. <\/p><p>The Explorer buckle is a one piece system made with 100% aluminum.<\/p>"
+          }
+        },
+        "faq_rYAnkD": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Can the belt straps interchanged?",
+            "faq_body": "<p>Yes, the elastic belt straps can be interchanged between the Explorer buckle and Urban buckle. <br\/><br\/>Belt strap can also be purchased separate <a href=\"https:\/\/www.xpandlaces.com\/products\/xpand-belt-strap\" title=\"https:\/\/www.xpandlaces.com\/products\/xpand-belt-strap\">here<\/a>.<\/p>"
+          }
+        },
+        "faq_D3R3Qh": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Is it TSA approved?",
+            "faq_body": "<p>Explorer belt is TSA approved, but not the Urban Belt because of the neodymium magnet in the belt buckle.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_xnecU9",
+        "faq_rYAnkD",
+        "faq_D3R3Qh"
+      ],
+      "settings": {
+        "section_title": "No-Show Belt"
+      }
+    },
+    "faq_new_aVXRVM": {
+      "type": "faq-new",
+      "blocks": {
+        "faq_aGxFya": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Has it passed safety test?",
+            "faq_body": "<p>Certified by eco-friendly test. EU Reach and USA CP65 approved. Our cleaning formula has no harsh chemicals and very safe to use.<\/p>"
+          }
+        },
+        "faq_Aj3Uki": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "faq_title": "",
+            "faq_body": ""
+          }
+        },
+        "faq_T9fYBX": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Is the formula eco-friendly?",
+            "faq_body": "<p>Yes! Our quick wipe solution is a patented plant base formula that penetrates and easily dissolves stains into nano particles without damaging the material's surface layer.<\/p>"
+          }
+        },
+        "faq_G4MHTA": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Suitable for what types of material?",
+            "faq_body": "<p>Canvas, leather, suede and rubber. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_aGxFya",
+        "faq_Aj3Uki",
+        "faq_T9fYBX",
+        "faq_G4MHTA"
+      ],
+      "settings": {
+        "section_title": "Quick Wipes"
       }
     }
   },
@@ -466,8 +551,10 @@
     "faq_ijktWy",
     "faq_with_sidebar_jRRjXB",
     "page_header_BiGxtq",
+    "faq_new_DdnGHM",
+    "faq_new_AJXYr8",
     "faq_new_cCANPa",
-    "faq_new_i67QnE",
-    "faq_new_DdnGHM"
+    "faq_new_i9XjV6",
+    "faq_new_aVXRVM"
   ]
 }
