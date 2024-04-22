@@ -318,11 +318,30 @@
         "sec_top": 0,
         "sec_bottom": 0
       }
+    },
+    "faq_new_cCANPa": {
+      "type": "faq-new",
+      "blocks": {
+        "faqs_hGrHci": {
+          "type": "faqs",
+          "settings": {
+            "question_": "Can I still shop online during COVID-19?",
+            "answer": "We are continuing to process orders with no disruptions so you can expect standard delivery times as shown here."
+          }
+        }
+      },
+      "block_order": [
+        "faqs_hGrHci"
+      ],
+      "settings": {
+        "top_heading": "Top Questions"
+      }
     }
   },
   "order": [
     "main",
     "faq_ijktWy",
-    "faq_with_sidebar_jRRjXB"
+    "faq_with_sidebar_jRRjXB",
+    "faq_new_cCANPa"
   ]
 }
