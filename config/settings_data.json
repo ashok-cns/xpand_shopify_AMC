@@ -854,6 +854,7 @@
           },
           "alert_content_VkVb3F": {
             "type": "alert_content",
+            "disabled": true,
             "settings": {
               "alert_icon": "shopify:\/\/shop_images\/up_to_15_off_2.png",
               "alert_text": "<p>Weekend Special: No-Tie Round Laces<\/p>",
@@ -862,7 +863,6 @@
           },
           "8172cb1e-68c5-4369-b6a5-6f8cf3a42477": {
             "type": "alert_content",
-            "disabled": true,
             "settings": {
               "alert_icon": "shopify:\/\/shop_images\/up_to_15_off_1_9d56ff71-12e8-4ebb-b034-b8dfa1def594.png",
               "alert_text": "<p>Autism Awareness Month. Use code <strong>AUSTISM<\/strong> for an extra 15% off.<\/p>",
