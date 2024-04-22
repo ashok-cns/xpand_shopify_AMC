@@ -361,14 +361,14 @@
           "type": "faq",
           "settings": {
             "faq_title": "Can I expedite my order?",
-            "faq_body": "<p>Yes!<\/p><p>For the USA & Canada, we offer express shipping options for $19.99 regardless of the size of your order. This allows for you to receive your package 1-3 business days after it is shipped. <br\/><br\/>Shipping cost are are non-refundable. <\/p>"
+            "faq_body": "<p>Yes! For the USA & Canada, we offer express shipping options for $19.99 regardless of the size of your order. This allows for you to receive your package 1-3 business days after it is shipped. <br\/><br\/>Shipping cost are are non-refundable. <\/p>"
           }
         },
         "faq_d9U9qK": {
           "type": "faq",
           "settings": {
             "faq_title": "Do you allow for exchanges?",
-            "faq_body": "<p>Yes!<\/p><p>If you need to exchange an item, send us an email at <a href=\"mailto:example@example.com\" target=\"_blank\">hello@xpandlaces.com<\/a> and we’ll be happy to help start the process. Items returned for exchange purposes must include the \"<a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1206\/8416\/files\/Xpand_Return_Form.pdf?817362\" target=\"_blank\">Return\/Exchange Form<\/a>” inside the returning package in order for our time to process your request in a timely manner. <br\/><br\/>Xpand will reship the new item at no extra shipping cost. However, the customer is responsible for paying shipping costs for the item(s) that is to be exchanged. <\/p><p>Please note that exchanging will void the return policy.<\/p>"
+            "faq_body": "<p>Absolutely! If you need to exchange an item, send us an email at <a href=\"mailto:example@example.com\" target=\"_blank\">hello@xpandlaces.com<\/a> and we’ll be happy to help start the process. Items returned for exchange purposes must include the \"<a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1206\/8416\/files\/Xpand_Return_Form.pdf?817362\" target=\"_blank\">Return\/Exchange Form<\/a>” inside the returning package in order for our time to process your request in a timely manner. <br\/><br\/>Xpand will reship the new item at no extra shipping cost. However, the customer is responsible for paying shipping costs for the item(s) that is to be exchanged. <\/p><p>Please note that exchanging will void the return policy.<\/p>"
           }
         }
       },
@@ -426,7 +426,7 @@
           "type": "faq",
           "settings": {
             "faq_title": "How do I re-open the Lace Ends?",
-            "faq_body": "<p>Tutorial for re-opening the lace ends for:<\/p><ul><li>Flat Lacing system can be found <a href=\"https:\/\/www.youtube.com\/watch?v=cFA6pYLM_EU\" title=\"https:\/\/www.youtube.com\/watch?v=cFA6pYLM_EU\">here<\/a><\/li><li>Round Lacing system can be found <a href=\"https:\/\/www.youtube.com\/watch?v=UW776nQt41U\" title=\"https:\/\/www.youtube.com\/watch?v=UW776nQt41U\">here<\/a><\/li><\/ul><p><\/p><p><\/p>"
+            "faq_body": "<p>Tutorial for re-opening the lace ends for:<\/p><ul><li>Flat Lacing system can be found <a href=\"https:\/\/www.youtube.com\/watch?v=cFA6pYLM_EU\" title=\"https:\/\/www.youtube.com\/watch?v=cFA6pYLM_EU\">here<\/a><\/li><li>Round Lacing system can be found <a href=\"https:\/\/www.youtube.com\/watch?v=UW776nQt41U\" title=\"https:\/\/www.youtube.com\/watch?v=UW776nQt41U\">here<\/a><\/li><\/ul>"
           }
         }
       },
