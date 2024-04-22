@@ -1,6 +1,25 @@
+<h1 class="faq-main-title">{{ section.settings.top_page_header }} </h1>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
-  }
+  "name": "Top Page Header",
+  "settings": [
+    {
+      "type": "text",
+      "id": "top_page_header",
+      "label": "Top Page Header"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Top Page Header"
+    }
+  ]
+}  
 {% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
