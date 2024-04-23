@@ -1136,7 +1136,7 @@ $(() => {
               var lineItemData =  {
                 'line': getLineId,
                 'quantity': discountItemQty,
-                'properties': { 'freeShippingItemCount': freeShippingItemCount, 'discountAmount': discountItemQty*cm_tier_amount*100 }
+                'properties': { 'discountAmount': discountItemQty*cm_tier_amount*100 }
               }
             }else if(cm_tier_amount > 0 && cartQty < freeShippingItemCount) {
               console.log('lineItemData22')
