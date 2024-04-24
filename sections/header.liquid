@@ -276,7 +276,7 @@
   class="{% if section.settings.logo_home != blank %}secondary_logo--true{% endif %} search-enabled--{{ section.settings.search_enabled }}"
   data-desktop-header
   data-header-feature-image="{{ feature_image }}">
-  <div class="header header-fixed--{{ section.settings.fixed_header }} {% if settings.header_background %}header-background--solid{% endif %}" data-header-is-absolute="{% if feature_image and settings.header_background == false %}true{% endif %}">
+  <div class="desktop-header header header-fixed--{{ section.settings.fixed_header }} {% if settings.header_background %}header-background--solid{% endif %}" data-header-is-absolute="{% if feature_image and settings.header_background == false %}true{% endif %}">
    
     {% if section.settings.show_alert_bar %}
 
