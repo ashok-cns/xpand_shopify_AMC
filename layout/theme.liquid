@@ -501,15 +501,24 @@ window.addEventListener('scroll', function() {
 });
 </script>
 
-  <script>
+<script>
+  // Get the header element
   var header = document.getElementById("header");
-  window.addEventListener("scroll", function() {
+
+  // Function to toggle the 'scrolled' class
+  function toggleScrolledClass() {
     if (window.scrollY > 0) {
       header.classList.add("scrolled");
     } else {
       header.classList.remove("scrolled");
     }
-  });
+  }
+
+  // Add scroll event listener
+  window.addEventListener("scroll", toggleScrolledClass);
+
+  // Call the function on page load in case the page is already scrolled
+  toggleScrolledClass();
 </script>
 
   
