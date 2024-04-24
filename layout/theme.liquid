@@ -490,13 +490,13 @@ $(document).ajaxComplete(function(event, request, settings){
 
 
 <script>
-  window.addEventListener('scroll', function() {
-    const header = document.getElementById('header');
-
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header');
+    
     if (window.scrollY > 0) {
-        header.classList.add('header-scrolled');
+        header.classList.add('scrolled');
     } else {
-        header.classList.remove('header-scrolled');
+        header.classList.remove('scrolled');
     }
 });
 </script>
