@@ -496,6 +496,15 @@ $(document).ajaxComplete(function(event, request, settings){
 
 
 <script>
+// Smooth scroll to top when clicking on the header
+document.querySelector('.desktop-header').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Add or remove 'scrolled' class based on scroll position
 window.addEventListener('scroll', function() {
     const header = document.querySelector('.desktop-header');
     
