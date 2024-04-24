@@ -159,7 +159,7 @@
     "cart_discount_applied_text": "Congrats, you just received discountPercentage% off!",
     "cart_free_shipping_hint_text": "You are quantity pack away from free shipping!",
     "cart_free_shipping_item_count": 3,
-    "enable_free_product": true,
+    "enable_free_product": false,
     "cart_free_product_item_count": 2,
     "free_product_item": "xpand-quick-wipes-pack-of-2",
     "free_product_item_vid": "7329302446191",
