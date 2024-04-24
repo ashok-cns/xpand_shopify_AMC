@@ -493,22 +493,28 @@ $(document).ajaxComplete(function(event, request, settings){
   </script>
 
 
+
+
 <script>
-        // Get the header element
-        const header = document.querySelector('.header-main-menu');
+// Smooth scroll to top when clicking on the header
+document.querySelector('.desktop-header').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
 
-        // Function to toggle the class based on scroll position
-        function toggleHeaderClass() {
-            if (window.scrollY > 0) {
-                header.classList.add('scrolled-header');
-            } else {
-                header.classList.remove('scrolled-header');
-            }
-        }
-
-        // Add scroll event listener
-        window.addEventListener('scroll', toggleHeaderClass);
-    </script> 
+// Add or remove 'scrolled' class based on scroll position
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.desktop-header');
+    
+    if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+</script> 
 
   
 </html>
