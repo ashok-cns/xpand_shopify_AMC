@@ -501,6 +501,23 @@ window.addEventListener('scroll', function() {
 });
 </script>
 
+  <script>
+  // Get the header element
+  var header = document.getElementById("header");
+
+  // Add scroll event listener
+  window.addEventListener("scroll", function() {
+    // Check if the scroll position is greater than 0
+    if (window.scrollY > 0) {
+      // Add the 'scrolled' class to the header
+      header.classList.add("scrolled");
+    } else {
+      // Remove the 'scrolled' class from the header
+      header.classList.remove("scrolled");
+    }
+  });
+</script>
+
   
 </html>
 {% endcapture %}
