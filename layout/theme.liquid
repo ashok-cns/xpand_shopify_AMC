@@ -490,6 +490,18 @@ $(document).ajaxComplete(function(event, request, settings){
 
 
 <script>
+  window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+
+    if (window.scrollY > 0) {
+        header.classList.add('header-scrolled');
+    } else {
+        header.classList.remove('header-scrolled');
+    }
+});
+</script>
+
+<script>
 window.addEventListener('scroll', function() {
     const header = document.querySelector('.desktop-header');
     
@@ -499,26 +511,6 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolled');
     }
 });
-</script>
-
-<script>
-  // Get the header element
-  var header = document.getElementById("header");
-
-  // Function to toggle the 'scrolled' class
-  function toggleScrolledClass() {
-    if (window.scrollY > 0) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-  }
-
-  // Add scroll event listener
-  window.addEventListener("scroll", toggleScrolledClass);
-
-  // Call the function on page load in case the page is already scrolled
-  toggleScrolledClass();
 </script>
 
   
