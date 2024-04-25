@@ -495,7 +495,7 @@ $(document).ajaxComplete(function(event, request, settings){
 
 
 
-<script>
+<!-- <script>
 // Smooth scroll to top when clicking on the header
 document.querySelector('.desktop-header').addEventListener('click', function() {
     window.scrollTo({
@@ -514,8 +514,26 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolled');
     }
 });
-</script> 
+</script>  -->
 
+<script
+  let lastScrollTop = 0;
+const header = document.querySelector('.scrolling-header');
+
+window.addEventListener('scroll', () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // Scroll down
+        header.classList.add('sticky');
+    } else {
+        // Scroll up
+        header.classList.remove('sticky');
+    }
+
+    lastScrollTop = scrollTop;
+});
+</script
   
 </html>
 {% endcapture %}
