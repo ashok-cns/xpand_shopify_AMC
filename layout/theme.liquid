@@ -516,24 +516,17 @@ window.addEventListener('scroll', function() {
 });
 </script>  -->
 
-<script
-  let lastScrollTop = 0;
-const header = document.querySelector('.header-main-menu');
-
-window.addEventListener('scroll', () => {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (scrollTop > lastScrollTop) {
-        // Scroll down
-        header.classList.add('sticky');
-    } else {
-        // Scroll up
-        header.classList.remove('sticky');
-    }
-
-    lastScrollTop = scrollTop;
-});
-</script>
+  <script>
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header-main-menu');
+            
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
   
 </html>
 {% endcapture %}
