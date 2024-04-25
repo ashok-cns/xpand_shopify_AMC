@@ -517,6 +517,13 @@ window.addEventListener('scroll', function() {
 </script>  -->
 
   <script>
+
+    document.querySelector('.header-main-menu').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
         window.addEventListener('scroll', function() {
             const header = document.querySelector('.header-main-menu');
             
