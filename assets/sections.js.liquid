@@ -3220,12 +3220,42 @@ customElements.define(ProductCTA.shortcode, ProductCTA);
 
 
 
-  window.addEventListener('scroll', function() {
-    const header = document.getElementById('header');
+//   window.addEventListener('scroll', function() {
+//     const header = document.getElementById('header');
 
-    if (window.scrollY > 0) {
-        header.classList.add('header-scrolled');
-    } else {
-        header.classList.remove('header-scrolled');
-    }
-});
+//     if (window.scrollY > 0) {
+//         header.classList.add('header-scrolled');
+//     } else {
+//         header.classList.remove('header-scrolled');
+//     }
+// });
+
+
+
+
+    // Wait for the DOM content to be loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        // Check if the element exists
+        const headerMenu = document.querySelector('.top-bar');
+        
+        if (headerMenu) {
+            
+            // Scroll to top on menu click
+            headerMenu.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Change class on scroll
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 0) {
+                    headerMenu.classList.add('scrolled');
+                } else {
+                    headerMenu.classList.remove('scrolled');
+                }
+            });
+        }
+    });
