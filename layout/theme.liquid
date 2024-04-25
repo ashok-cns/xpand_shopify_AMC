@@ -516,24 +516,34 @@ window.addEventListener('scroll', function() {
 });
 </script>  -->
 
-  <script>
-
-    document.querySelector('.header-main-menu').addEventListener('click', function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('.header-main-menu');
+<script>
+    // Wait for the DOM content to be loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        // Check if the element exists
+        const headerMenu = document.querySelector('.header-main-menu');
+        
+        if (headerMenu) {
             
-            if (window.scrollY > 0) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-    </script>
+            // Scroll to top on menu click
+            headerMenu.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Change class on scroll
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 0) {
+                    headerMenu.classList.add('scrolled');
+                } else {
+                    headerMenu.classList.remove('scrolled');
+                }
+            });
+        }
+    });
+</script>
   
 </html>
 {% endcapture %}
